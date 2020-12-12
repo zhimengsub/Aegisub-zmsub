@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/wangqr/Aegisub.svg?branch=dev)](https://travis-ci.org/wangqr/Aegisub)
+[![Build Status](https://travis-ci.com/wangqr/Aegisub.svg?branch=dev)](https://travis-ci.com/wangqr/Aegisub)
 
 # Aegisub
 

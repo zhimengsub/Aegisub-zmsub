@@ -97,10 +97,6 @@ jobs:
             mkdir build-dir
             cd build-dir
             cmake -DCMAKE_CXX_FLAGS='-Wall -Wextra -Wno-unused-parameter -pedantic' -DCMAKE_C_FLAGS='-Wall -Wextra -Wno-unused-parameter' -DWITH_STARTUPLOG=ON -DWITH_TEST=ON  ..
-            # Precompile system googletest (CMake only)
-            cd /usr/src/googletest
-            sudo cmake .
-            sudo make install -j2
           fi
 
       - name: build

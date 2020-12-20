@@ -6,7 +6,7 @@ on:
   pull_request:
 
 jobs:
-  build:
+  build-nix:
     strategy:
       matrix:
         os: [ubuntu-20.04, macos-10.15]
@@ -116,3 +116,56 @@ jobs:
                       --exclude tools --exclude libaegisub/windows \
                       > /dev/null
           fi
+
+  build-win:
+    runs-on: windows-latest
+    steps:
+    - name: checkout code
+      uses: actions/checkout@v2
+
+    - name: cache vcpkg packages
+      uses: actions/cache@v2
+      with:
+        path: C:\vcpkg\installed
+        key: vcpkg-installed-x64-windows
+
+    - name: install deps
+      run: |
+        Invoke-WebRequest -Uri https://github.com/AviSynth/AviSynthPlus/archive/v3.6.1.zip -OutFile vendor/AviSynthPlus.zip
+        Invoke-WebRequest -Uri https://github.com/AviSynth/AviSynthPlus/releases/download/v3.6.1/AviSynthPlus_3.6.1_20200619-filesonly.7z -OutFile vendor/AviSynthPlus_3.6.1_20200619-filesonly.7z
+        Invoke-WebRequest -Uri https://github.com/FFMS/ffms2/releases/download/2.23/ffms2-2.23.1-msvc.7z -OutFile vendor/ffms2-2.23.1-msvc.7z
+        Invoke-WebRequest -Uri https://github.com/wxWidgets/wxWidgets/releases/download/v3.1.4/wxWidgets-3.1.4-headers.7z -OutFile vendor/wxWidgets-3.1.4-headers.7z
+        Invoke-WebRequest -Uri https://github.com/wxWidgets/wxWidgets/releases/download/v3.1.4/wxMSW-3.1.4_vc14x_x64_Dev.7z -OutFile vendor/wxMSW-3.1.4_vc14x_x64_Dev.7z
+        Invoke-WebRequest -Uri https://github.com/wxWidgets/wxWidgets/releases/download/v3.1.4/wxMSW-3.1.4_vc14x_x64_ReleaseDLL.7z -OutFile vendor/wxMSW-3.1.4_vc14x_x64_ReleaseDLL.7z
+        Invoke-WebRequest -Uri https://globalcdn.nuget.org/packages/microsoft.xaudio2.redist.1.2.4.nupkg -OutFile vendor/microsoft.xaudio2.redist.1.2.4.nupkg
+
+        7z.exe x vendor/AviSynthPlus.zip -ovendor/avisynth
+        7z.exe x vendor/AviSynthPlus_3.6.1_20200619-filesonly.7z -ovendor/avisynth
+        7z.exe x vendor/ffms2-2.23.1-msvc.7z -ovendor/ffms2
+        7z.exe x vendor/wxWidgets-3.1.4-headers.7z -ovendor/wxwidgets
+        7z.exe x vendor/wxMSW-3.1.4_vc14x_x64_Dev.7z -ovendor/wxwidgets
+        7z.exe x vendor/wxMSW-3.1.4_vc14x_x64_ReleaseDLL.7z -ovendor/wxwidgets
+        7z.exe x vendor/microsoft.xaudio2.redist.1.2.4.nupkg -ovendor/xaudio2
+
+        vcpkg.exe install --triplet x64-windows boost-asio boost-container boost-crc boost-filesystem boost-flyweight boost-gil boost-interprocess 'boost-locale[icu]' 'boost-regex[icu]' boost-scope-exit boost-thread fftw3 hunspell icu libass libiconv uchardet gtest
+        Remove-Item –Path C:\vcpkg\installed\x64-windows\debug –Recurse -ErrorAction SilentlyContinue
+
+    - name: configure
+      run: |
+        bash.exe build/version.sh .
+        New-Item -Path build-dir -ItemType directory
+        Set-Location build-dir
+        cmake.exe '-DCMAKE_TOOLCHAIN_FILE=C:/vcpkg/scripts/buildsystems/vcpkg.cmake' '-DAviSynth_INCLUDE_DIRS=../vendor/avisynth/AviSynthPlus-3.6.1/avs_core/include' '-DAviSynth_SHARED_LIBRARY=../vendor/AviSynthPlus_3.6.1_20200619-filesonly/x64/AviSynth.dll' '-DFFMS2_INCLUDE_DIRS=../vendor/ffms2/ffms2-2.23.1-msvc/include' '-DFFMS2_LIBRARIES=../vendor/ffms2/ffms2-2.23.1-msvc/x64/ffms2.lib' '-DwxWidgets_ROOT_DIR=../vendor/wxwidgets' '-DXAUDIO2_REDIST=ON' '-DXAudio2redist_INCLUDE_DIRS=../vendor/xaudio2/build/native/include' '-DXAudio2redist_LIBRARIES=../vendor/xaudio2/build/native/release/lib/x64/xaudio2_9redist.lib' '-DCMAKE_CXX_FLAGS=/DWIN32 /D_WINDOWS /GR /EHsc /DUNICODE /D_UNICODE /MP' '-DCMAKE_C_FLAGS=/DWIN32 /D_WINDOWS /DUNICODE /D_UNICODE /MP' '-DWITH_TEST=ON' ..
+
+    - name: Add msbuild to PATH
+      uses: microsoft/setup-msbuild@v1.0.2
+
+    - name: build
+      run: |
+        Set-Location build-dir
+        MSBuild.exe Aegisub.vcxproj -p:Configuration=Release
+
+    - name: run tests
+      run: |
+        Set-Location build-dir
+        MSBuild.exe test.vcxproj -p:Configuration=Release

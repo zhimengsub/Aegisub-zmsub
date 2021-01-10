@@ -1,4 +1,6 @@
-srcdir="$1"
+if [ -z "$srcdir" ] && [ $# -gt 0 ]; then
+  srcdir=$1
+fi
 
 # If no git repo try to read from the existing git_version.h, for building from tarballs
 if ! test -d "${srcdir}/.git"; then

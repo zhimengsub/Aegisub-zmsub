@@ -116,7 +116,7 @@ PKG_PROG_PKG_CONFIG([pkgconfig_required_version])
 # Developers only
 #################
 AC_MSG_CHECKING([for version])
-. $srcdir/build/version.sh "$srcdir"
+. $srcdir/build/version.sh
 AC_MSG_RESULT([$BUILD_GIT_VERSION_STRING $VERSION_SOURCE])
 
 AC_MSG_CHECKING([for build date])

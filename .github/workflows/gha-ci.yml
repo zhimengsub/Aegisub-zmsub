@@ -42,7 +42,7 @@ jobs:
             git submodule --quiet update vendor/googletest
           else
             #sudo apt-get update && sudo apt-get upgrade -y
-            sudo apt-get install -y ${{ matrix.build_suite }} \
+            sudo apt-get update && sudo apt-get install -y --no-install-recommends ${{ matrix.build_suite }} \
               autopoint build-essential g++ gcc gettext libasound2-dev \
               libass-dev  libffms2-dev libfftw3-dev libfontconfig1-dev   \
               libfribidi-dev libgtest-dev libhunspell-dev libicu-dev libopenal-dev       \

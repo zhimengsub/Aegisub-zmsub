@@ -7,6 +7,7 @@ if [ "$TRAVIS_OS_NAME" = 'linux' ]; then
   sudo rm -rf /usr/local/cmake*
   if [ "$BUILD_SUIT" = 'autotools' ]; then
     if [ ! -z "$WITH_COVERALLS" ]; then
+      sudo pip3 install -U pip
       sudo pip3 install -U cpp-coveralls
     fi
     git submodule --quiet init

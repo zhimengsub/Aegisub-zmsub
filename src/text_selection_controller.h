@@ -36,8 +36,8 @@ class TextSelectionController {
 	agi::signal::Signal<> AnnounceSelectionChanged;
 
 public:
-	void SetSelection(int start, int end);
-	void SetInsertionPoint(int point);
+	void SetSelection(long start, long end);
+	void SetInsertionPoint(long point);
 
 	long GetSelectionStart() const { return selection_start; }
 	long GetSelectionEnd() const { return selection_end; }

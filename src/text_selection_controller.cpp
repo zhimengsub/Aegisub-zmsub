@@ -32,8 +32,8 @@ void TextSelectionController::SetControl(wxTextCtrl* ctrl) {
 	this->ctrl_te = ctrl;
 	this->ctrl_ctl = ctrl;
 	if (ctrl) {
-		ctrl->Bind(wxEVT_KEY_DOWN, &TextSelectionController::UpdateUI, this);
-		ctrl->Bind(wxEVT_LEFT_DOWN, &TextSelectionController::UpdateUI, this);
+		ctrl->Bind(wxEVT_KEY_UP, &TextSelectionController::UpdateUI, this);
+		ctrl->Bind(wxEVT_LEFT_UP, &TextSelectionController::UpdateUI, this);
 	}
 #ifdef WITH_WXSTC
 	use_stc = false;
@@ -56,22 +56,27 @@ TextSelectionController::~TextSelectionController() {
 #endif
 }
 
-#define GET(var, new_value) do { \
-	int tmp = new_value;      \
-	if (tmp != var) {         \
-		var = tmp;            \
-		changed = true;       \
-	}                         \
-} while(false)
-
 void TextSelectionController::UpdateUI(wxEvent& evt) {
+	evt.Skip();
 	if (changing) return;
 
 	bool changed = false;
-	GET(insertion_point, ctrl_te->GetInsertionPoint());
-	long tmp_start, tmp_end;
+	long tmp_insertion, tmp_start, tmp_end;
+	tmp_insertion = ctrl_te->GetInsertionPoint();
 	ctrl_te->GetSelection(&tmp_start, &tmp_end);
-	if (tmp_start != selection_start || tmp_end != selection_end) {
+#ifdef WITH_WXSTC
+	if (!use_stc) {
+#endif
+		// GetSelection returned by wxTextCtrl is the index of Unicode codepoint position
+		// We need to convert it to UTF-8 location
+		tmp_insertion = ctrl_te->GetRange(0, tmp_insertion).utf8_str().length();
+		tmp_start = ctrl_te->GetRange(0, tmp_start).utf8_str().length();
+		tmp_end = ctrl_te->GetRange(0, tmp_end).utf8_str().length();
+#ifdef WITH_WXSTC
+	}
+#endif
+	if (tmp_insertion != insertion_point || tmp_start != selection_start || tmp_end != selection_end) {
+		insertion_point = tmp_insertion;
 		selection_start = tmp_start;
 		selection_end = tmp_end;
 		changed = true;
@@ -79,22 +84,74 @@ void TextSelectionController::UpdateUI(wxEvent& evt) {
 	if (changed) AnnounceSelectionChanged();
 }
 
-void TextSelectionController::SetInsertionPoint(int position) {
+void TextSelectionController::SetInsertionPoint(long position) {
 	changing = true;
 	if (insertion_point != position) {
 		insertion_point = position;
-		if (ctrl_te) ctrl_te->SetInsertionPoint(position);
+		if (ctrl_te) {
+			long tmp_position = 0;
+#ifdef WITH_WXSTC
+			if (use_stc) {
+				tmp_position = position;
+			}
+			else {
+#endif
+				// Convert UTF-8 position to wxTextEdit position
+				long last_position = ctrl_te->GetLastPosition();
+				for (; tmp_position < last_position; ++tmp_position) {
+					if (ctrl_te->GetRange(0, tmp_position).utf8_str().length() >= position) {
+						break;
+					}
+				}
+#ifdef WITH_WXSTC
+			}
+#endif
+			ctrl_te->SetInsertionPoint(tmp_position);
+		}
 	}
 	changing = false;
 	AnnounceSelectionChanged();
 }
 
-void TextSelectionController::SetSelection(int start, int end) {
+void TextSelectionController::SetSelection(long start, long end) {
 	changing = true;
 	if (selection_start != start || selection_end != end) {
 		selection_start = start;
 		selection_end = end;
-		if (ctrl_te) ctrl_te->SetSelection(start, end);
+		if (ctrl_te) {
+			long tmp_start = -1, tmp_end = -1;
+#ifdef WITH_WXSTC
+			if (use_stc) {
+				tmp_start = start;
+				tmp_end = end;
+			}
+			else {
+#endif
+				// Convert UTF-8 position to wxTextEdit position
+				long last_position = ctrl_te->GetLastPosition();
+				for (long pos = 0; pos < last_position; ++pos) {
+					size_t pos_utf8 = ctrl_te->GetRange(0, pos).utf8_str().length();
+					if (tmp_start == -1 && pos_utf8 >= start) {
+						tmp_start = pos;
+					}
+					if (tmp_end == -1 && pos_utf8 >= end) {
+						tmp_end = pos;
+					}
+					if (tmp_start != -1 && tmp_end != -1) {
+						break;
+					}
+				}
+				if (tmp_start == -1) {
+					tmp_start = last_position;
+				}
+				if (tmp_end == -1) {
+					tmp_end = last_position;
+				}
+#ifdef WITH_WXSTC
+			}
+#endif
+			ctrl_te->SetSelection(tmp_start, tmp_end);
+		}
 	}
 	changing = false;
 	AnnounceSelectionChanged();

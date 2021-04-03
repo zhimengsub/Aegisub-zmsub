@@ -478,6 +478,8 @@ AS_IF([test x$with_agi_cv_wxstc = xno], AC_MSG_FAILURE([wxWidgets StyledTextCtrl
 AS_IF([test x$enable_debug = xyes],
       [AS_IF([$WX_CONFIG_PATH --debug],[AC_CXX_FLAG([-D_DEBUG])])])
 
+AC_DEFINE(WITH_WXSTC, 1, [Enable wxStyledTextCtrl Support])
+
 ############################
 # Precompiled Header Support
 # Only works with gcc! (and clang)

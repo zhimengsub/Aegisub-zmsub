@@ -423,7 +423,6 @@ add_executable(Aegisub WIN32
     src/string_codec.cpp
     src/subs_controller.cpp
     src/subs_edit_box.cpp
-    src/subs_edit_ctrl.cpp
     src/subs_preview.cpp
     src/subtitles_provider.cpp
     src/subtitles_provider_libass.cpp
@@ -522,6 +521,11 @@ target_link_libraries(libaegisub PRIVATE "ICU::uc")
 target_link_libraries(Aegisub PRIVATE "ICU::uc")
 
 find_package(wxWidgets REQUIRED adv base core gl stc xml)
+option(WITH_WXSTC "Enable wxStyledTextCtrl support" ON)
+if(WITH_WXSTC)
+    target_compile_definitions(Aegisub PRIVATE "WITH_WXSTC")
+    target_sources(Aegisub PRIVATE src/subs_edit_ctrl.cpp)
+endif()
 include(${wxWidgets_USE_FILE})
 target_link_libraries(Aegisub LINK_PRIVATE ${wxWidgets_LIBRARIES})
 
@@ -776,6 +780,7 @@ message(STATUS "\n"
     "  FFTW3:                 ${WITH_FFTW3}\n"
     "  Hunspell:              ${WITH_HUNSPELL}\n"
     "  uchardet:              ${WITH_UCHARDET}\n"
+    "  wxStyledTextCtrl:      ${WITH_WXSTC}\n"
     "  LuaJIT:                bundled\n"
     "\n"
     "Options\n"

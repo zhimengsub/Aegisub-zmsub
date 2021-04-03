@@ -196,7 +196,11 @@ class SubsEditBox final : public wxPanel {
 
 	void SetDurationField();
 
-	SubsTextEditCtrl *edit_ctrl;
+#ifdef WITH_WXSTC
+	const bool use_stc;
+	SubsTextEditCtrl *edit_ctrl_stc;
+#endif
+	wxTextCtrl* edit_ctrl_tc;
 	wxTextCtrl *secondary_editor;
 
 public:

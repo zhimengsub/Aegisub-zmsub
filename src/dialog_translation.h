@@ -52,7 +52,11 @@ class DialogTranslation final : public wxDialog {
 
 	wxStaticText *line_number_display;
 	wxStyledTextCtrl *original_text;
-	SubsTextEditCtrl *translated_text;
+#ifdef WITH_WXSTC
+	const bool use_stc;
+	SubsTextEditCtrl *translated_text_stc;
+#endif
+	wxTextCtrl* translated_text_tc;
 	wxCheckBox *seek_video;
 
 	std::unique_ptr<PersistLocation> persist;

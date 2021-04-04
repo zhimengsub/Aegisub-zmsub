@@ -207,10 +207,17 @@ void Interface(wxTreebook *book, Preferences *parent) {
 	auto p = new OptionPage(book, parent, _("Interface"));
 
 	auto edit_box = p->PageSizer(_("Edit Box"));
+#ifdef WITH_WXSTC
 	p->OptionAdd(edit_box, _("Use styled edit box"), "Subtitle/Use STC");
 	p->OptionAdd(edit_box, _("Enable call tips"), "App/Call Tips");
+#endif
 	p->OptionAdd(edit_box, _("Overwrite in time boxes"), "Subtitle/Time Edit/Insert Mode");
+#ifdef WITH_WXSTC
 	p->OptionAdd(edit_box, _("Enable syntax highlighting"), "Subtitle/Highlight/Syntax");
+#else
+	// Pad number of options to even
+	p->CellSkip(edit_box);
+#endif
 	p->OptionBrowse(edit_box, _("Dictionaries path"), "Path/Dictionary");
 	p->OptionFont(edit_box, "Subtitle/Edit Box/");
 

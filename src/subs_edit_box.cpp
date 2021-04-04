@@ -52,6 +52,7 @@
 #include "text_selection_controller.h"
 #include "timeedit_ctrl.h"
 #include "tooltip_manager.h"
+#include "utils.h"
 #include "validators.h"
 
 #include <libaegisub/character_count.h>
@@ -303,6 +304,23 @@ SubsEditBox::SubsEditBox(wxWindow *parent, agi::Context *context)
 #ifdef WITH_WXSTC
 	}
 #endif
+
+	// Set the font of edit boxes. See also SubsTextEditCtrl::SetStyles
+	// TODO: This only sets the font once. We should use OPT_SUB("Subtitle/Edit Box/Font Face") OPT_SUB("Subtitle/Edit Box/Font Size") instead
+	wxFont font = wxSystemSettings::GetFont(wxSYS_DEFAULT_GUI_FONT);
+	font.SetEncoding(wxFONTENCODING_DEFAULT); // this solves problems with some fonts not working properly
+	wxString fontname = FontFace("Subtitle/Edit Box");
+	if (!fontname.empty()) font.SetFaceName(fontname);
+	font.SetPointSize(OPT_GET("Subtitle/Edit Box/Font Size")->GetInt());
+	secondary_editor->SetFont(font);
+#ifdef WITH_WXSTC
+	if (!use_stc) {
+#endif
+		edit_ctrl_tc->SetFont(font);
+#ifdef WITH_WXSTC
+	}
+#endif
+
 
 	bool show_original = OPT_GET("Subtitle/Show Original")->GetBool();
 	if (show_original) {

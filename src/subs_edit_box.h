@@ -43,7 +43,7 @@ namespace agi { struct Context; }
 namespace agi { class Time; }
 class AssDialogue;
 class AssStyle;
-class SubsTextEditCtrl;
+class SubsStyledTextEditCtrl;
 class TimeEdit;
 class wxButton;
 class wxCheckBox;
@@ -201,7 +201,7 @@ class SubsEditBox final : public wxPanel {
 
 #ifdef WITH_WXSTC
 	const bool use_stc;
-	SubsTextEditCtrl *edit_ctrl_stc;
+	SubsStyledTextEditCtrl *edit_ctrl_stc;
 #endif
 	wxTextCtrl* edit_ctrl_tc;
 	wxTextCtrl *secondary_editor;

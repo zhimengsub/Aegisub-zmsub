@@ -261,6 +261,7 @@ void Interface_Colours(wxTreebook *book, Preferences *parent) {
 	auto syntax = p->PageSizer(_("Syntax Highlighting"));
 	p->OptionAdd(syntax, _("Background"), "Colour/Subtitle/Background");
 	p->OptionAdd(syntax, _("Normal"), "Colour/Subtitle/Syntax/Normal");
+#ifdef WITH_WXSTC
 	p->OptionAdd(syntax, _("Comments"), "Colour/Subtitle/Syntax/Comment");
 	p->OptionAdd(syntax, _("Drawings"), "Colour/Subtitle/Syntax/Drawing");
 	p->OptionAdd(syntax, _("Brackets"), "Colour/Subtitle/Syntax/Brackets");
@@ -272,6 +273,7 @@ void Interface_Colours(wxTreebook *book, Preferences *parent) {
 	p->OptionAdd(syntax, _("Line Break"), "Colour/Subtitle/Syntax/Line Break");
 	p->OptionAdd(syntax, _("Karaoke templates"), "Colour/Subtitle/Syntax/Karaoke Template");
 	p->OptionAdd(syntax, _("Karaoke variables"), "Colour/Subtitle/Syntax/Karaoke Variable");
+#endif
 
 	p->sizer = new wxBoxSizer(wxVERTICAL);
 	main_sizer->AddSpacer(5);

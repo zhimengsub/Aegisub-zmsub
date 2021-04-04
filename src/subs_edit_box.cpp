@@ -49,6 +49,9 @@
 #include "placeholder_ctrl.h"
 #include "selection_controller.h"
 #include "subs_edit_ctrl.h"
+#ifdef WITH_WXSTC
+#include "subs_edit_ctrl_stc.h"
+#endif
 #include "text_selection_controller.h"
 #include "timeedit_ctrl.h"
 #include "tooltip_manager.h"
@@ -216,12 +219,12 @@ SubsEditBox::SubsEditBox(wxWindow *parent, agi::Context *context)
 	// Text editor
 #ifdef WITH_WXSTC
 	if (use_stc) {
-		edit_ctrl_stc = new SubsTextEditCtrl(this, wxDefaultSize, wxBORDER_SUNKEN, c);
+		edit_ctrl_stc = new SubsStyledTextEditCtrl(this, wxDefaultSize, wxBORDER_SUNKEN, c);
 		edit_ctrl_stc->Bind(wxEVT_CHAR_HOOK, &SubsEditBox::OnKeyDown, this);
 	}
 	else {
 #endif
-		edit_ctrl_tc = new wxTextCtrl(this, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, wxBORDER_SUNKEN | wxTE_MULTILINE);
+		edit_ctrl_tc = new SubsTextEditCtrl(this, wxDefaultSize, wxBORDER_SUNKEN | wxTE_MULTILINE, c);
 		edit_ctrl_tc->Bind(wxEVT_CHAR_HOOK, &SubsEditBox::OnKeyDown, this);
 #ifdef WITH_WXSTC
 	}
@@ -313,14 +316,6 @@ SubsEditBox::SubsEditBox(wxWindow *parent, agi::Context *context)
 	if (!fontname.empty()) font.SetFaceName(fontname);
 	font.SetPointSize(OPT_GET("Subtitle/Edit Box/Font Size")->GetInt());
 	secondary_editor->SetFont(font);
-#ifdef WITH_WXSTC
-	if (!use_stc) {
-#endif
-		edit_ctrl_tc->SetFont(font);
-#ifdef WITH_WXSTC
-	}
-#endif
-
 
 	bool show_original = OPT_GET("Subtitle/Show Original")->GetBool();
 	if (show_original) {

@@ -423,6 +423,7 @@ add_executable(Aegisub WIN32
     src/string_codec.cpp
     src/subs_controller.cpp
     src/subs_edit_box.cpp
+    src/subs_edit_ctrl.cpp
     src/subs_preview.cpp
     src/subtitles_provider.cpp
     src/subtitles_provider_libass.cpp
@@ -524,7 +525,7 @@ find_package(wxWidgets REQUIRED adv base core gl stc xml)
 option(WITH_WXSTC "Enable wxStyledTextCtrl support" ON)
 if(WITH_WXSTC)
     target_compile_definitions(Aegisub PRIVATE "WITH_WXSTC")
-    target_sources(Aegisub PRIVATE src/subs_edit_ctrl.cpp)
+    target_sources(Aegisub PRIVATE src/subs_edit_ctrl_stc.cpp)
 endif()
 include(${wxWidgets_USE_FILE})
 target_link_libraries(Aegisub LINK_PRIVATE ${wxWidgets_LIBRARIES})

@@ -25,7 +25,7 @@ namespace agi { struct Context; }
 class AssDialogue;
 class AssDialogueBlock;
 class PersistLocation;
-class SubsTextEditCtrl;
+class SubsStyledTextEditCtrl;
 class wxCheckBox;
 class wxStaticText;
 class wxStyledTextCtrl;
@@ -54,7 +54,7 @@ class DialogTranslation final : public wxDialog {
 	wxStyledTextCtrl *original_text;
 #ifdef WITH_WXSTC
 	const bool use_stc;
-	SubsTextEditCtrl *translated_text_stc;
+	SubsStyledTextEditCtrl *translated_text_stc;
 #endif
 	wxTextCtrl* translated_text_tc;
 	wxCheckBox *seek_video;

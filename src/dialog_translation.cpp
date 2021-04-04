@@ -34,7 +34,7 @@
 #include "options.h"
 #include "persist_location.h"
 #include "project.h"
-#include "subs_edit_ctrl.h"
+#include "subs_edit_ctrl_stc.h"
 #include "selection_controller.h"
 #include "video_controller.h"
 
@@ -95,7 +95,7 @@ DialogTranslation::DialogTranslation(agi::Context *c)
 	}
 
 	{
-		translated_text_stc = new SubsTextEditCtrl(this, wxSize(320, 80), 0, nullptr);
+		translated_text_stc = new SubsStyledTextEditCtrl(this, wxSize(320, 80), 0, nullptr);
 		translated_text_stc->SetWrapMode(wxSTC_WRAP_WORD);
 		translated_text_stc->SetMarginWidth(1, 0);
 		translated_text_stc->SetFocus();

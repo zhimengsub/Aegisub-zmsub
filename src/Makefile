@@ -86,6 +86,7 @@ src_OBJ := \
 	$(d)subs_controller.o \
 	$(d)subs_edit_box.o \
 	$(d)subs_edit_ctrl.o \
+	$(d)subs_edit_ctrl_stc.o \
 	$(d)subs_preview.o \
 	$(d)subtitles_provider.o \
 	$(d)subtitles_provider_libass.o \

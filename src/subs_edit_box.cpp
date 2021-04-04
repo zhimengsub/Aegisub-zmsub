@@ -230,7 +230,7 @@ SubsEditBox::SubsEditBox(wxWindow *parent, agi::Context *context)
 	}
 #endif
 
-	secondary_editor = new wxTextCtrl(this, -1, "", wxDefaultPosition, wxDefaultSize, wxBORDER_SUNKEN | wxTE_MULTILINE | wxTE_READONLY);
+	secondary_editor = new SubsTextEditCtrl(this, wxDefaultSize, wxBORDER_SUNKEN | wxTE_MULTILINE | wxTE_READONLY, nullptr);
 #ifdef WITH_WXSTC
 	if (use_stc) {
 		// Here we use the height of secondary_editor as the initial size of edit_ctrl_stc,
@@ -307,15 +307,6 @@ SubsEditBox::SubsEditBox(wxWindow *parent, agi::Context *context)
 #ifdef WITH_WXSTC
 	}
 #endif
-
-	// Set the font of edit boxes. See also SubsTextEditCtrl::SetStyles
-	// TODO: This only sets the font once. We should use OPT_SUB("Subtitle/Edit Box/Font Face") OPT_SUB("Subtitle/Edit Box/Font Size") instead
-	wxFont font = wxSystemSettings::GetFont(wxSYS_DEFAULT_GUI_FONT);
-	font.SetEncoding(wxFONTENCODING_DEFAULT); // this solves problems with some fonts not working properly
-	wxString fontname = FontFace("Subtitle/Edit Box");
-	if (!fontname.empty()) font.SetFaceName(fontname);
-	font.SetPointSize(OPT_GET("Subtitle/Edit Box/Font Size")->GetInt());
-	secondary_editor->SetFont(font);
 
 	bool show_original = OPT_GET("Subtitle/Show Original")->GetBool();
 	if (show_original) {

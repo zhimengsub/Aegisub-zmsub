@@ -48,8 +48,8 @@ TextSelectionController::~TextSelectionController() {
 		}
 		else {
 #endif
-			ctrl_ctl->Unbind(wxEVT_KEY_DOWN, &TextSelectionController::UpdateUI, this);
-			ctrl_ctl->Unbind(wxEVT_LEFT_DOWN, &TextSelectionController::UpdateUI, this);
+			ctrl_ctl->Unbind(wxEVT_KEY_UP, &TextSelectionController::UpdateUI, this);
+			ctrl_ctl->Unbind(wxEVT_LEFT_UP, &TextSelectionController::UpdateUI, this);
 #ifdef WITH_WXSTC
 		}
 	}

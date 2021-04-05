@@ -29,32 +29,12 @@
 
 #include "subs_edit_ctrl.h"
 
-#include "ass_dialogue.h"
 #include "command/command.h"
 #include "compat.h"
-#include "format.h"
 #include "options.h"
-#include "include/aegisub/context.h"
-#include "include/aegisub/spellchecker.h"
-#include "selection_controller.h"
-#include "text_selection_controller.h"
-#include "thesaurus.h"
 #include "utils.h"
 
-#include <libaegisub/ass/dialogue_parser.h>
-#include <libaegisub/calltip_provider.h>
-#include <libaegisub/character_count.h>
-#include <libaegisub/make_unique.h>
-#include <libaegisub/spellchecker.h>
-
-#include <boost/algorithm/string/predicate.hpp>
 #include <boost/algorithm/string/replace.hpp>
-#include <functional>
-
-#include <wx/clipbrd.h>
-#include <wx/intl.h>
-#include <wx/menu.h>
-#include <wx/settings.h>
 
 // Maximum number of languages (locales)
 // It should be above 100 (at least 242) and probably not more than 1000
@@ -83,7 +63,7 @@ enum {
 };
 
 SubsTextEditCtrl::SubsTextEditCtrl(wxWindow* parent, wxSize wsize, long style, agi::Context* context)
-	: wxTextCtrl(parent, wxID_ANY, wxEmptyString, wxDefaultPosition, wsize, style)
+	: wxTextCtrl(parent, wxID_ANY, wxEmptyString, wxDefaultPosition, wsize, style | wxTE_MULTILINE)
 	, context(context)
 {
 	SetStyles();

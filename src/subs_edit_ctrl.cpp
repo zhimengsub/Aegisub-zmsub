@@ -159,6 +159,12 @@ void SubsTextEditCtrl::Paste() {
 }
 
 void SubsTextEditCtrl::OnContextMenu(wxContextMenuEvent& event) {
+	if (wxGetKeyState(WXK_SHIFT)) {
+		// Some OS provide extra actions in context menu like RTL display
+		// Allow user to shift right click to access the native context menu
+		event.Skip();
+		return;
+	}
 	wxMenu menu;
 
 	// Standard actions

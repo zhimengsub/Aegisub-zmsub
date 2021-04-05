@@ -140,6 +140,7 @@ jobs:
         vcpkg.exe install --triplet x64-windows avisynthplus boost-asio boost-container boost-crc boost-filesystem boost-flyweight boost-gil boost-interprocess 'boost-locale[icu]' 'boost-regex[icu]' boost-scope-exit boost-thread fftw3 hunspell icu libass libiconv uchardet wxwidgets gtest
         Remove-Item –Path C:\vcpkg\installed\x64-windows\debug –Recurse -ErrorAction Continue
         Remove-Item –Path C:\vcpkg\installed\x64-windows\share\expat\expat-debug.cmake -ErrorAction Continue
+        Remove-Item –Path C:\vcpkg\installed\x64-windows\share\GTest\GTestTargets-debug.cmake -ErrorAction Continue
         Remove-Item –Path C:\vcpkg\installed\x64-windows\share\liblzma\liblzmaTargets-debug.cmake -ErrorAction Continue
         Remove-Item –Path C:\vcpkg\installed\x64-windows\share\libpng\libpng-targets-debug.cmake -ErrorAction Continue
 

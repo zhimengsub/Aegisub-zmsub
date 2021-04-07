@@ -27,6 +27,9 @@ last_svn_revision=6962
 last_svn_hash="16cd907fe7482cb54a7374cd28b8501f138116be"
 
 git_revision=$(expr $last_svn_revision + $(git log --pretty=oneline $last_svn_hash..HEAD 2>/dev/null | wc -l))
+if [ "x$git_revision" = x6962 ]; then
+  git_revision=0
+fi
 git_version_str=$(git describe --exact-match 2> /dev/null)
 installer_version='0.0.0'
 resource_version='0, 0, 0'

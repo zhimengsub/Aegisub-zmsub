@@ -410,6 +410,7 @@ std::string DialogStyleEditor::GetStyleName() const {
 void DialogStyleEditor::Apply(bool apply, bool close) {
 	if (apply) {
 		std::string new_name = from_wx(StyleName->GetValue());
+		std::replace(new_name.begin(), new_name.end(), ',', ';');
 
 		// Get list of existing styles
 		std::vector<std::string> styles = store ? store->GetNames() : c->ass->GetStyles();

@@ -194,11 +194,8 @@ jobs:
         Copy-Item -Path vendor\aegisub332\dictionaries,vendor\aegisub332\licenses,vendor\aegisub332\locale,vendor\aegisub332\AssDraw3.exe,vendor\aegisub332\AssDraw3.chm,vendor\aegisub332\DirectShowSource.dll -Destination build-dir\Release -Recurse
         Copy-Item -Path vendor\aegisub9185\csri -Destination build-dir\Release -Recurse
 
-        Set-Location build-dir\Release
-        7z.exe a ../aegisub-win64-cmake-GHA.zip .\* -mmt1 -mx9
-
     - name: upload artifact
       uses: actions/upload-artifact@v2
       with:
         name: aegisub-win64-cmake-GHA
-        path: build-dir/aegisub-win64-cmake-GHA.zip
+        path: build-dir/Release

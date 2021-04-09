@@ -34,6 +34,11 @@
 
  */
 
+// WARNING: This library is patched by Aegisub to NOT shift timestamps. The modified parts are included in #ifdef AEGISUB blocks
+// We are only using this library to extract subtitles from MKV files. The patches may break reading other tracks.
+// Do NOT use the modified version to read non-subtitle tracks!
+#define AEGISUB
+
 #include <stdlib.h>
 #include <stdarg.h>
 #include <stdio.h>
@@ -2720,12 +2725,29 @@ segment:
   if (!mf->seen.Cluster)
     mf->pCluster = mf->pSegmentTop;
 
+#ifdef AEGISUB
+  // In a subtitle-only MKV, the start time of first block is meaningful. Therefore do not shift offset=(-firstTimecode) globally
+  // By setting firstTimecode to 0, timestamps will not be shifted during parsing.
+  int subtitle_only = 1;
+  for (unsigned tracknum=0;tracknum<mf->nTracks;++tracknum)
+    if (mf->Tracks[tracknum]->Type != TT_SUB) {
+      subtitle_only = 0;
+      break;
+    }
+  if (subtitle_only) {
+    mf->firstTimecode = 0;
+  }
+  else {
+#endif
   adjust = mf->firstTimecode * mf->Seg.TimecodeScale;
 
   for (i=0;i<mf->nChapters;++i)
     fixupChapter(adjust, &mf->Chapters[i]);
 
   fixupCues(mf);
+#ifdef AEGISUB
+  }
+#endif
 
   // release extra memory
   ARELEASE(mf,mf,Tracks);

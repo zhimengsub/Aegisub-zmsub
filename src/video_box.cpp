@@ -131,8 +131,8 @@ void VideoBox::UpdateTimeBoxes() {
 		VideoSubsPos->SetValue("");
 	else {
 		VideoSubsPos->SetValue(fmt_wx(
-			"%+dms; %+dms",
+			"%+dms; %+dms; %dms",
 			time - active_line->Start,
-			time - active_line->End));
+			time - active_line->End, active_line->End - active_line->Start));
 	}
 }

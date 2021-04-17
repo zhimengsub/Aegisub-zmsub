@@ -44,7 +44,7 @@ jobs:
             pushd /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/
             patch -p1 << EOF
           diff --git a/Formula/wxmac.rb b/Formula/wxmac.rb
-          index 60dd92c233..80ac488152 100644
+          index 60dd92c233..434fb943ee 100644
           --- a/Formula/wxmac.rb
           +++ b/Formula/wxmac.rb
           @@ -1,10 +1,9 @@
@@ -53,14 +53,22 @@ jobs:
              homepage "https://www.wxwidgets.org"
           -  url "https://github.com/wxWidgets/wxWidgets/releases/download/v3.0.5.1/wxWidgets-3.0.5.1.tar.bz2"
           -  sha256 "440f6e73cf5afb2cbf9af10cec8da6cdd3d3998d527598a53db87099524ac807"
-          +  url "https://github.com/wxWidgets/wxWidgets/releases/download/v3.1.4/wxWidgets-3.1.4.tar.bz2"
-          +  sha256 "3ca3a19a14b407d0cdda507a7930c2e84ae1c8e74f946e0144d2fa7d881f1a94"
+          +  url "https://github.com/wxWidgets/wxWidgets/releases/download/v3.1.5/wxWidgets-3.1.5.tar.bz2"
+          +  sha256 "d7b3666de33aa5c10ea41bb9405c40326e1aeb74ee725bb88f90f1d50270a224"
              license "wxWindows"
           -  revision 1
              head "https://github.com/wxWidgets/wxWidgets.git"
-
+           
              livecheck do
-          @@ -52,8 +51,8 @@ class Wxmac < Formula
+          @@ -40,7 +39,6 @@ class Wxmac < Formula
+                 "--enable-std_string",
+                 "--enable-svg",
+                 "--enable-unicode",
+          -      "--enable-webkit",
+                 "--enable-webview",
+                 "--with-expat",
+                 "--with-libjpeg",
+          @@ -52,8 +50,8 @@ class Wxmac < Formula
                  "--disable-precomp-headers",
                  # This is the default option, but be explicit
                  "--disable-monolithic",
@@ -69,7 +77,7 @@ jobs:
           +      # Set with-macosx-version-min to 10.11 if you are building package for distribution
           +      "--with-macosx-version-min=10.11",
                ]
-
+           
                system "./configure", *args
           EOF
             popd

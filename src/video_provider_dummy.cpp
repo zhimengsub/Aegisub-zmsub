@@ -67,8 +67,8 @@ DummyVideoProvider::DummyVideoProvider(double fps, int frames, int width, int he
 	auto dst = interleaved_view(width, height, (bgra8_pixel_t*)data.data(), 4 * width);
 
 	bgra8_pixel_t colors[2] = {
-		bgra8_pixel_t(blue, green, red, 0),
-		bgra8_pixel_t(blue, green, red, 0)
+		bgra8_pixel_t(blue, green, red, 0xff),
+		bgra8_pixel_t(blue, green, red, 0xff)
 	};
 
 	if (pattern) {
@@ -78,7 +78,7 @@ DummyVideoProvider::DummyVideoProvider(double fps, int frames, int width, int he
 		l += 24;
 		if (l < 24) l -= 48;
 		hsl_to_rgb(h, s, l, &red, &blue, &green);
-		colors[1] = bgra8_pixel_t(blue, green, red, 0);
+		colors[1] = bgra8_pixel_t(blue, green, red, 0xff);
 
 		// Divide into a 8x8 grid and use light colours when row % 2 != col % 2
 		auto out = dst.begin();

@@ -1,4 +1,4 @@
-﻿-- This script is given to the public domain.
+-- This script is given to the public domain.
 -- You can use and modify the effect freely, also without credit, although I would appreciate some.
 
 include("karaskel.lua")

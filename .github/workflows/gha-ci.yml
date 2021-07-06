@@ -41,48 +41,6 @@ jobs:
             # Use bundled googletest
             git submodule --quiet init
             git submodule --quiet update vendor/googletest
-            # Upgrade wxMac to 3.1
-            pushd /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/
-            patch -p1 << EOF
-          diff --git a/Formula/wxmac.rb b/Formula/wxmac.rb
-          index 4da1be31e8..80b587150b 100644
-          --- a/Formula/wxmac.rb
-          +++ b/Formula/wxmac.rb
-          @@ -1,10 +1,9 @@
-           class Wxmac < Formula
-             desc "Cross-platform C++ GUI toolkit (wxWidgets for macOS)"
-             homepage "https://www.wxwidgets.org"
-          -  url "https://github.com/wxWidgets/wxWidgets/releases/download/v3.0.5.1/wxWidgets-3.0.5.1.tar.bz2"
-          -  sha256 "440f6e73cf5afb2cbf9af10cec8da6cdd3d3998d527598a53db87099524ac807"
-          +  url "https://github.com/wxWidgets/wxWidgets/releases/download/v3.1.5/wxWidgets-3.1.5.tar.bz2"
-          +  sha256 "d7b3666de33aa5c10ea41bb9405c40326e1aeb74ee725bb88f90f1d50270a224"
-             license "wxWindows"
-          -  revision 1
-             head "https://github.com/wxWidgets/wxWidgets.git"
-           
-             livecheck do
-          @@ -43,7 +42,6 @@ class Wxmac < Formula
-                 "--enable-std_string",
-                 "--enable-svg",
-                 "--enable-unicode",
-          -      "--enable-webkit",
-                 "--enable-webview",
-                 "--with-expat",
-                 "--with-libjpeg",
-          @@ -57,8 +55,8 @@ class Wxmac < Formula
-               ]
-           
-               on_macos do
-          -      # Set with-macosx-version-min to avoid configure defaulting to 10.5
-          -      args << "--with-macosx-version-min=#{MacOS.version}"
-          +      # Set with-macosx-version-min to 10.11 if you are building package for distribution
-          +      args << "--with-macosx-version-min=10.11"
-                 args << "--with-osx_cocoa"
-               end
-           
-          EOF
-            popd
-            brew reinstall --build-from-source wxmac
           else
             #sudo apt-get update && sudo apt-get upgrade -y
             sudo apt-get update && sudo apt-get install -y --no-install-recommends ${{ matrix.build_suite }} \

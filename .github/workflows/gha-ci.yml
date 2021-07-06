@@ -35,6 +35,7 @@ jobs:
             # freetype, gettext, icuc4 and autoconf are preinstalled
             # and `brew install` fails if a non-uptodate version is already installed
             #brew upgrade autoconf freetype gettext icu4c
+            brew analytics off  # https://github.com/Homebrew/brew/issues/142 https://github.com/Homebrew/brew/pull/6745
             brew install automake boost ffmpeg ffms2 fftw fribidi libass \
                          lua luarocks m4 wxmac hunspell uchardet
             # Use bundled googletest
@@ -189,6 +190,7 @@ jobs:
         7z.exe x vendor/ffms2-2.23.1-msvc.7z -ovendor/ffms2
         7z.exe x vendor/microsoft.xaudio2.redist.1.2.6.nupkg -ovendor/xaudio2
 
+        Set-Content -Value "" -Path "C:\vcpkg\vcpkg.disable-metrics" -Force
         vcpkg.exe install --triplet x64-windows avisynthplus boost-asio boost-container boost-crc boost-filesystem boost-flyweight boost-gil boost-interprocess 'boost-locale[icu]' 'boost-regex[icu]' boost-scope-exit boost-thread fftw3 hunspell icu libass libiconv uchardet wxwidgets gtest
         Remove-Item –Path C:\vcpkg\installed\x64-windows\debug –Recurse -ErrorAction Continue
         Remove-Item –Path C:\vcpkg\installed\x64-windows\share\expat\expat-debug.cmake -ErrorAction Continue

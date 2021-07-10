@@ -29,7 +29,7 @@
 
 #include <boost/range/algorithm.hpp>
 
-#include <hunspell/hunspell.hxx>
+#include <hunspell.hxx>
 
 HunspellSpellChecker::HunspellSpellChecker()
 : lang_listener(OPT_SUB("Tool/Spell Checker/Language", &HunspellSpellChecker::OnLanguageChanged, this))

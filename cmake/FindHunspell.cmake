@@ -17,7 +17,7 @@ find_package(PkgConfig QUIET)
 
 pkg_check_modules(HUNSPELL_PKG QUIET hunspell)
 
-FIND_PATH(HUNSPELL_INCLUDE_DIR NAMES hunspell.h
+FIND_PATH(HUNSPELL_INCLUDE_DIR NAMES hunspell.hxx
   PATHS
     /usr/local/include
     /usr/include

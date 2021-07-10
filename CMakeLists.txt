@@ -517,9 +517,9 @@ target_link_libraries(Aegisub PRIVATE "OpenGL::GL")
 find_package(Iconv REQUIRED)
 target_link_libraries(libaegisub PRIVATE "Iconv::Iconv")
 
-find_package(ICU REQUIRED uc)
+find_package(ICU REQUIRED uc in)
 target_link_libraries(libaegisub PRIVATE "ICU::uc")
-target_link_libraries(Aegisub PRIVATE "ICU::uc")
+target_link_libraries(Aegisub PRIVATE "ICU::uc" "ICU::in")
 
 find_package(wxWidgets REQUIRED adv base core gl stc xml)
 option(WITH_WXSTC "Enable wxStyledTextCtrl support" ON)

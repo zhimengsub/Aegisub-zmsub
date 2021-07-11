@@ -135,33 +135,32 @@ jobs:
       uses: actions/checkout@v2
 
     - name: cache vcpkg packages
-      uses: actions/cache@v2
+      uses: pat-s/always-upload-cache@v2
       with:
-        path: C:\vcpkg\installed
-        key: vcpkg-installed-x64-windows
+        path: C:\Users\runneradmin\AppData\Local\vcpkg\archives
+        key: vcpkg-archives-${{ github.run_id }}
+        restore-keys: vcpkg-archives-
 
     - name: install deps
       run: |
         Invoke-WebRequest -Uri https://github.com/FFMS/ffms2/releases/download/2.23/ffms2-2.23.1-msvc.7z -OutFile vendor/ffms2-2.23.1-msvc.7z
-        Invoke-WebRequest -Uri https://globalcdn.nuget.org/packages/microsoft.xaudio2.redist.1.2.6.nupkg -OutFile vendor/microsoft.xaudio2.redist.1.2.6.nupkg
 
         7z.exe x vendor/ffms2-2.23.1-msvc.7z -ovendor/ffms2
-        7z.exe x vendor/microsoft.xaudio2.redist.1.2.6.nupkg -ovendor/xaudio2
 
         Set-Content -Value "" -Path "C:\vcpkg\vcpkg.disable-metrics" -Force
-        vcpkg.exe install --triplet x64-windows avisynthplus boost-asio boost-container boost-crc boost-filesystem boost-flyweight boost-gil boost-interprocess 'boost-locale[icu]' 'boost-regex[icu]' boost-scope-exit boost-thread fftw3 hunspell icu libass libiconv uchardet wxwidgets gtest
-        Remove-Item –Path C:\vcpkg\installed\x64-windows\debug –Recurse -ErrorAction Continue
-        Remove-Item –Path C:\vcpkg\installed\x64-windows\share\expat\expat-debug.cmake -ErrorAction Continue
-        Remove-Item –Path C:\vcpkg\installed\x64-windows\share\GTest\GTestTargets-debug.cmake -ErrorAction Continue
-        Remove-Item –Path C:\vcpkg\installed\x64-windows\share\liblzma\liblzmaTargets-debug.cmake -ErrorAction Continue
-        Remove-Item –Path C:\vcpkg\installed\x64-windows\share\libpng\libpng-targets-debug.cmake -ErrorAction Continue
+        vcpkg.exe install --triplet x64-windows avisynthplus boost-asio boost-container boost-crc boost-filesystem boost-flyweight boost-gil boost-interprocess 'boost-locale[icu]' 'boost-regex[icu]' boost-scope-exit boost-thread fftw3 hunspell icu libass libiconv uchardet wxwidgets xaudio2redist gtest
+        Remove-Item –Path C:\vcpkg\installed\x64-windows\debug –Recurse
+        Remove-Item –Path C:\vcpkg\installed\x64-windows\share\expat\expat-debug.cmake
+        Remove-Item –Path C:\vcpkg\installed\x64-windows\share\GTest\GTestTargets-debug.cmake
+        Remove-Item –Path C:\vcpkg\installed\x64-windows\share\liblzma\liblzmaTargets-debug.cmake
+        Remove-Item –Path C:\vcpkg\installed\x64-windows\share\libpng\libpng-targets-debug.cmake
 
     - name: configure
       run: |
         bash.exe build/version.sh .
         New-Item -Path build-dir -ItemType directory
         Set-Location build-dir
-        cmake.exe '-DCMAKE_TOOLCHAIN_FILE=C:/vcpkg/scripts/buildsystems/vcpkg.cmake' '-DAviSynth_SHARED_LIBRARY=C:/vcpkg/installed/x64-windows/bin/AviSynth.dll' '-DFFMS2_INCLUDE_DIRS=../vendor/ffms2/ffms2-2.23.1-msvc/include' '-DFFMS2_LIBRARIES=../vendor/ffms2/ffms2-2.23.1-msvc/x64/ffms2.lib' '-DXAUDIO2_REDIST=ON' '-DXAudio2redist_INCLUDE_DIRS=../vendor/xaudio2/build/native/include' '-DXAudio2redist_LIBRARIES=../vendor/xaudio2/build/native/release/lib/x64/xaudio2_9redist.lib' '-DCMAKE_CXX_FLAGS=/DWIN32 /D_WINDOWS /GR /EHsc /DUNICODE /D_UNICODE /MP' '-DCMAKE_C_FLAGS=/DWIN32 /D_WINDOWS /DUNICODE /D_UNICODE /MP' '-DWITH_TEST=ON' ..
+        cmake.exe '-DCMAKE_TOOLCHAIN_FILE=C:/vcpkg/scripts/buildsystems/vcpkg.cmake' '-DFFMS2_INCLUDE_DIRS=../vendor/ffms2/ffms2-2.23.1-msvc/include' '-DFFMS2_LIBRARIES=../vendor/ffms2/ffms2-2.23.1-msvc/x64/ffms2.lib' '-DXAUDIO2_REDIST=ON' '-DCMAKE_CXX_FLAGS=/DWIN32 /D_WINDOWS /GR /EHsc /DUNICODE /D_UNICODE /MP' '-DCMAKE_C_FLAGS=/DWIN32 /D_WINDOWS /DUNICODE /D_UNICODE /MP' '-DWITH_TEST=ON' ..
 
     - name: Add msbuild to PATH
       uses: microsoft/setup-msbuild@v1.0.2
@@ -192,7 +191,6 @@ jobs:
 
         Copy-Item -Path C:\vcpkg\installed\x64-windows\bin\AviSynth.dll -Destination build-dir\Release
         Copy-Item -Path vendor\ffms2\ffms2-2.23.1-msvc\x64\ffms2.dll -Destination build-dir\Release
-        Copy-Item -Path vendor\xaudio2\build\native\release\bin\x64\xaudio2_9redist.dll -Destination build-dir\Release
         Copy-Item -Path vendor\aegisub332\dictionaries,vendor\aegisub332\licenses,vendor\aegisub332\locale,vendor\aegisub332\AssDraw3.exe,vendor\aegisub332\AssDraw3.chm,vendor\aegisub332\DirectShowSource.dll -Destination build-dir\Release -Recurse
         Copy-Item -Path vendor\aegisub9185\csri -Destination build-dir\Release -Recurse
 

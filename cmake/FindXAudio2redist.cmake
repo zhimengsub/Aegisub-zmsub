@@ -1,5 +1,6 @@
 find_path(XAudio2redist_INCLUDE_DIRS
   NAMES xaudio2redist.h
+  PATH_SUFFIXES xaudio2redist
 )
 find_library(XAudio2redist_LIBRARIES
   NAMES xaudio2_9redist

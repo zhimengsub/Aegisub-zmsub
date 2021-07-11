@@ -10,7 +10,7 @@ if(WIN32)
   find_file(AviSynth_SHARED_LIBRARY
     NAMES AviSynth.dll
     PATHS "C:/Windows/System32/"
-    PATH_SUFFIXES c_api
+    PATH_SUFFIXES bin c_api
     HINTS ${PC_AviSynth_LIBRARY_DIRS}
   )
 else()

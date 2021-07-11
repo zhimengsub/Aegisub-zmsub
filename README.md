@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/wangqr/Aegisub.svg?branch=dev)](https://travis-ci.com/wangqr/Aegisub)
+[![Build Status](https://github.com/wangqr/Aegisub/actions/workflows/gha-ci.yml/badge.svg)](https://github.com/wangqr/Aegisub/actions/workflows/gha-ci.yml)
 
 # Aegisub
 
@@ -50,9 +50,9 @@ cd Aegisub
 make
 ```
 
-### CMake (for Windows and linux)
+### CMake (for Windows, linux and macOS)
 
-This fork also provides CMake build. The CMake project will only build Aegisub itself, without the translation.
+This fork also provides CMake build. The CMake project will only build Aegisub itself, without the translation. Currently only x86 and x64 are supported due to limited support for building LuaJIT using CMake.
 
 You still need to install the dependencies above. To enable AviSynth+ support, it is also needed. Installing dependencies on Windows can be tricky, as Windows doesn't have a good package manager. Refer to [the Wiki page](https://github.com/wangqr/Aegisub/wiki/Compile-guide-for-Windows-(CMake,-MSVC)) on how to get all dependencies on Windows.
 

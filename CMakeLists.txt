@@ -797,6 +797,28 @@ if(NOT WIN32)
 endif()
 install(TARGETS Aegisub DESTINATION bin)
 
+# Build translations
+find_package(Gettext)
+option(WITH_TRANSLATION "Build translations" ${GETTEXT_FOUND})
+if(WITH_TRANSLATION)
+    find_package(Gettext REQUIRED)
+    file(READ po/LINGUAS LINGUAS)
+    string (STRIP "${LINGUAS}" LINGUAS)
+    string (REPLACE " " ";" LINGUAS "${LINGUAS}")
+    foreach (_lang ${LINGUAS})
+        set(_gmoFile ${CMAKE_CURRENT_BINARY_DIR}/${_lang}.gmo)
+        add_custom_command(
+            OUTPUT ${_gmoFile}
+            COMMAND ${GETTEXT_MSGMERGE_EXECUTABLE} --quiet --update --backup=none --no-fuzzy-matching --sort-by-file ${_lang}.po aegisub.pot
+            COMMAND ${GETTEXT_MSGFMT_EXECUTABLE} -o ${_gmoFile} ${_lang}.po
+            WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}/po
+        )
+        install(FILES ${_gmoFile} DESTINATION share/locale/${_lang}/LC_MESSAGES RENAME aegisub.mo)
+        set(_gmoFiles ${_gmoFiles} ${_gmoFile})
+    endforeach ()
+    add_custom_target(translations ALL DEPENDS ${_gmoFiles})
+endif()
+
 set(WITH_TEST OFF CACHE BOOL "Enable unit tests")
 if(WITH_TEST)
     include("CMakeLists.test.txt")

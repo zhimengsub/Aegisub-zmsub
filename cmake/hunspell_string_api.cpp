@@ -1,4 +1,4 @@
-#include <hunspell/hunspell.hxx>
+#include <hunspell.hxx>
 #include <string>
 
 int main() {

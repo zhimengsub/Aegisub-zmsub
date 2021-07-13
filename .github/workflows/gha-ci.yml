@@ -174,11 +174,9 @@ jobs:
 
     - name: package
       run: |
-        Invoke-WebRequest -Uri https://github.com/wangqr/Aegisub/releases/download/v3.3.2/Aegisub-3.3.2-win64.zip -OutFile vendor/aegisub332.zip
-        Invoke-WebRequest -Uri https://ftp.wangqr.tk/aegisub/aegisub-win64-cmake-20210405-r9185.zip -OutFile vendor/aegisub9185.zip
+        Invoke-WebRequest -Uri https://ftp.wangqr.tk/aegisub/aegisub-win64-cmake-20210713-r9212.zip -OutFile vendor/aegisub9212.zip
 
-        7z.exe x vendor/aegisub332.zip -ovendor/aegisub332
-        7z.exe x vendor/aegisub9185.zip -ovendor/aegisub9185
+        7z.exe x vendor/aegisub9212.zip -ovendor/aegisub9212
 
         Move-Item -Path build-dir\Release\Aegisub.exe -Destination build-dir\Aegisub.exe
         Remove-Item -Path build-dir\Release\*.exp,build-dir\Release\*.lib,build-dir\Release\*.exe
@@ -188,8 +186,7 @@ jobs:
 
         Copy-Item -Path C:\vcpkg\installed\x64-windows\bin\AviSynth.dll -Destination build-dir\Release
         Copy-Item -Path vendor\ffms2\ffms2-2.23.1-msvc\x64\ffms2.dll -Destination build-dir\Release
-        Copy-Item -Path vendor\aegisub332\dictionaries,vendor\aegisub332\licenses,vendor\aegisub332\locale,vendor\aegisub332\AssDraw3.exe,vendor\aegisub332\AssDraw3.chm,vendor\aegisub332\DirectShowSource.dll -Destination build-dir\Release -Recurse
-        Copy-Item -Path vendor\aegisub9185\csri -Destination build-dir\Release -Recurse
+        Copy-Item -Path vendor\aegisub9212\csri,vendor\aegisub9212\dictionaries,vendor\aegisub9212\licenses,vendor\aegisub9212\locale,vendor\aegisub9212\AssDraw3.exe,vendor\aegisub9212\AssDraw3.chm,vendor\aegisub9212\DirectShowSource.dll -Destination build-dir\Release -Recurse
 
     - name: upload artifact
       uses: actions/upload-artifact@v2

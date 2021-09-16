@@ -12,13 +12,13 @@ if ! test -d "${srcdir}/.git"; then
     done < "${version_h_path}"
     if test x$BUILD_GIT_VERSION_NUMBER != x -a x$BUILD_GIT_VERSION_STRING != x; then
       export VERSION_SOURCE="from cached git_version.h"
-      return 0
+      exit 0
     else
       echo "invalid git_version.h"
       exit 2
     fi
-  else
-    echo "git repo not found and no cached git_version.h"
+  elif [ -z "$FORCE_GIT_VERSION" ]; then
+    echo "git repo not found and no cached git_version.h - use FORCE_GIT_VERSION to override"
     exit 2
   fi
 fi
@@ -30,13 +30,13 @@ git_revision=$(expr $last_svn_revision + $(git log --pretty=oneline $last_svn_ha
 if [ "x$git_revision" = x6962 ]; then
   git_revision=0
 fi
-git_version_str=$(git describe --exact-match 2> /dev/null)
+git_version_str=${FORCE_GIT_VERSION:-$(git describe --exact-match 2> /dev/null)}
 installer_version='0.0.0'
 resource_version='0, 0, 0'
 if test x$git_version_str != x; then
   git_version_str="${git_version_str##v}"
   tagged_release=1
-  if [ $(echo $git_version_str | grep '\d\.\d\.\d') ]; then
+  if [ $(echo $git_version_str | grep '[0-9].[0-9].[0-9]') ]; then
     installer_version=$git_version_str
     resource_version=$(echo $git_version_str | sed 's/\./, /g')
   fi

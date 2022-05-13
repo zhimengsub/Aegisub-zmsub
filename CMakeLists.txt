@@ -206,7 +206,7 @@ target_include_directories(luajit PRIVATE "${CMAKE_CURRENT_BINARY_DIR}/vendor/lu
 if(WIN32)
     target_sources(luajit PRIVATE "${CMAKE_CURRENT_BINARY_DIR}/vendor/luajit/src/lj_vm.obj")
 else()
-    enable_language(ASM-ATT)
+    enable_language(ASM)
     target_sources(luajit PRIVATE "${CMAKE_CURRENT_BINARY_DIR}/vendor/luajit/src/lj_vm.s")
     target_link_libraries(luajit ${CMAKE_DL_LIBS})
 endif()
@@ -646,6 +646,17 @@ else()
     set(WITH_XAUDIO2 OFF)
 endif()
 
+if(APPLE)
+    option(WITH_COREAUDIO "Enable CoreAudio support" ON)
+    if(WITH_COREAUDIO)
+        target_compile_definitions(Aegisub PRIVATE "WITH_COREAUDIO")
+        target_link_libraries(Aegisub PRIVATE "-framework AudioToolbox")
+        target_sources(Aegisub PRIVATE src/audio_player_coreaudio.cpp)
+    endif()
+else()
+    set(WITH_COREAUDIO OFF)
+endif()
+
 find_package(FFMS2)
 option(WITH_FFMS2 "Enable FFMS2 support" ${FFMS2_FOUND})
 if(WITH_FFMS2)
@@ -765,6 +776,8 @@ else()
         set(DEFAULT_PLAYER_AUDIO "PulseAudio" CACHE STRING "Default audio player")
     elseif(WITH_ALSA)
         set(DEFAULT_PLAYER_AUDIO "ALSA" CACHE STRING "Default audio player")
+    elseif(WITH_COREAUDIO)
+        set(DEFAULT_PLAYER_AUDIO "CoreAudio" CACHE STRING "Default audio player")
     elseif(WITH_OPENAL)
         set(DEFAULT_PLAYER_AUDIO "OpenAL" CACHE STRING "Default audio player")
     elseif(WITH_PORTAUDIO)
@@ -847,13 +860,14 @@ message(STATUS "\n"
     "\n"
     "Audio Players\n"
     "  ALSA:                  ${WITH_ALSA}\n"
+    "  CoreAudio:             ${WITH_COREAUDIO}\n"
     "  DirectSound:           ${WITH_DIRECTSOUND}\n"
     "  DirectSound-old:       ${WITH_DIRECTSOUND}\n"
-    "  XAudio2:               ${WITH_XAUDIO2}\n"
     "  OpenAL:                ${WITH_OPENAL}\n"
     "  OSS:                   ${WITH_OSS}\n"
     "  PortAudio:             ${WITH_PORTAUDIO}\n"
     "  PulseAudio:            ${WITH_LIBPULSE}\n"
+    "  XAudio2:               ${WITH_XAUDIO2}\n"
     "\n"
     "Misc Packages\n"
     "  AviSynth:              ${WITH_AVISYNTH}\n"

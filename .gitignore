@@ -90,3 +90,7 @@ vendor/luajit/src/luajit
 
 .nuget
 .vs
+
+cmake-build-debug-visual-studio
+cmake-build-debug
+.idea

@@ -38,177 +38,239 @@
 
 #include <libaegisub/signal.h>
 
-namespace agi { namespace vfr { class Framerate; } }
+namespace agi { namespace vfr { class Framerate; }}
 namespace agi { struct Context; }
 namespace agi { class Time; }
 class AssDialogue;
+
 class AssStyle;
+
 class SubsStyledTextEditCtrl;
+
 class TimeEdit;
+
 class wxButton;
+
 class wxCheckBox;
+
 class wxRadioButton;
+
 class wxSizer;
+
 class wxSpinCtrl;
+
 class wxStyledTextCtrl;
+
 class wxStyledTextEvent;
+
 class wxTextCtrl;
+
 struct AssDialogueBase;
 
-template<class Base> class Placeholder;
+template<class Base>
+class Placeholder;
 
 /// @brief Main subtitle edit box
 ///
 /// Controls the text edit and all surrounding controls
 class SubsEditBox final : public wxPanel {
-	enum TimeField {
-		TIME_START = 0,
-		TIME_END,
-		TIME_DURATION
-	};
+    enum TimeField {
+        TIME_START = 0,
+        TIME_END,
+        TIME_DURATION
+    };
 
-	std::vector<agi::signal::Connection> connections;
+    std::vector<agi::signal::Connection> connections;
 
-	/// Currently active dialogue line
-	AssDialogue *line = nullptr;
-	AssStyle *active_style = nullptr;
+    /// Currently active dialogue line
+    AssDialogue *line = nullptr;
+    AssStyle *active_style = nullptr;
 
-	/// Are the buttons currently split into two lines?
-	bool button_bar_split = true;
-	/// Are the controls currently enabled?
-	bool controls_enabled = true;
+    /// Are the buttons currently split into two lines?
+    bool button_bar_split = true;
+    /// Are the controls currently enabled?
+    bool controls_enabled = true;
 
-	agi::Context *c;
+    agi::Context *c;
 
-	agi::signal::Connection file_changed_slot;
+    agi::signal::Connection file_changed_slot;
 
-	// Box controls
-	wxCheckBox *comment_box;
-	wxComboBox *style_box;
-	wxButton *style_edit_button;
-	Placeholder<wxComboBox> *actor_box;
-	TimeEdit *start_time;
-	TimeEdit *end_time;
-	TimeEdit *duration;
-	wxSpinCtrl *layer;
-	std::array<wxTextCtrl *, 3> margin;
-	Placeholder<wxComboBox> *effect_box;
-	wxRadioButton *by_time;
-	wxRadioButton *by_frame;
-	wxTextCtrl *char_count;
-	wxCheckBox *split_box;
+    // Box controls
+    wxCheckBox *comment_box;
+    wxComboBox *style_box;
+    wxButton *style_edit_button;
+    Placeholder<wxComboBox> *actor_box;
+    TimeEdit *start_time;
+    TimeEdit *end_time;
+    TimeEdit *duration;
+    wxSpinCtrl *layer;
+    std::array<wxTextCtrl *, 3> margin{};
+    Placeholder<wxComboBox> *effect_box;
+    wxRadioButton *by_time;
+    wxRadioButton *by_frame;
+    wxTextCtrl *char_count;
+    wxCheckBox *split_box;
 
-	wxSizer *top_sizer;
-	wxSizer *middle_right_sizer;
-	wxSizer *middle_left_sizer;
-	wxSizer *bottom_sizer;
+    wxSizer *top_sizer;
+    wxSizer *middle_right_sizer;
+    wxSizer *middle_left_sizer;
+    wxSizer *bottom_sizer;
+    // This container is used to store the parsed content in the editing area
+    wxSizer *sub_sizer{nullptr};
 
-	void SetControlsState(bool state);
-	/// @brief Update times of selected lines
-	/// @param field Field which changed
-	void CommitTimes(TimeField field);
-	/// @brief Commits the current edit box contents
-	/// @param desc Undo description to use
-	void CommitText(wxString const& desc);
-	void Commit(wxString const& desc, int type, bool amend, AssDialogue *line);
+    void SetControlsState(bool state);
 
-	/// Last commit ID for undo coalescing
-	int commit_id = -1;
+    /// @brief Update times of selected lines
+    /// @param field Field which changed
+    void CommitTimes(TimeField field);
 
-	/// Last used commit message to avoid coalescing different types of changes
-	wxString last_commit_type;
+    /// @brief Commits the current edit box contents
+    /// @param desc Undo description to use
+    void CommitText(wxString const &desc);
 
-	/// Last field to get a time commit, as they all have the same commit message
-	int last_time_commit_type;
+    void Commit(wxString const &desc, int type, bool amend, AssDialogue *line);
 
-	/// Timer to stop coalescing changes after a break with no edits
-	wxTimer undo_timer;
+    /// Last commit ID for undo coalescing
+    int commit_id = -1;
 
-	/// The start and end times of the selected lines without changes made to
-	/// avoid negative durations, so that they can be restored if future changes
-	/// eliminate the negative durations
-	boost::container::map<AssDialogue *, std::pair<agi::Time, agi::Time>> initial_times;
+    /// Last used commit message to avoid coalescing different types of changes
+    wxString last_commit_type;
 
-	// Constructor helpers
-	wxTextCtrl *MakeMarginCtrl(wxString const& tooltip, int margin, wxString const& commit_msg);
-	TimeEdit *MakeTimeCtrl(wxString const& tooltip, TimeField field);
-	void MakeButton(const char *cmd_name);
-	wxButton *MakeBottomButton(const char *cmd_name);
-	wxComboBox *MakeComboBox(wxString const& initial_text, int style, void (SubsEditBox::*handler)(wxCommandEvent&), wxString const& tooltip);
-	wxRadioButton *MakeRadio(wxString const& text, bool start, wxString const& tooltip);
+    /// Last field to get a time commit, as they all have the same commit message
+    int last_time_commit_type{};
 
-#ifdef WITH_WXSTC
-	void OnChangeStc(wxStyledTextEvent &event);
-#endif
-	void OnChangeTc(wxCommandEvent& event);
-	void OnKeyDown(wxKeyEvent &event);
+    /// Timer to stop coalescing changes after a break with no edits
+    wxTimer undo_timer;
 
-	void OnActiveLineChanged(AssDialogue *new_line);
-	void OnSelectedSetChanged();
-	void OnLineInitialTextChanged(std::string const& new_text);
+    /// The start and end times of the selected lines without changes made to
+    /// avoid negative durations, so that they can be restored if future changes
+    /// eliminate the negative durations
+    boost::container::map<AssDialogue *, std::pair<agi::Time, agi::Time>> initial_times;
 
-	void OnFrameTimeRadio(wxCommandEvent &event);
-	void OnStyleChange(wxCommandEvent &event);
-	void OnActorChange(wxCommandEvent &event);
-	void OnLayerEnter(wxCommandEvent &event);
-	void OnCommentChange(wxCommandEvent &);
-	void OnEffectChange(wxCommandEvent &);
-	void OnSize(wxSizeEvent &event);
-	void OnSplit(wxCommandEvent&);
-	void DoOnSplit(bool show_original);
+    // Constructor helpers
+    wxTextCtrl *MakeMarginCtrl(wxString const &tooltip, int margin, wxString const &commit_msg);
 
-	void SetPlaceholderCtrl(wxControl *ctrl, wxString const& value);
+    TimeEdit *MakeTimeCtrl(wxString const &tooltip, TimeField field);
 
-	/// @brief Set a field in each selected line to a specified value
-	/// @param set   Callable which updates a passed line
-	/// @param desc  Undo description to use
-	/// @param type  Commit type to use
-	/// @param amend Coalesce sequences of commits of the same type
-	template<class setter>
-	void SetSelectedRows(setter set, wxString const& desc, int type, bool amend = false);
+    void MakeButton(const char *cmd_name);
 
-	/// @brief Set a field in each selected line to a specified value
-	/// @param field Field to set
-	/// @param value Value to set the field to
-	/// @param desc  Undo description to use
-	/// @param type  Commit type to use
-	/// @param amend Coalesce sequences of commits of the same type
-	template<class T>
-	void SetSelectedRows(T AssDialogueBase::*field, T value, wxString const& desc, int type, bool amend = false);
+    wxButton *MakeBottomButton(const char *cmd_name);
 
-	template<class T>
-	void SetSelectedRows(T AssDialogueBase::*field, wxString const& value, wxString const& desc, int type, bool amend = false);
+    wxComboBox *MakeComboBox(wxString const &initial_text, int style, void (SubsEditBox::*handler)(wxCommandEvent &),
+                             wxString const &tooltip);
 
-	/// @brief Reload the current line from the file
-	/// @param type AssFile::COMMITType
-	void OnCommit(int type);
-
-	void UpdateFields(int type, bool repopulate_lists);
-
-	/// Regenerate a dropdown list with the unique values of a dialogue field
-	void PopulateList(wxComboBox *combo, boost::flyweight<std::string> AssDialogue::*field);
-
-	/// @brief Enable or disable frame timing mode
-	void UpdateFrameTiming(agi::vfr::Framerate const& fps);
-
-	/// Update the character count box for the given text
-	void UpdateCharacterCount(std::string const& text);
-
-	/// Call a command the restore focus to the edit box
-	void CallCommand(const char *cmd_name);
-
-	void SetDurationField();
+    wxRadioButton *MakeRadio(wxString const &text, bool start, wxString const &tooltip);
 
 #ifdef WITH_WXSTC
-	const bool use_stc;
-	SubsStyledTextEditCtrl *edit_ctrl_stc;
+
+    void OnChangeStc(wxStyledTextEvent &event);
+
 #endif
-	wxTextCtrl* edit_ctrl_tc;
-	wxTextCtrl *secondary_editor;
+
+    void OnChangeTc(wxCommandEvent &event);
+
+    void OnKeyDown(wxKeyEvent &event);
+
+    void OnActiveLineChanged(AssDialogue *new_line);
+
+    void OnSelectedSetChanged();
+
+    void OnLineInitialTextChanged(std::string const &new_text);
+
+    void OnFrameTimeRadio(wxCommandEvent &event);
+
+    void OnStyleChange(wxCommandEvent &event);
+
+    void OnActorChange(wxCommandEvent &event);
+
+    void OnLayerEnter(wxCommandEvent &event);
+
+    void OnCommentChange(wxCommandEvent &);
+
+    void OnEffectChange(wxCommandEvent &);
+
+    void OnSize(wxSizeEvent &event);
+
+    void OnSplit(wxCommandEvent &);
+
+    void DoOnSplit(bool show_original);
+
+    // Initialize the SubSizer, including adding a label and an editor_tc.
+    void InitStyledSubSizer();
+
+    //// @brief Split the input text into two parts: Japanese and Chinese.
+    /// @param text text to be split
+    /// @return texts Japanese and Chinese
+    static auto SplitText(const std::string &text) -> std::array<std::string, 2>;
+
+    /// @brief Set a field in each selected line to a specified value
+    /// @param set   Callable which updates a passed line
+    /// @param desc  Undo description to use
+    /// @param type  Commit type to use
+    /// @param amend Coalesce sequences of commits of the same type
+    template<class setter>
+    void SetSelectedRows(setter set, wxString const &desc, int type, bool amend = false);
+
+    /// @brief Set a field in each selected line to a specified value
+    /// @param field Field to set
+    /// @param value Value to set the field to
+    /// @param desc  Undo description to use
+    /// @param type  Commit type to use
+    /// @param amend Coalesce sequences of commits of the same type
+    template<class T>
+    void SetSelectedRows(T AssDialogueBase::*field, T value, wxString const &desc, int type, bool amend = false);
+
+    template<class T>
+    void SetSelectedRows(T AssDialogueBase::*field, wxString const &value, wxString const &desc, int type,
+                         bool amend = false);
+
+    /// @brief Reload the current line from the file
+    /// @param type AssFile::COMMITType
+    void OnCommit(int type);
+
+    void UpdateFields(int type, bool repopulate_lists);
+
+    /// Regenerate a dropdown list with the unique values of a dialogue field
+    void PopulateList(wxComboBox *combo, boost::flyweight<std::string> AssDialogue::*field);
+
+    /// @brief Enable or disable frame timing mode
+    void UpdateFrameTiming(agi::vfr::Framerate const &fps);
+
+    /// Update the character count box for the given text
+    void UpdateCharacterCount(std::string const &text);
+
+    /// Call a command the restore focus to the edit box
+    void CallCommand(const char *cmd_name);
+
+    void SetDurationField();
+
+    void OnChangeSubStc(wxStyledTextEvent &event);
+
+    void OnChangeSubTc(wxCommandEvent &event);
+
+    void UpdateSubBox(const std::string &init_text);
+
+    /*用于sub box 被选中行的信息更新*/
+    auto UpdateSelectedLineInfo(int insert, int start, int end) -> void;
+
+
+#ifdef WITH_WXSTC
+    const bool use_stc;
+    SubsStyledTextEditCtrl *edit_ctrl_stc;
+    // Store and edit Japanese content.
+    SubsStyledTextEditCtrl *primary_editor_stc{nullptr};
+    // Store and edit Chinese content.
+    SubsStyledTextEditCtrl *secondary_editor_stc{nullptr};
+#endif
+    wxTextCtrl *edit_ctrl_tc;
+    wxTextCtrl *primary_editor_tc{nullptr};
+    wxTextCtrl *secondary_editor_tc{nullptr};
 
 public:
-	/// @brief Constructor
-	/// @param parent Parent window
-	SubsEditBox(wxWindow *parent, agi::Context *context);
-	~SubsEditBox();
+    /// @brief Constructor
+    /// @param parent Parent window
+    SubsEditBox(wxWindow *parent, agi::Context *context);
+
+    ~SubsEditBox() override;
+
 };

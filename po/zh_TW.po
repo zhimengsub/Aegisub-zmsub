@@ -1,11 +1,11 @@
 # This file is distributed under the same license as the Aegisub package.
 # Niels Martin Hansen <nielsm@aegisub.org>, 2005-2013.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Aegisub 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-17 13:16-0400\n"
+"POT-Creation-Date: 2023-05-14 00:32+0800\n"
 "PO-Revision-Date: 2014-06-28 18:38+0800\n"
 "Last-Translator: COMPUTERFAN <diannaomi97@gmail.com>\n"
 "Language-Team: Vmoe字幕組 <diannaomi97@gmail.com>\n"
@@ -236,6 +236,22 @@ msgstr "卡拉OK標籤改為\\ko"
 #: ../src/audio_karaoke.cpp:426
 msgid "karaoke split"
 msgstr "卡拉OK標籤"
+
+#: ../src/audio_provider_factory.cpp:119
+msgid ""
+"Unable to create RAM audio cache: 32-bit memory limit exceeded. Fallback to "
+"hard disk cache.\n"
+"\n"
+"Possible solutions:\n"
+"- Use 64-bit version\n"
+"- Turn off cache or switch to hard disk cache in Preferences -> Advanced -> "
+"Audio -> Cache -> Cache type\n"
+"- Enable channel downmix in Preferences -> Advanced -> Audio"
+msgstr ""
+
+#: ../src/audio_provider_factory.cpp:124
+msgid "Out of Memory"
+msgstr ""
 
 #: ../src/audio_renderer_waveform.cpp:152
 msgid "Maximum"
@@ -765,7 +781,7 @@ msgid "&Automation..."
 msgstr "自動化(&A)…"
 
 #: ../src/command/automation.cpp:75 ../src/command/automation.cpp:87
-#: ../src/preferences.cpp:330
+#: ../src/preferences.cpp:339
 msgid "Automation"
 msgstr "自動化"
 
@@ -786,214 +802,214 @@ msgstr ""
 msgid "'%s' is not a valid command name"
 msgstr "'%s' 不是一個有效的命令"
 
-#: ../src/command/edit.cpp:134 ../src/command/edit.cpp:841
+#: ../src/command/edit.cpp:137 ../src/command/edit.cpp:925
 msgid "paste"
 msgstr "貼上"
 
-#: ../src/command/edit.cpp:374
+#: ../src/command/edit.cpp:380
 msgid "set color"
 msgstr "設置顏色"
 
-#: ../src/command/edit.cpp:388
+#: ../src/command/edit.cpp:397
 msgid "Primary Color..."
 msgstr "主要顏色…"
 
-#: ../src/command/edit.cpp:389
+#: ../src/command/edit.cpp:399
 msgid "Primary Color"
 msgstr "主要顏色"
 
-#: ../src/command/edit.cpp:390
+#: ../src/command/edit.cpp:401
 msgid "Set the primary fill color (\\c) at the cursor position"
 msgstr "設置主要填充色標籤(\\c)，應用於游標的位置之後"
 
-#: ../src/command/edit.cpp:400
+#: ../src/command/edit.cpp:413
 msgid "Secondary Color..."
 msgstr "次要顏色…"
 
-#: ../src/command/edit.cpp:401
+#: ../src/command/edit.cpp:415
 msgid "Secondary Color"
 msgstr "次要顏色"
 
-#: ../src/command/edit.cpp:402
+#: ../src/command/edit.cpp:417
 msgid "Set the secondary (karaoke) fill color (\\2c) at the cursor position"
 msgstr "設置次要填充色（用於卡拉OK效果）標籤(\\2c)，應用於滑鼠的位置之後"
 
-#: ../src/command/edit.cpp:412
+#: ../src/command/edit.cpp:429
 msgid "Outline Color..."
 msgstr "邊框顏色…"
 
-#: ../src/command/edit.cpp:413
+#: ../src/command/edit.cpp:431
 msgid "Outline Color"
 msgstr "邊框顏色"
 
-#: ../src/command/edit.cpp:414
+#: ../src/command/edit.cpp:433
 msgid "Set the outline color (\\3c) at the cursor position"
 msgstr "設置邊框填充色標籤(\\3c)，應用於游標的位置之後"
 
-#: ../src/command/edit.cpp:424
+#: ../src/command/edit.cpp:445
 msgid "Shadow Color..."
 msgstr "陰影顏色…"
 
-#: ../src/command/edit.cpp:425
+#: ../src/command/edit.cpp:447
 msgid "Shadow Color"
 msgstr "陰影顏色"
 
-#: ../src/command/edit.cpp:426
+#: ../src/command/edit.cpp:449
 msgid "Set the shadow color (\\4c) at the cursor position"
 msgstr "設置陰影填充色標籤(\\4c)，應用於游標的位置之後"
 
-#: ../src/command/edit.cpp:436 ../src/command/edit.cpp:437
+#: ../src/command/edit.cpp:461 ../src/command/edit.cpp:463
 msgid "Toggle Bold"
 msgstr "加粗"
 
-#: ../src/command/edit.cpp:438
+#: ../src/command/edit.cpp:465
 msgid ""
 "Toggle bold (\\b) for the current selection or at the current cursor position"
 msgstr "在游標位置添加加粗標籤(\\b)"
 
-#: ../src/command/edit.cpp:441
+#: ../src/command/edit.cpp:468
 msgid "toggle bold"
 msgstr "加粗"
 
-#: ../src/command/edit.cpp:448 ../src/command/edit.cpp:449
+#: ../src/command/edit.cpp:477 ../src/command/edit.cpp:479
 msgid "Toggle Italics"
 msgstr "斜體"
 
-#: ../src/command/edit.cpp:450
+#: ../src/command/edit.cpp:481
 msgid ""
 "Toggle italics (\\i) for the current selection or at the current cursor "
 "position"
 msgstr "在游標位置添加斜體標籤(\\i)"
 
-#: ../src/command/edit.cpp:453
+#: ../src/command/edit.cpp:484
 msgid "toggle italic"
 msgstr "斜體"
 
-#: ../src/command/edit.cpp:460 ../src/command/edit.cpp:461
+#: ../src/command/edit.cpp:493 ../src/command/edit.cpp:495
 msgid "Toggle Underline"
 msgstr "底線"
 
-#: ../src/command/edit.cpp:462
+#: ../src/command/edit.cpp:497
 msgid ""
 "Toggle underline (\\u) for the current selection or at the current cursor "
 "position"
 msgstr "在游標位置添加底線標籤(\\u)"
 
-#: ../src/command/edit.cpp:465
+#: ../src/command/edit.cpp:500
 msgid "toggle underline"
 msgstr "底線"
 
-#: ../src/command/edit.cpp:472 ../src/command/edit.cpp:473
+#: ../src/command/edit.cpp:509 ../src/command/edit.cpp:511
 msgid "Toggle Strikeout"
 msgstr "刪除線"
 
-#: ../src/command/edit.cpp:474
+#: ../src/command/edit.cpp:513
 msgid ""
 "Toggle strikeout (\\s) for the current selection or at the current cursor "
 "position"
 msgstr "在游標位置添加刪除線標籤(\\s)"
 
-#: ../src/command/edit.cpp:477
+#: ../src/command/edit.cpp:516
 msgid "toggle strikeout"
 msgstr "刪除線"
 
-#: ../src/command/edit.cpp:484
+#: ../src/command/edit.cpp:525
 msgid "Font Face..."
 msgstr "字體…"
 
-#: ../src/command/edit.cpp:485 ../src/preferences_base.cpp:251
+#: ../src/command/edit.cpp:527 ../src/preferences_base.cpp:251
 msgid "Font Face"
 msgstr "字體"
 
-#: ../src/command/edit.cpp:486
+#: ../src/command/edit.cpp:529
 msgid "Select a font face and size"
 msgstr "設置字體和大小"
 
-#: ../src/command/edit.cpp:513
+#: ../src/command/edit.cpp:557
 msgid "set font"
 msgstr "設置字體"
 
-#: ../src/command/edit.cpp:540
+#: ../src/command/edit.cpp:587
 msgid "Find and R&eplace..."
 msgstr "搜索替換(&R)…"
 
-#: ../src/command/edit.cpp:541
+#: ../src/command/edit.cpp:589
 msgid "Find and Replace"
 msgstr "搜索替換"
 
-#: ../src/command/edit.cpp:542
+#: ../src/command/edit.cpp:591
 msgid "Find and replace words in subtitles"
 msgstr "在字幕中查找並替換字串"
 
-#: ../src/command/edit.cpp:603
+#: ../src/command/edit.cpp:654
 msgid "&Copy Lines"
 msgstr "複製行(&C)"
 
-#: ../src/command/edit.cpp:604
+#: ../src/command/edit.cpp:656
 msgid "Copy Lines"
 msgstr "複製行"
 
-#: ../src/command/edit.cpp:605
+#: ../src/command/edit.cpp:658
 msgid "Copy subtitles to the clipboard"
 msgstr "複製字幕到剪貼板"
 
-#: ../src/command/edit.cpp:626
+#: ../src/command/edit.cpp:681
 msgid "Cu&t Lines"
 msgstr "剪下行(&C)"
 
-#: ../src/command/edit.cpp:627
+#: ../src/command/edit.cpp:683
 msgid "Cut Lines"
 msgstr "剪下行"
 
-#: ../src/command/edit.cpp:628
+#: ../src/command/edit.cpp:685
 msgid "Cut subtitles"
 msgstr "剪下字幕"
 
-#: ../src/command/edit.cpp:635
+#: ../src/command/edit.cpp:692
 msgid "cut lines"
 msgstr "剪下行"
 
-#: ../src/command/edit.cpp:643
+#: ../src/command/edit.cpp:702
 msgid "De&lete Lines"
 msgstr "刪除行(&L)"
 
-#: ../src/command/edit.cpp:644
+#: ../src/command/edit.cpp:704
 msgid "Delete Lines"
 msgstr "刪除行"
 
-#: ../src/command/edit.cpp:645
+#: ../src/command/edit.cpp:706
 msgid "Delete currently selected lines"
 msgstr "刪除當前所選行"
 
-#: ../src/command/edit.cpp:648
+#: ../src/command/edit.cpp:709
 msgid "delete lines"
 msgstr "刪除行"
 
-#: ../src/command/edit.cpp:713
+#: ../src/command/edit.cpp:773
 msgid "duplicate lines"
 msgstr "重複行"
 
-#: ../src/command/edit.cpp:713 ../src/command/edit.cpp:1107
+#: ../src/command/edit.cpp:773 ../src/command/edit.cpp:1204
 msgid "split"
 msgstr "分割"
 
-#: ../src/command/edit.cpp:720
+#: ../src/command/edit.cpp:781
 msgid "&Duplicate Lines"
 msgstr "重複行(&D)"
 
-#: ../src/command/edit.cpp:721
+#: ../src/command/edit.cpp:783
 msgid "Duplicate Lines"
 msgstr "重複行"
 
-#: ../src/command/edit.cpp:722
+#: ../src/command/edit.cpp:785
 msgid "Duplicate the selected lines"
 msgstr "重複所選行"
 
-#: ../src/command/edit.cpp:731 ../src/command/edit.cpp:732
+#: ../src/command/edit.cpp:795 ../src/command/edit.cpp:797
 msgid "Split lines after current frame"
 msgstr "以當前影格後分割行"
 
-#: ../src/command/edit.cpp:733
+#: ../src/command/edit.cpp:800
 msgid ""
 "Split the current line into a line which ends on the current frame and a "
 "line which starts on the next frame"
@@ -1001,11 +1017,11 @@ msgstr ""
 "將當前行以當前影格的時間為界分割為兩行，一行在當前影格結束，另一行在下一影格"
 "開始"
 
-#: ../src/command/edit.cpp:743 ../src/command/edit.cpp:744
+#: ../src/command/edit.cpp:812 ../src/command/edit.cpp:814
 msgid "Split lines before current frame"
 msgstr "以當前影格前分割行"
 
-#: ../src/command/edit.cpp:745
+#: ../src/command/edit.cpp:817
 msgid ""
 "Split the current line into a line which ends on the previous frame and a "
 "line which starts on the current frame"
@@ -1013,224 +1029,224 @@ msgstr ""
 "將當前行以當前影格的時間為界分割為兩行，一行在前一影格結束，另一行在當前影格"
 "開始"
 
-#: ../src/command/edit.cpp:785
+#: ../src/command/edit.cpp:861
 msgid "As &Karaoke"
 msgstr "視為卡拉OK(&K)"
 
-#: ../src/command/edit.cpp:786
+#: ../src/command/edit.cpp:863
 msgid "As Karaoke"
 msgstr "視為卡拉OK"
 
-#: ../src/command/edit.cpp:787
+#: ../src/command/edit.cpp:865
 msgid "Join selected lines in a single one, as karaoke"
 msgstr "將所選行合併為一行，視為卡拉OK"
 
-#: ../src/command/edit.cpp:790
+#: ../src/command/edit.cpp:868
 msgid "join as karaoke"
 msgstr "合併（視為卡拉OK）"
 
-#: ../src/command/edit.cpp:796
+#: ../src/command/edit.cpp:875
 msgid "&Concatenate"
 msgstr "連接(&C)"
 
-#: ../src/command/edit.cpp:797
+#: ../src/command/edit.cpp:877
 msgid "Concatenate"
 msgstr "連接"
 
-#: ../src/command/edit.cpp:798
+#: ../src/command/edit.cpp:879
 msgid "Join selected lines in a single one, concatenating text together"
 msgstr "將所選行合併為一個，文本結合為整體"
 
-#: ../src/command/edit.cpp:801 ../src/command/edit.cpp:812
+#: ../src/command/edit.cpp:882 ../src/command/edit.cpp:896
 msgid "join lines"
 msgstr "合併行"
 
-#: ../src/command/edit.cpp:807
+#: ../src/command/edit.cpp:889
 msgid "Keep &First"
 msgstr "保留首行(&F)"
 
-#: ../src/command/edit.cpp:808
+#: ../src/command/edit.cpp:891
 msgid "Keep First"
 msgstr "保留首行"
 
-#: ../src/command/edit.cpp:809
+#: ../src/command/edit.cpp:893
 msgid ""
 "Join selected lines in a single one, keeping text of first and discarding "
 "remaining"
 msgstr "將所選行合併為一個，僅保留首行文本"
 
-#: ../src/command/edit.cpp:850
+#: ../src/command/edit.cpp:936
 msgid "&Paste Lines"
 msgstr "貼上行(&P)"
 
-#: ../src/command/edit.cpp:851
+#: ../src/command/edit.cpp:938
 msgid "Paste Lines"
 msgstr "貼上行"
 
-#: ../src/command/edit.cpp:852
+#: ../src/command/edit.cpp:940
 msgid "Paste subtitles"
 msgstr "貼上字幕"
 
-#: ../src/command/edit.cpp:881
+#: ../src/command/edit.cpp:970
 msgid "Paste Lines &Over..."
 msgstr "選擇性貼上…(&O)"
 
-#: ../src/command/edit.cpp:882
+#: ../src/command/edit.cpp:972
 msgid "Paste Lines Over"
 msgstr "選擇性貼上…"
 
-#: ../src/command/edit.cpp:883
+#: ../src/command/edit.cpp:974
 msgid "Paste subtitles over others"
 msgstr "在選擇區域內貼上字幕"
 
-#: ../src/command/edit.cpp:966
+#: ../src/command/edit.cpp:1058
 msgid "Recom&bine Lines"
 msgstr "重組行(&B)"
 
-#: ../src/command/edit.cpp:967
+#: ../src/command/edit.cpp:1060
 msgid "Recombine Lines"
 msgstr "重組行"
 
-#: ../src/command/edit.cpp:968
+#: ../src/command/edit.cpp:1062
 msgid "Recombine subtitles which have been split and merged"
 msgstr "重組已被分割及合併的字幕"
 
-#: ../src/command/edit.cpp:1038
+#: ../src/command/edit.cpp:1132
 msgid "combining"
 msgstr "重組"
 
-#: ../src/command/edit.cpp:1044 ../src/command/edit.cpp:1045
+#: ../src/command/edit.cpp:1139 ../src/command/edit.cpp:1141
 msgid "Split Lines (by karaoke)"
 msgstr "分割行（按照卡拉OK）"
 
-#: ../src/command/edit.cpp:1046
+#: ../src/command/edit.cpp:1143
 msgid "Use karaoke timing to split line into multiple smaller lines"
 msgstr "使用卡拉OK計時把行分成多個更小的行"
 
-#: ../src/command/edit.cpp:1080
+#: ../src/command/edit.cpp:1177
 msgid "splitting"
 msgstr "分割"
 
-#: ../src/command/edit.cpp:1112 ../src/command/edit.cpp:1113
-#: ../src/subs_edit_ctrl.cpp:416
+#: ../src/command/edit.cpp:1210 ../src/command/edit.cpp:1212
+#: ../src/subs_edit_ctrl.cpp:161 ../src/subs_edit_ctrl_stc.cpp:416
 msgid "Split at cursor (estimate times)"
 msgstr "在游標處分割（概略計時）"
 
-#: ../src/command/edit.cpp:1114
+#: ../src/command/edit.cpp:1214
 msgid ""
 "Split the current line at the cursor, dividing the original line's duration "
 "between the new ones"
 msgstr ""
 "在游標處分割所選行，將新的兩行的開始結束時間概略分割原始行的開始結束時間"
 
-#: ../src/command/edit.cpp:1128 ../src/command/edit.cpp:1129
-#: ../src/subs_edit_ctrl.cpp:415
+#: ../src/command/edit.cpp:1229 ../src/command/edit.cpp:1231
+#: ../src/subs_edit_ctrl.cpp:160 ../src/subs_edit_ctrl_stc.cpp:415
 msgid "Split at cursor (preserve times)"
 msgstr "在游標處分割 (保留原計時)"
 
-#: ../src/command/edit.cpp:1130
+#: ../src/command/edit.cpp:1233
 msgid ""
 "Split the current line at the cursor, setting both lines to the original "
 "line's times"
 msgstr "在游標處分割所選行，將新的兩行的開始結束時間設為原始行的開始結束時間"
 
-#: ../src/command/edit.cpp:1139 ../src/command/edit.cpp:1140
+#: ../src/command/edit.cpp:1243 ../src/command/edit.cpp:1245
 msgid "Split at cursor (at video frame)"
 msgstr "在游標處分割（以視訊影格）"
 
-#: ../src/command/edit.cpp:1141
+#: ../src/command/edit.cpp:1247
 msgid ""
 "Split the current line at the cursor, dividing the line's duration at the "
 "current video frame"
 msgstr "在游標處分割所選行，以當前影格的時間分割行的持續時間"
 
-#: ../src/command/edit.cpp:1157
+#: ../src/command/edit.cpp:1265
 msgid "Redo last undone action"
 msgstr "重做上次撤銷的操作"
 
-#: ../src/command/edit.cpp:1162
+#: ../src/command/edit.cpp:1271
 msgid "Nothing to &redo"
 msgstr "無法重做(&r)"
 
-#: ../src/command/edit.cpp:1163
+#: ../src/command/edit.cpp:1272
 #, c-format
 msgid "&Redo %s"
 msgstr "重做 %s (&R)"
 
-#: ../src/command/edit.cpp:1167
+#: ../src/command/edit.cpp:1277
 msgid "Nothing to redo"
 msgstr "無法重做"
 
-#: ../src/command/edit.cpp:1168
+#: ../src/command/edit.cpp:1278
 #, c-format
 msgid "Redo %s"
 msgstr "重做 %s"
 
-#: ../src/command/edit.cpp:1183
+#: ../src/command/edit.cpp:1295
 msgid "Undo last action"
 msgstr "恢復上次操作"
 
-#: ../src/command/edit.cpp:1188
+#: ../src/command/edit.cpp:1301
 msgid "Nothing to &undo"
 msgstr "無法恢復(&U)"
 
-#: ../src/command/edit.cpp:1189
+#: ../src/command/edit.cpp:1302
 #, c-format
 msgid "&Undo %s"
 msgstr "恢復 %s (&U)"
 
-#: ../src/command/edit.cpp:1193
+#: ../src/command/edit.cpp:1307
 msgid "Nothing to undo"
 msgstr "無法恢復"
 
-#: ../src/command/edit.cpp:1194
+#: ../src/command/edit.cpp:1308
 #, c-format
 msgid "Undo %s"
 msgstr "恢復 %s"
 
-#: ../src/command/edit.cpp:1208 ../src/command/edit.cpp:1209
+#: ../src/command/edit.cpp:1323 ../src/command/edit.cpp:1325
 msgid "Revert"
 msgstr "還原"
 
-#: ../src/command/edit.cpp:1210
-msgid "Revert the active line to its initial state (shown in the upper editor)"
-msgstr "恢復編輯方塊的內容到它原來的狀態（編輯方塊上方顯示的內容）"
+#: ../src/command/edit.cpp:1327
+msgid "Revert the active line to its initial state"
+msgstr ""
 
-#: ../src/command/edit.cpp:1215
+#: ../src/command/edit.cpp:1332
 msgid "revert line"
 msgstr "還原行"
 
-#: ../src/command/edit.cpp:1221 ../src/command/edit.cpp:1222
-#: ../src/preferences.cpp:401
+#: ../src/command/edit.cpp:1339 ../src/command/edit.cpp:1341
+#: ../src/preferences.cpp:410
 msgid "Clear"
 msgstr "清除"
 
-#: ../src/command/edit.cpp:1223
+#: ../src/command/edit.cpp:1343
 msgid "Clear the current line's text"
 msgstr "清除當前行的所有文本"
 
-#: ../src/command/edit.cpp:1228 ../src/command/edit.cpp:1247
+#: ../src/command/edit.cpp:1348 ../src/command/edit.cpp:1371
 msgid "clear line"
 msgstr "清除行"
 
-#: ../src/command/edit.cpp:1235 ../src/command/edit.cpp:1236
+#: ../src/command/edit.cpp:1357 ../src/command/edit.cpp:1359
 msgid "Clear Text"
 msgstr "清除文本"
 
-#: ../src/command/edit.cpp:1237
+#: ../src/command/edit.cpp:1361
 msgid "Clear the current line's text, leaving override tags"
 msgstr "清除當前行的文本，只保留tag"
 
-#: ../src/command/edit.cpp:1253 ../src/command/edit.cpp:1254
+#: ../src/command/edit.cpp:1378 ../src/command/edit.cpp:1380
 #: ../src/command/tool.cpp:270
 msgid "Insert Original"
 msgstr "插入原文"
 
-#: ../src/command/edit.cpp:1255
+#: ../src/command/edit.cpp:1382
 msgid "Insert the original line text at the cursor"
 msgstr "在游標處插入原文"
 
-#: ../src/command/edit.cpp:1263
+#: ../src/command/edit.cpp:1391
 msgid "insert original"
 msgstr "插入原文"
 
@@ -1296,7 +1312,7 @@ msgstr "特效(&E)"
 
 #: ../src/command/grid.cpp:134 ../src/command/grid.cpp:146
 #: ../src/dialog_paste_over.cpp:72 ../src/grid_column.cpp:214
-#: ../src/grid_column.cpp:215 ../src/subs_edit_box.cpp:139
+#: ../src/grid_column.cpp:215 ../src/subs_edit_box.cpp:148
 msgid "Effect"
 msgstr "特效"
 
@@ -1797,7 +1813,8 @@ msgid "Save subtitles with another name"
 msgstr "以其它檔案名儲存字幕"
 
 #: ../src/command/subtitle.cpp:396 ../src/dialog_export.cpp:124
-#: ../src/dialog_selected_choices.cpp:26 ../src/subs_edit_ctrl.cpp:410
+#: ../src/dialog_selected_choices.cpp:26 ../src/subs_edit_ctrl.cpp:155
+#: ../src/subs_edit_ctrl_stc.cpp:410
 msgid "Select &All"
 msgstr "全選(&A)"
 
@@ -2130,7 +2147,7 @@ msgid "&Accept changes"
 msgstr "接受更改(&A)"
 
 #: ../src/command/tool.cpp:142 ../src/command/tool.cpp:226
-#: ../src/dialog_styling_assistant.cpp:90 ../src/dialog_translation.cpp:117
+#: ../src/dialog_styling_assistant.cpp:90 ../src/dialog_translation.cpp:138
 msgid "Accept changes"
 msgstr "接受更改"
 
@@ -2143,7 +2160,7 @@ msgid "&Preview changes"
 msgstr "預覽更改(&P)"
 
 #: ../src/command/tool.cpp:153 ../src/command/tool.cpp:237
-#: ../src/dialog_styling_assistant.cpp:91 ../src/dialog_translation.cpp:118
+#: ../src/dialog_styling_assistant.cpp:91 ../src/dialog_translation.cpp:139
 msgid "Preview changes"
 msgstr "預覽更改"
 
@@ -2193,8 +2210,8 @@ msgstr "執行時間後續處理器來處理時間開始提前、結束延後以
 msgid "&Translation Assistant..."
 msgstr "翻譯助手(&T)…"
 
-#: ../src/command/tool.cpp:201 ../src/dialog_translation.cpp:66
-#: ../src/preferences.cpp:230
+#: ../src/command/tool.cpp:201 ../src/dialog_translation.cpp:69
+#: ../src/preferences.cpp:237
 msgid "Translation Assistant"
 msgstr "翻譯助手"
 
@@ -2787,7 +2804,7 @@ msgid "E&xtract"
 msgstr "提取(&X)"
 
 #: ../src/dialog_attachments.cpp:79 ../src/dialog_style_manager.cpp:214
-#: ../src/preferences.cpp:596
+#: ../src/preferences.cpp:605
 msgid "&Delete"
 msgstr "刪除(&D)"
 
@@ -3331,7 +3348,7 @@ msgstr "開始！(&S)"
 #: ../src/dialog_fonts_collector.cpp:307 ../src/dialog_fonts_collector.cpp:312
 #: ../src/dialog_fonts_collector.cpp:317 ../src/dialog_kara_timing_copy.cpp:574
 #: ../src/dialog_kara_timing_copy.cpp:576
-#: ../src/dialog_kara_timing_copy.cpp:626 ../src/preferences.cpp:263
+#: ../src/dialog_kara_timing_copy.cpp:626 ../src/preferences.cpp:271
 msgid "Error"
 msgstr "錯誤"
 
@@ -3498,7 +3515,7 @@ msgid "Style"
 msgstr "樣式"
 
 #: ../src/dialog_paste_over.cpp:68 ../src/grid_column.cpp:228
-#: ../src/grid_column.cpp:229 ../src/subs_edit_box.cpp:134
+#: ../src/grid_column.cpp:229 ../src/subs_edit_box.cpp:142
 msgid "Actor"
 msgstr "說話人"
 
@@ -3967,15 +3984,15 @@ msgstr "時間"
 msgid "&Clear"
 msgstr "清除(&C)"
 
-#: ../src/dialog_shift_times.cpp:203
+#: ../src/dialog_shift_times.cpp:204
 msgid "Shift by"
 msgstr "平移方式"
 
-#: ../src/dialog_shift_times.cpp:212
+#: ../src/dialog_shift_times.cpp:213
 msgid "Load from history"
 msgstr "從歷史打開"
 
-#: ../src/dialog_shift_times.cpp:410
+#: ../src/dialog_shift_times.cpp:411
 msgid "shifting"
 msgstr "平移"
 
@@ -4031,7 +4048,7 @@ msgstr "樣式編輯器"
 msgid "Font"
 msgstr "字體"
 
-#: ../src/dialog_style_editor.cpp:180 ../src/preferences.cpp:238
+#: ../src/dialog_style_editor.cpp:180 ../src/preferences.cpp:245
 msgid "Colors"
 msgstr "顏色"
 
@@ -4219,25 +4236,25 @@ msgstr "用於預覽的文本"
 msgid "Color of preview background"
 msgstr "預覽框背景色"
 
-#: ../src/dialog_style_editor.cpp:420
+#: ../src/dialog_style_editor.cpp:421
 msgid "Style name conflict"
 msgstr "樣式名稱衝突"
 
-#: ../src/dialog_style_editor.cpp:420
+#: ../src/dialog_style_editor.cpp:421
 msgid "There is already a style with this name. Please choose another name."
 msgstr "已有相同名稱的樣式。請使用另一個名稱。"
 
-#: ../src/dialog_style_editor.cpp:432
+#: ../src/dialog_style_editor.cpp:433
 msgid ""
 "Do you want to change all instances of this style in the script to this new "
 "name?"
 msgstr "想將腳本中所有應用該樣式的字幕行的樣式名都改為這個新名稱嗎？"
 
-#: ../src/dialog_style_editor.cpp:433
+#: ../src/dialog_style_editor.cpp:434
 msgid "Update script?"
 msgstr "更新樣式？"
 
-#: ../src/dialog_style_editor.cpp:460 ../src/subs_edit_box.cpp:633
+#: ../src/dialog_style_editor.cpp:461 ../src/subs_edit_box.cpp:816
 msgid "style change"
 msgstr "樣式更改"
 
@@ -4261,16 +4278,16 @@ msgstr "樣式移至底部"
 msgid "Sort styles alphabetically"
 msgstr "按字母表順序排序樣式"
 
-#: ../src/dialog_style_manager.cpp:211 ../src/preferences.cpp:594
+#: ../src/dialog_style_manager.cpp:211 ../src/preferences.cpp:603
 msgid "&New"
 msgstr "新建(&N)"
 
-#: ../src/dialog_style_manager.cpp:212 ../src/preferences.cpp:595
+#: ../src/dialog_style_manager.cpp:212 ../src/preferences.cpp:604
 msgid "&Edit"
 msgstr "編輯(&E)"
 
-#: ../src/dialog_style_manager.cpp:213 ../src/subs_edit_ctrl.cpp:407
-#: ../src/timeedit_ctrl.cpp:209
+#: ../src/dialog_style_manager.cpp:213 ../src/subs_edit_ctrl.cpp:152
+#: ../src/subs_edit_ctrl_stc.cpp:407 ../src/timeedit_ctrl.cpp:209
 msgid "&Copy"
 msgstr "複製(&C)"
 
@@ -4449,23 +4466,23 @@ msgstr "可用樣式"
 msgid "Set style"
 msgstr "套用樣式"
 
-#: ../src/dialog_styling_assistant.cpp:87 ../src/dialog_translation.cpp:114
+#: ../src/dialog_styling_assistant.cpp:87 ../src/dialog_translation.cpp:135
 msgid "Keys"
 msgstr "按鍵"
 
-#: ../src/dialog_styling_assistant.cpp:92 ../src/dialog_translation.cpp:119
+#: ../src/dialog_styling_assistant.cpp:92 ../src/dialog_translation.cpp:140
 msgid "Previous line"
 msgstr "上一行"
 
-#: ../src/dialog_styling_assistant.cpp:93 ../src/dialog_translation.cpp:120
+#: ../src/dialog_styling_assistant.cpp:93 ../src/dialog_translation.cpp:141
 msgid "Next line"
 msgstr "下一行"
 
-#: ../src/dialog_styling_assistant.cpp:94 ../src/dialog_translation.cpp:122
+#: ../src/dialog_styling_assistant.cpp:94 ../src/dialog_translation.cpp:143
 msgid "Play video"
 msgstr "播放視訊"
 
-#: ../src/dialog_styling_assistant.cpp:95 ../src/dialog_translation.cpp:123
+#: ../src/dialog_styling_assistant.cpp:95 ../src/dialog_translation.cpp:144
 msgid "Play audio"
 msgstr "播放音訊"
 
@@ -4481,15 +4498,15 @@ msgstr "選擇樣式"
 msgid "&Seek video to line start time"
 msgstr "視訊跳至開始(&S)"
 
-#: ../src/dialog_styling_assistant.cpp:110 ../src/dialog_translation.cpp:135
+#: ../src/dialog_styling_assistant.cpp:110 ../src/dialog_translation.cpp:156
 msgid "Actions"
 msgstr "動作"
 
-#: ../src/dialog_styling_assistant.cpp:113 ../src/dialog_translation.cpp:137
+#: ../src/dialog_styling_assistant.cpp:113 ../src/dialog_translation.cpp:158
 msgid "Play &Audio"
 msgstr "播放音訊(&A)"
 
-#: ../src/dialog_styling_assistant.cpp:117 ../src/dialog_translation.cpp:142
+#: ../src/dialog_styling_assistant.cpp:117 ../src/dialog_translation.cpp:163
 msgid "Play &Video"
 msgstr "播放視訊(&V)"
 
@@ -4683,36 +4700,36 @@ msgstr "無效腳本"
 msgid "timing processor"
 msgstr "時間處理器"
 
-#: ../src/dialog_translation.cpp:79
+#: ../src/dialog_translation.cpp:85
 msgid "Original"
 msgstr "原文"
 
-#: ../src/dialog_translation.cpp:106
+#: ../src/dialog_translation.cpp:118
 msgid "Translation"
 msgstr "譯文"
 
-#: ../src/dialog_translation.cpp:121
+#: ../src/dialog_translation.cpp:142
 msgid "Insert original"
 msgstr "插入原文"
 
-#: ../src/dialog_translation.cpp:124
+#: ../src/dialog_translation.cpp:145
 msgid "Delete line"
 msgstr "刪除行"
 
-#: ../src/dialog_translation.cpp:127
+#: ../src/dialog_translation.cpp:148
 msgid "Enable &preview"
 msgstr "啟用預覽(&P)"
 
-#: ../src/dialog_translation.cpp:184 ../src/dialog_translation.cpp:288
+#: ../src/dialog_translation.cpp:205 ../src/dialog_translation.cpp:329
 msgid "No more lines to translate."
 msgstr "沒有需要翻譯的行。"
 
-#: ../src/dialog_translation.cpp:192 ../src/dialog_translation.cpp:242
+#: ../src/dialog_translation.cpp:213 ../src/dialog_translation.cpp:263
 #, c-format
 msgid "Current line: %d/%d"
 msgstr "當前行： %d/%d"
 
-#: ../src/dialog_translation.cpp:283
+#: ../src/dialog_translation.cpp:324
 msgid "translation assistant"
 msgstr "翻譯助手"
 
@@ -4802,7 +4819,7 @@ msgid "Decoder:"
 msgstr "解碼器："
 
 #: ../src/dialog_video_details.cpp:66 ../src/preferences.cpp:168
-#: ../src/preferences.cpp:436
+#: ../src/preferences.cpp:445
 msgid "Video"
 msgstr "視訊"
 
@@ -5132,7 +5149,7 @@ msgid "Reading subtitles from Matroska file."
 msgstr "從Matroska(MKV)檔案中讀取字幕"
 
 #: ../src/preferences.cpp:62 ../src/preferences.cpp:64
-#: ../src/preferences.cpp:332 ../src/preferences.cpp:353
+#: ../src/preferences.cpp:341 ../src/preferences.cpp:362
 msgid "General"
 msgstr "一般"
 
@@ -5219,7 +5236,7 @@ msgstr "導入TTXT"
 msgid "Plain text import"
 msgstr "導入純文本"
 
-#: ../src/preferences.cpp:128 ../src/preferences.cpp:366
+#: ../src/preferences.cpp:128 ../src/preferences.cpp:375
 msgid "Audio"
 msgstr "音訊"
 
@@ -5315,7 +5332,7 @@ msgstr "顯示游標所在的時間"
 msgid "Video position"
 msgstr "顯示視訊位置"
 
-#: ../src/preferences.cpp:156 ../src/preferences.cpp:252
+#: ../src/preferences.cpp:156 ../src/preferences.cpp:259
 msgid "Seconds boundaries"
 msgstr "輔助邊線色"
 
@@ -5391,341 +5408,345 @@ msgstr "介面"
 msgid "Edit Box"
 msgstr "編輯方塊"
 
-#: ../src/preferences.cpp:210
+#: ../src/preferences.cpp:211
+msgid "Use styled edit box"
+msgstr ""
+
+#: ../src/preferences.cpp:212
 msgid "Enable call tips"
 msgstr "啟用提示"
 
-#: ../src/preferences.cpp:211
+#: ../src/preferences.cpp:214
 msgid "Overwrite in time boxes"
 msgstr "時間框內覆蓋寫入"
 
-#: ../src/preferences.cpp:213
+#: ../src/preferences.cpp:216
 msgid "Enable syntax highlighting"
 msgstr "啟用語法高亮"
 
-#: ../src/preferences.cpp:214
+#: ../src/preferences.cpp:221
 msgid "Dictionaries path"
 msgstr "字典檔路徑"
 
-#: ../src/preferences.cpp:217
+#: ../src/preferences.cpp:224
 msgid "Character Counter"
 msgstr "字數統計器"
 
-#: ../src/preferences.cpp:218
+#: ../src/preferences.cpp:225
 msgid "Maximum characters per line"
 msgstr "每行最大字元數"
 
-#: ../src/preferences.cpp:219
+#: ../src/preferences.cpp:226
 msgid "Characters Per Second Warning Threshold"
 msgstr "每秒字元數警告閾值"
 
-#: ../src/preferences.cpp:220
+#: ../src/preferences.cpp:227
 msgid "Characters Per Second Error Threshold"
 msgstr "每秒字元數報錯閾值"
 
-#: ../src/preferences.cpp:221
+#: ../src/preferences.cpp:228
 msgid "Ignore whitespace"
 msgstr "忽略空格"
 
-#: ../src/preferences.cpp:222
+#: ../src/preferences.cpp:229
 msgid "Ignore punctuation"
 msgstr "忽略標點符號"
 
-#: ../src/preferences.cpp:224
+#: ../src/preferences.cpp:231
 msgid "Grid"
 msgstr "編輯方塊"
 
-#: ../src/preferences.cpp:225
+#: ../src/preferences.cpp:232
 msgid "Focus grid on click"
 msgstr "按一下啟動編輯方塊"
 
-#: ../src/preferences.cpp:226
+#: ../src/preferences.cpp:233
 msgid "Highlight visible subtitles"
 msgstr "突出可見字幕"
 
-#: ../src/preferences.cpp:227
+#: ../src/preferences.cpp:234
 msgid "Hide overrides symbol"
 msgstr "隱藏特效標籤"
 
-#: ../src/preferences.cpp:231
+#: ../src/preferences.cpp:238
 #, fuzzy
 msgid "Skip over whitespace"
 msgstr "忽略空格"
 
-#: ../src/preferences.cpp:246
+#: ../src/preferences.cpp:253
 msgid "Audio Display"
 msgstr "音訊播放"
 
-#: ../src/preferences.cpp:247
+#: ../src/preferences.cpp:254
 msgid "Play cursor"
 msgstr "播放游標"
 
-#: ../src/preferences.cpp:248
+#: ../src/preferences.cpp:255
 msgid "Line boundary start"
 msgstr "邊線色 - 起始"
 
-#: ../src/preferences.cpp:249
+#: ../src/preferences.cpp:256
 msgid "Line boundary end"
 msgstr "邊線色 - 結束"
 
-#: ../src/preferences.cpp:250
+#: ../src/preferences.cpp:257
 msgid "Line boundary inactive line"
 msgstr "邊線色 - 非活動行"
 
-#: ../src/preferences.cpp:251
+#: ../src/preferences.cpp:258
 msgid "Syllable boundaries"
 msgstr "音節邊線色"
 
-#: ../src/preferences.cpp:254
+#: ../src/preferences.cpp:261
 msgid "Syntax Highlighting"
 msgstr "語法高亮"
 
-#: ../src/preferences.cpp:255
+#: ../src/preferences.cpp:262
 msgid "Background"
 msgstr "背景"
 
-#: ../src/preferences.cpp:256
+#: ../src/preferences.cpp:263
 msgid "Normal"
 msgstr "普通"
 
-#: ../src/preferences.cpp:257
+#: ../src/preferences.cpp:265
 #, fuzzy
 msgid "Comments"
 msgstr "注釋(&N)"
 
-#: ../src/preferences.cpp:258
+#: ../src/preferences.cpp:266
 msgid "Drawings"
 msgstr ""
 
-#: ../src/preferences.cpp:259
+#: ../src/preferences.cpp:267
 msgid "Brackets"
 msgstr "大括弧"
 
-#: ../src/preferences.cpp:260
+#: ../src/preferences.cpp:268
 msgid "Slashes and Parentheses"
 msgstr "斜杠和圓括號"
 
-#: ../src/preferences.cpp:261
+#: ../src/preferences.cpp:269
 msgid "Tags"
 msgstr "標籤"
 
-#: ../src/preferences.cpp:262
+#: ../src/preferences.cpp:270
 msgid "Parameters"
 msgstr "參數"
 
-#: ../src/preferences.cpp:264
+#: ../src/preferences.cpp:272
 msgid "Error Background"
 msgstr "錯誤背景"
 
-#: ../src/preferences.cpp:265
+#: ../src/preferences.cpp:273
 msgid "Line Break"
 msgstr "分行符號"
 
-#: ../src/preferences.cpp:266
+#: ../src/preferences.cpp:274
 msgid "Karaoke templates"
 msgstr "卡拉OK模版"
 
-#: ../src/preferences.cpp:267
+#: ../src/preferences.cpp:275
 #, fuzzy
 msgid "Karaoke variables"
 msgstr "卡拉OK模版"
 
-#: ../src/preferences.cpp:273
+#: ../src/preferences.cpp:282
 msgid "Audio Color Schemes"
 msgstr "音訊配色方案"
 
-#: ../src/preferences.cpp:275 ../src/preferences.cpp:382
+#: ../src/preferences.cpp:284 ../src/preferences.cpp:391
 msgid "Spectrum"
 msgstr "頻譜模式"
 
-#: ../src/preferences.cpp:276
+#: ../src/preferences.cpp:285
 msgid "Waveform"
 msgstr "波形模式"
 
-#: ../src/preferences.cpp:278
+#: ../src/preferences.cpp:287
 msgid "Subtitle Grid"
 msgstr "字幕欄"
 
-#: ../src/preferences.cpp:279
+#: ../src/preferences.cpp:288
 msgid "Standard foreground"
 msgstr "普通行前景色"
 
-#: ../src/preferences.cpp:280
+#: ../src/preferences.cpp:289
 msgid "Standard background"
 msgstr "普通行背景色"
 
-#: ../src/preferences.cpp:281
+#: ../src/preferences.cpp:290
 msgid "Selection foreground"
 msgstr "選取行前景色"
 
-#: ../src/preferences.cpp:282
+#: ../src/preferences.cpp:291
 msgid "Selection background"
 msgstr "選取行背景色"
 
-#: ../src/preferences.cpp:283
+#: ../src/preferences.cpp:292
 msgid "Collision foreground"
 msgstr "衝突行前景色"
 
-#: ../src/preferences.cpp:284
+#: ../src/preferences.cpp:293
 msgid "In frame background"
 msgstr "在當前影格顯示的行背景色"
 
-#: ../src/preferences.cpp:285
+#: ../src/preferences.cpp:294
 msgid "Comment background"
 msgstr "注釋行背景色"
 
-#: ../src/preferences.cpp:286
+#: ../src/preferences.cpp:295
 msgid "Selected comment background"
 msgstr "選中注釋行背景色"
 
-#: ../src/preferences.cpp:287
+#: ../src/preferences.cpp:296
 msgid "Header background"
 msgstr "表頭背景色"
 
-#: ../src/preferences.cpp:288
+#: ../src/preferences.cpp:297
 msgid "Left Column"
 msgstr "左邊欄顏色"
 
-#: ../src/preferences.cpp:289
+#: ../src/preferences.cpp:298
 msgid "Active Line Border"
 msgstr "活動行邊框顏色"
 
-#: ../src/preferences.cpp:290
+#: ../src/preferences.cpp:299
 msgid "Lines"
 msgstr "分隔線顏色"
 
-#: ../src/preferences.cpp:291
+#: ../src/preferences.cpp:300
 msgid "CPS Error"
 msgstr "每秒字元數錯誤"
 
-#: ../src/preferences.cpp:293
+#: ../src/preferences.cpp:302
 #, fuzzy
 msgid "Visual Typesetting Tools"
 msgstr "視覺化排版"
 
-#: ../src/preferences.cpp:294
+#: ../src/preferences.cpp:303
 #, fuzzy
 msgid "Primary Lines"
 msgstr "主要顏色"
 
-#: ../src/preferences.cpp:295
+#: ../src/preferences.cpp:304
 #, fuzzy
 msgid "Secondary Lines"
 msgstr "次要顏色"
 
-#: ../src/preferences.cpp:296
+#: ../src/preferences.cpp:305
 #, fuzzy
 msgid "Primary Highlight"
 msgstr "語法高亮"
 
-#: ../src/preferences.cpp:297
+#: ../src/preferences.cpp:306
 #, fuzzy
 msgid "Secondary Highlight"
 msgstr "語法高亮"
 
-#: ../src/preferences.cpp:300
+#: ../src/preferences.cpp:309
 #, fuzzy
 msgid "Visual Typesetting Tools Alpha"
 msgstr "視覺化排版"
 
-#: ../src/preferences.cpp:301
+#: ../src/preferences.cpp:310
 msgid "Shaded Area"
 msgstr ""
 
-#: ../src/preferences.cpp:310
+#: ../src/preferences.cpp:319
 msgid "Backup"
 msgstr "備份"
 
-#: ../src/preferences.cpp:312
+#: ../src/preferences.cpp:321
 msgid "Automatic Save"
 msgstr "自動儲存"
 
-#: ../src/preferences.cpp:313 ../src/preferences.cpp:321
+#: ../src/preferences.cpp:322 ../src/preferences.cpp:330
 msgid "Enable"
 msgstr "啟用"
 
-#: ../src/preferences.cpp:316
+#: ../src/preferences.cpp:325
 msgid "Interval in seconds"
 msgstr "儲存間隔（秒）"
 
-#: ../src/preferences.cpp:317 ../src/preferences.cpp:323
-#: ../src/preferences.cpp:380
+#: ../src/preferences.cpp:326 ../src/preferences.cpp:332
+#: ../src/preferences.cpp:389
 msgid "Path"
 msgstr "儲存路徑"
 
-#: ../src/preferences.cpp:318
+#: ../src/preferences.cpp:327
 msgid "Autosave after every change"
 msgstr "每次更改後自動儲存"
 
-#: ../src/preferences.cpp:320
+#: ../src/preferences.cpp:329
 msgid "Automatic Backup"
 msgstr "自動備份"
 
-#: ../src/preferences.cpp:334
+#: ../src/preferences.cpp:343
 msgid "Base path"
 msgstr "根路徑"
 
-#: ../src/preferences.cpp:335
+#: ../src/preferences.cpp:344
 msgid "Include path"
 msgstr "包含路徑"
 
-#: ../src/preferences.cpp:336
+#: ../src/preferences.cpp:345
 msgid "Auto-load path"
 msgstr "自動載入路徑"
 
-#: ../src/preferences.cpp:338
+#: ../src/preferences.cpp:347
 msgid "0: Fatal"
 msgstr "0: 致命"
 
-#: ../src/preferences.cpp:338
+#: ../src/preferences.cpp:347
 msgid "1: Error"
 msgstr "1: 錯誤"
 
-#: ../src/preferences.cpp:338
+#: ../src/preferences.cpp:347
 msgid "2: Warning"
 msgstr "2: 警告"
 
-#: ../src/preferences.cpp:338
+#: ../src/preferences.cpp:347
 msgid "3: Hint"
 msgstr "3: 提示"
 
-#: ../src/preferences.cpp:338
+#: ../src/preferences.cpp:347
 msgid "4: Debug"
 msgstr "4: 調試"
 
-#: ../src/preferences.cpp:338
+#: ../src/preferences.cpp:347
 msgid "5: Trace"
 msgstr "5: 追蹤"
 
-#: ../src/preferences.cpp:340
+#: ../src/preferences.cpp:349
 msgid "Trace level"
 msgstr "跟蹤等級"
 
-#: ../src/preferences.cpp:342
+#: ../src/preferences.cpp:351
 msgid "All scripts"
 msgstr "所有腳本"
 
-#: ../src/preferences.cpp:342
+#: ../src/preferences.cpp:351
 msgid "Global autoload scripts"
 msgstr "全域自動載入腳本"
 
-#: ../src/preferences.cpp:342
+#: ../src/preferences.cpp:351
 msgid "No scripts"
 msgstr "無腳本"
 
-#: ../src/preferences.cpp:342
+#: ../src/preferences.cpp:351
 msgid "Subtitle-local scripts"
 msgstr "本地字幕腳本"
 
-#: ../src/preferences.cpp:344
+#: ../src/preferences.cpp:353
 msgid "Autoreload on Export"
 msgstr "自動重新載入輸出"
 
-#: ../src/preferences.cpp:351
+#: ../src/preferences.cpp:360
 msgid "Advanced"
 msgstr "高級"
 
-#: ../src/preferences.cpp:355
+#: ../src/preferences.cpp:364
 msgid ""
 "Changing these settings might result in bugs and/or crashes.  Do not touch "
 "these unless you know what you're doing."
@@ -5733,157 +5754,157 @@ msgstr ""
 "修改這些設置可能導致出錯，甚至異常崩潰， \n"
 "除非您知道自己在做什麼，否則請不要修改這些設置。"
 
-#: ../src/preferences.cpp:368 ../src/preferences.cpp:438
+#: ../src/preferences.cpp:377 ../src/preferences.cpp:447
 msgid "Expert"
 msgstr "專家設置"
 
-#: ../src/preferences.cpp:371
+#: ../src/preferences.cpp:380
 msgid "Audio provider"
 msgstr "音訊來自"
 
-#: ../src/preferences.cpp:374
+#: ../src/preferences.cpp:383
 msgid "Audio player"
 msgstr "音訊播放機"
 
-#: ../src/preferences.cpp:376
+#: ../src/preferences.cpp:385
 msgid "Cache"
 msgstr "緩存"
 
-#: ../src/preferences.cpp:377
+#: ../src/preferences.cpp:386
 msgid "Hard Disk"
 msgstr "硬碟"
 
-#: ../src/preferences.cpp:377
-msgid "None (NOT RECOMMENDED)"
-msgstr "無 （不推薦）"
+#: ../src/preferences.cpp:386
+msgid "None (Not recommended with Avisynth)"
+msgstr ""
 
-#: ../src/preferences.cpp:377
+#: ../src/preferences.cpp:386
 msgid "RAM"
 msgstr "記憶體"
 
-#: ../src/preferences.cpp:379
+#: ../src/preferences.cpp:388
 msgid "Cache type"
 msgstr "緩存類型"
 
-#: ../src/preferences.cpp:384
+#: ../src/preferences.cpp:393
 msgid "Better quality"
 msgstr "較好品質"
 
-#: ../src/preferences.cpp:384
+#: ../src/preferences.cpp:393
 msgid "High quality"
 msgstr "高品質"
 
-#: ../src/preferences.cpp:384
+#: ../src/preferences.cpp:393
 msgid "Insane quality"
 msgstr "極高品質"
 
-#: ../src/preferences.cpp:384
+#: ../src/preferences.cpp:393
 msgid "Regular quality"
 msgstr "一般品質"
 
-#: ../src/preferences.cpp:386
+#: ../src/preferences.cpp:395
 msgid "Quality"
 msgstr "品質"
 
-#: ../src/preferences.cpp:388
+#: ../src/preferences.cpp:397
 msgid "Cache memory max (MB)"
 msgstr "緩存最大容量 (MB)"
 
-#: ../src/preferences.cpp:394
+#: ../src/preferences.cpp:403
 msgid "Avisynth down-mixer"
 msgstr "Avisynth down-mixer"
 
-#: ../src/preferences.cpp:395
+#: ../src/preferences.cpp:404
 msgid "Force sample rate"
 msgstr "強制取樣速率"
 
-#: ../src/preferences.cpp:401
+#: ../src/preferences.cpp:410
 msgid "Abort"
 msgstr "取消"
 
-#: ../src/preferences.cpp:401
+#: ../src/preferences.cpp:410
 msgid "Ignore"
 msgstr "忽略"
 
-#: ../src/preferences.cpp:401
+#: ../src/preferences.cpp:410
 msgid "Stop"
 msgstr "停止"
 
-#: ../src/preferences.cpp:403
+#: ../src/preferences.cpp:412
 msgid "Audio indexing error handling mode"
 msgstr "音訊索引錯誤處理模式"
 
-#: ../src/preferences.cpp:405
+#: ../src/preferences.cpp:414
 msgid "Always index all audio tracks"
 msgstr "總是索引所有音軌"
 
-#: ../src/preferences.cpp:406
+#: ../src/preferences.cpp:415
 msgid "Downmix to 16bit mono audio"
 msgstr ""
 
-#: ../src/preferences.cpp:411
+#: ../src/preferences.cpp:420
 msgid "Portaudio device"
 msgstr "Portaudio 設備"
 
-#: ../src/preferences.cpp:416
+#: ../src/preferences.cpp:425
 msgid "OSS Device"
 msgstr "OSS 設備"
 
-#: ../src/preferences.cpp:427
+#: ../src/preferences.cpp:436
 msgid "Buffer latency"
 msgstr "緩衝延遲"
 
-#: ../src/preferences.cpp:428
+#: ../src/preferences.cpp:437
 msgid "Buffer length"
 msgstr "緩衝長度"
 
-#: ../src/preferences.cpp:441
+#: ../src/preferences.cpp:450
 msgid "Video provider"
 msgstr "視訊來自"
 
-#: ../src/preferences.cpp:444
+#: ../src/preferences.cpp:453
 msgid "Subtitles provider"
 msgstr "字幕來自"
 
-#: ../src/preferences.cpp:448
+#: ../src/preferences.cpp:457
 msgid "Allow pre-2.56a Avisynth"
 msgstr "允許 pre-2.56a Avisynth"
 
-#: ../src/preferences.cpp:450
+#: ../src/preferences.cpp:459
 msgid "Avisynth memory limit"
 msgstr "Avisynth 記憶體限額"
 
-#: ../src/preferences.cpp:458
+#: ../src/preferences.cpp:467
 msgid "Debug log verbosity"
 msgstr "Debug日誌的詳細級別"
 
-#: ../src/preferences.cpp:460
+#: ../src/preferences.cpp:469
 msgid "Decoding threads"
 msgstr "解碼執行緒"
 
-#: ../src/preferences.cpp:461
+#: ../src/preferences.cpp:470
 msgid "Enable unsafe seeking"
 msgstr "允許可能不安全的定位"
 
-#: ../src/preferences.cpp:590
+#: ../src/preferences.cpp:599
 msgid "Hotkeys"
 msgstr "熱鍵"
 
-#: ../src/preferences.cpp:689
+#: ../src/preferences.cpp:698
 msgid ""
 "Are you sure that you want to restore the defaults? All your settings will "
 "be overridden."
 msgstr "您確定要恢復預設嗎？您的所有設置都將被覆蓋。"
 
-#: ../src/preferences.cpp:689
+#: ../src/preferences.cpp:698
 msgid "Restore defaults?"
 msgstr "恢復預設？"
 
-#: ../src/preferences.cpp:707
+#: ../src/preferences.cpp:716
 msgid "Preferences"
 msgstr "偏好"
 
-#: ../src/preferences.cpp:735
+#: ../src/preferences.cpp:744
 msgid "&Restore Defaults"
 msgstr "恢復預設(&R)"
 
@@ -6013,181 +6034,189 @@ msgstr "無標題"
 msgid "untitled"
 msgstr "無標題"
 
-#: ../src/subs_edit_box.cpp:114
+#: ../src/subs_edit_box.cpp:122
 msgid "&Comment"
 msgstr "注釋(&C)"
 
-#: ../src/subs_edit_box.cpp:115
+#: ../src/subs_edit_box.cpp:123
 msgid "Comment this line out. Commented lines don't show up on screen."
 msgstr "將該行設為注釋。注釋行不會顯示在螢幕上。"
 
-#: ../src/subs_edit_box.cpp:122
+#: ../src/subs_edit_box.cpp:130
 msgid "Style for this line"
 msgstr "該行的樣式"
 
-#: ../src/subs_edit_box.cpp:124
+#: ../src/subs_edit_box.cpp:132
 msgid "Edit"
 msgstr "編輯"
 
-#: ../src/subs_edit_box.cpp:134
+#: ../src/subs_edit_box.cpp:143
 msgid ""
 "Actor name for this speech. This is only for reference, and is mainly "
 "useless."
 msgstr "說話人名。這只用來參考，一般並無用處。"
 
-#: ../src/subs_edit_box.cpp:139
+#: ../src/subs_edit_box.cpp:149
 msgid ""
 "Effect for this line. This can be used to store extra information for "
 "karaoke scripts, or for the effects supported by the renderer."
 msgstr ""
 "該行的特效。這欄可以用來儲存額外資訊，針對卡拉OK腳本或渲染器支援的特效。"
 
-#: ../src/subs_edit_box.cpp:150
+#: ../src/subs_edit_box.cpp:160
 msgid "Number of characters in the longest line of this subtitle."
 msgstr "在當前字幕行的最長行的字元數。"
 
-#: ../src/subs_edit_box.cpp:166
+#: ../src/subs_edit_box.cpp:177
 msgid "Layer number"
 msgstr "層次編號"
 
-#: ../src/subs_edit_box.cpp:170
+#: ../src/subs_edit_box.cpp:181
 msgid "Start time"
 msgstr "開始時間"
 
-#: ../src/subs_edit_box.cpp:171
+#: ../src/subs_edit_box.cpp:182
 msgid "End time"
 msgstr "結束時間"
 
-#: ../src/subs_edit_box.cpp:173
+#: ../src/subs_edit_box.cpp:184
 msgid "Line duration"
 msgstr "該行持續時間"
 
-#: ../src/subs_edit_box.cpp:176
+#: ../src/subs_edit_box.cpp:187
 msgid "Left Margin (0 = default from style)"
 msgstr "左邊距 (0 = 預設)"
 
-#: ../src/subs_edit_box.cpp:176
+#: ../src/subs_edit_box.cpp:187
 msgid "left margin change"
 msgstr "改變左邊距"
 
-#: ../src/subs_edit_box.cpp:177
+#: ../src/subs_edit_box.cpp:188
 msgid "Right Margin (0 = default from style)"
 msgstr "右邊距 (0 = 預設)"
 
-#: ../src/subs_edit_box.cpp:177
+#: ../src/subs_edit_box.cpp:188
 msgid "right margin change"
 msgstr "改變右邊距"
 
-#: ../src/subs_edit_box.cpp:178
+#: ../src/subs_edit_box.cpp:189
 msgid "Vertical Margin (0 = default from style)"
 msgstr "垂直邊距 (0 = 預設)"
 
-#: ../src/subs_edit_box.cpp:178
+#: ../src/subs_edit_box.cpp:189
 msgid "vertical margin change"
 msgstr "改變垂直邊距"
 
-#: ../src/subs_edit_box.cpp:197
+#: ../src/subs_edit_box.cpp:208
 msgid "T&ime"
 msgstr "時間(&I)"
 
-#: ../src/subs_edit_box.cpp:197
+#: ../src/subs_edit_box.cpp:208
 msgid "Time by h:mm:ss.cs"
 msgstr "按照時間 時:分:秒.厘秒"
 
-#: ../src/subs_edit_box.cpp:198
+#: ../src/subs_edit_box.cpp:209
 msgid "F&rame"
 msgstr "影格(&R)"
 
-#: ../src/subs_edit_box.cpp:198
+#: ../src/subs_edit_box.cpp:209
 msgid "Time by frame number"
 msgstr "按照影格數"
 
-#: ../src/subs_edit_box.cpp:201
-msgid "Show Original"
-msgstr "顯示原始字幕"
-
-#: ../src/subs_edit_box.cpp:202
-msgid ""
-"Show the contents of the subtitle line when it was first selected above the "
-"edit box. This is sometimes useful when editing subtitles or translating "
-"subtitles into another language."
+#: ../src/subs_edit_box.cpp:212
+msgid "Analyzing subtitles in the Zhi Meng Subtitle Group format"
 msgstr ""
-"在編輯方塊上方顯示當前行被第一次選中時的原始內容。這個功能當你在編輯或翻譯字"
-"幕時可能會非常實用。"
 
-#: ../src/subs_edit_box.cpp:474
+#: ../src/subs_edit_box.cpp:214
+msgid ""
+"Parse the subtitles in the \"Chinese\\NJapanese\" format, with Japanese on "
+"top and Chinese on the bottom. Both parts are editable, and any changes will "
+"be synchronized in real time."
+msgstr ""
+
+#: ../src/subs_edit_box.cpp:560 ../src/subs_edit_box.cpp:575
+#: ../src/subs_edit_box.cpp:586 ../src/subs_edit_box.cpp:601
 msgid "modify text"
 msgstr "修改文字"
 
-#: ../src/subs_edit_box.cpp:552
+#: ../src/subs_edit_box.cpp:691
 msgid "modify times"
 msgstr "改變時間"
 
-#: ../src/subs_edit_box.cpp:639
+#: ../src/subs_edit_box.cpp:822
 msgid "actor change"
 msgstr "說話人更改"
 
-#: ../src/subs_edit_box.cpp:644
+#: ../src/subs_edit_box.cpp:828
 msgid "layer change"
 msgstr "層次更改"
 
-#: ../src/subs_edit_box.cpp:649
+#: ../src/subs_edit_box.cpp:833
 msgid "effect change"
 msgstr "特效更改"
 
-#: ../src/subs_edit_box.cpp:654
+#: ../src/subs_edit_box.cpp:839
 msgid "comment change"
 msgstr "注釋更改"
 
-#: ../src/subs_edit_ctrl.cpp:396
-msgid "Spell checker language"
-msgstr "拼寫檢查語言"
+#: ../src/subs_edit_box.cpp:880 ../src/subs_edit_box.cpp:892
+msgid "Japanese"
+msgstr ""
 
-#: ../src/subs_edit_ctrl.cpp:406
+#: ../src/subs_edit_box.cpp:882 ../src/subs_edit_box.cpp:894
+msgid "Chinese"
+msgstr ""
+
+#: ../src/subs_edit_ctrl.cpp:151 ../src/subs_edit_ctrl_stc.cpp:406
 msgid "Cu&t"
 msgstr "剪下(&T)"
 
-#: ../src/subs_edit_ctrl.cpp:408 ../src/timeedit_ctrl.cpp:210
+#: ../src/subs_edit_ctrl.cpp:153 ../src/subs_edit_ctrl_stc.cpp:408
+#: ../src/timeedit_ctrl.cpp:210
 msgid "&Paste"
 msgstr "貼上(&P)"
 
-#: ../src/subs_edit_ctrl.cpp:443
+#: ../src/subs_edit_ctrl_stc.cpp:396
+msgid "Spell checker language"
+msgstr "拼寫檢查語言"
+
+#: ../src/subs_edit_ctrl_stc.cpp:443
 #, c-format
 msgid "Remove \"%s\" from dictionary"
 msgstr "從字典中移除 \"%s\""
 
-#: ../src/subs_edit_ctrl.cpp:448
+#: ../src/subs_edit_ctrl_stc.cpp:448
 msgid "No spell checker suggestions"
 msgstr "沒有拼寫檢查器建議"
 
-#: ../src/subs_edit_ctrl.cpp:454
+#: ../src/subs_edit_ctrl_stc.cpp:454
 #, c-format
 msgid "Spell checker suggestions for \"%s\""
 msgstr "拼寫檢查器建議對於 \"%s\""
 
-#: ../src/subs_edit_ctrl.cpp:459
+#: ../src/subs_edit_ctrl_stc.cpp:459
 msgid "No correction suggestions"
 msgstr "沒有改正建議"
 
-#: ../src/subs_edit_ctrl.cpp:465
+#: ../src/subs_edit_ctrl_stc.cpp:465
 #, c-format
 msgid "Add \"%s\" to dictionary"
 msgstr "添加 \"%s\" 至詞典"
 
-#: ../src/subs_edit_ctrl.cpp:500
+#: ../src/subs_edit_ctrl_stc.cpp:500
 #, c-format
 msgid "Thesaurus suggestions for \"%s\""
 msgstr "詞典建議對於 \"%s\""
 
-#: ../src/subs_edit_ctrl.cpp:503
+#: ../src/subs_edit_ctrl_stc.cpp:503
 msgid "No thesaurus suggestions"
 msgstr "沒有詞典建議"
 
-#: ../src/subs_edit_ctrl.cpp:506
+#: ../src/subs_edit_ctrl_stc.cpp:506
 msgid "Thesaurus language"
 msgstr "詞典語言"
 
-#: ../src/subs_edit_ctrl.cpp:515
+#: ../src/subs_edit_ctrl_stc.cpp:515
 msgid "Disable"
 msgstr "禁用"
 
@@ -6357,80 +6386,6 @@ msgstr "平滑手繪"
 msgid "delete control point"
 msgstr "刪除控制點"
 
-#: aegisub.appdata.xml:1
-msgid ""
-"A free, cross-platform open source tool for creating and modifying subtitles"
-msgstr ""
-
-#: aegisub.appdata.xml:2
-msgid ""
-"Aegisub is a free, cross-platform open source tool for creating and "
-"modifying subtitles. Aegisub makes it quick and easy to time subtitles to "
-"audio, and features many powerful tools for styling them, including a built-"
-"in real-time video preview."
-msgstr ""
-
-#: aegisub.appdata.xml:3
-msgid ""
-"Aegisub was originally created as a tool to make typesetting, particularly "
-"in anime fansubs, a less painful experience. At the time of the start of the "
-"project, many other programs that supported the Advanced Substation Alpha "
-"format lacked (and in many cases, still lack; development on several "
-"competing programs have since been dropped for various reasons completely "
-"unrelated to Aegisub) many vital functions, or were too buggy and/or "
-"unreliable to be really useful."
-msgstr ""
-
-#: aegisub.appdata.xml:4
-msgid ""
-"Since then, Aegisub has grown into a fully fledged, highly customizable "
-"subtitle editor. It features a lot of convenient tools to help you with "
-"timing, typesetting, editing and translating subtitles, as well as a "
-"powerful scripting environment called Automation (originally mostly intended "
-"for creating karaoke effects, Automation can now be used much else, "
-"including creating macros and various other convenient tools)."
-msgstr ""
-
-#: aegisub.appdata.xml:5
-msgid "Some highlights of Aegisub:"
-msgstr ""
-
-#: aegisub.appdata.xml:6
-msgid "Simple and intuitive yet powerful interface for editing subtitles"
-msgstr ""
-
-#: aegisub.appdata.xml:7
-msgid "Support for many formats and character sets"
-msgstr ""
-
-#: aegisub.appdata.xml:8
-msgid "Powerful video mode"
-msgstr ""
-
-#: aegisub.appdata.xml:9
-msgid "Visual typesetting tools"
-msgstr ""
-
-#: aegisub.appdata.xml:10
-msgid "Intuitive and customizable audio timing mode"
-msgstr ""
-
-#: aegisub.appdata.xml:11
-msgid "Fully scriptable through the Automation module"
-msgstr ""
-
-#: aegisub.appdata.xml:12
-msgid "Typesetting"
-msgstr ""
-
-#: aegisub.appdata.xml:13
-msgid "Audio video"
-msgstr ""
-
-#: aegisub.appdata.xml:14
-msgid "Audio timing"
-msgstr ""
-
 #: default_hotkey.json:244:
 msgid "Subtitle Edit Box"
 msgstr "字幕編輯方塊"
@@ -6592,26 +6547,50 @@ msgstr "自動更新："
 #~ msgid "    Subtitle format handler: %s"
 #~ msgstr "    字幕格式處理器： %s"
 
-#~ msgid "%u lines were removed from selection"
-#~ msgstr " %u 行已被移出所選"
+#~ msgid "%d frames (%s)"
+#~ msgstr "%d 影格  (%s)"
 
 #~ msgid "%u lines were added to selection"
 #~ msgstr "%u 行已被加入所選"
 
-#~ msgid "Selection was set to %u lines"
-#~ msgstr "所選被設為 %u 行"
+#~ msgid "%u lines were removed from selection"
+#~ msgstr " %u 行已被移出所選"
 
-#~ msgid "File name"
-#~ msgstr "檔案名："
+#~ msgid "&Change aspect ratio"
+#~ msgstr "更改縱橫比(&C)"
+
+#~ msgid "&Forums"
+#~ msgstr "論壇(&F)…"
 
 #~ msgid "Are you sure you want to delete these %d styles?"
 #~ msgstr "您確定要刪除這個 %d 樣式？"
 
-#~ msgid "Reading to Hard Disk cache"
-#~ msgstr "讀取到磁片緩存"
+#~ msgid "Below Normal (recommended)"
+#~ msgstr "低於正常（推薦）"
+
+#~ msgid "Clean Script Info"
+#~ msgstr "清除腳本信息"
+
+#~ msgid "File name"
+#~ msgstr "檔案名："
+
+#~ msgid "Force BT.601"
+#~ msgstr "強制 BT.601"
+
+#~ msgid "Forums"
+#~ msgstr "論壇"
+
+#~ msgid "Lowest"
+#~ msgstr "最低"
+
+#~ msgid "None (NOT RECOMMENDED)"
+#~ msgstr "無 （不推薦）"
 
 #~ msgid "Reading into RAM"
 #~ msgstr "讀取至記憶體"
+
+#~ msgid "Reading to Hard Disk cache"
+#~ msgstr "讀取到磁片緩存"
 
 #~ msgid ""
 #~ "Removes all but the absolutely required fields from the Script Info "
@@ -6620,37 +6599,31 @@ msgstr "自動更新："
 #~ msgstr ""
 #~ "移除腳本配置中所有不必要的資訊。您可以將其用於要以原始形式分發的檔。"
 
-#~ msgid "Clean Script Info"
-#~ msgstr "清除腳本信息"
+#~ msgid ""
+#~ "Revert the active line to its initial state (shown in the upper editor)"
+#~ msgstr "恢復編輯方塊的內容到它原來的狀態（編輯方塊上方顯示的內容）"
 
-#~ msgid "&Change aspect ratio"
-#~ msgstr "更改縱橫比(&C)"
+#~ msgid "Selection was set to %u lines"
+#~ msgstr "所選被設為 %u 行"
+
+#~ msgid "Show Original"
+#~ msgstr "顯示原始字幕"
+
+#~ msgid ""
+#~ "Show the contents of the subtitle line when it was first selected above "
+#~ "the edit box. This is sometimes useful when editing subtitles or "
+#~ "translating subtitles into another language."
+#~ msgstr ""
+#~ "在編輯方塊上方顯示當前行被第一次選中時的原始內容。這個功能當你在編輯或翻譯"
+#~ "字幕時可能會非常實用。"
+
+#~ msgid "Thread priority"
+#~ msgstr "執行緒優先順序"
+
+#~ msgid "Visit Aegisub's forums"
+#~ msgstr "訪問Aegisub的論壇"
 
 #~ msgid ""
 #~ "You already have timecodes loaded. Would you like to replace them with "
 #~ "timecodes from the video file?"
 #~ msgstr "您已經載入過時間碼。是否要用視訊檔中的時間碼替換？"
-
-#~ msgid "%d frames (%s)"
-#~ msgstr "%d 影格  (%s)"
-
-#~ msgid "Force BT.601"
-#~ msgstr "強制 BT.601"
-
-#~ msgid "Thread priority"
-#~ msgstr "執行緒優先順序"
-
-#~ msgid "Lowest"
-#~ msgstr "最低"
-
-#~ msgid "Below Normal (recommended)"
-#~ msgstr "低於正常（推薦）"
-
-#~ msgid "Visit Aegisub's forums"
-#~ msgstr "訪問Aegisub的論壇"
-
-#~ msgid "Forums"
-#~ msgstr "論壇"
-
-#~ msgid "&Forums"
-#~ msgstr "論壇(&F)…"

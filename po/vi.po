@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Aegisub Tiếng Việt\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-17 13:16-0400\n"
+"POT-Creation-Date: 2023-05-14 00:32+0800\n"
 "PO-Revision-Date: \n"
 "Last-Translator: NGUY?N M?nh Hùng <loveleeyoungae@yahoo.com>\n"
 "Language-Team: OnEsChi <oneschi@yahoo.com>\n"
@@ -237,6 +237,22 @@ msgstr "Thay đổi thẻ karaoke thành \\ko"
 #: ../src/audio_karaoke.cpp:426
 msgid "karaoke split"
 msgstr "phân tách Karaoke"
+
+#: ../src/audio_provider_factory.cpp:119
+msgid ""
+"Unable to create RAM audio cache: 32-bit memory limit exceeded. Fallback to "
+"hard disk cache.\n"
+"\n"
+"Possible solutions:\n"
+"- Use 64-bit version\n"
+"- Turn off cache or switch to hard disk cache in Preferences -> Advanced -> "
+"Audio -> Cache -> Cache type\n"
+"- Enable channel downmix in Preferences -> Advanced -> Audio"
+msgstr ""
+
+#: ../src/audio_provider_factory.cpp:124
+msgid "Out of Memory"
+msgstr ""
 
 #: ../src/audio_renderer_waveform.cpp:152
 msgid "Maximum"
@@ -774,7 +790,7 @@ msgid "&Automation..."
 msgstr "Tự độ&ng hóa..."
 
 #: ../src/command/automation.cpp:75 ../src/command/automation.cpp:87
-#: ../src/preferences.cpp:330
+#: ../src/preferences.cpp:339
 msgid "Automation"
 msgstr "Tự động hóa"
 
@@ -795,96 +811,96 @@ msgstr ""
 msgid "'%s' is not a valid command name"
 msgstr "'%s' không phải là một lệnh hợp lệ"
 
-#: ../src/command/edit.cpp:134 ../src/command/edit.cpp:841
+#: ../src/command/edit.cpp:137 ../src/command/edit.cpp:925
 msgid "paste"
 msgstr "dán"
 
-#: ../src/command/edit.cpp:374
+#: ../src/command/edit.cpp:380
 msgid "set color"
 msgstr "đặt màu"
 
-#: ../src/command/edit.cpp:388
+#: ../src/command/edit.cpp:397
 msgid "Primary Color..."
 msgstr "Màu chính..."
 
-#: ../src/command/edit.cpp:389
+#: ../src/command/edit.cpp:399
 msgid "Primary Color"
 msgstr "Màu chính"
 
-#: ../src/command/edit.cpp:390
+#: ../src/command/edit.cpp:401
 msgid "Set the primary fill color (\\c) at the cursor position"
 msgstr "Đặt màu chính (\\c) tại vị trí con trỏ"
 
-#: ../src/command/edit.cpp:400
+#: ../src/command/edit.cpp:413
 msgid "Secondary Color..."
 msgstr "Màu thứ cấp..."
 
-#: ../src/command/edit.cpp:401
+#: ../src/command/edit.cpp:415
 msgid "Secondary Color"
 msgstr "Màu thứ cấp"
 
-#: ../src/command/edit.cpp:402
+#: ../src/command/edit.cpp:417
 msgid "Set the secondary (karaoke) fill color (\\2c) at the cursor position"
 msgstr "Đặt màu thứ cấp (Karaoke) (\\2c) tại vị trí con trỏ"
 
-#: ../src/command/edit.cpp:412
+#: ../src/command/edit.cpp:429
 msgid "Outline Color..."
 msgstr "Màu viền..."
 
-#: ../src/command/edit.cpp:413
+#: ../src/command/edit.cpp:431
 msgid "Outline Color"
 msgstr "Màu viền"
 
-#: ../src/command/edit.cpp:414
+#: ../src/command/edit.cpp:433
 msgid "Set the outline color (\\3c) at the cursor position"
 msgstr "Đặt màu viền (\\3c) tại vị trí con trỏ "
 
-#: ../src/command/edit.cpp:424
+#: ../src/command/edit.cpp:445
 msgid "Shadow Color..."
 msgstr "Màu bóng..."
 
-#: ../src/command/edit.cpp:425
+#: ../src/command/edit.cpp:447
 msgid "Shadow Color"
 msgstr "Màu bóng"
 
-#: ../src/command/edit.cpp:426
+#: ../src/command/edit.cpp:449
 msgid "Set the shadow color (\\4c) at the cursor position"
 msgstr "Đặt màu bóng (\\4c) tại vị trí con trỏ"
 
-#: ../src/command/edit.cpp:436 ../src/command/edit.cpp:437
+#: ../src/command/edit.cpp:461 ../src/command/edit.cpp:463
 msgid "Toggle Bold"
 msgstr "Bật/Tắt chữ đậm"
 
-#: ../src/command/edit.cpp:438
+#: ../src/command/edit.cpp:465
 msgid ""
 "Toggle bold (\\b) for the current selection or at the current cursor position"
 msgstr ""
 "Bật/Tắt chữ đậm (\\b) cho dòng đang chọn hoặc tại vị trí con trỏ hiện tại"
 
-#: ../src/command/edit.cpp:441
+#: ../src/command/edit.cpp:468
 msgid "toggle bold"
 msgstr "bật/tắt chữ đậm"
 
-#: ../src/command/edit.cpp:448 ../src/command/edit.cpp:449
+#: ../src/command/edit.cpp:477 ../src/command/edit.cpp:479
 msgid "Toggle Italics"
 msgstr "Bật/Tắt chữ nghiêng"
 
-#: ../src/command/edit.cpp:450
+#: ../src/command/edit.cpp:481
 msgid ""
 "Toggle italics (\\i) for the current selection or at the current cursor "
 "position"
 msgstr ""
 "Bật/Tắt chữ nghiêng (\\i) cho dòng đang chọn hoặc tại vị trí con trỏ hiện tại"
 
-#: ../src/command/edit.cpp:453
+#: ../src/command/edit.cpp:484
 msgid "toggle italic"
 msgstr "bật/tắt chữ nghiêng"
 
-#: ../src/command/edit.cpp:460 ../src/command/edit.cpp:461
+#: ../src/command/edit.cpp:493 ../src/command/edit.cpp:495
 msgid "Toggle Underline"
 msgstr "Bật/Tắt gạch chân chữ"
 
-#: ../src/command/edit.cpp:462
+#: ../src/command/edit.cpp:497
 msgid ""
 "Toggle underline (\\u) for the current selection or at the current cursor "
 "position"
@@ -892,15 +908,15 @@ msgstr ""
 "Bật/Tắt gạch chân chữ (\\i) cho dòng đang chọn hoặc tại vị trí con trỏ hiện "
 "tại"
 
-#: ../src/command/edit.cpp:465
+#: ../src/command/edit.cpp:500
 msgid "toggle underline"
 msgstr "bật/tắt gạch chân chữ"
 
-#: ../src/command/edit.cpp:472 ../src/command/edit.cpp:473
+#: ../src/command/edit.cpp:509 ../src/command/edit.cpp:511
 msgid "Toggle Strikeout"
 msgstr "Bật/Tắt gạch ngang chữ"
 
-#: ../src/command/edit.cpp:474
+#: ../src/command/edit.cpp:513
 msgid ""
 "Toggle strikeout (\\s) for the current selection or at the current cursor "
 "position"
@@ -908,107 +924,107 @@ msgstr ""
 "Bật/Tắt gạch ngang chữ (\\i) cho dòng đang chọn hoặc tại vị trí con trỏ hiện "
 "tại"
 
-#: ../src/command/edit.cpp:477
+#: ../src/command/edit.cpp:516
 msgid "toggle strikeout"
 msgstr "bật/tắt gạch ngang chữ"
 
-#: ../src/command/edit.cpp:484
+#: ../src/command/edit.cpp:525
 msgid "Font Face..."
 msgstr "Phông chữ..."
 
-#: ../src/command/edit.cpp:485 ../src/preferences_base.cpp:251
+#: ../src/command/edit.cpp:527 ../src/preferences_base.cpp:251
 msgid "Font Face"
 msgstr "Phông chữ"
 
-#: ../src/command/edit.cpp:486
+#: ../src/command/edit.cpp:529
 msgid "Select a font face and size"
 msgstr "Chọn phông chữ và kích cỡ"
 
-#: ../src/command/edit.cpp:513
+#: ../src/command/edit.cpp:557
 msgid "set font"
 msgstr "chọn phông chữ"
 
-#: ../src/command/edit.cpp:540
+#: ../src/command/edit.cpp:587
 msgid "Find and R&eplace..."
 msgstr "Tìm và Thay thế..."
 
-#: ../src/command/edit.cpp:541
+#: ../src/command/edit.cpp:589
 msgid "Find and Replace"
 msgstr "Tìm và Thay thế"
 
-#: ../src/command/edit.cpp:542
+#: ../src/command/edit.cpp:591
 msgid "Find and replace words in subtitles"
 msgstr "Tìm và thay thế các từ trong phụ đề"
 
-#: ../src/command/edit.cpp:603
+#: ../src/command/edit.cpp:654
 msgid "&Copy Lines"
 msgstr "&Sao chép dòng"
 
-#: ../src/command/edit.cpp:604
+#: ../src/command/edit.cpp:656
 msgid "Copy Lines"
 msgstr "Sao chép dòng"
 
-#: ../src/command/edit.cpp:605
+#: ../src/command/edit.cpp:658
 msgid "Copy subtitles to the clipboard"
 msgstr "Sao chép phụ đề vào khay nhớ tạm"
 
-#: ../src/command/edit.cpp:626
+#: ../src/command/edit.cpp:681
 msgid "Cu&t Lines"
 msgstr "Cắ&t dòng"
 
-#: ../src/command/edit.cpp:627
+#: ../src/command/edit.cpp:683
 msgid "Cut Lines"
 msgstr "Cắt dòng"
 
-#: ../src/command/edit.cpp:628
+#: ../src/command/edit.cpp:685
 msgid "Cut subtitles"
 msgstr "Cắt phụ đề"
 
-#: ../src/command/edit.cpp:635
+#: ../src/command/edit.cpp:692
 msgid "cut lines"
 msgstr "cắt dòng"
 
-#: ../src/command/edit.cpp:643
+#: ../src/command/edit.cpp:702
 msgid "De&lete Lines"
 msgstr "&Xóa dòng"
 
-#: ../src/command/edit.cpp:644
+#: ../src/command/edit.cpp:704
 msgid "Delete Lines"
 msgstr "Xóa dòng"
 
-#: ../src/command/edit.cpp:645
+#: ../src/command/edit.cpp:706
 msgid "Delete currently selected lines"
 msgstr "Xóa các dòng đang chọn"
 
-#: ../src/command/edit.cpp:648
+#: ../src/command/edit.cpp:709
 msgid "delete lines"
 msgstr "xóa dòng"
 
-#: ../src/command/edit.cpp:713
+#: ../src/command/edit.cpp:773
 msgid "duplicate lines"
 msgstr "tạo bản sao của dòng"
 
-#: ../src/command/edit.cpp:713 ../src/command/edit.cpp:1107
+#: ../src/command/edit.cpp:773 ../src/command/edit.cpp:1204
 msgid "split"
 msgstr "phân tách"
 
-#: ../src/command/edit.cpp:720
+#: ../src/command/edit.cpp:781
 msgid "&Duplicate Lines"
 msgstr "Tạo &bản sao của dòng"
 
-#: ../src/command/edit.cpp:721
+#: ../src/command/edit.cpp:783
 msgid "Duplicate Lines"
 msgstr "Tạo bản sao của dòng"
 
-#: ../src/command/edit.cpp:722
+#: ../src/command/edit.cpp:785
 msgid "Duplicate the selected lines"
 msgstr "Tạo bản sao của các dòng đã chọn"
 
-#: ../src/command/edit.cpp:731 ../src/command/edit.cpp:732
+#: ../src/command/edit.cpp:795 ../src/command/edit.cpp:797
 msgid "Split lines after current frame"
 msgstr "Phân tách dòng sau khung hình hiện tại"
 
-#: ../src/command/edit.cpp:733
+#: ../src/command/edit.cpp:800
 msgid ""
 "Split the current line into a line which ends on the current frame and a "
 "line which starts on the next frame"
@@ -1016,11 +1032,11 @@ msgstr ""
 "Phân tách dòng hiện tại thành một dòng kết thúc ở khung hình hiện tại và một "
 "dòng bắt đầu ở khung hình kế tiếp"
 
-#: ../src/command/edit.cpp:743 ../src/command/edit.cpp:744
+#: ../src/command/edit.cpp:812 ../src/command/edit.cpp:814
 msgid "Split lines before current frame"
 msgstr "Phân tách dòng trước dòng hiện tại"
 
-#: ../src/command/edit.cpp:745
+#: ../src/command/edit.cpp:817
 msgid ""
 "Split the current line into a line which ends on the previous frame and a "
 "line which starts on the current frame"
@@ -1028,49 +1044,49 @@ msgstr ""
 "Phân tách dòng hiện tại thành một dòng kết thúc ở khung hình trước và một "
 "dòng bắt đầu ở khung hình hiện tại"
 
-#: ../src/command/edit.cpp:785
+#: ../src/command/edit.cpp:861
 msgid "As &Karaoke"
 msgstr "Như &Karaoke"
 
-#: ../src/command/edit.cpp:786
+#: ../src/command/edit.cpp:863
 msgid "As Karaoke"
 msgstr "Như Karaoke"
 
-#: ../src/command/edit.cpp:787
+#: ../src/command/edit.cpp:865
 msgid "Join selected lines in a single one, as karaoke"
 msgstr "Hợp nhất các dòng đã chọn thành một dòng duy nhất, như Karaoke"
 
-#: ../src/command/edit.cpp:790
+#: ../src/command/edit.cpp:868
 msgid "join as karaoke"
 msgstr "hợp nhất như karaoke"
 
-#: ../src/command/edit.cpp:796
+#: ../src/command/edit.cpp:875
 msgid "&Concatenate"
 msgstr "&Nối tiếp"
 
-#: ../src/command/edit.cpp:797
+#: ../src/command/edit.cpp:877
 msgid "Concatenate"
 msgstr "&Nối tiếp"
 
-#: ../src/command/edit.cpp:798
+#: ../src/command/edit.cpp:879
 msgid "Join selected lines in a single one, concatenating text together"
 msgstr ""
 "Hợp nhất các dòng đã chọn thành một dòng, nối tiếp nội dung văn bản chúng "
 "chứa cùng nhau"
 
-#: ../src/command/edit.cpp:801 ../src/command/edit.cpp:812
+#: ../src/command/edit.cpp:882 ../src/command/edit.cpp:896
 msgid "join lines"
 msgstr "hợp nhất các dòng"
 
-#: ../src/command/edit.cpp:807
+#: ../src/command/edit.cpp:889
 msgid "Keep &First"
 msgstr "&Chỉ giữ lại dòng đầu tiên"
 
-#: ../src/command/edit.cpp:808
+#: ../src/command/edit.cpp:891
 msgid "Keep First"
 msgstr "Chỉ giữ lại dòng đầu tiên"
 
-#: ../src/command/edit.cpp:809
+#: ../src/command/edit.cpp:893
 msgid ""
 "Join selected lines in a single one, keeping text of first and discarding "
 "remaining"
@@ -1078,66 +1094,66 @@ msgstr ""
 "Hợp nhất các dòng đã chọn thành một, giữ nội dung văn bản của dòng đầu tiên "
 "được chọn và hủy của những dòng còn lại"
 
-#: ../src/command/edit.cpp:850
+#: ../src/command/edit.cpp:936
 msgid "&Paste Lines"
 msgstr "&Dán dòng"
 
-#: ../src/command/edit.cpp:851
+#: ../src/command/edit.cpp:938
 msgid "Paste Lines"
 msgstr "Dán dòng"
 
-#: ../src/command/edit.cpp:852
+#: ../src/command/edit.cpp:940
 msgid "Paste subtitles"
 msgstr "Dán phụ đề"
 
-#: ../src/command/edit.cpp:881
+#: ../src/command/edit.cpp:970
 msgid "Paste Lines &Over..."
 msgstr "Dán dòn&g đè lên"
 
-#: ../src/command/edit.cpp:882
+#: ../src/command/edit.cpp:972
 msgid "Paste Lines Over"
 msgstr "Dán dòng đè lên"
 
-#: ../src/command/edit.cpp:883
+#: ../src/command/edit.cpp:974
 msgid "Paste subtitles over others"
 msgstr "Dán phụ đề đè lên những cái khác"
 
-#: ../src/command/edit.cpp:966
+#: ../src/command/edit.cpp:1058
 msgid "Recom&bine Lines"
 msgstr "Tái hợ&p các dòng"
 
-#: ../src/command/edit.cpp:967
+#: ../src/command/edit.cpp:1060
 msgid "Recombine Lines"
 msgstr "Tái hợp các dòng"
 
-#: ../src/command/edit.cpp:968
+#: ../src/command/edit.cpp:1062
 msgid "Recombine subtitles which have been split and merged"
 msgstr "Hợp lại các dòng phụ đề đã bị phân tách"
 
-#: ../src/command/edit.cpp:1038
+#: ../src/command/edit.cpp:1132
 msgid "combining"
 msgstr "tái hợp"
 
-#: ../src/command/edit.cpp:1044 ../src/command/edit.cpp:1045
+#: ../src/command/edit.cpp:1139 ../src/command/edit.cpp:1141
 msgid "Split Lines (by karaoke)"
 msgstr "Phân tách Dòng (theo karaoke)"
 
-#: ../src/command/edit.cpp:1046
+#: ../src/command/edit.cpp:1143
 msgid "Use karaoke timing to split line into multiple smaller lines"
 msgstr ""
 "Sử dụng căn chỉnh thời gian Karaoke để phân tách một dòng thành những dòng "
 "nhỏ hơn"
 
-#: ../src/command/edit.cpp:1080
+#: ../src/command/edit.cpp:1177
 msgid "splitting"
 msgstr "Phân tách"
 
-#: ../src/command/edit.cpp:1112 ../src/command/edit.cpp:1113
-#: ../src/subs_edit_ctrl.cpp:416
+#: ../src/command/edit.cpp:1210 ../src/command/edit.cpp:1212
+#: ../src/subs_edit_ctrl.cpp:161 ../src/subs_edit_ctrl_stc.cpp:416
 msgid "Split at cursor (estimate times)"
 msgstr "Phân tách tại con trỏ (ước tính thời gian)"
 
-#: ../src/command/edit.cpp:1114
+#: ../src/command/edit.cpp:1214
 msgid ""
 "Split the current line at the cursor, dividing the original line's duration "
 "between the new ones"
@@ -1145,12 +1161,12 @@ msgstr ""
 "Phân tách dòng hiện tại tại con trỏ, chia thời lượng dòng ban đầu giữa những "
 "cái mới"
 
-#: ../src/command/edit.cpp:1128 ../src/command/edit.cpp:1129
-#: ../src/subs_edit_ctrl.cpp:415
+#: ../src/command/edit.cpp:1229 ../src/command/edit.cpp:1231
+#: ../src/subs_edit_ctrl.cpp:160 ../src/subs_edit_ctrl_stc.cpp:415
 msgid "Split at cursor (preserve times)"
 msgstr "Phân tách tại con trỏ (giữ nguyên thời gian)"
 
-#: ../src/command/edit.cpp:1130
+#: ../src/command/edit.cpp:1233
 msgid ""
 "Split the current line at the cursor, setting both lines to the original "
 "line's times"
@@ -1158,11 +1174,11 @@ msgstr ""
 "Phân tách dòng hiện tại tại con trỏ, đặt thời gian của cả hai dòng thành "
 "thời gian của dòng gốc"
 
-#: ../src/command/edit.cpp:1139 ../src/command/edit.cpp:1140
+#: ../src/command/edit.cpp:1243 ../src/command/edit.cpp:1245
 msgid "Split at cursor (at video frame)"
 msgstr "Phân tách tại con trỏ (ở khung hình video)"
 
-#: ../src/command/edit.cpp:1141
+#: ../src/command/edit.cpp:1247
 msgid ""
 "Split the current line at the cursor, dividing the line's duration at the "
 "current video frame"
@@ -1170,95 +1186,93 @@ msgstr ""
 "Phân tách dòng hiện tại tại con trỏ, chia thời lượng của dòng ở khung hình "
 "video hiện tại"
 
-#: ../src/command/edit.cpp:1157
+#: ../src/command/edit.cpp:1265
 msgid "Redo last undone action"
 msgstr "Làm lại hành động cuối cùng"
 
-#: ../src/command/edit.cpp:1162
+#: ../src/command/edit.cpp:1271
 msgid "Nothing to &redo"
 msgstr "Không có hành động nào để làm lại"
 
-#: ../src/command/edit.cpp:1163
+#: ../src/command/edit.cpp:1272
 #, c-format
 msgid "&Redo %s"
 msgstr "&Làm lại %s"
 
-#: ../src/command/edit.cpp:1167
+#: ../src/command/edit.cpp:1277
 msgid "Nothing to redo"
 msgstr "Không có hành động nào để làm lại"
 
-#: ../src/command/edit.cpp:1168
+#: ../src/command/edit.cpp:1278
 #, c-format
 msgid "Redo %s"
 msgstr "Làm lại %s"
 
-#: ../src/command/edit.cpp:1183
+#: ../src/command/edit.cpp:1295
 msgid "Undo last action"
 msgstr "Hoàn tác hành động cuối cùng"
 
-#: ../src/command/edit.cpp:1188
+#: ../src/command/edit.cpp:1301
 msgid "Nothing to &undo"
 msgstr "Không có hành động nào để hoàn tác"
 
-#: ../src/command/edit.cpp:1189
+#: ../src/command/edit.cpp:1302
 #, c-format
 msgid "&Undo %s"
 msgstr "&Hoàn tác %s"
 
-#: ../src/command/edit.cpp:1193
+#: ../src/command/edit.cpp:1307
 msgid "Nothing to undo"
 msgstr "Không có hành động nào để hoàn tác"
 
-#: ../src/command/edit.cpp:1194
+#: ../src/command/edit.cpp:1308
 #, c-format
 msgid "Undo %s"
 msgstr "Hoàn tác %s"
 
-#: ../src/command/edit.cpp:1208 ../src/command/edit.cpp:1209
+#: ../src/command/edit.cpp:1323 ../src/command/edit.cpp:1325
 msgid "Revert"
 msgstr "Đảo ngược"
 
-#: ../src/command/edit.cpp:1210
-msgid "Revert the active line to its initial state (shown in the upper editor)"
+#: ../src/command/edit.cpp:1327
+msgid "Revert the active line to its initial state"
 msgstr ""
-"Đảo ngược dòng đang hoạt động về trạng thái ban đầu của nó (Hiển thị ở trình "
-"biên tập ở trên)"
 
-#: ../src/command/edit.cpp:1215
+#: ../src/command/edit.cpp:1332
 msgid "revert line"
 msgstr "đảo ngược dòng"
 
-#: ../src/command/edit.cpp:1221 ../src/command/edit.cpp:1222
-#: ../src/preferences.cpp:401
+#: ../src/command/edit.cpp:1339 ../src/command/edit.cpp:1341
+#: ../src/preferences.cpp:410
 msgid "Clear"
 msgstr "Xóa"
 
-#: ../src/command/edit.cpp:1223
+#: ../src/command/edit.cpp:1343
 msgid "Clear the current line's text"
 msgstr "Xóa hết nội dung văn bản của dòng hiện tại"
 
-#: ../src/command/edit.cpp:1228 ../src/command/edit.cpp:1247
+#: ../src/command/edit.cpp:1348 ../src/command/edit.cpp:1371
 msgid "clear line"
 msgstr "xóa dòng"
 
-#: ../src/command/edit.cpp:1235 ../src/command/edit.cpp:1236
+#: ../src/command/edit.cpp:1357 ../src/command/edit.cpp:1359
 msgid "Clear Text"
 msgstr "Xóa nội dung văn bản"
 
-#: ../src/command/edit.cpp:1237
+#: ../src/command/edit.cpp:1361
 msgid "Clear the current line's text, leaving override tags"
 msgstr "Xóa hết nội dung văn bản của dòng hiện tại, để lại các thẻ"
 
-#: ../src/command/edit.cpp:1253 ../src/command/edit.cpp:1254
+#: ../src/command/edit.cpp:1378 ../src/command/edit.cpp:1380
 #: ../src/command/tool.cpp:270
 msgid "Insert Original"
 msgstr "Chèn nội dung văn bản gốc"
 
-#: ../src/command/edit.cpp:1255
+#: ../src/command/edit.cpp:1382
 msgid "Insert the original line text at the cursor"
 msgstr "Chèn nội dung văn bản gốc của dòng tại con trỏ"
 
-#: ../src/command/edit.cpp:1263
+#: ../src/command/edit.cpp:1391
 msgid "insert original"
 msgstr "chèn nội dung văn bản gốc"
 
@@ -1324,7 +1338,7 @@ msgstr "&Hiệu ứng"
 
 #: ../src/command/grid.cpp:134 ../src/command/grid.cpp:146
 #: ../src/dialog_paste_over.cpp:72 ../src/grid_column.cpp:214
-#: ../src/grid_column.cpp:215 ../src/subs_edit_box.cpp:139
+#: ../src/grid_column.cpp:215 ../src/subs_edit_box.cpp:148
 msgid "Effect"
 msgstr "Hiệu ứng"
 
@@ -1829,7 +1843,8 @@ msgid "Save subtitles with another name"
 msgstr "Lưu phụ đề với tên khác"
 
 #: ../src/command/subtitle.cpp:396 ../src/dialog_export.cpp:124
-#: ../src/dialog_selected_choices.cpp:26 ../src/subs_edit_ctrl.cpp:410
+#: ../src/dialog_selected_choices.cpp:26 ../src/subs_edit_ctrl.cpp:155
+#: ../src/subs_edit_ctrl_stc.cpp:410
 msgid "Select &All"
 msgstr "&Chọn tất cả"
 
@@ -2181,7 +2196,7 @@ msgid "&Accept changes"
 msgstr "&Chấp nhận thay đổi"
 
 #: ../src/command/tool.cpp:142 ../src/command/tool.cpp:226
-#: ../src/dialog_styling_assistant.cpp:90 ../src/dialog_translation.cpp:117
+#: ../src/dialog_styling_assistant.cpp:90 ../src/dialog_translation.cpp:138
 msgid "Accept changes"
 msgstr "Chấp nhận thay đổi"
 
@@ -2194,7 +2209,7 @@ msgid "&Preview changes"
 msgstr "&Xem trước các thay đổi"
 
 #: ../src/command/tool.cpp:153 ../src/command/tool.cpp:237
-#: ../src/dialog_styling_assistant.cpp:91 ../src/dialog_translation.cpp:118
+#: ../src/dialog_styling_assistant.cpp:91 ../src/dialog_translation.cpp:139
 msgid "Preview changes"
 msgstr "Xem trước thay đổi"
 
@@ -2246,8 +2261,8 @@ msgstr ""
 msgid "&Translation Assistant..."
 msgstr "Trợ &lí Dịch thuật..."
 
-#: ../src/command/tool.cpp:201 ../src/dialog_translation.cpp:66
-#: ../src/preferences.cpp:230
+#: ../src/command/tool.cpp:201 ../src/dialog_translation.cpp:69
+#: ../src/preferences.cpp:237
 msgid "Translation Assistant"
 msgstr "Trợ lí Dịch thuật"
 
@@ -2847,7 +2862,7 @@ msgid "E&xtract"
 msgstr "Trích x&uất"
 
 #: ../src/dialog_attachments.cpp:79 ../src/dialog_style_manager.cpp:214
-#: ../src/preferences.cpp:596
+#: ../src/preferences.cpp:605
 msgid "&Delete"
 msgstr "&Xóa"
 
@@ -3393,7 +3408,7 @@ msgstr "&Bắt đầu!"
 #: ../src/dialog_fonts_collector.cpp:307 ../src/dialog_fonts_collector.cpp:312
 #: ../src/dialog_fonts_collector.cpp:317 ../src/dialog_kara_timing_copy.cpp:574
 #: ../src/dialog_kara_timing_copy.cpp:576
-#: ../src/dialog_kara_timing_copy.cpp:626 ../src/preferences.cpp:263
+#: ../src/dialog_kara_timing_copy.cpp:626 ../src/preferences.cpp:271
 msgid "Error"
 msgstr "Lỗi"
 
@@ -3564,7 +3579,7 @@ msgid "Style"
 msgstr "Kiểu dáng"
 
 #: ../src/dialog_paste_over.cpp:68 ../src/grid_column.cpp:228
-#: ../src/grid_column.cpp:229 ../src/subs_edit_box.cpp:134
+#: ../src/grid_column.cpp:229 ../src/subs_edit_box.cpp:142
 msgid "Actor"
 msgstr "Nhân vật"
 
@@ -4041,15 +4056,15 @@ msgstr "Thời gian"
 msgid "&Clear"
 msgstr "&Xóa"
 
-#: ../src/dialog_shift_times.cpp:203
+#: ../src/dialog_shift_times.cpp:204
 msgid "Shift by"
 msgstr "Dịch chuyển theo"
 
-#: ../src/dialog_shift_times.cpp:212
+#: ../src/dialog_shift_times.cpp:213
 msgid "Load from history"
 msgstr "Nạp từ lược sử"
 
-#: ../src/dialog_shift_times.cpp:410
+#: ../src/dialog_shift_times.cpp:411
 msgid "shifting"
 msgstr "dịch chuyển"
 
@@ -4105,7 +4120,7 @@ msgstr "Trình chỉnh sửa kiểu dáng"
 msgid "Font"
 msgstr "Phông chữ"
 
-#: ../src/dialog_style_editor.cpp:180 ../src/preferences.cpp:238
+#: ../src/dialog_style_editor.cpp:180 ../src/preferences.cpp:245
 msgid "Colors"
 msgstr "Màu"
 
@@ -4295,15 +4310,15 @@ msgstr "Văn bản được dùng để xem trước"
 msgid "Color of preview background"
 msgstr "Màu nền của phần xem trước"
 
-#: ../src/dialog_style_editor.cpp:420
+#: ../src/dialog_style_editor.cpp:421
 msgid "Style name conflict"
 msgstr "Xung đột tên kiểu dáng"
 
-#: ../src/dialog_style_editor.cpp:420
+#: ../src/dialog_style_editor.cpp:421
 msgid "There is already a style with this name. Please choose another name."
 msgstr "Đã có một kiểu dáng với tên này. Vui lòng chọn một tên khác"
 
-#: ../src/dialog_style_editor.cpp:432
+#: ../src/dialog_style_editor.cpp:433
 msgid ""
 "Do you want to change all instances of this style in the script to this new "
 "name?"
@@ -4311,11 +4326,11 @@ msgstr ""
 "Bạn có muốn thay đổi tất cả các kiểu dáng loại này trong phụ đề sang tên mới "
 "hay không?"
 
-#: ../src/dialog_style_editor.cpp:433
+#: ../src/dialog_style_editor.cpp:434
 msgid "Update script?"
 msgstr "Cập nhật phụ đề?"
 
-#: ../src/dialog_style_editor.cpp:460 ../src/subs_edit_box.cpp:633
+#: ../src/dialog_style_editor.cpp:461 ../src/subs_edit_box.cpp:816
 msgid "style change"
 msgstr "thay đổi kiểu dáng"
 
@@ -4339,16 +4354,16 @@ msgstr "Di chuyển kiểu dáng xuống dưới cùng"
 msgid "Sort styles alphabetically"
 msgstr "Sắp xếp kiểu dáng theo abc"
 
-#: ../src/dialog_style_manager.cpp:211 ../src/preferences.cpp:594
+#: ../src/dialog_style_manager.cpp:211 ../src/preferences.cpp:603
 msgid "&New"
 msgstr "&Mới"
 
-#: ../src/dialog_style_manager.cpp:212 ../src/preferences.cpp:595
+#: ../src/dialog_style_manager.cpp:212 ../src/preferences.cpp:604
 msgid "&Edit"
 msgstr "&Sửa"
 
-#: ../src/dialog_style_manager.cpp:213 ../src/subs_edit_ctrl.cpp:407
-#: ../src/timeedit_ctrl.cpp:209
+#: ../src/dialog_style_manager.cpp:213 ../src/subs_edit_ctrl.cpp:152
+#: ../src/subs_edit_ctrl_stc.cpp:407 ../src/timeedit_ctrl.cpp:209
 msgid "&Copy"
 msgstr "&Sao chép"
 
@@ -4530,23 +4545,23 @@ msgstr "Kiểu dáng hiện có"
 msgid "Set style"
 msgstr "Thiết lập kiểu dáng"
 
-#: ../src/dialog_styling_assistant.cpp:87 ../src/dialog_translation.cpp:114
+#: ../src/dialog_styling_assistant.cpp:87 ../src/dialog_translation.cpp:135
 msgid "Keys"
 msgstr "Phím"
 
-#: ../src/dialog_styling_assistant.cpp:92 ../src/dialog_translation.cpp:119
+#: ../src/dialog_styling_assistant.cpp:92 ../src/dialog_translation.cpp:140
 msgid "Previous line"
 msgstr "Dòng trước"
 
-#: ../src/dialog_styling_assistant.cpp:93 ../src/dialog_translation.cpp:120
+#: ../src/dialog_styling_assistant.cpp:93 ../src/dialog_translation.cpp:141
 msgid "Next line"
 msgstr "Dòng kế"
 
-#: ../src/dialog_styling_assistant.cpp:94 ../src/dialog_translation.cpp:122
+#: ../src/dialog_styling_assistant.cpp:94 ../src/dialog_translation.cpp:143
 msgid "Play video"
 msgstr "Phát video"
 
-#: ../src/dialog_styling_assistant.cpp:95 ../src/dialog_translation.cpp:123
+#: ../src/dialog_styling_assistant.cpp:95 ../src/dialog_translation.cpp:144
 msgid "Play audio"
 msgstr "Phát âm thanh"
 
@@ -4562,15 +4577,15 @@ msgstr "Chọn kiểu dáng"
 msgid "&Seek video to line start time"
 msgstr "&Tua video đến thời gian bắt đầu của dòng"
 
-#: ../src/dialog_styling_assistant.cpp:110 ../src/dialog_translation.cpp:135
+#: ../src/dialog_styling_assistant.cpp:110 ../src/dialog_translation.cpp:156
 msgid "Actions"
 msgstr "Thao tác"
 
-#: ../src/dialog_styling_assistant.cpp:113 ../src/dialog_translation.cpp:137
+#: ../src/dialog_styling_assistant.cpp:113 ../src/dialog_translation.cpp:158
 msgid "Play &Audio"
 msgstr "&Phát âm thanh"
 
-#: ../src/dialog_styling_assistant.cpp:117 ../src/dialog_translation.cpp:142
+#: ../src/dialog_styling_assistant.cpp:117 ../src/dialog_translation.cpp:163
 msgid "Play &Video"
 msgstr "&Phát video"
 
@@ -4778,36 +4793,36 @@ msgstr "Mã không hợp lệ"
 msgid "timing processor"
 msgstr "xử lí căn chỉnh thời gian"
 
-#: ../src/dialog_translation.cpp:79
+#: ../src/dialog_translation.cpp:85
 msgid "Original"
 msgstr "Bản gốc"
 
-#: ../src/dialog_translation.cpp:106
+#: ../src/dialog_translation.cpp:118
 msgid "Translation"
 msgstr "Bản dịch"
 
-#: ../src/dialog_translation.cpp:121
+#: ../src/dialog_translation.cpp:142
 msgid "Insert original"
 msgstr "Chèn cái gốc"
 
-#: ../src/dialog_translation.cpp:124
+#: ../src/dialog_translation.cpp:145
 msgid "Delete line"
 msgstr "Xóa dòng"
 
-#: ../src/dialog_translation.cpp:127
+#: ../src/dialog_translation.cpp:148
 msgid "Enable &preview"
 msgstr "Bật xem trước"
 
-#: ../src/dialog_translation.cpp:184 ../src/dialog_translation.cpp:288
+#: ../src/dialog_translation.cpp:205 ../src/dialog_translation.cpp:329
 msgid "No more lines to translate."
 msgstr "Không còn dòng nào để dịch."
 
-#: ../src/dialog_translation.cpp:192 ../src/dialog_translation.cpp:242
+#: ../src/dialog_translation.cpp:213 ../src/dialog_translation.cpp:263
 #, c-format
 msgid "Current line: %d/%d"
 msgstr "Dòng hiện tại: %d/%d"
 
-#: ../src/dialog_translation.cpp:283
+#: ../src/dialog_translation.cpp:324
 msgid "translation assistant"
 msgstr "trợ lí dịch thuật"
 
@@ -4899,7 +4914,7 @@ msgid "Decoder:"
 msgstr "Bộ giải mã:"
 
 #: ../src/dialog_video_details.cpp:66 ../src/preferences.cpp:168
-#: ../src/preferences.cpp:436
+#: ../src/preferences.cpp:445
 msgid "Video"
 msgstr "Video"
 
@@ -5246,7 +5261,7 @@ msgid "Reading subtitles from Matroska file."
 msgstr "Đang đọc phụ đề từ tệp Matroska."
 
 #: ../src/preferences.cpp:62 ../src/preferences.cpp:64
-#: ../src/preferences.cpp:332 ../src/preferences.cpp:353
+#: ../src/preferences.cpp:341 ../src/preferences.cpp:362
 msgid "General"
 msgstr "Tổng quát"
 
@@ -5334,7 +5349,7 @@ msgstr "Nhập tệp TTXT"
 msgid "Plain text import"
 msgstr "Nhập tệp văn bản thô"
 
-#: ../src/preferences.cpp:128 ../src/preferences.cpp:366
+#: ../src/preferences.cpp:128 ../src/preferences.cpp:375
 msgid "Audio"
 msgstr "Âm thanh"
 
@@ -5430,7 +5445,7 @@ msgstr "Con trỏ thời gian"
 msgid "Video position"
 msgstr "Vị trí video"
 
-#: ../src/preferences.cpp:156 ../src/preferences.cpp:252
+#: ../src/preferences.cpp:156 ../src/preferences.cpp:259
 msgid "Seconds boundaries"
 msgstr "Phân giới thứ hai"
 
@@ -5506,339 +5521,343 @@ msgstr "Giao diện"
 msgid "Edit Box"
 msgstr "Hộp biên tập"
 
-#: ../src/preferences.cpp:210
+#: ../src/preferences.cpp:211
+msgid "Use styled edit box"
+msgstr ""
+
+#: ../src/preferences.cpp:212
 msgid "Enable call tips"
 msgstr "Bật mẹo gọi"
 
-#: ../src/preferences.cpp:211
+#: ../src/preferences.cpp:214
 msgid "Overwrite in time boxes"
 msgstr "Thẻ trong hộp thời gian"
 
-#: ../src/preferences.cpp:213
+#: ../src/preferences.cpp:216
 msgid "Enable syntax highlighting"
 msgstr "Bật tô sáng cú pháp"
 
-#: ../src/preferences.cpp:214
+#: ../src/preferences.cpp:221
 msgid "Dictionaries path"
 msgstr "Đường dẫn đến từ điển"
 
-#: ../src/preferences.cpp:217
+#: ../src/preferences.cpp:224
 msgid "Character Counter"
 msgstr "Bộ đếm kí tự"
 
-#: ../src/preferences.cpp:218
+#: ../src/preferences.cpp:225
 msgid "Maximum characters per line"
 msgstr "Số kí tự tối đa mỗi dòng"
 
-#: ../src/preferences.cpp:219
+#: ../src/preferences.cpp:226
 msgid "Characters Per Second Warning Threshold"
 msgstr "Ngưỡng cảnh báo số kí tự mỗi giây"
 
-#: ../src/preferences.cpp:220
+#: ../src/preferences.cpp:227
 msgid "Characters Per Second Error Threshold"
 msgstr "Ngưỡng báo lỗi số kí tự mỗi giây"
 
-#: ../src/preferences.cpp:221
+#: ../src/preferences.cpp:228
 msgid "Ignore whitespace"
 msgstr "Bỏ qua dấu cách"
 
-#: ../src/preferences.cpp:222
+#: ../src/preferences.cpp:229
 msgid "Ignore punctuation"
 msgstr "Bỏ qua dấu chấm câu"
 
-#: ../src/preferences.cpp:224
+#: ../src/preferences.cpp:231
 msgid "Grid"
 msgstr "Danh sách"
 
-#: ../src/preferences.cpp:225
+#: ../src/preferences.cpp:232
 msgid "Focus grid on click"
 msgstr "Tập trung danh sách vào khi nhấp chuột"
 
-#: ../src/preferences.cpp:226
+#: ../src/preferences.cpp:233
 msgid "Highlight visible subtitles"
 msgstr "Tô sáng các dòng phụ đề khả kiến"
 
-#: ../src/preferences.cpp:227
+#: ../src/preferences.cpp:234
 msgid "Hide overrides symbol"
 msgstr "Biểu tượng ẩn thẻ"
 
-#: ../src/preferences.cpp:231
+#: ../src/preferences.cpp:238
 #, fuzzy
 msgid "Skip over whitespace"
 msgstr "Bỏ qua dấu cách"
 
-#: ../src/preferences.cpp:246
+#: ../src/preferences.cpp:253
 msgid "Audio Display"
 msgstr "Hiển thị âm thanh"
 
-#: ../src/preferences.cpp:247
+#: ../src/preferences.cpp:254
 msgid "Play cursor"
 msgstr "Con trỏ phát"
 
-#: ../src/preferences.cpp:248
+#: ../src/preferences.cpp:255
 msgid "Line boundary start"
 msgstr "Phân giới bắt đầu của dòng"
 
-#: ../src/preferences.cpp:249
+#: ../src/preferences.cpp:256
 msgid "Line boundary end"
 msgstr "Phân giới kết thúc của dòng"
 
-#: ../src/preferences.cpp:250
+#: ../src/preferences.cpp:257
 msgid "Line boundary inactive line"
 msgstr "Phân giới của dòng không hoạt động"
 
-#: ../src/preferences.cpp:251
+#: ../src/preferences.cpp:258
 msgid "Syllable boundaries"
 msgstr "Phân giới âm"
 
-#: ../src/preferences.cpp:254
+#: ../src/preferences.cpp:261
 msgid "Syntax Highlighting"
 msgstr "Tô sáng cú pháp"
 
-#: ../src/preferences.cpp:255
+#: ../src/preferences.cpp:262
 msgid "Background"
 msgstr "Nền"
 
-#: ../src/preferences.cpp:256
+#: ../src/preferences.cpp:263
 msgid "Normal"
 msgstr "Bình thường"
 
-#: ../src/preferences.cpp:257
+#: ../src/preferences.cpp:265
 msgid "Comments"
 msgstr "Chú giải"
 
-#: ../src/preferences.cpp:258
+#: ../src/preferences.cpp:266
 msgid "Drawings"
 msgstr "Mã hình vẽ"
 
-#: ../src/preferences.cpp:259
+#: ../src/preferences.cpp:267
 msgid "Brackets"
 msgstr "Ngoặc"
 
-#: ../src/preferences.cpp:260
+#: ../src/preferences.cpp:268
 msgid "Slashes and Parentheses"
 msgstr "Gạch chéo và Ngoặc tròn"
 
-#: ../src/preferences.cpp:261
+#: ../src/preferences.cpp:269
 msgid "Tags"
 msgstr "Thẻ"
 
-#: ../src/preferences.cpp:262
+#: ../src/preferences.cpp:270
 msgid "Parameters"
 msgstr "Tham số"
 
-#: ../src/preferences.cpp:264
+#: ../src/preferences.cpp:272
 msgid "Error Background"
 msgstr "Nền khi lỗi"
 
-#: ../src/preferences.cpp:265
+#: ../src/preferences.cpp:273
 msgid "Line Break"
 msgstr "Ngắt dòng"
 
-#: ../src/preferences.cpp:266
+#: ../src/preferences.cpp:274
 msgid "Karaoke templates"
 msgstr "Khuôn mẫu Karaoke"
 
-#: ../src/preferences.cpp:267
+#: ../src/preferences.cpp:275
 msgid "Karaoke variables"
 msgstr "Biến Karaoke"
 
-#: ../src/preferences.cpp:273
+#: ../src/preferences.cpp:282
 msgid "Audio Color Schemes"
 msgstr "Màu đồ thị âm thanh"
 
-#: ../src/preferences.cpp:275 ../src/preferences.cpp:382
+#: ../src/preferences.cpp:284 ../src/preferences.cpp:391
 msgid "Spectrum"
 msgstr "Quang phổ"
 
-#: ../src/preferences.cpp:276
+#: ../src/preferences.cpp:285
 msgid "Waveform"
 msgstr "Đồ thị sóng"
 
-#: ../src/preferences.cpp:278
+#: ../src/preferences.cpp:287
 msgid "Subtitle Grid"
 msgstr "Danh sách dòng phụ đề"
 
-#: ../src/preferences.cpp:279
+#: ../src/preferences.cpp:288
 msgid "Standard foreground"
 msgstr "Tiền cảnh chuẩn"
 
-#: ../src/preferences.cpp:280
+#: ../src/preferences.cpp:289
 msgid "Standard background"
 msgstr "Nền chuẩn"
 
-#: ../src/preferences.cpp:281
+#: ../src/preferences.cpp:290
 msgid "Selection foreground"
 msgstr "Tiền cảnh của phần được chọn"
 
-#: ../src/preferences.cpp:282
+#: ../src/preferences.cpp:291
 msgid "Selection background"
 msgstr "Nền của phần được chọn"
 
-#: ../src/preferences.cpp:283
+#: ../src/preferences.cpp:292
 msgid "Collision foreground"
 msgstr "Tiền cảnh của dòng bị trùng nhau"
 
-#: ../src/preferences.cpp:284
+#: ../src/preferences.cpp:293
 msgid "In frame background"
 msgstr "Nền trong khung hình"
 
-#: ../src/preferences.cpp:285
+#: ../src/preferences.cpp:294
 msgid "Comment background"
 msgstr "Nền của dòng chú giải"
 
-#: ../src/preferences.cpp:286
+#: ../src/preferences.cpp:295
 msgid "Selected comment background"
 msgstr "Nền của dòng chú giải được chọn"
 
-#: ../src/preferences.cpp:287
+#: ../src/preferences.cpp:296
 msgid "Header background"
 msgstr "Nền của thanh tiêu đề"
 
-#: ../src/preferences.cpp:288
+#: ../src/preferences.cpp:297
 msgid "Left Column"
 msgstr "Cột trái"
 
-#: ../src/preferences.cpp:289
+#: ../src/preferences.cpp:298
 msgid "Active Line Border"
 msgstr "Biên của Dòng đang hoạt động"
 
-#: ../src/preferences.cpp:290
+#: ../src/preferences.cpp:299
 msgid "Lines"
 msgstr "Dòng"
 
-#: ../src/preferences.cpp:291
+#: ../src/preferences.cpp:300
 msgid "CPS Error"
 msgstr "Lỗi CPS"
 
-#: ../src/preferences.cpp:293
+#: ../src/preferences.cpp:302
 #, fuzzy
 msgid "Visual Typesetting Tools"
 msgstr "Typeset Trực quan"
 
-#: ../src/preferences.cpp:294
+#: ../src/preferences.cpp:303
 #, fuzzy
 msgid "Primary Lines"
 msgstr "Chính"
 
-#: ../src/preferences.cpp:295
+#: ../src/preferences.cpp:304
 #, fuzzy
 msgid "Secondary Lines"
 msgstr "Thứ cấp"
 
-#: ../src/preferences.cpp:296
+#: ../src/preferences.cpp:305
 #, fuzzy
 msgid "Primary Highlight"
 msgstr "Tô sáng cú pháp"
 
-#: ../src/preferences.cpp:297
+#: ../src/preferences.cpp:306
 #, fuzzy
 msgid "Secondary Highlight"
 msgstr "Tô sáng cú pháp"
 
-#: ../src/preferences.cpp:300
+#: ../src/preferences.cpp:309
 #, fuzzy
 msgid "Visual Typesetting Tools Alpha"
 msgstr "Typeset Trực quan"
 
-#: ../src/preferences.cpp:301
+#: ../src/preferences.cpp:310
 msgid "Shaded Area"
 msgstr ""
 
-#: ../src/preferences.cpp:310
+#: ../src/preferences.cpp:319
 msgid "Backup"
 msgstr "Sao lưu"
 
-#: ../src/preferences.cpp:312
+#: ../src/preferences.cpp:321
 msgid "Automatic Save"
 msgstr "Tự động lưu"
 
-#: ../src/preferences.cpp:313 ../src/preferences.cpp:321
+#: ../src/preferences.cpp:322 ../src/preferences.cpp:330
 msgid "Enable"
 msgstr "Bật"
 
-#: ../src/preferences.cpp:316
+#: ../src/preferences.cpp:325
 msgid "Interval in seconds"
 msgstr "Khoảng thời gian tính bằng giây"
 
-#: ../src/preferences.cpp:317 ../src/preferences.cpp:323
-#: ../src/preferences.cpp:380
+#: ../src/preferences.cpp:326 ../src/preferences.cpp:332
+#: ../src/preferences.cpp:389
 msgid "Path"
 msgstr "Đường dẫn"
 
-#: ../src/preferences.cpp:318
+#: ../src/preferences.cpp:327
 msgid "Autosave after every change"
 msgstr "Tự động lưu sau mỗi thay đổi"
 
-#: ../src/preferences.cpp:320
+#: ../src/preferences.cpp:329
 msgid "Automatic Backup"
 msgstr "Tự động sao lưu"
 
-#: ../src/preferences.cpp:334
+#: ../src/preferences.cpp:343
 msgid "Base path"
 msgstr "Đường dẫn Cơ sở"
 
-#: ../src/preferences.cpp:335
+#: ../src/preferences.cpp:344
 msgid "Include path"
 msgstr "Đường dẫn Bao gồm"
 
-#: ../src/preferences.cpp:336
+#: ../src/preferences.cpp:345
 msgid "Auto-load path"
 msgstr "Đường dẫn Tự động nạp"
 
-#: ../src/preferences.cpp:338
+#: ../src/preferences.cpp:347
 msgid "0: Fatal"
 msgstr "0: Nặng"
 
-#: ../src/preferences.cpp:338
+#: ../src/preferences.cpp:347
 msgid "1: Error"
 msgstr "1: Lỗi"
 
-#: ../src/preferences.cpp:338
+#: ../src/preferences.cpp:347
 msgid "2: Warning"
 msgstr "2: Cảnh báo"
 
-#: ../src/preferences.cpp:338
+#: ../src/preferences.cpp:347
 msgid "3: Hint"
 msgstr "3: Gợi ý"
 
-#: ../src/preferences.cpp:338
+#: ../src/preferences.cpp:347
 msgid "4: Debug"
 msgstr "4: Gỡ lỗi"
 
-#: ../src/preferences.cpp:338
+#: ../src/preferences.cpp:347
 msgid "5: Trace"
 msgstr "5: Truy dấu"
 
-#: ../src/preferences.cpp:340
+#: ../src/preferences.cpp:349
 msgid "Trace level"
 msgstr "Cấp độ truy dấu"
 
-#: ../src/preferences.cpp:342
+#: ../src/preferences.cpp:351
 msgid "All scripts"
 msgstr "Tất cả script"
 
-#: ../src/preferences.cpp:342
+#: ../src/preferences.cpp:351
 msgid "Global autoload scripts"
 msgstr "Mã tự động nạp toàn cục"
 
-#: ../src/preferences.cpp:342
+#: ../src/preferences.cpp:351
 msgid "No scripts"
 msgstr "Không script"
 
-#: ../src/preferences.cpp:342
+#: ../src/preferences.cpp:351
 msgid "Subtitle-local scripts"
 msgstr "Phụ đề nội bộ"
 
-#: ../src/preferences.cpp:344
+#: ../src/preferences.cpp:353
 msgid "Autoreload on Export"
 msgstr "Tự động nạp lại khi Xuất"
 
-#: ../src/preferences.cpp:351
+#: ../src/preferences.cpp:360
 msgid "Advanced"
 msgstr "Nâng cao"
 
-#: ../src/preferences.cpp:355
+#: ../src/preferences.cpp:364
 msgid ""
 "Changing these settings might result in bugs and/or crashes.  Do not touch "
 "these unless you know what you're doing."
@@ -5846,143 +5865,143 @@ msgstr ""
 "Thay đổi những cài đặt này có thể dẫn đến lỗi và/hoặc sập chương trình. "
 "Không nên chỉnh trừ khi bạn biết bạn đang làm gì."
 
-#: ../src/preferences.cpp:368 ../src/preferences.cpp:438
+#: ../src/preferences.cpp:377 ../src/preferences.cpp:447
 msgid "Expert"
 msgstr "Nguồn"
 
-#: ../src/preferences.cpp:371
+#: ../src/preferences.cpp:380
 msgid "Audio provider"
 msgstr "Trình cung cấp âm thanh"
 
-#: ../src/preferences.cpp:374
+#: ../src/preferences.cpp:383
 msgid "Audio player"
 msgstr "Trình phát âm thanh"
 
-#: ../src/preferences.cpp:376
+#: ../src/preferences.cpp:385
 msgid "Cache"
 msgstr "Bộ đệm"
 
-#: ../src/preferences.cpp:377
+#: ../src/preferences.cpp:386
 msgid "Hard Disk"
 msgstr "Đĩa cứng"
 
-#: ../src/preferences.cpp:377
-msgid "None (NOT RECOMMENDED)"
-msgstr "Không (KHÔNG KHUYẾN NGHỊ)"
+#: ../src/preferences.cpp:386
+msgid "None (Not recommended with Avisynth)"
+msgstr ""
 
-#: ../src/preferences.cpp:377
+#: ../src/preferences.cpp:386
 msgid "RAM"
 msgstr "RAM"
 
-#: ../src/preferences.cpp:379
+#: ../src/preferences.cpp:388
 msgid "Cache type"
 msgstr "Đệm trên"
 
-#: ../src/preferences.cpp:384
+#: ../src/preferences.cpp:393
 msgid "Better quality"
 msgstr "Chất lượng tốt hơn"
 
-#: ../src/preferences.cpp:384
+#: ../src/preferences.cpp:393
 msgid "High quality"
 msgstr "Chất lượng cao"
 
-#: ../src/preferences.cpp:384
+#: ../src/preferences.cpp:393
 msgid "Insane quality"
 msgstr "Chất lượng cực cao"
 
-#: ../src/preferences.cpp:384
+#: ../src/preferences.cpp:393
 msgid "Regular quality"
 msgstr "Chất lượng bình thường"
 
-#: ../src/preferences.cpp:386
+#: ../src/preferences.cpp:395
 msgid "Quality"
 msgstr "Chất lượng"
 
-#: ../src/preferences.cpp:388
+#: ../src/preferences.cpp:397
 msgid "Cache memory max (MB)"
 msgstr "Lượng bộ nhớ đệm tối đa (MB)"
 
-#: ../src/preferences.cpp:394
+#: ../src/preferences.cpp:403
 msgid "Avisynth down-mixer"
 msgstr "Down-mix âm thanh bằng Avisynth "
 
-#: ../src/preferences.cpp:395
+#: ../src/preferences.cpp:404
 msgid "Force sample rate"
 msgstr "Tốc độ lấy mẫu bắt buộc"
 
-#: ../src/preferences.cpp:401
+#: ../src/preferences.cpp:410
 msgid "Abort"
 msgstr "Hủy"
 
-#: ../src/preferences.cpp:401
+#: ../src/preferences.cpp:410
 msgid "Ignore"
 msgstr "Bỏ qua"
 
-#: ../src/preferences.cpp:401
+#: ../src/preferences.cpp:410
 msgid "Stop"
 msgstr "Dừng "
 
-#: ../src/preferences.cpp:403
+#: ../src/preferences.cpp:412
 msgid "Audio indexing error handling mode"
 msgstr "Chế độ xử lí lỗi nhập chỉ mục âm thanh"
 
-#: ../src/preferences.cpp:405
+#: ../src/preferences.cpp:414
 msgid "Always index all audio tracks"
 msgstr "Luôn nhập chỉ mục cho tất cả track âm thanh"
 
-#: ../src/preferences.cpp:406
+#: ../src/preferences.cpp:415
 msgid "Downmix to 16bit mono audio"
 msgstr ""
 
-#: ../src/preferences.cpp:411
+#: ../src/preferences.cpp:420
 msgid "Portaudio device"
 msgstr "Thiết bị âm thanh ngoại vi"
 
-#: ../src/preferences.cpp:416
+#: ../src/preferences.cpp:425
 msgid "OSS Device"
 msgstr "Thiết bị OSS"
 
-#: ../src/preferences.cpp:427
+#: ../src/preferences.cpp:436
 msgid "Buffer latency"
 msgstr "Độ trễ của bộ đệm"
 
-#: ../src/preferences.cpp:428
+#: ../src/preferences.cpp:437
 msgid "Buffer length"
 msgstr "Độ dài của bộ đệm"
 
-#: ../src/preferences.cpp:441
+#: ../src/preferences.cpp:450
 msgid "Video provider"
 msgstr "Trình cung cấp video"
 
-#: ../src/preferences.cpp:444
+#: ../src/preferences.cpp:453
 msgid "Subtitles provider"
 msgstr "Trình cung cấp phụ đề"
 
-#: ../src/preferences.cpp:448
+#: ../src/preferences.cpp:457
 msgid "Allow pre-2.56a Avisynth"
 msgstr "Cho phép dùng Avisynth bản 2.56a"
 
-#: ../src/preferences.cpp:450
+#: ../src/preferences.cpp:459
 msgid "Avisynth memory limit"
 msgstr "Giới hạn bộ nhớ Avisynth"
 
-#: ../src/preferences.cpp:458
+#: ../src/preferences.cpp:467
 msgid "Debug log verbosity"
 msgstr "Nhật kí gỡ lỗi"
 
-#: ../src/preferences.cpp:460
+#: ../src/preferences.cpp:469
 msgid "Decoding threads"
 msgstr "Luồng giải mã"
 
-#: ../src/preferences.cpp:461
+#: ../src/preferences.cpp:470
 msgid "Enable unsafe seeking"
 msgstr "Bật tua không an toàn"
 
-#: ../src/preferences.cpp:590
+#: ../src/preferences.cpp:599
 msgid "Hotkeys"
 msgstr "Phím tắt"
 
-#: ../src/preferences.cpp:689
+#: ../src/preferences.cpp:698
 msgid ""
 "Are you sure that you want to restore the defaults? All your settings will "
 "be overridden."
@@ -5990,15 +6009,15 @@ msgstr ""
 "Bạn có thật sự muốn khôi phục các tùy chọn mặc định không? Tất cả các thiết "
 "lập của bạn sẽ bị ghi đè."
 
-#: ../src/preferences.cpp:689
+#: ../src/preferences.cpp:698
 msgid "Restore defaults?"
 msgstr "Khôi phục mặc định?"
 
-#: ../src/preferences.cpp:707
+#: ../src/preferences.cpp:716
 msgid "Preferences"
 msgstr "Cài đặt"
 
-#: ../src/preferences.cpp:735
+#: ../src/preferences.cpp:744
 msgid "&Restore Defaults"
 msgstr "&Khôi phục mặc định"
 
@@ -6131,25 +6150,25 @@ msgstr "Không đề"
 msgid "untitled"
 msgstr "không đề"
 
-#: ../src/subs_edit_box.cpp:114
+#: ../src/subs_edit_box.cpp:122
 msgid "&Comment"
 msgstr "&Chú giải"
 
-#: ../src/subs_edit_box.cpp:115
+#: ../src/subs_edit_box.cpp:123
 msgid "Comment this line out. Commented lines don't show up on screen."
 msgstr ""
 "Chú giải dòng này ở bên ngoài. Các dòng bị chú giải sẽ không hiện trên màn "
 "hình."
 
-#: ../src/subs_edit_box.cpp:122
+#: ../src/subs_edit_box.cpp:130
 msgid "Style for this line"
 msgstr "Kiểu dáng của dòng này"
 
-#: ../src/subs_edit_box.cpp:124
+#: ../src/subs_edit_box.cpp:132
 msgid "Edit"
 msgstr "Sửa"
 
-#: ../src/subs_edit_box.cpp:134
+#: ../src/subs_edit_box.cpp:143
 msgid ""
 "Actor name for this speech. This is only for reference, and is mainly "
 "useless."
@@ -6157,7 +6176,7 @@ msgstr ""
 "Tên nhân vật của đoạn hội thoại này. Phần này chỉ để tham khảo, và thường "
 "thì không có ích lắm."
 
-#: ../src/subs_edit_box.cpp:139
+#: ../src/subs_edit_box.cpp:149
 msgid ""
 "Effect for this line. This can be used to store extra information for "
 "karaoke scripts, or for the effects supported by the renderer."
@@ -6165,153 +6184,160 @@ msgstr ""
 "Hiệu ứng của dòng này. Phần này có thể được dùng để lưu thông tin phụ cho "
 "script karaoke, hoặc cho các hiệu ứng được hỗ trợ bởi trình dựng hình."
 
-#: ../src/subs_edit_box.cpp:150
+#: ../src/subs_edit_box.cpp:160
 msgid "Number of characters in the longest line of this subtitle."
 msgstr "Số kí tự trong dòng dài nhất của phụ đề này"
 
-#: ../src/subs_edit_box.cpp:166
+#: ../src/subs_edit_box.cpp:177
 msgid "Layer number"
 msgstr "Số lớp"
 
-#: ../src/subs_edit_box.cpp:170
+#: ../src/subs_edit_box.cpp:181
 msgid "Start time"
 msgstr "Thời gian bắt đầu"
 
-#: ../src/subs_edit_box.cpp:171
+#: ../src/subs_edit_box.cpp:182
 msgid "End time"
 msgstr "Thời gian kết thúc"
 
-#: ../src/subs_edit_box.cpp:173
+#: ../src/subs_edit_box.cpp:184
 msgid "Line duration"
 msgstr "Thời lượng của dòng"
 
-#: ../src/subs_edit_box.cpp:176
+#: ../src/subs_edit_box.cpp:187
 msgid "Left Margin (0 = default from style)"
 msgstr "Lề trái (0 = mặc định từ kiểu dáng này)"
 
-#: ../src/subs_edit_box.cpp:176
+#: ../src/subs_edit_box.cpp:187
 msgid "left margin change"
 msgstr "thay đổi lề trái"
 
-#: ../src/subs_edit_box.cpp:177
+#: ../src/subs_edit_box.cpp:188
 msgid "Right Margin (0 = default from style)"
 msgstr "Lề phải (0 = mặc định từ kiểu dáng này)"
 
-#: ../src/subs_edit_box.cpp:177
+#: ../src/subs_edit_box.cpp:188
 msgid "right margin change"
 msgstr "thay đổi lề phải"
 
-#: ../src/subs_edit_box.cpp:178
+#: ../src/subs_edit_box.cpp:189
 msgid "Vertical Margin (0 = default from style)"
 msgstr "Lề dọc (0 = mặc định từ kiểu dáng"
 
-#: ../src/subs_edit_box.cpp:178
+#: ../src/subs_edit_box.cpp:189
 msgid "vertical margin change"
 msgstr "thay đổi lề dọc"
 
-#: ../src/subs_edit_box.cpp:197
+#: ../src/subs_edit_box.cpp:208
 msgid "T&ime"
 msgstr "T&hời gian"
 
-#: ../src/subs_edit_box.cpp:197
+#: ../src/subs_edit_box.cpp:208
 msgid "Time by h:mm:ss.cs"
 msgstr "Thời gian theo định dạng h:mm:ss.cs"
 
-#: ../src/subs_edit_box.cpp:198
+#: ../src/subs_edit_box.cpp:209
 msgid "F&rame"
 msgstr "K&hung hình"
 
-#: ../src/subs_edit_box.cpp:198
+#: ../src/subs_edit_box.cpp:209
 msgid "Time by frame number"
 msgstr "Thời gian theo số khung hình"
 
-#: ../src/subs_edit_box.cpp:201
-msgid "Show Original"
-msgstr "Hiển thị gốc"
-
-#: ../src/subs_edit_box.cpp:202
-msgid ""
-"Show the contents of the subtitle line when it was first selected above the "
-"edit box. This is sometimes useful when editing subtitles or translating "
-"subtitles into another language."
+#: ../src/subs_edit_box.cpp:212
+msgid "Analyzing subtitles in the Zhi Meng Subtitle Group format"
 msgstr ""
-"Hiển thị nội dung của dòng phụ đề khi nó lần đầu được chọn trên hộp biên "
-"tập. Tính năng này đôi khi hữu dụng khi biên tập lại phụ đề hoặc dịch phụ đề "
-"này sang ngôn ngữ khác."
 
-#: ../src/subs_edit_box.cpp:474
+#: ../src/subs_edit_box.cpp:214
+msgid ""
+"Parse the subtitles in the \"Chinese\\NJapanese\" format, with Japanese on "
+"top and Chinese on the bottom. Both parts are editable, and any changes will "
+"be synchronized in real time."
+msgstr ""
+
+#: ../src/subs_edit_box.cpp:560 ../src/subs_edit_box.cpp:575
+#: ../src/subs_edit_box.cpp:586 ../src/subs_edit_box.cpp:601
 msgid "modify text"
 msgstr "sửa đổi văn bản"
 
-#: ../src/subs_edit_box.cpp:552
+#: ../src/subs_edit_box.cpp:691
 msgid "modify times"
 msgstr "sửa đổi thời gian"
 
-#: ../src/subs_edit_box.cpp:639
+#: ../src/subs_edit_box.cpp:822
 msgid "actor change"
 msgstr "thay đổi nhân vật"
 
-#: ../src/subs_edit_box.cpp:644
+#: ../src/subs_edit_box.cpp:828
 msgid "layer change"
 msgstr "thay đổi lớp"
 
-#: ../src/subs_edit_box.cpp:649
+#: ../src/subs_edit_box.cpp:833
 msgid "effect change"
 msgstr "thay đổi hiệu ứng"
 
-#: ../src/subs_edit_box.cpp:654
+#: ../src/subs_edit_box.cpp:839
 msgid "comment change"
 msgstr "thay đổi chú giải"
 
-#: ../src/subs_edit_ctrl.cpp:396
-msgid "Spell checker language"
-msgstr "Ngôn ngữ kiểm tra chính tả"
+#: ../src/subs_edit_box.cpp:880 ../src/subs_edit_box.cpp:892
+msgid "Japanese"
+msgstr ""
 
-#: ../src/subs_edit_ctrl.cpp:406
+#: ../src/subs_edit_box.cpp:882 ../src/subs_edit_box.cpp:894
+msgid "Chinese"
+msgstr ""
+
+#: ../src/subs_edit_ctrl.cpp:151 ../src/subs_edit_ctrl_stc.cpp:406
 msgid "Cu&t"
 msgstr "Cắ&t"
 
-#: ../src/subs_edit_ctrl.cpp:408 ../src/timeedit_ctrl.cpp:210
+#: ../src/subs_edit_ctrl.cpp:153 ../src/subs_edit_ctrl_stc.cpp:408
+#: ../src/timeedit_ctrl.cpp:210
 msgid "&Paste"
 msgstr "&Dán"
 
-#: ../src/subs_edit_ctrl.cpp:443
+#: ../src/subs_edit_ctrl_stc.cpp:396
+msgid "Spell checker language"
+msgstr "Ngôn ngữ kiểm tra chính tả"
+
+#: ../src/subs_edit_ctrl_stc.cpp:443
 #, c-format
 msgid "Remove \"%s\" from dictionary"
 msgstr "Xóa \"%s\" từ từ điển"
 
-#: ../src/subs_edit_ctrl.cpp:448
+#: ../src/subs_edit_ctrl_stc.cpp:448
 msgid "No spell checker suggestions"
 msgstr "Không có đề xuất từ trình kiểm tra chính tả"
 
-#: ../src/subs_edit_ctrl.cpp:454
+#: ../src/subs_edit_ctrl_stc.cpp:454
 #, c-format
 msgid "Spell checker suggestions for \"%s\""
 msgstr "Đề xuất kiểm tra chính tả cho \"%s\""
 
-#: ../src/subs_edit_ctrl.cpp:459
+#: ../src/subs_edit_ctrl_stc.cpp:459
 msgid "No correction suggestions"
 msgstr "Không có đề xuất sửa lỗi."
 
-#: ../src/subs_edit_ctrl.cpp:465
+#: ../src/subs_edit_ctrl_stc.cpp:465
 #, c-format
 msgid "Add \"%s\" to dictionary"
 msgstr "Thêm \"%s\" vào từ điển"
 
-#: ../src/subs_edit_ctrl.cpp:500
+#: ../src/subs_edit_ctrl_stc.cpp:500
 #, c-format
 msgid "Thesaurus suggestions for \"%s\""
 msgstr "Đề xuất từ đồng nghĩa cho \"%s\""
 
-#: ../src/subs_edit_ctrl.cpp:503
+#: ../src/subs_edit_ctrl_stc.cpp:503
 msgid "No thesaurus suggestions"
 msgstr "Không có đề xuất từ đồng nghĩa"
 
-#: ../src/subs_edit_ctrl.cpp:506
+#: ../src/subs_edit_ctrl_stc.cpp:506
 msgid "Thesaurus language"
 msgstr "Ngôn ngữ cho từ điển đồng nghĩa"
 
-#: ../src/subs_edit_ctrl.cpp:515
+#: ../src/subs_edit_ctrl_stc.cpp:515
 msgid "Disable"
 msgstr "Vô hiệu hóa"
 
@@ -6483,80 +6509,6 @@ msgstr "Vẽ tay mượt mà"
 msgid "delete control point"
 msgstr "xóa điểm điều khiển"
 
-#: aegisub.appdata.xml:1
-msgid ""
-"A free, cross-platform open source tool for creating and modifying subtitles"
-msgstr ""
-
-#: aegisub.appdata.xml:2
-msgid ""
-"Aegisub is a free, cross-platform open source tool for creating and "
-"modifying subtitles. Aegisub makes it quick and easy to time subtitles to "
-"audio, and features many powerful tools for styling them, including a built-"
-"in real-time video preview."
-msgstr ""
-
-#: aegisub.appdata.xml:3
-msgid ""
-"Aegisub was originally created as a tool to make typesetting, particularly "
-"in anime fansubs, a less painful experience. At the time of the start of the "
-"project, many other programs that supported the Advanced Substation Alpha "
-"format lacked (and in many cases, still lack; development on several "
-"competing programs have since been dropped for various reasons completely "
-"unrelated to Aegisub) many vital functions, or were too buggy and/or "
-"unreliable to be really useful."
-msgstr ""
-
-#: aegisub.appdata.xml:4
-msgid ""
-"Since then, Aegisub has grown into a fully fledged, highly customizable "
-"subtitle editor. It features a lot of convenient tools to help you with "
-"timing, typesetting, editing and translating subtitles, as well as a "
-"powerful scripting environment called Automation (originally mostly intended "
-"for creating karaoke effects, Automation can now be used much else, "
-"including creating macros and various other convenient tools)."
-msgstr ""
-
-#: aegisub.appdata.xml:5
-msgid "Some highlights of Aegisub:"
-msgstr ""
-
-#: aegisub.appdata.xml:6
-msgid "Simple and intuitive yet powerful interface for editing subtitles"
-msgstr ""
-
-#: aegisub.appdata.xml:7
-msgid "Support for many formats and character sets"
-msgstr ""
-
-#: aegisub.appdata.xml:8
-msgid "Powerful video mode"
-msgstr ""
-
-#: aegisub.appdata.xml:9
-msgid "Visual typesetting tools"
-msgstr ""
-
-#: aegisub.appdata.xml:10
-msgid "Intuitive and customizable audio timing mode"
-msgstr ""
-
-#: aegisub.appdata.xml:11
-msgid "Fully scriptable through the Automation module"
-msgstr ""
-
-#: aegisub.appdata.xml:12
-msgid "Typesetting"
-msgstr ""
-
-#: aegisub.appdata.xml:13
-msgid "Audio video"
-msgstr ""
-
-#: aegisub.appdata.xml:14
-msgid "Audio timing"
-msgstr ""
-
 #: default_hotkey.json:244:
 msgid "Subtitle Edit Box"
 msgstr "Hộp biên tập phụ đề"
@@ -6716,1612 +6668,12 @@ msgstr ""
 msgid "Update Checker:"
 msgstr "Trình kiểm tra cập nhật:"
 
-#~ msgid "Show Splash Screen"
-#~ msgstr "Hiện hình ảnh Splash"
-
-#~ msgid ""
-#~ "You already have timecodes loaded. Would you like to replace them with "
-#~ "timecodes from the video file?"
-#~ msgstr ""
-#~ "Bạn đã nạp mã thời gian rồi. Bạn có muốn thay thế chúng bằng các mã thời "
-#~ "gian từ tập tin phim?"
-
-#~ msgid "Replace timecodes?"
-#~ msgstr "Thay thế mã thời gian?"
-
-#~ msgid ""
-#~ "You already have timecodes loaded. Replace them with the timecodes from "
-#~ "the Matroska file?"
-#~ msgstr ""
-#~ "Bạn đã nạp mã thời gian rồi. Thay thế chúng bằng các mã thời gian từ tập "
-#~ "tin Matroska?"
-
-#~ msgid "Unknown"
-#~ msgstr "Không rõ"
-
-#~ msgid "Toggle realtime display of changes."
-#~ msgstr "Bật-tắt hiển thị thay đổi theo thời gian thực."
-
-#~ msgid "Realtime"
-#~ msgstr "Thời gian thực"
-
-#~ msgid "No timecodes to average"
-#~ msgstr "Không có mã thời gian để tính trung bình"
-
-#~ msgid "Writing file"
-#~ msgstr "Đang ghi tập tin"
-
-#~ msgid "Exporting PRS"
-#~ msgstr "Xuất PRS"
-
-#~ msgid "Please wait, caching fonts..."
-#~ msgstr "Vui lòng đợi, đang đệm font..."
-
-#~ msgid "delete"
-#~ msgstr "xóa"
-
-#~ msgid "load"
-#~ msgstr "nạp"
-
-#~ msgid "Couldn't allocate memory."
-#~ msgstr "Không thể truy xuất bộ nhớ."
-
-#~ msgid "There is no audio to save."
-#~ msgstr "Không có âm thanh để lưu."
-
-#~ msgid "The starting point is beyond the length of the audio loaded."
-#~ msgstr "Điểm bắt đầu ở trên độ dài của đoạn âm thanh được nạp."
-
-#~ msgid "Paste lines from clipboard"
-#~ msgstr "Dán các dòng từ clipboard"
-
-#~ msgid "Cuts selected lines to clipboard"
-#~ msgstr "Cắt các dòng đã chọn vào clipboard"
-
-#~ msgid "C&ut"
-#~ msgstr "Cắ&t"
-
-#~ msgid "Copies selected lines to clipboard"
-#~ msgstr "Chép các dòng đã chọn vào clipboard"
-
-#~ msgid "Create an audio clip of the selected line"
-#~ msgstr "Tạo một đoạn âm thanh của dòng đã chọn"
-
-#~ msgid ""
-#~ "Joins selected lines in a single one, making each line into a karaoke "
-#~ "syllable"
-#~ msgstr ""
-#~ "Ghép các dòng đã chọn thành một, đưa mỗi dòng thành một âm tiết karaoke"
-
-#~ msgid "&Swap"
-#~ msgstr "H&oán chuyển"
-
-#~ msgid "Split (by karaoke)"
-#~ msgstr "Chia tách (theo karaoke)"
-
-#~ msgid "&Duplicate and shift by 1 frame"
-#~ msgstr "Tạo bản sao &và dịch chuyển 1 khung hình"
-
-#~ msgid "&Duplicate"
-#~ msgstr "Tạo &bản sao"
-
-#~ msgid "editing"
-#~ msgstr "chỉnh sửa"
-
-#~ msgid "MarginV change"
-#~ msgstr "thay đổi Lề D"
-
-#~ msgid "MarginR change"
-#~ msgstr "thay đổi Lề P"
-
-#~ msgid "MarginL change"
-#~ msgstr "thay đổi Lề T"
-
-#~ msgid "Frame"
-#~ msgstr "Khung hình"
-
-#~ msgid "Time"
-#~ msgstr "Thời gian"
-
-#~ msgid "Commits the text (Enter). Hold Ctrl to stay in line (%KEY%)."
-#~ msgstr "Thực hiện văn bản (Enter). Ấn Ctrl để ở trong dòng (%KEY%)."
-
-#~ msgid "Shadow color"
-#~ msgstr "Màu đổ bóng"
-
-#~ msgid "Outline color"
-#~ msgstr "Màu đường nét ngoài"
-
-#~ msgid "Secondary color"
-#~ msgstr "Màu thứ cấp"
-
-#~ msgid "Primary color"
-#~ msgstr "Màu chính"
-
-#~ msgid "Font Face Name"
-#~ msgstr "Tên Font"
-
-#~ msgid "Italics"
-#~ msgstr "Nghiêng"
-
-#~ msgid "Vertical Margin (0 = default)"
-#~ msgstr "Lề dọc (0 = mặc định)"
-
-#~ msgid "Right Margin (0 = default)"
-#~ msgstr "Lề phải (0 = mặc định)"
-
-#~ msgid "Left Margin (0 = default)"
-#~ msgstr "Lề trái (0 = mặc định)"
-
-#~ msgid ""
-#~ "Configuration file is either invalid or corrupt. The current file will be "
-#~ "backed up and replaced with a default file."
-#~ msgstr ""
-#~ "Tập tin cấu hình không hợp lệ hoặc đã bị hư. Tập tin hiện tại sẽ được sao "
-#~ "lưu và thay thế bằng một tập tin mặc định."
-
-#~ msgid "Reading keyframe and timecode data from Matroska file."
-#~ msgstr "Đọc dữ liệu mã thời gian và keyframe từ tập tin Matroska."
-
-#~ msgid "Reading keyframes from video"
-#~ msgstr "Đọc keyframe từ phim"
-
-#~ msgid "Load keyframes"
-#~ msgstr "Nạp keyframe"
-
-#~ msgid "Styling Assistant Preview"
-#~ msgstr "Trợ lí Tạo kiểu - Xem thử"
-
-#~ msgid "Styling Assistant Accept"
-#~ msgstr "Trợ lí Tạo kiểu - Chấp thuận"
-
-#~ msgid "Styling Assistant Prev"
-#~ msgstr "Trợ lí Tạo kiểu - Trước"
-
-#~ msgid "Styling Assistant Next"
-#~ msgstr "Trợ lí Tạo kiểu - Tiếp"
-
-#~ msgid "Styling Assistant Play Video"
-#~ msgstr "Trợ lí Tạo kiểu - Phát phim"
-
-#~ msgid "Styling Assistant Play Audio"
-#~ msgstr "Trợ lí Tạo kiểu - Phát âm thanh"
-
-#~ msgid "Translation Assistant Insert Original"
-#~ msgstr "Trợ lí Dịch thuật - Chèn gốc"
-
-#~ msgid "Translation Assistant Preview"
-#~ msgstr "Trợ lí Dịch thuật - Xem thử"
-
-#~ msgid "Translation Assistant Accept"
-#~ msgstr "Trợ lí Dịch thuật - Chấp thuận"
-
-#~ msgid "Translation Assistant Prev"
-#~ msgstr "Trợ lí Dịch thuật - Trước"
-
-#~ msgid "Translation Assistant Next"
-#~ msgstr "Trợ lí Dịch thuật - Tiếp"
-
-#~ msgid "Translation Assistant Play Video"
-#~ msgstr "Trợ lí Dịch thuật - Phát phim"
-
-#~ msgid "Translation Assistant Play Audio"
-#~ msgstr "Trợ lí Dịch thuật - Phát âm thanh"
-
-#~ msgid "Audio Medusa Enter"
-#~ msgstr "Âm thanh Medusa - Vào"
-
-#~ msgid "Audio Medusa Previous"
-#~ msgstr "Âm thanh Medusa - Trước"
-
-#~ msgid "Audio Medusa Next"
-#~ msgstr "Âm thanh Medusa - Tiếp"
-
-#~ msgid "Audio Medusa Play After"
-#~ msgstr "Âm thanh Medusa - Phát sau"
-
-#~ msgid "Audio Medusa Play Before"
-#~ msgstr "Âm thanh Medusa - Phát trước"
-
-#~ msgid "Audio Medusa Shift End Forward"
-#~ msgstr "Âm thanh Medusa - Dịch chuyển Kết thúc Tiến"
-
-#~ msgid "Audio Medusa Shift End Back"
-#~ msgstr "Âm thanh Medusa - Dịch chuyển Kết thúc Lùi"
-
-#~ msgid "Audio Medusa Shift Start Forward"
-#~ msgstr "Âm thanh Medusa - Dịch chuyển Bắt đầu Tiến"
-
-#~ msgid "Audio Medusa Shift Start Back"
-#~ msgstr "Âm thanh Medusa - Dịch chuyển Bắt đầu Lùi"
-
-#~ msgid "Audio Medusa Stop"
-#~ msgstr "Âm thanh Medusa - Dừng"
-
-#~ msgid "Audio Medusa Play"
-#~ msgstr "Âm thanh Medusa - Phát"
-
-#~ msgid "Audio Medusa Toggle"
-#~ msgstr "Âm thanh Medusa - Bật-tắt"
-
-#~ msgid "Audio Add Lead Out"
-#~ msgstr "Âm thanh - Thêm Lead-out"
-
-#~ msgid "Audio Add Lead In"
-#~ msgstr "Âm thanh - Thêm Lead-in"
-
-#~ msgid "Audio Play Original Line"
-#~ msgstr "Âm thanh - Phát dòng gốc"
-
-#~ msgid "Audio Play To End"
-#~ msgstr "Âm thanh - Phát tới Cuối"
-
-#~ msgid "Audio Play 500ms After"
-#~ msgstr "Âm thanh - Phát 500ms sau"
-
-#~ msgid "Audio Play 500ms Before"
-#~ msgstr "Âm thanh - Phát 500ms trước"
-
-#~ msgid "Audio Play Last 500ms"
-#~ msgstr "Âm thanh - Phát 500ms cuối"
-
-#~ msgid "Audio Play First 500ms"
-#~ msgstr "Âm thanh - Phát 500ms đầu"
-
-#~ msgid "Audio Scroll Right"
-#~ msgstr "Âm thanh - Cuộn phải"
-
-#~ msgid "Audio Scroll Left"
-#~ msgstr "Âm thanh - Cuộn trái"
-
-#~ msgid "Audio Karaoke Decrease Len Shift"
-#~ msgstr "Âm thanh Karaoke - Giảm dịch chuyển độ dài"
-
-#~ msgid "Audio Karaoke Increase Len Shift"
-#~ msgstr "Âm thanh Karaoke - Tăng dịch chuyển độ dài"
-
-#~ msgid "Audio Karaoke Decrease Len"
-#~ msgstr "Âm thanh Karaoke - Giảm độ dài"
-
-#~ msgid "Audio Karaoke Increase Len"
-#~ msgstr "Âm thanh Karaoke - Tăng độ dài"
-
-#~ msgid "Audio Stop"
-#~ msgstr "Âm thanh - Dừng"
-
-#~ msgid "Audio Play or Stop"
-#~ msgstr "Âm thanh - Phát hoặc Dừng"
-
-#~ msgid "Audio Play Alt"
-#~ msgstr "Âm thanh - Phát Alt"
-
-#~ msgid "Audio Play"
-#~ msgstr "Âm thanh - Phát"
-
-#~ msgid "Audio Next Line Alt"
-#~ msgstr "Âm thanh - Dòng kế Alt"
-
-#~ msgid "Audio Next Line"
-#~ msgstr "Âm thanh - Dòng kế"
-
-#~ msgid "Audio Prev Line Alt"
-#~ msgstr "Âm thanh - Dòng trước Alt"
-
-#~ msgid "Audio Prev Line"
-#~ msgstr "Âm thanh - Dòng trước"
-
-#~ msgid "Audio Commit (Stay)"
-#~ msgstr "Âm thanh - Thực hiện (Ở lại)"
-
-#~ msgid "Audio Commit"
-#~ msgstr "Âm thanh - Thực hiện"
-
-#~ msgid "Audio Commit Alt"
-#~ msgstr "Âm thanh - Thực hiện Alt"
-
-#~ msgid "Grid duplicate and shift one frame"
-#~ msgstr "Đường kẻ - tạo bản sao và dịch chuyển một khung hình"
-
-#~ msgid "Grid duplicate rows"
-#~ msgstr "Đường kẻ - tạo bản sao của hàng"
-
-#~ msgid "Grid delete rows"
-#~ msgstr "Đường kẻ - xóa hàng"
-
-#~ msgid "Grid move row up"
-#~ msgstr "Đường kẻ - di chuyển hàng lên"
-
-#~ msgid "Grid move row down"
-#~ msgstr "Đường kẻ - di chuyển hàng xuống"
-
-#~ msgid "Video global zoom out"
-#~ msgstr "Phim - thu nhỏ bao quát"
-
-#~ msgid "Video global zoom in"
-#~ msgstr "Phim - phóng to bao quát"
-
-#~ msgid "Save Subtitles Alt"
-#~ msgstr "Save Subtitles Alt"
-
-#~ msgid "Grid global next line"
-#~ msgstr "Đường kẻ - dòng kế bao quát"
-
-#~ msgid "Grid global prev line"
-#~ msgstr "Đường kẻ - dòng trước bao quát"
-
-#~ msgid "Video global play"
-#~ msgstr "Phim - phát bao quát"
-
-#~ msgid "Video global focus seek"
-#~ msgstr "Phim - truy tìm chú ý bao quát"
-
-#~ msgid "Video global next frame"
-#~ msgstr "Phim - khung hình kế bao quát"
-
-#~ msgid "Video global prev frame"
-#~ msgstr "Phim - khung hình trước bao quát"
-
-#~ msgid "Zoom 200%"
-#~ msgstr "Phóng 200%"
-
-#~ msgid "Zoom 100%"
-#~ msgstr "Phóng 100%"
-
-#~ msgid "Zoom 50%"
-#~ msgstr "Phóng 50%"
-
-#~ msgid "Shift by Current Time"
-#~ msgstr "Dịch chuyển theo Thời gian Hiện tại"
-
-#~ msgid "Set End to Video"
-#~ msgstr "Thiết lập Kết thúc tới Phim"
-
-#~ msgid "Set Start to Video"
-#~ msgstr "Thiết lập Bắt đầu tới Phim"
-
-#~ msgid "Video Jump"
-#~ msgstr "Nhảy phim"
-
-#~ msgid "Paste Over"
-#~ msgstr "Dán đè"
-
-#~ msgid "Paste"
-#~ msgstr "Dán"
-
-#~ msgid "Cut"
-#~ msgstr "Cắt"
-
-#~ msgid "Redo"
-#~ msgstr "Làm lại"
-
-#~ msgid "Undo"
-#~ msgstr "Hoàn tác"
-
-#~ msgid "Edit Box Commit"
-#~ msgstr "Chỉnh sửa Thực hiện Hộp"
-
-#~ msgid "Help"
-#~ msgstr "Trợ giúp"
-
-#~ msgid "hide tags."
-#~ msgstr "ẩn thẻ."
-
-#~ msgid "simplify tags."
-#~ msgstr "đơn giản hóa các thẻ."
-
-#~ msgid "show full tags."
-#~ msgstr "hiện thẻ đầy đủ."
-
-#~ msgid "ASS Override Tag mode set to "
-#~ msgstr "Chế độ Ghi đè Thẻ ASS được thiết lập thành"
-
-#~ msgid "File backup saved as \""
-#~ msgstr "Tập tin sao lưu được lưu dưới dạng \""
-
-#~ msgid ""
-#~ "Enter aspect ratio in either decimal (e.g. 2.35) or fractional (e.g. "
-#~ "16:9) form. Enter a value like 853x480 to set a specific resolution."
-#~ msgstr ""
-#~ "Nhập tỉ lệ màn ảnh theo thập phân (vd. 2.35) hoặc phân số (vd. 16:9). "
-#~ "Nhập một giá trị như 853x480 để thiết lập một độ phân giải xác định"
-
-#~ msgid "Save timecodes file"
-#~ msgstr "Lưu tập tin mã thời gian"
-
-#~ msgid "Open timecodes file"
-#~ msgstr "Mở tập tin mã thời gian"
-
-#~ msgid "All Supported Types"
-#~ msgstr "Tất cả Các kiểu Được hỗ trợ"
-
-#~ msgid "Open audio file"
-#~ msgstr "Mở tập tin âm thanh"
-
-#~ msgid "All files"
-#~ msgstr "Tất cả Tập tin"
-
-#~ msgid "Change script resolution"
-#~ msgstr "Thay đổi độ phân giải của script"
-
-#~ msgid "Unload timecodes?"
-#~ msgstr "Ngừng nạp mã thời gian?"
-
-#~ msgid "You have timecodes loaded currently. Would you like to unload them?"
-#~ msgstr "Bạn đã có nạp mã thời gian rồi. Bạn có muốn ngừng nạp chúng không?"
-
-#~ msgid "Save before continuing?"
-#~ msgstr "Lưu trước khi tiếp tục?"
-
-#~ msgid "Resource files distributed with Aegisub"
-#~ msgstr "Các tập tin tài nguyên được phân phối cùng Aegisub"
-
-#~ msgid "&Resource Files..."
-#~ msgstr "&Tập tin Tài nguyên..."
-
-#~ msgid "Display audio, video and subtitles"
-#~ msgstr "Hiển thị âm thanh, phim và phụ đề"
-
-#~ msgid "Display audio and subtitles only"
-#~ msgstr "Chỉ hiển thị âm thanh và phụ đề"
-
-#~ msgid "Display video and subtitles only"
-#~ msgstr "Chỉ hiển thị phim và phụ đề"
-
-#~ msgid "Display subtitles only"
-#~ msgstr "Chỉ hiển thị phụ đề"
-
-#~ msgid "Open log window"
-#~ msgstr "Mở cửa sổ log"
-
-#~ msgid "Lo&g Window..."
-#~ msgstr "Cửa sổ L&og..."
-
-#~ msgid "Associate file types with Aegisub"
-#~ msgstr "Liên kết các kiểu tập tin với Aegisub"
-
-#~ msgid "&Associations..."
-#~ msgstr "Liên &kết..."
-
-#~ msgid "&Automation"
-#~ msgstr "Tự độ&ng"
-
-#~ msgid "Closes the currently open audio file"
-#~ msgstr "Đóng tập tin âm thanh đang mở"
-
-#~ msgid "Opens the audio from the current video file"
-#~ msgstr "Mở phần âm thanh từ tập tin phim hiện tại"
-
-#~ msgid "Opens an audio file"
-#~ msgstr "Mở một tập tin âm thanh"
-
-#~ msgid "Forces video to a custom aspect ratio"
-#~ msgstr "Bắt buộc phim theo tỉ lệ tùy biến"
-
-#~ msgid "Forces video to 2.35 aspect ratio"
-#~ msgstr "Bắt buộc phim theo tỉ lệ 2.35"
-
-#~ msgid "Forces video to 16:9 aspect ratio"
-#~ msgstr "Bắt buộc phim theo tỉ lệ 16:9"
-
-#~ msgid "Forces video to 4:3 aspect ratio"
-#~ msgstr "Bắt buộc phim theo tỉ lệ 4:3"
-
-#~ msgid "Leave video on original aspect ratio"
-#~ msgstr "Để nguyên phim theo tỉ lệ màn ảnh gốc"
-
-#~ msgid "Override Aspect Ratio"
-#~ msgstr "Ghi đè &Tỉ lệ màn ảnh"
-
-#~ msgid "Set Zoom"
-#~ msgstr "Thiết lập Thu &phóng"
-
-#~ msgid "Detach video, displaying it in a separate Window"
-#~ msgstr "Tách riêng phim, hiển thị nó trong một Cửa sổ riêng"
-
-#~ msgid "Closes the currently open keyframes list"
-#~ msgstr "Đóng danh sách keyframe đang mở"
-
-#~ msgid "Saves the current keyframe list"
-#~ msgstr "Lưu danh sách keyframe hiện tại"
-
-#~ msgid "Opens a keyframe list file"
-#~ msgstr "Mở một tập tin danh sách keyframe"
-
-#~ msgid "Closes the currently open timecodes file"
-#~ msgstr "Đóng tập tin mã thời gian đang mở"
-
-#~ msgid "Saves a VFR timecodes v2 file"
-#~ msgstr "Lưu một tập tin mã thời gian VFR v2"
-
-#~ msgid "Opens a VFR timecodes v1 or v2 file"
-#~ msgstr "Mở một tập tin mã thời gian VFT v1 hoặc v2"
-
-#~ msgid "Shows video details"
-#~ msgstr "Hiện chi tiết của phim"
-
-#~ msgid "Opens a video clip with solid color"
-#~ msgstr "Mở một đoạn phim có một màu đặc"
-
-#~ msgid "Closes the currently open video file"
-#~ msgstr "Đóng tập tin phim đang được mở"
-
-#~ msgid "Opens a video file"
-#~ msgstr "Mở một tập tin phim"
-
-#~ msgid "Changes times of subs so end times begin on next's start time"
-#~ msgstr ""
-#~ "Thay đổi thời gian của phụ đề để thời gian kết thúc sẽ bắt đầu trên thời "
-#~ "gian bắt đầu của dòng kế đó"
-
-#~ msgid "Changes times of subs so start times begin on previous's end time"
-#~ msgstr ""
-#~ "Thay đổi thời gian của phụ đề để thời gian bắt đầu sẽ bắt đầu trên thời "
-#~ "gian kết thúc của dòng trước đó"
-
-#~ msgid "Shift selection so first selected line starts at current frame"
-#~ msgstr ""
-#~ "Dịch chuyển đoạn được chọn để dòng được chọn đầu tiên bắt đầu tại khung "
-#~ "hình hiện tại"
-
-#~ msgid "Open Kanji timer"
-#~ msgstr "Mở trình chỉnh giờ Kanji"
-
-#~ msgid "Kanji Timer..."
-#~ msgstr "Chỉnh giờ &Kanji..."
-
-#~ msgid ""
-#~ "Runs a post-processor for timing to deal with lead-ins, lead-outs, scene "
-#~ "timing and etc."
-#~ msgstr ""
-#~ "Chạy trình xử lí hậu kì cho việc canh chỉnh thời gian để giải quyết kim "
-#~ "đầu vào, kim đầu ra, thời gian phân cảnh, vv..."
-
-#~ msgid "Timing Post-Processor..."
-#~ msgstr "&Xử lí Hậu kì việc Chỉnh giờ"
-
-#~ msgid "Sort by Time"
-#~ msgstr "&Sắp xếp theo Thời gian"
-
-#~ msgid "&Subtitles"
-#~ msgstr "&Phụ đề"
-
-#~ msgid "Selects lines based on defined criteria"
-#~ msgstr "Chọn dòng dựa trên tiêu chí đã xác định"
-
-#~ msgid "Select Lines..."
-#~ msgstr "Chọ&n dòng..."
-
-#~ msgid "Swaps the two selected lines"
-#~ msgstr "Hoán chuyển hai dòng đã chọn"
-
-#~ msgid "Uses karaoke timing to split line into multiple smaller lines"
-#~ msgstr "Dùng chỉnh giờ karaoke để chia tách dòng thành nhiều dòng nhỏ hơn"
-
-#~ msgid "Recombine subtitles when they have been split and merged"
-#~ msgstr "Tái hợp phụ đề khi chúng đã được chia tách và trộn lẫn"
-
-#~ msgid "Joins selected lines in a single one, as karaoke"
-#~ msgstr "Ghép các dòng đã chọn lại thành một, giống như karaoke"
-
-#~ msgid ""
-#~ "Joins selected lines in a single one, keeping text of first and "
-#~ "discarding remaining"
-#~ msgstr ""
-#~ "Ghép các dòng đã chọn thành một, giữ lại văn bản của dòng đầu tiên và hủy "
-#~ "phần còn lại"
-
-#~ msgid "Joins selected lines in a single one, concatenating text together"
-#~ msgstr "Ghép các dòng đã chọn thành một, nối tiếp văn bản với nhau"
-
-#~ msgid "Duplicate lines and shift by one frame"
-#~ msgstr "Tạo bản sao các dòng và dịch chuyển một khung hình"
-
-#~ msgid "&Duplicate and Shift by 1 Frame"
-#~ msgstr "Tạo bản sao &và Dịch chuyển 1 Khung hình"
-
-#~ msgid "Inserts a line after current, starting at video time"
-#~ msgstr "Chèn một dòng sau dòng hiện tại, bắt đầu tại thời gian phim"
-
-#~ msgid "Inserts a line before current, starting at video time"
-#~ msgstr "Chèn một dòng trước dòng hiện tại, bắt đầu tại thời gian phim"
-
-#~ msgid "Inserts a line after current"
-#~ msgstr "Chèn một dòng sau dòng hiện tại"
-
-#~ msgid "Inserts a line before current"
-#~ msgstr "Chèn một dòng trước dòng hiện tại"
-
-#~ msgid "Spe&ll Checker..."
-#~ msgstr "&Kiểm tra Chính tả..."
-
-#~ msgid "Changes resolution and modifies subtitles to conform to change"
-#~ msgstr ""
-#~ "Thay đổi độ phân giải và sửa đổi phụ đề cho phù hợp với sự thay đổi đó"
-
-#~ msgid "Open styles manager"
-#~ msgstr "Mở trình quản lí kiểu dáng"
-
-#~ msgid "Search and &Replace..."
-#~ msgstr "Tìm kiếm &và Thay thế..."
-
-#~ msgid "Find next match of last word"
-#~ msgstr "Tìm từ phù hợp kế tiếp"
-
-#~ msgid "Find words in subtitles"
-#~ msgstr "Tìm từ trong phụ đề"
-
-#~ msgid "Copy subtitles"
-#~ msgstr "Chép phụ đề"
-
-#~ msgid "Redoes last action"
-#~ msgstr "Làm lại thao tác cuối"
-
-#~ msgid "&Redo"
-#~ msgstr "&Làm lại"
-
-#~ msgid "Undoes last action"
-#~ msgstr "Hoàn tác thao tác cuối"
-
-#~ msgid "&Undo"
-#~ msgstr "&Hoàn tác"
-
-#~ msgid "Open the attachment list"
-#~ msgstr "Mở danh sách phần đính kèm"
-
-#~ msgid "&Attachments..."
-#~ msgstr "Phần đính &kèm..."
-
-#~ msgid "Saves a copy of subtitles with processing applied to it"
-#~ msgstr ""
-#~ "Lưu một bản sao của phụ đề kèm theo các xử lí đã được áp dụng cho nó"
-
-#~ msgid "Saves subtitles with another name"
-#~ msgstr "Lưu phụ đề với tên khác"
-
-#~ msgid "Saves subtitles"
-#~ msgstr "Lưu phụ đề"
-
-#~ msgid "Opens a subtitles file with a specific charset"
-#~ msgstr "Mở một tập tin phụ đề có bộ mã riêng biệt"
-
-#~ msgid "&Open Subtitles with Charset..."
-#~ msgstr "Mở phụ đề có &Bộ mã..."
-
-#~ msgid "Opens a subtitles file"
-#~ msgstr "Mở một tập tin phụ đề"
-
-#~ msgid "Open Spell checker"
-#~ msgstr "Mở trình Kiểm tra Chính tả"
-
-#~ msgid "Open Kanji Timer dialog"
-#~ msgstr "Mở hộp thoại Chỉnh giờ Kanji"
-
-#~ msgid "Open Timing Post-processor dialog"
-#~ msgstr "Mở hộp thoại Xử lí Hậu kì việc Chỉnh giờ"
-
-#~ msgid "Resample Script Resolution"
-#~ msgstr "Tạo lại mẫu Độ phân giải Script"
-
-#~ msgid "Resample"
-#~ msgstr "Tạo lại mẫu"
-
-#~ msgid "Open Translation Assistant"
-#~ msgstr "Mở trình Trợ lí Dịch thuật"
-
-#~ msgid "Open Styling Assistant"
-#~ msgstr "Mở trình Trợ lí Tạo kiểu"
-
-#~ msgid "Open Shift Times Dialogue"
-#~ msgstr "Mở hộp thoại Dịch chuyển Thời gian"
-
-#~ msgid "Launches ai-chan's \"ASSDraw3\" tool for vector drawing."
-#~ msgstr "Chạy công cụ \"ASSDraw3\" của ai-chan để vẽ hình véctơ."
-
-#~ msgid "Open Automation manager"
-#~ msgstr "Mở trình Quản lí Tự động"
-
-#~ msgid "Open Fonts Collector"
-#~ msgstr "Mở trình Thu thập Font"
-
-#~ msgid "Open Attachment List"
-#~ msgstr "Mở Danh sách Đính kèm"
-
-#~ msgid "Open Properties"
-#~ msgstr "Mở thuộc tính"
-
-#~ msgid "Open Styles Manager"
-#~ msgstr "Mở trình Quản lí Kiểu dáng"
-
-#~ msgid "Shift selected subtitles so first selected starts at this frame"
-#~ msgstr ""
-#~ "Dịch chuyển phụ đề đã chọn để dòng đầu tiên được chọn sẽ bắt đầu tại "
-#~ "khung hình này"
-
-#~ msgid "Shift subtitles to frame"
-#~ msgstr "Dịch chuyển phụ đề tới khung hình"
-
-#~ msgid "Snap selected subtitles so they match current scene start/end"
-#~ msgstr ""
-#~ "Nắm kéo phụ đề đã chọn để chúng khớp với bắt đầu/kết thúc của phân cảnh "
-#~ "đã chọn"
-
-#~ msgid "Snap subtitles to scene"
-#~ msgstr "Nắm kéo phụ đề tới phân cảnh"
-
-#~ msgid "Selects all lines that are currently visible on video frame"
-#~ msgstr "Chọn tất cả các dòng đang hiển thị trên khung hình phim"
-
-#~ msgid "Select visible"
-#~ msgstr "Chọn đang hiển thị"
-
-#~ msgid "Snap end to video"
-#~ msgstr "Nắm kéo điểm kết thúc tới phim"
-
-#~ msgid "Jumps the video to the end frame of current subtitle"
-#~ msgstr "Nhảy phim tới khung hình kết thúc của phụ đề hiện tại"
-
-#~ msgid "Jump video to end"
-#~ msgstr "Nhảy phim tới điểm kết thúc"
-
-#~ msgid "Jumps the video to the start frame of current subtitle"
-#~ msgstr "Nhảy phim tới khung hình bắt đầu của phụ đề hiện tại"
-
-#~ msgid "Jump video to start"
-#~ msgstr "Nhảy phim tới điểm bắt đầu"
-
-#~ msgid "Zoom out"
-#~ msgstr "Thu nhỏ"
-
-#~ msgid "Zoom in"
-#~ msgstr "Phóng to"
-
-#~ msgid "Jump video to time/frame"
-#~ msgstr "Nhảy phim tới thời gian/khung hình"
-
-#~ msgid "Jump To..."
-#~ msgstr "Nhảy tới..."
-
-#~ msgid "Save subtitles"
-#~ msgstr "Lưu phụ đề"
-
-#~ msgid "Choose %s track"
-#~ msgstr "Chọn %s rãnh"
-
-#~ msgid "Multiple %s tracks detected, please choose the one you wish to load:"
-#~ msgstr "Nhận diện thấy nhiều rãnh %s, vui lòng chọn cái mà bạn muốn nạp:"
-
-#~ msgid "audio"
-#~ msgstr "âm thanh"
-
-#~ msgid "video"
-#~ msgstr "phim"
-
-#~ msgid "Reverse transformation"
-#~ msgstr "Đảo ngược việc chuyển hóa"
-
-#~ msgid "Constant: "
-#~ msgstr "Hằng số:"
-
-#~ msgid "Variable"
-#~ msgstr "Biến"
-
-#~ msgid "From Video"
-#~ msgstr "Từ phim"
-
-#~ msgid ""
-#~ "Removes all but the absolutely required fields from the Script Info "
-#~ "section. You might want to run this on files that you plan to distribute "
-#~ "in original form."
-#~ msgstr ""
-#~ "Xóa tất cả ngoại trừ các trường bắt buộc từ phần Thông tin Script. Có thể "
-#~ "bạn sẽ muốn chạy lệnh này trên những tập tin mà bạn định phân phối trong "
-#~ "dạng gốc."
-
-#~ msgid "Clean Script Info"
-#~ msgstr "Dọn dẹp Thông tin Script"
-
-#~ msgid "Enable preview"
-#~ msgstr "Cho phép Xem trước"
-
-#~ msgid "Current line: ?"
-#~ msgstr "Dòng hiện tại: ?"
-
-#~ msgid "If anything goes wrong, blame movax."
-#~ msgstr "Nếu có gì trục trặc, cứ đổi lỗi cho movax."
-
-#~ msgid ""
-#~ "If the audio doesn't seem to work properly during video playback, try "
-#~ "loading audio separately. Just select Audio->Load from video, that "
-#~ "usually makes the audio much more reliable."
-#~ msgstr ""
-#~ "Nếu âm thanh có vẻ không hoạt động đúng khi phát phim, vui lòng thử nạp "
-#~ "lại âm thanh riêng. Chỉ cần chọn Âm thanh -> Nạp từ phim, thao tác đó sẽ "
-#~ "làm cho âm thanh ổn định hơn."
-
-#~ msgid ""
-#~ "Having video open is often more a nuisance than a help when timing "
-#~ "subtitles. Timing with only audio open is often much easier. You can "
-#~ "always adjust the subtitles to match the video later on."
-#~ msgstr ""
-#~ "Để phim mở thường gây phiền toái hơn là trợ giúp khi chỉnh giờ cho phụ "
-#~ "đề. Việc chỉnh giờ và để âm thanh mở thường sẽ dễ hơn. Bạn luôn có thể "
-#~ "điều chỉnh phụ đề cho khớp với phim sau."
-
-#~ msgid ""
-#~ "If you decode your audio to a PCM WAV file before loading it in Aegisub, "
-#~ "you don't have to wait for it to be decoded before you can use it."
-#~ msgstr ""
-#~ "Nếu muốn giải mã âm thanh sáng tập tin PCM WAV trước khi nạp nó vào "
-#~ "Aegisub, bạn sẽ không phải chờ cho nó được giải mã trước khi có thể dùng "
-#~ "nó."
-
-#~ msgid ""
-#~ "Try the spectrum mode for the audio display, it can make it much easier "
-#~ "to spot where the important points in the audio are."
-#~ msgstr ""
-#~ "Hãy thử chế độ dải quang phổ cho việc hiển thị âm thanh, nó có thể giúp "
-#~ "dễ dàng chỉ ra các điểm quan trọng trong đoạn âm thanh."
-
-#~ msgid ""
-#~ "Much like anything loaded via DirectShow, certain files may have a "
-#~ "strange structure (such as h.264 into AVI or XviD will null frames) which "
-#~ "may cause unreliable seeking (that is, video frames might be off by one "
-#~ "frame). This is not an Aegisub bug - you may consider reencoding those "
-#~ "videos before working with them."
-#~ msgstr ""
-#~ "Giống như mọi thứ được nạp thông qua DirectShow, một số tập tin có thể có "
-#~ "cấu trúc kì lạ (như h.264 biến thành AVI hoặc XviD có khung hình rỗng) và "
-#~ "khiến việc truy tìm bị trúc trắc (có nghĩa là, các khung hình phim có thể "
-#~ "bị mất đi một khung). Đây không phải là lỗi của Aegisub - có thể bạn sẽ "
-#~ "muốn cân nhắc việc mã hóa lại phim trước khi làm việc với chúng."
-
-#~ msgid ""
-#~ "When you are done with your subtitles and ready to distribute them, "
-#~ "remember: say no to MP4, OGM or AVI. Matroska is your friend."
-#~ msgstr ""
-#~ "Khi bạn đã hoàn thành phụ đề của mình và sẵn sàng phân phối chúng, hãy "
-#~ "nhớ: nói không với MP4, OGM và AVI. Matroska mới chính là bạn của chúng "
-#~ "ta."
-
-#~ msgid ""
-#~ "The fonts collector is one of the most useful features, which resumes the "
-#~ "boring task of hunting down fonts into a matter of a few clicks."
-#~ msgstr ""
-#~ "Trình thu thập font là một trong các tính năng hữu ích nhất, tiếp tục "
-#~ "công việc nhàm chán là săn lùng các font chỉ trong vài cú nhấp chuột."
-
-#~ msgid ""
-#~ "The styling assistant is a practical way to set styles to each line, when "
-#~ "each actor has a different style assigned to it."
-#~ msgstr ""
-#~ "Trợ lí tạo kiểu dáng là một cách thực tế để thiết lập kiểu dáng cho mỗi "
-#~ "dòng, khi mỗi nhân vật có một kiểu khác nhau được gán cho chúng."
-
-#~ msgid ""
-#~ "Aegisub has several features to make sure you will never lose your work. "
-#~ "It will periodically save your subtitles to autosave folder, and will "
-#~ "create a copy of subs whenever you open them, to autoback folder. Also, "
-#~ "if it crashes, it will attempt to save a restore file."
-#~ msgstr ""
-#~ "Aegisub có vài tính năng để chắc chắn rằng bạn sẽ không bao giờ làm mất "
-#~ "thành quả của mình. Nó sẽ thường xuyên lưu phụ đề của bạn vào thư mục tự "
-#~ "động lưu, và sẽ tạo một bản sao cho các phụ đề mỗi khi bạn mở chúng, tại "
-#~ "thư mục tự động sao lưu. Thêm vào đó, nếu nó bị đổ vỡ, nó sẽ cố gắng lưu "
-#~ "một tập tin khôi phục."
-
-#~ msgid "DON'T PANIC!"
-#~ msgstr "ĐỪNG HOẢNG LOẠN!"
-
-#~ msgid ""
-#~ "There is no reason to use the SSA format (as opposed to ASS). ASS is very "
-#~ "similar, but adds some important functionality. Most importantly, "
-#~ "however, is that only ASS supports certain override tags (such as \\pos "
-#~ "and \\t). Those only work on SSA files because VSFilter/Textsub is "
-#~ "merciful."
-#~ msgstr ""
-#~ "Không có lí do gì để dùng định dạng SSA (trái với ASS) cả. ASS cũng tương "
-#~ "tự, nhưng thêm một số chức năng quan trọng. Quan trọng nhất, tuy nhiên, "
-#~ "là chỉ ASS mới hỗ trợ các thẻ ghi đè nào đó (như \\pos và \\t). Những thẻ "
-#~ "này chỉ hoạt động trên tập tin SSA vì VSFilter/Textsub khá rộng lượng."
-
-#~ msgid ""
-#~ "Use keyboard shortcuts! They make your life easier, for example, Ctrl"
-#~ "+Enter updates changes on current line without going to next. Check the "
-#~ "manual for a complete list."
-#~ msgstr ""
-#~ "Hãy dùng phím tắt! Chúng làm cho cuộc sống của bạn dễ thở hơn, ví dụ, Ctrl"
-#~ "+Enter cập nhật các thay đổi trên dòng hiện tại mà không cần phải đi tới "
-#~ "dòng tiếp theo. Xem sổ tay hướng dẫn để biết danh sách hoàn chỉnh."
-
-#~ msgid ""
-#~ "Styles can be stored in different storages, so that you can keep your "
-#~ "projects organized."
-#~ msgstr ""
-#~ "Kiểu dáng có thể được lưu trữ trong các kho lưu trữ khác nhau, để bạn có "
-#~ "thể tổ chức sắp xếp tốt các dự án của mình."
-
-#~ msgid ""
-#~ "You can easily translate subtitle files using the translation assistant."
-#~ msgstr "Bạn có thể dễ dàng dịch tập tin phụ đề bằng trợ lí dịch thuật."
-
-#~ msgid ""
-#~ "Aegisub can export subtitles to many different formats, character "
-#~ "encodings, and even compensate Variable Frame Rate so you can hardsub "
-#~ "them - it's all in the Export option in File menu."
-#~ msgstr ""
-#~ "Aegisub có thể xuất phụ đề sang nhiều định dạng, bảng mã khác nhau, và "
-#~ "thậm chí cả Tốc độ Khung hình Biến động điều hòa để bạn có thể hardsub "
-#~ "chúng - tất cả có trong tùy chọn Xuất của trình đơn Tập tin."
-
-#~ msgid ""
-#~ "Threshold for 'after end' distance, that is, how many frames a subtitle "
-#~ "must end after a keyframe to snap to it."
-#~ msgstr ""
-#~ "Ngưỡng cho khoảng cách 'sau kết thúc', có nghĩa là, bao nhiêu khung hình "
-#~ "mà một phụ đề phải kết thúc sau một keyframe để nắm kéo nó."
-
-#~ msgid ""
-#~ "Threshold for 'before end' distance, that is, how many frames a subtitle "
-#~ "must end before a keyframe to snap to it."
-#~ msgstr ""
-#~ "Ngưỡng cho khoảng cách 'trước kết thúc', có nghĩa là, bao nhiêu khung "
-#~ "hình mà một phụ đề phải kết thúc trước một keyframe để nắm kéo nó."
-
-#~ msgid ""
-#~ "Threshold for 'after start' distance, that is, how many frames a subtitle "
-#~ "must start after a keyframe to snap to it."
-#~ msgstr ""
-#~ "Ngưỡng cho khoảng cách 'sau bắt đầu', có nghĩa là, bao nhiêu khung hình "
-#~ "mà một phụ đề phải bắt đầu sau một keyframe để nắm kéo nó."
-
-#~ msgid ""
-#~ "Threshold for 'before start' distance, that is, how many frames a "
-#~ "subtitle must start before a keyframe to snap to it."
-#~ msgstr ""
-#~ "Ngưỡng cho khoảng cách 'trước bắt đầu', có nghĩa là, bao nhiêu khung hình "
-#~ "mà một phụ đề phải bắt đầu trước một keyframe để nắm kéo nó."
-
-#~ msgid ""
-#~ "Sets how to set the adjoining of lines. If set totally to left, it will "
-#~ "extend start time of the second line; if totally to right, it will extend "
-#~ "the end time of the first line."
-#~ msgstr ""
-#~ "Thiết lập cách thiết lập việc nối dòng. Nếu thiết lập hoàn toàn sang "
-#~ "trái, nó sẽ mở rộng thời gian bắt đầu của dòng thứ hai; nếu thiết lập "
-#~ "hoàn toàn sanh phải, nó sẽ mở rộng thời gian kết thúc của dòng thứ nhất."
-
-#~ msgid "Threshold:"
-#~ msgstr "Ngưỡng:"
-
-#~ msgid "Add lead out:"
-#~ msgstr "Thêm lead-out:"
-
-#~ msgid "Add lead in:"
-#~ msgstr "Thêm lead-in:"
-
-#~ msgid "Affect selection only"
-#~ msgstr "Chỉ ảnh hưởng đoạn được chọn"
-
-#~ msgid "style changes"
-#~ msgstr "thay đổi của kiểu dáng"
-
-#~ msgid "Enable preview (slow)"
-#~ msgstr "Kích hoạt xem trước (chậm)"
-
-#~ msgid "Click on list:"
-#~ msgstr "Nhấn lên"
-
-#~ msgid "Play Audio"
-#~ msgstr "Phát âm thanh"
-
-#~ msgid "Play Video"
-#~ msgstr "Phát phim"
-
-#~ msgid "Styling assistant"
-#~ msgstr "Trợ lí tạo kiểu dáng"
-
-#~ msgid " styles?"
-#~ msgstr " kiểu dáng này?"
-
-#~ msgid "Are you sure you want to delete these "
-#~ msgstr "Bạn có thật sự muốn xóa những"
-
-#~ msgid "Copy of "
-#~ msgstr "Chép của"
-
-#~ msgid "Import from script..."
-#~ msgstr "Nhập từ script..."
-
-#~ msgid "<- Copy to storage"
-#~ msgstr "<- Chép vào lưu trữ"
-
-#~ msgid "Copy"
-#~ msgstr "Chép"
-
-#~ msgid "Copy to current script ->"
-#~ msgstr "Chép vào script hiện tại ->"
-
-#~ msgid "Warning"
-#~ msgstr "Cảnh báo"
-
-#~ msgid ""
-#~ "You have chosen to use the \"Comic Sans\" font. As the programmer and a "
-#~ "typesetter,\n"
-#~ "I must urge you to reconsider. Comic Sans is the most abused font in the "
-#~ "history\n"
-#~ "of computing, so please avoid using it unless it's REALLY suitable. "
-#~ "Thanks."
-#~ msgstr ""
-#~ "Bạn đã chọn dùng font \"Comic Sans\". Với tư cách là một lập trình viên "
-#~ "và là một người typeset,\n"
-#~ "tôi khuyên bạn nên cân nhắc lại. Comic Sans là font bị lạm dụng nhất "
-#~ "trong lịch sử\n"
-#~ "máy tính, do đó vui lòng tránh dùng nó trừ khi nó THẬT SỰ phù hợp. Cảm ơn."
-
-#~ msgid "No subtitle providers available. Cannot preview subs."
-#~ msgstr "Không có trình cung cấp phụ đề. Không thể xem thử phụ đề."
-
-#~ msgid "Set opacity, from 0 (opaque) to 255 (transparent)"
-#~ msgstr "Thiết lập độ mờ, từ 0 (mờ đục) tới 255 (trong suốt)"
-
-#~ msgid "Style name."
-#~ msgstr "Tên kiểu dáng"
-
-#~ msgid "Opaque box"
-#~ msgstr "Hộp mờ"
-
-#~ msgid "Strikeout"
-#~ msgstr "Gạch ngang"
-
-#~ msgid "Underline"
-#~ msgstr "Gạch dưới"
-
-#~ msgid "Italic"
-#~ msgstr "Nghiêng"
-
-#~ msgid "Bold"
-#~ msgstr "Đậm"
-
-#~ msgid "Spell check replace"
-#~ msgstr "Thay thế kiểm tra chính tả"
-
-#~ msgid "Add to dictionary"
-#~ msgstr "Thêm vào từ điển"
-
-#~ msgid "Ignore all"
-#~ msgstr "Bỏ qua Tất cả"
-
-#~ msgid "Replace All"
-#~ msgstr "Thay thế Tất cả"
-
-#~ msgid "replace with"
-#~ msgstr "thay thế bằng"
-
-#~ msgid "original"
-#~ msgstr "gốc"
-
-#~ msgid " frames "
-#~ msgstr " khung hình "
-
-#~ msgid "End times only"
-#~ msgstr "Chỉ thời gian kết thúc"
-
-#~ msgid "Start times only"
-#~ msgstr "Chỉ thời gian bắt đầu"
-
-#~ msgid "Start and End times"
-#~ msgstr "Thời gian Bắt đầu và Kết thúc"
-
-#~ msgid "Selection onward"
-#~ msgstr "Đoạn lựa chọn trở đi"
-
-#~ msgid "Backward"
-#~ msgstr "Lùi"
-
-#~ msgid "Forward"
-#~ msgstr "Tiến"
-
-#~ msgid "Frames: "
-#~ msgstr "Khung hình:"
-
-#~ msgid "History"
-#~ msgstr "Lược sử"
-
-#~ msgid "%u lines were removed from selection"
-#~ msgstr "%u dòng bị xóa từ đoạn được chọn"
-
-#~ msgid "%u lines were added to selection"
-#~ msgstr "%u dòng được thêm vào đoạn được chọn"
-
-#~ msgid "Selection was set to %u lines"
-#~ msgstr "Đoạn được chọn được thiết lập là %u dòng"
-
-#~ msgid "Intersect with selection"
-#~ msgstr "Giao nhau với đoạn được chọn"
-
-#~ msgid "Subtract from selection"
-#~ msgstr "Trừ ra từ đoạn được chọn"
-
-#~ msgid "Add to selection"
-#~ msgstr "Thêm vào lựa chọn"
-
-#~ msgid "Set selection"
-#~ msgstr "Thiết lập lựa chọn"
-
-#~ msgid "Dialogues"
-#~ msgstr "Hội thoại"
-
-#~ msgid "Regular Expression match"
-#~ msgstr "Khớp Biểu thức Chính quy"
-
-#~ msgid "Contains"
-#~ msgstr "Chứa"
-
-#~ msgid "Exact match"
-#~ msgstr "Khớp chính xác"
-
-#~ msgid "Doesn't Match"
-#~ msgstr "Không khớp"
-
-#~ msgid "Matches"
-#~ msgstr "Khớp"
-
-#~ msgid "%i matches were replaced."
-#~ msgstr "%i khớp đã được thay thế."
-
-#~ msgid "Replace all"
-#~ msgstr "Thay thế tất cả"
-
-#~ msgid "Replace next"
-#~ msgstr "Thay thế tiếp"
-
-#~ msgid "Find next"
-#~ msgstr "Tìm tiếp"
-
-#~ msgid "Selected rows"
-#~ msgstr "Dòng đã chọn"
-
-#~ msgid "All rows"
-#~ msgstr "Tất cả các dòng"
-
-#~ msgid "Update Video (slow)"
-#~ msgstr "Cập nhật Phim (chậm)"
-
-#~ msgid "Use regular expressions"
-#~ msgstr "Dùng biểu thức chính quy"
-
-#~ msgid "Match case"
-#~ msgstr "Phân biệt HOA-thường"
-
-#~ msgid ""
-#~ "Invalid resolution: destination resolution cannot be 0 on either "
-#~ "dimension."
-#~ msgstr ""
-#~ "Độ phân giải không hợp lệ: độ phân giải đích không thể là 0 trên chiều "
-#~ "bất kì."
-
-#~ msgid "Change aspect ratio"
-#~ msgstr "Thay đổi tỉ lệ màn ảnh"
-
-#~ msgid "Symmetrical"
-#~ msgstr "Đối xứng"
-
-#~ msgid "Resample resolution"
-#~ msgstr "Tạo lại mẫu Độ phân giải"
-
-#~ msgid "Collision: "
-#~ msgstr "Va chạm:"
-
-#~ msgid "Reverse"
-#~ msgstr "Đảo ngược"
-
-#~ msgid "From video"
-#~ msgstr "Từ phim"
-
-#~ msgid "None"
-#~ msgstr "Không"
-
-#~ msgid "All"
-#~ msgstr "Tất cả"
-
-#~ msgid "Margin Bottom"
-#~ msgstr "Lề dưới"
-
-#~ msgid "Margin Top"
-#~ msgstr "Lề trên"
-
-#~ msgid "Hotkey conflict"
-#~ msgstr "Xung đột phím nóng"
-
-#~ msgid ""
-#~ "The hotkey %s is already mapped to %s. If you proceed, that hotkey will "
-#~ "be cleared. Proceed?"
-#~ msgstr ""
-#~ "Phím nóng %s đã được gán cho %s. Nếu bạn tiếp tục, phím nóng đó sẽ bị "
-#~ "xóa. Vẫn tiến hành?"
-
-#~ msgid "Press key to bind to \"%s\" or Esc to cancel."
-#~ msgstr "Ấn phím để gán vào \"%s\" hoặc Esc để hủy bỏ."
-
-#~ msgid "Press Key"
-#~ msgstr "Ấn phím"
-
-#~ msgid "Restart Aegisub"
-#~ msgstr "Khởi động lại Aegisub"
-
-#~ msgid "Aegisub must restart for the changes to take effect. Restart now?"
-#~ msgstr ""
-#~ "Aegisub phải khởi động lại để các thay đổi có hiệu lực. Khởi động lại "
-#~ "ngay?"
-
-#~ msgid "Restore Defaults"
-#~ msgstr "Khôi phục Mặc định"
-
-#~ msgid "Display"
-#~ msgstr "Hiển thị"
-
-#~ msgid "Subtitles grid"
-#~ msgstr "Đường kẻ phụ đề"
-
-#~ msgid "Subtitles edit box"
-#~ msgstr "Hộp chỉnh sửa phụ đề"
-
-#~ msgid "File save/load"
-#~ msgstr "Lưu/nạp tập tin"
-
-#~ msgid "Default All"
-#~ msgstr "Mặc định Tất cả"
-
-#~ msgid "Clear Hotkey"
-#~ msgstr "Xóa trắng Phím nóng"
-
-#~ msgid "Set Hotkey..."
-#~ msgstr "Thiết lập Phím nóng..."
-
-#~ msgid "Key"
-#~ msgstr "Phím"
-
-#~ msgid "Function"
-#~ msgstr "Hàm"
-
-#~ msgid "Spectrum cache memory max (MB)"
-#~ msgstr "Bộ nhớ đệm dải quang phổ tối đa (MB)"
-
-#~ msgid "Spectrum quality"
-#~ msgstr "Chất lượng dải quang phổ"
-
-#~ msgid "Spectrum cutoff"
-#~ msgstr "Cutoff dải quang phổ"
-
-#~ msgid "HD cache name"
-#~ msgstr "Tên bộ đệm HD"
-
-#~ msgid "HD cache path"
-#~ msgstr "Đường dẫn đệm HD"
-
-#~ msgid "Syllable boundary"
-#~ msgstr "Đường biên của âm tiết"
-
-#~ msgid "Syllable text"
-#~ msgstr "Văn bản âm tiết"
-
-#~ msgid "Boundary - inactive"
-#~ msgstr "Đường biên - không hoạt động"
-
-#~ msgid "Boundary - end"
-#~ msgstr "Đường biên - kết thúc"
-
-#~ msgid "Boundary - start"
-#~ msgstr "Đường biên - bắt đầu"
-
-#~ msgid "Waveform - inactive"
-#~ msgstr "Dạng sóng - không hoạt động"
-
-#~ msgid "Waveform - modified"
-#~ msgstr "Dạng sóng - được sửa đổi"
-
-#~ msgid "Waveform - selection"
-#~ msgstr "Dạng sóng - đoạn được chọn"
-
-#~ msgid "Seconds boundary"
-#~ msgstr "Đường biên của giây"
-
-#~ msgid "Selection background - modified"
-#~ msgstr "Hậu cảnh đoạn được chọn - được sửa đổi"
-
-#~ msgid "Draw video position"
-#~ msgstr "Vẽ vị trí phim"
-
-#~ msgid "Draw keyframes"
-#~ msgstr "Vẽ keyframe"
-
-#~ msgid "Draw cursor time"
-#~ msgstr "Vẽ thời gian con trỏ"
-
-#~ msgid "Draw timeline"
-#~ msgstr "Vẽ biểu đồ thời gian"
-
-#~ msgid "Draw selection background"
-#~ msgstr "Vẽ hậu cảnh đoạn được chọn"
-
-#~ msgid "Draw secondary lines"
-#~ msgstr "Vẽ các dòng thứ cấp"
-
-#~ msgid "Default lead-out length"
-#~ msgstr "Độ dài lead-out mặc định"
-
-#~ msgid "Default lead-in length"
-#~ msgstr "Độ dài lead-in mặc định"
-
-#~ msgid "Default timing length"
-#~ msgstr "Độ dài chỉnh giờ mặc định"
-
-#~ msgid "Snap to adjacent lines"
-#~ msgstr "Nắm kéo tới dòng cận kề"
-
-#~ msgid "Snap to keyframes"
-#~ msgstr "Nắm kéo tới Keyframe"
-
-#~ msgid "Lock scroll on Cursor"
-#~ msgstr "Khóa cuộn trên Con trỏ"
-
-#~ msgid "Grab times from line upon selection"
-#~ msgstr "Lấy thời gian từ dòng ở trên đoạn được chọn"
-
-#~ msgid ""
-#~ "WARNING: Changing these settings might result in bugs,\n"
-#~ "crashes, glitches and/or movax.\n"
-#~ "Don't touch these unless you know what you're doing."
-#~ msgstr ""
-#~ "CẢNH BÁO: Thay đổi những thiết lập này có thể gây ra lỗi,\n"
-#~ "đổ vỡ, trục trặc và/hoặc movax.\n"
-#~ "Đừng chạm vào những thứ này trừ khi bạn biết rõ mình đang làm gì."
-
-#~ msgid "Advanced - EXPERT USERS ONLY"
-#~ msgstr "Nâng cao - CHỈ DÀNH CHO NGƯỜI DÙNG CHUYÊN NGHIỆP"
-
-#~ msgid "Replace override tags with: "
-#~ msgstr "Thay thế thẻ bị ghi đè với:"
-
-#~ msgid "Header"
-#~ msgstr "Đầu đề"
-
-#~ msgid "Line in frame background"
-#~ msgstr "Hậu cảnh của dòng trong khung hình"
-
-#~ msgid "Highlight subtitles that are currently visible in video"
-#~ msgstr "Tô sáng các phụ đề đang hiển thị trên phim"
-
-#~ msgid "Allow grid to take focus"
-#~ msgstr "Cho phép đường kẻ ô được chú ý"
-
-#~ msgid "Font: "
-#~ msgstr "Font:"
-
-#~ msgid "Syntax highlighter - "
-#~ msgstr "Tô sáng công thức - "
-
-#~ msgid "Modified Background"
-#~ msgstr "Hậu cảnh Được sửa đổi"
-
-#~ msgid "Path to dictionary files:"
-#~ msgstr "Đường dẫn đến tập tin từ điển"
-
-#~ msgid "Overwrite-Insertion in time boxes"
-#~ msgstr "Ghi đè-Chèn trong hộp thời gian"
-
-#~ msgid "Link commiting of times"
-#~ msgstr "Liên kết việc thực hiện thời gian"
-
-#~ msgid "Automatically load linked files:"
-#~ msgstr "Tự động nạp tập tin được liên kết:"
-
-#~ msgid "Crash recovery path:"
-#~ msgstr "Đường dẫn khôi phục sau đổ vỡ:"
-
-#~ msgid "Auto-backup path:"
-#~ msgstr "Đường dẫn tự động sao lưu:"
-
-#~ msgid "Auto-save path:"
-#~ msgstr "Đường dẫn tự động lưu:"
-
-#~ msgid "seconds."
-#~ msgstr "giây."
-
-#~ msgid "Auto-save every"
-#~ msgstr "Tự động lưu mỗi"
-
-#~ msgid "Auto-backup"
-#~ msgstr "Tự động sao lưu"
-
-#~ msgid "Miscellanea"
-#~ msgstr "Linh tinh"
-
-#~ msgid "File paths"
-#~ msgstr "Đường dẫn tập tin"
-
-#~ msgid "Auto-save"
-#~ msgstr "Tự động lưu"
-
-#~ msgid "Maximum recent replace strings"
-#~ msgstr "Chuỗi thay thế gần đây tối đa"
-
-#~ msgid "Maximum recent find strings"
-#~ msgstr "Chuỗi tìm kiếm gần đây tối đa"
-
-#~ msgid "Maximum recent audio files"
-#~ msgstr "Tập tin âm thanh gần đây tối đa"
-
-#~ msgid "Maximum recent video files"
-#~ msgstr "Tập tin phim gần đây tối đa"
-
-#~ msgid "Maximum recent subtitle files"
-#~ msgstr "Tập tin phụ đề gần đây tối đa"
-
-#~ msgid "Maximum recent keyframe files"
-#~ msgstr "Tập tin keyframe gần đây tối đa"
-
-#~ msgid "Maximum recent timecode files"
-#~ msgstr "Tập tin mã thời gian gần đây tối đa"
-
-#~ msgid "Maximum undo levels"
-#~ msgstr "Cấp độ hoàn tác tối đa"
-
-#~ msgid "Limits for levels and recent files"
-#~ msgstr "Giới hạn cho cấp độ và lượng tập tin gần đây"
-
-#~ msgid "Check File Associations on Start"
-#~ msgstr "Kiểm tra Liên kết Tập tin khi Khởi động"
-
-#~ msgid "Auto Check for Updates"
-#~ msgstr "Tự động Kiểm tra Cập nhật"
-
-#~ msgid "Startup"
-#~ msgstr "Khởi động"
-
-#~ msgid "Accept Line"
-#~ msgstr "Chấp thuận Dòng"
-
-#~ msgid "Go Back a Line"
-#~ msgstr "Trở lại một Dòng"
-
-#~ msgid "Skip Dest Line"
-#~ msgstr "Bỏ qua Dòng đích"
-
-#~ msgid "Skip Source Line"
-#~ msgstr "Bỏ qua Dòng nguồn"
-
-#~ msgid "Unlink"
-#~ msgstr "Dừng liên kết"
-
-#~ msgid "Link"
-#~ msgstr "Liên kết"
-
-#~ msgid "Start!"
-#~ msgstr "Bắt đầu!"
-
-#~ msgid "Dest Style"
-#~ msgstr "Kiểu dáng Đích"
-
-#~ msgid "Source Style"
-#~ msgstr "Kiểu dáng Nguồn"
-
-#~ msgid "Attempt to interpolate kanji."
-#~ msgstr "Cố gắng nội suy kanji."
-
-#~ msgid "\"%s\" found.\n"
-#~ msgstr "\"%s\" được tìm thấy.\n"
-
-#~ msgid "\"%s\" found on dialogue line \"%d\".\n"
-#~ msgstr "\"%s\" được tìm thấy trên dòng hội thoại \"%d\".\n"
-
-#~ msgid "\"%s\" found on style \"%s\".\n"
-#~ msgstr "\"%s\" được tìm thấy trên kiểu dáng \"%s\".\n"
-
-#~ msgid "Found.\n"
-#~ msgstr "Tìm thấy.\n"
-
-#~ msgid "Not found.\n"
-#~ msgstr "Không tìm thấy.\n"
-
-#~ msgid "Done. Some fonts could not be found."
-#~ msgstr "Xong. Một số font không thể tìm thấy."
-
-#~ msgid "font attachment"
-#~ msgstr "đính kèm font"
-
-#~ msgid "Done. All fonts found."
-#~ msgstr "Xong. Tất cả font đã được tìm thấy."
-
 #~ msgid ""
 #~ "\n"
 #~ "Finished writing to %s.\n"
 #~ msgstr ""
 #~ "\n"
 #~ "Hoàn thành việc ghi vào %s.\n"
-
-#~ msgid "Attaching fonts to file...\n"
-#~ msgstr "Đang đính kèm font vào tập tin...\n"
-
-#~ msgid "Checking fonts...\n"
-#~ msgstr "Đang kiểm tra font...\n"
-
-#~ msgid "Done."
-#~ msgstr "Xong."
-
-#~ msgid "Scanning file for fonts..."
-#~ msgstr "Đang quét tập tin để tìm font..."
-
-#~ msgid "Done collecting font data."
-#~ msgstr "Hoàn tất việc thu thập dữ liệu font."
-
-#~ msgid ""
-#~ "Collecting font data from system. This might take a while, depending on "
-#~ "the number of fonts installed. Results are cached and subsequent "
-#~ "executions will be faster...\n"
-#~ msgstr ""
-#~ "Đang thu thập dữ liệu font từ hệ thống. Việc này có thể sẽ mất một lúc, "
-#~ "tùy vào số lượng font đã cài. Kết quả được đệm và các lần thực thi sau sẽ "
-#~ "nhanh hơn...\n"
-
-#~ msgid "Invalid destination directory."
-#~ msgstr "Thư mục đích không hợp lệ."
-
-#~ msgid ""
-#~ "Enter the name of the destination zip file to collect the fonts to.\n"
-#~ "If a folder is entered, a default name will be used."
-#~ msgstr ""
-#~ "Nhập tên tập tin zip để thu thập font.\n"
-#~ "Nếu thư mục được đưa vào, tên mặc định sẽ được dùng."
-
-#~ msgid "Zip Archives (*.zip)|*.zip"
-#~ msgstr "Zip Archives (*.zip)|*.zip"
-
-#~ msgid "DEBUG: Verify all fonts in system"
-#~ msgstr "GỠ LỖI: Xác minh tất cả các font trong hệ thống"
-
-#~ msgid "Attach fonts to current subtitles"
-#~ msgstr "Đính kèm font vào phụ đề hiện tại"
-
-#~ msgid ""
-#~ "Choose the folder where the fonts will be collected to.\n"
-#~ "It will be created if it doesn't exist."
-#~ msgstr ""
-#~ "Chọn thư mục để chứa font được thu thập.\n"
-#~ "Nó sẽ được tạo nếu chưa có sẵn."
-
-#~ msgid "Select none"
-#~ msgstr "Không chọn"
-
-#~ msgid "Select all"
-#~ msgstr "Chọn tất cả"
-
-#~ msgid "Move down"
-#~ msgstr "Di chuyển xuống"
-
-#~ msgid "Move up"
-#~ msgstr "Di chuyển lên"
-
-#~ msgid "Invalid fps or length value"
-#~ msgstr "Giá trị độ dài hoặc fps không hợp lệ"
-
-#~ msgid "Resulting duration: %d:%02d:%02d.%03d"
-#~ msgstr "Khoảng thời gian kết quả: %d:%02d:%02d.%03d"
-
-#~ msgid "Checkerboard pattern"
-#~ msgstr "Mẫu bàn đánh cờ"
-
-#~ msgid "Color Picker"
-#~ msgstr "Trình chọn màu:"
-
-#~ msgid "    Subtitle format handler: "
-#~ msgstr "    Trình xử lí định dạng phụ đề: "
-
-#~ msgid "    Export filter: "
-#~ msgstr "    Xuất bộ lọc: "
-
-#~ msgid "    Macro: "
-#~ msgstr "    Macro: "
 
 #~ msgid ""
 #~ "\n"
@@ -8346,38 +6698,148 @@ msgstr "Trình kiểm tra cập nhật:"
 #~ "\n"
 #~ "Tính năng được cung cấp bởi script:\n"
 
-#~ msgid "Scripting engines installed:\n"
-#~ msgstr "Bộ máy script được cài:\n"
+#~ msgid "    Export filter: "
+#~ msgstr "    Xuất bộ lọc: "
 
-#~ msgid ""
-#~ "Total scripts loaded: %d\n"
-#~ "Global scripts loaded: %d\n"
-#~ "Local scripts loaded: %d\n"
-#~ "\n"
-#~ msgstr ""
-#~ "Tổng script được nạp: %d\n"
-#~ "Script bao quát được nạp: %d\n"
-#~ "Script nội bộ được nạp: %d\n"
-#~ "\n"
+#~ msgid "    Macro: "
+#~ msgstr "    Macro: "
+
+#~ msgid "    Subtitle format handler: "
+#~ msgstr "    Trình xử lí định dạng phụ đề: "
+
+#~ msgid " frames "
+#~ msgstr " khung hình "
+
+#~ msgid " styles?"
+#~ msgstr " kiểu dáng này?"
+
+#~ msgid "\"%s\" found on dialogue line \"%d\".\n"
+#~ msgstr "\"%s\" được tìm thấy trên dòng hội thoại \"%d\".\n"
+
+#~ msgid "\"%s\" found on style \"%s\".\n"
+#~ msgstr "\"%s\" được tìm thấy trên kiểu dáng \"%s\".\n"
+
+#~ msgid "\"%s\" found.\n"
+#~ msgstr "\"%s\" được tìm thấy.\n"
+
+#~ msgid "%i matches were replaced."
+#~ msgstr "%i khớp đã được thay thế."
+
+#~ msgid "%u lines were added to selection"
+#~ msgstr "%u dòng được thêm vào đoạn được chọn"
+
+#~ msgid "%u lines were removed from selection"
+#~ msgstr "%u dòng bị xóa từ đoạn được chọn"
+
+#~ msgid "&Associations..."
+#~ msgstr "Liên &kết..."
+
+#~ msgid "&Attachments..."
+#~ msgstr "Phần đính &kèm..."
+
+#~ msgid "&Automation"
+#~ msgstr "Tự độ&ng"
+
+#~ msgid "&Duplicate"
+#~ msgstr "Tạo &bản sao"
+
+#~ msgid "&Duplicate and Shift by 1 Frame"
+#~ msgstr "Tạo bản sao &và Dịch chuyển 1 Khung hình"
+
+#~ msgid "&Duplicate and shift by 1 frame"
+#~ msgstr "Tạo bản sao &và dịch chuyển 1 khung hình"
+
+#~ msgid "&Forums"
+#~ msgstr "&Diễn đàn"
 
 #~ msgid "&No"
 #~ msgstr "&Không"
 
+#~ msgid "&Open Subtitles with Charset..."
+#~ msgstr "Mở phụ đề có &Bộ mã..."
+
+#~ msgid "&Redo"
+#~ msgstr "&Làm lại"
+
+#~ msgid "&Resource Files..."
+#~ msgstr "&Tập tin Tài nguyên..."
+
+#~ msgid "&Subtitles"
+#~ msgstr "&Phụ đề"
+
+#~ msgid "&Swap"
+#~ msgstr "H&oán chuyển"
+
+#~ msgid "&Undo"
+#~ msgstr "&Hoàn tác"
+
 #~ msgid "&Yes"
 #~ msgstr "&Có"
 
-#~ msgid "Always perform this check when Aegisub starts"
-#~ msgstr "Luôn thực hiện việc kiểm tra này khi Aegisub khởi động"
+#~ msgid "<- Copy to storage"
+#~ msgstr "<- Chép vào lưu trữ"
+
+#~ msgid "ASS Override Tag mode set to "
+#~ msgstr "Chế độ Ghi đè Thẻ ASS được thiết lập thành"
+
+#~ msgid "Accept Line"
+#~ msgstr "Chấp thuận Dòng"
+
+#~ msgid "Accept Split"
+#~ msgstr "Chấp thuận Chia tách"
+
+#~ msgid "Add lead in (%KEY%)"
+#~ msgstr "Thêm lead-in (%KEY%)"
+
+#~ msgid "Add lead in:"
+#~ msgstr "Thêm lead-in:"
+
+#~ msgid "Add lead out (%KEY%)"
+#~ msgstr "Thêm lead out (%KEY%)"
+
+#~ msgid "Add lead out:"
+#~ msgstr "Thêm lead-out:"
+
+#~ msgid "Add to dictionary"
+#~ msgstr "Thêm vào từ điển"
+
+#~ msgid "Add to selection"
+#~ msgstr "Thêm vào lựa chọn"
+
+#~ msgid "Advanced - EXPERT USERS ONLY"
+#~ msgstr "Nâng cao - CHỈ DÀNH CHO NGƯỜI DÙNG CHUYÊN NGHIỆP"
 
 #~ msgid ""
-#~ "Aegisub is not your default editor for subtitle files. Do you want to "
-#~ "make Aegisub your default editor for subtitle files?"
+#~ "Aegisub can export subtitles to many different formats, character "
+#~ "encodings, and even compensate Variable Frame Rate so you can hardsub "
+#~ "them - it's all in the Export option in File menu."
 #~ msgstr ""
-#~ "Aegisub không phải là trình biên tập phụ đề mặc định của bạn. Bạn có muốn "
-#~ "thiết lập Aegisub làm trình biên tập phụ đề mặc định của mình không?"
+#~ "Aegisub có thể xuất phụ đề sang nhiều định dạng, bảng mã khác nhau, và "
+#~ "thậm chí cả Tốc độ Khung hình Biến động điều hòa để bạn có thể hardsub "
+#~ "chúng - tất cả có trong tùy chọn Xuất của trình đơn Tập tin."
 
-#~ msgid "Make Aegisub default editor for subtitles?"
-#~ msgstr "Thiết lập Aegisub làm trình biên tập phụ đề mặc định?"
+#~ msgid ""
+#~ "Aegisub can take over the following file types.\n"
+#~ "\n"
+#~ "If you want Aegisub to no longer be associated with a file type, you must "
+#~ "tell another program to take over the file type."
+#~ msgstr ""
+#~ "Aegisub có thể xử lí các kiểu tập tin sau.\n"
+#~ "\n"
+#~ "Nếu muốn Aegisub không liên kết với một kiểu tập tin, bạn phải cho chương "
+#~ "trình khác xử lí kiểu tập tin đó."
+
+#~ msgid ""
+#~ "Aegisub has several features to make sure you will never lose your work. "
+#~ "It will periodically save your subtitles to autosave folder, and will "
+#~ "create a copy of subs whenever you open them, to autoback folder. Also, "
+#~ "if it crashes, it will attempt to save a restore file."
+#~ msgstr ""
+#~ "Aegisub có vài tính năng để chắc chắn rằng bạn sẽ không bao giờ làm mất "
+#~ "thành quả của mình. Nó sẽ thường xuyên lưu phụ đề của bạn vào thư mục tự "
+#~ "động lưu, và sẽ tạo một bản sao cho các phụ đề mỗi khi bạn mở chúng, tại "
+#~ "thư mục tự động sao lưu. Thêm vào đó, nếu nó bị đổ vỡ, nó sẽ cố gắng lưu "
+#~ "một tập tin khôi phục."
 
 #~ msgid ""
 #~ "Aegisub is already associated with all supported file types.\n"
@@ -8391,82 +6853,403 @@ msgstr "Trình kiểm tra cập nhật:"
 #~ "trình khác xử lí kiểu tập tin đó."
 
 #~ msgid ""
-#~ "Aegisub can take over the following file types.\n"
-#~ "\n"
-#~ "If you want Aegisub to no longer be associated with a file type, you must "
-#~ "tell another program to take over the file type."
+#~ "Aegisub is not your default editor for subtitle files. Do you want to "
+#~ "make Aegisub your default editor for subtitle files?"
 #~ msgstr ""
-#~ "Aegisub có thể xử lí các kiểu tập tin sau.\n"
-#~ "\n"
-#~ "Nếu muốn Aegisub không liên kết với một kiểu tập tin, bạn phải cho chương "
-#~ "trình khác xử lí kiểu tập tin đó."
+#~ "Aegisub không phải là trình biên tập phụ đề mặc định của bạn. Bạn có muốn "
+#~ "thiết lập Aegisub làm trình biên tập phụ đề mặc định của mình không?"
 
-#~ msgid "Associate file types"
-#~ msgstr "Liên kết các kiểu tập tin"
-
-#~ msgid "Saving changes"
-#~ msgstr "Đang lưu thay đổi"
-
-#~ msgid "Reloading %s because the file on disk (%s) changed."
-#~ msgstr "Đang nạp lại %s vì tập tin trên đĩa (%s) đã thay đổi."
-
-#~ msgid ""
-#~ "Unable to add the automation include path(s) to @INC: the script's code "
-#~ "may not compile or execute properly."
+#~ msgid "Aegisub must restart for the changes to take effect. Restart now?"
 #~ msgstr ""
-#~ "Không thể thêm đường dẫn bao gồm tính tự động vào @INC: mã của script "
-#~ "không thể biên dịch hoặc thực thi đúng."
+#~ "Aegisub phải khởi động lại để các thay đổi có hiệu lực. Khởi động lại "
+#~ "ngay?"
 
-#~ msgid "Perl script"
-#~ msgstr "Script Perl"
+#~ msgid "Affect selection only"
+#~ msgstr "Chỉ ảnh hưởng đoạn được chọn"
 
-#~ msgid "Executing "
-#~ msgstr "Thực thi"
+#~ msgid "All"
+#~ msgstr "Tất cả"
 
-#~ msgid "Trace: "
-#~ msgstr "Truy dấu:"
+#~ msgid "All Supported Types"
+#~ msgstr "Tất cả Các kiểu Được hỗ trợ"
 
-#~ msgid "Debug: "
-#~ msgstr "Gỡ lỗi:"
+#~ msgid "All files"
+#~ msgstr "Tất cả Tập tin"
 
-#~ msgid "Hint: "
-#~ msgstr "Gợi ý:"
+#~ msgid "All rows"
+#~ msgstr "Tất cả các dòng"
 
-#~ msgid "Warning: "
-#~ msgstr "Cảnh báo:"
+#~ msgid "Allow grid to take focus"
+#~ msgstr "Cho phép đường kẻ ô được chú ý"
 
-#~ msgid "Error: "
-#~ msgstr "Lỗi:"
-
-#~ msgid "Fatal error: "
-#~ msgstr "Lỗi nặng:"
-
-#~ msgid ""
-#~ "Tried to register PerlConsole, but support for it was disabled in this "
-#~ "version."
-#~ msgstr ""
-#~ "Đã cố đăng kí PerlConsole, nhưng hỗ trợ cho nó đã bị vô hiệu hóa trong "
-#~ "phiên bản này."
-
-#~ msgid "Not enough parameters for Aegisub::text_extents()"
-#~ msgstr "Không đủ tham số cho Aegisub::text_extents()"
+#~ msgid "Always perform this check when Aegisub starts"
+#~ msgstr "Luôn thực hiện việc kiểm tra này khi Aegisub khởi động"
 
 #~ msgid ""
 #~ "An Automation script failed to load. File name: '%s', error reported:"
 #~ msgstr ""
 #~ "Một script Tự động gặp thất bại khi nạp. Tên tập tin: '%s', lỗi được báo:"
 
-#~ msgid "Script completed"
-#~ msgstr "Script hoàn tất"
+#~ msgid "Are you sure you want to delete these "
+#~ msgstr "Bạn có thật sự muốn xóa những"
 
-#~ msgid "Reading into RAM"
-#~ msgstr "Đọc vào RAM"
+#~ msgid "Associate file types"
+#~ msgstr "Liên kết các kiểu tập tin"
 
-#~ msgid "Load audio"
-#~ msgstr "Nạp âm thanh"
+#~ msgid "Associate file types with Aegisub"
+#~ msgstr "Liên kết các kiểu tập tin với Aegisub"
+
+#~ msgid "Attach fonts to current subtitles"
+#~ msgstr "Đính kèm font vào phụ đề hiện tại"
+
+#~ msgid "Attaching fonts to file...\n"
+#~ msgstr "Đang đính kèm font vào tập tin...\n"
+
+#~ msgid "Attempt to interpolate kanji."
+#~ msgstr "Cố gắng nội suy kanji."
+
+#~ msgid "Audio Add Lead In"
+#~ msgstr "Âm thanh - Thêm Lead-in"
+
+#~ msgid "Audio Add Lead Out"
+#~ msgstr "Âm thanh - Thêm Lead-out"
+
+#~ msgid "Audio Commit"
+#~ msgstr "Âm thanh - Thực hiện"
+
+#~ msgid "Audio Commit (Stay)"
+#~ msgstr "Âm thanh - Thực hiện (Ở lại)"
+
+#~ msgid "Audio Commit Alt"
+#~ msgstr "Âm thanh - Thực hiện Alt"
+
+#~ msgid "Audio Karaoke Decrease Len"
+#~ msgstr "Âm thanh Karaoke - Giảm độ dài"
+
+#~ msgid "Audio Karaoke Decrease Len Shift"
+#~ msgstr "Âm thanh Karaoke - Giảm dịch chuyển độ dài"
+
+#~ msgid "Audio Karaoke Increase Len"
+#~ msgstr "Âm thanh Karaoke - Tăng độ dài"
+
+#~ msgid "Audio Karaoke Increase Len Shift"
+#~ msgstr "Âm thanh Karaoke - Tăng dịch chuyển độ dài"
+
+#~ msgid "Audio Medusa Enter"
+#~ msgstr "Âm thanh Medusa - Vào"
+
+#~ msgid "Audio Medusa Next"
+#~ msgstr "Âm thanh Medusa - Tiếp"
+
+#~ msgid "Audio Medusa Play"
+#~ msgstr "Âm thanh Medusa - Phát"
+
+#~ msgid "Audio Medusa Play After"
+#~ msgstr "Âm thanh Medusa - Phát sau"
+
+#~ msgid "Audio Medusa Play Before"
+#~ msgstr "Âm thanh Medusa - Phát trước"
+
+#~ msgid "Audio Medusa Previous"
+#~ msgstr "Âm thanh Medusa - Trước"
+
+#~ msgid "Audio Medusa Shift End Back"
+#~ msgstr "Âm thanh Medusa - Dịch chuyển Kết thúc Lùi"
+
+#~ msgid "Audio Medusa Shift End Forward"
+#~ msgstr "Âm thanh Medusa - Dịch chuyển Kết thúc Tiến"
+
+#~ msgid "Audio Medusa Shift Start Back"
+#~ msgstr "Âm thanh Medusa - Dịch chuyển Bắt đầu Lùi"
+
+#~ msgid "Audio Medusa Shift Start Forward"
+#~ msgstr "Âm thanh Medusa - Dịch chuyển Bắt đầu Tiến"
+
+#~ msgid "Audio Medusa Stop"
+#~ msgstr "Âm thanh Medusa - Dừng"
+
+#~ msgid "Audio Medusa Toggle"
+#~ msgstr "Âm thanh Medusa - Bật-tắt"
+
+#~ msgid "Audio Next Line"
+#~ msgstr "Âm thanh - Dòng kế"
+
+#~ msgid "Audio Next Line Alt"
+#~ msgstr "Âm thanh - Dòng kế Alt"
+
+#~ msgid "Audio Play"
+#~ msgstr "Âm thanh - Phát"
+
+#~ msgid "Audio Play 500ms After"
+#~ msgstr "Âm thanh - Phát 500ms sau"
+
+#~ msgid "Audio Play 500ms Before"
+#~ msgstr "Âm thanh - Phát 500ms trước"
+
+#~ msgid "Audio Play Alt"
+#~ msgstr "Âm thanh - Phát Alt"
+
+#~ msgid "Audio Play First 500ms"
+#~ msgstr "Âm thanh - Phát 500ms đầu"
+
+#~ msgid "Audio Play Last 500ms"
+#~ msgstr "Âm thanh - Phát 500ms cuối"
+
+#~ msgid "Audio Play Original Line"
+#~ msgstr "Âm thanh - Phát dòng gốc"
+
+#~ msgid "Audio Play To End"
+#~ msgstr "Âm thanh - Phát tới Cuối"
+
+#~ msgid "Audio Play or Stop"
+#~ msgstr "Âm thanh - Phát hoặc Dừng"
+
+#~ msgid "Audio Prev Line"
+#~ msgstr "Âm thanh - Dòng trước"
+
+#~ msgid "Audio Prev Line Alt"
+#~ msgstr "Âm thanh - Dòng trước Alt"
+
+#~ msgid "Audio Scroll Left"
+#~ msgstr "Âm thanh - Cuộn trái"
+
+#~ msgid "Audio Scroll Right"
+#~ msgstr "Âm thanh - Cuộn phải"
+
+#~ msgid "Audio Stop"
+#~ msgstr "Âm thanh - Dừng"
+
+#~ msgid "Auto Check for Updates"
+#~ msgstr "Tự động Kiểm tra Cập nhật"
+
+#~ msgid "Auto goes to next line on commit"
+#~ msgstr "Tự động đi tới dòng kế khi thực hiện"
+
+#~ msgid "Auto scrolls audio display to selected line"
+#~ msgstr "Tự động cuộn phần hiển thị âm thanh tới dòng đã chọn"
+
+#~ msgid "Auto-backup"
+#~ msgstr "Tự động sao lưu"
+
+#~ msgid "Auto-backup path:"
+#~ msgstr "Đường dẫn tự động sao lưu:"
+
+#~ msgid "Auto-save"
+#~ msgstr "Tự động lưu"
+
+#~ msgid "Auto-save every"
+#~ msgstr "Tự động lưu mỗi"
+
+#~ msgid "Auto-save path:"
+#~ msgstr "Đường dẫn tự động lưu:"
+
+#~ msgid "Automatically load linked files:"
+#~ msgstr "Tự động nạp tập tin được liên kết:"
+
+#~ msgid "Backward"
+#~ msgstr "Lùi"
+
+#~ msgid "Below Normal (recommended)"
+#~ msgstr "Dưới trung bình (khuyến nghị)"
+
+#~ msgid "Bold"
+#~ msgstr "Đậm"
+
+#~ msgid "Boundary - end"
+#~ msgstr "Đường biên - kết thúc"
+
+#~ msgid "Boundary - inactive"
+#~ msgstr "Đường biên - không hoạt động"
+
+#~ msgid "Boundary - start"
+#~ msgstr "Đường biên - bắt đầu"
+
+#~ msgid "C&ut"
+#~ msgstr "Cắ&t"
+
+#~ msgid "Cancel Split"
+#~ msgstr "Hủy bỏ Chia tách"
+
+#~ msgid "Change aspect ratio"
+#~ msgstr "Thay đổi tỉ lệ màn ảnh"
+
+#~ msgid "Change script resolution"
+#~ msgstr "Thay đổi độ phân giải của script"
+
+#~ msgid "Changes resolution and modifies subtitles to conform to change"
+#~ msgstr ""
+#~ "Thay đổi độ phân giải và sửa đổi phụ đề cho phù hợp với sự thay đổi đó"
+
+#~ msgid "Changes times of subs so end times begin on next's start time"
+#~ msgstr ""
+#~ "Thay đổi thời gian của phụ đề để thời gian kết thúc sẽ bắt đầu trên thời "
+#~ "gian bắt đầu của dòng kế đó"
+
+#~ msgid "Changes times of subs so start times begin on previous's end time"
+#~ msgstr ""
+#~ "Thay đổi thời gian của phụ đề để thời gian bắt đầu sẽ bắt đầu trên thời "
+#~ "gian kết thúc của dòng trước đó"
+
+#~ msgid "Check File Associations on Start"
+#~ msgstr "Kiểm tra Liên kết Tập tin khi Khởi động"
+
+#~ msgid "Checkerboard pattern"
+#~ msgstr "Mẫu bàn đánh cờ"
+
+#~ msgid "Checking fonts...\n"
+#~ msgstr "Đang kiểm tra font...\n"
+
+#~ msgid "Choose %s track"
+#~ msgstr "Chọn %s rãnh"
+
+#~ msgid ""
+#~ "Choose the folder where the fonts will be collected to.\n"
+#~ "It will be created if it doesn't exist."
+#~ msgstr ""
+#~ "Chọn thư mục để chứa font được thu thập.\n"
+#~ "Nó sẽ được tạo nếu chưa có sẵn."
+
+#~ msgid "Clean Script Info"
+#~ msgstr "Dọn dẹp Thông tin Script"
+
+#~ msgid "Clear Hotkey"
+#~ msgstr "Xóa trắng Phím nóng"
+
+#~ msgid "Click on list:"
+#~ msgstr "Nhấn lên"
+
+#~ msgid "Closes the currently open audio file"
+#~ msgstr "Đóng tập tin âm thanh đang mở"
+
+#~ msgid "Closes the currently open keyframes list"
+#~ msgstr "Đóng danh sách keyframe đang mở"
+
+#~ msgid "Closes the currently open timecodes file"
+#~ msgstr "Đóng tập tin mã thời gian đang mở"
+
+#~ msgid "Closes the currently open video file"
+#~ msgstr "Đóng tập tin phim đang được mở"
+
+#~ msgid ""
+#~ "Collecting font data from system. This might take a while, depending on "
+#~ "the number of fonts installed. Results are cached and subsequent "
+#~ "executions will be faster...\n"
+#~ msgstr ""
+#~ "Đang thu thập dữ liệu font từ hệ thống. Việc này có thể sẽ mất một lúc, "
+#~ "tùy vào số lượng font đã cài. Kết quả được đệm và các lần thực thi sau sẽ "
+#~ "nhanh hơn...\n"
+
+#~ msgid "Collision: "
+#~ msgstr "Va chạm:"
+
+#~ msgid "Color Picker"
+#~ msgstr "Trình chọn màu:"
+
+#~ msgid "Commit changes (%KEY%/%KEY%)"
+#~ msgstr "Thực hiện thay đổi (%KEY%/%KEY%)"
+
+#~ msgid "Commit splits and leave split-mode"
+#~ msgstr "Thực hiện các chia tách và rời chế độ chia tách"
 
 #~ msgid "Commit?"
 #~ msgstr "Thực hiện?"
+
+#~ msgid "Commits the text (Enter). Hold Ctrl to stay in line (%KEY%)."
+#~ msgstr "Thực hiện văn bản (Enter). Ấn Ctrl để ở trong dòng (%KEY%)."
+
+#~ msgid ""
+#~ "Configuration file is either invalid or corrupt. The current file will be "
+#~ "backed up and replaced with a default file."
+#~ msgstr ""
+#~ "Tập tin cấu hình không hợp lệ hoặc đã bị hư. Tập tin hiện tại sẽ được sao "
+#~ "lưu và thay thế bằng một tập tin mặc định."
+
+#~ msgid "Constant: "
+#~ msgstr "Hằng số:"
+
+#~ msgid "Contains"
+#~ msgstr "Chứa"
+
+#~ msgid "Copies selected lines to clipboard"
+#~ msgstr "Chép các dòng đã chọn vào clipboard"
+
+#~ msgid "Copy"
+#~ msgstr "Chép"
+
+#~ msgid "Copy of "
+#~ msgstr "Chép của"
+
+#~ msgid "Copy subtitles"
+#~ msgstr "Chép phụ đề"
+
+#~ msgid "Copy to current script ->"
+#~ msgstr "Chép vào script hiện tại ->"
+
+#~ msgid "Couldn't allocate memory."
+#~ msgstr "Không thể truy xuất bộ nhớ."
+
+#~ msgid "Crash recovery path:"
+#~ msgstr "Đường dẫn khôi phục sau đổ vỡ:"
+
+#~ msgid "Create an audio clip of the selected line"
+#~ msgstr "Tạo một đoạn âm thanh của dòng đã chọn"
+
+#~ msgid "Current line: ?"
+#~ msgstr "Dòng hiện tại: ?"
+
+#~ msgid "Cut"
+#~ msgstr "Cắt"
+
+#~ msgid "Cuts selected lines to clipboard"
+#~ msgstr "Cắt các dòng đã chọn vào clipboard"
+
+#~ msgid "DEBUG: Verify all fonts in system"
+#~ msgstr "GỠ LỖI: Xác minh tất cả các font trong hệ thống"
+
+#~ msgid "DON'T PANIC!"
+#~ msgstr "ĐỪNG HOẢNG LOẠN!"
+
+#~ msgid "Debug: "
+#~ msgstr "Gỡ lỗi:"
+
+#~ msgid "Default All"
+#~ msgstr "Mặc định Tất cả"
+
+#~ msgid "Default lead-in length"
+#~ msgstr "Độ dài lead-in mặc định"
+
+#~ msgid "Default lead-out length"
+#~ msgstr "Độ dài lead-out mặc định"
+
+#~ msgid "Default timing length"
+#~ msgstr "Độ dài chỉnh giờ mặc định"
+
+#~ msgid "Dest Style"
+#~ msgstr "Kiểu dáng Đích"
+
+#~ msgid "Detach video, displaying it in a separate Window"
+#~ msgstr "Tách riêng phim, hiển thị nó trong một Cửa sổ riêng"
+
+#~ msgid "Dialogues"
+#~ msgstr "Hội thoại"
+
+#~ msgid "Discard all splits and leave split-mode"
+#~ msgstr "Hủy bỏ tất cả chia tách và rời chế độ chia tách"
+
+#~ msgid "Display"
+#~ msgstr "Hiển thị"
+
+#~ msgid "Display audio and subtitles only"
+#~ msgstr "Chỉ hiển thị âm thanh và phụ đề"
+
+#~ msgid "Display audio, video and subtitles"
+#~ msgstr "Hiển thị âm thanh, phim và phụ đề"
+
+#~ msgid "Display subtitles only"
+#~ msgstr "Chỉ hiển thị phụ đề"
+
+#~ msgid "Display video and subtitles only"
+#~ msgstr "Chỉ hiển thị phim và phụ đề"
 
 #~ msgid ""
 #~ "Do you want to commit your changes? If you choose No, they will be "
@@ -8475,59 +7258,558 @@ msgstr "Trình kiểm tra cập nhật:"
 #~ "Bạn có muốn thực hiện các thay đổi của mình? Nếu bạn chọn Không, chúng sẽ "
 #~ "bị hủy bỏ."
 
-#~ msgid "Enter split-mode"
-#~ msgstr "Vào chế độ chia tách"
+#~ msgid "Doesn't Match"
+#~ msgstr "Không khớp"
 
-#~ msgid "Split"
-#~ msgstr "Chia tác"
+#~ msgid "Done collecting font data."
+#~ msgstr "Hoàn tất việc thu thập dữ liệu font."
 
-#~ msgid "Join selected syllables"
-#~ msgstr "Ghép các âm tiết đã chọn"
+#~ msgid "Done."
+#~ msgstr "Xong."
 
-#~ msgid "Join"
-#~ msgstr "Ghép"
+#~ msgid "Done. All fonts found."
+#~ msgstr "Xong. Tất cả font đã được tìm thấy."
 
-#~ msgid "Commit splits and leave split-mode"
-#~ msgstr "Thực hiện các chia tách và rời chế độ chia tách"
+#~ msgid "Done. Some fonts could not be found."
+#~ msgstr "Xong. Một số font không thể tìm thấy."
 
-#~ msgid "Accept Split"
-#~ msgstr "Chấp thuận Chia tách"
+#~ msgid "Draw cursor time"
+#~ msgstr "Vẽ thời gian con trỏ"
 
-#~ msgid "Discard all splits and leave split-mode"
-#~ msgstr "Hủy bỏ tất cả chia tách và rời chế độ chia tách"
+#~ msgid "Draw keyframes"
+#~ msgstr "Vẽ keyframe"
 
-#~ msgid "Cancel Split"
-#~ msgstr "Hủy bỏ Chia tách"
+#~ msgid "Draw secondary lines"
+#~ msgstr "Vẽ các dòng thứ cấp"
 
-#~ msgid "Karaoke"
-#~ msgstr "Karaoke"
+#~ msgid "Draw selection background"
+#~ msgstr "Vẽ hậu cảnh đoạn được chọn"
+
+#~ msgid "Draw timeline"
+#~ msgstr "Vẽ biểu đồ thời gian"
+
+#~ msgid "Draw video position"
+#~ msgstr "Vẽ vị trí phim"
+
+#~ msgid "Duplicate lines and shift by one frame"
+#~ msgstr "Tạo bản sao các dòng và dịch chuyển một khung hình"
+
+#~ msgid "Edit Box Commit"
+#~ msgstr "Chỉnh sửa Thực hiện Hộp"
 
 #~ msgid "Enable Medusa-Style Timing Shortcuts"
 #~ msgstr "Kích hoạt Phím tắt cho Chỉnh giờ Kiểu Medusa"
 
-#~ msgid "Auto scrolls audio display to selected line"
-#~ msgstr "Tự động cuộn phần hiển thị âm thanh tới dòng đã chọn"
+#~ msgid "Enable preview"
+#~ msgstr "Cho phép Xem trước"
 
-#~ msgid "Auto goes to next line on commit"
-#~ msgstr "Tự động đi tới dòng kế khi thực hiện"
+#~ msgid "Enable preview (slow)"
+#~ msgstr "Kích hoạt xem trước (chậm)"
 
-#~ msgid "Commit changes (%KEY%/%KEY%)"
-#~ msgstr "Thực hiện thay đổi (%KEY%/%KEY%)"
+#~ msgid "End times only"
+#~ msgstr "Chỉ thời gian kết thúc"
 
-#~ msgid "Add lead out (%KEY%)"
-#~ msgstr "Thêm lead out (%KEY%)"
+#~ msgid ""
+#~ "Enter aspect ratio in either decimal (e.g. 2.35) or fractional (e.g. "
+#~ "16:9) form. Enter a value like 853x480 to set a specific resolution."
+#~ msgstr ""
+#~ "Nhập tỉ lệ màn ảnh theo thập phân (vd. 2.35) hoặc phân số (vd. 16:9). "
+#~ "Nhập một giá trị như 853x480 để thiết lập một độ phân giải xác định"
 
-#~ msgid "Add lead in (%KEY%)"
-#~ msgstr "Thêm lead-in (%KEY%)"
+#~ msgid "Enter split-mode"
+#~ msgstr "Vào chế độ chia tách"
 
-#~ msgid "Play from selection start to end of file (%KEY%)"
-#~ msgstr "Phát từ điểm bắt đầu đoạn đã chọn cho tới cuối tập tin (%KEY%)"
+#~ msgid ""
+#~ "Enter the name of the destination zip file to collect the fonts to.\n"
+#~ "If a folder is entered, a default name will be used."
+#~ msgstr ""
+#~ "Nhập tên tập tin zip để thu thập font.\n"
+#~ "Nếu thư mục được đưa vào, tên mặc định sẽ được dùng."
 
-#~ msgid "Play last 500ms of selection (%KEY%)"
-#~ msgstr "Phát 500ms cuối của đoạn đã chọn (%KEY%)"
+#~ msgid "Error: "
+#~ msgstr "Lỗi:"
 
-#~ msgid "Play first 500ms of selection (%KEY%)"
-#~ msgstr "Phát 500ms đầu của đoạn đã chọn (%KEY%)"
+#~ msgid "Exact match"
+#~ msgstr "Khớp chính xác"
+
+#~ msgid "Executing "
+#~ msgstr "Thực thi"
+
+#~ msgid "Exporting PRS"
+#~ msgstr "Xuất PRS"
+
+#~ msgid "Fatal error: "
+#~ msgstr "Lỗi nặng:"
+
+#~ msgid "File backup saved as \""
+#~ msgstr "Tập tin sao lưu được lưu dưới dạng \""
+
+#~ msgid "File paths"
+#~ msgstr "Đường dẫn tập tin"
+
+#~ msgid "File save/load"
+#~ msgstr "Lưu/nạp tập tin"
+
+#~ msgid "Find next"
+#~ msgstr "Tìm tiếp"
+
+#~ msgid "Find next match of last word"
+#~ msgstr "Tìm từ phù hợp kế tiếp"
+
+#~ msgid "Find words in subtitles"
+#~ msgstr "Tìm từ trong phụ đề"
+
+#~ msgid "Font Face Name"
+#~ msgstr "Tên Font"
+
+#~ msgid "Font: "
+#~ msgstr "Font:"
+
+#~ msgid "Force BT.601"
+#~ msgstr "Bắt buộc dùng BT.601"
+
+#~ msgid "Forces video to 16:9 aspect ratio"
+#~ msgstr "Bắt buộc phim theo tỉ lệ 16:9"
+
+#~ msgid "Forces video to 2.35 aspect ratio"
+#~ msgstr "Bắt buộc phim theo tỉ lệ 2.35"
+
+#~ msgid "Forces video to 4:3 aspect ratio"
+#~ msgstr "Bắt buộc phim theo tỉ lệ 4:3"
+
+#~ msgid "Forces video to a custom aspect ratio"
+#~ msgstr "Bắt buộc phim theo tỉ lệ tùy biến"
+
+#~ msgid "Forums"
+#~ msgstr "Diễn đàn"
+
+#~ msgid "Forward"
+#~ msgstr "Tiến"
+
+#~ msgid "Found.\n"
+#~ msgstr "Tìm thấy.\n"
+
+#~ msgid "Frame"
+#~ msgstr "Khung hình"
+
+#~ msgid "Frames: "
+#~ msgstr "Khung hình:"
+
+#~ msgid "From Video"
+#~ msgstr "Từ phim"
+
+#~ msgid "From video"
+#~ msgstr "Từ phim"
+
+#~ msgid "Function"
+#~ msgstr "Hàm"
+
+#~ msgid "Go Back a Line"
+#~ msgstr "Trở lại một Dòng"
+
+#~ msgid "Grab times from line upon selection"
+#~ msgstr "Lấy thời gian từ dòng ở trên đoạn được chọn"
+
+#~ msgid "Grid delete rows"
+#~ msgstr "Đường kẻ - xóa hàng"
+
+#~ msgid "Grid duplicate and shift one frame"
+#~ msgstr "Đường kẻ - tạo bản sao và dịch chuyển một khung hình"
+
+#~ msgid "Grid duplicate rows"
+#~ msgstr "Đường kẻ - tạo bản sao của hàng"
+
+#~ msgid "Grid global next line"
+#~ msgstr "Đường kẻ - dòng kế bao quát"
+
+#~ msgid "Grid global prev line"
+#~ msgstr "Đường kẻ - dòng trước bao quát"
+
+#~ msgid "Grid move row down"
+#~ msgstr "Đường kẻ - di chuyển hàng xuống"
+
+#~ msgid "Grid move row up"
+#~ msgstr "Đường kẻ - di chuyển hàng lên"
+
+#~ msgid "HD cache name"
+#~ msgstr "Tên bộ đệm HD"
+
+#~ msgid "HD cache path"
+#~ msgstr "Đường dẫn đệm HD"
+
+#~ msgid ""
+#~ "Having video open is often more a nuisance than a help when timing "
+#~ "subtitles. Timing with only audio open is often much easier. You can "
+#~ "always adjust the subtitles to match the video later on."
+#~ msgstr ""
+#~ "Để phim mở thường gây phiền toái hơn là trợ giúp khi chỉnh giờ cho phụ "
+#~ "đề. Việc chỉnh giờ và để âm thanh mở thường sẽ dễ hơn. Bạn luôn có thể "
+#~ "điều chỉnh phụ đề cho khớp với phim sau."
+
+#~ msgid "Header"
+#~ msgstr "Đầu đề"
+
+#~ msgid "Help"
+#~ msgstr "Trợ giúp"
+
+#~ msgid "Highlight subtitles that are currently visible in video"
+#~ msgstr "Tô sáng các phụ đề đang hiển thị trên phim"
+
+#~ msgid "Hint: "
+#~ msgstr "Gợi ý:"
+
+#~ msgid "History"
+#~ msgstr "Lược sử"
+
+#~ msgid "Hotkey conflict"
+#~ msgstr "Xung đột phím nóng"
+
+#~ msgid "If anything goes wrong, blame movax."
+#~ msgstr "Nếu có gì trục trặc, cứ đổi lỗi cho movax."
+
+#~ msgid ""
+#~ "If the audio doesn't seem to work properly during video playback, try "
+#~ "loading audio separately. Just select Audio->Load from video, that "
+#~ "usually makes the audio much more reliable."
+#~ msgstr ""
+#~ "Nếu âm thanh có vẻ không hoạt động đúng khi phát phim, vui lòng thử nạp "
+#~ "lại âm thanh riêng. Chỉ cần chọn Âm thanh -> Nạp từ phim, thao tác đó sẽ "
+#~ "làm cho âm thanh ổn định hơn."
+
+#~ msgid ""
+#~ "If you decode your audio to a PCM WAV file before loading it in Aegisub, "
+#~ "you don't have to wait for it to be decoded before you can use it."
+#~ msgstr ""
+#~ "Nếu muốn giải mã âm thanh sáng tập tin PCM WAV trước khi nạp nó vào "
+#~ "Aegisub, bạn sẽ không phải chờ cho nó được giải mã trước khi có thể dùng "
+#~ "nó."
+
+#~ msgid "Ignore all"
+#~ msgstr "Bỏ qua Tất cả"
+
+#~ msgid "Import from script..."
+#~ msgstr "Nhập từ script..."
+
+#~ msgid "Inserts a line after current"
+#~ msgstr "Chèn một dòng sau dòng hiện tại"
+
+#~ msgid "Inserts a line after current, starting at video time"
+#~ msgstr "Chèn một dòng sau dòng hiện tại, bắt đầu tại thời gian phim"
+
+#~ msgid "Inserts a line before current"
+#~ msgstr "Chèn một dòng trước dòng hiện tại"
+
+#~ msgid "Inserts a line before current, starting at video time"
+#~ msgstr "Chèn một dòng trước dòng hiện tại, bắt đầu tại thời gian phim"
+
+#~ msgid "Intersect with selection"
+#~ msgstr "Giao nhau với đoạn được chọn"
+
+#~ msgid "Invalid destination directory."
+#~ msgstr "Thư mục đích không hợp lệ."
+
+#~ msgid "Invalid fps or length value"
+#~ msgstr "Giá trị độ dài hoặc fps không hợp lệ"
+
+#~ msgid ""
+#~ "Invalid resolution: destination resolution cannot be 0 on either "
+#~ "dimension."
+#~ msgstr ""
+#~ "Độ phân giải không hợp lệ: độ phân giải đích không thể là 0 trên chiều "
+#~ "bất kì."
+
+#~ msgid "Italic"
+#~ msgstr "Nghiêng"
+
+#~ msgid "Italics"
+#~ msgstr "Nghiêng"
+
+#~ msgid "Join"
+#~ msgstr "Ghép"
+
+#~ msgid "Join selected syllables"
+#~ msgstr "Ghép các âm tiết đã chọn"
+
+#~ msgid "Joins selected lines in a single one, as karaoke"
+#~ msgstr "Ghép các dòng đã chọn lại thành một, giống như karaoke"
+
+#~ msgid "Joins selected lines in a single one, concatenating text together"
+#~ msgstr "Ghép các dòng đã chọn thành một, nối tiếp văn bản với nhau"
+
+#~ msgid ""
+#~ "Joins selected lines in a single one, keeping text of first and "
+#~ "discarding remaining"
+#~ msgstr ""
+#~ "Ghép các dòng đã chọn thành một, giữ lại văn bản của dòng đầu tiên và hủy "
+#~ "phần còn lại"
+
+#~ msgid ""
+#~ "Joins selected lines in a single one, making each line into a karaoke "
+#~ "syllable"
+#~ msgstr ""
+#~ "Ghép các dòng đã chọn thành một, đưa mỗi dòng thành một âm tiết karaoke"
+
+#~ msgid "Jump To..."
+#~ msgstr "Nhảy tới..."
+
+#~ msgid "Jump video to end"
+#~ msgstr "Nhảy phim tới điểm kết thúc"
+
+#~ msgid "Jump video to start"
+#~ msgstr "Nhảy phim tới điểm bắt đầu"
+
+#~ msgid "Jump video to time/frame"
+#~ msgstr "Nhảy phim tới thời gian/khung hình"
+
+#~ msgid "Jumps the video to the end frame of current subtitle"
+#~ msgstr "Nhảy phim tới khung hình kết thúc của phụ đề hiện tại"
+
+#~ msgid "Jumps the video to the start frame of current subtitle"
+#~ msgstr "Nhảy phim tới khung hình bắt đầu của phụ đề hiện tại"
+
+#~ msgid "Kanji Timer..."
+#~ msgstr "Chỉnh giờ &Kanji..."
+
+#~ msgid "Karaoke"
+#~ msgstr "Karaoke"
+
+#~ msgid "Key"
+#~ msgstr "Phím"
+
+#~ msgid "Launches ai-chan's \"ASSDraw3\" tool for vector drawing."
+#~ msgstr "Chạy công cụ \"ASSDraw3\" của ai-chan để vẽ hình véctơ."
+
+#~ msgid "Leave video on original aspect ratio"
+#~ msgstr "Để nguyên phim theo tỉ lệ màn ảnh gốc"
+
+#~ msgid "Left Margin (0 = default)"
+#~ msgstr "Lề trái (0 = mặc định)"
+
+#~ msgid "Limits for levels and recent files"
+#~ msgstr "Giới hạn cho cấp độ và lượng tập tin gần đây"
+
+#~ msgid "Line in frame background"
+#~ msgstr "Hậu cảnh của dòng trong khung hình"
+
+#~ msgid "Link"
+#~ msgstr "Liên kết"
+
+#~ msgid "Link commiting of times"
+#~ msgstr "Liên kết việc thực hiện thời gian"
+
+#~ msgid "Lo&g Window..."
+#~ msgstr "Cửa sổ L&og..."
+
+#~ msgid "Load audio"
+#~ msgstr "Nạp âm thanh"
+
+#~ msgid "Load keyframes"
+#~ msgstr "Nạp keyframe"
+
+#~ msgid "Lock scroll on Cursor"
+#~ msgstr "Khóa cuộn trên Con trỏ"
+
+#~ msgid "Lowest"
+#~ msgstr "Thấp nhất"
+
+#~ msgid "Make Aegisub default editor for subtitles?"
+#~ msgstr "Thiết lập Aegisub làm trình biên tập phụ đề mặc định?"
+
+#~ msgid "Margin Bottom"
+#~ msgstr "Lề dưới"
+
+#~ msgid "Margin Top"
+#~ msgstr "Lề trên"
+
+#~ msgid "MarginL change"
+#~ msgstr "thay đổi Lề T"
+
+#~ msgid "MarginR change"
+#~ msgstr "thay đổi Lề P"
+
+#~ msgid "MarginV change"
+#~ msgstr "thay đổi Lề D"
+
+#~ msgid "Match case"
+#~ msgstr "Phân biệt HOA-thường"
+
+#~ msgid "Matches"
+#~ msgstr "Khớp"
+
+#~ msgid "Maximum recent audio files"
+#~ msgstr "Tập tin âm thanh gần đây tối đa"
+
+#~ msgid "Maximum recent find strings"
+#~ msgstr "Chuỗi tìm kiếm gần đây tối đa"
+
+#~ msgid "Maximum recent keyframe files"
+#~ msgstr "Tập tin keyframe gần đây tối đa"
+
+#~ msgid "Maximum recent replace strings"
+#~ msgstr "Chuỗi thay thế gần đây tối đa"
+
+#~ msgid "Maximum recent subtitle files"
+#~ msgstr "Tập tin phụ đề gần đây tối đa"
+
+#~ msgid "Maximum recent timecode files"
+#~ msgstr "Tập tin mã thời gian gần đây tối đa"
+
+#~ msgid "Maximum recent video files"
+#~ msgstr "Tập tin phim gần đây tối đa"
+
+#~ msgid "Maximum undo levels"
+#~ msgstr "Cấp độ hoàn tác tối đa"
+
+#~ msgid "Miscellanea"
+#~ msgstr "Linh tinh"
+
+#~ msgid "Modified Background"
+#~ msgstr "Hậu cảnh Được sửa đổi"
+
+#~ msgid "Move down"
+#~ msgstr "Di chuyển xuống"
+
+#~ msgid "Move up"
+#~ msgstr "Di chuyển lên"
+
+#~ msgid ""
+#~ "Much like anything loaded via DirectShow, certain files may have a "
+#~ "strange structure (such as h.264 into AVI or XviD will null frames) which "
+#~ "may cause unreliable seeking (that is, video frames might be off by one "
+#~ "frame). This is not an Aegisub bug - you may consider reencoding those "
+#~ "videos before working with them."
+#~ msgstr ""
+#~ "Giống như mọi thứ được nạp thông qua DirectShow, một số tập tin có thể có "
+#~ "cấu trúc kì lạ (như h.264 biến thành AVI hoặc XviD có khung hình rỗng) và "
+#~ "khiến việc truy tìm bị trúc trắc (có nghĩa là, các khung hình phim có thể "
+#~ "bị mất đi một khung). Đây không phải là lỗi của Aegisub - có thể bạn sẽ "
+#~ "muốn cân nhắc việc mã hóa lại phim trước khi làm việc với chúng."
+
+#~ msgid "Multiple %s tracks detected, please choose the one you wish to load:"
+#~ msgstr "Nhận diện thấy nhiều rãnh %s, vui lòng chọn cái mà bạn muốn nạp:"
+
+#~ msgid "Next line/syllable (%KEY%/%KEY%)"
+#~ msgstr "Âm tiết hoặc dòng kế (%KEY%/%KEY%)"
+
+#~ msgid "No subtitle providers available. Cannot preview subs."
+#~ msgstr "Không có trình cung cấp phụ đề. Không thể xem thử phụ đề."
+
+#~ msgid "No timecodes to average"
+#~ msgstr "Không có mã thời gian để tính trung bình"
+
+#~ msgid "None"
+#~ msgstr "Không"
+
+#~ msgid "None (NOT RECOMMENDED)"
+#~ msgstr "Không (KHÔNG KHUYẾN NGHỊ)"
+
+#~ msgid "Not enough parameters for Aegisub::text_extents()"
+#~ msgstr "Không đủ tham số cho Aegisub::text_extents()"
+
+#~ msgid "Not found.\n"
+#~ msgstr "Không tìm thấy.\n"
+
+#~ msgid "Opaque box"
+#~ msgstr "Hộp mờ"
+
+#~ msgid "Open Attachment List"
+#~ msgstr "Mở Danh sách Đính kèm"
+
+#~ msgid "Open Automation manager"
+#~ msgstr "Mở trình Quản lí Tự động"
+
+#~ msgid "Open Fonts Collector"
+#~ msgstr "Mở trình Thu thập Font"
+
+#~ msgid "Open Kanji Timer dialog"
+#~ msgstr "Mở hộp thoại Chỉnh giờ Kanji"
+
+#~ msgid "Open Kanji timer"
+#~ msgstr "Mở trình chỉnh giờ Kanji"
+
+#~ msgid "Open Properties"
+#~ msgstr "Mở thuộc tính"
+
+#~ msgid "Open Shift Times Dialogue"
+#~ msgstr "Mở hộp thoại Dịch chuyển Thời gian"
+
+#~ msgid "Open Spell checker"
+#~ msgstr "Mở trình Kiểm tra Chính tả"
+
+#~ msgid "Open Styles Manager"
+#~ msgstr "Mở trình Quản lí Kiểu dáng"
+
+#~ msgid "Open Styling Assistant"
+#~ msgstr "Mở trình Trợ lí Tạo kiểu"
+
+#~ msgid "Open Timing Post-processor dialog"
+#~ msgstr "Mở hộp thoại Xử lí Hậu kì việc Chỉnh giờ"
+
+#~ msgid "Open Translation Assistant"
+#~ msgstr "Mở trình Trợ lí Dịch thuật"
+
+#~ msgid "Open audio file"
+#~ msgstr "Mở tập tin âm thanh"
+
+#~ msgid "Open log window"
+#~ msgstr "Mở cửa sổ log"
+
+#~ msgid "Open styles manager"
+#~ msgstr "Mở trình quản lí kiểu dáng"
+
+#~ msgid "Open the attachment list"
+#~ msgstr "Mở danh sách phần đính kèm"
+
+#~ msgid "Open timecodes file"
+#~ msgstr "Mở tập tin mã thời gian"
+
+#~ msgid "Opens a VFR timecodes v1 or v2 file"
+#~ msgstr "Mở một tập tin mã thời gian VFT v1 hoặc v2"
+
+#~ msgid "Opens a keyframe list file"
+#~ msgstr "Mở một tập tin danh sách keyframe"
+
+#~ msgid "Opens a subtitles file"
+#~ msgstr "Mở một tập tin phụ đề"
+
+#~ msgid "Opens a subtitles file with a specific charset"
+#~ msgstr "Mở một tập tin phụ đề có bộ mã riêng biệt"
+
+#~ msgid "Opens a video clip with solid color"
+#~ msgstr "Mở một đoạn phim có một màu đặc"
+
+#~ msgid "Opens a video file"
+#~ msgstr "Mở một tập tin phim"
+
+#~ msgid "Opens an audio file"
+#~ msgstr "Mở một tập tin âm thanh"
+
+#~ msgid "Opens the audio from the current video file"
+#~ msgstr "Mở phần âm thanh từ tập tin phim hiện tại"
+
+#~ msgid "Outline color"
+#~ msgstr "Màu đường nét ngoài"
+
+#~ msgid "Override Aspect Ratio"
+#~ msgstr "Ghi đè &Tỉ lệ màn ảnh"
+
+#~ msgid "Overwrite-Insertion in time boxes"
+#~ msgstr "Ghi đè-Chèn trong hộp thời gian"
+
+#~ msgid "Paste"
+#~ msgstr "Dán"
+
+#~ msgid "Paste Over"
+#~ msgstr "Dán đè"
+
+#~ msgid "Paste lines from clipboard"
+#~ msgstr "Dán các dòng từ clipboard"
+
+#~ msgid "Path to dictionary files:"
+#~ msgstr "Đường dẫn đến tập tin từ điển"
+
+#~ msgid "Perl script"
+#~ msgstr "Script Perl"
 
 #~ msgid "Play 500 ms after selection (%KEY%)"
 #~ msgstr "Phát 500ms sau đoạn đã chọn (%KEY%)"
@@ -8535,41 +7817,732 @@ msgstr "Trình kiểm tra cập nhật:"
 #~ msgid "Play 500 ms before selection (%KEY%)"
 #~ msgstr "Phát 500ms trước đoạn đã chọn (%KEY%)"
 
-#~ msgid "Stop (%KEY%)"
-#~ msgstr "Dừng (%KEY%)"
+#~ msgid "Play Audio"
+#~ msgstr "Phát âm thanh"
+
+#~ msgid "Play Video"
+#~ msgstr "Phát phim"
 
 #~ msgid "Play current line (%KEY%)"
 #~ msgstr "Phát dòng hiện tại (%KEY%)"
 
+#~ msgid "Play first 500ms of selection (%KEY%)"
+#~ msgstr "Phát 500ms đầu của đoạn đã chọn (%KEY%)"
+
+#~ msgid "Play from selection start to end of file (%KEY%)"
+#~ msgstr "Phát từ điểm bắt đầu đoạn đã chọn cho tới cuối tập tin (%KEY%)"
+
+#~ msgid "Play last 500ms of selection (%KEY%)"
+#~ msgstr "Phát 500ms cuối của đoạn đã chọn (%KEY%)"
+
 #~ msgid "Play selection (%KEY%/%KEY%)"
 #~ msgstr "Phát đoạn đã chọn (%KEY%/%KEY%)"
 
-#~ msgid "Next line/syllable (%KEY%/%KEY%)"
-#~ msgstr "Âm tiết hoặc dòng kế (%KEY%/%KEY%)"
+#~ msgid "Please wait, caching fonts..."
+#~ msgstr "Vui lòng đợi, đang đệm font..."
+
+#~ msgid "Press Key"
+#~ msgstr "Ấn phím"
+
+#~ msgid "Press key to bind to \"%s\" or Esc to cancel."
+#~ msgstr "Ấn phím để gán vào \"%s\" hoặc Esc để hủy bỏ."
 
 #~ msgid "Previous line or syllable (%KEY%/%KEY%)"
 #~ msgstr "Âm tiết hoặc dòng trước (%KEY%/%KEY%)"
 
+#~ msgid "Primary color"
+#~ msgstr "Màu chính"
+
+#~ msgid "Reading into RAM"
+#~ msgstr "Đọc vào RAM"
+
+#~ msgid "Reading keyframe and timecode data from Matroska file."
+#~ msgstr "Đọc dữ liệu mã thời gian và keyframe từ tập tin Matroska."
+
+#~ msgid "Reading keyframes from video"
+#~ msgstr "Đọc keyframe từ phim"
+
+#~ msgid "Realtime"
+#~ msgstr "Thời gian thực"
+
+#~ msgid "Recombine subtitles when they have been split and merged"
+#~ msgstr "Tái hợp phụ đề khi chúng đã được chia tách và trộn lẫn"
+
+#~ msgid "Redo"
+#~ msgstr "Làm lại"
+
+#~ msgid "Redoes last action"
+#~ msgstr "Làm lại thao tác cuối"
+
+#~ msgid "Regular Expression match"
+#~ msgstr "Khớp Biểu thức Chính quy"
+
+#~ msgid "Reloading %s because the file on disk (%s) changed."
+#~ msgstr "Đang nạp lại %s vì tập tin trên đĩa (%s) đã thay đổi."
+
+#~ msgid ""
+#~ "Removes all but the absolutely required fields from the Script Info "
+#~ "section. You might want to run this on files that you plan to distribute "
+#~ "in original form."
+#~ msgstr ""
+#~ "Xóa tất cả ngoại trừ các trường bắt buộc từ phần Thông tin Script. Có thể "
+#~ "bạn sẽ muốn chạy lệnh này trên những tập tin mà bạn định phân phối trong "
+#~ "dạng gốc."
+
+#~ msgid "Replace All"
+#~ msgstr "Thay thế Tất cả"
+
+#~ msgid "Replace all"
+#~ msgstr "Thay thế tất cả"
+
+#~ msgid "Replace next"
+#~ msgstr "Thay thế tiếp"
+
+#~ msgid "Replace override tags with: "
+#~ msgstr "Thay thế thẻ bị ghi đè với:"
+
+#~ msgid "Replace timecodes?"
+#~ msgstr "Thay thế mã thời gian?"
+
+#~ msgid "Resample"
+#~ msgstr "Tạo lại mẫu"
+
+#~ msgid "Resample Script Resolution"
+#~ msgstr "Tạo lại mẫu Độ phân giải Script"
+
+#~ msgid "Resample resolution"
+#~ msgstr "Tạo lại mẫu Độ phân giải"
+
+#~ msgid "Resource files distributed with Aegisub"
+#~ msgstr "Các tập tin tài nguyên được phân phối cùng Aegisub"
+
+#~ msgid "Restart Aegisub"
+#~ msgstr "Khởi động lại Aegisub"
+
+#~ msgid "Restore Defaults"
+#~ msgstr "Khôi phục Mặc định"
+
+#~ msgid "Resulting duration: %d:%02d:%02d.%03d"
+#~ msgstr "Khoảng thời gian kết quả: %d:%02d:%02d.%03d"
+
+#~ msgid "Reverse"
+#~ msgstr "Đảo ngược"
+
+#~ msgid "Reverse transformation"
+#~ msgstr "Đảo ngược việc chuyển hóa"
+
+#~ msgid ""
+#~ "Revert the active line to its initial state (shown in the upper editor)"
+#~ msgstr ""
+#~ "Đảo ngược dòng đang hoạt động về trạng thái ban đầu của nó (Hiển thị ở "
+#~ "trình biên tập ở trên)"
+
+#~ msgid "Right Margin (0 = default)"
+#~ msgstr "Lề phải (0 = mặc định)"
+
+#~ msgid ""
+#~ "Runs a post-processor for timing to deal with lead-ins, lead-outs, scene "
+#~ "timing and etc."
+#~ msgstr ""
+#~ "Chạy trình xử lí hậu kì cho việc canh chỉnh thời gian để giải quyết kim "
+#~ "đầu vào, kim đầu ra, thời gian phân cảnh, vv..."
+
+#~ msgid "Save Subtitles Alt"
+#~ msgstr "Save Subtitles Alt"
+
+#~ msgid "Save before continuing?"
+#~ msgstr "Lưu trước khi tiếp tục?"
+
+#~ msgid "Save subtitles"
+#~ msgstr "Lưu phụ đề"
+
+#~ msgid "Save timecodes file"
+#~ msgstr "Lưu tập tin mã thời gian"
+
+#~ msgid "Saves a VFR timecodes v2 file"
+#~ msgstr "Lưu một tập tin mã thời gian VFR v2"
+
+#~ msgid "Saves a copy of subtitles with processing applied to it"
+#~ msgstr ""
+#~ "Lưu một bản sao của phụ đề kèm theo các xử lí đã được áp dụng cho nó"
+
+#~ msgid "Saves subtitles"
+#~ msgstr "Lưu phụ đề"
+
+#~ msgid "Saves subtitles with another name"
+#~ msgstr "Lưu phụ đề với tên khác"
+
+#~ msgid "Saves the current keyframe list"
+#~ msgstr "Lưu danh sách keyframe hiện tại"
+
+#~ msgid "Saving changes"
+#~ msgstr "Đang lưu thay đổi"
+
+#~ msgid "Scanning file for fonts..."
+#~ msgstr "Đang quét tập tin để tìm font..."
+
+#~ msgid "Script completed"
+#~ msgstr "Script hoàn tất"
+
+#~ msgid "Scripting engines installed:\n"
+#~ msgstr "Bộ máy script được cài:\n"
+
+#~ msgid "Search and &Replace..."
+#~ msgstr "Tìm kiếm &và Thay thế..."
+
+#~ msgid "Secondary color"
+#~ msgstr "Màu thứ cấp"
+
+#~ msgid "Seconds boundary"
+#~ msgstr "Đường biên của giây"
+
 #~ msgid "Seek bar"
 #~ msgstr "Thanh truy tìm"
 
-#~ msgid "Force BT.601"
-#~ msgstr "Bắt buộc dùng BT.601"
+#~ msgid "Select Lines..."
+#~ msgstr "Chọ&n dòng..."
+
+#~ msgid "Select all"
+#~ msgstr "Chọn tất cả"
+
+#~ msgid "Select none"
+#~ msgstr "Không chọn"
+
+#~ msgid "Select visible"
+#~ msgstr "Chọn đang hiển thị"
+
+#~ msgid "Selected rows"
+#~ msgstr "Dòng đã chọn"
+
+#~ msgid "Selection background - modified"
+#~ msgstr "Hậu cảnh đoạn được chọn - được sửa đổi"
+
+#~ msgid "Selection onward"
+#~ msgstr "Đoạn lựa chọn trở đi"
+
+#~ msgid "Selection was set to %u lines"
+#~ msgstr "Đoạn được chọn được thiết lập là %u dòng"
+
+#~ msgid "Selects all lines that are currently visible on video frame"
+#~ msgstr "Chọn tất cả các dòng đang hiển thị trên khung hình phim"
+
+#~ msgid "Selects lines based on defined criteria"
+#~ msgstr "Chọn dòng dựa trên tiêu chí đã xác định"
+
+#~ msgid "Set End to Video"
+#~ msgstr "Thiết lập Kết thúc tới Phim"
+
+#~ msgid "Set Hotkey..."
+#~ msgstr "Thiết lập Phím nóng..."
+
+#~ msgid "Set Start to Video"
+#~ msgstr "Thiết lập Bắt đầu tới Phim"
+
+#~ msgid "Set Zoom"
+#~ msgstr "Thiết lập Thu &phóng"
+
+#~ msgid "Set opacity, from 0 (opaque) to 255 (transparent)"
+#~ msgstr "Thiết lập độ mờ, từ 0 (mờ đục) tới 255 (trong suốt)"
+
+#~ msgid "Set selection"
+#~ msgstr "Thiết lập lựa chọn"
+
+#~ msgid ""
+#~ "Sets how to set the adjoining of lines. If set totally to left, it will "
+#~ "extend start time of the second line; if totally to right, it will extend "
+#~ "the end time of the first line."
+#~ msgstr ""
+#~ "Thiết lập cách thiết lập việc nối dòng. Nếu thiết lập hoàn toàn sang "
+#~ "trái, nó sẽ mở rộng thời gian bắt đầu của dòng thứ hai; nếu thiết lập "
+#~ "hoàn toàn sanh phải, nó sẽ mở rộng thời gian kết thúc của dòng thứ nhất."
+
+#~ msgid "Shadow color"
+#~ msgstr "Màu đổ bóng"
+
+#~ msgid "Shift by Current Time"
+#~ msgstr "Dịch chuyển theo Thời gian Hiện tại"
+
+#~ msgid "Shift selected subtitles so first selected starts at this frame"
+#~ msgstr ""
+#~ "Dịch chuyển phụ đề đã chọn để dòng đầu tiên được chọn sẽ bắt đầu tại "
+#~ "khung hình này"
+
+#~ msgid "Shift selection so first selected line starts at current frame"
+#~ msgstr ""
+#~ "Dịch chuyển đoạn được chọn để dòng được chọn đầu tiên bắt đầu tại khung "
+#~ "hình hiện tại"
+
+#~ msgid "Shift subtitles to frame"
+#~ msgstr "Dịch chuyển phụ đề tới khung hình"
+
+#~ msgid "Show Original"
+#~ msgstr "Hiển thị gốc"
+
+#~ msgid "Show Splash Screen"
+#~ msgstr "Hiện hình ảnh Splash"
+
+#~ msgid ""
+#~ "Show the contents of the subtitle line when it was first selected above "
+#~ "the edit box. This is sometimes useful when editing subtitles or "
+#~ "translating subtitles into another language."
+#~ msgstr ""
+#~ "Hiển thị nội dung của dòng phụ đề khi nó lần đầu được chọn trên hộp biên "
+#~ "tập. Tính năng này đôi khi hữu dụng khi biên tập lại phụ đề hoặc dịch phụ "
+#~ "đề này sang ngôn ngữ khác."
+
+#~ msgid "Shows video details"
+#~ msgstr "Hiện chi tiết của phim"
+
+#~ msgid "Skip Dest Line"
+#~ msgstr "Bỏ qua Dòng đích"
+
+#~ msgid "Skip Source Line"
+#~ msgstr "Bỏ qua Dòng nguồn"
+
+#~ msgid "Snap end to video"
+#~ msgstr "Nắm kéo điểm kết thúc tới phim"
+
+#~ msgid "Snap selected subtitles so they match current scene start/end"
+#~ msgstr ""
+#~ "Nắm kéo phụ đề đã chọn để chúng khớp với bắt đầu/kết thúc của phân cảnh "
+#~ "đã chọn"
+
+#~ msgid "Snap subtitles to scene"
+#~ msgstr "Nắm kéo phụ đề tới phân cảnh"
+
+#~ msgid "Snap to adjacent lines"
+#~ msgstr "Nắm kéo tới dòng cận kề"
+
+#~ msgid "Snap to keyframes"
+#~ msgstr "Nắm kéo tới Keyframe"
+
+#~ msgid "Sort by Time"
+#~ msgstr "&Sắp xếp theo Thời gian"
+
+#~ msgid "Source Style"
+#~ msgstr "Kiểu dáng Nguồn"
+
+#~ msgid "Spe&ll Checker..."
+#~ msgstr "&Kiểm tra Chính tả..."
+
+#~ msgid "Spectrum cache memory max (MB)"
+#~ msgstr "Bộ nhớ đệm dải quang phổ tối đa (MB)"
+
+#~ msgid "Spectrum cutoff"
+#~ msgstr "Cutoff dải quang phổ"
+
+#~ msgid "Spectrum quality"
+#~ msgstr "Chất lượng dải quang phổ"
+
+#~ msgid "Spell check replace"
+#~ msgstr "Thay thế kiểm tra chính tả"
+
+#~ msgid "Split"
+#~ msgstr "Chia tác"
+
+#~ msgid "Split (by karaoke)"
+#~ msgstr "Chia tách (theo karaoke)"
+
+#~ msgid "Start and End times"
+#~ msgstr "Thời gian Bắt đầu và Kết thúc"
+
+#~ msgid "Start times only"
+#~ msgstr "Chỉ thời gian bắt đầu"
+
+#~ msgid "Start!"
+#~ msgstr "Bắt đầu!"
+
+#~ msgid "Startup"
+#~ msgstr "Khởi động"
+
+#~ msgid "Stop (%KEY%)"
+#~ msgstr "Dừng (%KEY%)"
+
+#~ msgid "Strikeout"
+#~ msgstr "Gạch ngang"
+
+#~ msgid "Style name."
+#~ msgstr "Tên kiểu dáng"
+
+#~ msgid ""
+#~ "Styles can be stored in different storages, so that you can keep your "
+#~ "projects organized."
+#~ msgstr ""
+#~ "Kiểu dáng có thể được lưu trữ trong các kho lưu trữ khác nhau, để bạn có "
+#~ "thể tổ chức sắp xếp tốt các dự án của mình."
+
+#~ msgid "Styling Assistant Accept"
+#~ msgstr "Trợ lí Tạo kiểu - Chấp thuận"
+
+#~ msgid "Styling Assistant Next"
+#~ msgstr "Trợ lí Tạo kiểu - Tiếp"
+
+#~ msgid "Styling Assistant Play Audio"
+#~ msgstr "Trợ lí Tạo kiểu - Phát âm thanh"
+
+#~ msgid "Styling Assistant Play Video"
+#~ msgstr "Trợ lí Tạo kiểu - Phát phim"
+
+#~ msgid "Styling Assistant Prev"
+#~ msgstr "Trợ lí Tạo kiểu - Trước"
+
+#~ msgid "Styling Assistant Preview"
+#~ msgstr "Trợ lí Tạo kiểu - Xem thử"
+
+#~ msgid "Styling assistant"
+#~ msgstr "Trợ lí tạo kiểu dáng"
+
+#~ msgid "Subtitles edit box"
+#~ msgstr "Hộp chỉnh sửa phụ đề"
+
+#~ msgid "Subtitles grid"
+#~ msgstr "Đường kẻ phụ đề"
+
+#~ msgid "Subtract from selection"
+#~ msgstr "Trừ ra từ đoạn được chọn"
+
+#~ msgid "Swaps the two selected lines"
+#~ msgstr "Hoán chuyển hai dòng đã chọn"
+
+#~ msgid "Syllable boundary"
+#~ msgstr "Đường biên của âm tiết"
+
+#~ msgid "Syllable text"
+#~ msgstr "Văn bản âm tiết"
+
+#~ msgid "Symmetrical"
+#~ msgstr "Đối xứng"
+
+#~ msgid "Syntax highlighter - "
+#~ msgstr "Tô sáng công thức - "
+
+#~ msgid ""
+#~ "The fonts collector is one of the most useful features, which resumes the "
+#~ "boring task of hunting down fonts into a matter of a few clicks."
+#~ msgstr ""
+#~ "Trình thu thập font là một trong các tính năng hữu ích nhất, tiếp tục "
+#~ "công việc nhàm chán là săn lùng các font chỉ trong vài cú nhấp chuột."
+
+#~ msgid ""
+#~ "The hotkey %s is already mapped to %s. If you proceed, that hotkey will "
+#~ "be cleared. Proceed?"
+#~ msgstr ""
+#~ "Phím nóng %s đã được gán cho %s. Nếu bạn tiếp tục, phím nóng đó sẽ bị "
+#~ "xóa. Vẫn tiến hành?"
+
+#~ msgid "The starting point is beyond the length of the audio loaded."
+#~ msgstr "Điểm bắt đầu ở trên độ dài của đoạn âm thanh được nạp."
+
+#~ msgid ""
+#~ "The styling assistant is a practical way to set styles to each line, when "
+#~ "each actor has a different style assigned to it."
+#~ msgstr ""
+#~ "Trợ lí tạo kiểu dáng là một cách thực tế để thiết lập kiểu dáng cho mỗi "
+#~ "dòng, khi mỗi nhân vật có một kiểu khác nhau được gán cho chúng."
+
+#~ msgid "There is no audio to save."
+#~ msgstr "Không có âm thanh để lưu."
+
+#~ msgid ""
+#~ "There is no reason to use the SSA format (as opposed to ASS). ASS is very "
+#~ "similar, but adds some important functionality. Most importantly, "
+#~ "however, is that only ASS supports certain override tags (such as \\pos "
+#~ "and \\t). Those only work on SSA files because VSFilter/Textsub is "
+#~ "merciful."
+#~ msgstr ""
+#~ "Không có lí do gì để dùng định dạng SSA (trái với ASS) cả. ASS cũng tương "
+#~ "tự, nhưng thêm một số chức năng quan trọng. Quan trọng nhất, tuy nhiên, "
+#~ "là chỉ ASS mới hỗ trợ các thẻ ghi đè nào đó (như \\pos và \\t). Những thẻ "
+#~ "này chỉ hoạt động trên tập tin SSA vì VSFilter/Textsub khá rộng lượng."
 
 #~ msgid "Thread priority"
 #~ msgstr "Mức ưu tiên cho luồng"
 
-#~ msgid "Lowest"
-#~ msgstr "Thấp nhất"
+#~ msgid ""
+#~ "Threshold for 'after end' distance, that is, how many frames a subtitle "
+#~ "must end after a keyframe to snap to it."
+#~ msgstr ""
+#~ "Ngưỡng cho khoảng cách 'sau kết thúc', có nghĩa là, bao nhiêu khung hình "
+#~ "mà một phụ đề phải kết thúc sau một keyframe để nắm kéo nó."
 
-#~ msgid "Below Normal (recommended)"
-#~ msgstr "Dưới trung bình (khuyến nghị)"
+#~ msgid ""
+#~ "Threshold for 'after start' distance, that is, how many frames a subtitle "
+#~ "must start after a keyframe to snap to it."
+#~ msgstr ""
+#~ "Ngưỡng cho khoảng cách 'sau bắt đầu', có nghĩa là, bao nhiêu khung hình "
+#~ "mà một phụ đề phải bắt đầu sau một keyframe để nắm kéo nó."
+
+#~ msgid ""
+#~ "Threshold for 'before end' distance, that is, how many frames a subtitle "
+#~ "must end before a keyframe to snap to it."
+#~ msgstr ""
+#~ "Ngưỡng cho khoảng cách 'trước kết thúc', có nghĩa là, bao nhiêu khung "
+#~ "hình mà một phụ đề phải kết thúc trước một keyframe để nắm kéo nó."
+
+#~ msgid ""
+#~ "Threshold for 'before start' distance, that is, how many frames a "
+#~ "subtitle must start before a keyframe to snap to it."
+#~ msgstr ""
+#~ "Ngưỡng cho khoảng cách 'trước bắt đầu', có nghĩa là, bao nhiêu khung hình "
+#~ "mà một phụ đề phải bắt đầu trước một keyframe để nắm kéo nó."
+
+#~ msgid "Threshold:"
+#~ msgstr "Ngưỡng:"
+
+#~ msgid "Time"
+#~ msgstr "Thời gian"
+
+#~ msgid "Timing Post-Processor..."
+#~ msgstr "&Xử lí Hậu kì việc Chỉnh giờ"
+
+#~ msgid "Toggle realtime display of changes."
+#~ msgstr "Bật-tắt hiển thị thay đổi theo thời gian thực."
+
+#~ msgid ""
+#~ "Total scripts loaded: %d\n"
+#~ "Global scripts loaded: %d\n"
+#~ "Local scripts loaded: %d\n"
+#~ "\n"
+#~ msgstr ""
+#~ "Tổng script được nạp: %d\n"
+#~ "Script bao quát được nạp: %d\n"
+#~ "Script nội bộ được nạp: %d\n"
+#~ "\n"
+
+#~ msgid "Trace: "
+#~ msgstr "Truy dấu:"
+
+#~ msgid "Translation Assistant Accept"
+#~ msgstr "Trợ lí Dịch thuật - Chấp thuận"
+
+#~ msgid "Translation Assistant Insert Original"
+#~ msgstr "Trợ lí Dịch thuật - Chèn gốc"
+
+#~ msgid "Translation Assistant Next"
+#~ msgstr "Trợ lí Dịch thuật - Tiếp"
+
+#~ msgid "Translation Assistant Play Audio"
+#~ msgstr "Trợ lí Dịch thuật - Phát âm thanh"
+
+#~ msgid "Translation Assistant Play Video"
+#~ msgstr "Trợ lí Dịch thuật - Phát phim"
+
+#~ msgid "Translation Assistant Prev"
+#~ msgstr "Trợ lí Dịch thuật - Trước"
+
+#~ msgid "Translation Assistant Preview"
+#~ msgstr "Trợ lí Dịch thuật - Xem thử"
+
+#~ msgid ""
+#~ "Tried to register PerlConsole, but support for it was disabled in this "
+#~ "version."
+#~ msgstr ""
+#~ "Đã cố đăng kí PerlConsole, nhưng hỗ trợ cho nó đã bị vô hiệu hóa trong "
+#~ "phiên bản này."
+
+#~ msgid ""
+#~ "Try the spectrum mode for the audio display, it can make it much easier "
+#~ "to spot where the important points in the audio are."
+#~ msgstr ""
+#~ "Hãy thử chế độ dải quang phổ cho việc hiển thị âm thanh, nó có thể giúp "
+#~ "dễ dàng chỉ ra các điểm quan trọng trong đoạn âm thanh."
+
+#~ msgid ""
+#~ "Unable to add the automation include path(s) to @INC: the script's code "
+#~ "may not compile or execute properly."
+#~ msgstr ""
+#~ "Không thể thêm đường dẫn bao gồm tính tự động vào @INC: mã của script "
+#~ "không thể biên dịch hoặc thực thi đúng."
+
+#~ msgid "Underline"
+#~ msgstr "Gạch dưới"
+
+#~ msgid "Undo"
+#~ msgstr "Hoàn tác"
+
+#~ msgid "Undoes last action"
+#~ msgstr "Hoàn tác thao tác cuối"
+
+#~ msgid "Unknown"
+#~ msgstr "Không rõ"
+
+#~ msgid "Unlink"
+#~ msgstr "Dừng liên kết"
+
+#~ msgid "Unload timecodes?"
+#~ msgstr "Ngừng nạp mã thời gian?"
+
+#~ msgid "Update Video (slow)"
+#~ msgstr "Cập nhật Phim (chậm)"
+
+#~ msgid ""
+#~ "Use keyboard shortcuts! They make your life easier, for example, Ctrl"
+#~ "+Enter updates changes on current line without going to next. Check the "
+#~ "manual for a complete list."
+#~ msgstr ""
+#~ "Hãy dùng phím tắt! Chúng làm cho cuộc sống của bạn dễ thở hơn, ví dụ, Ctrl"
+#~ "+Enter cập nhật các thay đổi trên dòng hiện tại mà không cần phải đi tới "
+#~ "dòng tiếp theo. Xem sổ tay hướng dẫn để biết danh sách hoàn chỉnh."
+
+#~ msgid "Use regular expressions"
+#~ msgstr "Dùng biểu thức chính quy"
+
+#~ msgid "Uses karaoke timing to split line into multiple smaller lines"
+#~ msgstr "Dùng chỉnh giờ karaoke để chia tách dòng thành nhiều dòng nhỏ hơn"
+
+#~ msgid "Variable"
+#~ msgstr "Biến"
+
+#~ msgid "Vertical Margin (0 = default)"
+#~ msgstr "Lề dọc (0 = mặc định)"
+
+#~ msgid "Video Jump"
+#~ msgstr "Nhảy phim"
+
+#~ msgid "Video global focus seek"
+#~ msgstr "Phim - truy tìm chú ý bao quát"
+
+#~ msgid "Video global next frame"
+#~ msgstr "Phim - khung hình kế bao quát"
+
+#~ msgid "Video global play"
+#~ msgstr "Phim - phát bao quát"
+
+#~ msgid "Video global prev frame"
+#~ msgstr "Phim - khung hình trước bao quát"
+
+#~ msgid "Video global zoom in"
+#~ msgstr "Phim - phóng to bao quát"
+
+#~ msgid "Video global zoom out"
+#~ msgstr "Phim - thu nhỏ bao quát"
 
 #~ msgid "Visit Aegisub's forums"
 #~ msgstr "Vào diễn đàn của Aegisub"
 
-#~ msgid "Forums"
-#~ msgstr "Diễn đàn"
+#~ msgid ""
+#~ "WARNING: Changing these settings might result in bugs,\n"
+#~ "crashes, glitches and/or movax.\n"
+#~ "Don't touch these unless you know what you're doing."
+#~ msgstr ""
+#~ "CẢNH BÁO: Thay đổi những thiết lập này có thể gây ra lỗi,\n"
+#~ "đổ vỡ, trục trặc và/hoặc movax.\n"
+#~ "Đừng chạm vào những thứ này trừ khi bạn biết rõ mình đang làm gì."
 
-#~ msgid "&Forums"
-#~ msgstr "&Diễn đàn"
+#~ msgid "Warning"
+#~ msgstr "Cảnh báo"
+
+#~ msgid "Warning: "
+#~ msgstr "Cảnh báo:"
+
+#~ msgid "Waveform - inactive"
+#~ msgstr "Dạng sóng - không hoạt động"
+
+#~ msgid "Waveform - modified"
+#~ msgstr "Dạng sóng - được sửa đổi"
+
+#~ msgid "Waveform - selection"
+#~ msgstr "Dạng sóng - đoạn được chọn"
+
+#~ msgid ""
+#~ "When you are done with your subtitles and ready to distribute them, "
+#~ "remember: say no to MP4, OGM or AVI. Matroska is your friend."
+#~ msgstr ""
+#~ "Khi bạn đã hoàn thành phụ đề của mình và sẵn sàng phân phối chúng, hãy "
+#~ "nhớ: nói không với MP4, OGM và AVI. Matroska mới chính là bạn của chúng "
+#~ "ta."
+
+#~ msgid "Writing file"
+#~ msgstr "Đang ghi tập tin"
+
+#~ msgid ""
+#~ "You already have timecodes loaded. Replace them with the timecodes from "
+#~ "the Matroska file?"
+#~ msgstr ""
+#~ "Bạn đã nạp mã thời gian rồi. Thay thế chúng bằng các mã thời gian từ tập "
+#~ "tin Matroska?"
+
+#~ msgid ""
+#~ "You already have timecodes loaded. Would you like to replace them with "
+#~ "timecodes from the video file?"
+#~ msgstr ""
+#~ "Bạn đã nạp mã thời gian rồi. Bạn có muốn thay thế chúng bằng các mã thời "
+#~ "gian từ tập tin phim?"
+
+#~ msgid ""
+#~ "You can easily translate subtitle files using the translation assistant."
+#~ msgstr "Bạn có thể dễ dàng dịch tập tin phụ đề bằng trợ lí dịch thuật."
+
+#~ msgid ""
+#~ "You have chosen to use the \"Comic Sans\" font. As the programmer and a "
+#~ "typesetter,\n"
+#~ "I must urge you to reconsider. Comic Sans is the most abused font in the "
+#~ "history\n"
+#~ "of computing, so please avoid using it unless it's REALLY suitable. "
+#~ "Thanks."
+#~ msgstr ""
+#~ "Bạn đã chọn dùng font \"Comic Sans\". Với tư cách là một lập trình viên "
+#~ "và là một người typeset,\n"
+#~ "tôi khuyên bạn nên cân nhắc lại. Comic Sans là font bị lạm dụng nhất "
+#~ "trong lịch sử\n"
+#~ "máy tính, do đó vui lòng tránh dùng nó trừ khi nó THẬT SỰ phù hợp. Cảm ơn."
+
+#~ msgid "You have timecodes loaded currently. Would you like to unload them?"
+#~ msgstr "Bạn đã có nạp mã thời gian rồi. Bạn có muốn ngừng nạp chúng không?"
+
+#~ msgid "Zip Archives (*.zip)|*.zip"
+#~ msgstr "Zip Archives (*.zip)|*.zip"
+
+#~ msgid "Zoom 100%"
+#~ msgstr "Phóng 100%"
+
+#~ msgid "Zoom 200%"
+#~ msgstr "Phóng 200%"
+
+#~ msgid "Zoom 50%"
+#~ msgstr "Phóng 50%"
+
+#~ msgid "Zoom in"
+#~ msgstr "Phóng to"
+
+#~ msgid "Zoom out"
+#~ msgstr "Thu nhỏ"
+
+#~ msgid "audio"
+#~ msgstr "âm thanh"
+
+#~ msgid "delete"
+#~ msgstr "xóa"
+
+#~ msgid "editing"
+#~ msgstr "chỉnh sửa"
+
+#~ msgid "font attachment"
+#~ msgstr "đính kèm font"
+
+#~ msgid "hide tags."
+#~ msgstr "ẩn thẻ."
+
+#~ msgid "load"
+#~ msgstr "nạp"
+
+#~ msgid "original"
+#~ msgstr "gốc"
+
+#~ msgid "replace with"
+#~ msgstr "thay thế bằng"
+
+#~ msgid "seconds."
+#~ msgstr "giây."
+
+#~ msgid "show full tags."
+#~ msgstr "hiện thẻ đầy đủ."
+
+#~ msgid "simplify tags."
+#~ msgstr "đơn giản hóa các thẻ."
+
+#~ msgid "style changes"
+#~ msgstr "thay đổi của kiểu dáng"
+
+#~ msgid "video"
+#~ msgstr "phim"

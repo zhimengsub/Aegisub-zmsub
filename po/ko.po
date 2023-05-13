@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Aegisub-korea\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-17 13:16-0400\n"
+"POT-Creation-Date: 2023-05-14 00:32+0800\n"
 "PO-Revision-Date: \n"
 "Last-Translator: FreeTime\n"
 "Language-Team: None\n"
@@ -239,6 +239,22 @@ msgstr "가라오케 태그 바꾸기 \\ko"
 #, fuzzy
 msgid "karaoke split"
 msgstr "가라오케 템플릿"
+
+#: ../src/audio_provider_factory.cpp:119
+msgid ""
+"Unable to create RAM audio cache: 32-bit memory limit exceeded. Fallback to "
+"hard disk cache.\n"
+"\n"
+"Possible solutions:\n"
+"- Use 64-bit version\n"
+"- Turn off cache or switch to hard disk cache in Preferences -> Advanced -> "
+"Audio -> Cache -> Cache type\n"
+"- Enable channel downmix in Preferences -> Advanced -> Audio"
+msgstr ""
+
+#: ../src/audio_provider_factory.cpp:124
+msgid "Out of Memory"
+msgstr ""
 
 #: ../src/audio_renderer_waveform.cpp:152
 msgid "Maximum"
@@ -817,7 +833,7 @@ msgid "&Automation..."
 msgstr "자동화(&A)"
 
 #: ../src/command/automation.cpp:75 ../src/command/automation.cpp:87
-#: ../src/preferences.cpp:330
+#: ../src/preferences.cpp:339
 msgid "Automation"
 msgstr "자동화"
 
@@ -836,307 +852,307 @@ msgstr ""
 msgid "'%s' is not a valid command name"
 msgstr ""
 
-#: ../src/command/edit.cpp:134 ../src/command/edit.cpp:841
+#: ../src/command/edit.cpp:137 ../src/command/edit.cpp:925
 msgid "paste"
 msgstr "붙여넣기"
 
-#: ../src/command/edit.cpp:374
+#: ../src/command/edit.cpp:380
 #, fuzzy
 msgid "set color"
 msgstr "RGB 색"
 
-#: ../src/command/edit.cpp:388
+#: ../src/command/edit.cpp:397
 #, fuzzy
 msgid "Primary Color..."
 msgstr "기본색"
 
-#: ../src/command/edit.cpp:389
+#: ../src/command/edit.cpp:399
 #, fuzzy
 msgid "Primary Color"
 msgstr "기본색"
 
-#: ../src/command/edit.cpp:390
+#: ../src/command/edit.cpp:401
 msgid "Set the primary fill color (\\c) at the cursor position"
 msgstr ""
 
-#: ../src/command/edit.cpp:400
+#: ../src/command/edit.cpp:413
 #, fuzzy
 msgid "Secondary Color..."
 msgstr "보조색"
 
-#: ../src/command/edit.cpp:401
+#: ../src/command/edit.cpp:415
 #, fuzzy
 msgid "Secondary Color"
 msgstr "보조색"
 
-#: ../src/command/edit.cpp:402
+#: ../src/command/edit.cpp:417
 msgid "Set the secondary (karaoke) fill color (\\2c) at the cursor position"
 msgstr ""
 
-#: ../src/command/edit.cpp:412
+#: ../src/command/edit.cpp:429
 #, fuzzy
 msgid "Outline Color..."
 msgstr "외곽선색"
 
-#: ../src/command/edit.cpp:413
+#: ../src/command/edit.cpp:431
 #, fuzzy
 msgid "Outline Color"
 msgstr "외곽선색"
 
-#: ../src/command/edit.cpp:414
+#: ../src/command/edit.cpp:433
 msgid "Set the outline color (\\3c) at the cursor position"
 msgstr ""
 
-#: ../src/command/edit.cpp:424
+#: ../src/command/edit.cpp:445
 #, fuzzy
 msgid "Shadow Color..."
 msgstr "그림자색"
 
-#: ../src/command/edit.cpp:425
+#: ../src/command/edit.cpp:447
 #, fuzzy
 msgid "Shadow Color"
 msgstr "그림자색"
 
-#: ../src/command/edit.cpp:426
+#: ../src/command/edit.cpp:449
 msgid "Set the shadow color (\\4c) at the cursor position"
 msgstr ""
 
-#: ../src/command/edit.cpp:436 ../src/command/edit.cpp:437
+#: ../src/command/edit.cpp:461 ../src/command/edit.cpp:463
 #, fuzzy
 msgid "Toggle Bold"
 msgstr "가라오케 모드 설정/해제"
 
-#: ../src/command/edit.cpp:438
+#: ../src/command/edit.cpp:465
 msgid ""
 "Toggle bold (\\b) for the current selection or at the current cursor position"
 msgstr ""
 
-#: ../src/command/edit.cpp:441
+#: ../src/command/edit.cpp:468
 msgid "toggle bold"
 msgstr ""
 
-#: ../src/command/edit.cpp:448 ../src/command/edit.cpp:449
+#: ../src/command/edit.cpp:477 ../src/command/edit.cpp:479
 #, fuzzy
 msgid "Toggle Italics"
 msgstr "굵게"
 
-#: ../src/command/edit.cpp:450
+#: ../src/command/edit.cpp:481
 msgid ""
 "Toggle italics (\\i) for the current selection or at the current cursor "
 "position"
 msgstr ""
 
-#: ../src/command/edit.cpp:453
+#: ../src/command/edit.cpp:484
 msgid "toggle italic"
 msgstr ""
 
-#: ../src/command/edit.cpp:460 ../src/command/edit.cpp:461
+#: ../src/command/edit.cpp:493 ../src/command/edit.cpp:495
 #, fuzzy
 msgid "Toggle Underline"
 msgstr "밑줄"
 
-#: ../src/command/edit.cpp:462
+#: ../src/command/edit.cpp:497
 msgid ""
 "Toggle underline (\\u) for the current selection or at the current cursor "
 "position"
 msgstr ""
 
-#: ../src/command/edit.cpp:465
+#: ../src/command/edit.cpp:500
 #, fuzzy
 msgid "toggle underline"
 msgstr "밑줄"
 
-#: ../src/command/edit.cpp:472 ../src/command/edit.cpp:473
+#: ../src/command/edit.cpp:509 ../src/command/edit.cpp:511
 #, fuzzy
 msgid "Toggle Strikeout"
 msgstr "취소선"
 
-#: ../src/command/edit.cpp:474
+#: ../src/command/edit.cpp:513
 msgid ""
 "Toggle strikeout (\\s) for the current selection or at the current cursor "
 "position"
 msgstr ""
 
-#: ../src/command/edit.cpp:477
+#: ../src/command/edit.cpp:516
 #, fuzzy
 msgid "toggle strikeout"
 msgstr "취소선"
 
-#: ../src/command/edit.cpp:484
+#: ../src/command/edit.cpp:525
 #, fuzzy
 msgid "Font Face..."
 msgstr "글꼴"
 
-#: ../src/command/edit.cpp:485 ../src/preferences_base.cpp:251
+#: ../src/command/edit.cpp:527 ../src/preferences_base.cpp:251
 #, fuzzy
 msgid "Font Face"
 msgstr "글꼴"
 
-#: ../src/command/edit.cpp:486
+#: ../src/command/edit.cpp:529
 #, fuzzy
 msgid "Select a font face and size"
 msgstr "Aegisub 인터페이스 언어 선택"
 
-#: ../src/command/edit.cpp:513
+#: ../src/command/edit.cpp:557
 msgid "set font"
 msgstr ""
 
-#: ../src/command/edit.cpp:540
+#: ../src/command/edit.cpp:587
 #, fuzzy
 msgid "Find and R&eplace..."
 msgstr "검색 및 바꾸기(&R)"
 
-#: ../src/command/edit.cpp:541
+#: ../src/command/edit.cpp:589
 #, fuzzy
 msgid "Find and Replace"
 msgstr "검색 및 바꾸기(&R)"
 
-#: ../src/command/edit.cpp:542
+#: ../src/command/edit.cpp:591
 msgid "Find and replace words in subtitles"
 msgstr "자막에서 검색 및 바꾸기"
 
-#: ../src/command/edit.cpp:603
+#: ../src/command/edit.cpp:654
 #, fuzzy
 msgid "&Copy Lines"
 msgstr "라인 복사"
 
-#: ../src/command/edit.cpp:604
+#: ../src/command/edit.cpp:656
 msgid "Copy Lines"
 msgstr "라인 복사"
 
-#: ../src/command/edit.cpp:605
+#: ../src/command/edit.cpp:658
 #, fuzzy
 msgid "Copy subtitles to the clipboard"
 msgstr "클립보드에 이미지 복사"
 
-#: ../src/command/edit.cpp:626
+#: ../src/command/edit.cpp:681
 #, fuzzy
 msgid "Cu&t Lines"
 msgstr "라인 자르기"
 
-#: ../src/command/edit.cpp:627
+#: ../src/command/edit.cpp:683
 msgid "Cut Lines"
 msgstr "라인 자르기"
 
-#: ../src/command/edit.cpp:628
+#: ../src/command/edit.cpp:685
 msgid "Cut subtitles"
 msgstr "자막 자르기"
 
-#: ../src/command/edit.cpp:635
+#: ../src/command/edit.cpp:692
 #, fuzzy
 msgid "cut lines"
 msgstr "라인 자르기"
 
-#: ../src/command/edit.cpp:643
+#: ../src/command/edit.cpp:702
 #, fuzzy
 msgid "De&lete Lines"
 msgstr "라인 삭제"
 
-#: ../src/command/edit.cpp:644
+#: ../src/command/edit.cpp:704
 msgid "Delete Lines"
 msgstr "라인 삭제"
 
-#: ../src/command/edit.cpp:645
+#: ../src/command/edit.cpp:706
 msgid "Delete currently selected lines"
 msgstr "현재 선택된 라인 삭제"
 
-#: ../src/command/edit.cpp:648
+#: ../src/command/edit.cpp:709
 #, fuzzy
 msgid "delete lines"
 msgstr "라인 삭제"
 
-#: ../src/command/edit.cpp:713
+#: ../src/command/edit.cpp:773
 #, fuzzy
 msgid "duplicate lines"
 msgstr "라인 복제(&D)"
 
-#: ../src/command/edit.cpp:713 ../src/command/edit.cpp:1107
+#: ../src/command/edit.cpp:773 ../src/command/edit.cpp:1204
 msgid "split"
 msgstr "분할"
 
-#: ../src/command/edit.cpp:720
+#: ../src/command/edit.cpp:781
 msgid "&Duplicate Lines"
 msgstr "라인 복제(&D)"
 
-#: ../src/command/edit.cpp:721
+#: ../src/command/edit.cpp:783
 #, fuzzy
 msgid "Duplicate Lines"
 msgstr "라인 복제(&D)"
 
-#: ../src/command/edit.cpp:722
+#: ../src/command/edit.cpp:785
 msgid "Duplicate the selected lines"
 msgstr "선택된 라인 복제"
 
-#: ../src/command/edit.cpp:731 ../src/command/edit.cpp:732
+#: ../src/command/edit.cpp:795 ../src/command/edit.cpp:797
 #, fuzzy
 msgid "Split lines after current frame"
 msgstr "현재 라인 뒤쪽에 라인 삽입"
 
-#: ../src/command/edit.cpp:733
+#: ../src/command/edit.cpp:800
 msgid ""
 "Split the current line into a line which ends on the current frame and a "
 "line which starts on the next frame"
 msgstr ""
 
-#: ../src/command/edit.cpp:743 ../src/command/edit.cpp:744
+#: ../src/command/edit.cpp:812 ../src/command/edit.cpp:814
 #, fuzzy
 msgid "Split lines before current frame"
 msgstr "현재 라인 앞쪽에 라인 삽입"
 
-#: ../src/command/edit.cpp:745
+#: ../src/command/edit.cpp:817
 msgid ""
 "Split the current line into a line which ends on the previous frame and a "
 "line which starts on the current frame"
 msgstr ""
 
-#: ../src/command/edit.cpp:785
+#: ../src/command/edit.cpp:861
 msgid "As &Karaoke"
 msgstr "가라오케(&K)"
 
-#: ../src/command/edit.cpp:786
+#: ../src/command/edit.cpp:863
 #, fuzzy
 msgid "As Karaoke"
 msgstr "가라오케(&K)"
 
-#: ../src/command/edit.cpp:787
+#: ../src/command/edit.cpp:865
 #, fuzzy
 msgid "Join selected lines in a single one, as karaoke"
 msgstr "가라오케와 선택된 라인을 하나로 연결"
 
-#: ../src/command/edit.cpp:790
+#: ../src/command/edit.cpp:868
 #, fuzzy
 msgid "join as karaoke"
 msgstr "가라오케도 연결"
 
-#: ../src/command/edit.cpp:796
+#: ../src/command/edit.cpp:875
 msgid "&Concatenate"
 msgstr "연결(&C)"
 
-#: ../src/command/edit.cpp:797
+#: ../src/command/edit.cpp:877
 #, fuzzy
 msgid "Concatenate"
 msgstr "연결(&C)"
 
-#: ../src/command/edit.cpp:798
+#: ../src/command/edit.cpp:879
 #, fuzzy
 msgid "Join selected lines in a single one, concatenating text together"
 msgstr "선택된 라인및 텍스트를 하나로 연결시키다."
 
-#: ../src/command/edit.cpp:801 ../src/command/edit.cpp:812
+#: ../src/command/edit.cpp:882 ../src/command/edit.cpp:896
 #, fuzzy
 msgid "join lines"
 msgstr "라인 연결"
 
-#: ../src/command/edit.cpp:807
+#: ../src/command/edit.cpp:889
 msgid "Keep &First"
 msgstr "우선 보존(&F)"
 
-#: ../src/command/edit.cpp:808
+#: ../src/command/edit.cpp:891
 #, fuzzy
 msgid "Keep First"
 msgstr "우선 보존(&F)"
 
-#: ../src/command/edit.cpp:809
+#: ../src/command/edit.cpp:893
 #, fuzzy
 msgid ""
 "Join selected lines in a single one, keeping text of first and discarding "
@@ -1144,192 +1160,192 @@ msgid ""
 msgstr ""
 "선택된 라인를 하나로 연결후 남아 있는 작업을 취소하고 우선 텍스트를 보존"
 
-#: ../src/command/edit.cpp:850
+#: ../src/command/edit.cpp:936
 #, fuzzy
 msgid "&Paste Lines"
 msgstr "라인 불여넣기"
 
-#: ../src/command/edit.cpp:851
+#: ../src/command/edit.cpp:938
 msgid "Paste Lines"
 msgstr "라인 불여넣기"
 
-#: ../src/command/edit.cpp:852
+#: ../src/command/edit.cpp:940
 msgid "Paste subtitles"
 msgstr "자막 불여넣기"
 
-#: ../src/command/edit.cpp:881
+#: ../src/command/edit.cpp:970
 #, fuzzy
 msgid "Paste Lines &Over..."
 msgstr "라인 덮어쓰기"
 
-#: ../src/command/edit.cpp:882
+#: ../src/command/edit.cpp:972
 msgid "Paste Lines Over"
 msgstr "라인 덮어쓰기"
 
-#: ../src/command/edit.cpp:883
+#: ../src/command/edit.cpp:974
 msgid "Paste subtitles over others"
 msgstr "자막 덮어쓰기"
 
-#: ../src/command/edit.cpp:966
+#: ../src/command/edit.cpp:1058
 #, fuzzy
 msgid "Recom&bine Lines"
 msgstr "라인 재결합"
 
-#: ../src/command/edit.cpp:967
+#: ../src/command/edit.cpp:1060
 msgid "Recombine Lines"
 msgstr "라인 재결합"
 
-#: ../src/command/edit.cpp:968
+#: ../src/command/edit.cpp:1062
 #, fuzzy
 msgid "Recombine subtitles which have been split and merged"
 msgstr "분활되고 합쳐진 자막을 재결합"
 
-#: ../src/command/edit.cpp:1038
+#: ../src/command/edit.cpp:1132
 msgid "combining"
 msgstr "결합중..."
 
-#: ../src/command/edit.cpp:1044 ../src/command/edit.cpp:1045
+#: ../src/command/edit.cpp:1139 ../src/command/edit.cpp:1141
 msgid "Split Lines (by karaoke)"
 msgstr "(가라오케)라인 분할"
 
-#: ../src/command/edit.cpp:1046
+#: ../src/command/edit.cpp:1143
 #, fuzzy
 msgid "Use karaoke timing to split line into multiple smaller lines"
 msgstr "가라오케 타이밍을 사용해서 여러개의 간단한 라인으로 분할"
 
-#: ../src/command/edit.cpp:1080
+#: ../src/command/edit.cpp:1177
 msgid "splitting"
 msgstr "분할중..."
 
-#: ../src/command/edit.cpp:1112 ../src/command/edit.cpp:1113
-#: ../src/subs_edit_ctrl.cpp:416
+#: ../src/command/edit.cpp:1210 ../src/command/edit.cpp:1212
+#: ../src/subs_edit_ctrl.cpp:161 ../src/subs_edit_ctrl_stc.cpp:416
 msgid "Split at cursor (estimate times)"
 msgstr "커서 위치 분할(예상 시간)"
 
-#: ../src/command/edit.cpp:1114
+#: ../src/command/edit.cpp:1214
 msgid ""
 "Split the current line at the cursor, dividing the original line's duration "
 "between the new ones"
 msgstr ""
 
-#: ../src/command/edit.cpp:1128 ../src/command/edit.cpp:1129
-#: ../src/subs_edit_ctrl.cpp:415
+#: ../src/command/edit.cpp:1229 ../src/command/edit.cpp:1231
+#: ../src/subs_edit_ctrl.cpp:160 ../src/subs_edit_ctrl_stc.cpp:415
 msgid "Split at cursor (preserve times)"
 msgstr "커서 위치 분할(preserve times)"
 
-#: ../src/command/edit.cpp:1130
+#: ../src/command/edit.cpp:1233
 msgid ""
 "Split the current line at the cursor, setting both lines to the original "
 "line's times"
 msgstr ""
 
-#: ../src/command/edit.cpp:1139 ../src/command/edit.cpp:1140
+#: ../src/command/edit.cpp:1243 ../src/command/edit.cpp:1245
 #, fuzzy
 msgid "Split at cursor (at video frame)"
 msgstr "커서 위치 분할(예상 시간)"
 
-#: ../src/command/edit.cpp:1141
+#: ../src/command/edit.cpp:1247
 msgid ""
 "Split the current line at the cursor, dividing the line's duration at the "
 "current video frame"
 msgstr ""
 
-#: ../src/command/edit.cpp:1157
+#: ../src/command/edit.cpp:1265
 #, fuzzy
 msgid "Redo last undone action"
 msgstr "마지막 작업 다시 실행"
 
-#: ../src/command/edit.cpp:1162
+#: ../src/command/edit.cpp:1271
 msgid "Nothing to &redo"
 msgstr ""
 
-#: ../src/command/edit.cpp:1163
+#: ../src/command/edit.cpp:1272
 #, fuzzy, c-format
 msgid "&Redo %s"
 msgstr "다시 실행(&R)"
 
-#: ../src/command/edit.cpp:1167
+#: ../src/command/edit.cpp:1277
 msgid "Nothing to redo"
 msgstr ""
 
-#: ../src/command/edit.cpp:1168
+#: ../src/command/edit.cpp:1278
 #, fuzzy, c-format
 msgid "Redo %s"
 msgstr "다시 실행"
 
-#: ../src/command/edit.cpp:1183
+#: ../src/command/edit.cpp:1295
 #, fuzzy
 msgid "Undo last action"
 msgstr "마지막 작업 실행 취소"
 
-#: ../src/command/edit.cpp:1188
+#: ../src/command/edit.cpp:1301
 msgid "Nothing to &undo"
 msgstr ""
 
-#: ../src/command/edit.cpp:1189
+#: ../src/command/edit.cpp:1302
 #, fuzzy, c-format
 msgid "&Undo %s"
 msgstr "실행 취소(&U)"
 
-#: ../src/command/edit.cpp:1193
+#: ../src/command/edit.cpp:1307
 msgid "Nothing to undo"
 msgstr ""
 
-#: ../src/command/edit.cpp:1194
+#: ../src/command/edit.cpp:1308
 #, fuzzy, c-format
 msgid "Undo %s"
 msgstr "실행 취소"
 
-#: ../src/command/edit.cpp:1208 ../src/command/edit.cpp:1209
+#: ../src/command/edit.cpp:1323 ../src/command/edit.cpp:1325
 #, fuzzy
 msgid "Revert"
 msgstr "역방향"
 
-#: ../src/command/edit.cpp:1210
-msgid "Revert the active line to its initial state (shown in the upper editor)"
+#: ../src/command/edit.cpp:1327
+msgid "Revert the active line to its initial state"
 msgstr ""
 
-#: ../src/command/edit.cpp:1215
+#: ../src/command/edit.cpp:1332
 #, fuzzy
 msgid "revert line"
 msgstr "다음 라인"
 
-#: ../src/command/edit.cpp:1221 ../src/command/edit.cpp:1222
-#: ../src/preferences.cpp:401
+#: ../src/command/edit.cpp:1339 ../src/command/edit.cpp:1341
+#: ../src/preferences.cpp:410
 msgid "Clear"
 msgstr "지우기"
 
-#: ../src/command/edit.cpp:1223
+#: ../src/command/edit.cpp:1343
 #, fuzzy
 msgid "Clear the current line's text"
 msgstr "현재 라인 재생"
 
-#: ../src/command/edit.cpp:1228 ../src/command/edit.cpp:1247
+#: ../src/command/edit.cpp:1348 ../src/command/edit.cpp:1371
 #, fuzzy
 msgid "clear line"
 msgstr "다음 라인"
 
-#: ../src/command/edit.cpp:1235 ../src/command/edit.cpp:1236
+#: ../src/command/edit.cpp:1357 ../src/command/edit.cpp:1359
 #, fuzzy
 msgid "Clear Text"
 msgstr "지우기"
 
-#: ../src/command/edit.cpp:1237
+#: ../src/command/edit.cpp:1361
 msgid "Clear the current line's text, leaving override tags"
 msgstr ""
 
-#: ../src/command/edit.cpp:1253 ../src/command/edit.cpp:1254
+#: ../src/command/edit.cpp:1378 ../src/command/edit.cpp:1380
 #: ../src/command/tool.cpp:270
 #, fuzzy
 msgid "Insert Original"
 msgstr "원본 삽입"
 
-#: ../src/command/edit.cpp:1255
+#: ../src/command/edit.cpp:1382
 #, fuzzy
 msgid "Insert the original line text at the cursor"
 msgstr "현재 라인 뒤쪽에 라인 삽입"
 
-#: ../src/command/edit.cpp:1263
+#: ../src/command/edit.cpp:1391
 #, fuzzy
 msgid "insert original"
 msgstr "원본 삽입"
@@ -1404,7 +1420,7 @@ msgstr "효과"
 
 #: ../src/command/grid.cpp:134 ../src/command/grid.cpp:146
 #: ../src/dialog_paste_over.cpp:72 ../src/grid_column.cpp:214
-#: ../src/grid_column.cpp:215 ../src/subs_edit_box.cpp:139
+#: ../src/grid_column.cpp:215 ../src/subs_edit_box.cpp:148
 msgid "Effect"
 msgstr "효과"
 
@@ -1978,7 +1994,8 @@ msgid "Save subtitles with another name"
 msgstr "다른 이름으로 자막 저장"
 
 #: ../src/command/subtitle.cpp:396 ../src/dialog_export.cpp:124
-#: ../src/dialog_selected_choices.cpp:26 ../src/subs_edit_ctrl.cpp:410
+#: ../src/dialog_selected_choices.cpp:26 ../src/subs_edit_ctrl.cpp:155
+#: ../src/subs_edit_ctrl_stc.cpp:410
 msgid "Select &All"
 msgstr "모두 선택(&A)"
 
@@ -2347,7 +2364,7 @@ msgid "&Accept changes"
 msgstr "변경 내용 적용"
 
 #: ../src/command/tool.cpp:142 ../src/command/tool.cpp:226
-#: ../src/dialog_styling_assistant.cpp:90 ../src/dialog_translation.cpp:117
+#: ../src/dialog_styling_assistant.cpp:90 ../src/dialog_translation.cpp:138
 msgid "Accept changes"
 msgstr "변경 내용 적용"
 
@@ -2361,7 +2378,7 @@ msgid "&Preview changes"
 msgstr "변경 내용 미리 보기"
 
 #: ../src/command/tool.cpp:153 ../src/command/tool.cpp:237
-#: ../src/dialog_styling_assistant.cpp:91 ../src/dialog_translation.cpp:118
+#: ../src/dialog_styling_assistant.cpp:91 ../src/dialog_translation.cpp:139
 msgid "Preview changes"
 msgstr "변경 내용 미리 보기"
 
@@ -2417,8 +2434,8 @@ msgstr ""
 msgid "&Translation Assistant..."
 msgstr "번역 도우미(&T)"
 
-#: ../src/command/tool.cpp:201 ../src/dialog_translation.cpp:66
-#: ../src/preferences.cpp:230
+#: ../src/command/tool.cpp:201 ../src/dialog_translation.cpp:69
+#: ../src/preferences.cpp:237
 msgid "Translation Assistant"
 msgstr "번역 도우미"
 
@@ -3055,7 +3072,7 @@ msgid "E&xtract"
 msgstr "추출(&X)"
 
 #: ../src/dialog_attachments.cpp:79 ../src/dialog_style_manager.cpp:214
-#: ../src/preferences.cpp:596
+#: ../src/preferences.cpp:605
 msgid "&Delete"
 msgstr "삭제(&D)"
 
@@ -3621,7 +3638,7 @@ msgstr "시작(&S)!"
 #: ../src/dialog_fonts_collector.cpp:307 ../src/dialog_fonts_collector.cpp:312
 #: ../src/dialog_fonts_collector.cpp:317 ../src/dialog_kara_timing_copy.cpp:574
 #: ../src/dialog_kara_timing_copy.cpp:576
-#: ../src/dialog_kara_timing_copy.cpp:626 ../src/preferences.cpp:263
+#: ../src/dialog_kara_timing_copy.cpp:626 ../src/preferences.cpp:271
 msgid "Error"
 msgstr "오류"
 
@@ -3802,7 +3819,7 @@ msgid "Style"
 msgstr "스타일"
 
 #: ../src/dialog_paste_over.cpp:68 ../src/grid_column.cpp:228
-#: ../src/grid_column.cpp:229 ../src/subs_edit_box.cpp:134
+#: ../src/grid_column.cpp:229 ../src/subs_edit_box.cpp:142
 msgid "Actor"
 msgstr "작업자"
 
@@ -4324,15 +4341,15 @@ msgstr "시간"
 msgid "&Clear"
 msgstr "지우기"
 
-#: ../src/dialog_shift_times.cpp:203
+#: ../src/dialog_shift_times.cpp:204
 msgid "Shift by"
 msgstr "이동 위치"
 
-#: ../src/dialog_shift_times.cpp:212
+#: ../src/dialog_shift_times.cpp:213
 msgid "Load from history"
 msgstr ""
 
-#: ../src/dialog_shift_times.cpp:410
+#: ../src/dialog_shift_times.cpp:411
 msgid "shifting"
 msgstr "이동중"
 
@@ -4394,7 +4411,7 @@ msgstr "스타일 편집기"
 msgid "Font"
 msgstr "글꼴"
 
-#: ../src/dialog_style_editor.cpp:180 ../src/preferences.cpp:238
+#: ../src/dialog_style_editor.cpp:180 ../src/preferences.cpp:245
 msgid "Colors"
 msgstr "색"
 
@@ -4588,26 +4605,26 @@ msgstr "미리 보기에 사용될 텍스트"
 msgid "Color of preview background"
 msgstr "미리보기 배경색"
 
-#: ../src/dialog_style_editor.cpp:420
+#: ../src/dialog_style_editor.cpp:421
 #, fuzzy
 msgid "Style name conflict"
 msgstr "카달로그 이름 충돌"
 
-#: ../src/dialog_style_editor.cpp:420
+#: ../src/dialog_style_editor.cpp:421
 msgid "There is already a style with this name. Please choose another name."
 msgstr ""
 
-#: ../src/dialog_style_editor.cpp:432
+#: ../src/dialog_style_editor.cpp:433
 msgid ""
 "Do you want to change all instances of this style in the script to this new "
 "name?"
 msgstr "스타일에 모든 인스턴트에 스크립트를 새로운 이름으로 변경하시겠습니다?"
 
-#: ../src/dialog_style_editor.cpp:433
+#: ../src/dialog_style_editor.cpp:434
 msgid "Update script?"
 msgstr "스크립트를 업데이트할까요?"
 
-#: ../src/dialog_style_editor.cpp:460 ../src/subs_edit_box.cpp:633
+#: ../src/dialog_style_editor.cpp:461 ../src/subs_edit_box.cpp:816
 msgid "style change"
 msgstr "스타일 바꾸기"
 
@@ -4631,16 +4648,16 @@ msgstr "스타일 맨 아래로 이동"
 msgid "Sort styles alphabetically"
 msgstr "사전 순서로 스타일 정렬"
 
-#: ../src/dialog_style_manager.cpp:211 ../src/preferences.cpp:594
+#: ../src/dialog_style_manager.cpp:211 ../src/preferences.cpp:603
 msgid "&New"
 msgstr ""
 
-#: ../src/dialog_style_manager.cpp:212 ../src/preferences.cpp:595
+#: ../src/dialog_style_manager.cpp:212 ../src/preferences.cpp:604
 msgid "&Edit"
 msgstr "편집(&E)"
 
-#: ../src/dialog_style_manager.cpp:213 ../src/subs_edit_ctrl.cpp:407
-#: ../src/timeedit_ctrl.cpp:209
+#: ../src/dialog_style_manager.cpp:213 ../src/subs_edit_ctrl.cpp:152
+#: ../src/subs_edit_ctrl_stc.cpp:407 ../src/timeedit_ctrl.cpp:209
 msgid "&Copy"
 msgstr "복사(&C)"
 
@@ -4825,24 +4842,24 @@ msgstr "이용 가능한 스타일"
 msgid "Set style"
 msgstr "스타일 설정"
 
-#: ../src/dialog_styling_assistant.cpp:87 ../src/dialog_translation.cpp:114
+#: ../src/dialog_styling_assistant.cpp:87 ../src/dialog_translation.cpp:135
 msgid "Keys"
 msgstr "키"
 
-#: ../src/dialog_styling_assistant.cpp:92 ../src/dialog_translation.cpp:119
+#: ../src/dialog_styling_assistant.cpp:92 ../src/dialog_translation.cpp:140
 msgid "Previous line"
 msgstr "이전 라인"
 
-#: ../src/dialog_styling_assistant.cpp:93 ../src/dialog_translation.cpp:120
+#: ../src/dialog_styling_assistant.cpp:93 ../src/dialog_translation.cpp:141
 msgid "Next line"
 msgstr "다음 라인"
 
-#: ../src/dialog_styling_assistant.cpp:94 ../src/dialog_translation.cpp:122
+#: ../src/dialog_styling_assistant.cpp:94 ../src/dialog_translation.cpp:143
 #, fuzzy
 msgid "Play video"
 msgstr "비디오 재생"
 
-#: ../src/dialog_styling_assistant.cpp:95 ../src/dialog_translation.cpp:123
+#: ../src/dialog_styling_assistant.cpp:95 ../src/dialog_translation.cpp:144
 #, fuzzy
 msgid "Play audio"
 msgstr "오디오 재생"
@@ -4861,16 +4878,16 @@ msgstr "스타일 선택"
 msgid "&Seek video to line start time"
 msgstr "비디오 시작으로 이동"
 
-#: ../src/dialog_styling_assistant.cpp:110 ../src/dialog_translation.cpp:135
+#: ../src/dialog_styling_assistant.cpp:110 ../src/dialog_translation.cpp:156
 msgid "Actions"
 msgstr "작업"
 
-#: ../src/dialog_styling_assistant.cpp:113 ../src/dialog_translation.cpp:137
+#: ../src/dialog_styling_assistant.cpp:113 ../src/dialog_translation.cpp:158
 #, fuzzy
 msgid "Play &Audio"
 msgstr "오디오 재생"
 
-#: ../src/dialog_styling_assistant.cpp:117 ../src/dialog_translation.cpp:142
+#: ../src/dialog_styling_assistant.cpp:117 ../src/dialog_translation.cpp:163
 #, fuzzy
 msgid "Play &Video"
 msgstr "비디오 재생"
@@ -5086,38 +5103,38 @@ msgstr "잘못된 스크립트"
 msgid "timing processor"
 msgstr "타이밍 프로세서 "
 
-#: ../src/dialog_translation.cpp:79
+#: ../src/dialog_translation.cpp:85
 msgid "Original"
 msgstr "원본"
 
-#: ../src/dialog_translation.cpp:106
+#: ../src/dialog_translation.cpp:118
 msgid "Translation"
 msgstr "번역"
 
-#: ../src/dialog_translation.cpp:121
+#: ../src/dialog_translation.cpp:142
 msgid "Insert original"
 msgstr "원본 삽입"
 
-#: ../src/dialog_translation.cpp:124
+#: ../src/dialog_translation.cpp:145
 #, fuzzy
 msgid "Delete line"
 msgstr "라인 삭제"
 
-#: ../src/dialog_translation.cpp:127
+#: ../src/dialog_translation.cpp:148
 #, fuzzy
 msgid "Enable &preview"
 msgstr "미리보기 사용"
 
-#: ../src/dialog_translation.cpp:184 ../src/dialog_translation.cpp:288
+#: ../src/dialog_translation.cpp:205 ../src/dialog_translation.cpp:329
 msgid "No more lines to translate."
 msgstr "더 이상 번역할 라인이 없다."
 
-#: ../src/dialog_translation.cpp:192 ../src/dialog_translation.cpp:242
+#: ../src/dialog_translation.cpp:213 ../src/dialog_translation.cpp:263
 #, c-format
 msgid "Current line: %d/%d"
 msgstr "현재 라인: %d/%d"
 
-#: ../src/dialog_translation.cpp:283
+#: ../src/dialog_translation.cpp:324
 msgid "translation assistant"
 msgstr "번역 도우미"
 
@@ -5210,7 +5227,7 @@ msgid "Decoder:"
 msgstr "디코더:"
 
 #: ../src/dialog_video_details.cpp:66 ../src/preferences.cpp:168
-#: ../src/preferences.cpp:436
+#: ../src/preferences.cpp:445
 msgid "Video"
 msgstr "비디오"
 
@@ -5558,7 +5575,7 @@ msgid "Reading subtitles from Matroska file."
 msgstr "Matroska 파일에서 자막 읽어오는중"
 
 #: ../src/preferences.cpp:62 ../src/preferences.cpp:64
-#: ../src/preferences.cpp:332 ../src/preferences.cpp:353
+#: ../src/preferences.cpp:341 ../src/preferences.cpp:362
 msgid "General"
 msgstr "일반"
 
@@ -5653,7 +5670,7 @@ msgstr "스타일 가져오기"
 msgid "Plain text import"
 msgstr "스타일 가져오기"
 
-#: ../src/preferences.cpp:128 ../src/preferences.cpp:366
+#: ../src/preferences.cpp:128 ../src/preferences.cpp:375
 msgid "Audio"
 msgstr "오디오"
 
@@ -5760,7 +5777,7 @@ msgstr "커서 시간 표시"
 msgid "Video position"
 msgstr "비디오 위치 표시"
 
-#: ../src/preferences.cpp:156 ../src/preferences.cpp:252
+#: ../src/preferences.cpp:156 ../src/preferences.cpp:259
 #, fuzzy
 msgid "Seconds boundaries"
 msgstr "시간 경계선"
@@ -5847,359 +5864,363 @@ msgstr "글꼴"
 msgid "Edit Box"
 msgstr "편집 도구 실행"
 
-#: ../src/preferences.cpp:210
+#: ../src/preferences.cpp:211
+msgid "Use styled edit box"
+msgstr ""
+
+#: ../src/preferences.cpp:212
 msgid "Enable call tips"
 msgstr "팁 기능 사용"
 
-#: ../src/preferences.cpp:211
+#: ../src/preferences.cpp:214
 #, fuzzy
 msgid "Overwrite in time boxes"
 msgstr "시간 박스안에 삽입해서 덮어쓰기"
 
-#: ../src/preferences.cpp:213
+#: ../src/preferences.cpp:216
 msgid "Enable syntax highlighting"
 msgstr "자막 태그 하이라이팅 사용"
 
-#: ../src/preferences.cpp:214
+#: ../src/preferences.cpp:221
 #, fuzzy
 msgid "Dictionaries path"
 msgstr "HD 캐쉬 위치"
 
-#: ../src/preferences.cpp:217
+#: ../src/preferences.cpp:224
 msgid "Character Counter"
 msgstr ""
 
-#: ../src/preferences.cpp:218
+#: ../src/preferences.cpp:225
 #, fuzzy
 msgid "Maximum characters per line"
 msgstr "최근 사용한 키 프레임에 최대 이력"
 
-#: ../src/preferences.cpp:219
+#: ../src/preferences.cpp:226
 msgid "Characters Per Second Warning Threshold"
 msgstr ""
 
-#: ../src/preferences.cpp:220
+#: ../src/preferences.cpp:227
 msgid "Characters Per Second Error Threshold"
 msgstr ""
 
-#: ../src/preferences.cpp:221
+#: ../src/preferences.cpp:228
 msgid "Ignore whitespace"
 msgstr ""
 
-#: ../src/preferences.cpp:222
+#: ../src/preferences.cpp:229
 msgid "Ignore punctuation"
 msgstr ""
 
-#: ../src/preferences.cpp:224
+#: ../src/preferences.cpp:231
 msgid "Grid"
 msgstr ""
 
-#: ../src/preferences.cpp:225
+#: ../src/preferences.cpp:232
 msgid "Focus grid on click"
 msgstr ""
 
-#: ../src/preferences.cpp:226
+#: ../src/preferences.cpp:233
 msgid "Highlight visible subtitles"
 msgstr ""
 
-#: ../src/preferences.cpp:227
+#: ../src/preferences.cpp:234
 msgid "Hide overrides symbol"
 msgstr ""
 
-#: ../src/preferences.cpp:231
+#: ../src/preferences.cpp:238
 msgid "Skip over whitespace"
 msgstr ""
 
-#: ../src/preferences.cpp:246
+#: ../src/preferences.cpp:253
 #, fuzzy
 msgid "Audio Display"
 msgstr "오디오 플레이어 "
 
-#: ../src/preferences.cpp:247
+#: ../src/preferences.cpp:254
 msgid "Play cursor"
 msgstr "재생 커서"
 
-#: ../src/preferences.cpp:248
+#: ../src/preferences.cpp:255
 #, fuzzy
 msgid "Line boundary start"
 msgstr "경계선 - 시작"
 
-#: ../src/preferences.cpp:249
+#: ../src/preferences.cpp:256
 #, fuzzy
 msgid "Line boundary end"
 msgstr "경계선 - 종료"
 
-#: ../src/preferences.cpp:250
+#: ../src/preferences.cpp:257
 #, fuzzy
 msgid "Line boundary inactive line"
 msgstr "경계선 - 비활성"
 
-#: ../src/preferences.cpp:251
+#: ../src/preferences.cpp:258
 #, fuzzy
 msgid "Syllable boundaries"
 msgstr "음절 경계선"
 
-#: ../src/preferences.cpp:254
+#: ../src/preferences.cpp:261
 #, fuzzy
 msgid "Syntax Highlighting"
 msgstr "자막 태그 하이라이팅 사용"
 
-#: ../src/preferences.cpp:255
+#: ../src/preferences.cpp:262
 msgid "Background"
 msgstr "배경색"
 
-#: ../src/preferences.cpp:256
+#: ../src/preferences.cpp:263
 msgid "Normal"
 msgstr "표준(Normal)"
 
-#: ../src/preferences.cpp:257
+#: ../src/preferences.cpp:265
 msgid "Comments"
 msgstr "설명"
 
-#: ../src/preferences.cpp:258
+#: ../src/preferences.cpp:266
 msgid "Drawings"
 msgstr ""
 
-#: ../src/preferences.cpp:259
+#: ../src/preferences.cpp:267
 msgid "Brackets"
 msgstr "괄호"
 
-#: ../src/preferences.cpp:260
+#: ../src/preferences.cpp:268
 msgid "Slashes and Parentheses"
 msgstr "사선(\"/\")과 괄호"
 
-#: ../src/preferences.cpp:261
+#: ../src/preferences.cpp:269
 msgid "Tags"
 msgstr "태그"
 
-#: ../src/preferences.cpp:262
+#: ../src/preferences.cpp:270
 msgid "Parameters"
 msgstr "매개 변수"
 
-#: ../src/preferences.cpp:264
+#: ../src/preferences.cpp:272
 msgid "Error Background"
 msgstr "오류 화면"
 
-#: ../src/preferences.cpp:265
+#: ../src/preferences.cpp:273
 msgid "Line Break"
 msgstr "구분선"
 
-#: ../src/preferences.cpp:266
+#: ../src/preferences.cpp:274
 msgid "Karaoke templates"
 msgstr "가라오케 템플릿"
 
-#: ../src/preferences.cpp:267
+#: ../src/preferences.cpp:275
 #, fuzzy
 msgid "Karaoke variables"
 msgstr "가라오케 템플릿"
 
-#: ../src/preferences.cpp:273
+#: ../src/preferences.cpp:282
 #, fuzzy
 msgid "Audio Color Schemes"
 msgstr "오디오 볼륨"
 
-#: ../src/preferences.cpp:275 ../src/preferences.cpp:382
+#: ../src/preferences.cpp:284 ../src/preferences.cpp:391
 #, fuzzy
 msgid "Spectrum"
 msgstr "스펙트럼 모드:"
 
-#: ../src/preferences.cpp:276
+#: ../src/preferences.cpp:285
 msgid "Waveform"
 msgstr "웨이브폼"
 
-#: ../src/preferences.cpp:278
+#: ../src/preferences.cpp:287
 #, fuzzy
 msgid "Subtitle Grid"
 msgstr "자막 그리드"
 
-#: ../src/preferences.cpp:279
+#: ../src/preferences.cpp:288
 msgid "Standard foreground"
 msgstr "표준 전경색"
 
-#: ../src/preferences.cpp:280
+#: ../src/preferences.cpp:289
 msgid "Standard background"
 msgstr "표준 배경색"
 
-#: ../src/preferences.cpp:281
+#: ../src/preferences.cpp:290
 msgid "Selection foreground"
 msgstr "선택 전경색"
 
-#: ../src/preferences.cpp:282
+#: ../src/preferences.cpp:291
 msgid "Selection background"
 msgstr "선택 배경색"
 
-#: ../src/preferences.cpp:283
+#: ../src/preferences.cpp:292
 msgid "Collision foreground"
 msgstr "충돌 전경색"
 
-#: ../src/preferences.cpp:284
+#: ../src/preferences.cpp:293
 #, fuzzy
 msgid "In frame background"
 msgstr "프레임 라인 배경색"
 
-#: ../src/preferences.cpp:285
+#: ../src/preferences.cpp:294
 msgid "Comment background"
 msgstr "설명 배경색"
 
-#: ../src/preferences.cpp:286
+#: ../src/preferences.cpp:295
 msgid "Selected comment background"
 msgstr "설명 배경색 선택"
 
-#: ../src/preferences.cpp:287
+#: ../src/preferences.cpp:296
 #, fuzzy
 msgid "Header background"
 msgstr "표준 배경색"
 
-#: ../src/preferences.cpp:288
+#: ../src/preferences.cpp:297
 msgid "Left Column"
 msgstr "왼쪽 열"
 
-#: ../src/preferences.cpp:289
+#: ../src/preferences.cpp:298
 msgid "Active Line Border"
 msgstr "사용중인 라인 경계"
 
-#: ../src/preferences.cpp:290
+#: ../src/preferences.cpp:299
 msgid "Lines"
 msgstr "라인간 구분선"
 
-#: ../src/preferences.cpp:291
+#: ../src/preferences.cpp:300
 #, fuzzy
 msgid "CPS Error"
 msgstr "오류"
 
-#: ../src/preferences.cpp:293
+#: ../src/preferences.cpp:302
 #, fuzzy
 msgid "Visual Typesetting Tools"
 msgstr "visual typesetting"
 
-#: ../src/preferences.cpp:294
+#: ../src/preferences.cpp:303
 #, fuzzy
 msgid "Primary Lines"
 msgstr "기준"
 
-#: ../src/preferences.cpp:295
+#: ../src/preferences.cpp:304
 #, fuzzy
 msgid "Secondary Lines"
 msgstr "보조"
 
-#: ../src/preferences.cpp:296
+#: ../src/preferences.cpp:305
 #, fuzzy
 msgid "Primary Highlight"
 msgstr "기본색"
 
-#: ../src/preferences.cpp:297
+#: ../src/preferences.cpp:306
 #, fuzzy
 msgid "Secondary Highlight"
 msgstr "보조색"
 
-#: ../src/preferences.cpp:300
+#: ../src/preferences.cpp:309
 #, fuzzy
 msgid "Visual Typesetting Tools Alpha"
 msgstr "visual typesetting"
 
-#: ../src/preferences.cpp:301
+#: ../src/preferences.cpp:310
 msgid "Shaded Area"
 msgstr ""
 
-#: ../src/preferences.cpp:310
+#: ../src/preferences.cpp:319
 #, fuzzy
 msgid "Backup"
 msgstr "배경색"
 
-#: ../src/preferences.cpp:312
+#: ../src/preferences.cpp:321
 #, fuzzy
 msgid "Automatic Save"
 msgstr "자동화 매니저"
 
-#: ../src/preferences.cpp:313 ../src/preferences.cpp:321
+#: ../src/preferences.cpp:322 ../src/preferences.cpp:330
 msgid "Enable"
 msgstr "사용"
 
-#: ../src/preferences.cpp:316
+#: ../src/preferences.cpp:325
 #, fuzzy
 msgid "Interval in seconds"
 msgstr "선택 영역과 교차"
 
-#: ../src/preferences.cpp:317 ../src/preferences.cpp:323
-#: ../src/preferences.cpp:380
+#: ../src/preferences.cpp:326 ../src/preferences.cpp:332
+#: ../src/preferences.cpp:389
 msgid "Path"
 msgstr ""
 
-#: ../src/preferences.cpp:318
+#: ../src/preferences.cpp:327
 #, fuzzy
 msgid "Autosave after every change"
 msgstr "자동 저장 간격"
 
-#: ../src/preferences.cpp:320
+#: ../src/preferences.cpp:329
 #, fuzzy
 msgid "Automatic Backup"
 msgstr "자동 백업"
 
-#: ../src/preferences.cpp:334
+#: ../src/preferences.cpp:343
 msgid "Base path"
 msgstr "기본 경로"
 
-#: ../src/preferences.cpp:335
+#: ../src/preferences.cpp:344
 msgid "Include path"
 msgstr "Include 경로"
 
-#: ../src/preferences.cpp:336
+#: ../src/preferences.cpp:345
 msgid "Auto-load path"
 msgstr "자동-로드 경로"
 
-#: ../src/preferences.cpp:338
+#: ../src/preferences.cpp:347
 msgid "0: Fatal"
 msgstr "0: 심각한"
 
-#: ../src/preferences.cpp:338
+#: ../src/preferences.cpp:347
 msgid "1: Error"
 msgstr "1: 오류"
 
-#: ../src/preferences.cpp:338
+#: ../src/preferences.cpp:347
 msgid "2: Warning"
 msgstr "2: 경고"
 
-#: ../src/preferences.cpp:338
+#: ../src/preferences.cpp:347
 msgid "3: Hint"
 msgstr "3: 참조"
 
-#: ../src/preferences.cpp:338
+#: ../src/preferences.cpp:347
 msgid "4: Debug"
 msgstr "4: 디버그"
 
-#: ../src/preferences.cpp:338
+#: ../src/preferences.cpp:347
 msgid "5: Trace"
 msgstr "5: 추적"
 
-#: ../src/preferences.cpp:340
+#: ../src/preferences.cpp:349
 msgid "Trace level"
 msgstr "추적 수준"
 
-#: ../src/preferences.cpp:342
+#: ../src/preferences.cpp:351
 msgid "All scripts"
 msgstr "모든 스크립트"
 
-#: ../src/preferences.cpp:342
+#: ../src/preferences.cpp:351
 msgid "Global autoload scripts"
 msgstr "글로벌 자동로드 스크립트"
 
-#: ../src/preferences.cpp:342
+#: ../src/preferences.cpp:351
 msgid "No scripts"
 msgstr "스크립트 없음"
 
-#: ../src/preferences.cpp:342
+#: ../src/preferences.cpp:351
 msgid "Subtitle-local scripts"
 msgstr "자막-로컬 스크립트"
 
-#: ../src/preferences.cpp:344
+#: ../src/preferences.cpp:353
 msgid "Autoreload on Export"
 msgstr "익스포트 자동리로드"
 
-#: ../src/preferences.cpp:351
+#: ../src/preferences.cpp:360
 msgid "Advanced"
 msgstr "고급"
 
-#: ../src/preferences.cpp:355
+#: ../src/preferences.cpp:364
 #, fuzzy
 msgid ""
 "Changing these settings might result in bugs and/or crashes.  Do not touch "
@@ -6210,160 +6231,160 @@ msgstr ""
 "릅니다.\n"
 "사용자가 무엇을 하고 있는지 알기전까지는 건드리지 마세요 !!!"
 
-#: ../src/preferences.cpp:368 ../src/preferences.cpp:438
+#: ../src/preferences.cpp:377 ../src/preferences.cpp:447
 msgid "Expert"
 msgstr ""
 
-#: ../src/preferences.cpp:371
+#: ../src/preferences.cpp:380
 msgid "Audio provider"
 msgstr "오디오 사용 코덱"
 
-#: ../src/preferences.cpp:374
+#: ../src/preferences.cpp:383
 msgid "Audio player"
 msgstr "오디오 플레이어 "
 
-#: ../src/preferences.cpp:376
+#: ../src/preferences.cpp:385
 #, fuzzy
 msgid "Cache"
 msgstr "캐쉬 형식"
 
-#: ../src/preferences.cpp:377
+#: ../src/preferences.cpp:386
 msgid "Hard Disk"
 msgstr "하드 디스크"
 
-#: ../src/preferences.cpp:377
-msgid "None (NOT RECOMMENDED)"
-msgstr "없음 ( 추천 안 함 )"
+#: ../src/preferences.cpp:386
+msgid "None (Not recommended with Avisynth)"
+msgstr ""
 
-#: ../src/preferences.cpp:377
+#: ../src/preferences.cpp:386
 msgid "RAM"
 msgstr "램"
 
-#: ../src/preferences.cpp:379
+#: ../src/preferences.cpp:388
 msgid "Cache type"
 msgstr "캐쉬 형식"
 
-#: ../src/preferences.cpp:384
+#: ../src/preferences.cpp:393
 msgid "Better quality"
 msgstr "최적 품질"
 
-#: ../src/preferences.cpp:384
+#: ../src/preferences.cpp:393
 msgid "High quality"
 msgstr "고품질"
 
-#: ../src/preferences.cpp:384
+#: ../src/preferences.cpp:393
 msgid "Insane quality"
 msgstr "최고 품질"
 
-#: ../src/preferences.cpp:384
+#: ../src/preferences.cpp:393
 msgid "Regular quality"
 msgstr "표준 품질"
 
-#: ../src/preferences.cpp:386
+#: ../src/preferences.cpp:395
 #, fuzzy
 msgid "Quality"
 msgstr "고품질"
 
-#: ../src/preferences.cpp:388
+#: ../src/preferences.cpp:397
 #, fuzzy
 msgid "Cache memory max (MB)"
 msgstr "스펙트럼 최대 캐쉬 메모리(MB)"
 
-#: ../src/preferences.cpp:394
+#: ../src/preferences.cpp:403
 msgid "Avisynth down-mixer"
 msgstr "Avisynth 다운-믹서"
 
-#: ../src/preferences.cpp:395
+#: ../src/preferences.cpp:404
 msgid "Force sample rate"
 msgstr ""
 
-#: ../src/preferences.cpp:401
+#: ../src/preferences.cpp:410
 msgid "Abort"
 msgstr ""
 
-#: ../src/preferences.cpp:401
+#: ../src/preferences.cpp:410
 msgid "Ignore"
 msgstr "무시"
 
-#: ../src/preferences.cpp:401
+#: ../src/preferences.cpp:410
 msgid "Stop"
 msgstr ""
 
-#: ../src/preferences.cpp:403
+#: ../src/preferences.cpp:412
 msgid "Audio indexing error handling mode"
 msgstr ""
 
-#: ../src/preferences.cpp:405
+#: ../src/preferences.cpp:414
 msgid "Always index all audio tracks"
 msgstr ""
 
-#: ../src/preferences.cpp:406
+#: ../src/preferences.cpp:415
 msgid "Downmix to 16bit mono audio"
 msgstr ""
 
-#: ../src/preferences.cpp:411
+#: ../src/preferences.cpp:420
 msgid "Portaudio device"
 msgstr ""
 
-#: ../src/preferences.cpp:416
+#: ../src/preferences.cpp:425
 msgid "OSS Device"
 msgstr ""
 
-#: ../src/preferences.cpp:427
+#: ../src/preferences.cpp:436
 msgid "Buffer latency"
 msgstr ""
 
-#: ../src/preferences.cpp:428
+#: ../src/preferences.cpp:437
 msgid "Buffer length"
 msgstr ""
 
-#: ../src/preferences.cpp:441
+#: ../src/preferences.cpp:450
 msgid "Video provider"
 msgstr "비디오 코덱"
 
-#: ../src/preferences.cpp:444
+#: ../src/preferences.cpp:453
 msgid "Subtitles provider"
 msgstr "자막 코덱"
 
-#: ../src/preferences.cpp:448
+#: ../src/preferences.cpp:457
 msgid "Allow pre-2.56a Avisynth"
 msgstr "Avisynth Ver2.56a 이전 버전 사용"
 
-#: ../src/preferences.cpp:450
+#: ../src/preferences.cpp:459
 msgid "Avisynth memory limit"
 msgstr "Avisynth 최대 사용 메모리(MB)"
 
-#: ../src/preferences.cpp:458
+#: ../src/preferences.cpp:467
 msgid "Debug log verbosity"
 msgstr ""
 
-#: ../src/preferences.cpp:460
+#: ../src/preferences.cpp:469
 msgid "Decoding threads"
 msgstr ""
 
-#: ../src/preferences.cpp:461
+#: ../src/preferences.cpp:470
 msgid "Enable unsafe seeking"
 msgstr ""
 
-#: ../src/preferences.cpp:590
+#: ../src/preferences.cpp:599
 msgid "Hotkeys"
 msgstr "바로 가기 키"
 
-#: ../src/preferences.cpp:689
+#: ../src/preferences.cpp:698
 msgid ""
 "Are you sure that you want to restore the defaults? All your settings will "
 "be overridden."
 msgstr "기본 설정으로 복원하겠습니까? 모든 설정이 무효화 됩니다."
 
-#: ../src/preferences.cpp:689
+#: ../src/preferences.cpp:698
 msgid "Restore defaults?"
 msgstr "기본 설정으로 복원하겠습니까?"
 
-#: ../src/preferences.cpp:707
+#: ../src/preferences.cpp:716
 msgid "Preferences"
 msgstr ""
 
-#: ../src/preferences.cpp:735
+#: ../src/preferences.cpp:744
 #, fuzzy
 msgid "&Restore Defaults"
 msgstr "기본 설정 복구"
@@ -6495,30 +6516,30 @@ msgstr "제목 없음"
 msgid "untitled"
 msgstr "제목 없음"
 
-#: ../src/subs_edit_box.cpp:114
+#: ../src/subs_edit_box.cpp:122
 #, fuzzy
 msgid "&Comment"
 msgstr "설명"
 
-#: ../src/subs_edit_box.cpp:115
+#: ../src/subs_edit_box.cpp:123
 msgid "Comment this line out. Commented lines don't show up on screen."
 msgstr "설명은 라인밖에 있다. 화면에 설명 라인은 표시 되지 않는다."
 
-#: ../src/subs_edit_box.cpp:122
+#: ../src/subs_edit_box.cpp:130
 msgid "Style for this line"
 msgstr "라인의 스타일"
 
-#: ../src/subs_edit_box.cpp:124
+#: ../src/subs_edit_box.cpp:132
 msgid "Edit"
 msgstr "편집"
 
-#: ../src/subs_edit_box.cpp:134
+#: ../src/subs_edit_box.cpp:143
 msgid ""
 "Actor name for this speech. This is only for reference, and is mainly "
 "useless."
 msgstr "제작자 소개. 관련있는 사람을 소개하다. 그러나 별루 쓸모가 없다."
 
-#: ../src/subs_edit_box.cpp:139
+#: ../src/subs_edit_box.cpp:149
 msgid ""
 "Effect for this line. This can be used to store extra information for "
 "karaoke scripts, or for the effects supported by the renderer."
@@ -6526,159 +6547,168 @@ msgstr ""
 "이 라인에 효과를 주다. 가라오케 스크립트에 추가정보를 저장하거나 또는 지원되"
 "는 랜더러 효과를 사용할 수 있다"
 
-#: ../src/subs_edit_box.cpp:150
+#: ../src/subs_edit_box.cpp:160
 msgid "Number of characters in the longest line of this subtitle."
 msgstr ""
 
-#: ../src/subs_edit_box.cpp:166
+#: ../src/subs_edit_box.cpp:177
 msgid "Layer number"
 msgstr "레이어 수"
 
-#: ../src/subs_edit_box.cpp:170
+#: ../src/subs_edit_box.cpp:181
 msgid "Start time"
 msgstr "시작 시간"
 
-#: ../src/subs_edit_box.cpp:171
+#: ../src/subs_edit_box.cpp:182
 msgid "End time"
 msgstr "종료 시간"
 
-#: ../src/subs_edit_box.cpp:173
+#: ../src/subs_edit_box.cpp:184
 msgid "Line duration"
 msgstr "라인 길이"
 
-#: ../src/subs_edit_box.cpp:176
+#: ../src/subs_edit_box.cpp:187
 #, fuzzy
 msgid "Left Margin (0 = default from style)"
 msgstr "왼쪽 여백(기본값 0 )"
 
-#: ../src/subs_edit_box.cpp:176
+#: ../src/subs_edit_box.cpp:187
 #, fuzzy
 msgid "left margin change"
 msgstr "왼쪽 여백 바꾸기"
 
-#: ../src/subs_edit_box.cpp:177
+#: ../src/subs_edit_box.cpp:188
 #, fuzzy
 msgid "Right Margin (0 = default from style)"
 msgstr "오른쪽 여백(기본값 0 )"
 
-#: ../src/subs_edit_box.cpp:177
+#: ../src/subs_edit_box.cpp:188
 #, fuzzy
 msgid "right margin change"
 msgstr "왼쪽 여백 바꾸기"
 
-#: ../src/subs_edit_box.cpp:178
+#: ../src/subs_edit_box.cpp:189
 #, fuzzy
 msgid "Vertical Margin (0 = default from style)"
 msgstr "수직 여백(기본값 0 )"
 
-#: ../src/subs_edit_box.cpp:178
+#: ../src/subs_edit_box.cpp:189
 #, fuzzy
 msgid "vertical margin change"
 msgstr "왼쪽 여백 바꾸기"
 
-#: ../src/subs_edit_box.cpp:197
+#: ../src/subs_edit_box.cpp:208
 msgid "T&ime"
 msgstr ""
 
-#: ../src/subs_edit_box.cpp:197
+#: ../src/subs_edit_box.cpp:208
 msgid "Time by h:mm:ss.cs"
 msgstr "시:분:초 시간 표시 "
 
-#: ../src/subs_edit_box.cpp:198
+#: ../src/subs_edit_box.cpp:209
 #, fuzzy
 msgid "F&rame"
 msgstr "프레임"
 
-#: ../src/subs_edit_box.cpp:198
+#: ../src/subs_edit_box.cpp:209
 msgid "Time by frame number"
 msgstr "프레임수를 시간으로 표시"
 
-#: ../src/subs_edit_box.cpp:201
-#, fuzzy
-msgid "Show Original"
-msgstr "원본"
-
-#: ../src/subs_edit_box.cpp:202
-msgid ""
-"Show the contents of the subtitle line when it was first selected above the "
-"edit box. This is sometimes useful when editing subtitles or translating "
-"subtitles into another language."
+#: ../src/subs_edit_box.cpp:212
+msgid "Analyzing subtitles in the Zhi Meng Subtitle Group format"
 msgstr ""
 
-#: ../src/subs_edit_box.cpp:474
+#: ../src/subs_edit_box.cpp:214
+msgid ""
+"Parse the subtitles in the \"Chinese\\NJapanese\" format, with Japanese on "
+"top and Chinese on the bottom. Both parts are editable, and any changes will "
+"be synchronized in real time."
+msgstr ""
+
+#: ../src/subs_edit_box.cpp:560 ../src/subs_edit_box.cpp:575
+#: ../src/subs_edit_box.cpp:586 ../src/subs_edit_box.cpp:601
 #, fuzzy
 msgid "modify text"
 msgstr "수정된 시간"
 
-#: ../src/subs_edit_box.cpp:552
+#: ../src/subs_edit_box.cpp:691
 msgid "modify times"
 msgstr "수정된 시간"
 
-#: ../src/subs_edit_box.cpp:639
+#: ../src/subs_edit_box.cpp:822
 msgid "actor change"
 msgstr "작업자 바꾸기"
 
-#: ../src/subs_edit_box.cpp:644
+#: ../src/subs_edit_box.cpp:828
 msgid "layer change"
 msgstr "레이어 바꾸기"
 
-#: ../src/subs_edit_box.cpp:649
+#: ../src/subs_edit_box.cpp:833
 msgid "effect change"
 msgstr "효과 바꾸기"
 
-#: ../src/subs_edit_box.cpp:654
+#: ../src/subs_edit_box.cpp:839
 msgid "comment change"
 msgstr "설명 바꾸기"
 
-#: ../src/subs_edit_ctrl.cpp:396
-msgid "Spell checker language"
-msgstr "언어 맞춤법 검사기"
+#: ../src/subs_edit_box.cpp:880 ../src/subs_edit_box.cpp:892
+msgid "Japanese"
+msgstr ""
 
-#: ../src/subs_edit_ctrl.cpp:406
+#: ../src/subs_edit_box.cpp:882 ../src/subs_edit_box.cpp:894
+msgid "Chinese"
+msgstr ""
+
+#: ../src/subs_edit_ctrl.cpp:151 ../src/subs_edit_ctrl_stc.cpp:406
 msgid "Cu&t"
 msgstr "자르기(&T)"
 
-#: ../src/subs_edit_ctrl.cpp:408 ../src/timeedit_ctrl.cpp:210
+#: ../src/subs_edit_ctrl.cpp:153 ../src/subs_edit_ctrl_stc.cpp:408
+#: ../src/timeedit_ctrl.cpp:210
 msgid "&Paste"
 msgstr "불여넣기(&P)"
 
-#: ../src/subs_edit_ctrl.cpp:443
+#: ../src/subs_edit_ctrl_stc.cpp:396
+msgid "Spell checker language"
+msgstr "언어 맞춤법 검사기"
+
+#: ../src/subs_edit_ctrl_stc.cpp:443
 #, fuzzy, c-format
 msgid "Remove \"%s\" from dictionary"
 msgstr "디렉토리에 \"%s\" 추가"
 
-#: ../src/subs_edit_ctrl.cpp:448
+#: ../src/subs_edit_ctrl_stc.cpp:448
 msgid "No spell checker suggestions"
 msgstr "제안할 맞춤법 검사기가 없음"
 
-#: ../src/subs_edit_ctrl.cpp:454
+#: ../src/subs_edit_ctrl_stc.cpp:454
 #, c-format
 msgid "Spell checker suggestions for \"%s\""
 msgstr "\"%s\"에 맞춤법 검사기 제안"
 
-#: ../src/subs_edit_ctrl.cpp:459
+#: ../src/subs_edit_ctrl_stc.cpp:459
 msgid "No correction suggestions"
 msgstr "올바른 제안이 없음"
 
-#: ../src/subs_edit_ctrl.cpp:465
+#: ../src/subs_edit_ctrl_stc.cpp:465
 #, c-format
 msgid "Add \"%s\" to dictionary"
 msgstr "디렉토리에 \"%s\" 추가"
 
-#: ../src/subs_edit_ctrl.cpp:500
+#: ../src/subs_edit_ctrl_stc.cpp:500
 #, c-format
 msgid "Thesaurus suggestions for \"%s\""
 msgstr "\"%s\"에 사전을 제안"
 
-#: ../src/subs_edit_ctrl.cpp:503
+#: ../src/subs_edit_ctrl_stc.cpp:503
 msgid "No thesaurus suggestions"
 msgstr "제안할 사전이 없음"
 
-#: ../src/subs_edit_ctrl.cpp:506
+#: ../src/subs_edit_ctrl_stc.cpp:506
 msgid "Thesaurus language"
 msgstr "언어 사전"
 
-#: ../src/subs_edit_ctrl.cpp:515
+#: ../src/subs_edit_ctrl_stc.cpp:515
 msgid "Disable"
 msgstr "사용 안 함"
 
@@ -6850,80 +6880,6 @@ msgstr "프리핸드 스무스"
 msgid "delete control point"
 msgstr "제어점 삽입"
 
-#: aegisub.appdata.xml:1
-msgid ""
-"A free, cross-platform open source tool for creating and modifying subtitles"
-msgstr ""
-
-#: aegisub.appdata.xml:2
-msgid ""
-"Aegisub is a free, cross-platform open source tool for creating and "
-"modifying subtitles. Aegisub makes it quick and easy to time subtitles to "
-"audio, and features many powerful tools for styling them, including a built-"
-"in real-time video preview."
-msgstr ""
-
-#: aegisub.appdata.xml:3
-msgid ""
-"Aegisub was originally created as a tool to make typesetting, particularly "
-"in anime fansubs, a less painful experience. At the time of the start of the "
-"project, many other programs that supported the Advanced Substation Alpha "
-"format lacked (and in many cases, still lack; development on several "
-"competing programs have since been dropped for various reasons completely "
-"unrelated to Aegisub) many vital functions, or were too buggy and/or "
-"unreliable to be really useful."
-msgstr ""
-
-#: aegisub.appdata.xml:4
-msgid ""
-"Since then, Aegisub has grown into a fully fledged, highly customizable "
-"subtitle editor. It features a lot of convenient tools to help you with "
-"timing, typesetting, editing and translating subtitles, as well as a "
-"powerful scripting environment called Automation (originally mostly intended "
-"for creating karaoke effects, Automation can now be used much else, "
-"including creating macros and various other convenient tools)."
-msgstr ""
-
-#: aegisub.appdata.xml:5
-msgid "Some highlights of Aegisub:"
-msgstr ""
-
-#: aegisub.appdata.xml:6
-msgid "Simple and intuitive yet powerful interface for editing subtitles"
-msgstr ""
-
-#: aegisub.appdata.xml:7
-msgid "Support for many formats and character sets"
-msgstr ""
-
-#: aegisub.appdata.xml:8
-msgid "Powerful video mode"
-msgstr ""
-
-#: aegisub.appdata.xml:9
-msgid "Visual typesetting tools"
-msgstr ""
-
-#: aegisub.appdata.xml:10
-msgid "Intuitive and customizable audio timing mode"
-msgstr ""
-
-#: aegisub.appdata.xml:11
-msgid "Fully scriptable through the Automation module"
-msgstr ""
-
-#: aegisub.appdata.xml:12
-msgid "Typesetting"
-msgstr ""
-
-#: aegisub.appdata.xml:13
-msgid "Audio video"
-msgstr ""
-
-#: aegisub.appdata.xml:14
-msgid "Audio timing"
-msgstr ""
-
 #: default_hotkey.json:244:
 #, fuzzy
 msgid "Subtitle Edit Box"
@@ -7086,128 +7042,106 @@ msgstr ""
 msgid "Update Checker:"
 msgstr "맞춤법 검사기"
 
-#~ msgid "Avisynth renders its own subs"
-#~ msgstr "Avisynth 자막을 사용하게 한다."
-
-#~ msgid "Save config.dat locally"
-#~ msgstr "config.dat에 설정 정보 저장"
-
-#~ msgid "Show Tip of the Day"
-#~ msgstr "오늘의 조언 표시"
-
-#~ msgid "Group some text first."
-#~ msgstr "자막의 첫 라인"
-
-#~ msgid "Possible error parsing source line"
-#~ msgstr "원본 라인 분석중 사소한 오류 발생"
-
-#~ msgid "Kanji timer"
-#~ msgstr "Kanji 타이머"
-
+#, c-format
 #~ msgid ""
-#~ "The source line contains text before the first karaoke block.\n"
-#~ "Do you want to carry it over to the destination?\n"
-#~ "It will be ignored otherwise."
+#~ "\n"
+#~ "Finished writing to %s.\n"
 #~ msgstr ""
-#~ "원본 라인은 첫번째 카라오케 블록 이전에 텍스트를 포함있습니다.\n"
-#~ "텍스트를 이동해서 대상에 덮어쓸까요?\n"
-#~ "만약 그렇지 않으면 무시하십시오."
+#~ "\n"
+#~ "%s에 기록 완료\n"
 
-#~ msgid "Select source text first."
-#~ msgstr "원본 첫 라인 선택합니다. "
+#~ msgid "    Subtitle format handler: "
+#~ msgstr "    자막 형식 처리기: "
 
-#~ msgid "Groups"
-#~ msgstr "그룹"
+#~ msgid " styles?"
+#~ msgstr "스타일?"
 
-#~ msgid "Associations"
-#~ msgstr "연결 정보"
+#, c-format
+#~ msgid "\"%s\" found on dialogue line \"%d\".\n"
+#~ msgstr "\"%s\" dialogue 라인이 검색됨 \"%d\".\n"
 
-#~ msgid ""
-#~ "Please select the formats you want to\n"
-#~ "associate with Aegisub:"
-#~ msgstr "Aegisub 프로그램에 연결할 형식을 선택:"
+#, c-format
+#~ msgid "\"%s\" found on style \"%s\".\n"
+#~ msgstr "\"%s\" 스타일 검색됨 \"%s\".\n"
 
-#~ msgid "Associate extensions"
-#~ msgstr "확장자 프로그램에 연결"
+#, c-format
+#~ msgid "\"%s\" found.\n"
+#~ msgstr "\"%s\" 검색됨 \n"
 
-#~ msgid "Bug tracker hosting by:"
-#~ msgstr "버그 신고 사이트:"
+#~ msgid "&Associations..."
+#~ msgstr "연결(&A)"
 
-#~ msgid "SVN hosting by:"
-#~ msgstr "자유 소프트웨어 버전 관리 시스템( Subversion , SVN ) 사이트:"
+#~ msgid "&Automation"
+#~ msgstr "자동화(&A)"
 
-#~ msgid "Forum and wiki hosting by:"
-#~ msgstr "포럼 및 위키(wiki) 사이트:"
+#~ msgid "&Duplicate"
+#~ msgstr "복제(&D)"
 
-#~ msgid "This build of Aegisub uses the following C/C++ libraries:\n"
-#~ msgstr "Aegisub는  C/C++  libraries를 사용해서 만들었습니다:\n"
+#~ msgid "&Duplicate and Shift by 1 Frame"
+#~ msgstr "한개 프레임 이동후 복제(&D) "
 
-#~ msgid "No new version has been found.\n"
-#~ msgstr "새 버전을 찾을 수가 없습니다.\n"
+#~ msgid "&Duplicate and shift by 1 frame"
+#~ msgstr "한 프레임 이동후 복제(&D)"
 
-#~ msgid "Please go to the following URL to download it: %s\n"
-#~ msgstr "다음 URL으로 이동후에 새버전을 다운로드 하세요: %s\n"
-
-#~ msgid "New version found!\n"
-#~ msgstr "새 버전을 찾았습니다!\n"
-
-#~ msgid "OK.\n"
-#~ msgstr "확인.\n"
-
-#~ msgid "Failed.\n"
-#~ msgstr "실패.\n"
-
-#~ msgid "Attempting to open \"%s\"..."
-#~ msgstr "\"%s\" 열기 시도중..."
-
-#~ msgid "Could not open Internet File system. Aborting.\n"
-#~ msgstr "인터넷 파일 시스템을 열 수 없습니다. 취소합니다.\n"
-
-#~ msgid "show full tags."
-#~ msgstr "모든 태그 표시."
-
-#~ msgid "All Supported Types"
-#~ msgstr "지원하는 모든 형식"
-
-#~ msgid "All files"
-#~ msgstr "모든 파일"
-
-#~ msgid "No timecodes to average"
-#~ msgstr "타임코드의 평균이 없음"
-
-#~ msgid "Color Picker"
-#~ msgstr "컬러 선택"
-
-#~ msgid "Exporting PRS"
-#~ msgstr "PRS 내보내기"
-
-#~ msgid "Margin Bottom"
-#~ msgstr "아래쪽 여백"
-
-#~ msgid "Margin Top"
-#~ msgstr "위쪽 여백"
-
-#~ msgid "Executing "
-#~ msgstr "실행중"
+#~ msgid "&Forums"
+#~ msgstr "포럼(&F)"
 
 #~ msgid "&No"
 #~ msgstr "취소(&N)"
 
+#~ msgid "&Resource Files..."
+#~ msgstr "리소스 파일...(&R)"
+
+#~ msgid "&Swap"
+#~ msgstr "교체(&S)"
+
 #~ msgid "&Yes"
 #~ msgstr "확인(&Y)"
 
-#~ msgid "Always perform this check when Aegisub starts"
-#~ msgstr "실행시 항상 체크하기"
+#~ msgid "Accept Split"
+#~ msgstr "분할 작업 적용"
+
+#~ msgid "Add lead in (%KEY%)"
+#~ msgstr "리드 인(시작점) 추가 (%KEY%)"
+
+#~ msgid "Add lead out (%KEY%)"
+#~ msgstr "리드 아웃(종료점) 추가 (%KEY%)"
+
+#~ msgid "Advanced - EXPERT USERS ONLY"
+#~ msgstr "고급 - 고급 사용자 설정"
 
 #~ msgid ""
-#~ "Aegisub is not your default editor for subtitle files. Do you want to "
-#~ "make Aegisub your default editor for subtitle files?"
+#~ "Aegisub can export subtitles to many different formats, character "
+#~ "encodings, and even compensate Variable Frame Rate so you can hardsub "
+#~ "them - it's all in the Export option in File menu."
 #~ msgstr ""
-#~ "Aegisub가 기본 자막 에디터가 아닙니다. Aegisub를 기본 자막 에디터로 설정하"
-#~ "시겠습니까?"
+#~ "Aegusub 프로그램은 매우 다양한 형식 과 언어 코드 인코딩으로 자막 내보기를 "
+#~ "할 수 있으며 , 심지어 변하기 쉬운 재생 속도를 보정할 수 있으며 또한  어려"
+#~ "운 자막에서도 할 수 있습니다- Aegisub 프로그램의 파일 메뉴 내보내기 항목에"
+#~ "서 모두할 수 있습니다."
 
-#~ msgid "Make Aegisub default editor for subtitles?"
-#~ msgstr "Aegisub을 기본 자막 에디터로 설정하기"
+#~ msgid ""
+#~ "Aegisub can take over the following file types.\n"
+#~ "\n"
+#~ "If you want Aegisub to no longer be associated with a file type, you must "
+#~ "tell another program to take over the file type."
+#~ msgstr ""
+#~ "Aegisub가 다음 파일 형식에 연결이 가능합니다.\n"
+#~ "\n"
+#~ "파일 형식 연결을 취소하려면, 다른 프로그램으로 파일 형식 연결을 다시 설정"
+#~ "하십시오."
+
+#~ msgid ""
+#~ "Aegisub has several features to make sure you will never lose your work. "
+#~ "It will periodically save your subtitles to autosave folder, and will "
+#~ "create a copy of subs whenever you open them, to autoback folder. Also, "
+#~ "if it crashes, it will attempt to save a restore file."
+#~ msgstr ""
+#~ "Aegisub 프로그램은 작업을 잃어버리지 않게 하는 몇가지 기능을 가지고 있습니"
+#~ "다.자동 저장 기능은 정기적으로 작업중인 자막 파일을 정기적으로 자동 저장 "
+#~ "폴더에 저장합니다, 자동 백업 기능은 자막 파일을 열 때 언제나 자막 파일을 "
+#~ "복사해서 자동백업 폴더에 저장합니다.또한 자동 복원 기능은 Aegisub 프로그램"
+#~ "이 충돌 하면 작업중인 자막 파일을 복원 파일에 저장하도록 시도합니다."
 
 #~ msgid ""
 #~ "Aegisub is already associated with all supported file types.\n"
@@ -7221,66 +7155,90 @@ msgstr "맞춤법 검사기"
 #~ "하십시오."
 
 #~ msgid ""
-#~ "Aegisub can take over the following file types.\n"
-#~ "\n"
-#~ "If you want Aegisub to no longer be associated with a file type, you must "
-#~ "tell another program to take over the file type."
+#~ "Aegisub is not your default editor for subtitle files. Do you want to "
+#~ "make Aegisub your default editor for subtitle files?"
 #~ msgstr ""
-#~ "Aegisub가 다음 파일 형식에 연결이 가능합니다.\n"
-#~ "\n"
-#~ "파일 형식 연결을 취소하려면, 다른 프로그램으로 파일 형식 연결을 다시 설정"
-#~ "하십시오."
+#~ "Aegisub가 기본 자막 에디터가 아닙니다. Aegisub를 기본 자막 에디터로 설정하"
+#~ "시겠습니까?"
+
+#~ msgid "Aegisub must restart for the changes to take effect. Restart now?"
+#~ msgstr ""
+#~ "변경 사항을 적용할려면 Aegisub를 재시작해야 합니다.다시 시작하겠습니까?"
+
+#~ msgid "All"
+#~ msgstr "모두"
+
+#~ msgid "All Supported Types"
+#~ msgstr "지원하는 모든 형식"
+
+#~ msgid "All files"
+#~ msgstr "모든 파일"
+
+#~ msgid "Allow grid to take focus"
+#~ msgstr "그리드는 집중하는데 효과적이다."
+
+#~ msgid "Always perform this check when Aegisub starts"
+#~ msgstr "실행시 항상 체크하기"
+
+#, c-format
+#~ msgid ""
+#~ "An Automation script failed to load. File name: '%s', error reported:"
+#~ msgstr ""
+#~ "자동화 스크립트 로드가 실패했습니다. 파일 이름: '%s', 오류를 보고하다:"
+
+#~ msgid "Are you sure you want to delete these "
+#~ msgstr "선택된것을 삭제할까요?"
+
+#~ msgid "Associate extensions"
+#~ msgstr "확장자 프로그램에 연결"
 
 #~ msgid "Associate file types"
 #~ msgstr "파일 형식 연결"
 
-#~ msgid "Styling Assistant Preview"
-#~ msgstr "[스타일 도우미]미리 보기"
+#~ msgid "Associate file types with Aegisub"
+#~ msgstr "Aegisub 프로그림과 파일 형식를 연결하다"
 
-#~ msgid "Styling Assistant Accept"
-#~ msgstr "[스타일 도우미] 적용"
+#~ msgid "Associations"
+#~ msgstr "연결 정보"
 
-#~ msgid "Styling Assistant Prev"
-#~ msgstr "[스타일 도우미] 이전"
+#~ msgid "Attempting to open \"%s\"..."
+#~ msgstr "\"%s\" 열기 시도중..."
 
-#~ msgid "Styling Assistant Next"
-#~ msgstr "[스타일 도우미] 다음 "
+#~ msgid "Audio Add Lead In"
+#~ msgstr "[오디오]  리드인 추가"
 
-#~ msgid "Styling Assistant Play Video"
-#~ msgstr "[스타일 도우미] 비디오 재생"
+#~ msgid "Audio Add Lead Out"
+#~ msgstr "[오디오]  리드아웃 추가"
 
-#~ msgid "Styling Assistant Play Audio"
-#~ msgstr "[스타일 도우미] 오디오 재생"
+#~ msgid "Audio Commit"
+#~ msgstr "[오디오]  적용"
 
-#~ msgid "Translation Assistant Insert Original"
-#~ msgstr "[번역 도우미] 원본 삽입"
+#~ msgid "Audio Commit (Stay)"
+#~ msgstr "[오디오]  적용 (대기)"
 
-#~ msgid "Translation Assistant Preview"
-#~ msgstr "[번역 도우미] 미리보기"
+#~ msgid "Audio Commit Alt"
+#~ msgstr "[오디오]  적용  Alt"
 
-#~ msgid "Translation Assistant Accept"
-#~ msgstr "[번역 도우미] 적용"
+#~ msgid "Audio Karaoke Decrease Len"
+#~ msgstr "[오디오]  가라오케 길이 감소"
 
-#~ msgid "Translation Assistant Prev"
-#~ msgstr "[번역 도우미] 이전"
+#~ msgid "Audio Karaoke Decrease Len Shift"
+#~ msgstr "[오디오]  가라오케 길이 감소되면서 이동"
 
-#~ msgid "Translation Assistant Next"
-#~ msgstr "[번역 도우미] 다음"
+#~ msgid "Audio Karaoke Increase Len"
+#~ msgstr "[오디오]  가라오케 길이 증가 "
 
-#~ msgid "Translation Assistant Play Video"
-#~ msgstr "[번역 도우미] 비디오 재생"
-
-#~ msgid "Translation Assistant Play Audio"
-#~ msgstr "[번역 도우미]  오디오 재생"
+#~ msgid "Audio Karaoke Increase Len Shift"
+#~ msgstr "[오디오]  가라오케 길이 증가되면서 이동"
 
 #~ msgid "Audio Medusa Enter"
 #~ msgstr "[오디오 Medusa] 입력"
 
-#~ msgid "Audio Medusa Previous"
-#~ msgstr "[오디오 Medusa] 이전"
-
 #~ msgid "Audio Medusa Next"
 #~ msgstr "[오디오 Medusa] 다음"
+
+#~ msgid "Audio Medusa Play"
+#~ msgstr "[오디오 Medusa] 재생"
 
 #~ msgid "Audio Medusa Play After"
 #~ msgstr "[오디오 Medusa] 이후 재생"
@@ -7288,38 +7246,35 @@ msgstr "맞춤법 검사기"
 #~ msgid "Audio Medusa Play Before"
 #~ msgstr "[오디오 Medusa] 이전 재생"
 
-#~ msgid "Audio Medusa Shift End Forward"
-#~ msgstr "[오디오 Medusa] 종료 앞으로 이동"
+#~ msgid "Audio Medusa Previous"
+#~ msgstr "[오디오 Medusa] 이전"
 
 #~ msgid "Audio Medusa Shift End Back"
 #~ msgstr "[오디오 Medusa] 종료 뒤로 이동"
 
-#~ msgid "Audio Medusa Shift Start Forward"
-#~ msgstr "[오디오 Medusa] 시작 앞으로 이동"
+#~ msgid "Audio Medusa Shift End Forward"
+#~ msgstr "[오디오 Medusa] 종료 앞으로 이동"
 
 #~ msgid "Audio Medusa Shift Start Back"
 #~ msgstr "[오디오 Medusa] 시작 뒤로 이동"
 
+#~ msgid "Audio Medusa Shift Start Forward"
+#~ msgstr "[오디오 Medusa] 시작 앞으로 이동"
+
 #~ msgid "Audio Medusa Stop"
 #~ msgstr "[오디오 Medusa] 중지"
-
-#~ msgid "Audio Medusa Play"
-#~ msgstr "[오디오 Medusa] 재생"
 
 #~ msgid "Audio Medusa Toggle"
 #~ msgstr "[오디오 Medusa] 토글"
 
-#~ msgid "Audio Add Lead Out"
-#~ msgstr "[오디오]  리드아웃 추가"
+#~ msgid "Audio Next Line"
+#~ msgstr "[오디오]  다음 라인"
 
-#~ msgid "Audio Add Lead In"
-#~ msgstr "[오디오]  리드인 추가"
+#~ msgid "Audio Next Line Alt"
+#~ msgstr "[오디오]  다음라인 Alt"
 
-#~ msgid "Audio Play Original Line"
-#~ msgstr "[오디오]  원본 라인 재생"
-
-#~ msgid "Audio Play To End"
-#~ msgstr "[오디오]  종료까지 재생"
+#~ msgid "Audio Play"
+#~ msgstr "[오디오]  재생"
 
 #~ msgid "Audio Play 500ms After"
 #~ msgstr "[오디오]  이후 0.5초간 재생"
@@ -7327,199 +7282,71 @@ msgstr "맞춤법 검사기"
 #~ msgid "Audio Play 500ms Before"
 #~ msgstr "[오디오]  이전 0.5초간 재생"
 
-#~ msgid "Audio Play Last 500ms"
-#~ msgstr "[오디오]  미자막 0.5초간 재생"
+#~ msgid "Audio Play Alt"
+#~ msgstr "[오디오]  재생 Alt "
 
 #~ msgid "Audio Play First 500ms"
 #~ msgstr "[오디오]  시작 0.5 초간 재생"
 
-#~ msgid "Audio Karaoke Decrease Len Shift"
-#~ msgstr "[오디오]  가라오케 길이 감소되면서 이동"
+#~ msgid "Audio Play Last 500ms"
+#~ msgstr "[오디오]  미자막 0.5초간 재생"
 
-#~ msgid "Audio Karaoke Increase Len Shift"
-#~ msgstr "[오디오]  가라오케 길이 증가되면서 이동"
+#~ msgid "Audio Play Original Line"
+#~ msgstr "[오디오]  원본 라인 재생"
 
-#~ msgid "Audio Karaoke Decrease Len"
-#~ msgstr "[오디오]  가라오케 길이 감소"
-
-#~ msgid "Audio Karaoke Increase Len"
-#~ msgstr "[오디오]  가라오케 길이 증가 "
-
-#~ msgid "Audio Stop"
-#~ msgstr "[오디오]  정지"
+#~ msgid "Audio Play To End"
+#~ msgstr "[오디오]  종료까지 재생"
 
 #~ msgid "Audio Play or Stop"
 #~ msgstr "[오디오]  재생 또는 중지"
 
-#~ msgid "Audio Play Alt"
-#~ msgstr "[오디오]  재생 Alt "
-
-#~ msgid "Audio Play"
-#~ msgstr "[오디오]  재생"
-
-#~ msgid "Audio Next Line Alt"
-#~ msgstr "[오디오]  다음라인 Alt"
-
-#~ msgid "Audio Next Line"
-#~ msgstr "[오디오]  다음 라인"
+#~ msgid "Audio Prev Line"
+#~ msgstr "[오디오]  이전 라인"
 
 #~ msgid "Audio Prev Line Alt"
 #~ msgstr "[오디오]  라인 이전 Alt "
 
-#~ msgid "Audio Prev Line"
-#~ msgstr "[오디오]  이전 라인"
+#~ msgid "Audio Stop"
+#~ msgstr "[오디오]  정지"
 
-#~ msgid "Audio Commit (Stay)"
-#~ msgstr "[오디오]  적용 (대기)"
+#~ msgid "Auto-backup path:"
+#~ msgstr "자동 백업 경로:"
 
-#~ msgid "Audio Commit"
-#~ msgstr "[오디오]  적용"
+#~ msgid "Auto-save"
+#~ msgstr "자동 저장"
 
-#~ msgid "Audio Commit Alt"
-#~ msgstr "[오디오]  적용  Alt"
+#~ msgid "Auto-save path:"
+#~ msgstr "자동 저장 경로:"
 
-#~ msgid "Grid duplicate and shift one frame"
-#~ msgstr "[그리드] 한개 프레임 이동후 복제"
+#~ msgid "Avisynth renders its own subs"
+#~ msgstr "Avisynth 자막을 사용하게 한다."
 
-#~ msgid "Grid duplicate rows"
-#~ msgstr "[그리드] 줄 복제"
+#~ msgid "Below Normal (recommended)"
+#~ msgstr "기준 이하 ( 추천 )"
 
-#~ msgid "Grid delete rows"
-#~ msgstr "[그리드] 줄 삭제"
+#~ msgid "Bug tracker hosting by:"
+#~ msgstr "버그 신고 사이트:"
 
-#~ msgid "Grid move row up"
-#~ msgstr "[그리드] 줄 위로 이동"
+#~ msgid "C&ut"
+#~ msgstr "자르기(&U)"
 
-#~ msgid "Grid move row down"
-#~ msgstr "[그리드] 줄 아래로 이동"
+#~ msgid "Change aspect ratio"
+#~ msgstr "비디오의 가로 세로의 비 바꾸기"
 
-#~ msgid "Video global zoom out"
-#~ msgstr "[비디오] 글로벌 화면 축소"
+#~ msgid "Changes resolution and modifies subtitles to conform to change"
+#~ msgstr "변경된 해상도와 수정된 자막이 맞는지 확인하고 바꾸기"
 
-#~ msgid "Video global zoom in"
-#~ msgstr "[비디오] 글로벌 화면 확대"
-
-#~ msgid "Save Subtitles Alt"
-#~ msgstr "자막 저장"
-
-#~ msgid "Grid global next line"
-#~ msgstr "[그리드] 글로벌 다음 라인"
-
-#~ msgid "Grid global prev line"
-#~ msgstr "[그리드] 글로벌 이전 라인"
-
-#~ msgid "Video global play"
-#~ msgstr "[비디오] 전체 재생"
-
-#~ msgid "Video global focus seek"
-#~ msgstr "[비디오] 글로벌 포커스 탐색"
-
-#~ msgid "Video global prev frame"
-#~ msgstr "[비디오] 글로벌 이전 프레임"
-
-#~ msgid "Zoom 50%"
-#~ msgstr "[비디오] 50% 표시"
-
-#~ msgid "Shift by Current Time"
-#~ msgstr "[비디오] 현재 시간으로 이동"
-
-#~ msgid "Set End to Video"
-#~ msgstr "[비디오] 종료 설정"
-
-#~ msgid "Set Start to Video"
-#~ msgstr "[비디오] 시작 설정"
-
-#~ msgid "Video Jump"
-#~ msgstr "[비디오] 이동"
-
-#~ msgid "Paste Over"
-#~ msgstr "덮어쓰기"
-
-#~ msgid "Paste"
-#~ msgstr "붙여넣기"
-
-#~ msgid "Cut"
-#~ msgstr "잘라내기"
-
-#~ msgid "Enter split-mode"
-#~ msgstr "분할 작업 모드 들어가기"
-
-#~ msgid "Split"
-#~ msgstr "분할 작업"
-
-#~ msgid "Join selected syllables"
-#~ msgstr "선택된 음절들 연결"
-
-#~ msgid "Join"
-#~ msgstr "연결"
-
-#~ msgid "Commit splits and leave split-mode"
-#~ msgstr "분할 작업 적용하고 분할 작업 모드 나가기"
-
-#~ msgid "Accept Split"
-#~ msgstr "분할 작업 적용"
-
-#~ msgid "Karaoke"
-#~ msgstr "가라오케"
-
-#~ msgid "Enable Medusa-Style Timing Shortcuts"
-#~ msgstr "Medusa-스타일 타이밍 바로 가기 키 사용"
-
-#~ msgid "Commit changes (%KEY%/%KEY%)"
-#~ msgstr "변경 내용 적용 (%KEY%/%KEY%)"
-
-#~ msgid "Add lead out (%KEY%)"
-#~ msgstr "리드 아웃(종료점) 추가 (%KEY%)"
-
-#~ msgid "Add lead in (%KEY%)"
-#~ msgstr "리드 인(시작점) 추가 (%KEY%)"
-
-#~ msgid "Stop (%KEY%)"
-#~ msgstr "정지 (%KEY%)"
-
-#~ msgid "Play current line (%KEY%)"
-#~ msgstr "현재 라인 재생 (%KEY%)"
-
-#~ msgid "Play selection (%KEY%/%KEY%)"
-#~ msgstr "선택 영역 재생 (%KEY%/%KEY%)"
-
-#~ msgid "Seek bar"
-#~ msgstr "탐색바"
-
-#, c-format
-#~ msgid "\"%s\" found.\n"
-#~ msgstr "\"%s\" 검색됨 \n"
-
-#, c-format
-#~ msgid "\"%s\" found on dialogue line \"%d\".\n"
-#~ msgstr "\"%s\" dialogue 라인이 검색됨 \"%d\".\n"
-
-#, c-format
-#~ msgid "\"%s\" found on style \"%s\".\n"
-#~ msgstr "\"%s\" 스타일 검색됨 \"%s\".\n"
-
-#~ msgid "Found.\n"
-#~ msgstr "검색됨.\n"
-
-#~ msgid "Not found.\n"
-#~ msgstr "검색할 수 없음.\n"
-
-#, c-format
-#~ msgid ""
-#~ "\n"
-#~ "Finished writing to %s.\n"
-#~ msgstr ""
-#~ "\n"
-#~ "%s에 기록 완료\n"
+#~ msgid "Check File Associations on Start"
+#~ msgstr "실행시 파일 확장자 확인"
 
 #~ msgid "Checking fonts...\n"
 #~ msgstr "글꼴 검사중...\n"
 
-#~ msgid "Scanning file for fonts..."
-#~ msgstr "자막내 글꼴 검색중..."
+#~ msgid "Clean Script Info"
+#~ msgstr "스크립트 정보 지우기"
 
-#~ msgid "Done collecting font data."
-#~ msgstr "글꼴 데이터 가져오기 완료 하였습니다."
+#~ msgid "Clear Hotkey"
+#~ msgstr "바로 가기 키 지우기"
 
 #~ msgid ""
 #~ "Collecting font data from system. This might take a while, depending on "
@@ -7529,14 +7356,197 @@ msgstr "맞춤법 검사기"
 #~ "시스템에서 글꼴 데이터를 가져오다.설치된 글꼴 갯수에 따라서 시간이 걸리지"
 #~ "도 모릅니다.저장된 결과로 이후 빠르게 실행할 수 있습니다.\n"
 
-#~ msgid "Invalid destination directory."
-#~ msgstr "대상 디렉터리가 잘못되었습니다."
+#~ msgid "Collision: "
+#~ msgstr "충돌:"
 
-#~ msgid "Zip Archives (*.zip)|*.zip"
-#~ msgstr "Zip 압축 파일 (*.zip)|*.zip"
+#~ msgid "Color Picker"
+#~ msgstr "컬러 선택"
+
+#~ msgid "Commit changes (%KEY%/%KEY%)"
+#~ msgstr "변경 내용 적용 (%KEY%/%KEY%)"
+
+#~ msgid "Commit splits and leave split-mode"
+#~ msgstr "분할 작업 적용하고 분할 작업 모드 나가기"
+
+#~ msgid "Commit?"
+#~ msgstr "적용하시겠습니까?"
+
+#~ msgid "Commits the text (Enter). Hold Ctrl to stay in line (%KEY%)."
+#~ msgstr "Commits the text (Enter). Hold Ctrl to stay in line (%KEY%)."
+
+#~ msgid ""
+#~ "Configuration file is either invalid or corrupt. The current file will be "
+#~ "backed up and replaced with a default file."
+#~ msgstr ""
+#~ "구성파일이 잘못되거나 오류입니다.현재 파일을 백업하거나 기본구성파일로 바"
+#~ "꾸세요."
+
+#~ msgid "Copy of "
+#~ msgstr "복사 내용"
+
+#~ msgid "Copy subtitles"
+#~ msgstr "자막 복사"
+
+#~ msgid "Could not open Internet File system. Aborting.\n"
+#~ msgstr "인터넷 파일 시스템을 열 수 없습니다. 취소합니다.\n"
+
+#~ msgid "Couldn't allocate memory."
+#~ msgstr "메모리를 할당할 수 없습니다."
+
+#~ msgid "Crash recovery path:"
+#~ msgstr "충돌시 복구할 파일 경로:"
+
+#~ msgid "Current line: ?"
+#~ msgstr "현재 라인:?"
+
+#~ msgid "Cut"
+#~ msgstr "잘라내기"
+
+#~ msgid "Cuts selected lines to clipboard"
+#~ msgstr "클립보드에 선택된 라인 자르기"
 
 #~ msgid "DEBUG: Verify all fonts in system"
 #~ msgstr "DEBUG: 시스템의 모든 글꼴 확인"
+
+#~ msgid "DON'T PANIC!"
+#~ msgstr "허둥대지 마라, 침착해라!"
+
+#~ msgid "Debug: "
+#~ msgstr "디버그: "
+
+#~ msgid "Dest Style"
+#~ msgstr "대상 스타일"
+
+#~ msgid ""
+#~ "Do you want to commit your changes? If you choose No, they will be "
+#~ "discarded."
+#~ msgstr ""
+#~ "변경 내용을 적용하시겠습니까? No를 선택하시면 변경 내용이 취소됩니다."
+
+#~ msgid "Done collecting font data."
+#~ msgstr "글꼴 데이터 가져오기 완료 하였습니다."
+
+#~ msgid "Draw keyframes"
+#~ msgstr "키 프레임 표시"
+
+#~ msgid "Draw secondary lines"
+#~ msgstr "보조 라인 표시"
+
+#~ msgid "Draw selection background"
+#~ msgstr "선택 배경 표시 "
+
+#~ msgid "Draw timeline"
+#~ msgstr "시간라인 표시"
+
+#~ msgid "Duplicate lines and shift by one frame"
+#~ msgstr "한개 프레임 이동후 라인 복제"
+
+#~ msgid "Enable Medusa-Style Timing Shortcuts"
+#~ msgstr "Medusa-스타일 타이밍 바로 가기 키 사용"
+
+#~ msgid "Enable preview (slow)"
+#~ msgstr "미리 보기 사용(느림)"
+
+#~ msgid "Enter split-mode"
+#~ msgstr "분할 작업 모드 들어가기"
+
+#~ msgid "Error: "
+#~ msgstr "오류: "
+
+#~ msgid "Executing "
+#~ msgstr "실행중"
+
+#~ msgid "Exporting PRS"
+#~ msgstr "PRS 내보내기"
+
+#~ msgid "Failed.\n"
+#~ msgstr "실패.\n"
+
+#~ msgid "Fatal error: "
+#~ msgstr "심각한 오류: "
+
+#~ msgid "File paths"
+#~ msgstr "파일 위치"
+
+#~ msgid "File save/load"
+#~ msgstr "파일 저장/로드"
+
+#~ msgid "Font Face Name"
+#~ msgstr "글꼴 이름"
+
+#~ msgid "Font: "
+#~ msgstr "글꼴:"
+
+#~ msgid "Forum and wiki hosting by:"
+#~ msgstr "포럼 및 위키(wiki) 사이트:"
+
+#~ msgid "Found.\n"
+#~ msgstr "검색됨.\n"
+
+#~ msgid "From Video"
+#~ msgstr "비디오에서"
+
+#~ msgid "Function"
+#~ msgstr "기능"
+
+#~ msgid "Grab times from line upon selection"
+#~ msgstr "선택 영역에 라인과 시간을 일치"
+
+#~ msgid "Grid delete rows"
+#~ msgstr "[그리드] 줄 삭제"
+
+#~ msgid "Grid duplicate and shift one frame"
+#~ msgstr "[그리드] 한개 프레임 이동후 복제"
+
+#~ msgid "Grid duplicate rows"
+#~ msgstr "[그리드] 줄 복제"
+
+#~ msgid "Grid global next line"
+#~ msgstr "[그리드] 글로벌 다음 라인"
+
+#~ msgid "Grid global prev line"
+#~ msgstr "[그리드] 글로벌 이전 라인"
+
+#~ msgid "Grid move row down"
+#~ msgstr "[그리드] 줄 아래로 이동"
+
+#~ msgid "Grid move row up"
+#~ msgstr "[그리드] 줄 위로 이동"
+
+#~ msgid "Group some text first."
+#~ msgstr "자막의 첫 라인"
+
+#~ msgid "Groups"
+#~ msgstr "그룹"
+
+#~ msgid "HD cache name"
+#~ msgstr "HD 캐쉬 이름"
+
+#~ msgid ""
+#~ "Having video open is often more a nuisance than a help when timing "
+#~ "subtitles. Timing with only audio open is often much easier. You can "
+#~ "always adjust the subtitles to match the video later on."
+#~ msgstr ""
+#~ "비디오 열기후 자막 타이밍의 도움말은 매우 성가시다. 대개는 쉽게 오디오 타"
+#~ "이밍만 열다.나중에 비디오에 일치되게 자막을 늘 조정할 수 있습니다."
+
+#~ msgid "Header"
+#~ msgstr "머리글"
+
+#~ msgid "Help"
+#~ msgstr "도움말"
+
+#~ msgid "Highlight subtitles that are currently visible in video"
+#~ msgstr "하이라이트 자막은 비디오에 일반적으로 시각적인 효과를 준다."
+
+#~ msgid "Hint: "
+#~ msgstr "참조: "
+
+#~ msgid "History"
+#~ msgstr "사용 기록"
+
+#~ msgid "Hotkey conflict"
+#~ msgstr "바로 가기 키 충돌"
 
 #~ msgid "If anything goes wrong, blame movax."
 #~ msgstr "잘못된 곳으로 이동하게 되면 mova 잘못이다."
@@ -7551,26 +7561,102 @@ msgstr "맞춤법 검사기"
 #~ "든다."
 
 #~ msgid ""
-#~ "Having video open is often more a nuisance than a help when timing "
-#~ "subtitles. Timing with only audio open is often much easier. You can "
-#~ "always adjust the subtitles to match the video later on."
-#~ msgstr ""
-#~ "비디오 열기후 자막 타이밍의 도움말은 매우 성가시다. 대개는 쉽게 오디오 타"
-#~ "이밍만 열다.나중에 비디오에 일치되게 자막을 늘 조정할 수 있습니다."
-
-#~ msgid ""
 #~ "If you decode your audio to a PCM WAV file before loading it in Aegisub, "
 #~ "you don't have to wait for it to be decoded before you can use it."
 #~ msgstr ""
 #~ "Aegisub 로딩전에 PCM 음성 파일을 디코드했으면, 디코드 시간을 기다릴 필요 "
 #~ "없이 사용할 수 있습니다."
 
+#~ msgid "Invalid destination directory."
+#~ msgstr "대상 디렉터리가 잘못되었습니다."
+
+#~ msgid "Invalid fps or length value"
+#~ msgstr "잘못된 재생 속도 또는 길이 값"
+
 #~ msgid ""
-#~ "Try the spectrum mode for the audio display, it can make it much easier "
-#~ "to spot where the important points in the audio are."
+#~ "Invalid resolution: destination resolution cannot be 0 on either "
+#~ "dimension."
 #~ msgstr ""
-#~ "오디오 표시에 스펙트럼 모드를 시도하다, 스펙트럼 모드는 오디오에 중요한 포"
-#~ "인트를 매우 쉽게 만들 수 있다."
+#~ "잘못된 해상도: 대상의 해상도는 가로 또는 세로이든지 \"0\"이 될 수 없습니"
+#~ "다."
+
+#~ msgid "Join"
+#~ msgstr "연결"
+
+#~ msgid "Join selected syllables"
+#~ msgstr "선택된 음절들 연결"
+
+#~ msgid ""
+#~ "Joins selected lines in a single one, making each line into a karaoke "
+#~ "syllable"
+#~ msgstr ""
+#~ "선택된 라인을 하나의 라인으로 연결, 각각의 라인에 가라오케 음절 만들다."
+
+#~ msgid "Jump To..."
+#~ msgstr "이동하기"
+
+#~ msgid "Jump video to end"
+#~ msgstr "비디오 종료로 이동"
+
+#~ msgid "Jump video to time/frame"
+#~ msgstr "비디오의 시간/프레임 이동"
+
+#~ msgid "Kanji timer"
+#~ msgstr "Kanji 타이머"
+
+#~ msgid "Karaoke"
+#~ msgstr "가라오케"
+
+#~ msgid "Key"
+#~ msgstr "키"
+
+#~ msgid "Limits for levels and recent files"
+#~ msgstr "최근 사용한 파일의 최대 이력"
+
+#~ msgid "Link commiting of times"
+#~ msgstr "시작/종료 시간을 연결하다"
+
+#~ msgid "Lowest"
+#~ msgstr "가장 낮음 "
+
+#~ msgid "Make Aegisub default editor for subtitles?"
+#~ msgstr "Aegisub을 기본 자막 에디터로 설정하기"
+
+#~ msgid "Margin Bottom"
+#~ msgstr "아래쪽 여백"
+
+#~ msgid "Margin Top"
+#~ msgstr "위쪽 여백"
+
+#~ msgid "MarginR change"
+#~ msgstr "오른쪽 여백 바꾸기"
+
+#~ msgid "MarginV change"
+#~ msgstr "수직 여백 바꾸기"
+
+#~ msgid "Maximum recent audio files"
+#~ msgstr "최근 사용한 오디오 파일에 최대 이력"
+
+#~ msgid "Maximum recent find strings"
+#~ msgstr "최근 찾은 문자열에 최대 이력"
+
+#~ msgid "Maximum recent replace strings"
+#~ msgstr "최근 바꾼 문자열에 최대 이력"
+
+#~ msgid "Maximum recent subtitle files"
+#~ msgstr "최근 사용한 자막 파일에 최대 이력"
+
+#~ msgid "Maximum recent timecode files"
+#~ msgstr "최근 사용한 타임코드에 최대 이력"
+
+#~ msgid "Maximum recent video files"
+#~ msgstr "최근 사용한 비디오 파일에 최대 이력"
+
+#~ msgid "Miscellanea"
+#~ msgstr "기타"
+
+#~ msgid "Modified Background"
+#~ msgstr "수정된 배경색"
 
 #~ msgid ""
 #~ "Much like anything loaded via DirectShow, certain files may have a "
@@ -7585,12 +7671,279 @@ msgstr "맞춤법 검사기"
 #~ "될지도 모른다.이것은 Aegisub 프로그램 버그가 아닙니다 - 비디오 파일을 작업"
 #~ "하기 전에 다시 인코딩하는것을 생각하는것도 좋을것 같습니다."
 
+#~ msgid "New version found!\n"
+#~ msgstr "새 버전을 찾았습니다!\n"
+
+#~ msgid "No new version has been found.\n"
+#~ msgstr "새 버전을 찾을 수가 없습니다.\n"
+
+#~ msgid "No subtitle providers available. Cannot preview subs."
+#~ msgstr "이용 가능한 자막이 없어 자막 미리 보기할 수 없습니다."
+
+#~ msgid "No timecodes to average"
+#~ msgstr "타임코드의 평균이 없음"
+
+#~ msgid "None (NOT RECOMMENDED)"
+#~ msgstr "없음 ( 추천 안 함 )"
+
+#~ msgid "Not enough parameters for Aegisub::text_extents()"
+#~ msgstr "Aegisub에 매개변수가 부족합니다::text_extents()"
+
+#~ msgid "Not found.\n"
+#~ msgstr "검색할 수 없음.\n"
+
+#~ msgid "OK.\n"
+#~ msgstr "확인.\n"
+
+#~ msgid "Open Attachment List"
+#~ msgstr "첨부 파일 목록 열기"
+
+#~ msgid "Open Fonts Collector"
+#~ msgstr "글꼴 셀렉터 열기"
+
+#~ msgid "Open Kanji Timer dialog"
+#~ msgstr "Kanji 타이머 dialog 열기"
+
+#~ msgid "Open Shift Times Dialogue"
+#~ msgstr "Times Dialogue 이동 열기"
+
+#~ msgid "Open Spell checker"
+#~ msgstr "맞춤법 검사기 열기"
+
+#~ msgid "Open Styles Manager"
+#~ msgstr "스타일 메니저 열기 "
+
+#~ msgid "Open Styling Assistant"
+#~ msgstr "스타일 도우미 열기"
+
+#~ msgid "Open Timing Post-processor dialog"
+#~ msgstr "타이밍 포스트-프로세서 대화 상자 열기"
+
+#~ msgid "Open Translation Assistant"
+#~ msgstr "번역 도우미 열기"
+
+#~ msgid "Open log window"
+#~ msgstr "로그창 열기"
+
+#~ msgid "Paste"
+#~ msgstr "붙여넣기"
+
+#~ msgid "Paste Over"
+#~ msgstr "덮어쓰기"
+
+#~ msgid "Paste lines from clipboard"
+#~ msgstr "클립보드에서 라인 불여넣기"
+
+#~ msgid "Path to dictionary files:"
+#~ msgstr "사전 파일 경로:"
+
+#~ msgid "Perl script"
+#~ msgstr "펄 스크립트"
+
+#~ msgid "Play current line (%KEY%)"
+#~ msgstr "현재 라인 재생 (%KEY%)"
+
+#~ msgid "Play selection (%KEY%/%KEY%)"
+#~ msgstr "선택 영역 재생 (%KEY%/%KEY%)"
+
+#~ msgid "Please go to the following URL to download it: %s\n"
+#~ msgstr "다음 URL으로 이동후에 새버전을 다운로드 하세요: %s\n"
+
 #~ msgid ""
-#~ "When you are done with your subtitles and ready to distribute them, "
-#~ "remember: say no to MP4, OGM or AVI. Matroska is your friend."
+#~ "Please select the formats you want to\n"
+#~ "associate with Aegisub:"
+#~ msgstr "Aegisub 프로그램에 연결할 형식을 선택:"
+
+#~ msgid "Please wait, caching fonts..."
+#~ msgstr "글씨체 캐싱중..."
+
+#~ msgid "Possible error parsing source line"
+#~ msgstr "원본 라인 분석중 사소한 오류 발생"
+
+#~ msgid "Press Key"
+#~ msgstr "키 누름"
+
+#, c-format
+#~ msgid "Press key to bind to \"%s\" or Esc to cancel."
 #~ msgstr ""
-#~ "자막이 완료가 되어 배포할 준비가 되었을때 기억하세요: MP4 나 OGM 또는 AVI "
-#~ "아니고  Matroska(MKV) 입니다."
+#~ "키를 눌러 \"%s\"을(를) 지정할 수 있습니다.\n"
+#~ "취소할려면 ESC 키를 누르십시오."
+
+#~ msgid "Reading into RAM"
+#~ msgstr "다음 램에서 읽는중"
+
+#~ msgid "Reading keyframe and timecode data from Matroska file."
+#~ msgstr "Matroska 파일에서 키 프레임과 타임코드 데이터 읽어오는중"
+
+#~ msgid "Reading keyframes from video"
+#~ msgstr "비디오에서 키프레임 읽어오는중"
+
+#~ msgid "Realtime"
+#~ msgstr "실시간"
+
+#, c-format
+#~ msgid "Reloading %s because the file on disk (%s) changed."
+#~ msgstr "디스크에 파일(%s)이 변경되어 %s 리로딩중입니다."
+
+#~ msgid ""
+#~ "Removes all but the absolutely required fields from the Script Info "
+#~ "section. You might want to run this on files that you plan to distribute "
+#~ "in original form."
+#~ msgstr ""
+#~ "스크립트 정보 섹션에서 필수적으로 요구되는 필드를 제외하고 모두 제거하세"
+#~ "요. 이 스크립트를 배포하다."
+
+#~ msgid "Replace All"
+#~ msgstr "모두 바꾸기"
+
+#~ msgid "Replace override tags with: "
+#~ msgstr "태그를 덮어쓰기 해서 바꾸기:"
+
+#~ msgid "Replace timecodes?"
+#~ msgstr "타임코드를 바꿀까요?"
+
+#~ msgid "Resource files distributed with Aegisub"
+#~ msgstr "리소스 파일이 보내졌습니다."
+
+#~ msgid "Restart Aegisub"
+#~ msgstr "Aegisub 다시 시작"
+
+#~ msgid "SVN hosting by:"
+#~ msgstr "자유 소프트웨어 버전 관리 시스템( Subversion , SVN ) 사이트:"
+
+#~ msgid "Save Subtitles Alt"
+#~ msgstr "자막 저장"
+
+#~ msgid "Save before continuing?"
+#~ msgstr "시작하기전에 저장하겠습니까?"
+
+#~ msgid "Save config.dat locally"
+#~ msgstr "config.dat에 설정 정보 저장"
+
+#~ msgid "Save subtitles"
+#~ msgstr "자막저장"
+
+#~ msgid "Saves subtitles"
+#~ msgstr "자막을 저장하다"
+
+#~ msgid "Saving changes"
+#~ msgstr "변경 내용 저장중"
+
+#~ msgid "Scanning file for fonts..."
+#~ msgstr "자막내 글꼴 검색중..."
+
+#~ msgid "Script completed"
+#~ msgstr "스크립트 완료"
+
+#~ msgid "Seek bar"
+#~ msgstr "탐색바"
+
+#~ msgid "Select all"
+#~ msgstr "모두 선택"
+
+#~ msgid "Select source text first."
+#~ msgstr "원본 첫 라인 선택합니다. "
+
+#~ msgid "Selection background - modified"
+#~ msgstr "선택 배경색 - 수정됨"
+
+#~ msgid "Set End to Video"
+#~ msgstr "[비디오] 종료 설정"
+
+#~ msgid "Set Hotkey..."
+#~ msgstr "바로 가기 키 설정..."
+
+#~ msgid "Set Start to Video"
+#~ msgstr "[비디오] 시작 설정"
+
+#~ msgid "Set opacity, from 0 (opaque) to 255 (transparent)"
+#~ msgstr "불투명도 설정, 0 ( 불투명 )에서 ~ 255 ( 투명 )까지"
+
+#~ msgid "Shift by Current Time"
+#~ msgstr "[비디오] 현재 시간으로 이동"
+
+#~ msgid "Shift selected subtitles so first selected starts at this frame"
+#~ msgstr "먼저 이 프레임의 시작을 선택하고 선택된 자막을 이동"
+
+#~ msgid "Shift subtitles to frame"
+#~ msgstr "자막 프레임 이동"
+
+#, fuzzy
+#~ msgid "Show Original"
+#~ msgstr "원본"
+
+#~ msgid "Show Splash Screen"
+#~ msgstr "시작 화면 표시"
+
+#~ msgid "Show Tip of the Day"
+#~ msgstr "오늘의 조언 표시"
+
+#~ msgid "Snap selected subtitles so they match current scene start/end"
+#~ msgstr "현재 장면의 시작/끝에 알맞게 선택된 자막을 맞추다. "
+
+#~ msgid "Snap subtitles to scene"
+#~ msgstr "장면에 자막 맞추기"
+
+#~ msgid "Snap to adjacent lines"
+#~ msgstr "인접한 라인들 맞춤"
+
+#~ msgid "Sort by Time"
+#~ msgstr "시간 정렬"
+
+#~ msgid "Source Style"
+#~ msgstr "원본 스타일"
+
+#~ msgid "Spectrum cutoff"
+#~ msgstr "스펙트럼 정지"
+
+#~ msgid "Split"
+#~ msgstr "분할 작업"
+
+#~ msgid "Split (by karaoke)"
+#~ msgstr "분할(가라오케)"
+
+#~ msgid "Startup"
+#~ msgstr "Aegisub 시작시 작동 설정"
+
+#~ msgid "Stop (%KEY%)"
+#~ msgstr "정지 (%KEY%)"
+
+#~ msgid "Style name."
+#~ msgstr "스타일 이름"
+
+#~ msgid ""
+#~ "Styles can be stored in different storages, so that you can keep your "
+#~ "projects organized."
+#~ msgstr ""
+#~ "계획된 프로젝트를 보존하기 위해서 스타일을 다른 저장 공간에 저장할 수 있습"
+#~ "니다."
+
+#~ msgid "Styling Assistant Accept"
+#~ msgstr "[스타일 도우미] 적용"
+
+#~ msgid "Styling Assistant Next"
+#~ msgstr "[스타일 도우미] 다음 "
+
+#~ msgid "Styling Assistant Play Audio"
+#~ msgstr "[스타일 도우미] 오디오 재생"
+
+#~ msgid "Styling Assistant Play Video"
+#~ msgstr "[스타일 도우미] 비디오 재생"
+
+#~ msgid "Styling Assistant Prev"
+#~ msgstr "[스타일 도우미] 이전"
+
+#~ msgid "Styling Assistant Preview"
+#~ msgstr "[스타일 도우미]미리 보기"
+
+#~ msgid "Styling assistant"
+#~ msgstr "스타일 도우미"
+
+#~ msgid "Syllable text"
+#~ msgstr "음절 텍스트"
+
+#~ msgid "Syntax highlighter - "
+#~ msgstr "자막 태그 하이라이터  - "
 
 #~ msgid ""
 #~ "The fonts collector is one of the most useful features, which resumes the "
@@ -7599,6 +7952,27 @@ msgstr "맞춤법 검사기"
 #~ "글꼴 셀렉터의 가장 유용한 기능은 대략 몇번 클릭으로 글꼴 찾는 지루한 작업"
 #~ "을 반복하는걸 해결습니다."
 
+#, c-format
+#~ msgid ""
+#~ "The hotkey %s is already mapped to %s. If you proceed, that hotkey will "
+#~ "be cleared. Proceed?"
+#~ msgstr ""
+#~ "바로 가기 키 \"%s\"은(는) 이미 \"%s\"에 연결되어 있습니다.\n"
+#~ "\n"
+#~ "진행하면 기존에 연결된 바로 가기 키는 지워집니다.진행하시겠습니까?"
+
+#~ msgid ""
+#~ "The source line contains text before the first karaoke block.\n"
+#~ "Do you want to carry it over to the destination?\n"
+#~ "It will be ignored otherwise."
+#~ msgstr ""
+#~ "원본 라인은 첫번째 카라오케 블록 이전에 텍스트를 포함있습니다.\n"
+#~ "텍스트를 이동해서 대상에 덮어쓸까요?\n"
+#~ "만약 그렇지 않으면 무시하십시오."
+
+#~ msgid "The starting point is beyond the length of the audio loaded."
+#~ msgstr "시작점은 로드된 오디오의 길이 넘어에 있다."
+
 #~ msgid ""
 #~ "The styling assistant is a practical way to set styles to each line, when "
 #~ "each actor has a different style assigned to it."
@@ -7606,20 +7980,8 @@ msgstr "맞춤법 검사기"
 #~ "스타일 도우미는 각 라인의 스타일 설정을 실용적인 방법으로 각 작업자가 가지"
 #~ "고 있는 다른 스타일을 배정한다."
 
-#~ msgid ""
-#~ "Aegisub has several features to make sure you will never lose your work. "
-#~ "It will periodically save your subtitles to autosave folder, and will "
-#~ "create a copy of subs whenever you open them, to autoback folder. Also, "
-#~ "if it crashes, it will attempt to save a restore file."
-#~ msgstr ""
-#~ "Aegisub 프로그램은 작업을 잃어버리지 않게 하는 몇가지 기능을 가지고 있습니"
-#~ "다.자동 저장 기능은 정기적으로 작업중인 자막 파일을 정기적으로 자동 저장 "
-#~ "폴더에 저장합니다, 자동 백업 기능은 자막 파일을 열 때 언제나 자막 파일을 "
-#~ "복사해서 자동백업 폴더에 저장합니다.또한 자동 복원 기능은 Aegisub 프로그램"
-#~ "이 충돌 하면 작업중인 자막 파일을 복원 파일에 저장하도록 시도합니다."
-
-#~ msgid "DON'T PANIC!"
-#~ msgstr "허둥대지 마라, 침착해라!"
+#~ msgid "There is no audio to save."
+#~ msgstr "저장할 오디오가 없다."
 
 #~ msgid ""
 #~ "There is no reason to use the SSA format (as opposed to ASS). ASS is very "
@@ -7633,6 +7995,72 @@ msgstr "맞춤법 검사기"
 #~ "지만 그렇지만 확실히 덮어쓰기 태그는 ASS 형식만 지원한다.VS필터/Textsub 지"
 #~ "원으로 덮어쓰기 태그는 SSA형식의 파일에서만 작동한다."
 
+#~ msgid "This build of Aegisub uses the following C/C++ libraries:\n"
+#~ msgstr "Aegisub는  C/C++  libraries를 사용해서 만들었습니다:\n"
+
+#~ msgid "Thread priority"
+#~ msgstr "스레드 우선 순위"
+
+#~ msgid "Threshold:"
+#~ msgstr "스레시홀드:"
+
+#~ msgid "Time"
+#~ msgstr "시간"
+
+#~ msgid "Toggle realtime display of changes."
+#~ msgstr "변경 내용의 실시간 표시 토글"
+
+#~ msgid "Trace: "
+#~ msgstr "추적: "
+
+#~ msgid "Translation Assistant Accept"
+#~ msgstr "[번역 도우미] 적용"
+
+#~ msgid "Translation Assistant Insert Original"
+#~ msgstr "[번역 도우미] 원본 삽입"
+
+#~ msgid "Translation Assistant Next"
+#~ msgstr "[번역 도우미] 다음"
+
+#~ msgid "Translation Assistant Play Audio"
+#~ msgstr "[번역 도우미]  오디오 재생"
+
+#~ msgid "Translation Assistant Play Video"
+#~ msgstr "[번역 도우미] 비디오 재생"
+
+#~ msgid "Translation Assistant Prev"
+#~ msgstr "[번역 도우미] 이전"
+
+#~ msgid "Translation Assistant Preview"
+#~ msgstr "[번역 도우미] 미리보기"
+
+#~ msgid ""
+#~ "Tried to register PerlConsole, but support for it was disabled in this "
+#~ "version."
+#~ msgstr ""
+#~ "PerlConsole에 등록을 시도하다, 하지만 이 버전에서는 PerlConsole 등록 지원"
+#~ "를 사용하지 않습니다."
+
+#~ msgid ""
+#~ "Try the spectrum mode for the audio display, it can make it much easier "
+#~ "to spot where the important points in the audio are."
+#~ msgstr ""
+#~ "오디오 표시에 스펙트럼 모드를 시도하다, 스펙트럼 모드는 오디오에 중요한 포"
+#~ "인트를 매우 쉽게 만들 수 있다."
+
+#~ msgid ""
+#~ "Unable to add the automation include path(s) to @INC: the script's code "
+#~ "may not compile or execute properly."
+#~ msgstr ""
+#~ "@INC 경로를 포함하고 있는 자동화 스크립트를 추가할 수 없습니다: 이 스크립"
+#~ "트 코드는 컴파일 되지 않았거나 실행할 수 없습니다."
+
+#~ msgid "Unknown"
+#~ msgstr "알 수 없음 "
+
+#~ msgid "Update Video (slow)"
+#~ msgstr "업데이트 비디오(느림)"
+
 #~ msgid ""
 #~ "Use keyboard shortcuts! They make your life easier, for example, Ctrl"
 #~ "+Enter updates changes on current line without going to next. Check the "
@@ -7642,26 +8070,55 @@ msgstr "맞춤법 검사기"
 #~ "Ctrl+Enter 키는 현재 라인의 변경 내용을 업데이트하고 없으면 다음 라인으로 "
 #~ "이동합니다. 모든 목록에 매뉴얼 클릭하세요."
 
-#~ msgid ""
-#~ "Styles can be stored in different storages, so that you can keep your "
-#~ "projects organized."
-#~ msgstr ""
-#~ "계획된 프로젝트를 보존하기 위해서 스타일을 다른 저장 공간에 저장할 수 있습"
-#~ "니다."
+#~ msgid "Video Jump"
+#~ msgstr "[비디오] 이동"
+
+#~ msgid "Video global focus seek"
+#~ msgstr "[비디오] 글로벌 포커스 탐색"
+
+#~ msgid "Video global play"
+#~ msgstr "[비디오] 전체 재생"
+
+#~ msgid "Video global prev frame"
+#~ msgstr "[비디오] 글로벌 이전 프레임"
+
+#~ msgid "Video global zoom in"
+#~ msgstr "[비디오] 글로벌 화면 확대"
+
+#~ msgid "Video global zoom out"
+#~ msgstr "[비디오] 글로벌 화면 축소"
+
+#~ msgid "Visit Aegisub's forums"
+#~ msgstr "Aegisub 포럼 사이트로 이동"
+
+#~ msgid "Warning"
+#~ msgstr "경고"
+
+#~ msgid "Warning: "
+#~ msgstr "경고: "
+
+#~ msgid "Waveform - inactive"
+#~ msgstr "웨이브폼 - 비활성"
+
+#~ msgid "Waveform - modified"
+#~ msgstr "웨이브폼 - 수정됨"
+
+#~ msgid "Waveform - selection"
+#~ msgstr "웨이브폼 - 선택영역"
 
 #~ msgid ""
-#~ "You can easily translate subtitle files using the translation assistant."
-#~ msgstr "번역 도우미를 사용해서 자막 파일 쉽게 번역할 수 있습니다."
+#~ "When you are done with your subtitles and ready to distribute them, "
+#~ "remember: say no to MP4, OGM or AVI. Matroska is your friend."
+#~ msgstr ""
+#~ "자막이 완료가 되어 배포할 준비가 되었을때 기억하세요: MP4 나 OGM 또는 AVI "
+#~ "아니고  Matroska(MKV) 입니다."
 
 #~ msgid ""
-#~ "Aegisub can export subtitles to many different formats, character "
-#~ "encodings, and even compensate Variable Frame Rate so you can hardsub "
-#~ "them - it's all in the Export option in File menu."
+#~ "You already have timecodes loaded. Replace them with the timecodes from "
+#~ "the Matroska file?"
 #~ msgstr ""
-#~ "Aegusub 프로그램은 매우 다양한 형식 과 언어 코드 인코딩으로 자막 내보기를 "
-#~ "할 수 있으며 , 심지어 변하기 쉬운 재생 속도를 보정할 수 있으며 또한  어려"
-#~ "운 자막에서도 할 수 있습니다- Aegisub 프로그램의 파일 메뉴 내보내기 항목에"
-#~ "서 모두할 수 있습니다."
+#~ "로드된 타임코드를 이미 가지고 있습니다. Matroska 파일의 타임코드와 이미 로"
+#~ "드된 타임코드를 바꾸시겠습니까?"
 
 #~ msgid ""
 #~ "You already have timecodes loaded. Would you like to replace them with "
@@ -7670,14 +8127,9 @@ msgstr "맞춤법 검사기"
 #~ "타임코드가 이미 로드 되었습니다.비디오 파일에서 타임코드를 바꾸시겠습니"
 #~ "까 ?"
 
-#~ msgid "Invalid fps or length value"
-#~ msgstr "잘못된 재생 속도 또는 길이 값"
-
-#~ msgid "History"
-#~ msgstr "사용 기록"
-
-#~ msgid "Warning"
-#~ msgstr "경고"
+#~ msgid ""
+#~ "You can easily translate subtitle files using the translation assistant."
+#~ msgstr "번역 도우미를 사용해서 자막 파일 쉽게 번역할 수 있습니다."
 
 #~ msgid ""
 #~ "You have chosen to use the \"Comic Sans\" font. As the programmer and a "
@@ -7693,532 +8145,43 @@ msgstr "맞춤법 검사기"
 #~ "이상은 사용하지 말아주세요.\n"
 #~ "감사합니다."
 
-#~ msgid "No subtitle providers available. Cannot preview subs."
-#~ msgstr "이용 가능한 자막이 없어 자막 미리 보기할 수 없습니다."
-
-#~ msgid "Set opacity, from 0 (opaque) to 255 (transparent)"
-#~ msgstr "불투명도 설정, 0 ( 불투명 )에서 ~ 255 ( 투명 )까지"
-
-#~ msgid "Style name."
-#~ msgstr "스타일 이름"
-
-#~ msgid "Trace: "
-#~ msgstr "추적: "
-
-#~ msgid "Debug: "
-#~ msgstr "디버그: "
-
-#~ msgid "Hint: "
-#~ msgstr "참조: "
-
-#~ msgid "Warning: "
-#~ msgstr "경고: "
-
-#~ msgid "Error: "
-#~ msgstr "오류: "
-
-#~ msgid "Fatal error: "
-#~ msgstr "심각한 오류: "
-
-#~ msgid ""
-#~ "Tried to register PerlConsole, but support for it was disabled in this "
-#~ "version."
-#~ msgstr ""
-#~ "PerlConsole에 등록을 시도하다, 하지만 이 버전에서는 PerlConsole 등록 지원"
-#~ "를 사용하지 않습니다."
-
-#~ msgid "Not enough parameters for Aegisub::text_extents()"
-#~ msgstr "Aegisub에 매개변수가 부족합니다::text_extents()"
-
-#~ msgid "Reading into RAM"
-#~ msgstr "다음 램에서 읽는중"
-
-#~ msgid "From Video"
-#~ msgstr "비디오에서"
-
 #~ msgid "You have timecodes loaded currently. Would you like to unload them?"
 #~ msgstr ""
 #~ "현재 로드된 타임코드를 가지고 있습니다. 타임코드 파일을 언로드 하시겠습니"
 #~ "까?"
 
-#~ msgid "Save before continuing?"
-#~ msgstr "시작하기전에 저장하겠습니까?"
-
-#~ msgid "Visit Aegisub's forums"
-#~ msgstr "Aegisub 포럼 사이트로 이동"
-
-#~ msgid "&Forums"
-#~ msgstr "포럼(&F)"
-
-#~ msgid "Resource files distributed with Aegisub"
-#~ msgstr "리소스 파일이 보내졌습니다."
-
-#~ msgid "&Resource Files..."
-#~ msgstr "리소스 파일...(&R)"
-
-#~ msgid "Open log window"
-#~ msgstr "로그창 열기"
-
-#~ msgid "Associate file types with Aegisub"
-#~ msgstr "Aegisub 프로그림과 파일 형식를 연결하다"
-
-#~ msgid "&Associations..."
-#~ msgstr "연결(&A)"
-
-#~ msgid "&Automation"
-#~ msgstr "자동화(&A)"
-
-#~ msgid "Sort by Time"
-#~ msgstr "시간 정렬"
-
-#~ msgid "&Duplicate and Shift by 1 Frame"
-#~ msgstr "한개 프레임 이동후 복제(&D) "
-
-#~ msgid "Changes resolution and modifies subtitles to conform to change"
-#~ msgstr "변경된 해상도와 수정된 자막이 맞는지 확인하고 바꾸기"
-
-#~ msgid "Copy subtitles"
-#~ msgstr "자막 복사"
-
-#~ msgid "Saves subtitles"
-#~ msgstr "자막을 저장하다"
-
-#~ msgid "Open Spell checker"
-#~ msgstr "맞춤법 검사기 열기"
-
-#~ msgid "Open Kanji Timer dialog"
-#~ msgstr "Kanji 타이머 dialog 열기"
-
-#~ msgid "Open Timing Post-processor dialog"
-#~ msgstr "타이밍 포스트-프로세서 대화 상자 열기"
-
-#~ msgid "Open Translation Assistant"
-#~ msgstr "번역 도우미 열기"
-
-#~ msgid "Open Styling Assistant"
-#~ msgstr "스타일 도우미 열기"
-
-#~ msgid "Open Shift Times Dialogue"
-#~ msgstr "Times Dialogue 이동 열기"
-
-#~ msgid "Open Fonts Collector"
-#~ msgstr "글꼴 셀렉터 열기"
-
-#~ msgid "Open Attachment List"
-#~ msgstr "첨부 파일 목록 열기"
-
-#~ msgid "Open Styles Manager"
-#~ msgstr "스타일 메니저 열기 "
-
-#~ msgid "Shift selected subtitles so first selected starts at this frame"
-#~ msgstr "먼저 이 프레임의 시작을 선택하고 선택된 자막을 이동"
-
-#~ msgid "Shift subtitles to frame"
-#~ msgstr "자막 프레임 이동"
-
-#~ msgid "Snap selected subtitles so they match current scene start/end"
-#~ msgstr "현재 장면의 시작/끝에 알맞게 선택된 자막을 맞추다. "
-
-#~ msgid "Snap subtitles to scene"
-#~ msgstr "장면에 자막 맞추기"
-
-#~ msgid "Jump video to end"
-#~ msgstr "비디오 종료로 이동"
-
-#~ msgid "Jump video to time/frame"
-#~ msgstr "비디오의 시간/프레임 이동"
-
-#~ msgid "Jump To..."
-#~ msgstr "이동하기"
-
-#~ msgid "Save subtitles"
-#~ msgstr "자막저장"
-
-#~ msgid "Commit?"
-#~ msgstr "적용하시겠습니까?"
-
-#~ msgid ""
-#~ "Do you want to commit your changes? If you choose No, they will be "
-#~ "discarded."
-#~ msgstr ""
-#~ "변경 내용을 적용하시겠습니까? No를 선택하시면 변경 내용이 취소됩니다."
-
-#~ msgid "Please wait, caching fonts..."
-#~ msgstr "글씨체 캐싱중..."
-
-#~ msgid "Current line: ?"
-#~ msgstr "현재 라인:?"
-
-#~ msgid "Collision: "
-#~ msgstr "충돌:"
-
-#~ msgid ""
-#~ "Invalid resolution: destination resolution cannot be 0 on either "
-#~ "dimension."
-#~ msgstr ""
-#~ "잘못된 해상도: 대상의 해상도는 가로 또는 세로이든지 \"0\"이 될 수 없습니"
-#~ "다."
-
-#~ msgid "Change aspect ratio"
-#~ msgstr "비디오의 가로 세로의 비 바꾸기"
-
-#, c-format
-#~ msgid ""
-#~ "An Automation script failed to load. File name: '%s', error reported:"
-#~ msgstr ""
-#~ "자동화 스크립트 로드가 실패했습니다. 파일 이름: '%s', 오류를 보고하다:"
-
-#~ msgid "Script completed"
-#~ msgstr "스크립트 완료"
-
-#~ msgid "Saving changes"
-#~ msgstr "변경 내용 저장중"
-
-#, c-format
-#~ msgid "Reloading %s because the file on disk (%s) changed."
-#~ msgstr "디스크에 파일(%s)이 변경되어 %s 리로딩중입니다."
-
-#~ msgid ""
-#~ "Unable to add the automation include path(s) to @INC: the script's code "
-#~ "may not compile or execute properly."
-#~ msgstr ""
-#~ "@INC 경로를 포함하고 있는 자동화 스크립트를 추가할 수 없습니다: 이 스크립"
-#~ "트 코드는 컴파일 되지 않았거나 실행할 수 없습니다."
-
-#~ msgid "Perl script"
-#~ msgstr "펄 스크립트"
-
-#~ msgid ""
-#~ "Removes all but the absolutely required fields from the Script Info "
-#~ "section. You might want to run this on files that you plan to distribute "
-#~ "in original form."
-#~ msgstr ""
-#~ "스크립트 정보 섹션에서 필수적으로 요구되는 필드를 제외하고 모두 제거하세"
-#~ "요. 이 스크립트를 배포하다."
-
-#~ msgid "Clean Script Info"
-#~ msgstr "스크립트 정보 지우기"
-
-#~ msgid "Update Video (slow)"
-#~ msgstr "업데이트 비디오(느림)"
-
-#~ msgid "Replace timecodes?"
-#~ msgstr "타임코드를 바꿀까요?"
-
-#~ msgid ""
-#~ "You already have timecodes loaded. Replace them with the timecodes from "
-#~ "the Matroska file?"
-#~ msgstr ""
-#~ "로드된 타임코드를 이미 가지고 있습니다. Matroska 파일의 타임코드와 이미 로"
-#~ "드된 타임코드를 바꾸시겠습니까?"
-
-#~ msgid "Unknown"
-#~ msgstr "알 수 없음 "
-
-#~ msgid "editing"
-#~ msgstr "편집"
-
-#~ msgid "MarginV change"
-#~ msgstr "수직 여백 바꾸기"
-
-#~ msgid "MarginR change"
-#~ msgstr "오른쪽 여백 바꾸기"
-
-#~ msgid "Time"
-#~ msgstr "시간"
-
-#~ msgid "Commits the text (Enter). Hold Ctrl to stay in line (%KEY%)."
-#~ msgstr "Commits the text (Enter). Hold Ctrl to stay in line (%KEY%)."
-
-#~ msgid "Font Face Name"
-#~ msgstr "글꼴 이름"
-
-#~ msgid "delete"
-#~ msgstr "삭제"
-
-#~ msgid "load"
-#~ msgstr "로드"
-
-#~ msgid "Couldn't allocate memory."
-#~ msgstr "메모리를 할당할 수 없습니다."
-
-#~ msgid "There is no audio to save."
-#~ msgstr "저장할 오디오가 없다."
-
-#~ msgid "The starting point is beyond the length of the audio loaded."
-#~ msgstr "시작점은 로드된 오디오의 길이 넘어에 있다."
-
-#~ msgid "Paste lines from clipboard"
-#~ msgstr "클립보드에서 라인 불여넣기"
-
-#~ msgid "Cuts selected lines to clipboard"
-#~ msgstr "클립보드에 선택된 라인 자르기"
-
-#~ msgid "C&ut"
-#~ msgstr "자르기(&U)"
-
-#~ msgid ""
-#~ "Joins selected lines in a single one, making each line into a karaoke "
-#~ "syllable"
-#~ msgstr ""
-#~ "선택된 라인을 하나의 라인으로 연결, 각각의 라인에 가라오케 음절 만들다."
-
-#~ msgid "&Swap"
-#~ msgstr "교체(&S)"
-
-#~ msgid "Split (by karaoke)"
-#~ msgstr "분할(가라오케)"
-
-#~ msgid "Duplicate lines and shift by one frame"
-#~ msgstr "한개 프레임 이동후 라인 복제"
-
-#~ msgid "&Duplicate and shift by 1 frame"
-#~ msgstr "한 프레임 이동후 복제(&D)"
-
-#~ msgid "&Duplicate"
-#~ msgstr "복제(&D)"
-
-#~ msgid "Dest Style"
-#~ msgstr "대상 스타일"
-
-#~ msgid "Source Style"
-#~ msgstr "원본 스타일"
-
-#~ msgid "    Subtitle format handler: "
-#~ msgstr "    자막 형식 처리기: "
-
-#~ msgid ""
-#~ "Configuration file is either invalid or corrupt. The current file will be "
-#~ "backed up and replaced with a default file."
-#~ msgstr ""
-#~ "구성파일이 잘못되거나 오류입니다.현재 파일을 백업하거나 기본구성파일로 바"
-#~ "꾸세요."
-
-#~ msgid "Reading keyframe and timecode data from Matroska file."
-#~ msgstr "Matroska 파일에서 키 프레임과 타임코드 데이터 읽어오는중"
-
-#~ msgid "Replace All"
-#~ msgstr "모두 바꾸기"
-
-#~ msgid "replace with"
-#~ msgstr "바꿀 내용"
-
-#~ msgid "original"
-#~ msgstr "원본"
+#~ msgid "Zip Archives (*.zip)|*.zip"
+#~ msgstr "Zip 압축 파일 (*.zip)|*.zip"
+
+#~ msgid "Zoom 50%"
+#~ msgstr "[비디오] 50% 표시"
 
 #~ msgid "audio"
 #~ msgstr "오디오"
 
-#~ msgid "video"
-#~ msgstr "비디오"
+#~ msgid "delete"
+#~ msgstr "삭제"
 
-#~ msgid "Hotkey conflict"
-#~ msgstr "바로 가기 키 충돌"
+#~ msgid "editing"
+#~ msgstr "편집"
 
-#, c-format
-#~ msgid ""
-#~ "The hotkey %s is already mapped to %s. If you proceed, that hotkey will "
-#~ "be cleared. Proceed?"
-#~ msgstr ""
-#~ "바로 가기 키 \"%s\"은(는) 이미 \"%s\"에 연결되어 있습니다.\n"
-#~ "\n"
-#~ "진행하면 기존에 연결된 바로 가기 키는 지워집니다.진행하시겠습니까?"
+#~ msgid "load"
+#~ msgstr "로드"
 
-#, c-format
-#~ msgid "Press key to bind to \"%s\" or Esc to cancel."
-#~ msgstr ""
-#~ "키를 눌러 \"%s\"을(를) 지정할 수 있습니다.\n"
-#~ "취소할려면 ESC 키를 누르십시오."
+#~ msgid "original"
+#~ msgstr "원본"
 
-#~ msgid "Press Key"
-#~ msgstr "키 누름"
-
-#~ msgid "Restart Aegisub"
-#~ msgstr "Aegisub 다시 시작"
-
-#~ msgid "Aegisub must restart for the changes to take effect. Restart now?"
-#~ msgstr ""
-#~ "변경 사항을 적용할려면 Aegisub를 재시작해야 합니다.다시 시작하겠습니까?"
-
-#~ msgid "File save/load"
-#~ msgstr "파일 저장/로드"
-
-#~ msgid "Clear Hotkey"
-#~ msgstr "바로 가기 키 지우기"
-
-#~ msgid "Set Hotkey..."
-#~ msgstr "바로 가기 키 설정..."
-
-#~ msgid "Key"
-#~ msgstr "키"
-
-#~ msgid "Function"
-#~ msgstr "기능"
-
-#~ msgid "Thread priority"
-#~ msgstr "스레드 우선 순위"
-
-#~ msgid "Lowest"
-#~ msgstr "가장 낮음 "
-
-#~ msgid "Below Normal (recommended)"
-#~ msgstr "기준 이하 ( 추천 )"
-
-#~ msgid "Spectrum cutoff"
-#~ msgstr "스펙트럼 정지"
-
-#~ msgid "HD cache name"
-#~ msgstr "HD 캐쉬 이름"
-
-#~ msgid "Syllable text"
-#~ msgstr "음절 텍스트"
-
-#~ msgid "Waveform - inactive"
-#~ msgstr "웨이브폼 - 비활성"
-
-#~ msgid "Waveform - modified"
-#~ msgstr "웨이브폼 - 수정됨"
-
-#~ msgid "Waveform - selection"
-#~ msgstr "웨이브폼 - 선택영역"
-
-#~ msgid "Selection background - modified"
-#~ msgstr "선택 배경색 - 수정됨"
-
-#~ msgid "Draw keyframes"
-#~ msgstr "키 프레임 표시"
-
-#~ msgid "Draw timeline"
-#~ msgstr "시간라인 표시"
-
-#~ msgid "Draw selection background"
-#~ msgstr "선택 배경 표시 "
-
-#~ msgid "Draw secondary lines"
-#~ msgstr "보조 라인 표시"
-
-#~ msgid "Snap to adjacent lines"
-#~ msgstr "인접한 라인들 맞춤"
-
-#~ msgid "Grab times from line upon selection"
-#~ msgstr "선택 영역에 라인과 시간을 일치"
-
-#~ msgid "Advanced - EXPERT USERS ONLY"
-#~ msgstr "고급 - 고급 사용자 설정"
-
-#~ msgid "Replace override tags with: "
-#~ msgstr "태그를 덮어쓰기 해서 바꾸기:"
-
-#~ msgid "Header"
-#~ msgstr "머리글"
-
-#~ msgid "Highlight subtitles that are currently visible in video"
-#~ msgstr "하이라이트 자막은 비디오에 일반적으로 시각적인 효과를 준다."
-
-#~ msgid "Allow grid to take focus"
-#~ msgstr "그리드는 집중하는데 효과적이다."
-
-#~ msgid "Font: "
-#~ msgstr "글꼴:"
-
-#~ msgid "Syntax highlighter - "
-#~ msgstr "자막 태그 하이라이터  - "
-
-#~ msgid "Modified Background"
-#~ msgstr "수정된 배경색"
-
-#~ msgid "Path to dictionary files:"
-#~ msgstr "사전 파일 경로:"
-
-#~ msgid "Link commiting of times"
-#~ msgstr "시작/종료 시간을 연결하다"
-
-#~ msgid "Crash recovery path:"
-#~ msgstr "충돌시 복구할 파일 경로:"
-
-#~ msgid "Auto-backup path:"
-#~ msgstr "자동 백업 경로:"
-
-#~ msgid "Auto-save path:"
-#~ msgstr "자동 저장 경로:"
+#~ msgid "replace with"
+#~ msgstr "바꿀 내용"
 
 #~ msgid "seconds."
 #~ msgstr "초."
 
-#~ msgid "Miscellanea"
-#~ msgstr "기타"
-
-#~ msgid "File paths"
-#~ msgstr "파일 위치"
-
-#~ msgid "Auto-save"
-#~ msgstr "자동 저장"
-
-#~ msgid "Maximum recent replace strings"
-#~ msgstr "최근 바꾼 문자열에 최대 이력"
-
-#~ msgid "Maximum recent find strings"
-#~ msgstr "최근 찾은 문자열에 최대 이력"
-
-#~ msgid "Maximum recent audio files"
-#~ msgstr "최근 사용한 오디오 파일에 최대 이력"
-
-#~ msgid "Maximum recent video files"
-#~ msgstr "최근 사용한 비디오 파일에 최대 이력"
-
-#~ msgid "Maximum recent subtitle files"
-#~ msgstr "최근 사용한 자막 파일에 최대 이력"
-
-#~ msgid "Maximum recent timecode files"
-#~ msgstr "최근 사용한 타임코드에 최대 이력"
-
-#~ msgid "Limits for levels and recent files"
-#~ msgstr "최근 사용한 파일의 최대 이력"
-
-#~ msgid "Check File Associations on Start"
-#~ msgstr "실행시 파일 확장자 확인"
-
-#~ msgid "Show Splash Screen"
-#~ msgstr "시작 화면 표시"
-
-#~ msgid "Startup"
-#~ msgstr "Aegisub 시작시 작동 설정"
-
-#~ msgid " styles?"
-#~ msgstr "스타일?"
-
-#~ msgid "Are you sure you want to delete these "
-#~ msgstr "선택된것을 삭제할까요?"
-
-#~ msgid "Copy of "
-#~ msgstr "복사 내용"
+#~ msgid "show full tags."
+#~ msgstr "모든 태그 표시."
 
 #~ msgid "style changes"
 #~ msgstr "스타일 바꾸기"
 
-#~ msgid "Enable preview (slow)"
-#~ msgstr "미리 보기 사용(느림)"
-
-#~ msgid "Styling assistant"
-#~ msgstr "스타일 도우미"
-
-#~ msgid "Reading keyframes from video"
-#~ msgstr "비디오에서 키프레임 읽어오는중"
-
-#~ msgid "Help"
-#~ msgstr "도움말"
-
-#~ msgid "Toggle realtime display of changes."
-#~ msgstr "변경 내용의 실시간 표시 토글"
-
-#~ msgid "Realtime"
-#~ msgstr "실시간"
-
-#~ msgid "Threshold:"
-#~ msgstr "스레시홀드:"
-
-#~ msgid "All"
-#~ msgstr "모두"
-
-#~ msgid "Select all"
-#~ msgstr "모두 선택"
+#~ msgid "video"
+#~ msgstr "비디오"

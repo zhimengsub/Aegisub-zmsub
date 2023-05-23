@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: aegisub\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-17 13:16-0400\n"
+"POT-Creation-Date: 2023-05-14 00:32+0800\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Jan Ekstrom <jeebjp@gmail.com>\n"
 "Language-Team: G-MARK <http://g-mark.jpn.org/>\n"
@@ -242,6 +242,22 @@ msgstr "カラオケ タグ変更 \\ko"
 #, fuzzy
 msgid "karaoke split"
 msgstr "カラオケ タグ選択"
+
+#: ../src/audio_provider_factory.cpp:119
+msgid ""
+"Unable to create RAM audio cache: 32-bit memory limit exceeded. Fallback to "
+"hard disk cache.\n"
+"\n"
+"Possible solutions:\n"
+"- Use 64-bit version\n"
+"- Turn off cache or switch to hard disk cache in Preferences -> Advanced -> "
+"Audio -> Cache -> Cache type\n"
+"- Enable channel downmix in Preferences -> Advanced -> Audio"
+msgstr ""
+
+#: ../src/audio_provider_factory.cpp:124
+msgid "Out of Memory"
+msgstr ""
 
 #: ../src/audio_renderer_waveform.cpp:152
 msgid "Maximum"
@@ -820,7 +836,7 @@ msgid "&Automation..."
 msgstr "オートメーションマネージャー (&A)"
 
 #: ../src/command/automation.cpp:75 ../src/command/automation.cpp:87
-#: ../src/preferences.cpp:330
+#: ../src/preferences.cpp:339
 msgid "Automation"
 msgstr "オートメーション"
 
@@ -839,308 +855,308 @@ msgstr ""
 msgid "'%s' is not a valid command name"
 msgstr ""
 
-#: ../src/command/edit.cpp:134 ../src/command/edit.cpp:841
+#: ../src/command/edit.cpp:137 ../src/command/edit.cpp:925
 msgid "paste"
 msgstr "貼り付け"
 
-#: ../src/command/edit.cpp:374
+#: ../src/command/edit.cpp:380
 #, fuzzy
 msgid "set color"
 msgstr "RGB カラー"
 
-#: ../src/command/edit.cpp:388
+#: ../src/command/edit.cpp:397
 #, fuzzy
 msgid "Primary Color..."
 msgstr "プライマリ色 (文字色)"
 
-#: ../src/command/edit.cpp:389
+#: ../src/command/edit.cpp:399
 #, fuzzy
 msgid "Primary Color"
 msgstr "プライマリ色 (文字色)"
 
-#: ../src/command/edit.cpp:390
+#: ../src/command/edit.cpp:401
 msgid "Set the primary fill color (\\c) at the cursor position"
 msgstr ""
 
-#: ../src/command/edit.cpp:400
+#: ../src/command/edit.cpp:413
 #, fuzzy
 msgid "Secondary Color..."
 msgstr "セカンダリ色 (エフェクト前文字色)"
 
-#: ../src/command/edit.cpp:401
+#: ../src/command/edit.cpp:415
 #, fuzzy
 msgid "Secondary Color"
 msgstr "セカンダリ色 (エフェクト前文字色)"
 
-#: ../src/command/edit.cpp:402
+#: ../src/command/edit.cpp:417
 msgid "Set the secondary (karaoke) fill color (\\2c) at the cursor position"
 msgstr ""
 
-#: ../src/command/edit.cpp:412
+#: ../src/command/edit.cpp:429
 #, fuzzy
 msgid "Outline Color..."
 msgstr "縁取り色"
 
-#: ../src/command/edit.cpp:413
+#: ../src/command/edit.cpp:431
 #, fuzzy
 msgid "Outline Color"
 msgstr "縁取り色"
 
-#: ../src/command/edit.cpp:414
+#: ../src/command/edit.cpp:433
 msgid "Set the outline color (\\3c) at the cursor position"
 msgstr ""
 
-#: ../src/command/edit.cpp:424
+#: ../src/command/edit.cpp:445
 #, fuzzy
 msgid "Shadow Color..."
 msgstr "影色"
 
-#: ../src/command/edit.cpp:425
+#: ../src/command/edit.cpp:447
 #, fuzzy
 msgid "Shadow Color"
 msgstr "影色"
 
-#: ../src/command/edit.cpp:426
+#: ../src/command/edit.cpp:449
 msgid "Set the shadow color (\\4c) at the cursor position"
 msgstr ""
 
-#: ../src/command/edit.cpp:436 ../src/command/edit.cpp:437
+#: ../src/command/edit.cpp:461 ../src/command/edit.cpp:463
 #, fuzzy
 msgid "Toggle Bold"
 msgstr "カラオケモードのON/OFF"
 
-#: ../src/command/edit.cpp:438
+#: ../src/command/edit.cpp:465
 msgid ""
 "Toggle bold (\\b) for the current selection or at the current cursor position"
 msgstr ""
 
-#: ../src/command/edit.cpp:441
+#: ../src/command/edit.cpp:468
 msgid "toggle bold"
 msgstr ""
 
-#: ../src/command/edit.cpp:448 ../src/command/edit.cpp:449
+#: ../src/command/edit.cpp:477 ../src/command/edit.cpp:479
 #, fuzzy
 msgid "Toggle Italics"
 msgstr "斜体"
 
-#: ../src/command/edit.cpp:450
+#: ../src/command/edit.cpp:481
 msgid ""
 "Toggle italics (\\i) for the current selection or at the current cursor "
 "position"
 msgstr ""
 
-#: ../src/command/edit.cpp:453
+#: ../src/command/edit.cpp:484
 msgid "toggle italic"
 msgstr ""
 
-#: ../src/command/edit.cpp:460 ../src/command/edit.cpp:461
+#: ../src/command/edit.cpp:493 ../src/command/edit.cpp:495
 #, fuzzy
 msgid "Toggle Underline"
 msgstr "下線"
 
-#: ../src/command/edit.cpp:462
+#: ../src/command/edit.cpp:497
 msgid ""
 "Toggle underline (\\u) for the current selection or at the current cursor "
 "position"
 msgstr ""
 
-#: ../src/command/edit.cpp:465
+#: ../src/command/edit.cpp:500
 #, fuzzy
 msgid "toggle underline"
 msgstr "下線"
 
-#: ../src/command/edit.cpp:472 ../src/command/edit.cpp:473
+#: ../src/command/edit.cpp:509 ../src/command/edit.cpp:511
 #, fuzzy
 msgid "Toggle Strikeout"
 msgstr "打ち消し線"
 
-#: ../src/command/edit.cpp:474
+#: ../src/command/edit.cpp:513
 msgid ""
 "Toggle strikeout (\\s) for the current selection or at the current cursor "
 "position"
 msgstr ""
 
-#: ../src/command/edit.cpp:477
+#: ../src/command/edit.cpp:516
 #, fuzzy
 msgid "toggle strikeout"
 msgstr "打ち消し線"
 
-#: ../src/command/edit.cpp:484
+#: ../src/command/edit.cpp:525
 #, fuzzy
 msgid "Font Face..."
 msgstr "フォントを選択します"
 
-#: ../src/command/edit.cpp:485 ../src/preferences_base.cpp:251
+#: ../src/command/edit.cpp:527 ../src/preferences_base.cpp:251
 #, fuzzy
 msgid "Font Face"
 msgstr "フォントを選択します"
 
-#: ../src/command/edit.cpp:486
+#: ../src/command/edit.cpp:529
 #, fuzzy
 msgid "Select a font face and size"
 msgstr "インターフェース言語を選択"
 
-#: ../src/command/edit.cpp:513
+#: ../src/command/edit.cpp:557
 msgid "set font"
 msgstr ""
 
-#: ../src/command/edit.cpp:540
+#: ../src/command/edit.cpp:587
 #, fuzzy
 msgid "Find and R&eplace..."
 msgstr "検索と置換 (&R)"
 
-#: ../src/command/edit.cpp:541
+#: ../src/command/edit.cpp:589
 #, fuzzy
 msgid "Find and Replace"
 msgstr "検索と置換 (&R)"
 
-#: ../src/command/edit.cpp:542
+#: ../src/command/edit.cpp:591
 msgid "Find and replace words in subtitles"
 msgstr "字幕を指定した文字列で検索し、指定した文字列に置き換えます"
 
-#: ../src/command/edit.cpp:603
+#: ../src/command/edit.cpp:654
 #, fuzzy
 msgid "&Copy Lines"
 msgstr "字幕行をコピー"
 
-#: ../src/command/edit.cpp:604
+#: ../src/command/edit.cpp:656
 msgid "Copy Lines"
 msgstr "字幕行をコピー"
 
-#: ../src/command/edit.cpp:605
+#: ../src/command/edit.cpp:658
 #, fuzzy
 msgid "Copy subtitles to the clipboard"
 msgstr "映像イメージをクリップボードに取り込む (字幕付き)"
 
-#: ../src/command/edit.cpp:626
+#: ../src/command/edit.cpp:681
 #, fuzzy
 msgid "Cu&t Lines"
 msgstr "字幕行を切り取り"
 
-#: ../src/command/edit.cpp:627
+#: ../src/command/edit.cpp:683
 msgid "Cut Lines"
 msgstr "字幕行を切り取り"
 
-#: ../src/command/edit.cpp:628
+#: ../src/command/edit.cpp:685
 msgid "Cut subtitles"
 msgstr "字幕の選択行を切り取ります"
 
-#: ../src/command/edit.cpp:635
+#: ../src/command/edit.cpp:692
 #, fuzzy
 msgid "cut lines"
 msgstr "字幕行を切り取り"
 
-#: ../src/command/edit.cpp:643
+#: ../src/command/edit.cpp:702
 #, fuzzy
 msgid "De&lete Lines"
 msgstr "選択行を削除"
 
-#: ../src/command/edit.cpp:644
+#: ../src/command/edit.cpp:704
 msgid "Delete Lines"
 msgstr "選択行を削除"
 
-#: ../src/command/edit.cpp:645
+#: ../src/command/edit.cpp:706
 msgid "Delete currently selected lines"
 msgstr "選択行の字幕を削除します"
 
-#: ../src/command/edit.cpp:648
+#: ../src/command/edit.cpp:709
 #, fuzzy
 msgid "delete lines"
 msgstr "選択行を削除"
 
-#: ../src/command/edit.cpp:713
+#: ../src/command/edit.cpp:773
 #, fuzzy
 msgid "duplicate lines"
 msgstr "選択行を複製 (&D)"
 
-#: ../src/command/edit.cpp:713 ../src/command/edit.cpp:1107
+#: ../src/command/edit.cpp:773 ../src/command/edit.cpp:1204
 msgid "split"
 msgstr "分割"
 
-#: ../src/command/edit.cpp:720
+#: ../src/command/edit.cpp:781
 msgid "&Duplicate Lines"
 msgstr "選択行を複製 (&D)"
 
-#: ../src/command/edit.cpp:721
+#: ../src/command/edit.cpp:783
 #, fuzzy
 msgid "Duplicate Lines"
 msgstr "選択行を複製 (&D)"
 
-#: ../src/command/edit.cpp:722
+#: ../src/command/edit.cpp:785
 msgid "Duplicate the selected lines"
 msgstr "選択行の字幕を複製します"
 
-#: ../src/command/edit.cpp:731 ../src/command/edit.cpp:732
+#: ../src/command/edit.cpp:795 ../src/command/edit.cpp:797
 #, fuzzy
 msgid "Split lines after current frame"
 msgstr "新たな字幕行を選択行の後に挿入します"
 
-#: ../src/command/edit.cpp:733
+#: ../src/command/edit.cpp:800
 msgid ""
 "Split the current line into a line which ends on the current frame and a "
 "line which starts on the next frame"
 msgstr ""
 
-#: ../src/command/edit.cpp:743 ../src/command/edit.cpp:744
+#: ../src/command/edit.cpp:812 ../src/command/edit.cpp:814
 #, fuzzy
 msgid "Split lines before current frame"
 msgstr "新たな字幕行を選択行の前に挿入します"
 
-#: ../src/command/edit.cpp:745
+#: ../src/command/edit.cpp:817
 msgid ""
 "Split the current line into a line which ends on the previous frame and a "
 "line which starts on the current frame"
 msgstr ""
 
-#: ../src/command/edit.cpp:785
+#: ../src/command/edit.cpp:861
 msgid "As &Karaoke"
 msgstr "Karaoke モード連結 (&K)"
 
-#: ../src/command/edit.cpp:786
+#: ../src/command/edit.cpp:863
 #, fuzzy
 msgid "As Karaoke"
 msgstr "Karaoke モード連結 (&K)"
 
-#: ../src/command/edit.cpp:787
+#: ../src/command/edit.cpp:865
 #, fuzzy
 msgid "Join selected lines in a single one, as karaoke"
 msgstr ""
 "選択した複数の字幕行を、カラオケ タグを付加してひとつの字幕行に連結します"
 
-#: ../src/command/edit.cpp:790
+#: ../src/command/edit.cpp:868
 #, fuzzy
 msgid "join as karaoke"
 msgstr "Karaoke モード連結"
 
-#: ../src/command/edit.cpp:796
+#: ../src/command/edit.cpp:875
 msgid "&Concatenate"
 msgstr "単純連結 (&C)"
 
-#: ../src/command/edit.cpp:797
+#: ../src/command/edit.cpp:877
 #, fuzzy
 msgid "Concatenate"
 msgstr "単純連結 (&C)"
 
-#: ../src/command/edit.cpp:798
+#: ../src/command/edit.cpp:879
 #, fuzzy
 msgid "Join selected lines in a single one, concatenating text together"
 msgstr "選択した複数の字幕行をタイミングも文字列も連結して一つの字幕行にします"
 
-#: ../src/command/edit.cpp:801 ../src/command/edit.cpp:812
+#: ../src/command/edit.cpp:882 ../src/command/edit.cpp:896
 #, fuzzy
 msgid "join lines"
 msgstr "字幕行の連結"
 
-#: ../src/command/edit.cpp:807
+#: ../src/command/edit.cpp:889
 msgid "Keep &First"
 msgstr "前行の文字列保持で連結 (&F)"
 
-#: ../src/command/edit.cpp:808
+#: ../src/command/edit.cpp:891
 #, fuzzy
 msgid "Keep First"
 msgstr "前行の文字列保持で連結 (&F)"
 
-#: ../src/command/edit.cpp:809
+#: ../src/command/edit.cpp:893
 #, fuzzy
 msgid ""
 "Join selected lines in a single one, keeping text of first and discarding "
@@ -1149,193 +1165,193 @@ msgstr ""
 "選択した複数の字幕行から最初の行の文字列は残し、タイミングだけを連結して一つ"
 "の字幕行にする (※後の文字列は破棄)"
 
-#: ../src/command/edit.cpp:850
+#: ../src/command/edit.cpp:936
 #, fuzzy
 msgid "&Paste Lines"
 msgstr "字幕行を貼り付け"
 
-#: ../src/command/edit.cpp:851
+#: ../src/command/edit.cpp:938
 msgid "Paste Lines"
 msgstr "字幕行を貼り付け"
 
-#: ../src/command/edit.cpp:852
+#: ../src/command/edit.cpp:940
 msgid "Paste subtitles"
 msgstr "選択行の直前に貼り付けます"
 
-#: ../src/command/edit.cpp:881
+#: ../src/command/edit.cpp:970
 #, fuzzy
 msgid "Paste Lines &Over..."
 msgstr "項目を選択して貼り付け"
 
-#: ../src/command/edit.cpp:882
+#: ../src/command/edit.cpp:972
 msgid "Paste Lines Over"
 msgstr "項目を選択して貼り付け"
 
-#: ../src/command/edit.cpp:883
+#: ../src/command/edit.cpp:974
 msgid "Paste subtitles over others"
 msgstr "貼り付ける字幕の項目を選択するダイアログを開きます"
 
-#: ../src/command/edit.cpp:966
+#: ../src/command/edit.cpp:1058
 #, fuzzy
 msgid "Recom&bine Lines"
 msgstr "字幕行の再結合"
 
-#: ../src/command/edit.cpp:967
+#: ../src/command/edit.cpp:1060
 msgid "Recombine Lines"
 msgstr "字幕行の再結合"
 
-#: ../src/command/edit.cpp:968
+#: ../src/command/edit.cpp:1062
 #, fuzzy
 msgid "Recombine subtitles which have been split and merged"
 msgstr "分割され連結された字幕を再結合します"
 
-#: ../src/command/edit.cpp:1038
+#: ../src/command/edit.cpp:1132
 msgid "combining"
 msgstr "結合"
 
-#: ../src/command/edit.cpp:1044 ../src/command/edit.cpp:1045
+#: ../src/command/edit.cpp:1139 ../src/command/edit.cpp:1141
 msgid "Split Lines (by karaoke)"
 msgstr "Karaoke 字幕行の分割"
 
-#: ../src/command/edit.cpp:1046
+#: ../src/command/edit.cpp:1143
 #, fuzzy
 msgid "Use karaoke timing to split line into multiple smaller lines"
 msgstr ""
 "選択した字幕行を、カラオケ タグのタイミングを元にして複数行に分割します"
 
-#: ../src/command/edit.cpp:1080
+#: ../src/command/edit.cpp:1177
 msgid "splitting"
 msgstr "分割"
 
-#: ../src/command/edit.cpp:1112 ../src/command/edit.cpp:1113
-#: ../src/subs_edit_ctrl.cpp:416
+#: ../src/command/edit.cpp:1210 ../src/command/edit.cpp:1212
+#: ../src/subs_edit_ctrl.cpp:161 ../src/subs_edit_ctrl_stc.cpp:416
 msgid "Split at cursor (estimate times)"
 msgstr "カーソル位置で字幕を分割 (タイミングは文字数に合わせ分割)"
 
-#: ../src/command/edit.cpp:1114
+#: ../src/command/edit.cpp:1214
 msgid ""
 "Split the current line at the cursor, dividing the original line's duration "
 "between the new ones"
 msgstr ""
 
-#: ../src/command/edit.cpp:1128 ../src/command/edit.cpp:1129
-#: ../src/subs_edit_ctrl.cpp:415
+#: ../src/command/edit.cpp:1229 ../src/command/edit.cpp:1231
+#: ../src/subs_edit_ctrl.cpp:160 ../src/subs_edit_ctrl_stc.cpp:415
 msgid "Split at cursor (preserve times)"
 msgstr "カーソル位置で字幕を分割 (タイミングは複製)"
 
-#: ../src/command/edit.cpp:1130
+#: ../src/command/edit.cpp:1233
 msgid ""
 "Split the current line at the cursor, setting both lines to the original "
 "line's times"
 msgstr ""
 
-#: ../src/command/edit.cpp:1139 ../src/command/edit.cpp:1140
+#: ../src/command/edit.cpp:1243 ../src/command/edit.cpp:1245
 #, fuzzy
 msgid "Split at cursor (at video frame)"
 msgstr "カーソル位置で字幕を分割 (タイミングは文字数に合わせ分割)"
 
-#: ../src/command/edit.cpp:1141
+#: ../src/command/edit.cpp:1247
 msgid ""
 "Split the current line at the cursor, dividing the line's duration at the "
 "current video frame"
 msgstr ""
 
-#: ../src/command/edit.cpp:1157
+#: ../src/command/edit.cpp:1265
 #, fuzzy
 msgid "Redo last undone action"
 msgstr "やり直します"
 
-#: ../src/command/edit.cpp:1162
+#: ../src/command/edit.cpp:1271
 msgid "Nothing to &redo"
 msgstr ""
 
-#: ../src/command/edit.cpp:1163
+#: ../src/command/edit.cpp:1272
 #, fuzzy, c-format
 msgid "&Redo %s"
 msgstr "やり直す (&R)"
 
-#: ../src/command/edit.cpp:1167
+#: ../src/command/edit.cpp:1277
 msgid "Nothing to redo"
 msgstr ""
 
-#: ../src/command/edit.cpp:1168
+#: ../src/command/edit.cpp:1278
 #, fuzzy, c-format
 msgid "Redo %s"
 msgstr "やり直す"
 
-#: ../src/command/edit.cpp:1183
+#: ../src/command/edit.cpp:1295
 #, fuzzy
 msgid "Undo last action"
 msgstr "ひとつ前に戻します"
 
-#: ../src/command/edit.cpp:1188
+#: ../src/command/edit.cpp:1301
 msgid "Nothing to &undo"
 msgstr ""
 
-#: ../src/command/edit.cpp:1189
+#: ../src/command/edit.cpp:1302
 #, fuzzy, c-format
 msgid "&Undo %s"
 msgstr "元に戻す (&U)"
 
-#: ../src/command/edit.cpp:1193
+#: ../src/command/edit.cpp:1307
 msgid "Nothing to undo"
 msgstr ""
 
-#: ../src/command/edit.cpp:1194
+#: ../src/command/edit.cpp:1308
 #, fuzzy, c-format
 msgid "Undo %s"
 msgstr "元に戻す"
 
-#: ../src/command/edit.cpp:1208 ../src/command/edit.cpp:1209
+#: ../src/command/edit.cpp:1323 ../src/command/edit.cpp:1325
 #, fuzzy
 msgid "Revert"
 msgstr "Reverse (逆転)"
 
-#: ../src/command/edit.cpp:1210
-msgid "Revert the active line to its initial state (shown in the upper editor)"
+#: ../src/command/edit.cpp:1327
+msgid "Revert the active line to its initial state"
 msgstr ""
 
-#: ../src/command/edit.cpp:1215
+#: ../src/command/edit.cpp:1332
 #, fuzzy
 msgid "revert line"
 msgstr "次の字幕行へ移動"
 
-#: ../src/command/edit.cpp:1221 ../src/command/edit.cpp:1222
-#: ../src/preferences.cpp:401
+#: ../src/command/edit.cpp:1339 ../src/command/edit.cpp:1341
+#: ../src/preferences.cpp:410
 msgid "Clear"
 msgstr "履歴のクリア"
 
-#: ../src/command/edit.cpp:1223
+#: ../src/command/edit.cpp:1343
 #, fuzzy
 msgid "Clear the current line's text"
 msgstr "選択した字幕行を再生"
 
-#: ../src/command/edit.cpp:1228 ../src/command/edit.cpp:1247
+#: ../src/command/edit.cpp:1348 ../src/command/edit.cpp:1371
 #, fuzzy
 msgid "clear line"
 msgstr "次の字幕行へ移動"
 
-#: ../src/command/edit.cpp:1235 ../src/command/edit.cpp:1236
+#: ../src/command/edit.cpp:1357 ../src/command/edit.cpp:1359
 #, fuzzy
 msgid "Clear Text"
 msgstr "履歴のクリア"
 
-#: ../src/command/edit.cpp:1237
+#: ../src/command/edit.cpp:1361
 msgid "Clear the current line's text, leaving override tags"
 msgstr ""
 
-#: ../src/command/edit.cpp:1253 ../src/command/edit.cpp:1254
+#: ../src/command/edit.cpp:1378 ../src/command/edit.cpp:1380
 #: ../src/command/tool.cpp:270
 #, fuzzy
 msgid "Insert Original"
 msgstr "オリジナルをコピー"
 
-#: ../src/command/edit.cpp:1255
+#: ../src/command/edit.cpp:1382
 #, fuzzy
 msgid "Insert the original line text at the cursor"
 msgstr "新たな字幕行を選択行の後に挿入します"
 
-#: ../src/command/edit.cpp:1263
+#: ../src/command/edit.cpp:1391
 #, fuzzy
 msgid "insert original"
 msgstr "オリジナルをコピー"
@@ -1410,7 +1426,7 @@ msgstr "Effect"
 
 #: ../src/command/grid.cpp:134 ../src/command/grid.cpp:146
 #: ../src/dialog_paste_over.cpp:72 ../src/grid_column.cpp:214
-#: ../src/grid_column.cpp:215 ../src/subs_edit_box.cpp:139
+#: ../src/grid_column.cpp:215 ../src/subs_edit_box.cpp:148
 msgid "Effect"
 msgstr "Effect"
 
@@ -1984,7 +2000,8 @@ msgid "Save subtitles with another name"
 msgstr "名前を付けて字幕を保存します"
 
 #: ../src/command/subtitle.cpp:396 ../src/dialog_export.cpp:124
-#: ../src/dialog_selected_choices.cpp:26 ../src/subs_edit_ctrl.cpp:410
+#: ../src/dialog_selected_choices.cpp:26 ../src/subs_edit_ctrl.cpp:155
+#: ../src/subs_edit_ctrl_stc.cpp:410
 msgid "Select &All"
 msgstr "すべて選択 (&A)"
 
@@ -2357,7 +2374,7 @@ msgid "&Accept changes"
 msgstr "変更を適用"
 
 #: ../src/command/tool.cpp:142 ../src/command/tool.cpp:226
-#: ../src/dialog_styling_assistant.cpp:90 ../src/dialog_translation.cpp:117
+#: ../src/dialog_styling_assistant.cpp:90 ../src/dialog_translation.cpp:138
 msgid "Accept changes"
 msgstr "変更を適用"
 
@@ -2371,7 +2388,7 @@ msgid "&Preview changes"
 msgstr "変更をプレビュー"
 
 #: ../src/command/tool.cpp:153 ../src/command/tool.cpp:237
-#: ../src/dialog_styling_assistant.cpp:91 ../src/dialog_translation.cpp:118
+#: ../src/dialog_styling_assistant.cpp:91 ../src/dialog_translation.cpp:139
 msgid "Preview changes"
 msgstr "変更をプレビュー"
 
@@ -2429,8 +2446,8 @@ msgstr ""
 msgid "&Translation Assistant..."
 msgstr "翻訳アシスタント (&T)"
 
-#: ../src/command/tool.cpp:201 ../src/dialog_translation.cpp:66
-#: ../src/preferences.cpp:230
+#: ../src/command/tool.cpp:201 ../src/dialog_translation.cpp:69
+#: ../src/preferences.cpp:237
 msgid "Translation Assistant"
 msgstr "翻訳アシスタント"
 
@@ -3071,7 +3088,7 @@ msgid "E&xtract"
 msgstr "抽出 (&X)"
 
 #: ../src/dialog_attachments.cpp:79 ../src/dialog_style_manager.cpp:214
-#: ../src/preferences.cpp:596
+#: ../src/preferences.cpp:605
 msgid "&Delete"
 msgstr "削除 (&D)"
 
@@ -3636,7 +3653,7 @@ msgstr "スタート (&S)"
 #: ../src/dialog_fonts_collector.cpp:307 ../src/dialog_fonts_collector.cpp:312
 #: ../src/dialog_fonts_collector.cpp:317 ../src/dialog_kara_timing_copy.cpp:574
 #: ../src/dialog_kara_timing_copy.cpp:576
-#: ../src/dialog_kara_timing_copy.cpp:626 ../src/preferences.cpp:263
+#: ../src/dialog_kara_timing_copy.cpp:626 ../src/preferences.cpp:271
 msgid "Error"
 msgstr "エラー"
 
@@ -3817,7 +3834,7 @@ msgid "Style"
 msgstr "Style"
 
 #: ../src/dialog_paste_over.cpp:68 ../src/grid_column.cpp:228
-#: ../src/grid_column.cpp:229 ../src/subs_edit_box.cpp:134
+#: ../src/grid_column.cpp:229 ../src/subs_edit_box.cpp:142
 msgid "Actor"
 msgstr "Actor"
 
@@ -4343,15 +4360,15 @@ msgstr "タイミング選択"
 msgid "&Clear"
 msgstr "履歴のクリア"
 
-#: ../src/dialog_shift_times.cpp:203
+#: ../src/dialog_shift_times.cpp:204
 msgid "Shift by"
 msgstr "シフト時間の指定"
 
-#: ../src/dialog_shift_times.cpp:212
+#: ../src/dialog_shift_times.cpp:213
 msgid "Load from history"
 msgstr ""
 
-#: ../src/dialog_shift_times.cpp:410
+#: ../src/dialog_shift_times.cpp:411
 msgid "shifting"
 msgstr "タイムシフト"
 
@@ -4413,7 +4430,7 @@ msgstr "スタイルエディタ"
 msgid "Font"
 msgstr "フォント"
 
-#: ../src/dialog_style_editor.cpp:180 ../src/preferences.cpp:238
+#: ../src/dialog_style_editor.cpp:180 ../src/preferences.cpp:245
 msgid "Colors"
 msgstr "色"
 
@@ -4610,16 +4627,16 @@ msgstr ""
 msgid "Color of preview background"
 msgstr "スタイルプレビューの背景色を指定"
 
-#: ../src/dialog_style_editor.cpp:420
+#: ../src/dialog_style_editor.cpp:421
 #, fuzzy
 msgid "Style name conflict"
 msgstr "カタログ名に問題があります！"
 
-#: ../src/dialog_style_editor.cpp:420
+#: ../src/dialog_style_editor.cpp:421
 msgid "There is already a style with this name. Please choose another name."
 msgstr ""
 
-#: ../src/dialog_style_editor.cpp:432
+#: ../src/dialog_style_editor.cpp:433
 msgid ""
 "Do you want to change all instances of this style in the script to this new "
 "name?"
@@ -4629,11 +4646,11 @@ msgstr ""
 "変更後のスタイル名を反映する場合は「はい」を、反映しない場合は「いいえ」を、"
 "スタイル編集に戻る場合は「キャンセル」を押してください"
 
-#: ../src/dialog_style_editor.cpp:433
+#: ../src/dialog_style_editor.cpp:434
 msgid "Update script?"
 msgstr "スタイルを適用しますか？"
 
-#: ../src/dialog_style_editor.cpp:460 ../src/subs_edit_box.cpp:633
+#: ../src/dialog_style_editor.cpp:461 ../src/subs_edit_box.cpp:816
 msgid "style change"
 msgstr "スタイルの変更"
 
@@ -4657,16 +4674,16 @@ msgstr "最下部へ"
 msgid "Sort styles alphabetically"
 msgstr "ソート"
 
-#: ../src/dialog_style_manager.cpp:211 ../src/preferences.cpp:594
+#: ../src/dialog_style_manager.cpp:211 ../src/preferences.cpp:603
 msgid "&New"
 msgstr ""
 
-#: ../src/dialog_style_manager.cpp:212 ../src/preferences.cpp:595
+#: ../src/dialog_style_manager.cpp:212 ../src/preferences.cpp:604
 msgid "&Edit"
 msgstr "編集 (&E)"
 
-#: ../src/dialog_style_manager.cpp:213 ../src/subs_edit_ctrl.cpp:407
-#: ../src/timeedit_ctrl.cpp:209
+#: ../src/dialog_style_manager.cpp:213 ../src/subs_edit_ctrl.cpp:152
+#: ../src/subs_edit_ctrl_stc.cpp:407 ../src/timeedit_ctrl.cpp:209
 msgid "&Copy"
 msgstr "コピー (&C)"
 
@@ -4855,24 +4872,24 @@ msgstr "適用可能なスタイルのリスト"
 msgid "Set style"
 msgstr "現在のスタイル"
 
-#: ../src/dialog_styling_assistant.cpp:87 ../src/dialog_translation.cpp:114
+#: ../src/dialog_styling_assistant.cpp:87 ../src/dialog_translation.cpp:135
 msgid "Keys"
 msgstr "ショートカットキー"
 
-#: ../src/dialog_styling_assistant.cpp:92 ../src/dialog_translation.cpp:119
+#: ../src/dialog_styling_assistant.cpp:92 ../src/dialog_translation.cpp:140
 msgid "Previous line"
 msgstr "前の字幕行へ移動"
 
-#: ../src/dialog_styling_assistant.cpp:93 ../src/dialog_translation.cpp:120
+#: ../src/dialog_styling_assistant.cpp:93 ../src/dialog_translation.cpp:141
 msgid "Next line"
 msgstr "次の字幕行へ移動"
 
-#: ../src/dialog_styling_assistant.cpp:94 ../src/dialog_translation.cpp:122
+#: ../src/dialog_styling_assistant.cpp:94 ../src/dialog_translation.cpp:143
 #, fuzzy
 msgid "Play video"
 msgstr "映像を再生"
 
-#: ../src/dialog_styling_assistant.cpp:95 ../src/dialog_translation.cpp:123
+#: ../src/dialog_styling_assistant.cpp:95 ../src/dialog_translation.cpp:144
 #, fuzzy
 msgid "Play audio"
 msgstr "音声を再生"
@@ -4891,16 +4908,16 @@ msgstr "スタイルを選択"
 msgid "&Seek video to line start time"
 msgstr "開始フレームに移動"
 
-#: ../src/dialog_styling_assistant.cpp:110 ../src/dialog_translation.cpp:135
+#: ../src/dialog_styling_assistant.cpp:110 ../src/dialog_translation.cpp:156
 msgid "Actions"
 msgstr "選択する動作"
 
-#: ../src/dialog_styling_assistant.cpp:113 ../src/dialog_translation.cpp:137
+#: ../src/dialog_styling_assistant.cpp:113 ../src/dialog_translation.cpp:158
 #, fuzzy
 msgid "Play &Audio"
 msgstr "音声を再生"
 
-#: ../src/dialog_styling_assistant.cpp:117 ../src/dialog_translation.cpp:142
+#: ../src/dialog_styling_assistant.cpp:117 ../src/dialog_translation.cpp:163
 #, fuzzy
 msgid "Play &Video"
 msgstr "映像を再生"
@@ -5110,38 +5127,38 @@ msgstr "無効なスクリプトです"
 msgid "timing processor"
 msgstr "タイミングプロセッサー"
 
-#: ../src/dialog_translation.cpp:79
+#: ../src/dialog_translation.cpp:85
 msgid "Original"
 msgstr "オリジナル フィールド"
 
-#: ../src/dialog_translation.cpp:106
+#: ../src/dialog_translation.cpp:118
 msgid "Translation"
 msgstr "翻訳 フィールド"
 
-#: ../src/dialog_translation.cpp:121
+#: ../src/dialog_translation.cpp:142
 msgid "Insert original"
 msgstr "オリジナルをコピー"
 
-#: ../src/dialog_translation.cpp:124
+#: ../src/dialog_translation.cpp:145
 #, fuzzy
 msgid "Delete line"
 msgstr "選択行を削除"
 
-#: ../src/dialog_translation.cpp:127
+#: ../src/dialog_translation.cpp:148
 #, fuzzy
 msgid "Enable &preview"
 msgstr "プレビューを有効化"
 
-#: ../src/dialog_translation.cpp:184 ../src/dialog_translation.cpp:288
+#: ../src/dialog_translation.cpp:205 ../src/dialog_translation.cpp:329
 msgid "No more lines to translate."
 msgstr "翻訳する字幕行はもうありません"
 
-#: ../src/dialog_translation.cpp:192 ../src/dialog_translation.cpp:242
+#: ../src/dialog_translation.cpp:213 ../src/dialog_translation.cpp:263
 #, c-format
 msgid "Current line: %d/%d"
 msgstr "翻訳中の字幕行 : %d/%d"
 
-#: ../src/dialog_translation.cpp:283
+#: ../src/dialog_translation.cpp:324
 msgid "translation assistant"
 msgstr "翻訳アシスタント"
 
@@ -5234,7 +5251,7 @@ msgid "Decoder:"
 msgstr "デコーダー :"
 
 #: ../src/dialog_video_details.cpp:66 ../src/preferences.cpp:168
-#: ../src/preferences.cpp:436
+#: ../src/preferences.cpp:445
 msgid "Video"
 msgstr "映像"
 
@@ -5589,7 +5606,7 @@ msgid "Reading subtitles from Matroska file."
 msgstr "Matroskaファイルから字幕データを読み込み中"
 
 #: ../src/preferences.cpp:62 ../src/preferences.cpp:64
-#: ../src/preferences.cpp:332 ../src/preferences.cpp:353
+#: ../src/preferences.cpp:341 ../src/preferences.cpp:362
 msgid "General"
 msgstr "一般"
 
@@ -5684,7 +5701,7 @@ msgstr "スタイルのインポート"
 msgid "Plain text import"
 msgstr "スタイルのインポート"
 
-#: ../src/preferences.cpp:128 ../src/preferences.cpp:366
+#: ../src/preferences.cpp:128 ../src/preferences.cpp:375
 msgid "Audio"
 msgstr "音声"
 
@@ -5791,7 +5808,7 @@ msgstr "カーソルタイムの表示"
 msgid "Video position"
 msgstr "ビデオポジションの表示"
 
-#: ../src/preferences.cpp:156 ../src/preferences.cpp:252
+#: ../src/preferences.cpp:156 ../src/preferences.cpp:259
 #, fuzzy
 msgid "Seconds boundaries"
 msgstr "秒の境界線色"
@@ -5879,359 +5896,363 @@ msgstr "フォントを選択します"
 msgid "Edit Box"
 msgstr "決定 Commit"
 
-#: ../src/preferences.cpp:210
+#: ../src/preferences.cpp:211
+msgid "Use styled edit box"
+msgstr ""
+
+#: ../src/preferences.cpp:212
 msgid "Enable call tips"
 msgstr "タグ入力補助を表示する"
 
-#: ../src/preferences.cpp:211
+#: ../src/preferences.cpp:214
 #, fuzzy
 msgid "Overwrite in time boxes"
 msgstr "タイミングボックスの上書きモード"
 
-#: ../src/preferences.cpp:213
+#: ../src/preferences.cpp:216
 msgid "Enable syntax highlighting"
 msgstr "タグをハイライト表示する"
 
-#: ../src/preferences.cpp:214
+#: ../src/preferences.cpp:221
 #, fuzzy
 msgid "Dictionaries path"
 msgstr "ハードディスク キャッシュパス"
 
-#: ../src/preferences.cpp:217
+#: ../src/preferences.cpp:224
 msgid "Character Counter"
 msgstr ""
 
-#: ../src/preferences.cpp:218
+#: ../src/preferences.cpp:225
 #, fuzzy
 msgid "Maximum characters per line"
 msgstr "キーフレームファイルの履歴"
 
-#: ../src/preferences.cpp:219
+#: ../src/preferences.cpp:226
 msgid "Characters Per Second Warning Threshold"
 msgstr ""
 
-#: ../src/preferences.cpp:220
+#: ../src/preferences.cpp:227
 msgid "Characters Per Second Error Threshold"
 msgstr ""
 
-#: ../src/preferences.cpp:221
+#: ../src/preferences.cpp:228
 msgid "Ignore whitespace"
 msgstr ""
 
-#: ../src/preferences.cpp:222
+#: ../src/preferences.cpp:229
 msgid "Ignore punctuation"
 msgstr ""
 
-#: ../src/preferences.cpp:224
+#: ../src/preferences.cpp:231
 msgid "Grid"
 msgstr ""
 
-#: ../src/preferences.cpp:225
+#: ../src/preferences.cpp:232
 msgid "Focus grid on click"
 msgstr ""
 
-#: ../src/preferences.cpp:226
+#: ../src/preferences.cpp:233
 msgid "Highlight visible subtitles"
 msgstr ""
 
-#: ../src/preferences.cpp:227
+#: ../src/preferences.cpp:234
 msgid "Hide overrides symbol"
 msgstr ""
 
-#: ../src/preferences.cpp:231
+#: ../src/preferences.cpp:238
 msgid "Skip over whitespace"
 msgstr ""
 
-#: ../src/preferences.cpp:246
+#: ../src/preferences.cpp:253
 #, fuzzy
 msgid "Audio Display"
 msgstr "音声再生デバイス"
 
-#: ../src/preferences.cpp:247
+#: ../src/preferences.cpp:254
 msgid "Play cursor"
 msgstr "再生カーソル色"
 
-#: ../src/preferences.cpp:248
+#: ../src/preferences.cpp:255
 #, fuzzy
 msgid "Line boundary start"
 msgstr "スタートの境界線色"
 
-#: ../src/preferences.cpp:249
+#: ../src/preferences.cpp:256
 #, fuzzy
 msgid "Line boundary end"
 msgstr "エンドの境界線色"
 
-#: ../src/preferences.cpp:250
+#: ../src/preferences.cpp:257
 #, fuzzy
 msgid "Line boundary inactive line"
 msgstr "非アクティブの境界線色"
 
-#: ../src/preferences.cpp:251
+#: ../src/preferences.cpp:258
 #, fuzzy
 msgid "Syllable boundaries"
 msgstr "音節の境界色"
 
-#: ../src/preferences.cpp:254
+#: ../src/preferences.cpp:261
 #, fuzzy
 msgid "Syntax Highlighting"
 msgstr "タグをハイライト表示する"
 
-#: ../src/preferences.cpp:255
+#: ../src/preferences.cpp:262
 msgid "Background"
 msgstr "背景色"
 
-#: ../src/preferences.cpp:256
+#: ../src/preferences.cpp:263
 msgid "Normal"
 msgstr "Normal (標準)"
 
-#: ../src/preferences.cpp:257
+#: ../src/preferences.cpp:265
 msgid "Comments"
 msgstr "コメント"
 
-#: ../src/preferences.cpp:258
+#: ../src/preferences.cpp:266
 msgid "Drawings"
 msgstr ""
 
-#: ../src/preferences.cpp:259
+#: ../src/preferences.cpp:267
 msgid "Brackets"
 msgstr "波括弧"
 
-#: ../src/preferences.cpp:260
+#: ../src/preferences.cpp:268
 msgid "Slashes and Parentheses"
 msgstr "\\マークと丸括弧"
 
-#: ../src/preferences.cpp:261
+#: ../src/preferences.cpp:269
 msgid "Tags"
 msgstr "タグ"
 
-#: ../src/preferences.cpp:262
+#: ../src/preferences.cpp:270
 msgid "Parameters"
 msgstr "パラメーター(数値)"
 
-#: ../src/preferences.cpp:264
+#: ../src/preferences.cpp:272
 msgid "Error Background"
 msgstr "エラー時の背景"
 
-#: ../src/preferences.cpp:265
+#: ../src/preferences.cpp:273
 msgid "Line Break"
 msgstr "改行"
 
-#: ../src/preferences.cpp:266
+#: ../src/preferences.cpp:274
 msgid "Karaoke templates"
 msgstr "Karaoke テンプレート"
 
-#: ../src/preferences.cpp:267
+#: ../src/preferences.cpp:275
 #, fuzzy
 msgid "Karaoke variables"
 msgstr "Karaoke テンプレート"
 
-#: ../src/preferences.cpp:273
+#: ../src/preferences.cpp:282
 #, fuzzy
 msgid "Audio Color Schemes"
 msgstr "音量"
 
-#: ../src/preferences.cpp:275 ../src/preferences.cpp:382
+#: ../src/preferences.cpp:284 ../src/preferences.cpp:391
 #, fuzzy
 msgid "Spectrum"
 msgstr "カラーモデル :"
 
-#: ../src/preferences.cpp:276
+#: ../src/preferences.cpp:285
 msgid "Waveform"
 msgstr "波形色"
 
-#: ../src/preferences.cpp:278
+#: ../src/preferences.cpp:287
 #, fuzzy
 msgid "Subtitle Grid"
 msgstr "字幕グリッド"
 
-#: ../src/preferences.cpp:279
+#: ../src/preferences.cpp:288
 msgid "Standard foreground"
 msgstr "標準文字色"
 
-#: ../src/preferences.cpp:280
+#: ../src/preferences.cpp:289
 msgid "Standard background"
 msgstr "標準背景色"
 
-#: ../src/preferences.cpp:281
+#: ../src/preferences.cpp:290
 msgid "Selection foreground"
 msgstr "選択文字色"
 
-#: ../src/preferences.cpp:282
+#: ../src/preferences.cpp:291
 msgid "Selection background"
 msgstr "選択背景色"
 
-#: ../src/preferences.cpp:283
+#: ../src/preferences.cpp:292
 msgid "Collision foreground"
 msgstr "コリジョン文字色"
 
-#: ../src/preferences.cpp:284
+#: ../src/preferences.cpp:293
 #, fuzzy
 msgid "In frame background"
 msgstr "映像表示フレーム行の背景色"
 
-#: ../src/preferences.cpp:285
+#: ../src/preferences.cpp:294
 msgid "Comment background"
 msgstr "コメント背景色"
 
-#: ../src/preferences.cpp:286
+#: ../src/preferences.cpp:295
 msgid "Selected comment background"
 msgstr "選択コメント背景色"
 
-#: ../src/preferences.cpp:287
+#: ../src/preferences.cpp:296
 #, fuzzy
 msgid "Header background"
 msgstr "標準背景色"
 
-#: ../src/preferences.cpp:288
+#: ../src/preferences.cpp:297
 msgid "Left Column"
 msgstr "行番号背景色"
 
-#: ../src/preferences.cpp:289
+#: ../src/preferences.cpp:298
 msgid "Active Line Border"
 msgstr "アクティブ行を囲う色"
 
-#: ../src/preferences.cpp:290
+#: ../src/preferences.cpp:299
 msgid "Lines"
 msgstr "行間の区切り線"
 
-#: ../src/preferences.cpp:291
+#: ../src/preferences.cpp:300
 #, fuzzy
 msgid "CPS Error"
 msgstr "エラー"
 
-#: ../src/preferences.cpp:293
+#: ../src/preferences.cpp:302
 #, fuzzy
 msgid "Visual Typesetting Tools"
 msgstr "移動/変形/図形モード"
 
-#: ../src/preferences.cpp:294
+#: ../src/preferences.cpp:303
 #, fuzzy
 msgid "Primary Lines"
 msgstr "プライマリ"
 
-#: ../src/preferences.cpp:295
+#: ../src/preferences.cpp:304
 #, fuzzy
 msgid "Secondary Lines"
 msgstr "セカンダリ"
 
-#: ../src/preferences.cpp:296
+#: ../src/preferences.cpp:305
 #, fuzzy
 msgid "Primary Highlight"
 msgstr "プライマリ色 (文字色)"
 
-#: ../src/preferences.cpp:297
+#: ../src/preferences.cpp:306
 #, fuzzy
 msgid "Secondary Highlight"
 msgstr "セカンダリ色 (エフェクト前文字色)"
 
-#: ../src/preferences.cpp:300
+#: ../src/preferences.cpp:309
 #, fuzzy
 msgid "Visual Typesetting Tools Alpha"
 msgstr "移動/変形/図形モード"
 
-#: ../src/preferences.cpp:301
+#: ../src/preferences.cpp:310
 msgid "Shaded Area"
 msgstr ""
 
-#: ../src/preferences.cpp:310
+#: ../src/preferences.cpp:319
 #, fuzzy
 msgid "Backup"
 msgstr "背景色"
 
-#: ../src/preferences.cpp:312
+#: ../src/preferences.cpp:321
 #, fuzzy
 msgid "Automatic Save"
 msgstr "オートメーションマネージャー"
 
-#: ../src/preferences.cpp:313 ../src/preferences.cpp:321
+#: ../src/preferences.cpp:322 ../src/preferences.cpp:330
 msgid "Enable"
 msgstr "有効"
 
-#: ../src/preferences.cpp:316
+#: ../src/preferences.cpp:325
 #, fuzzy
 msgid "Interval in seconds"
 msgstr "選択行内で動作結果を反映します"
 
-#: ../src/preferences.cpp:317 ../src/preferences.cpp:323
-#: ../src/preferences.cpp:380
+#: ../src/preferences.cpp:326 ../src/preferences.cpp:332
+#: ../src/preferences.cpp:389
 msgid "Path"
 msgstr ""
 
-#: ../src/preferences.cpp:318
+#: ../src/preferences.cpp:327
 #, fuzzy
 msgid "Autosave after every change"
 msgstr "オートセーブ間隔"
 
-#: ../src/preferences.cpp:320
+#: ../src/preferences.cpp:329
 #, fuzzy
 msgid "Automatic Backup"
 msgstr "オートバックアップ"
 
-#: ../src/preferences.cpp:334
+#: ../src/preferences.cpp:343
 msgid "Base path"
 msgstr "基本的なパス"
 
-#: ../src/preferences.cpp:335
+#: ../src/preferences.cpp:344
 msgid "Include path"
 msgstr "含めるパス"
 
-#: ../src/preferences.cpp:336
+#: ../src/preferences.cpp:345
 msgid "Auto-load path"
 msgstr "オートロードパス"
 
-#: ../src/preferences.cpp:338
+#: ../src/preferences.cpp:347
 msgid "0: Fatal"
 msgstr "0: 致命的"
 
-#: ../src/preferences.cpp:338
+#: ../src/preferences.cpp:347
 msgid "1: Error"
 msgstr "1: エラー"
 
-#: ../src/preferences.cpp:338
+#: ../src/preferences.cpp:347
 msgid "2: Warning"
 msgstr "2: 警告"
 
-#: ../src/preferences.cpp:338
+#: ../src/preferences.cpp:347
 msgid "3: Hint"
 msgstr "3: ヒント"
 
-#: ../src/preferences.cpp:338
+#: ../src/preferences.cpp:347
 msgid "4: Debug"
 msgstr "4: デバッグ"
 
-#: ../src/preferences.cpp:338
+#: ../src/preferences.cpp:347
 msgid "5: Trace"
 msgstr "5: トレース"
 
-#: ../src/preferences.cpp:340
+#: ../src/preferences.cpp:349
 msgid "Trace level"
 msgstr "トレースレベル"
 
-#: ../src/preferences.cpp:342
+#: ../src/preferences.cpp:351
 msgid "All scripts"
 msgstr "すべてのスクリプト"
 
-#: ../src/preferences.cpp:342
+#: ../src/preferences.cpp:351
 msgid "Global autoload scripts"
 msgstr "オートロードスクリプト"
 
-#: ../src/preferences.cpp:342
+#: ../src/preferences.cpp:351
 msgid "No scripts"
 msgstr "読み込まない"
 
-#: ../src/preferences.cpp:342
+#: ../src/preferences.cpp:351
 msgid "Subtitle-local scripts"
 msgstr "ローカル字幕スクリプト"
 
-#: ../src/preferences.cpp:344
+#: ../src/preferences.cpp:353
 msgid "Autoreload on Export"
 msgstr "エクスポート時のオートロード"
 
-#: ../src/preferences.cpp:351
+#: ../src/preferences.cpp:360
 msgid "Advanced"
 msgstr "高度な設定"
 
-#: ../src/preferences.cpp:355
+#: ../src/preferences.cpp:364
 #, fuzzy
 msgid ""
 "Changing these settings might result in bugs and/or crashes.  Do not touch "
@@ -6241,146 +6262,146 @@ msgstr ""
 "メモリー関連のエラーでAegisubがクラッシュするかもしれません\n"
 "設定の内容を理解できなければ変更しないでください！"
 
-#: ../src/preferences.cpp:368 ../src/preferences.cpp:438
+#: ../src/preferences.cpp:377 ../src/preferences.cpp:447
 msgid "Expert"
 msgstr ""
 
-#: ../src/preferences.cpp:371
+#: ../src/preferences.cpp:380
 msgid "Audio provider"
 msgstr "音声読み込みエンジン"
 
-#: ../src/preferences.cpp:374
+#: ../src/preferences.cpp:383
 msgid "Audio player"
 msgstr "音声再生デバイス"
 
-#: ../src/preferences.cpp:376
+#: ../src/preferences.cpp:385
 #, fuzzy
 msgid "Cache"
 msgstr "キャッシュタイプ"
 
-#: ../src/preferences.cpp:377
+#: ../src/preferences.cpp:386
 msgid "Hard Disk"
 msgstr "ハードディスク"
 
-#: ../src/preferences.cpp:377
-msgid "None (NOT RECOMMENDED)"
-msgstr "しない (※非推奨※)"
+#: ../src/preferences.cpp:386
+msgid "None (Not recommended with Avisynth)"
+msgstr ""
 
-#: ../src/preferences.cpp:377
+#: ../src/preferences.cpp:386
 msgid "RAM"
 msgstr "メモリー"
 
-#: ../src/preferences.cpp:379
+#: ../src/preferences.cpp:388
 msgid "Cache type"
 msgstr "キャッシュタイプ"
 
-#: ../src/preferences.cpp:384
+#: ../src/preferences.cpp:393
 msgid "Better quality"
 msgstr "最適品質"
 
-#: ../src/preferences.cpp:384
+#: ../src/preferences.cpp:393
 msgid "High quality"
 msgstr "高品質"
 
-#: ../src/preferences.cpp:384
+#: ../src/preferences.cpp:393
 msgid "Insane quality"
 msgstr "高精細品質"
 
-#: ../src/preferences.cpp:384
+#: ../src/preferences.cpp:393
 msgid "Regular quality"
 msgstr "レギュラー品質"
 
-#: ../src/preferences.cpp:386
+#: ../src/preferences.cpp:395
 #, fuzzy
 msgid "Quality"
 msgstr "高品質"
 
-#: ../src/preferences.cpp:388
+#: ../src/preferences.cpp:397
 #, fuzzy
 msgid "Cache memory max (MB)"
 msgstr "スペクトラム使用最大メモリー量 (MB)"
 
-#: ../src/preferences.cpp:394
+#: ../src/preferences.cpp:403
 msgid "Avisynth down-mixer"
 msgstr "音声ダウンミキサー"
 
-#: ../src/preferences.cpp:395
+#: ../src/preferences.cpp:404
 msgid "Force sample rate"
 msgstr ""
 
-#: ../src/preferences.cpp:401
+#: ../src/preferences.cpp:410
 msgid "Abort"
 msgstr ""
 
-#: ../src/preferences.cpp:401
+#: ../src/preferences.cpp:410
 msgid "Ignore"
 msgstr "無視"
 
-#: ../src/preferences.cpp:401
+#: ../src/preferences.cpp:410
 msgid "Stop"
 msgstr ""
 
-#: ../src/preferences.cpp:403
+#: ../src/preferences.cpp:412
 msgid "Audio indexing error handling mode"
 msgstr ""
 
-#: ../src/preferences.cpp:405
+#: ../src/preferences.cpp:414
 msgid "Always index all audio tracks"
 msgstr ""
 
-#: ../src/preferences.cpp:406
+#: ../src/preferences.cpp:415
 msgid "Downmix to 16bit mono audio"
 msgstr ""
 
-#: ../src/preferences.cpp:411
+#: ../src/preferences.cpp:420
 msgid "Portaudio device"
 msgstr ""
 
-#: ../src/preferences.cpp:416
+#: ../src/preferences.cpp:425
 msgid "OSS Device"
 msgstr ""
 
-#: ../src/preferences.cpp:427
+#: ../src/preferences.cpp:436
 msgid "Buffer latency"
 msgstr ""
 
-#: ../src/preferences.cpp:428
+#: ../src/preferences.cpp:437
 msgid "Buffer length"
 msgstr ""
 
-#: ../src/preferences.cpp:441
+#: ../src/preferences.cpp:450
 msgid "Video provider"
 msgstr "映像読み込みエンジン "
 
-#: ../src/preferences.cpp:444
+#: ../src/preferences.cpp:453
 msgid "Subtitles provider"
 msgstr "字幕レンダリングエンジン "
 
-#: ../src/preferences.cpp:448
+#: ../src/preferences.cpp:457
 msgid "Allow pre-2.56a Avisynth"
 msgstr "Avisynth Ver2.56a以前を使用"
 
-#: ../src/preferences.cpp:450
+#: ../src/preferences.cpp:459
 msgid "Avisynth memory limit"
 msgstr "Avisynth 最大使用メモリー量 (MB)"
 
-#: ../src/preferences.cpp:458
+#: ../src/preferences.cpp:467
 msgid "Debug log verbosity"
 msgstr ""
 
-#: ../src/preferences.cpp:460
+#: ../src/preferences.cpp:469
 msgid "Decoding threads"
 msgstr ""
 
-#: ../src/preferences.cpp:461
+#: ../src/preferences.cpp:470
 msgid "Enable unsafe seeking"
 msgstr ""
 
-#: ../src/preferences.cpp:590
+#: ../src/preferences.cpp:599
 msgid "Hotkeys"
 msgstr "ショートカットキー"
 
-#: ../src/preferences.cpp:689
+#: ../src/preferences.cpp:698
 msgid ""
 "Are you sure that you want to restore the defaults? All your settings will "
 "be overridden."
@@ -6390,15 +6411,15 @@ msgstr ""
 "デフォルトに戻す場合は「はい」を、現在の設定を保持する場合は「いいえ」を押し"
 "てください"
 
-#: ../src/preferences.cpp:689
+#: ../src/preferences.cpp:698
 msgid "Restore defaults?"
 msgstr "すべての設定をデフォルトに戻していいですか？"
 
-#: ../src/preferences.cpp:707
+#: ../src/preferences.cpp:716
 msgid "Preferences"
 msgstr ""
 
-#: ../src/preferences.cpp:735
+#: ../src/preferences.cpp:744
 #, fuzzy
 msgid "&Restore Defaults"
 msgstr "デフォルトに戻す"
@@ -6534,188 +6555,197 @@ msgstr "無題の字幕ドキュメント"
 msgid "untitled"
 msgstr "無題の字幕ドキュメント"
 
-#: ../src/subs_edit_box.cpp:114
+#: ../src/subs_edit_box.cpp:122
 #, fuzzy
 msgid "&Comment"
 msgstr "コメント"
 
-#: ../src/subs_edit_box.cpp:115
+#: ../src/subs_edit_box.cpp:123
 msgid "Comment this line out. Commented lines don't show up on screen."
 msgstr "コメントアウト"
 
-#: ../src/subs_edit_box.cpp:122
+#: ../src/subs_edit_box.cpp:130
 msgid "Style for this line"
 msgstr "スタイルネーム"
 
-#: ../src/subs_edit_box.cpp:124
+#: ../src/subs_edit_box.cpp:132
 msgid "Edit"
 msgstr "編集"
 
-#: ../src/subs_edit_box.cpp:134
+#: ../src/subs_edit_box.cpp:143
 msgid ""
 "Actor name for this speech. This is only for reference, and is mainly "
 "useless."
 msgstr "話者情報"
 
-#: ../src/subs_edit_box.cpp:139
+#: ../src/subs_edit_box.cpp:149
 msgid ""
 "Effect for this line. This can be used to store extra information for "
 "karaoke scripts, or for the effects supported by the renderer."
 msgstr "エフェクト指定"
 
-#: ../src/subs_edit_box.cpp:150
+#: ../src/subs_edit_box.cpp:160
 msgid "Number of characters in the longest line of this subtitle."
 msgstr ""
 
-#: ../src/subs_edit_box.cpp:166
+#: ../src/subs_edit_box.cpp:177
 msgid "Layer number"
 msgstr "レイヤー番号"
 
-#: ../src/subs_edit_box.cpp:170
+#: ../src/subs_edit_box.cpp:181
 msgid "Start time"
 msgstr "開始タイミング"
 
-#: ../src/subs_edit_box.cpp:171
+#: ../src/subs_edit_box.cpp:182
 msgid "End time"
 msgstr "終了タイミング"
 
-#: ../src/subs_edit_box.cpp:173
+#: ../src/subs_edit_box.cpp:184
 msgid "Line duration"
 msgstr "表示してる時間"
 
-#: ../src/subs_edit_box.cpp:176
+#: ../src/subs_edit_box.cpp:187
 #, fuzzy
 msgid "Left Margin (0 = default from style)"
 msgstr "左余白 (0 = default)"
 
-#: ../src/subs_edit_box.cpp:176
+#: ../src/subs_edit_box.cpp:187
 #, fuzzy
 msgid "left margin change"
 msgstr "左側余白の変更"
 
-#: ../src/subs_edit_box.cpp:177
+#: ../src/subs_edit_box.cpp:188
 #, fuzzy
 msgid "Right Margin (0 = default from style)"
 msgstr "右余白 (0 = default)"
 
-#: ../src/subs_edit_box.cpp:177
+#: ../src/subs_edit_box.cpp:188
 #, fuzzy
 msgid "right margin change"
 msgstr "左側余白の変更"
 
-#: ../src/subs_edit_box.cpp:178
+#: ../src/subs_edit_box.cpp:189
 #, fuzzy
 msgid "Vertical Margin (0 = default from style)"
 msgstr "上下余白 (0 = default)"
 
-#: ../src/subs_edit_box.cpp:178
+#: ../src/subs_edit_box.cpp:189
 #, fuzzy
 msgid "vertical margin change"
 msgstr "左側余白の変更"
 
-#: ../src/subs_edit_box.cpp:197
+#: ../src/subs_edit_box.cpp:208
 msgid "T&ime"
 msgstr ""
 
-#: ../src/subs_edit_box.cpp:197
+#: ../src/subs_edit_box.cpp:208
 msgid "Time by h:mm:ss.cs"
 msgstr "タイミングを時間形式 h:mm:ss.cs で表示"
 
-#: ../src/subs_edit_box.cpp:198
+#: ../src/subs_edit_box.cpp:209
 #, fuzzy
 msgid "F&rame"
 msgstr "フレーム番号表示"
 
-#: ../src/subs_edit_box.cpp:198
+#: ../src/subs_edit_box.cpp:209
 msgid "Time by frame number"
 msgstr "タイミングを映像フレーム番号で表示"
 
-#: ../src/subs_edit_box.cpp:201
-#, fuzzy
-msgid "Show Original"
-msgstr "オリジナル フィールド"
-
-#: ../src/subs_edit_box.cpp:202
-msgid ""
-"Show the contents of the subtitle line when it was first selected above the "
-"edit box. This is sometimes useful when editing subtitles or translating "
-"subtitles into another language."
+#: ../src/subs_edit_box.cpp:212
+msgid "Analyzing subtitles in the Zhi Meng Subtitle Group format"
 msgstr ""
 
-#: ../src/subs_edit_box.cpp:474
+#: ../src/subs_edit_box.cpp:214
+msgid ""
+"Parse the subtitles in the \"Chinese\\NJapanese\" format, with Japanese on "
+"top and Chinese on the bottom. Both parts are editable, and any changes will "
+"be synchronized in real time."
+msgstr ""
+
+#: ../src/subs_edit_box.cpp:560 ../src/subs_edit_box.cpp:575
+#: ../src/subs_edit_box.cpp:586 ../src/subs_edit_box.cpp:601
 #, fuzzy
 msgid "modify text"
 msgstr "時間修正"
 
-#: ../src/subs_edit_box.cpp:552
+#: ../src/subs_edit_box.cpp:691
 msgid "modify times"
 msgstr "時間修正"
 
-#: ../src/subs_edit_box.cpp:639
+#: ../src/subs_edit_box.cpp:822
 msgid "actor change"
 msgstr "話者情報の変更"
 
-#: ../src/subs_edit_box.cpp:644
+#: ../src/subs_edit_box.cpp:828
 msgid "layer change"
 msgstr "レイヤーの変更"
 
-#: ../src/subs_edit_box.cpp:649
+#: ../src/subs_edit_box.cpp:833
 msgid "effect change"
 msgstr "エフェクトの変更"
 
-#: ../src/subs_edit_box.cpp:654
+#: ../src/subs_edit_box.cpp:839
 msgid "comment change"
 msgstr "コメントに変更"
 
-#: ../src/subs_edit_ctrl.cpp:396
-msgid "Spell checker language"
-msgstr "スペルチェッカーの言語を選択"
+#: ../src/subs_edit_box.cpp:880 ../src/subs_edit_box.cpp:892
+msgid "Japanese"
+msgstr ""
 
-#: ../src/subs_edit_ctrl.cpp:406
+#: ../src/subs_edit_box.cpp:882 ../src/subs_edit_box.cpp:894
+msgid "Chinese"
+msgstr ""
+
+#: ../src/subs_edit_ctrl.cpp:151 ../src/subs_edit_ctrl_stc.cpp:406
 msgid "Cu&t"
 msgstr "切り取り (&T)"
 
-#: ../src/subs_edit_ctrl.cpp:408 ../src/timeedit_ctrl.cpp:210
+#: ../src/subs_edit_ctrl.cpp:153 ../src/subs_edit_ctrl_stc.cpp:408
+#: ../src/timeedit_ctrl.cpp:210
 msgid "&Paste"
 msgstr "貼り付け (&P)"
 
-#: ../src/subs_edit_ctrl.cpp:443
+#: ../src/subs_edit_ctrl_stc.cpp:396
+msgid "Spell checker language"
+msgstr "スペルチェッカーの言語を選択"
+
+#: ../src/subs_edit_ctrl_stc.cpp:443
 #, fuzzy, c-format
 msgid "Remove \"%s\" from dictionary"
 msgstr "辞書に \"%s\" を追加します"
 
-#: ../src/subs_edit_ctrl.cpp:448
+#: ../src/subs_edit_ctrl_stc.cpp:448
 msgid "No spell checker suggestions"
 msgstr "スペルチェッカーの補正はありません"
 
-#: ../src/subs_edit_ctrl.cpp:454
+#: ../src/subs_edit_ctrl_stc.cpp:454
 #, c-format
 msgid "Spell checker suggestions for \"%s\""
 msgstr "\"%s\" に関連するスペルチェッカーから補正"
 
-#: ../src/subs_edit_ctrl.cpp:459
+#: ../src/subs_edit_ctrl_stc.cpp:459
 msgid "No correction suggestions"
 msgstr "補正・提案はありません"
 
-#: ../src/subs_edit_ctrl.cpp:465
+#: ../src/subs_edit_ctrl_stc.cpp:465
 #, c-format
 msgid "Add \"%s\" to dictionary"
 msgstr "辞書に \"%s\" を追加します"
 
-#: ../src/subs_edit_ctrl.cpp:500
+#: ../src/subs_edit_ctrl_stc.cpp:500
 #, c-format
 msgid "Thesaurus suggestions for \"%s\""
 msgstr "\"%s\" に関連するシソーラス辞書から提案"
 
-#: ../src/subs_edit_ctrl.cpp:503
+#: ../src/subs_edit_ctrl_stc.cpp:503
 msgid "No thesaurus suggestions"
 msgstr "シソーラス辞書の提案はありません"
 
-#: ../src/subs_edit_ctrl.cpp:506
+#: ../src/subs_edit_ctrl_stc.cpp:506
 msgid "Thesaurus language"
 msgstr "シソーラス辞書 (類義・同義語辞書)"
 
-#: ../src/subs_edit_ctrl.cpp:515
+#: ../src/subs_edit_ctrl_stc.cpp:515
 msgid "Disable"
 msgstr "無効にする"
 
@@ -6887,80 +6917,6 @@ msgstr "フリーハンド - 3次曲線"
 msgid "delete control point"
 msgstr "頂点を追加します"
 
-#: aegisub.appdata.xml:1
-msgid ""
-"A free, cross-platform open source tool for creating and modifying subtitles"
-msgstr ""
-
-#: aegisub.appdata.xml:2
-msgid ""
-"Aegisub is a free, cross-platform open source tool for creating and "
-"modifying subtitles. Aegisub makes it quick and easy to time subtitles to "
-"audio, and features many powerful tools for styling them, including a built-"
-"in real-time video preview."
-msgstr ""
-
-#: aegisub.appdata.xml:3
-msgid ""
-"Aegisub was originally created as a tool to make typesetting, particularly "
-"in anime fansubs, a less painful experience. At the time of the start of the "
-"project, many other programs that supported the Advanced Substation Alpha "
-"format lacked (and in many cases, still lack; development on several "
-"competing programs have since been dropped for various reasons completely "
-"unrelated to Aegisub) many vital functions, or were too buggy and/or "
-"unreliable to be really useful."
-msgstr ""
-
-#: aegisub.appdata.xml:4
-msgid ""
-"Since then, Aegisub has grown into a fully fledged, highly customizable "
-"subtitle editor. It features a lot of convenient tools to help you with "
-"timing, typesetting, editing and translating subtitles, as well as a "
-"powerful scripting environment called Automation (originally mostly intended "
-"for creating karaoke effects, Automation can now be used much else, "
-"including creating macros and various other convenient tools)."
-msgstr ""
-
-#: aegisub.appdata.xml:5
-msgid "Some highlights of Aegisub:"
-msgstr ""
-
-#: aegisub.appdata.xml:6
-msgid "Simple and intuitive yet powerful interface for editing subtitles"
-msgstr ""
-
-#: aegisub.appdata.xml:7
-msgid "Support for many formats and character sets"
-msgstr ""
-
-#: aegisub.appdata.xml:8
-msgid "Powerful video mode"
-msgstr ""
-
-#: aegisub.appdata.xml:9
-msgid "Visual typesetting tools"
-msgstr ""
-
-#: aegisub.appdata.xml:10
-msgid "Intuitive and customizable audio timing mode"
-msgstr ""
-
-#: aegisub.appdata.xml:11
-msgid "Fully scriptable through the Automation module"
-msgstr ""
-
-#: aegisub.appdata.xml:12
-msgid "Typesetting"
-msgstr ""
-
-#: aegisub.appdata.xml:13
-msgid "Audio video"
-msgstr ""
-
-#: aegisub.appdata.xml:14
-msgid "Audio timing"
-msgstr ""
-
 #: default_hotkey.json:244:
 #, fuzzy
 msgid "Subtitle Edit Box"
@@ -7123,182 +7079,343 @@ msgstr ""
 msgid "Update Checker:"
 msgstr "スペルチェッカー"
 
-#~ msgid "Avisynth renders its own subs"
-#~ msgstr "Avisynth独自の字幕レンダリング"
-
-#~ msgid "Save config.dat locally"
-#~ msgstr "config.dat に設定情報を保存"
-
-#~ msgid "Show Tip of the Day"
-#~ msgstr "今日のヒントを表示"
-
-#~ msgid "Group some text first."
-#~ msgstr "始めにテキストをグループ化してください"
-
-#~ msgid "Possible error parsing source line"
-#~ msgstr "ローマ字行のエラー"
-
-#~ msgid "Kanji timer"
-#~ msgstr "漢字タイマー"
-
+#, c-format
 #~ msgid ""
-#~ "The source line contains text before the first karaoke block.\n"
-#~ "Do you want to carry it over to the destination?\n"
-#~ "It will be ignored otherwise."
+#~ "\n"
+#~ "Finished writing to %s.\n"
 #~ msgstr ""
-#~ "ローマ字行は最初のカラオケ・ブロックの前にテキストを含んでいます\n"
-#~ "次へそれを繰り越しますか？\n"
-#~ "そうでなければ無視されます"
+#~ "\n"
+#~ "以下の場所に保存しました\n"
+#~ "%s.\n"
 
-#~ msgid "Select source text first."
-#~ msgstr "ローマ字テキストを選んでください"
+#~ msgid "    Subtitle format handler: "
+#~ msgstr "    字幕形式ハンドラー : "
 
-#~ msgid "Groups"
-#~ msgstr "グループ"
+#~ msgid " styles?"
+#~ msgstr " スタイル"
 
-#~ msgid "Associations"
-#~ msgstr "関連付け"
+#, c-format
+#~ msgid "\"%s\" found on dialogue line \"%d\".\n"
+#~ msgstr "フォント \"%s\" が字幕の \"%d\" 行目に見つかりました\n"
 
-#~ msgid ""
-#~ "Please select the formats you want to\n"
-#~ "associate with Aegisub:"
-#~ msgstr "Aegisubに関連付けしたい字幕ファイル(規格)にチェックを入れてください"
+#, c-format
+#~ msgid "\"%s\" found on style \"%s\".\n"
+#~ msgstr "フォント \"%s\" がスタイル \"%s\" に見つかりました\n"
 
-#~ msgid "Associate extensions"
-#~ msgstr "字幕ファイル関連付け"
+#, c-format
+#~ msgid "\"%s\" found.\n"
+#~ msgstr "\"%s\" は見つかりました\n"
 
-#~ msgid "Bug tracker hosting by:"
-#~ msgstr "バグトラッカーのホスティング : "
+#~ msgid "&Associations..."
+#~ msgstr "字幕ファイル関連付け (&A)"
 
-#~ msgid "SVN hosting by:"
-#~ msgstr "SVNのホスティング : "
-
-#~ msgid "Forum and wiki hosting by:"
-#~ msgstr "フォーラムとウィキのホスティング : "
-
-#~ msgid "This build of Aegisub uses the following C/C++ libraries:\n"
-#~ msgstr "Aegisubのビルドには以下のC/C++ライブラリが使われています :\n"
-
-#~ msgid "No new version has been found.\n"
-#~ msgstr "Aegisubの新しいバージョンはありませんでした \n"
-
-#~ msgid "Please go to the following URL to download it: %s\n"
-#~ msgstr "ダウンロードするために次のURLを開いてください : %s\n"
-
-#~ msgid "New version found!\n"
-#~ msgstr "Aegisubの新しいバージョンが見つかりました！ \n"
-
-#~ msgid "OK.\n"
-#~ msgstr "成功\n"
-
-#~ msgid "Failed.\n"
-#~ msgstr "失敗\n"
-
-#~ msgid "Attempting to open \"%s\"..."
-#~ msgstr "\"%s\" を開いています..."
-
-#~ msgid "Could not open Internet File system. Aborting.\n"
-#~ msgstr ""
-#~ "異常終了、インターネットでファイルシステムを開くことができませんでした\n"
-
-#~ msgid "Show Splash Screen"
-#~ msgstr "スプラッシュ画面を表示"
-
-#~ msgid ""
-#~ "You already have timecodes loaded. Would you like to replace them with "
-#~ "timecodes from the video file?"
-#~ msgstr ""
-#~ "すでにタイムコードを読み込んでいますが、ビデオファイルからのタイムコードに"
-#~ "変更しますか？"
-
-#~ msgid "Replace timecodes?"
-#~ msgstr "タイムコードを置き換えますか？"
-
-#~ msgid ""
-#~ "You already have timecodes loaded. Replace them with the timecodes from "
-#~ "the Matroska file?"
-#~ msgstr ""
-#~ "すでにタイムコードを読み込んでいますが、Matroskaファイルからタイムコードを"
-#~ "取り出し置き換えますか？"
-
-#~ msgid "Unknown"
-#~ msgstr "不明"
-
-#~ msgid "Toggle realtime display of changes."
-#~ msgstr "字幕の変更を映像にリアルタイムに反映し描画します"
-
-#~ msgid "Realtime"
-#~ msgstr "リアルタイム"
-
-#~ msgid "No timecodes to average"
-#~ msgstr "タイムコードに平均値がありません"
-
-#~ msgid "Exporting PRS"
-#~ msgstr "エクスポートPRS形式 (Pre-Rendered Subtitles)"
-
-#~ msgid "Please wait, caching fonts..."
-#~ msgstr "しばらくお待ちください、フォントのキャッシュを作成中…"
-
-#~ msgid "delete"
-#~ msgstr "削除"
-
-#~ msgid "load"
-#~ msgstr "ロード"
-
-#~ msgid "Couldn't allocate memory."
-#~ msgstr "メモリを割り当てることができませんでした"
-
-#~ msgid "There is no audio to save."
-#~ msgstr "保存する音声がありません"
-
-#~ msgid "The starting point is beyond the length of the audio loaded."
-#~ msgstr "読み込んだ音声の長さを越えています"
-
-#~ msgid "Paste lines from clipboard"
-#~ msgstr "クリップボードから貼り付けます"
-
-#~ msgid "Cuts selected lines to clipboard"
-#~ msgstr "選択行をクリップボードに切り取ります"
-
-#~ msgid "C&ut"
-#~ msgstr "切り取り (&U)"
-
-#~ msgid ""
-#~ "Joins selected lines in a single one, making each line into a karaoke "
-#~ "syllable"
-#~ msgstr "各字幕行を音節としてカラオケタグを付加して連結します"
-
-#~ msgid "&Swap"
-#~ msgstr "字幕行の入れ替え"
-
-#~ msgid "Split (by karaoke)"
-#~ msgstr "Karaoke 字幕行の分割"
-
-#~ msgid "&Duplicate and shift by 1 frame"
-#~ msgstr "選択行を1フレームずらして複製"
+#~ msgid "&Automation"
+#~ msgstr "オートメーション (&A)"
 
 #~ msgid "&Duplicate"
 #~ msgstr "選択行を複製 (&D)"
 
-#~ msgid "editing"
-#~ msgstr "編集中"
+#~ msgid "&Duplicate and Shift by 1 Frame"
+#~ msgstr "選択行を1フレームずらして複製 (&D)"
 
-#~ msgid "MarginV change"
-#~ msgstr "上下余白の変更"
+#~ msgid "&Duplicate and shift by 1 frame"
+#~ msgstr "選択行を1フレームずらして複製"
 
-#~ msgid "MarginR change"
-#~ msgstr "右側余白の変更"
+#~ msgid "&Forums"
+#~ msgstr "ウェブフォーラム (&F)"
 
-#~ msgid "Time"
-#~ msgstr "時間表示"
+#~ msgid "&No"
+#~ msgstr "いいえ (&N)"
+
+#~ msgid "&Resource Files..."
+#~ msgstr "リソースファイル ... (&R)"
+
+#~ msgid "&Swap"
+#~ msgstr "字幕行の入れ替え"
+
+#~ msgid "&Yes"
+#~ msgstr "はい (&Y)"
+
+#~ msgid "Accept Split"
+#~ msgstr "分割します"
+
+#~ msgid "Add lead in (%KEY%)"
+#~ msgstr "リードイン追加 (%KEY%)"
+
+#~ msgid "Add lead out (%KEY%)"
+#~ msgstr "リードアウト追加 (%KEY%)"
+
+#~ msgid "Advanced - EXPERT USERS ONLY"
+#~ msgstr "Advanced - 上級ユーザー設定"
+
+#~ msgid ""
+#~ "Aegisub can export subtitles to many different formats, character "
+#~ "encodings, and even compensate Variable Frame Rate so you can hardsub "
+#~ "them - it's all in the Export option in File menu."
+#~ msgstr ""
+#~ "Aegisubは、「字幕をエクスポート」から、様々な字幕規格に変換したり、文字"
+#~ "コードを変換したり、ハードサブ用に可変フレームレートを固定フレームレートに"
+#~ "変えたりすることができます。"
+
+#~ msgid ""
+#~ "Aegisub can take over the following file types.\n"
+#~ "\n"
+#~ "If you want Aegisub to no longer be associated with a file type, you must "
+#~ "tell another program to take over the file type."
+#~ msgstr ""
+#~ "Aegisub には次のファイルの種類を関連付けることができます。\n"
+#~ "\n"
+#~ "特定のファイルの種類の関連付けを Aegisub から外したい場合、他のアプリケー"
+#~ "ションからそのファイルの種類を関連付ける必要があります。"
+
+#~ msgid ""
+#~ "Aegisub has several features to make sure you will never lose your work. "
+#~ "It will periodically save your subtitles to autosave folder, and will "
+#~ "create a copy of subs whenever you open them, to autoback folder. Also, "
+#~ "if it crashes, it will attempt to save a restore file."
+#~ msgstr ""
+#~ "Aegisubには、あなたのプロジェクトが失敗しないためにいくつかの特徴がありま"
+#~ "す。ひとつは、定期的にオートセーブフォルダに字幕を保存します。もうひとつ"
+#~ "は、ソフトがクラッシュした時にオートバックアップフォルダに字幕の復旧を試み"
+#~ "ます。"
+
+#~ msgid ""
+#~ "Aegisub is already associated with all supported file types.\n"
+#~ "\n"
+#~ "If you want Aegisub to no longer be associated with a file type, you must "
+#~ "tell another program to take over the file type."
+#~ msgstr ""
+#~ "Aegisub が対応する全てのファイルの種類は関連付けられています。\n"
+#~ "\n"
+#~ "特定のファイルの種類の関連付けを Aegisub から外したい場合、他のアプリケー"
+#~ "ションからそのファイルの種類を関連付ける必要があります。"
+
+#~ msgid ""
+#~ "Aegisub is not your default editor for subtitle files. Do you want to "
+#~ "make Aegisub your default editor for subtitle files?"
+#~ msgstr ""
+#~ "Aegisub は現在、既定の字幕編集アプリケーションとして設定されてません。 "
+#~ "Aegisub を既定の字幕編集アプリケーションに設定しますか。"
+
+#~ msgid "Aegisub must restart for the changes to take effect. Restart now?"
+#~ msgstr ""
+#~ "変更を有効にするには再起動が必要です\n"
+#~ "今再起動しますか？"
+
+#~ msgid "All"
+#~ msgstr "すべて"
+
+#~ msgid "All Supported Types"
+#~ msgstr "サポートされているすべてのファイル"
+
+#~ msgid "All files"
+#~ msgstr "すべてのファイル"
+
+#~ msgid "Allow grid to take focus"
+#~ msgstr "字幕グリッドで矢印キーを有効にする"
+
+#~ msgid "Always perform this check when Aegisub starts"
+#~ msgstr "Aegisub を起動するときいつもこの確認を行う"
+
+#, c-format
+#~ msgid ""
+#~ "An Automation script failed to load. File name: '%s', error reported:"
+#~ msgstr ""
+#~ "オートメーションのスクリプトの読み込みに失敗しました\n"
+#~ "ファイル名 : '%s', エラーレポート :"
+
+#~ msgid "Are you sure you want to delete these "
+#~ msgstr "複数のスタイルを削除 -- 選択数"
+
+#~ msgid "Associate extensions"
+#~ msgstr "字幕ファイル関連付け"
+
+#~ msgid "Associate file types"
+#~ msgstr "ファイルの関連付け"
+
+#~ msgid "Associate file types with Aegisub"
+#~ msgstr "字幕規格を選択してAegisubに関連付けをします"
+
+#~ msgid "Associations"
+#~ msgstr "関連付け"
+
+#~ msgid "Attempting to open \"%s\"..."
+#~ msgstr "\"%s\" を開いています..."
+
+#~ msgid "Audio Add Lead In"
+#~ msgstr "[Audio] リードイン追加"
+
+#~ msgid "Audio Add Lead Out"
+#~ msgstr "[Audio] リードアウト追加"
+
+#~ msgid "Audio Commit"
+#~ msgstr "[Audio] Commit (決定して次へ)"
+
+#~ msgid "Audio Commit (Stay)"
+#~ msgstr "[Audio] Commit (決定)"
+
+#~ msgid "Audio Commit Alt"
+#~ msgstr "[Audio] Commit (決定して次へ・代替)"
+
+#~ msgid "Audio Karaoke Decrease Len"
+#~ msgstr "[Audio] Karaoke 音節時間を減らす（後の音節もずらす）"
+
+#~ msgid "Audio Karaoke Decrease Len Shift"
+#~ msgstr "[Audio] Karaoke 音節時間を増やす（後の音節もずらす）"
+
+#~ msgid "Audio Karaoke Increase Len"
+#~ msgstr "[Audio] Karaoke 音節時間を減らす"
+
+#~ msgid "Audio Karaoke Increase Len Shift"
+#~ msgstr "[Audio] Karaoke 音節時間を増やす"
+
+#~ msgid "Audio Medusa Enter"
+#~ msgstr "[Medusaモード] 決定"
+
+#~ msgid "Audio Medusa Next"
+#~ msgstr "[Medusaモード] 次へ"
+
+#~ msgid "Audio Medusa Play"
+#~ msgstr "[Medusaモード] 再生"
+
+#~ msgid "Audio Medusa Play After"
+#~ msgstr "[Medusaモード] 再生-直後"
+
+#~ msgid "Audio Medusa Play Before"
+#~ msgstr "[Medusaモード] 再生-直前"
+
+#~ msgid "Audio Medusa Previous"
+#~ msgstr "[Medusaモード] 前へ"
+
+#~ msgid "Audio Medusa Shift End Back"
+#~ msgstr "[Medusaモード] 終了シフト-前へ"
+
+#~ msgid "Audio Medusa Shift End Forward"
+#~ msgstr "[Medusaモード] 終了シフト-後へ"
+
+#~ msgid "Audio Medusa Shift Start Back"
+#~ msgstr "[Medusaモード] 開始シフト-前へ"
+
+#~ msgid "Audio Medusa Shift Start Forward"
+#~ msgstr "[Medusaモード] 開始シフト-後へ"
+
+#~ msgid "Audio Medusa Stop"
+#~ msgstr "[Medusaモード] 停止"
+
+#~ msgid "Audio Medusa Toggle"
+#~ msgstr "[Medusaモード] トグル"
+
+#~ msgid "Audio Next Line"
+#~ msgstr "[Audio] 次へ"
+
+#~ msgid "Audio Next Line Alt"
+#~ msgstr "[Audio] 次へ (代替)"
+
+#~ msgid "Audio Play"
+#~ msgstr "[Audio] 再生"
+
+#~ msgid "Audio Play 500ms After"
+#~ msgstr "[Audio] 0.5秒後だけ再生"
+
+#~ msgid "Audio Play 500ms Before"
+#~ msgstr "[Audio] 0.5秒前だけ再生"
+
+#~ msgid "Audio Play Alt"
+#~ msgstr "[Audio] 再生 (代替)"
+
+#~ msgid "Audio Play First 500ms"
+#~ msgstr "[Audio] 先頭0.5秒だけ再生"
+
+#~ msgid "Audio Play Last 500ms"
+#~ msgstr "[Audio] 最後0.5秒だけ再生"
+
+#~ msgid "Audio Play Original Line"
+#~ msgstr "[Audio] 選択行を再生"
+
+#~ msgid "Audio Play To End"
+#~ msgstr "[Audio] 選択行の終わりから再生"
+
+#~ msgid "Audio Play or Stop"
+#~ msgstr "[Audio] 再生/停止"
+
+#~ msgid "Audio Prev Line"
+#~ msgstr "[Audio] 前へ"
+
+#~ msgid "Audio Prev Line Alt"
+#~ msgstr "[Audio] 前へ (代替)"
+
+#~ msgid "Audio Stop"
+#~ msgstr "[Audio] 停止"
+
+#~ msgid "Auto-backup path:"
+#~ msgstr "オートバックアップ パス :"
+
+#~ msgid "Auto-save"
+#~ msgstr "オートセーブ - 自動保存"
+
+#~ msgid "Auto-save path:"
+#~ msgstr "オートセーブ パス :"
+
+#~ msgid "Avisynth renders its own subs"
+#~ msgstr "Avisynth独自の字幕レンダリング"
+
+#~ msgid "Below Normal (recommended)"
+#~ msgstr "標準より下 (推奨)"
+
+#~ msgid "Bug tracker hosting by:"
+#~ msgstr "バグトラッカーのホスティング : "
+
+#~ msgid "C&ut"
+#~ msgstr "切り取り (&U)"
+
+#~ msgid "Change aspect ratio"
+#~ msgstr "アスペクト比を変更"
+
+#~ msgid "Changes resolution and modifies subtitles to conform to change"
+#~ msgstr ""
+#~ "解像度の設定、字幕ファイル内で映像解像度の設定と余白(マージン)の設定を行い"
+#~ "ます"
+
+#~ msgid "Check File Associations on Start"
+#~ msgstr "起動時にファイルの関連付けのチェックを行う"
+
+#~ msgid "Checking fonts...\n"
+#~ msgstr "フォントをチェックしてます\n"
+
+#~ msgid "Clean Script Info"
+#~ msgstr "スクリプト整形情報"
+
+#~ msgid "Clear Hotkey"
+#~ msgstr "クリア"
+
+#~ msgid ""
+#~ "Collecting font data from system. This might take a while, depending on "
+#~ "the number of fonts installed. Results are cached and subsequent "
+#~ "executions will be faster...\n"
+#~ msgstr ""
+#~ "システムのフォントデータを収集します\n"
+#~ "所要時間はインストールされたフォント数に依存しますが、収集した結果は貯えら"
+#~ "れ、次の実行はより速くなります...\n"
+
+#~ msgid "Collision: "
+#~ msgstr "字幕衝突について :"
+
+#~ msgid "Color Picker"
+#~ msgstr "スポイト"
+
+#~ msgid "Commit changes (%KEY%/%KEY%)"
+#~ msgstr "選択範囲を決定 (%KEY%/%KEY%)"
+
+#~ msgid "Commit splits and leave split-mode"
+#~ msgstr "分割を決定します"
+
+#~ msgid "Commit?"
+#~ msgstr "Commit しますか？"
 
 #~ msgid "Commits the text (Enter). Hold Ctrl to stay in line (%KEY%)."
 #~ msgstr ""
 #~ "Commit (Enter) は決定\n"
 #~ "決定すると次の字幕行に移動、(%KEY%) で次へ移動しません"
-
-#~ msgid "Font Face Name"
-#~ msgstr "フォント名"
 
 #~ msgid ""
 #~ "Configuration file is either invalid or corrupt. The current file will be "
@@ -7307,155 +7424,121 @@ msgstr "スペルチェッカー"
 #~ "設定ファイルが無効あるいは不正です\n"
 #~ "現在の設定ファイルはデフォルト設定ファイルでバックアップされ交換されます"
 
-#~ msgid "Reading keyframe and timecode data from Matroska file."
-#~ msgstr "Matroskaファイルからキーフレームとタイムコードを読み込み中"
+#~ msgid "Copy of "
+#~ msgstr "コピー ～ "
 
-#~ msgid "Reading keyframes from video"
-#~ msgstr "ビデオからキーフレームを読み込み中"
+#~ msgid "Copy subtitles"
+#~ msgstr "字幕の選択行をコピーします"
 
-#~ msgid "Styling Assistant Preview"
-#~ msgstr "[スタイリングアシスタント] 変更をプレビュー"
+#~ msgid "Could not open Internet File system. Aborting.\n"
+#~ msgstr ""
+#~ "異常終了、インターネットでファイルシステムを開くことができませんでした\n"
 
-#~ msgid "Styling Assistant Accept"
-#~ msgstr "[スタイリングアシスタント] 変更を適用"
+#~ msgid "Couldn't allocate memory."
+#~ msgstr "メモリを割り当てることができませんでした"
 
-#~ msgid "Styling Assistant Prev"
-#~ msgstr "[スタイリングアシスタント] 前の字幕行へ移動"
+#~ msgid "Crash recovery path:"
+#~ msgstr "異常終了からの復旧 パス :"
 
-#~ msgid "Styling Assistant Next"
-#~ msgstr "[スタイリングアシスタント] 次の字幕行へ移動"
+#~ msgid "Current line: ?"
+#~ msgstr "現在の字幕行 : ?"
 
-#~ msgid "Styling Assistant Play Video"
-#~ msgstr "[スタイリングアシスタント] 映像を再生"
+#~ msgid "Cut"
+#~ msgstr "切り取り"
 
-#~ msgid "Styling Assistant Play Audio"
-#~ msgstr "[スタイリングアシスタント] 音声を再生"
+#~ msgid "Cuts selected lines to clipboard"
+#~ msgstr "選択行をクリップボードに切り取ります"
 
-#~ msgid "Translation Assistant Insert Original"
-#~ msgstr "[翻訳アシスタント] オリジナルをコピー"
+#~ msgid "DEBUG: Verify all fonts in system"
+#~ msgstr "デバッグ : システムのフォントをすべて確認"
 
-#~ msgid "Translation Assistant Preview"
-#~ msgstr "[翻訳アシスタント] 変更をプレビュー"
+#~ msgid "DON'T PANIC!"
+#~ msgstr "パニックにならないで！"
 
-#~ msgid "Translation Assistant Accept"
-#~ msgstr "[翻訳アシスタント] 変更を適用"
+#~ msgid "Debug: "
+#~ msgstr "デバッグ : "
 
-#~ msgid "Translation Assistant Prev"
-#~ msgstr "[翻訳アシスタント] 前の字幕行へ移動"
+#~ msgid "Dest Style"
+#~ msgstr "日本語のスタイル"
 
-#~ msgid "Translation Assistant Next"
-#~ msgstr "[翻訳アシスタント] 次の字幕行へ移動"
+#~ msgid ""
+#~ "Do you want to commit your changes? If you choose No, they will be "
+#~ "discarded."
+#~ msgstr ""
+#~ "変更をコミットしますか？\n"
+#~ "「いいえ」を選択すれば変更が破棄されます"
 
-#~ msgid "Translation Assistant Play Video"
-#~ msgstr "[翻訳アシスタント] 映像を再生"
+#~ msgid "Done collecting font data."
+#~ msgstr "フォントデータの収集が終わり、"
 
-#~ msgid "Translation Assistant Play Audio"
-#~ msgstr "[翻訳アシスタント] 音声を再生"
+#~ msgid "Draw keyframes"
+#~ msgstr "キーフレームの表示"
 
-#~ msgid "Audio Medusa Enter"
-#~ msgstr "[Medusaモード] 決定"
+#~ msgid "Draw secondary lines"
+#~ msgstr "秒の境界線を表示"
 
-#~ msgid "Audio Medusa Previous"
-#~ msgstr "[Medusaモード] 前へ"
+#~ msgid "Draw selection background"
+#~ msgstr "選択背景の表示"
 
-#~ msgid "Audio Medusa Next"
-#~ msgstr "[Medusaモード] 次へ"
+#~ msgid "Draw timeline"
+#~ msgstr "タイムラインの表示"
 
-#~ msgid "Audio Medusa Play After"
-#~ msgstr "[Medusaモード] 再生-直後"
+#~ msgid "Duplicate lines and shift by one frame"
+#~ msgstr "選択行の字幕を、1フレーム分ずらして複製します"
 
-#~ msgid "Audio Medusa Play Before"
-#~ msgstr "[Medusaモード] 再生-直前"
+#~ msgid "Enable Medusa-Style Timing Shortcuts"
+#~ msgstr "ショートカットキーを Medusa 互換にする"
 
-#~ msgid "Audio Medusa Shift End Forward"
-#~ msgstr "[Medusaモード] 終了シフト-後へ"
+#~ msgid "Enable preview (slow)"
+#~ msgstr "プレビューに反映 (負荷高)"
 
-#~ msgid "Audio Medusa Shift End Back"
-#~ msgstr "[Medusaモード] 終了シフト-前へ"
+#~ msgid "Enter split-mode"
+#~ msgstr "分割モード"
 
-#~ msgid "Audio Medusa Shift Start Forward"
-#~ msgstr "[Medusaモード] 開始シフト-後へ"
+#~ msgid "Error: "
+#~ msgstr "エラー :"
 
-#~ msgid "Audio Medusa Shift Start Back"
-#~ msgstr "[Medusaモード] 開始シフト-前へ"
+#~ msgid "Executing "
+#~ msgstr "実行中"
 
-#~ msgid "Audio Medusa Stop"
-#~ msgstr "[Medusaモード] 停止"
+#~ msgid "Exporting PRS"
+#~ msgstr "エクスポートPRS形式 (Pre-Rendered Subtitles)"
 
-#~ msgid "Audio Medusa Play"
-#~ msgstr "[Medusaモード] 再生"
+#~ msgid "Failed.\n"
+#~ msgstr "失敗\n"
 
-#~ msgid "Audio Medusa Toggle"
-#~ msgstr "[Medusaモード] トグル"
+#~ msgid "Fatal error: "
+#~ msgstr "致命的なエラー :"
 
-#~ msgid "Audio Add Lead Out"
-#~ msgstr "[Audio] リードアウト追加"
+#~ msgid "File paths"
+#~ msgstr "保存先 (パス) の指定"
 
-#~ msgid "Audio Add Lead In"
-#~ msgstr "[Audio] リードイン追加"
+#~ msgid "File save/load"
+#~ msgstr "オートセーブ/ロード"
 
-#~ msgid "Audio Play Original Line"
-#~ msgstr "[Audio] 選択行を再生"
+#~ msgid "Font Face Name"
+#~ msgstr "フォント名"
 
-#~ msgid "Audio Play To End"
-#~ msgstr "[Audio] 選択行の終わりから再生"
+#~ msgid "Font: "
+#~ msgstr "フォント : "
 
-#~ msgid "Audio Play 500ms After"
-#~ msgstr "[Audio] 0.5秒後だけ再生"
+#~ msgid "Forum and wiki hosting by:"
+#~ msgstr "フォーラムとウィキのホスティング : "
 
-#~ msgid "Audio Play 500ms Before"
-#~ msgstr "[Audio] 0.5秒前だけ再生"
+#~ msgid "Found.\n"
+#~ msgstr "は見つかりました\n"
 
-#~ msgid "Audio Play Last 500ms"
-#~ msgstr "[Audio] 最後0.5秒だけ再生"
+#~ msgid "From Video"
+#~ msgstr "映像から取得"
 
-#~ msgid "Audio Play First 500ms"
-#~ msgstr "[Audio] 先頭0.5秒だけ再生"
+#~ msgid "Function"
+#~ msgstr "機能"
 
-#~ msgid "Audio Karaoke Decrease Len Shift"
-#~ msgstr "[Audio] Karaoke 音節時間を増やす（後の音節もずらす）"
+#~ msgid "Grab times from line upon selection"
+#~ msgstr "字幕行と音声ボックス選択エリアを同期"
 
-#~ msgid "Audio Karaoke Increase Len Shift"
-#~ msgstr "[Audio] Karaoke 音節時間を増やす"
-
-#~ msgid "Audio Karaoke Decrease Len"
-#~ msgstr "[Audio] Karaoke 音節時間を減らす（後の音節もずらす）"
-
-#~ msgid "Audio Karaoke Increase Len"
-#~ msgstr "[Audio] Karaoke 音節時間を減らす"
-
-#~ msgid "Audio Stop"
-#~ msgstr "[Audio] 停止"
-
-#~ msgid "Audio Play or Stop"
-#~ msgstr "[Audio] 再生/停止"
-
-#~ msgid "Audio Play Alt"
-#~ msgstr "[Audio] 再生 (代替)"
-
-#~ msgid "Audio Play"
-#~ msgstr "[Audio] 再生"
-
-#~ msgid "Audio Next Line Alt"
-#~ msgstr "[Audio] 次へ (代替)"
-
-#~ msgid "Audio Next Line"
-#~ msgstr "[Audio] 次へ"
-
-#~ msgid "Audio Prev Line Alt"
-#~ msgstr "[Audio] 前へ (代替)"
-
-#~ msgid "Audio Prev Line"
-#~ msgstr "[Audio] 前へ"
-
-#~ msgid "Audio Commit (Stay)"
-#~ msgstr "[Audio] Commit (決定)"
-
-#~ msgid "Audio Commit"
-#~ msgstr "[Audio] Commit (決定して次へ)"
-
-#~ msgid "Audio Commit Alt"
-#~ msgstr "[Audio] Commit (決定して次へ・代替)"
+#~ msgid "Grid delete rows"
+#~ msgstr "[Sub] 選択行を削除"
 
 #~ msgid "Grid duplicate and shift one frame"
 #~ msgstr "[Sub] 選択行を1フレームずらして複製"
@@ -7463,198 +7546,53 @@ msgstr "スペルチェッカー"
 #~ msgid "Grid duplicate rows"
 #~ msgstr "[Sub] 選択行を複製"
 
-#~ msgid "Grid delete rows"
-#~ msgstr "[Sub] 選択行を削除"
-
-#~ msgid "Grid move row up"
-#~ msgstr "[Sub] 選択行を上に移動"
-
-#~ msgid "Grid move row down"
-#~ msgstr "[Sub] 選択行を下に移動"
-
-#~ msgid "Video global zoom out"
-#~ msgstr "[Video] 縮小"
-
-#~ msgid "Video global zoom in"
-#~ msgstr "[Video] 拡大"
-
-#~ msgid "Save Subtitles Alt"
-#~ msgstr "字幕の保存"
-
 #~ msgid "Grid global next line"
 #~ msgstr "[Sub] 次の行に移動"
 
 #~ msgid "Grid global prev line"
 #~ msgstr "[Sub] 前の行に移動"
 
-#~ msgid "Video global play"
-#~ msgstr "[Video] 再生"
+#~ msgid "Grid move row down"
+#~ msgstr "[Sub] 選択行を下に移動"
 
-#~ msgid "Video global focus seek"
-#~ msgstr "[Video] シークバーにフォーカスを移動"
+#~ msgid "Grid move row up"
+#~ msgstr "[Sub] 選択行を上に移動"
 
-#~ msgid "Video global prev frame"
-#~ msgstr "[Video] 前のフレームへ"
+#~ msgid "Group some text first."
+#~ msgstr "始めにテキストをグループ化してください"
 
-#~ msgid "Zoom 50%"
-#~ msgstr "[Video] 表示縮小 50%"
+#~ msgid "Groups"
+#~ msgstr "グループ"
 
-#~ msgid "Shift by Current Time"
-#~ msgstr "[Video] 現在の時間にシフトする"
+#~ msgid "HD cache name"
+#~ msgstr "ハードディスク キャッシュ名"
 
-#~ msgid "Set End to Video"
-#~ msgstr "[Video] 終了時間に指定"
+#~ msgid ""
+#~ "Having video open is often more a nuisance than a help when timing "
+#~ "subtitles. Timing with only audio open is often much easier. You can "
+#~ "always adjust the subtitles to match the video later on."
+#~ msgstr ""
+#~ "最初に字幕タイミングを行う時には、映像ビューを表示させるよりも音声ビューだ"
+#~ "けで行う方が意外と簡単です。後で映像ビューを表示させ字幕を調整することがで"
+#~ "きます。"
 
-#~ msgid "Set Start to Video"
-#~ msgstr "[Video] 開始時間に指定"
-
-#~ msgid "Video Jump"
-#~ msgstr "[Video] フレーム/時間指定で移動"
-
-#~ msgid "Paste Over"
-#~ msgstr "上書きで貼り付け"
-
-#~ msgid "Paste"
-#~ msgstr "貼り付け"
-
-#~ msgid "Cut"
-#~ msgstr "切り取り"
+#~ msgid "Header"
+#~ msgstr "イベントヘッダー"
 
 #~ msgid "Help"
 #~ msgstr "ヘルプ"
 
-#~ msgid "show full tags."
-#~ msgstr "タグをそのまま表示します"
+#~ msgid "Highlight subtitles that are currently visible in video"
+#~ msgstr "映像表示フレーム行の背景色を有効にする"
 
-#~ msgid "All Supported Types"
-#~ msgstr "サポートされているすべてのファイル"
+#~ msgid "Hint: "
+#~ msgstr "ヒント :"
 
-#~ msgid "All files"
-#~ msgstr "すべてのファイル"
+#~ msgid "History"
+#~ msgstr "タイムシフトの履歴"
 
-#~ msgid "You have timecodes loaded currently. Would you like to unload them?"
-#~ msgstr "読み込んでいるタイムコードを破棄しますか？"
-
-#~ msgid "Save before continuing?"
-#~ msgstr "現在作業している字幕を保存しますか？"
-
-#~ msgid "Visit Aegisub's forums"
-#~ msgstr "Aegisubのウェブフォーラムをブラウザで開きます"
-
-#~ msgid "&Forums"
-#~ msgstr "ウェブフォーラム (&F)"
-
-#~ msgid "Resource files distributed with Aegisub"
-#~ msgstr "Aegisub と共に配布されているリソースファイル。"
-
-#~ msgid "&Resource Files..."
-#~ msgstr "リソースファイル ... (&R)"
-
-#~ msgid "Open log window"
-#~ msgstr "ログビューを開きます"
-
-#~ msgid "Associate file types with Aegisub"
-#~ msgstr "字幕規格を選択してAegisubに関連付けをします"
-
-#~ msgid "&Associations..."
-#~ msgstr "字幕ファイル関連付け (&A)"
-
-#~ msgid "&Automation"
-#~ msgstr "オートメーション (&A)"
-
-#~ msgid "Sort by Time"
-#~ msgstr "時間でソート"
-
-#~ msgid "Duplicate lines and shift by one frame"
-#~ msgstr "選択行の字幕を、1フレーム分ずらして複製します"
-
-#~ msgid "&Duplicate and Shift by 1 Frame"
-#~ msgstr "選択行を1フレームずらして複製 (&D)"
-
-#~ msgid "Changes resolution and modifies subtitles to conform to change"
-#~ msgstr ""
-#~ "解像度の設定、字幕ファイル内で映像解像度の設定と余白(マージン)の設定を行い"
-#~ "ます"
-
-#~ msgid "Copy subtitles"
-#~ msgstr "字幕の選択行をコピーします"
-
-#~ msgid "Saves subtitles"
-#~ msgstr "字幕を上書き保存します"
-
-#~ msgid "Open Spell checker"
-#~ msgstr "スペルチェックをする"
-
-#~ msgid "Open Kanji Timer dialog"
-#~ msgstr "漢字タイマーを開く"
-
-#~ msgid "Open Timing Post-processor dialog"
-#~ msgstr "タイミング ポストプロセッサーを開く"
-
-#~ msgid "Open Translation Assistant"
-#~ msgstr "翻訳アシスタントを開く"
-
-#~ msgid "Open Styling Assistant"
-#~ msgstr "スタイリングアシスタントを開く"
-
-#~ msgid "Open Shift Times Dialogue"
-#~ msgstr "タイムシフトを開く"
-
-#~ msgid "Open Fonts Collector"
-#~ msgstr "フォントコレクターを開く"
-
-#~ msgid "Open Attachment List"
-#~ msgstr "添付ファイルの一覧を開く"
-
-#~ msgid "Open Styles Manager"
-#~ msgstr "スタイルマネージャーを開く"
-
-#~ msgid "Shift selected subtitles so first selected starts at this frame"
-#~ msgstr ""
-#~ "現在の映像フレームを選択字幕行の表示開始タイミングとしてシフトします"
-
-#~ msgid "Shift subtitles to frame"
-#~ msgstr "現在のフレームにシフト"
-
-#~ msgid "Snap selected subtitles so they match current scene start/end"
-#~ msgstr ""
-#~ "表示開始/終了を現在の映像シーンに合わせます (キーフレーム間にタイミング)"
-
-#~ msgid "Snap subtitles to scene"
-#~ msgstr "シーンに位置指定"
-
-#~ msgid "Jump video to end"
-#~ msgstr "最終フレームに移動"
-
-#~ msgid "Jump video to time/frame"
-#~ msgstr "時間またはフレームを指定して移動"
-
-#~ msgid "Jump To..."
-#~ msgstr "移動する"
-
-#~ msgid "Save subtitles"
-#~ msgstr "字幕ファイルを保存"
-
-#~ msgid "audio"
-#~ msgstr "音声"
-
-#~ msgid "video"
-#~ msgstr "動画"
-
-#~ msgid "From Video"
-#~ msgstr "映像から取得"
-
-#~ msgid ""
-#~ "Removes all but the absolutely required fields from the Script Info "
-#~ "section. You might want to run this on files that you plan to distribute "
-#~ "in original form."
-#~ msgstr "必要最低限のスクリプトを残し、余分な部分を削除します"
-
-#~ msgid "Clean Script Info"
-#~ msgstr "スクリプト整形情報"
-
-#~ msgid "Current line: ?"
-#~ msgstr "現在の字幕行 : ?"
+#~ msgid "Hotkey conflict"
+#~ msgstr "ショートカットキーの競合"
 
 #~ msgid "If anything goes wrong, blame movax."
 #~ msgstr "上手くいかない時は “movax” と叫びましょう！"
@@ -7668,27 +7606,99 @@ msgstr "スペルチェッカー"
 #~ "「音声」→「音声ファイルを開く」で読み込んだ方が信頼性が増し安定します。"
 
 #~ msgid ""
-#~ "Having video open is often more a nuisance than a help when timing "
-#~ "subtitles. Timing with only audio open is often much easier. You can "
-#~ "always adjust the subtitles to match the video later on."
-#~ msgstr ""
-#~ "最初に字幕タイミングを行う時には、映像ビューを表示させるよりも音声ビューだ"
-#~ "けで行う方が意外と簡単です。後で映像ビューを表示させ字幕を調整することがで"
-#~ "きます。"
-
-#~ msgid ""
 #~ "If you decode your audio to a PCM WAV file before loading it in Aegisub, "
 #~ "you don't have to wait for it to be decoded before you can use it."
 #~ msgstr ""
 #~ "貴方がPCMデコードされたWAVを用意しておけば、Aegisubが動画ファイルから音声"
 #~ "を抽出する待ち時間を省略できます。"
 
+#~ msgid "Invalid destination directory."
+#~ msgstr "無効なディレクトリです"
+
+#~ msgid "Invalid fps or length value"
+#~ msgstr "無効なフレームレートか無効なフレーム数です"
+
 #~ msgid ""
-#~ "Try the spectrum mode for the audio display, it can make it much easier "
-#~ "to spot where the important points in the audio are."
-#~ msgstr ""
-#~ "音声タイミングにおいて、的確なタイミングや簡単な操作を可能にするスペクトラ"
-#~ "ムモードを使ってみてください。"
+#~ "Invalid resolution: destination resolution cannot be 0 on either "
+#~ "dimension."
+#~ msgstr "無効な解像度 : 縦または横の解像度の値が “0” になっています"
+
+#~ msgid "Join"
+#~ msgstr "結合"
+
+#~ msgid "Join selected syllables"
+#~ msgstr "結合を決定します"
+
+#~ msgid ""
+#~ "Joins selected lines in a single one, making each line into a karaoke "
+#~ "syllable"
+#~ msgstr "各字幕行を音節としてカラオケタグを付加して連結します"
+
+#~ msgid "Jump To..."
+#~ msgstr "移動する"
+
+#~ msgid "Jump video to end"
+#~ msgstr "最終フレームに移動"
+
+#~ msgid "Jump video to time/frame"
+#~ msgstr "時間またはフレームを指定して移動"
+
+#~ msgid "Kanji timer"
+#~ msgstr "漢字タイマー"
+
+#~ msgid "Karaoke"
+#~ msgstr "Karaoke"
+
+#~ msgid "Key"
+#~ msgstr "キー"
+
+#~ msgid "Limits for levels and recent files"
+#~ msgstr "レベルや履歴の制限"
+
+#~ msgid "Link commiting of times"
+#~ msgstr "開始/終了タイミングのリンク"
+
+#~ msgid "Lowest"
+#~ msgstr "最低"
+
+#~ msgid "Make Aegisub default editor for subtitles?"
+#~ msgstr "Aegisub を既定の字幕編集アプリケーションにしますか。"
+
+#~ msgid "Margin Bottom"
+#~ msgstr "下部余白"
+
+#~ msgid "Margin Top"
+#~ msgstr "上部余白"
+
+#~ msgid "MarginR change"
+#~ msgstr "右側余白の変更"
+
+#~ msgid "MarginV change"
+#~ msgstr "上下余白の変更"
+
+#~ msgid "Maximum recent audio files"
+#~ msgstr "音声ファイルの履歴"
+
+#~ msgid "Maximum recent find strings"
+#~ msgstr "検索文字列の履歴"
+
+#~ msgid "Maximum recent replace strings"
+#~ msgstr "置換文字列の履歴"
+
+#~ msgid "Maximum recent subtitle files"
+#~ msgstr "字幕ファイルの履歴"
+
+#~ msgid "Maximum recent timecode files"
+#~ msgstr "タイムコードファイルの履歴"
+
+#~ msgid "Maximum recent video files"
+#~ msgstr "映像ファイルの履歴"
+
+#~ msgid "Miscellanea"
+#~ msgstr "その他"
+
+#~ msgid "Modified Background"
+#~ msgstr "修正された背景色"
 
 #~ msgid ""
 #~ "Much like anything loaded via DirectShow, certain files may have a "
@@ -7702,18 +7712,312 @@ msgstr "スペルチェッカー"
 #~ "くとエラーを起こすかもしれませんが、Aegisubのバグではありません。それらの"
 #~ "動画ファイルを扱うときは再エンコードすることを考えてください。"
 
+#~ msgid "New version found!\n"
+#~ msgstr "Aegisubの新しいバージョンが見つかりました！ \n"
+
+#~ msgid "No new version has been found.\n"
+#~ msgstr "Aegisubの新しいバージョンはありませんでした \n"
+
+#~ msgid "No subtitle providers available. Cannot preview subs."
+#~ msgstr "利用可能な字幕が無いためプレビューができません"
+
+#~ msgid "No timecodes to average"
+#~ msgstr "タイムコードに平均値がありません"
+
+#~ msgid "None (NOT RECOMMENDED)"
+#~ msgstr "しない (※非推奨※)"
+
+#~ msgid "Not enough parameters for Aegisub::text_extents()"
+#~ msgstr "Aegisubに十分なパラメーターではありません ::text_extents()"
+
+#~ msgid "Not found.\n"
+#~ msgstr "は見つかりませんでした\n"
+
+#~ msgid "OK.\n"
+#~ msgstr "成功\n"
+
+#~ msgid "Open Attachment List"
+#~ msgstr "添付ファイルの一覧を開く"
+
+#~ msgid "Open Fonts Collector"
+#~ msgstr "フォントコレクターを開く"
+
+#~ msgid "Open Kanji Timer dialog"
+#~ msgstr "漢字タイマーを開く"
+
+#~ msgid "Open Shift Times Dialogue"
+#~ msgstr "タイムシフトを開く"
+
+#~ msgid "Open Spell checker"
+#~ msgstr "スペルチェックをする"
+
+#~ msgid "Open Styles Manager"
+#~ msgstr "スタイルマネージャーを開く"
+
+#~ msgid "Open Styling Assistant"
+#~ msgstr "スタイリングアシスタントを開く"
+
+#~ msgid "Open Timing Post-processor dialog"
+#~ msgstr "タイミング ポストプロセッサーを開く"
+
+#~ msgid "Open Translation Assistant"
+#~ msgstr "翻訳アシスタントを開く"
+
+#~ msgid "Open log window"
+#~ msgstr "ログビューを開きます"
+
+#~ msgid "Paste"
+#~ msgstr "貼り付け"
+
+#~ msgid "Paste Over"
+#~ msgstr "上書きで貼り付け"
+
+#~ msgid "Paste lines from clipboard"
+#~ msgstr "クリップボードから貼り付けます"
+
+#~ msgid "Path to dictionary files:"
+#~ msgstr "辞書ファイルのパス :"
+
+#~ msgid "Perl script"
+#~ msgstr "Perl スクリプト"
+
+#~ msgid "Play current line (%KEY%)"
+#~ msgstr "選択行を再生 (%KEY%)"
+
+#~ msgid "Play selection (%KEY%/%KEY%)"
+#~ msgstr "選択範囲を再生 (%KEY%/%KEY%)"
+
+#~ msgid "Please go to the following URL to download it: %s\n"
+#~ msgstr "ダウンロードするために次のURLを開いてください : %s\n"
+
 #~ msgid ""
-#~ "When you are done with your subtitles and ready to distribute them, "
-#~ "remember: say no to MP4, OGM or AVI. Matroska is your friend."
+#~ "Please select the formats you want to\n"
+#~ "associate with Aegisub:"
+#~ msgstr "Aegisubに関連付けしたい字幕ファイル(規格)にチェックを入れてください"
+
+#~ msgid "Please wait, caching fonts..."
+#~ msgstr "しばらくお待ちください、フォントのキャッシュを作成中…"
+
+#~ msgid "Possible error parsing source line"
+#~ msgstr "ローマ字行のエラー"
+
+#~ msgid "Press Key"
+#~ msgstr "キーを押してください"
+
+#, c-format
+#~ msgid "Press key to bind to \"%s\" or Esc to cancel."
 #~ msgstr ""
-#~ "あなたが作った字幕を配布する時に最適なコンテナは、MP4やOGMやAVIでなく、"
-#~ "Matroska（MKV）です。"
+#~ "押したキーが \"%s\" に割り当てられます\n"
+#~ "このウィンドウは、Escキーでキャンセルできます"
+
+#~ msgid "Reading into RAM"
+#~ msgstr "メモリへ読み込み中..."
+
+#~ msgid "Reading keyframe and timecode data from Matroska file."
+#~ msgstr "Matroskaファイルからキーフレームとタイムコードを読み込み中"
+
+#~ msgid "Reading keyframes from video"
+#~ msgstr "ビデオからキーフレームを読み込み中"
+
+#~ msgid "Realtime"
+#~ msgstr "リアルタイム"
+
+#, c-format
+#~ msgid "Reloading %s because the file on disk (%s) changed."
+#~ msgstr ""
+#~ "ディスク上のファイル (%s) が変更されたので、 %s をリロード(再読込)します"
+
+#~ msgid ""
+#~ "Removes all but the absolutely required fields from the Script Info "
+#~ "section. You might want to run this on files that you plan to distribute "
+#~ "in original form."
+#~ msgstr "必要最低限のスクリプトを残し、余分な部分を削除します"
+
+#~ msgid "Replace All"
+#~ msgstr "すべて置換"
+
+#~ msgid "Replace override tags with: "
+#~ msgstr "タグに置き換え表示する文字 : "
+
+#~ msgid "Replace timecodes?"
+#~ msgstr "タイムコードを置き換えますか？"
+
+#~ msgid "Resample resolution"
+#~ msgstr "解像度の設定"
+
+#~ msgid "Resource files distributed with Aegisub"
+#~ msgstr "Aegisub と共に配布されているリソースファイル。"
+
+#~ msgid "Restart Aegisub"
+#~ msgstr "Aegisubの再起動"
+
+#~ msgid "SVN hosting by:"
+#~ msgstr "SVNのホスティング : "
+
+#~ msgid "Save Subtitles Alt"
+#~ msgstr "字幕の保存"
+
+#~ msgid "Save before continuing?"
+#~ msgstr "現在作業している字幕を保存しますか？"
+
+#~ msgid "Save config.dat locally"
+#~ msgstr "config.dat に設定情報を保存"
+
+#~ msgid "Save subtitles"
+#~ msgstr "字幕ファイルを保存"
+
+#~ msgid "Saves subtitles"
+#~ msgstr "字幕を上書き保存します"
+
+#~ msgid "Saving changes"
+#~ msgstr "変更を保存しました"
+
+#~ msgid "Scanning file for fonts..."
+#~ msgstr "字幕内のフォントをスキャンしてます..."
+
+#~ msgid "Script completed"
+#~ msgstr "字幕修正を完了しました"
+
+#~ msgid "Seek bar"
+#~ msgstr "シークバー"
+
+#~ msgid "Select all"
+#~ msgstr "すべて選択"
+
+#~ msgid "Select source text first."
+#~ msgstr "ローマ字テキストを選んでください"
+
+#~ msgid "Selection background - modified"
+#~ msgstr "選択背景色の修正"
+
+#~ msgid "Set End to Video"
+#~ msgstr "[Video] 終了時間に指定"
+
+#~ msgid "Set Hotkey..."
+#~ msgstr "ショートカットキーを適用"
+
+#~ msgid "Set Start to Video"
+#~ msgstr "[Video] 開始時間に指定"
+
+#~ msgid "Set opacity, from 0 (opaque) to 255 (transparent)"
+#~ msgstr "透明度を指定します 0 (不透明) ～ 255 (透明)"
+
+#~ msgid "Shift by Current Time"
+#~ msgstr "[Video] 現在の時間にシフトする"
+
+#~ msgid "Shift selected subtitles so first selected starts at this frame"
+#~ msgstr ""
+#~ "現在の映像フレームを選択字幕行の表示開始タイミングとしてシフトします"
+
+#~ msgid "Shift subtitles to frame"
+#~ msgstr "現在のフレームにシフト"
+
+#, fuzzy
+#~ msgid "Show Original"
+#~ msgstr "オリジナル フィールド"
+
+#~ msgid "Show Splash Screen"
+#~ msgstr "スプラッシュ画面を表示"
+
+#~ msgid "Show Tip of the Day"
+#~ msgstr "今日のヒントを表示"
+
+#~ msgid "Snap selected subtitles so they match current scene start/end"
+#~ msgstr ""
+#~ "表示開始/終了を現在の映像シーンに合わせます (キーフレーム間にタイミング)"
+
+#~ msgid "Snap subtitles to scene"
+#~ msgstr "シーンに位置指定"
+
+#~ msgid "Snap to adjacent lines"
+#~ msgstr "スナップインを隣接する行へ"
+
+#~ msgid "Sort by Time"
+#~ msgstr "時間でソート"
+
+#~ msgid "Source Style"
+#~ msgstr "ローマ字のスタイル"
+
+#~ msgid "Spectrum cutoff"
+#~ msgstr "スペクトラム カットオフ"
+
+#~ msgid "Split"
+#~ msgstr "分割"
+
+#~ msgid "Split (by karaoke)"
+#~ msgstr "Karaoke 字幕行の分割"
+
+#~ msgid "Startup"
+#~ msgstr "Aegisub 起動時の動作設定"
+
+#~ msgid "Stop (%KEY%)"
+#~ msgstr "停止 (%KEY%)"
+
+#~ msgid "Style name."
+#~ msgstr "スタイルネームを入力します"
+
+#~ msgid ""
+#~ "Styles can be stored in different storages, so that you can keep your "
+#~ "projects organized."
+#~ msgstr ""
+#~ "作成した多くの字幕スタイルはプログラムとは別の場所に保存でき、プロジェクト"
+#~ "を維持することができるようになっています。"
+
+#~ msgid "Styling Assistant Accept"
+#~ msgstr "[スタイリングアシスタント] 変更を適用"
+
+#~ msgid "Styling Assistant Next"
+#~ msgstr "[スタイリングアシスタント] 次の字幕行へ移動"
+
+#~ msgid "Styling Assistant Play Audio"
+#~ msgstr "[スタイリングアシスタント] 音声を再生"
+
+#~ msgid "Styling Assistant Play Video"
+#~ msgstr "[スタイリングアシスタント] 映像を再生"
+
+#~ msgid "Styling Assistant Prev"
+#~ msgstr "[スタイリングアシスタント] 前の字幕行へ移動"
+
+#~ msgid "Styling Assistant Preview"
+#~ msgstr "[スタイリングアシスタント] 変更をプレビュー"
+
+#~ msgid "Styling assistant"
+#~ msgstr "スタイリングアシスタント"
+
+#~ msgid "Syllable text"
+#~ msgstr "音節のテキスト表示色"
+
+#~ msgid "Syntax highlighter - "
+#~ msgstr "字幕タグのハイライト色 - "
 
 #~ msgid ""
 #~ "The fonts collector is one of the most useful features, which resumes the "
 #~ "boring task of hunting down fonts into a matter of a few clicks."
 #~ msgstr ""
 #~ "フォントコレクターはフォントを探す無駄な時間を削減するのに役立つ機能です。"
+
+#, c-format
+#~ msgid ""
+#~ "The hotkey %s is already mapped to %s. If you proceed, that hotkey will "
+#~ "be cleared. Proceed?"
+#~ msgstr ""
+#~ "貴方が選んだ %s キーは既に %s に割り当てられています、既存の割り当てを解除"
+#~ "して設定しますか？\n"
+#~ "\n"
+#~ "設定する場合は「はい」を、既存の割当を保持して、やり直す場合は「いいえ」を"
+#~ "押してください"
+
+#~ msgid ""
+#~ "The source line contains text before the first karaoke block.\n"
+#~ "Do you want to carry it over to the destination?\n"
+#~ "It will be ignored otherwise."
+#~ msgstr ""
+#~ "ローマ字行は最初のカラオケ・ブロックの前にテキストを含んでいます\n"
+#~ "次へそれを繰り越しますか？\n"
+#~ "そうでなければ無視されます"
+
+#~ msgid "The starting point is beyond the length of the audio loaded."
+#~ msgstr "読み込んだ音声の長さを越えています"
 
 #~ msgid ""
 #~ "The styling assistant is a practical way to set styles to each line, when "
@@ -7722,19 +8026,8 @@ msgstr "スペルチェッカー"
 #~ "スタイリングアシスタントは各行にスタイルを設定する便利な機能です。各話者ご"
 #~ "とに異なったスタイルを割り当ててください。"
 
-#~ msgid ""
-#~ "Aegisub has several features to make sure you will never lose your work. "
-#~ "It will periodically save your subtitles to autosave folder, and will "
-#~ "create a copy of subs whenever you open them, to autoback folder. Also, "
-#~ "if it crashes, it will attempt to save a restore file."
-#~ msgstr ""
-#~ "Aegisubには、あなたのプロジェクトが失敗しないためにいくつかの特徴がありま"
-#~ "す。ひとつは、定期的にオートセーブフォルダに字幕を保存します。もうひとつ"
-#~ "は、ソフトがクラッシュした時にオートバックアップフォルダに字幕の復旧を試み"
-#~ "ます。"
-
-#~ msgid "DON'T PANIC!"
-#~ msgstr "パニックにならないで！"
+#~ msgid "There is no audio to save."
+#~ msgstr "保存する音声がありません"
 
 #~ msgid ""
 #~ "There is no reason to use the SSA format (as opposed to ASS). ASS is very "
@@ -7748,6 +8041,71 @@ msgstr "スペルチェッカー"
 #~ "(\\posや\\tなどの)をサポートするなど。VSFilter/Textsubに支えられたASS形式"
 #~ "に取り組んでください。"
 
+#~ msgid "This build of Aegisub uses the following C/C++ libraries:\n"
+#~ msgstr "Aegisubのビルドには以下のC/C++ライブラリが使われています :\n"
+
+#~ msgid "Thread priority"
+#~ msgstr "スレッドの優先度"
+
+#~ msgid "Threshold:"
+#~ msgstr "しきい値 :"
+
+#~ msgid "Time"
+#~ msgstr "時間表示"
+
+#~ msgid "Toggle realtime display of changes."
+#~ msgstr "字幕の変更を映像にリアルタイムに反映し描画します"
+
+#~ msgid "Trace: "
+#~ msgstr "トレース : "
+
+#~ msgid "Translation Assistant Accept"
+#~ msgstr "[翻訳アシスタント] 変更を適用"
+
+#~ msgid "Translation Assistant Insert Original"
+#~ msgstr "[翻訳アシスタント] オリジナルをコピー"
+
+#~ msgid "Translation Assistant Next"
+#~ msgstr "[翻訳アシスタント] 次の字幕行へ移動"
+
+#~ msgid "Translation Assistant Play Audio"
+#~ msgstr "[翻訳アシスタント] 音声を再生"
+
+#~ msgid "Translation Assistant Play Video"
+#~ msgstr "[翻訳アシスタント] 映像を再生"
+
+#~ msgid "Translation Assistant Prev"
+#~ msgstr "[翻訳アシスタント] 前の字幕行へ移動"
+
+#~ msgid "Translation Assistant Preview"
+#~ msgstr "[翻訳アシスタント] 変更をプレビュー"
+
+#~ msgid ""
+#~ "Tried to register PerlConsole, but support for it was disabled in this "
+#~ "version."
+#~ msgstr ""
+#~ "PerlConsole の登録を試みましたが、このバージョンでのサポートは無効です"
+
+#~ msgid ""
+#~ "Try the spectrum mode for the audio display, it can make it much easier "
+#~ "to spot where the important points in the audio are."
+#~ msgstr ""
+#~ "音声タイミングにおいて、的確なタイミングや簡単な操作を可能にするスペクトラ"
+#~ "ムモードを使ってみてください。"
+
+#~ msgid ""
+#~ "Unable to add the automation include path(s) to @INC: the script's code "
+#~ "may not compile or execute properly."
+#~ msgstr ""
+#~ "オートメーションに追加できません、パス @INC を含んでいるためです : スクリ"
+#~ "プトのコンパイル及び実行はできません"
+
+#~ msgid "Unknown"
+#~ msgstr "不明"
+
+#~ msgid "Update Video (slow)"
+#~ msgstr "映像を表示する (処理が遅い)"
+
 #~ msgid ""
 #~ "Use keyboard shortcuts! They make your life easier, for example, Ctrl"
 #~ "+Enter updates changes on current line without going to next. Check the "
@@ -7757,50 +8115,67 @@ msgstr "スペルチェッカー"
 #~ "字幕行に移ることなく選択行の変更内容を決定します。付属ドキュメントのリスト"
 #~ "をチェックしてね。"
 
+#~ msgid "Video Jump"
+#~ msgstr "[Video] フレーム/時間指定で移動"
+
+#~ msgid "Video global focus seek"
+#~ msgstr "[Video] シークバーにフォーカスを移動"
+
+#~ msgid "Video global play"
+#~ msgstr "[Video] 再生"
+
+#~ msgid "Video global prev frame"
+#~ msgstr "[Video] 前のフレームへ"
+
+#~ msgid "Video global zoom in"
+#~ msgstr "[Video] 拡大"
+
+#~ msgid "Video global zoom out"
+#~ msgstr "[Video] 縮小"
+
+#~ msgid "Visit Aegisub's forums"
+#~ msgstr "Aegisubのウェブフォーラムをブラウザで開きます"
+
+#~ msgid "Warning"
+#~ msgstr "警告！！"
+
+#~ msgid "Warning: "
+#~ msgstr "注意;"
+
+#~ msgid "Waveform - inactive"
+#~ msgstr "非アクティブ波形色"
+
+#~ msgid "Waveform - modified"
+#~ msgstr "修正波形色"
+
+#~ msgid "Waveform - selection"
+#~ msgstr "選択波形色"
+
 #~ msgid ""
-#~ "Styles can be stored in different storages, so that you can keep your "
-#~ "projects organized."
+#~ "When you are done with your subtitles and ready to distribute them, "
+#~ "remember: say no to MP4, OGM or AVI. Matroska is your friend."
 #~ msgstr ""
-#~ "作成した多くの字幕スタイルはプログラムとは別の場所に保存でき、プロジェクト"
-#~ "を維持することができるようになっています。"
+#~ "あなたが作った字幕を配布する時に最適なコンテナは、MP4やOGMやAVIでなく、"
+#~ "Matroska（MKV）です。"
+
+#~ msgid ""
+#~ "You already have timecodes loaded. Replace them with the timecodes from "
+#~ "the Matroska file?"
+#~ msgstr ""
+#~ "すでにタイムコードを読み込んでいますが、Matroskaファイルからタイムコードを"
+#~ "取り出し置き換えますか？"
+
+#~ msgid ""
+#~ "You already have timecodes loaded. Would you like to replace them with "
+#~ "timecodes from the video file?"
+#~ msgstr ""
+#~ "すでにタイムコードを読み込んでいますが、ビデオファイルからのタイムコードに"
+#~ "変更しますか？"
 
 #~ msgid ""
 #~ "You can easily translate subtitle files using the translation assistant."
 #~ msgstr ""
 #~ "内蔵の翻訳アシスタントを使えば素早く簡単に字幕の翻訳を行うことができます。"
-
-#~ msgid ""
-#~ "Aegisub can export subtitles to many different formats, character "
-#~ "encodings, and even compensate Variable Frame Rate so you can hardsub "
-#~ "them - it's all in the Export option in File menu."
-#~ msgstr ""
-#~ "Aegisubは、「字幕をエクスポート」から、様々な字幕規格に変換したり、文字"
-#~ "コードを変換したり、ハードサブ用に可変フレームレートを固定フレームレートに"
-#~ "変えたりすることができます。"
-
-#~ msgid "Threshold:"
-#~ msgstr "しきい値 :"
-
-#~ msgid "style changes"
-#~ msgstr "スタイルの変更"
-
-#~ msgid "Enable preview (slow)"
-#~ msgstr "プレビューに反映 (負荷高)"
-
-#~ msgid "Styling assistant"
-#~ msgstr "スタイリングアシスタント"
-
-#~ msgid " styles?"
-#~ msgstr " スタイル"
-
-#~ msgid "Are you sure you want to delete these "
-#~ msgstr "複数のスタイルを削除 -- 選択数"
-
-#~ msgid "Copy of "
-#~ msgstr "コピー ～ "
-
-#~ msgid "Warning"
-#~ msgstr "警告！！"
 
 #~ msgid ""
 #~ "You have chosen to use the \"Comic Sans\" font. As the programmer and a "
@@ -7816,462 +8191,50 @@ msgstr "スペルチェッカー"
 #~ "す\n"
 #~ "本当使用したいフォントでない場合は避けてください"
 
-#~ msgid "No subtitle providers available. Cannot preview subs."
-#~ msgstr "利用可能な字幕が無いためプレビューができません"
-
-#~ msgid "Set opacity, from 0 (opaque) to 255 (transparent)"
-#~ msgstr "透明度を指定します 0 (不透明) ～ 255 (透明)"
-
-#~ msgid "Style name."
-#~ msgstr "スタイルネームを入力します"
-
-#~ msgid "Replace All"
-#~ msgstr "すべて置換"
-
-#~ msgid "replace with"
-#~ msgstr "置換後の文字列"
-
-#~ msgid "original"
-#~ msgstr "オリジナル"
-
-#~ msgid "e, "
-#~ msgstr "終了・"
-
-#~ msgid "s, "
-#~ msgstr "開始・"
-
-#~ msgid "History"
-#~ msgstr "タイムシフトの履歴"
-
-#~ msgid "Update Video (slow)"
-#~ msgstr "映像を表示する (処理が遅い)"
-
-#~ msgid ""
-#~ "Invalid resolution: destination resolution cannot be 0 on either "
-#~ "dimension."
-#~ msgstr "無効な解像度 : 縦または横の解像度の値が “0” になっています"
-
-#~ msgid "Change aspect ratio"
-#~ msgstr "アスペクト比を変更"
-
-#~ msgid "Resample resolution"
-#~ msgstr "解像度の設定"
-
-#~ msgid "Collision: "
-#~ msgstr "字幕衝突について :"
-
-#~ msgid "All"
-#~ msgstr "すべて"
-
-#~ msgid "Margin Bottom"
-#~ msgstr "下部余白"
-
-#~ msgid "Margin Top"
-#~ msgstr "上部余白"
-
-#~ msgid "Hotkey conflict"
-#~ msgstr "ショートカットキーの競合"
-
-#, c-format
-#~ msgid ""
-#~ "The hotkey %s is already mapped to %s. If you proceed, that hotkey will "
-#~ "be cleared. Proceed?"
-#~ msgstr ""
-#~ "貴方が選んだ %s キーは既に %s に割り当てられています、既存の割り当てを解除"
-#~ "して設定しますか？\n"
-#~ "\n"
-#~ "設定する場合は「はい」を、既存の割当を保持して、やり直す場合は「いいえ」を"
-#~ "押してください"
-
-#, c-format
-#~ msgid "Press key to bind to \"%s\" or Esc to cancel."
-#~ msgstr ""
-#~ "押したキーが \"%s\" に割り当てられます\n"
-#~ "このウィンドウは、Escキーでキャンセルできます"
-
-#~ msgid "Press Key"
-#~ msgstr "キーを押してください"
-
-#~ msgid "Restart Aegisub"
-#~ msgstr "Aegisubの再起動"
-
-#~ msgid "Aegisub must restart for the changes to take effect. Restart now?"
-#~ msgstr ""
-#~ "変更を有効にするには再起動が必要です\n"
-#~ "今再起動しますか？"
-
-#~ msgid "File save/load"
-#~ msgstr "オートセーブ/ロード"
-
-#~ msgid "Clear Hotkey"
-#~ msgstr "クリア"
-
-#~ msgid "Set Hotkey..."
-#~ msgstr "ショートカットキーを適用"
-
-#~ msgid "Key"
-#~ msgstr "キー"
-
-#~ msgid "Function"
-#~ msgstr "機能"
-
-#~ msgid "Thread priority"
-#~ msgstr "スレッドの優先度"
-
-#~ msgid "Lowest"
-#~ msgstr "最低"
-
-#~ msgid "Below Normal (recommended)"
-#~ msgstr "標準より下 (推奨)"
-
-#~ msgid "Spectrum cutoff"
-#~ msgstr "スペクトラム カットオフ"
-
-#~ msgid "HD cache name"
-#~ msgstr "ハードディスク キャッシュ名"
-
-#~ msgid "Syllable text"
-#~ msgstr "音節のテキスト表示色"
-
-#~ msgid "Waveform - inactive"
-#~ msgstr "非アクティブ波形色"
-
-#~ msgid "Waveform - modified"
-#~ msgstr "修正波形色"
-
-#~ msgid "Waveform - selection"
-#~ msgstr "選択波形色"
-
-#~ msgid "Selection background - modified"
-#~ msgstr "選択背景色の修正"
-
-#~ msgid "Draw keyframes"
-#~ msgstr "キーフレームの表示"
-
-#~ msgid "Draw timeline"
-#~ msgstr "タイムラインの表示"
-
-#~ msgid "Draw selection background"
-#~ msgstr "選択背景の表示"
-
-#~ msgid "Draw secondary lines"
-#~ msgstr "秒の境界線を表示"
-
-#~ msgid "Snap to adjacent lines"
-#~ msgstr "スナップインを隣接する行へ"
-
-#~ msgid "Grab times from line upon selection"
-#~ msgstr "字幕行と音声ボックス選択エリアを同期"
-
-#~ msgid "Advanced - EXPERT USERS ONLY"
-#~ msgstr "Advanced - 上級ユーザー設定"
-
-#~ msgid "Replace override tags with: "
-#~ msgstr "タグに置き換え表示する文字 : "
-
-#~ msgid "Header"
-#~ msgstr "イベントヘッダー"
-
-#~ msgid "Highlight subtitles that are currently visible in video"
-#~ msgstr "映像表示フレーム行の背景色を有効にする"
-
-#~ msgid "Allow grid to take focus"
-#~ msgstr "字幕グリッドで矢印キーを有効にする"
-
-#~ msgid "Font: "
-#~ msgstr "フォント : "
-
-#~ msgid "Syntax highlighter - "
-#~ msgstr "字幕タグのハイライト色 - "
-
-#~ msgid "Modified Background"
-#~ msgstr "修正された背景色"
-
-#~ msgid "Path to dictionary files:"
-#~ msgstr "辞書ファイルのパス :"
-
-#~ msgid "Link commiting of times"
-#~ msgstr "開始/終了タイミングのリンク"
-
-#~ msgid "Crash recovery path:"
-#~ msgstr "異常終了からの復旧 パス :"
-
-#~ msgid "Auto-backup path:"
-#~ msgstr "オートバックアップ パス :"
-
-#~ msgid "Auto-save path:"
-#~ msgstr "オートセーブ パス :"
-
-#~ msgid "seconds."
-#~ msgstr "秒ごとに保存"
-
-#~ msgid "Miscellanea"
-#~ msgstr "その他"
-
-#~ msgid "File paths"
-#~ msgstr "保存先 (パス) の指定"
-
-#~ msgid "Auto-save"
-#~ msgstr "オートセーブ - 自動保存"
-
-#~ msgid "Maximum recent replace strings"
-#~ msgstr "置換文字列の履歴"
-
-#~ msgid "Maximum recent find strings"
-#~ msgstr "検索文字列の履歴"
-
-#~ msgid "Maximum recent audio files"
-#~ msgstr "音声ファイルの履歴"
-
-#~ msgid "Maximum recent video files"
-#~ msgstr "映像ファイルの履歴"
-
-#~ msgid "Maximum recent subtitle files"
-#~ msgstr "字幕ファイルの履歴"
-
-#~ msgid "Maximum recent timecode files"
-#~ msgstr "タイムコードファイルの履歴"
-
-#~ msgid "Limits for levels and recent files"
-#~ msgstr "レベルや履歴の制限"
-
-#~ msgid "Check File Associations on Start"
-#~ msgstr "起動時にファイルの関連付けのチェックを行う"
-
-#~ msgid "Startup"
-#~ msgstr "Aegisub 起動時の動作設定"
-
-#~ msgid "Dest Style"
-#~ msgstr "日本語のスタイル"
-
-#~ msgid "Source Style"
-#~ msgstr "ローマ字のスタイル"
-
-#, c-format
-#~ msgid "\"%s\" found.\n"
-#~ msgstr "\"%s\" は見つかりました\n"
-
-#, c-format
-#~ msgid "\"%s\" found on dialogue line \"%d\".\n"
-#~ msgstr "フォント \"%s\" が字幕の \"%d\" 行目に見つかりました\n"
-
-#, c-format
-#~ msgid "\"%s\" found on style \"%s\".\n"
-#~ msgstr "フォント \"%s\" がスタイル \"%s\" に見つかりました\n"
-
-#~ msgid "Found.\n"
-#~ msgstr "は見つかりました\n"
-
-#~ msgid "Not found.\n"
-#~ msgstr "は見つかりませんでした\n"
-
-#~ msgid "font attachment"
-#~ msgstr "フォント類の添付ファイル"
-
-#, c-format
-#~ msgid ""
-#~ "\n"
-#~ "Finished writing to %s.\n"
-#~ msgstr ""
-#~ "\n"
-#~ "以下の場所に保存しました\n"
-#~ "%s.\n"
-
-#~ msgid "Checking fonts...\n"
-#~ msgstr "フォントをチェックしてます\n"
-
-#~ msgid "Scanning file for fonts..."
-#~ msgstr "字幕内のフォントをスキャンしてます..."
-
-#~ msgid "Done collecting font data."
-#~ msgstr "フォントデータの収集が終わり、"
-
-#~ msgid ""
-#~ "Collecting font data from system. This might take a while, depending on "
-#~ "the number of fonts installed. Results are cached and subsequent "
-#~ "executions will be faster...\n"
-#~ msgstr ""
-#~ "システムのフォントデータを収集します\n"
-#~ "所要時間はインストールされたフォント数に依存しますが、収集した結果は貯えら"
-#~ "れ、次の実行はより速くなります...\n"
-
-#~ msgid "Invalid destination directory."
-#~ msgstr "無効なディレクトリです"
+#~ msgid "You have timecodes loaded currently. Would you like to unload them?"
+#~ msgstr "読み込んでいるタイムコードを破棄しますか？"
 
 #~ msgid "Zip Archives (*.zip)|*.zip"
 #~ msgstr "ZIP 圧縮ファイル (*.zip)|*.zip"
 
-#~ msgid "DEBUG: Verify all fonts in system"
-#~ msgstr "デバッグ : システムのフォントをすべて確認"
+#~ msgid "Zoom 50%"
+#~ msgstr "[Video] 表示縮小 50%"
 
-#~ msgid "Select all"
-#~ msgstr "すべて選択"
+#~ msgid "audio"
+#~ msgstr "音声"
 
-#~ msgid "Invalid fps or length value"
-#~ msgstr "無効なフレームレートか無効なフレーム数です"
+#~ msgid "delete"
+#~ msgstr "削除"
 
-#~ msgid "Color Picker"
-#~ msgstr "スポイト"
+#~ msgid "e, "
+#~ msgstr "終了・"
 
-#~ msgid "    Subtitle format handler: "
-#~ msgstr "    字幕形式ハンドラー : "
+#~ msgid "editing"
+#~ msgstr "編集中"
 
-#~ msgid "&No"
-#~ msgstr "いいえ (&N)"
+#~ msgid "font attachment"
+#~ msgstr "フォント類の添付ファイル"
 
-#~ msgid "&Yes"
-#~ msgstr "はい (&Y)"
+#~ msgid "load"
+#~ msgstr "ロード"
 
-#~ msgid "Always perform this check when Aegisub starts"
-#~ msgstr "Aegisub を起動するときいつもこの確認を行う"
+#~ msgid "original"
+#~ msgstr "オリジナル"
 
-#~ msgid ""
-#~ "Aegisub is not your default editor for subtitle files. Do you want to "
-#~ "make Aegisub your default editor for subtitle files?"
-#~ msgstr ""
-#~ "Aegisub は現在、既定の字幕編集アプリケーションとして設定されてません。 "
-#~ "Aegisub を既定の字幕編集アプリケーションに設定しますか。"
+#~ msgid "replace with"
+#~ msgstr "置換後の文字列"
 
-#~ msgid "Make Aegisub default editor for subtitles?"
-#~ msgstr "Aegisub を既定の字幕編集アプリケーションにしますか。"
+#~ msgid "s, "
+#~ msgstr "開始・"
 
-#~ msgid ""
-#~ "Aegisub is already associated with all supported file types.\n"
-#~ "\n"
-#~ "If you want Aegisub to no longer be associated with a file type, you must "
-#~ "tell another program to take over the file type."
-#~ msgstr ""
-#~ "Aegisub が対応する全てのファイルの種類は関連付けられています。\n"
-#~ "\n"
-#~ "特定のファイルの種類の関連付けを Aegisub から外したい場合、他のアプリケー"
-#~ "ションからそのファイルの種類を関連付ける必要があります。"
+#~ msgid "seconds."
+#~ msgstr "秒ごとに保存"
 
-#~ msgid ""
-#~ "Aegisub can take over the following file types.\n"
-#~ "\n"
-#~ "If you want Aegisub to no longer be associated with a file type, you must "
-#~ "tell another program to take over the file type."
-#~ msgstr ""
-#~ "Aegisub には次のファイルの種類を関連付けることができます。\n"
-#~ "\n"
-#~ "特定のファイルの種類の関連付けを Aegisub から外したい場合、他のアプリケー"
-#~ "ションからそのファイルの種類を関連付ける必要があります。"
+#~ msgid "show full tags."
+#~ msgstr "タグをそのまま表示します"
 
-#~ msgid "Associate file types"
-#~ msgstr "ファイルの関連付け"
+#~ msgid "style changes"
+#~ msgstr "スタイルの変更"
 
-#~ msgid "Saving changes"
-#~ msgstr "変更を保存しました"
-
-#, c-format
-#~ msgid "Reloading %s because the file on disk (%s) changed."
-#~ msgstr ""
-#~ "ディスク上のファイル (%s) が変更されたので、 %s をリロード(再読込)します"
-
-#~ msgid ""
-#~ "Unable to add the automation include path(s) to @INC: the script's code "
-#~ "may not compile or execute properly."
-#~ msgstr ""
-#~ "オートメーションに追加できません、パス @INC を含んでいるためです : スクリ"
-#~ "プトのコンパイル及び実行はできません"
-
-#~ msgid "Perl script"
-#~ msgstr "Perl スクリプト"
-
-#~ msgid "Executing "
-#~ msgstr "実行中"
-
-#~ msgid "Trace: "
-#~ msgstr "トレース : "
-
-#~ msgid "Debug: "
-#~ msgstr "デバッグ : "
-
-#~ msgid "Hint: "
-#~ msgstr "ヒント :"
-
-#~ msgid "Warning: "
-#~ msgstr "注意;"
-
-#~ msgid "Error: "
-#~ msgstr "エラー :"
-
-#~ msgid "Fatal error: "
-#~ msgstr "致命的なエラー :"
-
-#~ msgid ""
-#~ "Tried to register PerlConsole, but support for it was disabled in this "
-#~ "version."
-#~ msgstr ""
-#~ "PerlConsole の登録を試みましたが、このバージョンでのサポートは無効です"
-
-#~ msgid "Not enough parameters for Aegisub::text_extents()"
-#~ msgstr "Aegisubに十分なパラメーターではありません ::text_extents()"
-
-#, c-format
-#~ msgid ""
-#~ "An Automation script failed to load. File name: '%s', error reported:"
-#~ msgstr ""
-#~ "オートメーションのスクリプトの読み込みに失敗しました\n"
-#~ "ファイル名 : '%s', エラーレポート :"
-
-#~ msgid "Script completed"
-#~ msgstr "字幕修正を完了しました"
-
-#~ msgid "Reading into RAM"
-#~ msgstr "メモリへ読み込み中..."
-
-#~ msgid "Commit?"
-#~ msgstr "Commit しますか？"
-
-#~ msgid ""
-#~ "Do you want to commit your changes? If you choose No, they will be "
-#~ "discarded."
-#~ msgstr ""
-#~ "変更をコミットしますか？\n"
-#~ "「いいえ」を選択すれば変更が破棄されます"
-
-#~ msgid "Enter split-mode"
-#~ msgstr "分割モード"
-
-#~ msgid "Split"
-#~ msgstr "分割"
-
-#~ msgid "Join selected syllables"
-#~ msgstr "結合を決定します"
-
-#~ msgid "Join"
-#~ msgstr "結合"
-
-#~ msgid "Commit splits and leave split-mode"
-#~ msgstr "分割を決定します"
-
-#~ msgid "Accept Split"
-#~ msgstr "分割します"
-
-#~ msgid "Karaoke"
-#~ msgstr "Karaoke"
-
-#~ msgid "Enable Medusa-Style Timing Shortcuts"
-#~ msgstr "ショートカットキーを Medusa 互換にする"
-
-#~ msgid "Commit changes (%KEY%/%KEY%)"
-#~ msgstr "選択範囲を決定 (%KEY%/%KEY%)"
-
-#~ msgid "Add lead out (%KEY%)"
-#~ msgstr "リードアウト追加 (%KEY%)"
-
-#~ msgid "Add lead in (%KEY%)"
-#~ msgstr "リードイン追加 (%KEY%)"
-
-#~ msgid "Stop (%KEY%)"
-#~ msgstr "停止 (%KEY%)"
-
-#~ msgid "Play current line (%KEY%)"
-#~ msgstr "選択行を再生 (%KEY%)"
-
-#~ msgid "Play selection (%KEY%/%KEY%)"
-#~ msgstr "選択範囲を再生 (%KEY%/%KEY%)"
-
-#~ msgid "Seek bar"
-#~ msgstr "シークバー"
+#~ msgid "video"
+#~ msgstr "動画"

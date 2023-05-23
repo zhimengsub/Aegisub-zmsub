@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ca\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-17 13:16-0400\n"
+"POT-Creation-Date: 2023-05-14 00:32+0800\n"
 "PO-Revision-Date: 2016-07-14 02:00+0100\n"
 "Last-Translator: Eduard Ereza Martínez <eduard@eduardereza.com>\n"
 "Language-Team: \n"
@@ -242,6 +242,22 @@ msgstr "Canvia l'etiqueta del karaoke a \\ko"
 #: ../src/audio_karaoke.cpp:426
 msgid "karaoke split"
 msgstr "la divisió de karaoke"
+
+#: ../src/audio_provider_factory.cpp:119
+msgid ""
+"Unable to create RAM audio cache: 32-bit memory limit exceeded. Fallback to "
+"hard disk cache.\n"
+"\n"
+"Possible solutions:\n"
+"- Use 64-bit version\n"
+"- Turn off cache or switch to hard disk cache in Preferences -> Advanced -> "
+"Audio -> Cache -> Cache type\n"
+"- Enable channel downmix in Preferences -> Advanced -> Audio"
+msgstr ""
+
+#: ../src/audio_provider_factory.cpp:124
+msgid "Out of Memory"
+msgstr ""
 
 #: ../src/audio_renderer_waveform.cpp:152
 msgid "Maximum"
@@ -782,7 +798,7 @@ msgid "&Automation..."
 msgstr "&Automatització..."
 
 #: ../src/command/automation.cpp:75 ../src/command/automation.cpp:87
-#: ../src/preferences.cpp:330
+#: ../src/preferences.cpp:339
 msgid "Automation"
 msgstr "Automatització"
 
@@ -804,84 +820,84 @@ msgstr ""
 msgid "'%s' is not a valid command name"
 msgstr "'%s' no és un nom d'ordre vàlid"
 
-#: ../src/command/edit.cpp:134 ../src/command/edit.cpp:841
+#: ../src/command/edit.cpp:137 ../src/command/edit.cpp:925
 msgid "paste"
 msgstr "l'enganxat"
 
-#: ../src/command/edit.cpp:374
+#: ../src/command/edit.cpp:380
 msgid "set color"
 msgstr "la definició del color"
 
-#: ../src/command/edit.cpp:388
+#: ../src/command/edit.cpp:397
 msgid "Primary Color..."
 msgstr "Color primari..."
 
-#: ../src/command/edit.cpp:389
+#: ../src/command/edit.cpp:399
 msgid "Primary Color"
 msgstr "Color primari"
 
-#: ../src/command/edit.cpp:390
+#: ../src/command/edit.cpp:401
 msgid "Set the primary fill color (\\c) at the cursor position"
 msgstr "Defineix el color d'emplenat primari (\\c) a la posició del cursor"
 
-#: ../src/command/edit.cpp:400
+#: ../src/command/edit.cpp:413
 msgid "Secondary Color..."
 msgstr "Color secundari..."
 
-#: ../src/command/edit.cpp:401
+#: ../src/command/edit.cpp:415
 msgid "Secondary Color"
 msgstr "Color secundari"
 
-#: ../src/command/edit.cpp:402
+#: ../src/command/edit.cpp:417
 msgid "Set the secondary (karaoke) fill color (\\2c) at the cursor position"
 msgstr ""
 "Defineix el color d'emplenat secundari (de karaoke, \\2c) a la posició del "
 "cursor"
 
-#: ../src/command/edit.cpp:412
+#: ../src/command/edit.cpp:429
 msgid "Outline Color..."
 msgstr "Color del contorn..."
 
-#: ../src/command/edit.cpp:413
+#: ../src/command/edit.cpp:431
 msgid "Outline Color"
 msgstr "Color del contorn"
 
-#: ../src/command/edit.cpp:414
+#: ../src/command/edit.cpp:433
 msgid "Set the outline color (\\3c) at the cursor position"
 msgstr "Defineix el color del contorn (\\3c) a la posició del cursor"
 
-#: ../src/command/edit.cpp:424
+#: ../src/command/edit.cpp:445
 msgid "Shadow Color..."
 msgstr "Color de l'ombra"
 
-#: ../src/command/edit.cpp:425
+#: ../src/command/edit.cpp:447
 msgid "Shadow Color"
 msgstr "Color de l'ombra"
 
-#: ../src/command/edit.cpp:426
+#: ../src/command/edit.cpp:449
 msgid "Set the shadow color (\\4c) at the cursor position"
 msgstr "Defineix el color de l'ombra (\\4c) a la posició del cursor"
 
-#: ../src/command/edit.cpp:436 ../src/command/edit.cpp:437
+#: ../src/command/edit.cpp:461 ../src/command/edit.cpp:463
 msgid "Toggle Bold"
 msgstr "Activa/desactiva la negreta"
 
-#: ../src/command/edit.cpp:438
+#: ../src/command/edit.cpp:465
 msgid ""
 "Toggle bold (\\b) for the current selection or at the current cursor position"
 msgstr ""
 "Activa/desactiva la negreta (\\b) a la selecció o a la posició del cursor "
 "actual"
 
-#: ../src/command/edit.cpp:441
+#: ../src/command/edit.cpp:468
 msgid "toggle bold"
 msgstr "el canvi de la negreta"
 
-#: ../src/command/edit.cpp:448 ../src/command/edit.cpp:449
+#: ../src/command/edit.cpp:477 ../src/command/edit.cpp:479
 msgid "Toggle Italics"
 msgstr "Activa/desactiva la cursiva"
 
-#: ../src/command/edit.cpp:450
+#: ../src/command/edit.cpp:481
 msgid ""
 "Toggle italics (\\i) for the current selection or at the current cursor "
 "position"
@@ -889,15 +905,15 @@ msgstr ""
 "Activa/desactiva la cursiva (\\i) a la selecció o a la posició del cursor "
 "actual"
 
-#: ../src/command/edit.cpp:453
+#: ../src/command/edit.cpp:484
 msgid "toggle italic"
 msgstr "el canvi de la cursiva"
 
-#: ../src/command/edit.cpp:460 ../src/command/edit.cpp:461
+#: ../src/command/edit.cpp:493 ../src/command/edit.cpp:495
 msgid "Toggle Underline"
 msgstr "Activa/desactiva el subratllat"
 
-#: ../src/command/edit.cpp:462
+#: ../src/command/edit.cpp:497
 msgid ""
 "Toggle underline (\\u) for the current selection or at the current cursor "
 "position"
@@ -905,15 +921,15 @@ msgstr ""
 "Activa/desactiva el subratllat (\\u) a la selecció o a la posició del cursor "
 "actual"
 
-#: ../src/command/edit.cpp:465
+#: ../src/command/edit.cpp:500
 msgid "toggle underline"
 msgstr "el canvi del subratllat"
 
-#: ../src/command/edit.cpp:472 ../src/command/edit.cpp:473
+#: ../src/command/edit.cpp:509 ../src/command/edit.cpp:511
 msgid "Toggle Strikeout"
 msgstr "Activa/desactiva el tatxat"
 
-#: ../src/command/edit.cpp:474
+#: ../src/command/edit.cpp:513
 msgid ""
 "Toggle strikeout (\\s) for the current selection or at the current cursor "
 "position"
@@ -921,107 +937,107 @@ msgstr ""
 "Activa/desactiva el tatxat (\\s) a la selecció o a la posició del cursor "
 "actual"
 
-#: ../src/command/edit.cpp:477
+#: ../src/command/edit.cpp:516
 msgid "toggle strikeout"
 msgstr "el canvi del tatxat"
 
-#: ../src/command/edit.cpp:484
+#: ../src/command/edit.cpp:525
 msgid "Font Face..."
 msgstr "Tipus de lletra..."
 
-#: ../src/command/edit.cpp:485 ../src/preferences_base.cpp:251
+#: ../src/command/edit.cpp:527 ../src/preferences_base.cpp:251
 msgid "Font Face"
 msgstr "Tipus de lletra"
 
-#: ../src/command/edit.cpp:486
+#: ../src/command/edit.cpp:529
 msgid "Select a font face and size"
 msgstr "Selecciona un tipus de lletra i una mida"
 
-#: ../src/command/edit.cpp:513
+#: ../src/command/edit.cpp:557
 msgid "set font"
 msgstr "la definició del tipus de lletra"
 
-#: ../src/command/edit.cpp:540
+#: ../src/command/edit.cpp:587
 msgid "Find and R&eplace..."
 msgstr "Cerca i &substitueix..."
 
-#: ../src/command/edit.cpp:541
+#: ../src/command/edit.cpp:589
 msgid "Find and Replace"
 msgstr "Cerca i substitueix"
 
-#: ../src/command/edit.cpp:542
+#: ../src/command/edit.cpp:591
 msgid "Find and replace words in subtitles"
 msgstr "Cerca i substitueix paraules als subtítols"
 
-#: ../src/command/edit.cpp:603
+#: ../src/command/edit.cpp:654
 msgid "&Copy Lines"
 msgstr "&Copia les línies"
 
-#: ../src/command/edit.cpp:604
+#: ../src/command/edit.cpp:656
 msgid "Copy Lines"
 msgstr "Copia les línies"
 
-#: ../src/command/edit.cpp:605
+#: ../src/command/edit.cpp:658
 msgid "Copy subtitles to the clipboard"
 msgstr "Copia els subtítols al porta-retalls"
 
-#: ../src/command/edit.cpp:626
+#: ../src/command/edit.cpp:681
 msgid "Cu&t Lines"
 msgstr "Re&talla les línies"
 
-#: ../src/command/edit.cpp:627
+#: ../src/command/edit.cpp:683
 msgid "Cut Lines"
 msgstr "Retalla les línies"
 
-#: ../src/command/edit.cpp:628
+#: ../src/command/edit.cpp:685
 msgid "Cut subtitles"
 msgstr "Retalla els subtítols"
 
-#: ../src/command/edit.cpp:635
+#: ../src/command/edit.cpp:692
 msgid "cut lines"
 msgstr "el retallat de les línies"
 
-#: ../src/command/edit.cpp:643
+#: ../src/command/edit.cpp:702
 msgid "De&lete Lines"
 msgstr "Suprimeix &les línies"
 
-#: ../src/command/edit.cpp:644
+#: ../src/command/edit.cpp:704
 msgid "Delete Lines"
 msgstr "Suprimeix les línies"
 
-#: ../src/command/edit.cpp:645
+#: ../src/command/edit.cpp:706
 msgid "Delete currently selected lines"
 msgstr "Suprimeix les línies seleccionades"
 
-#: ../src/command/edit.cpp:648
+#: ../src/command/edit.cpp:709
 msgid "delete lines"
 msgstr "l'eliminació de les línies"
 
-#: ../src/command/edit.cpp:713
+#: ../src/command/edit.cpp:773
 msgid "duplicate lines"
 msgstr "el duplicat de les línies"
 
-#: ../src/command/edit.cpp:713 ../src/command/edit.cpp:1107
+#: ../src/command/edit.cpp:773 ../src/command/edit.cpp:1204
 msgid "split"
 msgstr "la divisió"
 
-#: ../src/command/edit.cpp:720
+#: ../src/command/edit.cpp:781
 msgid "&Duplicate Lines"
 msgstr "&Duplica les línies"
 
-#: ../src/command/edit.cpp:721
+#: ../src/command/edit.cpp:783
 msgid "Duplicate Lines"
 msgstr "Duplica les línies"
 
-#: ../src/command/edit.cpp:722
+#: ../src/command/edit.cpp:785
 msgid "Duplicate the selected lines"
 msgstr "Duplica les línies seleccionades"
 
-#: ../src/command/edit.cpp:731 ../src/command/edit.cpp:732
+#: ../src/command/edit.cpp:795 ../src/command/edit.cpp:797
 msgid "Split lines after current frame"
 msgstr "Divideix les línies després del fotograma actual"
 
-#: ../src/command/edit.cpp:733
+#: ../src/command/edit.cpp:800
 msgid ""
 "Split the current line into a line which ends on the current frame and a "
 "line which starts on the next frame"
@@ -1029,11 +1045,11 @@ msgstr ""
 "Divideix la línia actual en una línia que acaba al fotograma actual i una "
 "línia que comença al següent fotograma"
 
-#: ../src/command/edit.cpp:743 ../src/command/edit.cpp:744
+#: ../src/command/edit.cpp:812 ../src/command/edit.cpp:814
 msgid "Split lines before current frame"
 msgstr "Divideix les línies abans del fotograma actual"
 
-#: ../src/command/edit.cpp:745
+#: ../src/command/edit.cpp:817
 msgid ""
 "Split the current line into a line which ends on the previous frame and a "
 "line which starts on the current frame"
@@ -1041,47 +1057,47 @@ msgstr ""
 "Divideix la línia actual en una línia que acaba al fotograma anterior i una "
 "línia que comença al fotograma actual"
 
-#: ../src/command/edit.cpp:785
+#: ../src/command/edit.cpp:861
 msgid "As &Karaoke"
 msgstr "Com a &karaoke"
 
-#: ../src/command/edit.cpp:786
+#: ../src/command/edit.cpp:863
 msgid "As Karaoke"
 msgstr "Com a karaoke"
 
-#: ../src/command/edit.cpp:787
+#: ../src/command/edit.cpp:865
 msgid "Join selected lines in a single one, as karaoke"
 msgstr "Uneix les línies seleccionada en una de sola, com a karaoke"
 
-#: ../src/command/edit.cpp:790
+#: ../src/command/edit.cpp:868
 msgid "join as karaoke"
 msgstr "la unió com a karaoke"
 
-#: ../src/command/edit.cpp:796
+#: ../src/command/edit.cpp:875
 msgid "&Concatenate"
 msgstr "&Concatena"
 
-#: ../src/command/edit.cpp:797
+#: ../src/command/edit.cpp:877
 msgid "Concatenate"
 msgstr "Concatena"
 
-#: ../src/command/edit.cpp:798
+#: ../src/command/edit.cpp:879
 msgid "Join selected lines in a single one, concatenating text together"
 msgstr "Uneix les línies seleccionades en una de sola, concatenant-ne el text"
 
-#: ../src/command/edit.cpp:801 ../src/command/edit.cpp:812
+#: ../src/command/edit.cpp:882 ../src/command/edit.cpp:896
 msgid "join lines"
 msgstr "la unió de les línies"
 
-#: ../src/command/edit.cpp:807
+#: ../src/command/edit.cpp:889
 msgid "Keep &First"
 msgstr "&Mantingues la primera"
 
-#: ../src/command/edit.cpp:808
+#: ../src/command/edit.cpp:891
 msgid "Keep First"
 msgstr "Mantingues la primera"
 
-#: ../src/command/edit.cpp:809
+#: ../src/command/edit.cpp:893
 msgid ""
 "Join selected lines in a single one, keeping text of first and discarding "
 "remaining"
@@ -1089,66 +1105,66 @@ msgstr ""
 "Uneix les línies seleccionades en una de sola, mantenint el text de la "
 "primera i descartant el de la resta"
 
-#: ../src/command/edit.cpp:850
+#: ../src/command/edit.cpp:936
 msgid "&Paste Lines"
 msgstr "Engan&xa les línies"
 
-#: ../src/command/edit.cpp:851
+#: ../src/command/edit.cpp:938
 msgid "Paste Lines"
 msgstr "Enganxa les línies"
 
-#: ../src/command/edit.cpp:852
+#: ../src/command/edit.cpp:940
 msgid "Paste subtitles"
 msgstr "Enganxa els subtítols"
 
-#: ../src/command/edit.cpp:881
+#: ../src/command/edit.cpp:970
 msgid "Paste Lines &Over..."
 msgstr "Enganxa les línies a s&obre..."
 
-#: ../src/command/edit.cpp:882
+#: ../src/command/edit.cpp:972
 msgid "Paste Lines Over"
 msgstr "Enganxa les línies a sobre"
 
-#: ../src/command/edit.cpp:883
+#: ../src/command/edit.cpp:974
 msgid "Paste subtitles over others"
 msgstr "Enganxa els subtítols damunt dels altres"
 
-#: ../src/command/edit.cpp:966
+#: ../src/command/edit.cpp:1058
 msgid "Recom&bine Lines"
 msgstr "Recom&bina les línies"
 
-#: ../src/command/edit.cpp:967
+#: ../src/command/edit.cpp:1060
 msgid "Recombine Lines"
 msgstr "Recombina les línies"
 
-#: ../src/command/edit.cpp:968
+#: ../src/command/edit.cpp:1062
 msgid "Recombine subtitles which have been split and merged"
 msgstr "Recombina els subtítols que han estat dividits i fusionats"
 
-#: ../src/command/edit.cpp:1038
+#: ../src/command/edit.cpp:1132
 msgid "combining"
 msgstr "la combinació"
 
-#: ../src/command/edit.cpp:1044 ../src/command/edit.cpp:1045
+#: ../src/command/edit.cpp:1139 ../src/command/edit.cpp:1141
 msgid "Split Lines (by karaoke)"
 msgstr "Divideix les línies (per karaoke)"
 
-#: ../src/command/edit.cpp:1046
+#: ../src/command/edit.cpp:1143
 msgid "Use karaoke timing to split line into multiple smaller lines"
 msgstr ""
 "Utilitza el temps dels karaokes per dividir la línia en múltiples línies més "
 "petites"
 
-#: ../src/command/edit.cpp:1080
+#: ../src/command/edit.cpp:1177
 msgid "splitting"
 msgstr "la divisió"
 
-#: ../src/command/edit.cpp:1112 ../src/command/edit.cpp:1113
-#: ../src/subs_edit_ctrl.cpp:416
+#: ../src/command/edit.cpp:1210 ../src/command/edit.cpp:1212
+#: ../src/subs_edit_ctrl.cpp:161 ../src/subs_edit_ctrl_stc.cpp:416
 msgid "Split at cursor (estimate times)"
 msgstr "Divideix al cursor (estima els temps)"
 
-#: ../src/command/edit.cpp:1114
+#: ../src/command/edit.cpp:1214
 msgid ""
 "Split the current line at the cursor, dividing the original line's duration "
 "between the new ones"
@@ -1156,12 +1172,12 @@ msgstr ""
 "Divideix la línia actual al cursor, dividint la durada de la línia original "
 "entre les noves"
 
-#: ../src/command/edit.cpp:1128 ../src/command/edit.cpp:1129
-#: ../src/subs_edit_ctrl.cpp:415
+#: ../src/command/edit.cpp:1229 ../src/command/edit.cpp:1231
+#: ../src/subs_edit_ctrl.cpp:160 ../src/subs_edit_ctrl_stc.cpp:415
 msgid "Split at cursor (preserve times)"
 msgstr "Divideix al cursor (conserva els temps)"
 
-#: ../src/command/edit.cpp:1130
+#: ../src/command/edit.cpp:1233
 msgid ""
 "Split the current line at the cursor, setting both lines to the original "
 "line's times"
@@ -1169,11 +1185,11 @@ msgstr ""
 "Divideix la línia actual al cursor, definint el temps de les dues línies al "
 "temps de la línia original"
 
-#: ../src/command/edit.cpp:1139 ../src/command/edit.cpp:1140
+#: ../src/command/edit.cpp:1243 ../src/command/edit.cpp:1245
 msgid "Split at cursor (at video frame)"
 msgstr "Divideix al cursor (al fotograma del vídeo)"
 
-#: ../src/command/edit.cpp:1141
+#: ../src/command/edit.cpp:1247
 msgid ""
 "Split the current line at the cursor, dividing the line's duration at the "
 "current video frame"
@@ -1181,94 +1197,93 @@ msgstr ""
 "Divideix la línia actual al cursor, dividint la durada de la línia al "
 "fotograma actual del vídeo"
 
-#: ../src/command/edit.cpp:1157
+#: ../src/command/edit.cpp:1265
 msgid "Redo last undone action"
 msgstr "Refés l'última acció desfeta"
 
-#: ../src/command/edit.cpp:1162
+#: ../src/command/edit.cpp:1271
 msgid "Nothing to &redo"
 msgstr "No hi ha res a &refer"
 
-#: ../src/command/edit.cpp:1163
+#: ../src/command/edit.cpp:1272
 #, c-format
 msgid "&Redo %s"
 msgstr "&Refés %s"
 
-#: ../src/command/edit.cpp:1167
+#: ../src/command/edit.cpp:1277
 msgid "Nothing to redo"
 msgstr "No hi ha res a refer"
 
-#: ../src/command/edit.cpp:1168
+#: ../src/command/edit.cpp:1278
 #, c-format
 msgid "Redo %s"
 msgstr "Refés %s"
 
-#: ../src/command/edit.cpp:1183
+#: ../src/command/edit.cpp:1295
 msgid "Undo last action"
 msgstr "Desfés l'última acció"
 
-#: ../src/command/edit.cpp:1188
+#: ../src/command/edit.cpp:1301
 msgid "Nothing to &undo"
 msgstr "No hi ha res a &desfer"
 
-#: ../src/command/edit.cpp:1189
+#: ../src/command/edit.cpp:1302
 #, c-format
 msgid "&Undo %s"
 msgstr "&Desfés %s"
 
-#: ../src/command/edit.cpp:1193
+#: ../src/command/edit.cpp:1307
 msgid "Nothing to undo"
 msgstr "No hi ha res a desfer"
 
-#: ../src/command/edit.cpp:1194
+#: ../src/command/edit.cpp:1308
 #, c-format
 msgid "Undo %s"
 msgstr "Desfés %s"
 
-#: ../src/command/edit.cpp:1208 ../src/command/edit.cpp:1209
+#: ../src/command/edit.cpp:1323 ../src/command/edit.cpp:1325
 msgid "Revert"
 msgstr "Reverteix"
 
-#: ../src/command/edit.cpp:1210
-msgid "Revert the active line to its initial state (shown in the upper editor)"
+#: ../src/command/edit.cpp:1327
+msgid "Revert the active line to its initial state"
 msgstr ""
-"Reverteix la línia activa al seu estat inicial (mostrat a l'editor de dalt)"
 
-#: ../src/command/edit.cpp:1215
+#: ../src/command/edit.cpp:1332
 msgid "revert line"
 msgstr "el revertit de la línia"
 
-#: ../src/command/edit.cpp:1221 ../src/command/edit.cpp:1222
-#: ../src/preferences.cpp:401
+#: ../src/command/edit.cpp:1339 ../src/command/edit.cpp:1341
+#: ../src/preferences.cpp:410
 msgid "Clear"
 msgstr "Esborra"
 
-#: ../src/command/edit.cpp:1223
+#: ../src/command/edit.cpp:1343
 msgid "Clear the current line's text"
 msgstr "Esborra el text de la línia actual"
 
-#: ../src/command/edit.cpp:1228 ../src/command/edit.cpp:1247
+#: ../src/command/edit.cpp:1348 ../src/command/edit.cpp:1371
 msgid "clear line"
 msgstr "l'esborrat de la línia"
 
-#: ../src/command/edit.cpp:1235 ../src/command/edit.cpp:1236
+#: ../src/command/edit.cpp:1357 ../src/command/edit.cpp:1359
 msgid "Clear Text"
 msgstr "Esborra el text"
 
-#: ../src/command/edit.cpp:1237
+#: ../src/command/edit.cpp:1361
 msgid "Clear the current line's text, leaving override tags"
 msgstr "Esborra el text de la línia actual, deixant-ne les etiquetes d'estil"
 
-#: ../src/command/edit.cpp:1253 ../src/command/edit.cpp:1254
+#: ../src/command/edit.cpp:1378 ../src/command/edit.cpp:1380
 #: ../src/command/tool.cpp:270
 msgid "Insert Original"
 msgstr "Insereix l'original"
 
-#: ../src/command/edit.cpp:1255
+#: ../src/command/edit.cpp:1382
 msgid "Insert the original line text at the cursor"
 msgstr "Insereix la línia de text original al cursor"
 
-#: ../src/command/edit.cpp:1263
+#: ../src/command/edit.cpp:1391
 msgid "insert original"
 msgstr "la inserció de l'original"
 
@@ -1334,7 +1349,7 @@ msgstr "&Efecte"
 
 #: ../src/command/grid.cpp:134 ../src/command/grid.cpp:146
 #: ../src/dialog_paste_over.cpp:72 ../src/grid_column.cpp:214
-#: ../src/grid_column.cpp:215 ../src/subs_edit_box.cpp:139
+#: ../src/grid_column.cpp:215 ../src/subs_edit_box.cpp:148
 msgid "Effect"
 msgstr "Efecte"
 
@@ -1851,7 +1866,8 @@ msgid "Save subtitles with another name"
 msgstr "Desa els subtítols amb un altre nom"
 
 #: ../src/command/subtitle.cpp:396 ../src/dialog_export.cpp:124
-#: ../src/dialog_selected_choices.cpp:26 ../src/subs_edit_ctrl.cpp:410
+#: ../src/dialog_selected_choices.cpp:26 ../src/subs_edit_ctrl.cpp:155
+#: ../src/subs_edit_ctrl_stc.cpp:410
 msgid "Select &All"
 msgstr "Seleccion&a-ho tot"
 
@@ -2199,7 +2215,7 @@ msgid "&Accept changes"
 msgstr "&Accepta els canvis"
 
 #: ../src/command/tool.cpp:142 ../src/command/tool.cpp:226
-#: ../src/dialog_styling_assistant.cpp:90 ../src/dialog_translation.cpp:117
+#: ../src/dialog_styling_assistant.cpp:90 ../src/dialog_translation.cpp:138
 msgid "Accept changes"
 msgstr "Accepta els canvis"
 
@@ -2212,7 +2228,7 @@ msgid "&Preview changes"
 msgstr "&Previsualitza els canvis"
 
 #: ../src/command/tool.cpp:153 ../src/command/tool.cpp:237
-#: ../src/dialog_styling_assistant.cpp:91 ../src/dialog_translation.cpp:118
+#: ../src/dialog_styling_assistant.cpp:91 ../src/dialog_translation.cpp:139
 msgid "Preview changes"
 msgstr "Previsualitza els canvis"
 
@@ -2264,8 +2280,8 @@ msgstr ""
 msgid "&Translation Assistant..."
 msgstr "Auxiliar de &traducció..."
 
-#: ../src/command/tool.cpp:201 ../src/dialog_translation.cpp:66
-#: ../src/preferences.cpp:230
+#: ../src/command/tool.cpp:201 ../src/dialog_translation.cpp:69
+#: ../src/preferences.cpp:237
 msgid "Translation Assistant"
 msgstr "Auxiliar de traducció"
 
@@ -2872,7 +2888,7 @@ msgid "E&xtract"
 msgstr "E&xtreu"
 
 #: ../src/dialog_attachments.cpp:79 ../src/dialog_style_manager.cpp:214
-#: ../src/preferences.cpp:596
+#: ../src/preferences.cpp:605
 msgid "&Delete"
 msgstr "&Suprimeix"
 
@@ -3419,7 +3435,7 @@ msgstr "C&omença!"
 #: ../src/dialog_fonts_collector.cpp:307 ../src/dialog_fonts_collector.cpp:312
 #: ../src/dialog_fonts_collector.cpp:317 ../src/dialog_kara_timing_copy.cpp:574
 #: ../src/dialog_kara_timing_copy.cpp:576
-#: ../src/dialog_kara_timing_copy.cpp:626 ../src/preferences.cpp:263
+#: ../src/dialog_kara_timing_copy.cpp:626 ../src/preferences.cpp:271
 msgid "Error"
 msgstr "Error"
 
@@ -3591,7 +3607,7 @@ msgid "Style"
 msgstr "Estil"
 
 #: ../src/dialog_paste_over.cpp:68 ../src/grid_column.cpp:228
-#: ../src/grid_column.cpp:229 ../src/subs_edit_box.cpp:134
+#: ../src/grid_column.cpp:229 ../src/subs_edit_box.cpp:142
 msgid "Actor"
 msgstr "Actor"
 
@@ -4067,15 +4083,15 @@ msgstr "Temps"
 msgid "&Clear"
 msgstr "&Neteja"
 
-#: ../src/dialog_shift_times.cpp:203
+#: ../src/dialog_shift_times.cpp:204
 msgid "Shift by"
 msgstr "Desplaça per"
 
-#: ../src/dialog_shift_times.cpp:212
+#: ../src/dialog_shift_times.cpp:213
 msgid "Load from history"
 msgstr "Carrega de l'historial"
 
-#: ../src/dialog_shift_times.cpp:410
+#: ../src/dialog_shift_times.cpp:411
 msgid "shifting"
 msgstr "desplaçant"
 
@@ -4131,7 +4147,7 @@ msgstr "Editor d'estils"
 msgid "Font"
 msgstr "Tipus de lletra"
 
-#: ../src/dialog_style_editor.cpp:180 ../src/preferences.cpp:238
+#: ../src/dialog_style_editor.cpp:180 ../src/preferences.cpp:245
 msgid "Colors"
 msgstr "Colors"
 
@@ -4323,15 +4339,15 @@ msgstr "Text que s'utilitzarà a la previsualització"
 msgid "Color of preview background"
 msgstr "Color de fons de la previsualització"
 
-#: ../src/dialog_style_editor.cpp:420
+#: ../src/dialog_style_editor.cpp:421
 msgid "Style name conflict"
 msgstr "Conflicte de nom d'estil"
 
-#: ../src/dialog_style_editor.cpp:420
+#: ../src/dialog_style_editor.cpp:421
 msgid "There is already a style with this name. Please choose another name."
 msgstr "Ja hi ha un estil amb aquest nom. Escolliu un altre nom."
 
-#: ../src/dialog_style_editor.cpp:432
+#: ../src/dialog_style_editor.cpp:433
 msgid ""
 "Do you want to change all instances of this style in the script to this new "
 "name?"
@@ -4339,11 +4355,11 @@ msgstr ""
 "Voleu canviar totes les instàncies d'aquest estil a l'script a aquest nou "
 "nom?"
 
-#: ../src/dialog_style_editor.cpp:433
+#: ../src/dialog_style_editor.cpp:434
 msgid "Update script?"
 msgstr "Voleu actualitzar l'script?"
 
-#: ../src/dialog_style_editor.cpp:460 ../src/subs_edit_box.cpp:633
+#: ../src/dialog_style_editor.cpp:461 ../src/subs_edit_box.cpp:816
 msgid "style change"
 msgstr "el canvi d'estil"
 
@@ -4367,16 +4383,16 @@ msgstr "Mou l'estil a baix de tot"
 msgid "Sort styles alphabetically"
 msgstr "Ordena els estils alfabèticament"
 
-#: ../src/dialog_style_manager.cpp:211 ../src/preferences.cpp:594
+#: ../src/dialog_style_manager.cpp:211 ../src/preferences.cpp:603
 msgid "&New"
 msgstr "&Nou"
 
-#: ../src/dialog_style_manager.cpp:212 ../src/preferences.cpp:595
+#: ../src/dialog_style_manager.cpp:212 ../src/preferences.cpp:604
 msgid "&Edit"
 msgstr "&Edita"
 
-#: ../src/dialog_style_manager.cpp:213 ../src/subs_edit_ctrl.cpp:407
-#: ../src/timeedit_ctrl.cpp:209
+#: ../src/dialog_style_manager.cpp:213 ../src/subs_edit_ctrl.cpp:152
+#: ../src/subs_edit_ctrl_stc.cpp:407 ../src/timeedit_ctrl.cpp:209
 msgid "&Copy"
 msgstr "&Copia"
 
@@ -4561,23 +4577,23 @@ msgstr "Estils disponibles"
 msgid "Set style"
 msgstr "Defineix l'estil"
 
-#: ../src/dialog_styling_assistant.cpp:87 ../src/dialog_translation.cpp:114
+#: ../src/dialog_styling_assistant.cpp:87 ../src/dialog_translation.cpp:135
 msgid "Keys"
 msgstr "Tecles"
 
-#: ../src/dialog_styling_assistant.cpp:92 ../src/dialog_translation.cpp:119
+#: ../src/dialog_styling_assistant.cpp:92 ../src/dialog_translation.cpp:140
 msgid "Previous line"
 msgstr "Línia anterior"
 
-#: ../src/dialog_styling_assistant.cpp:93 ../src/dialog_translation.cpp:120
+#: ../src/dialog_styling_assistant.cpp:93 ../src/dialog_translation.cpp:141
 msgid "Next line"
 msgstr "Línia següent"
 
-#: ../src/dialog_styling_assistant.cpp:94 ../src/dialog_translation.cpp:122
+#: ../src/dialog_styling_assistant.cpp:94 ../src/dialog_translation.cpp:143
 msgid "Play video"
 msgstr "Reprodueix el vídeo"
 
-#: ../src/dialog_styling_assistant.cpp:95 ../src/dialog_translation.cpp:123
+#: ../src/dialog_styling_assistant.cpp:95 ../src/dialog_translation.cpp:144
 msgid "Play audio"
 msgstr "Reprodueix l'àudio"
 
@@ -4593,15 +4609,15 @@ msgstr "Selecciona l'estil"
 msgid "&Seek video to line start time"
 msgstr "&Mou el vídeo al temps d'inici de la línia"
 
-#: ../src/dialog_styling_assistant.cpp:110 ../src/dialog_translation.cpp:135
+#: ../src/dialog_styling_assistant.cpp:110 ../src/dialog_translation.cpp:156
 msgid "Actions"
 msgstr "Accions"
 
-#: ../src/dialog_styling_assistant.cpp:113 ../src/dialog_translation.cpp:137
+#: ../src/dialog_styling_assistant.cpp:113 ../src/dialog_translation.cpp:158
 msgid "Play &Audio"
 msgstr "Reprodueix l'à&udio"
 
-#: ../src/dialog_styling_assistant.cpp:117 ../src/dialog_translation.cpp:142
+#: ../src/dialog_styling_assistant.cpp:117 ../src/dialog_translation.cpp:163
 msgid "Play &Video"
 msgstr "Reprodueix el &vídeo"
 
@@ -4809,36 +4825,36 @@ msgstr "Script invàlid"
 msgid "timing processor"
 msgstr "el processador de temps"
 
-#: ../src/dialog_translation.cpp:79
+#: ../src/dialog_translation.cpp:85
 msgid "Original"
 msgstr "Original"
 
-#: ../src/dialog_translation.cpp:106
+#: ../src/dialog_translation.cpp:118
 msgid "Translation"
 msgstr "Traducció"
 
-#: ../src/dialog_translation.cpp:121
+#: ../src/dialog_translation.cpp:142
 msgid "Insert original"
 msgstr "Insereix l'original"
 
-#: ../src/dialog_translation.cpp:124
+#: ../src/dialog_translation.cpp:145
 msgid "Delete line"
 msgstr "Suprimeix la línia"
 
-#: ../src/dialog_translation.cpp:127
+#: ../src/dialog_translation.cpp:148
 msgid "Enable &preview"
 msgstr "Activa la &previsualització"
 
-#: ../src/dialog_translation.cpp:184 ../src/dialog_translation.cpp:288
+#: ../src/dialog_translation.cpp:205 ../src/dialog_translation.cpp:329
 msgid "No more lines to translate."
 msgstr "No hi ha més línies per traduir."
 
-#: ../src/dialog_translation.cpp:192 ../src/dialog_translation.cpp:242
+#: ../src/dialog_translation.cpp:213 ../src/dialog_translation.cpp:263
 #, c-format
 msgid "Current line: %d/%d"
 msgstr "Línia actual: %d/%d"
 
-#: ../src/dialog_translation.cpp:283
+#: ../src/dialog_translation.cpp:324
 msgid "translation assistant"
 msgstr "l'auxiliar de traducció"
 
@@ -4933,7 +4949,7 @@ msgid "Decoder:"
 msgstr "Descodificador: "
 
 #: ../src/dialog_video_details.cpp:66 ../src/preferences.cpp:168
-#: ../src/preferences.cpp:436
+#: ../src/preferences.cpp:445
 msgid "Video"
 msgstr "Vídeo"
 
@@ -5281,7 +5297,7 @@ msgid "Reading subtitles from Matroska file."
 msgstr "S'estan llegint els subtítols del fitxer Matroska."
 
 #: ../src/preferences.cpp:62 ../src/preferences.cpp:64
-#: ../src/preferences.cpp:332 ../src/preferences.cpp:353
+#: ../src/preferences.cpp:341 ../src/preferences.cpp:362
 msgid "General"
 msgstr "General"
 
@@ -5369,7 +5385,7 @@ msgstr "Importació de TTXT"
 msgid "Plain text import"
 msgstr "Importació de text pla"
 
-#: ../src/preferences.cpp:128 ../src/preferences.cpp:366
+#: ../src/preferences.cpp:128 ../src/preferences.cpp:375
 msgid "Audio"
 msgstr "Àudio"
 
@@ -5465,7 +5481,7 @@ msgstr "Temps del cursor"
 msgid "Video position"
 msgstr "Posició del vídeo"
 
-#: ../src/preferences.cpp:156 ../src/preferences.cpp:252
+#: ../src/preferences.cpp:156 ../src/preferences.cpp:259
 msgid "Seconds boundaries"
 msgstr "Límits dels segons"
 
@@ -5541,339 +5557,343 @@ msgstr "Interfície"
 msgid "Edit Box"
 msgstr "Caixa d'edició"
 
-#: ../src/preferences.cpp:210
+#: ../src/preferences.cpp:211
+msgid "Use styled edit box"
+msgstr ""
+
+#: ../src/preferences.cpp:212
 msgid "Enable call tips"
 msgstr "Activa els consells de crida"
 
-#: ../src/preferences.cpp:211
+#: ../src/preferences.cpp:214
 msgid "Overwrite in time boxes"
 msgstr "Sobreescriptura a les capses de temps"
 
-#: ../src/preferences.cpp:213
+#: ../src/preferences.cpp:216
 msgid "Enable syntax highlighting"
 msgstr "Activa el ressaltat de sintaxi"
 
-#: ../src/preferences.cpp:214
+#: ../src/preferences.cpp:221
 msgid "Dictionaries path"
 msgstr "Camí dels diccionaris"
 
-#: ../src/preferences.cpp:217
+#: ../src/preferences.cpp:224
 msgid "Character Counter"
 msgstr "Comptador de caràcters"
 
-#: ../src/preferences.cpp:218
+#: ../src/preferences.cpp:225
 msgid "Maximum characters per line"
 msgstr "Màxim de caràcters per línia"
 
-#: ../src/preferences.cpp:219
+#: ../src/preferences.cpp:226
 msgid "Characters Per Second Warning Threshold"
 msgstr "Límit d'advertència de caràcters per segon"
 
-#: ../src/preferences.cpp:220
+#: ../src/preferences.cpp:227
 msgid "Characters Per Second Error Threshold"
 msgstr "Límit d'error de caràcters per segon"
 
-#: ../src/preferences.cpp:221
+#: ../src/preferences.cpp:228
 msgid "Ignore whitespace"
 msgstr "Ignora els espais en blanc"
 
-#: ../src/preferences.cpp:222
+#: ../src/preferences.cpp:229
 msgid "Ignore punctuation"
 msgstr "Ignora la puntuació"
 
-#: ../src/preferences.cpp:224
+#: ../src/preferences.cpp:231
 msgid "Grid"
 msgstr "Graella"
 
-#: ../src/preferences.cpp:225
+#: ../src/preferences.cpp:232
 msgid "Focus grid on click"
 msgstr "Posa el focus a la graella en fer-hi clic"
 
-#: ../src/preferences.cpp:226
+#: ../src/preferences.cpp:233
 msgid "Highlight visible subtitles"
 msgstr "Ressalta els subtítols visibles"
 
-#: ../src/preferences.cpp:227
+#: ../src/preferences.cpp:234
 msgid "Hide overrides symbol"
 msgstr "Símbol per amagar les etiquetes d'estil"
 
-#: ../src/preferences.cpp:231
+#: ../src/preferences.cpp:238
 #, fuzzy
 msgid "Skip over whitespace"
 msgstr "Ignora els espais en blanc"
 
-#: ../src/preferences.cpp:246
+#: ../src/preferences.cpp:253
 msgid "Audio Display"
 msgstr "Visualització d'àudio"
 
-#: ../src/preferences.cpp:247
+#: ../src/preferences.cpp:254
 msgid "Play cursor"
 msgstr "Cursor de reproducció"
 
-#: ../src/preferences.cpp:248
+#: ../src/preferences.cpp:255
 msgid "Line boundary start"
 msgstr "Línia del límit d'inici"
 
-#: ../src/preferences.cpp:249
+#: ../src/preferences.cpp:256
 msgid "Line boundary end"
 msgstr "Línia del límit de final"
 
-#: ../src/preferences.cpp:250
+#: ../src/preferences.cpp:257
 msgid "Line boundary inactive line"
 msgstr "Línia del límit de línia inactiva"
 
-#: ../src/preferences.cpp:251
+#: ../src/preferences.cpp:258
 msgid "Syllable boundaries"
 msgstr "Límits de síl·laba"
 
-#: ../src/preferences.cpp:254
+#: ../src/preferences.cpp:261
 msgid "Syntax Highlighting"
 msgstr "Ressaltat de sintaxi"
 
-#: ../src/preferences.cpp:255
+#: ../src/preferences.cpp:262
 msgid "Background"
 msgstr "Fons"
 
-#: ../src/preferences.cpp:256
+#: ../src/preferences.cpp:263
 msgid "Normal"
 msgstr "Normal"
 
-#: ../src/preferences.cpp:257
+#: ../src/preferences.cpp:265
 msgid "Comments"
 msgstr "Comentaris"
 
-#: ../src/preferences.cpp:258
+#: ../src/preferences.cpp:266
 msgid "Drawings"
 msgstr "Dibuixos"
 
-#: ../src/preferences.cpp:259
+#: ../src/preferences.cpp:267
 msgid "Brackets"
 msgstr "Claudàtors"
 
-#: ../src/preferences.cpp:260
+#: ../src/preferences.cpp:268
 msgid "Slashes and Parentheses"
 msgstr "Barres i parèntesis"
 
-#: ../src/preferences.cpp:261
+#: ../src/preferences.cpp:269
 msgid "Tags"
 msgstr "Etiquetes"
 
-#: ../src/preferences.cpp:262
+#: ../src/preferences.cpp:270
 msgid "Parameters"
 msgstr "Paràmetres"
 
-#: ../src/preferences.cpp:264
+#: ../src/preferences.cpp:272
 msgid "Error Background"
 msgstr "Fons d'error"
 
-#: ../src/preferences.cpp:265
+#: ../src/preferences.cpp:273
 msgid "Line Break"
 msgstr "Salt de línia"
 
-#: ../src/preferences.cpp:266
+#: ../src/preferences.cpp:274
 msgid "Karaoke templates"
 msgstr "Plantilles de karaoke"
 
-#: ../src/preferences.cpp:267
+#: ../src/preferences.cpp:275
 msgid "Karaoke variables"
 msgstr "Variables de karaoke"
 
-#: ../src/preferences.cpp:273
+#: ../src/preferences.cpp:282
 msgid "Audio Color Schemes"
 msgstr "Esquemes de color d'àudio:"
 
-#: ../src/preferences.cpp:275 ../src/preferences.cpp:382
+#: ../src/preferences.cpp:284 ../src/preferences.cpp:391
 msgid "Spectrum"
 msgstr "Espectre"
 
-#: ../src/preferences.cpp:276
+#: ../src/preferences.cpp:285
 msgid "Waveform"
 msgstr "Forma d'ona"
 
-#: ../src/preferences.cpp:278
+#: ../src/preferences.cpp:287
 msgid "Subtitle Grid"
 msgstr "Graella dels subtítols"
 
-#: ../src/preferences.cpp:279
+#: ../src/preferences.cpp:288
 msgid "Standard foreground"
 msgstr "Frontal estàndard"
 
-#: ../src/preferences.cpp:280
+#: ../src/preferences.cpp:289
 msgid "Standard background"
 msgstr "Fons estàndard"
 
-#: ../src/preferences.cpp:281
+#: ../src/preferences.cpp:290
 msgid "Selection foreground"
 msgstr "Frontal seleccionat"
 
-#: ../src/preferences.cpp:282
+#: ../src/preferences.cpp:291
 msgid "Selection background"
 msgstr "Fons seleccionat"
 
-#: ../src/preferences.cpp:283
+#: ../src/preferences.cpp:292
 msgid "Collision foreground"
 msgstr "Frontal de col·lisió"
 
-#: ../src/preferences.cpp:284
+#: ../src/preferences.cpp:293
 msgid "In frame background"
 msgstr "Fons dins del fotograma"
 
-#: ../src/preferences.cpp:285
+#: ../src/preferences.cpp:294
 msgid "Comment background"
 msgstr "Fons dels comentaris"
 
-#: ../src/preferences.cpp:286
+#: ../src/preferences.cpp:295
 msgid "Selected comment background"
 msgstr "Fons seleccionat dels comentaris"
 
-#: ../src/preferences.cpp:287
+#: ../src/preferences.cpp:296
 msgid "Header background"
 msgstr "Fons de la capçalera"
 
-#: ../src/preferences.cpp:288
+#: ../src/preferences.cpp:297
 msgid "Left Column"
 msgstr "Columna esquerra"
 
-#: ../src/preferences.cpp:289
+#: ../src/preferences.cpp:298
 msgid "Active Line Border"
 msgstr "Vora de la línia activa"
 
-#: ../src/preferences.cpp:290
+#: ../src/preferences.cpp:299
 msgid "Lines"
 msgstr "Línies"
 
-#: ../src/preferences.cpp:291
+#: ../src/preferences.cpp:300
 msgid "CPS Error"
 msgstr "Error de CPS"
 
-#: ../src/preferences.cpp:293
+#: ../src/preferences.cpp:302
 #, fuzzy
 msgid "Visual Typesetting Tools"
 msgstr "Definició d'estils visual"
 
-#: ../src/preferences.cpp:294
+#: ../src/preferences.cpp:303
 #, fuzzy
 msgid "Primary Lines"
 msgstr "Primari"
 
-#: ../src/preferences.cpp:295
+#: ../src/preferences.cpp:304
 #, fuzzy
 msgid "Secondary Lines"
 msgstr "Secundari"
 
-#: ../src/preferences.cpp:296
+#: ../src/preferences.cpp:305
 #, fuzzy
 msgid "Primary Highlight"
 msgstr "Ressaltat de sintaxi"
 
-#: ../src/preferences.cpp:297
+#: ../src/preferences.cpp:306
 #, fuzzy
 msgid "Secondary Highlight"
 msgstr "Ressaltat de sintaxi"
 
-#: ../src/preferences.cpp:300
+#: ../src/preferences.cpp:309
 #, fuzzy
 msgid "Visual Typesetting Tools Alpha"
 msgstr "Definició d'estils visual"
 
-#: ../src/preferences.cpp:301
+#: ../src/preferences.cpp:310
 msgid "Shaded Area"
 msgstr ""
 
-#: ../src/preferences.cpp:310
+#: ../src/preferences.cpp:319
 msgid "Backup"
 msgstr "Còpia de seguretat"
 
-#: ../src/preferences.cpp:312
+#: ../src/preferences.cpp:321
 msgid "Automatic Save"
 msgstr "Desament automàtic"
 
-#: ../src/preferences.cpp:313 ../src/preferences.cpp:321
+#: ../src/preferences.cpp:322 ../src/preferences.cpp:330
 msgid "Enable"
 msgstr "Activa"
 
-#: ../src/preferences.cpp:316
+#: ../src/preferences.cpp:325
 msgid "Interval in seconds"
 msgstr "Interval en segons"
 
-#: ../src/preferences.cpp:317 ../src/preferences.cpp:323
-#: ../src/preferences.cpp:380
+#: ../src/preferences.cpp:326 ../src/preferences.cpp:332
+#: ../src/preferences.cpp:389
 msgid "Path"
 msgstr "Camí"
 
-#: ../src/preferences.cpp:318
+#: ../src/preferences.cpp:327
 msgid "Autosave after every change"
 msgstr "Desa automàticament després de cada canvi"
 
-#: ../src/preferences.cpp:320
+#: ../src/preferences.cpp:329
 msgid "Automatic Backup"
 msgstr "Còpia de seguretat automàtica"
 
-#: ../src/preferences.cpp:334
+#: ../src/preferences.cpp:343
 msgid "Base path"
 msgstr "Camí base"
 
-#: ../src/preferences.cpp:335
+#: ../src/preferences.cpp:344
 msgid "Include path"
 msgstr "Camí d'inclusió"
 
-#: ../src/preferences.cpp:336
+#: ../src/preferences.cpp:345
 msgid "Auto-load path"
 msgstr "Camí de càrrega automàtica"
 
-#: ../src/preferences.cpp:338
+#: ../src/preferences.cpp:347
 msgid "0: Fatal"
 msgstr "0: Fatal"
 
-#: ../src/preferences.cpp:338
+#: ../src/preferences.cpp:347
 msgid "1: Error"
 msgstr "1: Error"
 
-#: ../src/preferences.cpp:338
+#: ../src/preferences.cpp:347
 msgid "2: Warning"
 msgstr "2: Advertència"
 
-#: ../src/preferences.cpp:338
+#: ../src/preferences.cpp:347
 msgid "3: Hint"
 msgstr "3: Pista"
 
-#: ../src/preferences.cpp:338
+#: ../src/preferences.cpp:347
 msgid "4: Debug"
 msgstr "4: Depuració"
 
-#: ../src/preferences.cpp:338
+#: ../src/preferences.cpp:347
 msgid "5: Trace"
 msgstr "5: Traça"
 
-#: ../src/preferences.cpp:340
+#: ../src/preferences.cpp:349
 msgid "Trace level"
 msgstr "Nivell de traça"
 
-#: ../src/preferences.cpp:342
+#: ../src/preferences.cpp:351
 msgid "All scripts"
 msgstr "Tots els scripts"
 
-#: ../src/preferences.cpp:342
+#: ../src/preferences.cpp:351
 msgid "Global autoload scripts"
 msgstr "Scripts globals de càrrega automàtica"
 
-#: ../src/preferences.cpp:342
+#: ../src/preferences.cpp:351
 msgid "No scripts"
 msgstr "Cap script"
 
-#: ../src/preferences.cpp:342
+#: ../src/preferences.cpp:351
 msgid "Subtitle-local scripts"
 msgstr "Scripts del subtítol local"
 
-#: ../src/preferences.cpp:344
+#: ../src/preferences.cpp:353
 msgid "Autoreload on Export"
 msgstr "Recarrega automàticament en exportar"
 
-#: ../src/preferences.cpp:351
+#: ../src/preferences.cpp:360
 msgid "Advanced"
 msgstr "Avançades"
 
-#: ../src/preferences.cpp:355
+#: ../src/preferences.cpp:364
 msgid ""
 "Changing these settings might result in bugs and/or crashes.  Do not touch "
 "these unless you know what you're doing."
@@ -5881,143 +5901,143 @@ msgstr ""
 "Si canvieu aquesta configuració podeu provocar errades o bloquejos. No la "
 "modifiqueu si no sabeu què esteu fent."
 
-#: ../src/preferences.cpp:368 ../src/preferences.cpp:438
+#: ../src/preferences.cpp:377 ../src/preferences.cpp:447
 msgid "Expert"
 msgstr "Per a experts"
 
-#: ../src/preferences.cpp:371
+#: ../src/preferences.cpp:380
 msgid "Audio provider"
 msgstr "Proveïdor d'àudio"
 
-#: ../src/preferences.cpp:374
+#: ../src/preferences.cpp:383
 msgid "Audio player"
 msgstr "Reproductor d'àudio"
 
-#: ../src/preferences.cpp:376
+#: ../src/preferences.cpp:385
 msgid "Cache"
 msgstr "Memòria cau"
 
-#: ../src/preferences.cpp:377
+#: ../src/preferences.cpp:386
 msgid "Hard Disk"
 msgstr "Disc dur"
 
-#: ../src/preferences.cpp:377
-msgid "None (NOT RECOMMENDED)"
-msgstr "Cap (NO RECOMANAT)"
+#: ../src/preferences.cpp:386
+msgid "None (Not recommended with Avisynth)"
+msgstr ""
 
-#: ../src/preferences.cpp:377
+#: ../src/preferences.cpp:386
 msgid "RAM"
 msgstr "RAM"
 
-#: ../src/preferences.cpp:379
+#: ../src/preferences.cpp:388
 msgid "Cache type"
 msgstr "Tipus de memòria cau"
 
-#: ../src/preferences.cpp:384
+#: ../src/preferences.cpp:393
 msgid "Better quality"
 msgstr "Millor qualitat"
 
-#: ../src/preferences.cpp:384
+#: ../src/preferences.cpp:393
 msgid "High quality"
 msgstr "Alta qualitat"
 
-#: ../src/preferences.cpp:384
+#: ../src/preferences.cpp:393
 msgid "Insane quality"
 msgstr "Qualitat exagerada"
 
-#: ../src/preferences.cpp:384
+#: ../src/preferences.cpp:393
 msgid "Regular quality"
 msgstr "Qualitat regular"
 
-#: ../src/preferences.cpp:386
+#: ../src/preferences.cpp:395
 msgid "Quality"
 msgstr "Qualitat"
 
-#: ../src/preferences.cpp:388
+#: ../src/preferences.cpp:397
 msgid "Cache memory max (MB)"
 msgstr "Màxim de memòria cau (MB)"
 
-#: ../src/preferences.cpp:394
+#: ../src/preferences.cpp:403
 msgid "Avisynth down-mixer"
 msgstr "Mesclador a la baixa de l'Avisynth"
 
-#: ../src/preferences.cpp:395
+#: ../src/preferences.cpp:404
 msgid "Force sample rate"
 msgstr "Força el ràtio de mostreig"
 
-#: ../src/preferences.cpp:401
+#: ../src/preferences.cpp:410
 msgid "Abort"
 msgstr "Avorta"
 
-#: ../src/preferences.cpp:401
+#: ../src/preferences.cpp:410
 msgid "Ignore"
 msgstr "Ignora"
 
-#: ../src/preferences.cpp:401
+#: ../src/preferences.cpp:410
 msgid "Stop"
 msgstr "Atura"
 
-#: ../src/preferences.cpp:403
+#: ../src/preferences.cpp:412
 msgid "Audio indexing error handling mode"
 msgstr "Mode de gestió d'errors en la indexació d'àudio"
 
-#: ../src/preferences.cpp:405
+#: ../src/preferences.cpp:414
 msgid "Always index all audio tracks"
 msgstr "Indexa sempre les pistes d'àudio"
 
-#: ../src/preferences.cpp:406
+#: ../src/preferences.cpp:415
 msgid "Downmix to 16bit mono audio"
 msgstr ""
 
-#: ../src/preferences.cpp:411
+#: ../src/preferences.cpp:420
 msgid "Portaudio device"
 msgstr "Dispositiu Portaudio"
 
-#: ../src/preferences.cpp:416
+#: ../src/preferences.cpp:425
 msgid "OSS Device"
 msgstr "Dispositiu OSS"
 
-#: ../src/preferences.cpp:427
+#: ../src/preferences.cpp:436
 msgid "Buffer latency"
 msgstr "Latència de la memòria intermèdia"
 
-#: ../src/preferences.cpp:428
+#: ../src/preferences.cpp:437
 msgid "Buffer length"
 msgstr "Llargada de la memòria intermèdia"
 
-#: ../src/preferences.cpp:441
+#: ../src/preferences.cpp:450
 msgid "Video provider"
 msgstr "Proveïdor del vídeo"
 
-#: ../src/preferences.cpp:444
+#: ../src/preferences.cpp:453
 msgid "Subtitles provider"
 msgstr "Proveïdor de subtítols"
 
-#: ../src/preferences.cpp:448
+#: ../src/preferences.cpp:457
 msgid "Allow pre-2.56a Avisynth"
 msgstr "Permet l'Avisynth anterior a 2.56a"
 
-#: ../src/preferences.cpp:450
+#: ../src/preferences.cpp:459
 msgid "Avisynth memory limit"
 msgstr "Límit de memòria de l'Avisynth"
 
-#: ../src/preferences.cpp:458
+#: ../src/preferences.cpp:467
 msgid "Debug log verbosity"
 msgstr "Verbositat del registre de depuració"
 
-#: ../src/preferences.cpp:460
+#: ../src/preferences.cpp:469
 msgid "Decoding threads"
 msgstr "Fils de descodificació"
 
-#: ../src/preferences.cpp:461
+#: ../src/preferences.cpp:470
 msgid "Enable unsafe seeking"
 msgstr "Activa la visualització insegura"
 
-#: ../src/preferences.cpp:590
+#: ../src/preferences.cpp:599
 msgid "Hotkeys"
 msgstr "Dreceres del teclat"
 
-#: ../src/preferences.cpp:689
+#: ../src/preferences.cpp:698
 msgid ""
 "Are you sure that you want to restore the defaults? All your settings will "
 "be overridden."
@@ -6025,15 +6045,15 @@ msgstr ""
 "Esteu segur que voleu restaurar els valors predefinits? Tota la vostra "
 "configuració se sobreescriurà."
 
-#: ../src/preferences.cpp:689
+#: ../src/preferences.cpp:698
 msgid "Restore defaults?"
 msgstr "Voleu restaurar els valors predefinits?"
 
-#: ../src/preferences.cpp:707
+#: ../src/preferences.cpp:716
 msgid "Preferences"
 msgstr "Preferències"
 
-#: ../src/preferences.cpp:735
+#: ../src/preferences.cpp:744
 msgid "&Restore Defaults"
 msgstr "&Restableix els valors predefinits"
 
@@ -6166,24 +6186,24 @@ msgstr "Sense títol"
 msgid "untitled"
 msgstr "sense títol"
 
-#: ../src/subs_edit_box.cpp:114
+#: ../src/subs_edit_box.cpp:122
 msgid "&Comment"
 msgstr "&Comenta"
 
-#: ../src/subs_edit_box.cpp:115
+#: ../src/subs_edit_box.cpp:123
 msgid "Comment this line out. Commented lines don't show up on screen."
 msgstr ""
 "Comenta aquesta línia. Les línies comentades no es mostren a la pantalla"
 
-#: ../src/subs_edit_box.cpp:122
+#: ../src/subs_edit_box.cpp:130
 msgid "Style for this line"
 msgstr "Estil per a aquesta línia"
 
-#: ../src/subs_edit_box.cpp:124
+#: ../src/subs_edit_box.cpp:132
 msgid "Edit"
 msgstr "Edita"
 
-#: ../src/subs_edit_box.cpp:134
+#: ../src/subs_edit_box.cpp:143
 msgid ""
 "Actor name for this speech. This is only for reference, and is mainly "
 "useless."
@@ -6191,7 +6211,7 @@ msgstr ""
 "Nom de l'actor que diu aquest text. Només és una referència, i normalment és "
 "inútil."
 
-#: ../src/subs_edit_box.cpp:139
+#: ../src/subs_edit_box.cpp:149
 msgid ""
 "Effect for this line. This can be used to store extra information for "
 "karaoke scripts, or for the effects supported by the renderer."
@@ -6200,153 +6220,160 @@ msgstr ""
 "extra als scripts de karaoke, o per a efectes suportats pel programa "
 "renderitzador."
 
-#: ../src/subs_edit_box.cpp:150
+#: ../src/subs_edit_box.cpp:160
 msgid "Number of characters in the longest line of this subtitle."
 msgstr "Nombre de caràcters a la línia més llarga d'aquest subtítol."
 
-#: ../src/subs_edit_box.cpp:166
+#: ../src/subs_edit_box.cpp:177
 msgid "Layer number"
 msgstr "Número de capa"
 
-#: ../src/subs_edit_box.cpp:170
+#: ../src/subs_edit_box.cpp:181
 msgid "Start time"
 msgstr "Temps d'inici"
 
-#: ../src/subs_edit_box.cpp:171
+#: ../src/subs_edit_box.cpp:182
 msgid "End time"
 msgstr "Temps de final"
 
-#: ../src/subs_edit_box.cpp:173
+#: ../src/subs_edit_box.cpp:184
 msgid "Line duration"
 msgstr "Durada de la línia"
 
-#: ../src/subs_edit_box.cpp:176
+#: ../src/subs_edit_box.cpp:187
 msgid "Left Margin (0 = default from style)"
 msgstr "Marge esquerre (0 = predefinit per l'estil)"
 
-#: ../src/subs_edit_box.cpp:176
+#: ../src/subs_edit_box.cpp:187
 msgid "left margin change"
 msgstr "el canvi al marge esquerre"
 
-#: ../src/subs_edit_box.cpp:177
+#: ../src/subs_edit_box.cpp:188
 msgid "Right Margin (0 = default from style)"
 msgstr "Marge dret (0 = predefinit per l'estil)"
 
-#: ../src/subs_edit_box.cpp:177
+#: ../src/subs_edit_box.cpp:188
 msgid "right margin change"
 msgstr "el canvi al marge dret"
 
-#: ../src/subs_edit_box.cpp:178
+#: ../src/subs_edit_box.cpp:189
 msgid "Vertical Margin (0 = default from style)"
 msgstr "Marge vertical (0 = predefinit per l'estil)"
 
-#: ../src/subs_edit_box.cpp:178
+#: ../src/subs_edit_box.cpp:189
 msgid "vertical margin change"
 msgstr "el canvi al marge vertical"
 
-#: ../src/subs_edit_box.cpp:197
+#: ../src/subs_edit_box.cpp:208
 msgid "T&ime"
 msgstr "T&emps"
 
-#: ../src/subs_edit_box.cpp:197
+#: ../src/subs_edit_box.cpp:208
 msgid "Time by h:mm:ss.cs"
 msgstr "Temps en h:mm:ss:cs"
 
-#: ../src/subs_edit_box.cpp:198
+#: ../src/subs_edit_box.cpp:209
 msgid "F&rame"
 msgstr "Fotog&rama"
 
-#: ../src/subs_edit_box.cpp:198
+#: ../src/subs_edit_box.cpp:209
 msgid "Time by frame number"
 msgstr "Temps per número de fotograma"
 
-#: ../src/subs_edit_box.cpp:201
-msgid "Show Original"
-msgstr "Mostra l'original"
-
-#: ../src/subs_edit_box.cpp:202
-msgid ""
-"Show the contents of the subtitle line when it was first selected above the "
-"edit box. This is sometimes useful when editing subtitles or translating "
-"subtitles into another language."
+#: ../src/subs_edit_box.cpp:212
+msgid "Analyzing subtitles in the Zhi Meng Subtitle Group format"
 msgstr ""
-"Mostra el contingut de la línia de subtítol quan la vau seleccionar per "
-"primer cop a la capsa d'edició. De vegades és útil quan s'editen els "
-"subtítols o es tradueixen a un altre idioma."
 
-#: ../src/subs_edit_box.cpp:474
+#: ../src/subs_edit_box.cpp:214
+msgid ""
+"Parse the subtitles in the \"Chinese\\NJapanese\" format, with Japanese on "
+"top and Chinese on the bottom. Both parts are editable, and any changes will "
+"be synchronized in real time."
+msgstr ""
+
+#: ../src/subs_edit_box.cpp:560 ../src/subs_edit_box.cpp:575
+#: ../src/subs_edit_box.cpp:586 ../src/subs_edit_box.cpp:601
 msgid "modify text"
 msgstr "la modificació del text"
 
-#: ../src/subs_edit_box.cpp:552
+#: ../src/subs_edit_box.cpp:691
 msgid "modify times"
 msgstr "la modificació dels temps"
 
-#: ../src/subs_edit_box.cpp:639
+#: ../src/subs_edit_box.cpp:822
 msgid "actor change"
 msgstr "el canvi d'actor"
 
-#: ../src/subs_edit_box.cpp:644
+#: ../src/subs_edit_box.cpp:828
 msgid "layer change"
 msgstr "el canvi de capa"
 
-#: ../src/subs_edit_box.cpp:649
+#: ../src/subs_edit_box.cpp:833
 msgid "effect change"
 msgstr "el canvi d'efecte"
 
-#: ../src/subs_edit_box.cpp:654
+#: ../src/subs_edit_box.cpp:839
 msgid "comment change"
 msgstr "el canvi de comentari"
 
-#: ../src/subs_edit_ctrl.cpp:396
-msgid "Spell checker language"
-msgstr "Idioma del corrector ortogràfic"
+#: ../src/subs_edit_box.cpp:880 ../src/subs_edit_box.cpp:892
+msgid "Japanese"
+msgstr ""
 
-#: ../src/subs_edit_ctrl.cpp:406
+#: ../src/subs_edit_box.cpp:882 ../src/subs_edit_box.cpp:894
+msgid "Chinese"
+msgstr ""
+
+#: ../src/subs_edit_ctrl.cpp:151 ../src/subs_edit_ctrl_stc.cpp:406
 msgid "Cu&t"
 msgstr "Re&talla"
 
-#: ../src/subs_edit_ctrl.cpp:408 ../src/timeedit_ctrl.cpp:210
+#: ../src/subs_edit_ctrl.cpp:153 ../src/subs_edit_ctrl_stc.cpp:408
+#: ../src/timeedit_ctrl.cpp:210
 msgid "&Paste"
 msgstr "Engan&xa"
 
-#: ../src/subs_edit_ctrl.cpp:443
+#: ../src/subs_edit_ctrl_stc.cpp:396
+msgid "Spell checker language"
+msgstr "Idioma del corrector ortogràfic"
+
+#: ../src/subs_edit_ctrl_stc.cpp:443
 #, c-format
 msgid "Remove \"%s\" from dictionary"
 msgstr "Suprimeix \"%s\" del diccionari"
 
-#: ../src/subs_edit_ctrl.cpp:448
+#: ../src/subs_edit_ctrl_stc.cpp:448
 msgid "No spell checker suggestions"
 msgstr "No hi ha suggeriments del corrector ortogràfic"
 
-#: ../src/subs_edit_ctrl.cpp:454
+#: ../src/subs_edit_ctrl_stc.cpp:454
 #, c-format
 msgid "Spell checker suggestions for \"%s\""
 msgstr "Suggeriments del corrector ortogràfic per a \"%s\""
 
-#: ../src/subs_edit_ctrl.cpp:459
+#: ../src/subs_edit_ctrl_stc.cpp:459
 msgid "No correction suggestions"
 msgstr "No hi ha suggeriments de correcció"
 
-#: ../src/subs_edit_ctrl.cpp:465
+#: ../src/subs_edit_ctrl_stc.cpp:465
 #, c-format
 msgid "Add \"%s\" to dictionary"
 msgstr "Afegeix \"%s\" al diccionari"
 
-#: ../src/subs_edit_ctrl.cpp:500
+#: ../src/subs_edit_ctrl_stc.cpp:500
 #, c-format
 msgid "Thesaurus suggestions for \"%s\""
 msgstr "Suggeriments del tesaurus per a \"%s\""
 
-#: ../src/subs_edit_ctrl.cpp:503
+#: ../src/subs_edit_ctrl_stc.cpp:503
 msgid "No thesaurus suggestions"
 msgstr "No hi ha suggeriments del tesaurus "
 
-#: ../src/subs_edit_ctrl.cpp:506
+#: ../src/subs_edit_ctrl_stc.cpp:506
 msgid "Thesaurus language"
 msgstr "Idioma del tesaurus"
 
-#: ../src/subs_edit_ctrl.cpp:515
+#: ../src/subs_edit_ctrl_stc.cpp:515
 msgid "Disable"
 msgstr "Desactiva"
 
@@ -6517,80 +6544,6 @@ msgstr "Mà alçada suavitzada"
 msgid "delete control point"
 msgstr "l'eliminació d'un punt de control"
 
-#: aegisub.appdata.xml:1
-msgid ""
-"A free, cross-platform open source tool for creating and modifying subtitles"
-msgstr ""
-
-#: aegisub.appdata.xml:2
-msgid ""
-"Aegisub is a free, cross-platform open source tool for creating and "
-"modifying subtitles. Aegisub makes it quick and easy to time subtitles to "
-"audio, and features many powerful tools for styling them, including a built-"
-"in real-time video preview."
-msgstr ""
-
-#: aegisub.appdata.xml:3
-msgid ""
-"Aegisub was originally created as a tool to make typesetting, particularly "
-"in anime fansubs, a less painful experience. At the time of the start of the "
-"project, many other programs that supported the Advanced Substation Alpha "
-"format lacked (and in many cases, still lack; development on several "
-"competing programs have since been dropped for various reasons completely "
-"unrelated to Aegisub) many vital functions, or were too buggy and/or "
-"unreliable to be really useful."
-msgstr ""
-
-#: aegisub.appdata.xml:4
-msgid ""
-"Since then, Aegisub has grown into a fully fledged, highly customizable "
-"subtitle editor. It features a lot of convenient tools to help you with "
-"timing, typesetting, editing and translating subtitles, as well as a "
-"powerful scripting environment called Automation (originally mostly intended "
-"for creating karaoke effects, Automation can now be used much else, "
-"including creating macros and various other convenient tools)."
-msgstr ""
-
-#: aegisub.appdata.xml:5
-msgid "Some highlights of Aegisub:"
-msgstr ""
-
-#: aegisub.appdata.xml:6
-msgid "Simple and intuitive yet powerful interface for editing subtitles"
-msgstr ""
-
-#: aegisub.appdata.xml:7
-msgid "Support for many formats and character sets"
-msgstr ""
-
-#: aegisub.appdata.xml:8
-msgid "Powerful video mode"
-msgstr ""
-
-#: aegisub.appdata.xml:9
-msgid "Visual typesetting tools"
-msgstr ""
-
-#: aegisub.appdata.xml:10
-msgid "Intuitive and customizable audio timing mode"
-msgstr ""
-
-#: aegisub.appdata.xml:11
-msgid "Fully scriptable through the Automation module"
-msgstr ""
-
-#: aegisub.appdata.xml:12
-msgid "Typesetting"
-msgstr ""
-
-#: aegisub.appdata.xml:13
-msgid "Audio video"
-msgstr ""
-
-#: aegisub.appdata.xml:14
-msgid "Audio timing"
-msgstr ""
-
 #: default_hotkey.json:244:
 msgid "Subtitle Edit Box"
 msgstr "Caixa d'edició dels subtítols"
@@ -6751,1499 +6704,12 @@ msgstr ""
 msgid "Update Checker:"
 msgstr "Comprovador d'actualitzacions:"
 
-#~ msgid "Dummy Video Provider"
-#~ msgstr "Proveïdor de vídeo fictici"
-
-#~ msgid "DirectShow"
-#~ msgstr "DirectShow"
-
-#~ msgid ""
-#~ "Warning! The file is being opened using Avisynth's DirectShowSource, "
-#~ "which has unreliable seeking. Frame numbers might not match the real "
-#~ "number. PROCEED AT YOUR OWN RISK!"
-#~ msgstr ""
-#~ "Compte! El fitxer s'obrirà utilitzant el DirectShowSource de l'Avisynth, "
-#~ "que té un desplaçament no confiable. Els números dels marcs poden no "
-#~ "coincidir amb els reals. CONTINUEU SOTA EL VOSTRE PROPI RISC!"
-
-#~ msgid " by ArchMage ZeratuL.\n"
-#~ msgstr " per ArchMage ZeratuL.\n"
-
-#~ msgid "Video Screenshot Path"
-#~ msgstr "Camí de les captures de pantalla del vídeo"
-
-#~ msgid "Other supported formats"
-#~ msgstr "Altres formats suportats"
-
-#~ msgid "Recommended Formats"
-#~ msgstr "Formats recomanats"
-
-#~ msgid "Avisynth renders its own subs"
-#~ msgstr "L'Avisynth renderitza els seus propis subtítols"
-
-#~ msgid "Save config.dat locally"
-#~ msgstr "Desa el config.dat localment"
-
-#~ msgid "Show Tip of the Day"
-#~ msgstr "Mostra el consell del dia"
-
-#~ msgid "Group some text first."
-#~ msgstr "Primer agrupeu text."
-
-#~ msgid "Possible error parsing source line"
-#~ msgstr "S'ha produït un possible error en analitzar la línia d'origen"
-
-#~ msgid "Kanji timer"
-#~ msgstr "Creador de temps per a kanjis"
-
-#~ msgid ""
-#~ "The source line contains text before the first karaoke block.\n"
-#~ "Do you want to carry it over to the destination?\n"
-#~ "It will be ignored otherwise."
-#~ msgstr ""
-#~ "La línia d'origen conté text abans del primer bloc de karaoke.\n"
-#~ "El voleu copiar a la destinació?\n"
-#~ "En cas contrari, s'ignorarà.."
-
-#~ msgid "Select source text first."
-#~ msgstr "Primer seleccioneu el text d'origen."
-
-#~ msgid "Groups"
-#~ msgstr "Grups"
-
-#~ msgid "Associations"
-#~ msgstr "Associacions"
-
-#~ msgid ""
-#~ "Please select the formats you want to\n"
-#~ "associate with Aegisub:"
-#~ msgstr ""
-#~ "Escolliu els formats que voleu\n"
-#~ "associar amb l'Aegisub:"
-
-#~ msgid "Associate extensions"
-#~ msgstr "Associa les extensions"
-
-#~ msgid "Bug tracker hosting by:"
-#~ msgstr "Allotjament del sistema de seguiment d'errors per:"
-
-#~ msgid "SVN hosting by:"
-#~ msgstr "Allotjament de l'SVN per:"
-
-#~ msgid "Forum and wiki hosting by:"
-#~ msgstr "Allotjament del fòrum i del wiki per:"
-
-#~ msgid "Manual by:"
-#~ msgstr "Manual per:"
-
-#~ msgid "Programmers:"
-#~ msgstr "Programadors:"
-
-#~ msgid "This build of Aegisub uses the following C/C++ libraries:\n"
-#~ msgstr ""
-#~ "Aquesta compilació de l'Aegisub utilitza les següents biblioteques de C/C+"
-#~ "+:\n"
-
-#~ msgid "No new version has been found.\n"
-#~ msgstr "No s'ha trobat cap nova versió.\n"
-
-#~ msgid "Please go to the following URL to download it: %s\n"
-#~ msgstr "Aneu a la següent URL per descarregar-la: %s\n"
-
-#~ msgid "New version found!\n"
-#~ msgstr "S'ha trobat una nova versió!\n"
-
-#~ msgid "OK.\n"
-#~ msgstr "Correcte.\n"
-
-#~ msgid "Failed.\n"
-#~ msgstr "S'ha produït un error.\n"
-
-#~ msgid "Attempting to open \"%s\"..."
-#~ msgstr "S'està intentant obrir \"%s\"..."
-
-#~ msgid "Could not open Internet File system. Aborting.\n"
-#~ msgstr ""
-#~ "No s'ha pogut obrir el sistema de fitxers d'Internet. S'ha avortat.\n"
-
-#~ msgid "hide tags."
-#~ msgstr "amagar les etiquetes."
-
-#~ msgid "simplify tags."
-#~ msgstr "simplificar les etiquetes."
-
-#~ msgid "show full tags."
-#~ msgstr "mostrar les etiquetes completes."
-
-#~ msgid "ASS Override Tag mode set to "
-#~ msgstr "El mode de visualització de les etiquetes ASS s'ha canviat a "
-
-#~ msgid "File backup saved as \""
-#~ msgstr "S'ha desat una còpia de seguretat del fitxer com a \""
-
-#~ msgid ""
-#~ "Enter aspect ratio in either decimal (e.g. 2.35) or fractional (e.g. "
-#~ "16:9) form. Enter a value like 853x480 to set a specific resolution."
-#~ msgstr ""
-#~ "Introduïu la relació d'aspecte de manera decimal (p. ex. 2.35) o "
-#~ "fraccional (p. ex. 16:9). Introduïu un valor com ara 853x480 per definir "
-#~ "una resolució específica."
-
-#~ msgid "Save timecodes file"
-#~ msgstr "Desa el fitxer de codis de temps"
-
-#~ msgid "Open timecodes file"
-#~ msgstr "Obre un fitxer de codis de temps"
-
-#~ msgid "All Supported Types"
-#~ msgstr "Tots els tipus suportats"
-
-#~ msgid "Open audio file"
-#~ msgstr "Obre un fitxer d'àudio"
-
-#~ msgid "All files"
-#~ msgstr "Tots els fitxers"
-
-#~ msgid "No timecodes to average"
-#~ msgstr "No hi ha codis de temps per fer la mitjana"
-
-#~ msgid "Color Picker"
-#~ msgstr "Selector de color"
-
-#~ msgid "Writing file"
-#~ msgstr "S'està escrivint el fitxer"
-
-#~ msgid "Exporting PRS"
-#~ msgstr "S'està exportant PRS"
-
-#~ msgid "Margin Bottom"
-#~ msgstr "Marge inferior"
-
-#~ msgid "Margin Top"
-#~ msgstr "Marge superior"
-
-#~ msgid "Executing "
-#~ msgstr "S'està executant"
-
-#~ msgid "&No"
-#~ msgstr "&No"
-
-#~ msgid "&Yes"
-#~ msgstr "&Sí"
-
-#~ msgid "Always perform this check when Aegisub starts"
-#~ msgstr "Comprova-ho sempre en iniciar l'Aegisub"
-
-#~ msgid ""
-#~ "Aegisub is not your default editor for subtitle files. Do you want to "
-#~ "make Aegisub your default editor for subtitle files?"
-#~ msgstr ""
-#~ "L'Aegisub no és el vostre editor de subtítols per defecte. Voleu fer que "
-#~ "l'Aegisub sigui el vostre editor de subtítols per defecte?"
-
-#~ msgid "Make Aegisub default editor for subtitles?"
-#~ msgstr "Converteix l'Aegisub en l'editor de subtítols per defecte"
-
-#~ msgid ""
-#~ "Aegisub is already associated with all supported file types.\n"
-#~ "\n"
-#~ "If you want Aegisub to no longer be associated with a file type, you must "
-#~ "tell another program to take over the file type."
-#~ msgstr ""
-#~ "L'Aegisub ja està associat amb tots els tipus de fitxer suportats.\n"
-#~ "\n"
-#~ "Si voleu que l'Aegisub deixi d'estar associat amb un tipus de fitxer, heu "
-#~ "de fer que un altre programa sigui l'editor per defecte d'aquell tipus de "
-#~ "fitxer."
-
-#~ msgid ""
-#~ "Aegisub can take over the following file types.\n"
-#~ "\n"
-#~ "If you want Aegisub to no longer be associated with a file type, you must "
-#~ "tell another program to take over the file type."
-#~ msgstr ""
-#~ "L'Aegisub es pot convertir en l'editor per defecte dels següents tipus de "
-#~ "fitxer.\n"
-#~ "\n"
-#~ "Si voleu que l'Aegisub deixi d'estar associat amb un tipus de fitxer, heu "
-#~ "de fer que un altre programa sigui l'editor per defecte d'aquell tipus de "
-#~ "fitxer."
-
-#~ msgid "Associate file types"
-#~ msgstr "Associa els tipus de fitxer"
-
-#~ msgid "Styling Assistant Preview"
-#~ msgstr "Auxiliar d'estils: Previsualitza"
-
-#~ msgid "Styling Assistant Accept"
-#~ msgstr "Auxiliar d'estils: Accepta"
-
-#~ msgid "Styling Assistant Prev"
-#~ msgstr "Auxiliar d'estils: Anterior"
-
-#~ msgid "Styling Assistant Next"
-#~ msgstr "Auxiliar d'estils: Següent"
-
-#~ msgid "Styling Assistant Play Video"
-#~ msgstr "Auxiliar d'estils: Reprodueix el vídeo"
-
-#~ msgid "Styling Assistant Play Audio"
-#~ msgstr "Auxiliar d'estils: Reprodueix l'àudio"
-
-#~ msgid "Translation Assistant Insert Original"
-#~ msgstr "Auxiliar de traducció: Insereix l'original"
-
-#~ msgid "Translation Assistant Preview"
-#~ msgstr "Auxiliar de traducció: Previsualitza"
-
-#~ msgid "Translation Assistant Accept"
-#~ msgstr "Auxiliar de traducció: Accepta"
-
-#~ msgid "Translation Assistant Prev"
-#~ msgstr "Auxiliar de traducció: Anterior"
-
-#~ msgid "Translation Assistant Next"
-#~ msgstr "Auxiliar de traducció: Següent"
-
-#~ msgid "Translation Assistant Play Video"
-#~ msgstr "Auxiliar de traducció: Reprodueix el vídeo"
-
-#~ msgid "Translation Assistant Play Audio"
-#~ msgstr "Auxiliar de traducció: Reprodueix l'àudio"
-
-#~ msgid "Audio Medusa Enter"
-#~ msgstr "Àudio Medusa: Introdueix"
-
-#~ msgid "Audio Medusa Previous"
-#~ msgstr "Àudio Medusa: Anterior"
-
-#~ msgid "Audio Medusa Next"
-#~ msgstr "Àudio Medusa: Següent"
-
-#~ msgid "Audio Medusa Play After"
-#~ msgstr "Àudio Medusa: Reprodueix després"
-
-#~ msgid "Audio Medusa Play Before"
-#~ msgstr "Àudio Medusa: Reprodueix abans"
-
-#~ msgid "Audio Medusa Shift End Forward"
-#~ msgstr "Àudio Medusa: Mou el final cap endavant"
-
-#~ msgid "Audio Medusa Shift End Back"
-#~ msgstr "Àudio Medusa: Mou el final cap endarrere"
-
-#~ msgid "Audio Medusa Shift Start Forward"
-#~ msgstr "Àudio Medusa: Mou l'inici cap endavant"
-
-#~ msgid "Audio Medusa Shift Start Back"
-#~ msgstr "Àudio Medusa: Mou l'inici cap enrere"
-
-#~ msgid "Audio Medusa Stop"
-#~ msgstr "Àudio Medusa: Atura"
-
-#~ msgid "Audio Medusa Play"
-#~ msgstr "Àudio Medusa: Reprodueix"
-
-#~ msgid "Audio Medusa Toggle"
-#~ msgstr "Àudio Medusa: Modifica"
-
-#~ msgid "Audio Add Lead Out"
-#~ msgstr "Àudio: Afegeix temps de sortida"
-
-#~ msgid "Audio Add Lead In"
-#~ msgstr "Àudio: Afegeix temps d'entrada"
-
-#~ msgid "Audio Play Original Line"
-#~ msgstr "Àudio: Reprodueix la línia original"
-
-#~ msgid "Audio Play To End"
-#~ msgstr "Àudio: Reprodueix fins al final"
-
-#~ msgid "Audio Play 500ms After"
-#~ msgstr "Àudio: Reprodueix els 500 ms posteriors"
-
-#~ msgid "Audio Play 500ms Before"
-#~ msgstr "Àudio: Reprodueix els 500 ms anteriors"
-
-#~ msgid "Audio Play Last 500ms"
-#~ msgstr "Àudio: Reprodueix els últims 500 ms"
-
-#~ msgid "Audio Play First 500ms"
-#~ msgstr "Àudio: Reprodueix els primers 500 ms"
-
-#~ msgid "Audio Scroll Right"
-#~ msgstr "Àudio: Desplaça a la dreta"
-
-#~ msgid "Audio Scroll Left"
-#~ msgstr "Àudio: Desplaça a l'esquerra"
-
-#~ msgid "Audio Karaoke Decrease Len Shift"
-#~ msgstr "Àudio: Karaoke: Decrementa la llargada (shift)"
-
-#~ msgid "Audio Karaoke Increase Len Shift"
-#~ msgstr "Àudio: Karaoke: Incrementa la llargada (shift)"
-
-#~ msgid "Audio Karaoke Decrease Len"
-#~ msgstr "Àudio: Karaoke: decrementa la llargada"
-
-#~ msgid "Audio Karaoke Increase Len"
-#~ msgstr "Àudio: Karaoke: incrementa la llargada"
-
-#~ msgid "Audio Stop"
-#~ msgstr "Àudio: Atura"
-
-#~ msgid "Audio Play or Stop"
-#~ msgstr "Àudio: Reprodueix o atura"
-
-#~ msgid "Audio Play Alt"
-#~ msgstr "Àudio: Reprodueix (alternatiu)"
-
-#~ msgid "Audio Play"
-#~ msgstr "Àudio: Reprodueix"
-
-#~ msgid "Audio Next Line Alt"
-#~ msgstr "Àudio: Línia següent (alternatiu)"
-
-#~ msgid "Audio Next Line"
-#~ msgstr "Àudio: Línia següent"
-
-#~ msgid "Audio Prev Line Alt"
-#~ msgstr "Àudio: Línia anterior (alternatiu)"
-
-#~ msgid "Audio Prev Line"
-#~ msgstr "Àudio: Línia anterior"
-
-#~ msgid "Audio Commit (Stay)"
-#~ msgstr "Àudio: Aplica (mantingues)"
-
-#~ msgid "Audio Commit"
-#~ msgstr "Àudio: Aplica"
-
-#~ msgid "Audio Commit Alt"
-#~ msgstr "Àudio: Aplica (alternatiu)"
-
-#~ msgid "Grid duplicate and shift one frame"
-#~ msgstr "Graella: Duplica i desplaça un marc"
-
-#~ msgid "Grid duplicate rows"
-#~ msgstr "Graella: Duplica línies"
-
-#~ msgid "Grid delete rows"
-#~ msgstr "Graella: Suprimeix línies"
-
-#~ msgid "Grid move row up"
-#~ msgstr "Graella: Mou una línia amunt"
-
-#~ msgid "Grid move row down"
-#~ msgstr "Graella: Mou una línia avall"
-
-#~ msgid "Video global zoom out"
-#~ msgstr "Vídeo global: Redueix"
-
-#~ msgid "Video global zoom in"
-#~ msgstr "Vídeo global: Amplia"
-
-#~ msgid "Save Subtitles Alt"
-#~ msgstr "Desa els subtítols (alternatiu)"
-
-#~ msgid "Grid global next line"
-#~ msgstr "Graella global: Línia següent"
-
-#~ msgid "Grid global prev line"
-#~ msgstr "Graella global: Línia anterior"
-
-#~ msgid "Video global play"
-#~ msgstr "Vídeo: Reprodueix globalment"
-
-#~ msgid "Video global focus seek"
-#~ msgstr "Vídeo global: Cerca el focus"
-
-#~ msgid "Video global next frame"
-#~ msgstr "Vídeo global: Marc següent"
-
-#~ msgid "Video global prev frame"
-#~ msgstr "Vídeo global: Marc anterior"
-
-#~ msgid "Zoom 200%"
-#~ msgstr "Amplia al 200%"
-
-#~ msgid "Zoom 100%"
-#~ msgstr "Amplia al 100%"
-
-#~ msgid "Zoom 50%"
-#~ msgstr "Amplia al 50%"
-
-#~ msgid "Shift by Current Time"
-#~ msgstr "Desplaça pel temps actual"
-
-#~ msgid "Set End to Video"
-#~ msgstr "Defineix el final al vídeo"
-
-#~ msgid "Set Start to Video"
-#~ msgstr "Defineix l'inici al vídeo"
-
-#~ msgid "Video Jump"
-#~ msgstr "Salta el vídeo"
-
-#~ msgid "Paste Over"
-#~ msgstr "Enganxa a sobre"
-
-#~ msgid "Paste"
-#~ msgstr "Enganxa"
-
-#~ msgid "Cut"
-#~ msgstr "Retalla"
-
-#~ msgid "Redo"
-#~ msgstr "Refés"
-
-#~ msgid "Undo"
-#~ msgstr "Desfés"
-
-#~ msgid "Edit Box Commit"
-#~ msgstr "Aplicació de la capsa d'edició"
-
-#~ msgid "Enter split-mode"
-#~ msgstr "Entra al mode de divisió"
-
-#~ msgid "Split"
-#~ msgstr "Divideix"
-
-#~ msgid "Join selected syllables"
-#~ msgstr "Uneix les síl·labes seleccionades"
-
-#~ msgid "Join"
-#~ msgstr "Uneix"
-
-#~ msgid "Commit splits and leave split-mode"
-#~ msgstr "Aplica les divisions i surt del mode de divisió"
-
-#~ msgid "Accept Split"
-#~ msgstr "Accepta la divisió"
-
-#~ msgid "Discard all splits and leave split-mode"
-#~ msgstr "Descarta totes les divisions i surt del mode de divisió"
-
-#~ msgid "Cancel Split"
-#~ msgstr "Cancel·la la divisió"
-
-#~ msgid "Karaoke"
-#~ msgstr "Karaoke"
-
-#~ msgid "Enable Medusa-Style Timing Shortcuts"
-#~ msgstr "Activa les dreceres per ajustar el temps estil Medusa"
-
-#~ msgid "Auto scrolls audio display to selected line"
-#~ msgstr ""
-#~ "Mou la visualització de l'àudio a la línia seleccionada automàticament"
-
-#~ msgid "Auto goes to next line on commit"
-#~ msgstr "Va automàticament a la línia següent en aplicar els canvis"
-
-#~ msgid "Commit changes (%KEY%/%KEY%)"
-#~ msgstr "Aplica els canvis (%KEY%/%KEY%)"
-
-#~ msgid "Add lead out (%KEY%)"
-#~ msgstr "Afegeix temps de sortida (%KEY%)"
-
-#~ msgid "Add lead in (%KEY%)"
-#~ msgstr "Afegeix temps d'entrada (%KEY%)"
-
-#~ msgid "Play from selection start to end of file (%KEY%)"
-#~ msgstr "Reprodueix de l'inici de la selecció al final del fitxer (%KEY%)"
-
-#~ msgid "Play last 500ms of selection (%KEY%)"
-#~ msgstr "Reprodueix els últims 500 ms de la selecció (%KEY%)"
-
-#~ msgid "Play first 500ms of selection (%KEY%)"
-#~ msgstr "Reprodueix els primers 500 ms de la selecció (%KEY%)"
-
-#~ msgid "Play 500 ms after selection (%KEY%)"
-#~ msgstr "Reprodueix 500 ms després de la selecció (%KEY%)"
-
-#~ msgid "Play 500 ms before selection (%KEY%)"
-#~ msgstr "Reprodueix 500 ms abans de la selecció (%KEY%)"
-
-#~ msgid "Stop (%KEY%)"
-#~ msgstr "Atura (%KEY%)"
-
-#~ msgid "Play current line (%KEY%)"
-#~ msgstr "Reprodueix la línia actual (%KEY%)"
-
-#~ msgid "Play selection (%KEY%/%KEY%)"
-#~ msgstr "Reprodueix la selecció (%KEY%/%KEY%)"
-
-#~ msgid "Next line/syllable (%KEY%/%KEY%)"
-#~ msgstr "Línia/síl·laba següent (%KEY%/%KEY%)"
-
-#~ msgid "Previous line or syllable (%KEY%/%KEY%)"
-#~ msgstr "Línia o síl·laba anterior (%KEY%/%KEY%)"
-
-#~ msgid "Seek bar"
-#~ msgstr "Barra de desplaçament"
-
-#~ msgid "\"%s\" found.\n"
-#~ msgstr "S'ha trobat \"%s\".\n"
-
-#~ msgid "\"%s\" found on dialogue line \"%d\".\n"
-#~ msgstr "S'ha trobat \"%s\" a la línia de diàleg \"%d\".\n"
-
-#~ msgid "\"%s\" found on style \"%s\".\n"
-#~ msgstr "S'ha trobat \"%s\" a l'estil \"%s\".\n"
-
-#~ msgid "Found.\n"
-#~ msgstr "Trobat.\n"
-
-#~ msgid "Not found.\n"
-#~ msgstr "No s'ha trobat.\n"
-
-#~ msgid "Done. Some fonts could not be found."
-#~ msgstr "Fet. No s'han pogut trobar alguns tipus de lletra."
-
-#~ msgid "font attachment"
-#~ msgstr "adjunció de tipus de lletra"
-
-#~ msgid "Done. All fonts found."
-#~ msgstr "Fet. S'han trobat tots els tipus de lletra."
-
 #~ msgid ""
 #~ "\n"
 #~ "Finished writing to %s.\n"
 #~ msgstr ""
 #~ "\n"
 #~ "S'ha acabat d'escriure a %s.\n"
-
-#~ msgid "Attaching fonts to file...\n"
-#~ msgstr "S'estan adjuntant els tipus de lletra al fitxer...\n"
-
-#~ msgid "Checking fonts...\n"
-#~ msgstr "S'estan comprovant els tipus de lletra...\n"
-
-#~ msgid "Done."
-#~ msgstr "Fet."
-
-#~ msgid "Scanning file for fonts..."
-#~ msgstr "S'està escanejant el fitxer a la recerca de fonts..."
-
-#~ msgid "Done collecting font data."
-#~ msgstr "S'han acabat de col·lectar les dades dels tipus de lletra."
-
-#~ msgid ""
-#~ "Collecting font data from system. This might take a while, depending on "
-#~ "the number of fonts installed. Results are cached and subsequent "
-#~ "executions will be faster...\n"
-#~ msgstr ""
-#~ "S'estan col·lectant les dades dels tipus de lletra del sistema. És "
-#~ "possible que això trigui una estona, depenent del nombre de tipus de "
-#~ "lletra instal·lats. Els resultats es desaran i els següents execucions "
-#~ "seran més ràpides...\n"
-
-#~ msgid "Invalid destination directory."
-#~ msgstr "Directori de destinació invàlid."
-
-#~ msgid ""
-#~ "Enter the name of the destination zip file to collect the fonts to.\n"
-#~ "If a folder is entered, a default name will be used."
-#~ msgstr ""
-#~ "Introduïu el nom del fitxer zip de destinació on s'han de col·lectar els "
-#~ "tipus de lletra.\n"
-#~ "Si introduïu una carpeta, s'utilitzarà un nom predefinit."
-
-#~ msgid "Zip Archives (*.zip)|*.zip"
-#~ msgstr "Arxius Zip (*.zip)|*.zip"
-
-#~ msgid "DEBUG: Verify all fonts in system"
-#~ msgstr "DEPURACIÓ: Verifica tots els tipus de lletra del sistema"
-
-#~ msgid "Attach fonts to current subtitles"
-#~ msgstr "Adjunta els tipus de lletra als subtítols actuals"
-
-#~ msgid ""
-#~ "Choose the folder where the fonts will be collected to.\n"
-#~ "It will be created if it doesn't exist."
-#~ msgstr ""
-#~ "Escolliu la carpeta on es col·lectaran els tipus de lletra.\n"
-#~ "Es crearà si no existeix."
-
-#~ msgid "If anything goes wrong, blame movax."
-#~ msgstr "Si alguna cosa va malament, culpeu-ne en movax."
-
-#~ msgid ""
-#~ "If the audio doesn't seem to work properly during video playback, try "
-#~ "loading audio separately. Just select Audio->Load from video, that "
-#~ "usually makes the audio much more reliable."
-#~ msgstr ""
-#~ "Si l'àudio sembla que no funciona bé mentre es reprodueix el vídeo, "
-#~ "proveu de carregar l'àudio per separat. Només cal que seleccioneu Àudio-"
-#~ ">Carrega del vídeo, això fa que normalment l'àudio sigui molt més "
-#~ "confiable."
-
-#~ msgid ""
-#~ "Having video open is often more a nuisance than a help when timing "
-#~ "subtitles. Timing with only audio open is often much easier. You can "
-#~ "always adjust the subtitles to match the video later on."
-#~ msgstr ""
-#~ "Tenir el vídeo obert és sovint més una molèstia que una ajuda a l'hora de "
-#~ "crear temps per als subtítols. Crear els temps amb només l'àudio obert "
-#~ "sovint és molt més fàcil. Sempre podeu ajustar els subtítols al vídeo més "
-#~ "endavant."
-
-#~ msgid ""
-#~ "If you decode your audio to a PCM WAV file before loading it in Aegisub, "
-#~ "you don't have to wait for it to be decoded before you can use it."
-#~ msgstr ""
-#~ "Si descodifiqueu el vostre àudio a un fitxer WAV PCM abans de carregar-lo "
-#~ "a l'Aegisub, no haureu d'esperar que es descodifiqui abans de poder-lo "
-#~ "utilitzar."
-
-#~ msgid ""
-#~ "Try the spectrum mode for the audio display, it can make it much easier "
-#~ "to spot where the important points in the audio are."
-#~ msgstr ""
-#~ "Proveu el mode d'espectre per a la visualització d'àudio, pot fer que "
-#~ "sigui molt més fàcil veure on són els punts importants de l'àudio."
-
-#~ msgid ""
-#~ "Much like anything loaded via DirectShow, certain files may have a "
-#~ "strange structure (such as h.264 into AVI or XviD will null frames) which "
-#~ "may cause unreliable seeking (that is, video frames might be off by one "
-#~ "frame). This is not an Aegisub bug - you may consider reencoding those "
-#~ "videos before working with them."
-#~ msgstr ""
-#~ "Gairebé com tot el que es carrega a través de DirectShow, alguns fitxers "
-#~ "poden tenir una estructura estranya (com per exemple H.264 en un AVI o "
-#~ "XviD amb marcs nuls), que poden causar un moviment inadequat (és a dir, "
-#~ "els marcs del vídeo podrien estar desplaçats un marc). Això no és un "
-#~ "error de l'Aegisub. Podeu considerar recomprimir aquests vídeos abans de "
-#~ "traballar-hi."
-
-#~ msgid ""
-#~ "When you are done with your subtitles and ready to distribute them, "
-#~ "remember: say no to MP4, OGM or AVI. Matroska is your friend."
-#~ msgstr ""
-#~ "Quan hagueu acabat amb els vostres subtítols i estigueu preparat per "
-#~ "distribuir-los, recordeu: digueu no a l'MP4, l'OGM o l'AVI. El Matroska "
-#~ "és el vostre amic."
-
-#~ msgid ""
-#~ "The fonts collector is one of the most useful features, which resumes the "
-#~ "boring task of hunting down fonts into a matter of a few clicks."
-#~ msgstr ""
-#~ "El col·lector de tipus de lletra és una de les característiques més "
-#~ "útils, que redueix l'avorrida tasca de cercar tipus de lletra a fer uns "
-#~ "quants clics."
-
-#~ msgid ""
-#~ "The styling assistant is a practical way to set styles to each line, when "
-#~ "each actor has a different style assigned to it."
-#~ msgstr ""
-#~ "L'auxiliar d'estils és una manera pràctica de definir estils a cada línia "
-#~ "quan cada actor té un estil diferent assignat."
-
-#~ msgid ""
-#~ "Aegisub has several features to make sure you will never lose your work. "
-#~ "It will periodically save your subtitles to autosave folder, and will "
-#~ "create a copy of subs whenever you open them, to autoback folder. Also, "
-#~ "if it crashes, it will attempt to save a restore file."
-#~ msgstr ""
-#~ "L'Aegisub té diverses característiques per assegurar que mai perdeu la "
-#~ "vostra feina. Periòdicament, desarà els vostres subtítols a la carpeta de "
-#~ "desament automàtic (autosave), i crearà una còpia dels subtítols sempre "
-#~ "que els obriu, a la carpeta de còpia de seguretat automàtica (autoback). "
-#~ "I si peta, intentarà desar un fitxer de restauració."
-
-#~ msgid "DON'T PANIC!"
-#~ msgstr "NO US ESPANTEU!"
-
-#~ msgid ""
-#~ "There is no reason to use the SSA format (as opposed to ASS). ASS is very "
-#~ "similar, but adds some important functionality. Most importantly, "
-#~ "however, is that only ASS supports certain override tags (such as \\pos "
-#~ "and \\t). Those only work on SSA files because VSFilter/Textsub is "
-#~ "merciful."
-#~ msgstr ""
-#~ "No hi ha cap raó per utilitzar el format SSA (al contrari que l'ASS). "
-#~ "L'ASS és molt similar, però afegeix funcionalitats importants. El més "
-#~ "important, no obstant, és que només l'ASS suporta certes etiquetes (com "
-#~ "ara \\pos i \\t). Aquestes etiquetes només funcionen als fitxers SSA "
-#~ "perquè el VSFilter/Textsub és misericordiós."
-
-#~ msgid ""
-#~ "Use keyboard shortcuts! They make your life easier, for example, Ctrl"
-#~ "+Enter updates changes on current line without going to next. Check the "
-#~ "manual for a complete list."
-#~ msgstr ""
-#~ "Utilitzeu les dreceres del teclat! Us faran la vida més fàcil. Per "
-#~ "exemple, Ctrl+Enter actualitza els canvis de la línia actual sense anar a "
-#~ "la següent. Vegeu el manual per a una llista completa."
-
-#~ msgid ""
-#~ "Styles can be stored in different storages, so that you can keep your "
-#~ "projects organized."
-#~ msgstr ""
-#~ "Els estils es poden emmagatzemar en diferents magatzems, de manera que "
-#~ "podeu mantenir els vostres projectes organitzats."
-
-#~ msgid ""
-#~ "You can easily translate subtitle files using the translation assistant."
-#~ msgstr ""
-#~ "Podeu traduir fitxer de subtítols fàcilment utilitzant l'auxiliar de "
-#~ "traducció."
-
-#~ msgid ""
-#~ "Aegisub can export subtitles to many different formats, character "
-#~ "encodings, and even compensate Variable Frame Rate so you can hardsub "
-#~ "them - it's all in the Export option in File menu."
-#~ msgstr ""
-#~ "L'Aegisub pot exportar subtítols a altres formats, codificacions de "
-#~ "caràcters i fins i tot compensar els marcs variables (Variable Frame "
-#~ "Rate) perquè pugueu crear subtítols durs. Tot és a l'opció Exporta del "
-#~ "menú Fitxer."
-
-#~ msgid ""
-#~ "You already have timecodes loaded. Would you like to replace them with "
-#~ "timecodes from the video file?"
-#~ msgstr ""
-#~ "Ja teniu codis de temps carregats. Voleu substituir-los amb els codis de "
-#~ "temps del fitxer de vídeo?"
-
-#~ msgid "Invalid fps or length value"
-#~ msgstr "Valor d'fps o llargada invàlid"
-
-#~ msgid "Resulting duration: %d:%02d:%02d.%03d"
-#~ msgstr "Duració resultant: %d:%02d:%02d.%03d"
-
-#~ msgid "Checkerboard pattern"
-#~ msgstr "Patró de tauler d'escacs"
-
-#~ msgid " frames "
-#~ msgstr " marcs "
-
-#~ msgid "End times only"
-#~ msgstr "Només els temps de final"
-
-#~ msgid "Start times only"
-#~ msgstr "Només els temps d'inici"
-
-#~ msgid "Start and End times"
-#~ msgstr "Temps d'inici i de final"
-
-#~ msgid "Selection onward"
-#~ msgstr "De la selecció en endavant"
-
-#~ msgid "Backward"
-#~ msgstr "Endarrere"
-
-#~ msgid "Forward"
-#~ msgstr "Endavant"
-
-#~ msgid "Frames: "
-#~ msgstr "Marcs:"
-
-#~ msgid "History"
-#~ msgstr "Historial"
-
-#~ msgid "Warning"
-#~ msgstr "Advertència"
-
-#~ msgid ""
-#~ "You have chosen to use the \"Comic Sans\" font. As the programmer and a "
-#~ "typesetter,\n"
-#~ "I must urge you to reconsider. Comic Sans is the most abused font in the "
-#~ "history\n"
-#~ "of computing, so please avoid using it unless it's REALLY suitable. "
-#~ "Thanks."
-#~ msgstr ""
-#~ "Heu escollit usar el tipus de lletra \"Comic Sans\". Com a programador i "
-#~ "editor d'estils,\n"
-#~ "us haig de demanar que ho reconsidereu. La Comic Sans és la lletra més "
-#~ "abusada en la història\n"
-#~ "dels ordinadors, o sigui que eviteu usar-la a no ser que REALMENT sigui "
-#~ "necessària. Gràcies."
-
-#~ msgid "No subtitle providers available. Cannot preview subs."
-#~ msgstr ""
-#~ "No hi ha cap proveïdor de subtítols disponible. No es podran "
-#~ "previsualitzar els subtítols."
-
-#~ msgid "Set opacity, from 0 (opaque) to 255 (transparent)"
-#~ msgstr "Definiu l'opacitat, de 0 (opac) a 255 (transparent)"
-
-#~ msgid "Style name."
-#~ msgstr "Nom de l'estil."
-
-#~ msgid "Opaque box"
-#~ msgstr "Capsa opaca"
-
-#~ msgid "Italic"
-#~ msgstr "Cursiva"
-
-#~ msgid "Trace: "
-#~ msgstr "Traça:"
-
-#~ msgid "Debug: "
-#~ msgstr "Depuració:"
-
-#~ msgid "Hint: "
-#~ msgstr "Pista:"
-
-#~ msgid "Warning: "
-#~ msgstr "Advertència:"
-
-#~ msgid "Error: "
-#~ msgstr "Error:"
-
-#~ msgid "Fatal error: "
-#~ msgstr "Error fatal:"
-
-#~ msgid ""
-#~ "Tried to register PerlConsole, but support for it was disabled in this "
-#~ "version."
-#~ msgstr ""
-#~ "S'ha intentat registrar PerlConsole, però el suport per a ell està "
-#~ "desactivat en aquesta versió."
-
-#~ msgid "Not enough parameters for Aegisub::text_extents()"
-#~ msgstr "No hi ha prou paràmetres per a Aegisub::text_extents()"
-
-#~ msgid "Reading into RAM"
-#~ msgstr "S'està copiant a la RAM"
-
-#~ msgid "Load audio"
-#~ msgstr "Carrega l'àudio"
-
-#~ msgid "Reverse transformation"
-#~ msgstr "Inverteix la transformació"
-
-#~ msgid "Constant: "
-#~ msgstr "Constant:"
-
-#~ msgid "Variable"
-#~ msgstr "Variable"
-
-#~ msgid "From Video"
-#~ msgstr "Del vídeo"
-
-#~ msgid ""
-#~ "Transform subtitles times, including those in override tags, from input "
-#~ "to output. This is most useful to convert CFR to VFR for hardsubbing. You "
-#~ "usually DO NOT want to check this filter for softsubbing."
-#~ msgstr ""
-#~ "Transforma els temps dels subtítols, incloent-hi les etiquetes, de "
-#~ "l'entrada a la sortida. Això és útil per convertir de CFR (marcs "
-#~ "constants) a VFR (marcs variables) per al subtitulat dur. Normalment NO "
-#~ "voldreu activar aquest filtre per al subtitulat tou."
-
-#~ msgid "Change script resolution"
-#~ msgstr "Canvia la resolució de l''script'"
-
-#~ msgid "Unload timecodes?"
-#~ msgstr "Descàrrega de codis de temps"
-
-#~ msgid "You have timecodes loaded currently. Would you like to unload them?"
-#~ msgstr "Ja teniu codis de temps carregats. Els voleu descarregar?"
-
-#~ msgid "Save before continuing?"
-#~ msgstr "Voleu desar abans de continuar?"
-
-#~ msgid "Resource files distributed with Aegisub"
-#~ msgstr "Fitxers de recursos distribuïts amb l'Aegisub"
-
-#~ msgid "&Resource Files..."
-#~ msgstr "Fitxers de &recursos..."
-
-#~ msgid "Display audio, video and subtitles"
-#~ msgstr "Mostra els subtítols, l'àudio i el vídeo"
-
-#~ msgid "Display audio and subtitles only"
-#~ msgstr "Mostra només els subtítols i l'àudio"
-
-#~ msgid "Display video and subtitles only"
-#~ msgstr "Mostra només els subtítols i el vídeo"
-
-#~ msgid "Display subtitles only"
-#~ msgstr "Mostra només els subtítols"
-
-#~ msgid "Open log window"
-#~ msgstr "Obre la finestra del registre"
-
-#~ msgid "Lo&g Window..."
-#~ msgstr "Finestra del re&gistre..."
-
-#~ msgid "Associate file types with Aegisub"
-#~ msgstr "Associa tipus de fitxers amb l'Aegisub"
-
-#~ msgid "&Associations..."
-#~ msgstr "&Associacions..."
-
-#~ msgid "&Automation"
-#~ msgstr "&Automatització"
-
-#~ msgid "Closes the currently open audio file"
-#~ msgstr "Tanca el fitxer d'àudio obert actualment"
-
-#~ msgid "Opens the audio from the current video file"
-#~ msgstr "Obre l'àudio del fitxer de vídeo actual"
-
-#~ msgid "Opens an audio file"
-#~ msgstr "Obre un fitxer d'àudio"
-
-#~ msgid "Forces video to a custom aspect ratio"
-#~ msgstr "Força la relació d'aspecte del vídeo a un valor personalitzat"
-
-#~ msgid "Forces video to 2.35 aspect ratio"
-#~ msgstr "Força la relació d'aspecte del vídeo a 2.35"
-
-#~ msgid "Forces video to 16:9 aspect ratio"
-#~ msgstr "Força la relació d'aspecte del vídeo a 16:9"
-
-#~ msgid "Forces video to 4:3 aspect ratio"
-#~ msgstr "Força la relació d'aspecte del vídeo a 4:3"
-
-#~ msgid "Leave video on original aspect ratio"
-#~ msgstr "Deixa el vídeo amb la relació d'aspecte original"
-
-#~ msgid "Override Aspect Ratio"
-#~ msgstr "Ignora la relació d'aspecte"
-
-#~ msgid "Set Zoom"
-#~ msgstr "Defineix l'ampliació"
-
-#~ msgid "Detach video, displaying it in a separate Window"
-#~ msgstr "Desancora el vídeo, mostrant-lo en una finestra separada"
-
-#~ msgid "Closes the currently open keyframes list"
-#~ msgstr "Tanca la llista de marcs clau oberta"
-
-#~ msgid "Saves the current keyframe list"
-#~ msgstr "Desa la llista de marcs clau actual"
-
-#~ msgid "Opens a keyframe list file"
-#~ msgstr "Obre un fitxer d'una llista de marcs clau"
-
-#~ msgid "Closes the currently open timecodes file"
-#~ msgstr "Tanca el fitxer de codis de temps obert actualment"
-
-#~ msgid "Saves a VFR timecodes v2 file"
-#~ msgstr "Desa un fitxer de codis de temps VFR v2"
-
-#~ msgid "Opens a VFR timecodes v1 or v2 file"
-#~ msgstr "Obre un fitxer de codis de temps VFR (marcs variables) v1 o v2"
-
-#~ msgid "Shows video details"
-#~ msgstr "Mostra detalls del vídeo"
-
-#~ msgid "Opens a video clip with solid color"
-#~ msgstr "Obre una peça de vídeo amb color sòlid"
-
-#~ msgid "Closes the currently open video file"
-#~ msgstr "Tanca el fitxer de vídeo obert actualment"
-
-#~ msgid "Opens a video file"
-#~ msgstr "Obre un fitxer de vídeo"
-
-#~ msgid "Shift selection so first selected line starts at current frame"
-#~ msgstr ""
-#~ "Desplaça la selecció de manera que la primera línia seleccionada comenci "
-#~ "al marc actual"
-
-#~ msgid "Open Kanji timer"
-#~ msgstr "Obre el creador de temps per a kanjis"
-
-#~ msgid "Kanji Timer..."
-#~ msgstr "Creador de temps per a kanjis..."
-
-#~ msgid ""
-#~ "Runs a post-processor for timing to deal with lead-ins, lead-outs, scene "
-#~ "timing and etc"
-#~ msgstr ""
-#~ "Executa un post-processador per al temps per tractar els temps d'entrada "
-#~ "i de sortida, el temps de les escenes, etcètera"
-
-#~ msgid "Timing Post-Processor..."
-#~ msgstr "Post-processador de temps..."
-
-#~ msgid "Sort by Time"
-#~ msgstr "Ordena per temps"
-
-#~ msgid "&Subtitles"
-#~ msgstr "&Subtítols"
-
-#~ msgid "Selects lines based on defined criteria"
-#~ msgstr "Selecciona les línies basant-se en un criteri definit"
-
-#~ msgid "Select Lines..."
-#~ msgstr "Selecciona línies..."
-
-#~ msgid "Joins selected lines in a single one, as karaoke"
-#~ msgstr "Uneix les línies seleccionades en una de sola, com a karaoke"
-
-#~ msgid "&Duplicate and Shift by 1 Frame"
-#~ msgstr "&Duplica i desplaça un marc"
-
-#~ msgid "Inserts a line after current, starting at video time"
-#~ msgstr ""
-#~ "Insereix una línia després de l'actual, començant al temps del vídeo"
-
-#~ msgid "Inserts a line before current, starting at video time"
-#~ msgstr "Insereix una línia abans de l'actual, començant al temps del vídeo"
-
-#~ msgid "Inserts a line after current"
-#~ msgstr "Insereix una línia després de l'actual"
-
-#~ msgid "Inserts a line before current"
-#~ msgstr "Insereix una línia abans de l'actual"
-
-#~ msgid "Spe&ll Checker..."
-#~ msgstr "Correcció &ortogràfica..."
-
-#~ msgid "Changes resolution and modifies subtitles to conform to change"
-#~ msgstr ""
-#~ "Canvia la resolució i modifica els subtítols perquè s'adaptin al canvi"
-
-#~ msgid "Open styles manager"
-#~ msgstr "Obre el gestor d'estils"
-
-#~ msgid "Search and &Replace..."
-#~ msgstr "Cerca i substituei&x..."
-
-#~ msgid "Find next match of last word"
-#~ msgstr "Cerca la següent coincidència de l'última paraula"
-
-#~ msgid "Find words in subtitles"
-#~ msgstr "Cerca paraules als subtítols"
-
-#~ msgid "Copy subtitles"
-#~ msgstr "Copia els subtítols"
-
-#~ msgid "Redoes last action"
-#~ msgstr "Refà l'última acció"
-
-#~ msgid "&Redo"
-#~ msgstr "&Refés"
-
-#~ msgid "Undoes last action"
-#~ msgstr "Desfà l'última acció"
-
-#~ msgid "&Undo"
-#~ msgstr "&Desfés"
-
-#~ msgid "Open the attachment list"
-#~ msgstr "Obre la llista d'adjuncions"
-
-#~ msgid "&Attachments..."
-#~ msgstr "&Adjuncions..."
-
-#~ msgid "Saves a copy of subtitles with processing applied to it"
-#~ msgstr "Desa una còpia dels subtítols aplicant-hi uns processos"
-
-#~ msgid "Saves subtitles with another name"
-#~ msgstr "Desa els subtítols amb un altre nom"
-
-#~ msgid "Saves subtitles"
-#~ msgstr "Desa els subtítols"
-
-#~ msgid "Opens a subtitles file with a specific charset"
-#~ msgstr "Obre un fitxer de subtítols amb una codificació específica"
-
-#~ msgid "&Open Subtitles with Charset..."
-#~ msgstr "&Obre els subtítols amb codificació..."
-
-#~ msgid "Opens a subtitles file"
-#~ msgstr "Obre un fitxer de subtítols"
-
-#~ msgid "Open Spell checker"
-#~ msgstr "Obre la correcció ortogràfica"
-
-#~ msgid "Open Kanji Timer dialog"
-#~ msgstr "Obre el diàleg del creador de temps per a kanjis"
-
-#~ msgid "Open Timing Post-processor dialog"
-#~ msgstr "Obre el diàleg del post-processador de temps"
-
-#~ msgid "Resample Script Resolution"
-#~ msgstr "Reajusta la resolució de l''script'"
-
-#~ msgid "Resample"
-#~ msgstr "Reajusta"
-
-#~ msgid "Open Translation Assistant"
-#~ msgstr "Obre l'auxiliar de traducció"
-
-#~ msgid "Open Styling Assistant"
-#~ msgstr "Obre l'auxiliar d'estils"
-
-#~ msgid "Open Shift Times Dialogue"
-#~ msgstr "Obre el diàleg de desplaçament de temps"
-
-#~ msgid "Launches ai-chan's \"ASSDraw3\" tool for vector drawing."
-#~ msgstr "Engega l'eina \"ASSDraw3\" de l'ai-chan per dibuixar vectorialment."
-
-#~ msgid "Open Automation manager"
-#~ msgstr "Obre el gestor de l'automatització"
-
-#~ msgid "Open Fonts Collector"
-#~ msgstr "Obre el col·lector de tipus de lletra"
-
-#~ msgid "Open Attachment List"
-#~ msgstr " Obre la llista d'adjuncions"
-
-#~ msgid "Open Properties"
-#~ msgstr "Obre les propietats"
-
-#~ msgid "Open Styles Manager"
-#~ msgstr "Obre el gestor d'estils"
-
-#~ msgid "Shift selected subtitles so first selected starts at this frame"
-#~ msgstr ""
-#~ "Desplaça els subtítols seleccionats de manera que el primer seleccionat "
-#~ "comenci en aquest marc"
-
-#~ msgid "Shift subtitles to frame"
-#~ msgstr "Desplaça els subtítols al marc"
-
-#~ msgid "Snap selected subtitles so they match current scene start/end"
-#~ msgstr ""
-#~ "Canvia el temps dels subtítols seleccionats perquè coincideixin amb "
-#~ "l'inici i final de l'escena actual"
-
-#~ msgid "Snap subtitles to scene"
-#~ msgstr "Enganxa els subtítols a l'escena"
-
-#~ msgid "Selects all lines that are currently visible on video frame"
-#~ msgstr "Selecciona totes les línies actualment visibles al marc del vídeo"
-
-#~ msgid "Select visible"
-#~ msgstr "Selecciona els visibles"
-
-#~ msgid "Snap end to video"
-#~ msgstr "Enganxa el final al vídeo"
-
-#~ msgid "Jumps the video to the end frame of current subtitle"
-#~ msgstr "Posa el vídeo al marc final del subtítol actual"
-
-#~ msgid "Jump video to end"
-#~ msgstr "Posa el vídeo al final"
-
-#~ msgid "Jumps the video to the start frame of current subtitle"
-#~ msgstr "Posa el vídeo al marc d'inici del subtítol actual"
-
-#~ msgid "Jump video to start"
-#~ msgstr "Posa el vídeo a l'inici"
-
-#~ msgid "Zoom out"
-#~ msgstr "Redueix"
-
-#~ msgid "Zoom in"
-#~ msgstr "Amplia"
-
-#~ msgid "Jump video to time/frame"
-#~ msgstr "Salta al temps/marc del vídeo"
-
-#~ msgid "Jump To..."
-#~ msgstr "Salta a..."
-
-#~ msgid "Save subtitles"
-#~ msgstr "Desa els subtítols"
-
-#~ msgid "Commit?"
-#~ msgstr "Aplicar?"
-
-#~ msgid ""
-#~ "Do you want to commit your changes? If you choose No, they will be "
-#~ "discarded."
-#~ msgstr "Voleu aplicar els canvis? Si escolliu No, es descartaran."
-
-#~ msgid "Please wait, caching fonts..."
-#~ msgstr "Espereu, s'estan col·locant els tipus de lletra a la memòria cau..."
-
-#~ msgid "Enable preview"
-#~ msgstr "Activa la previsualització"
-
-#~ msgid "Current line: ?"
-#~ msgstr "Línia actual: ?"
-
-#~ msgid "Collision: "
-#~ msgstr "Col·lisió:"
-
-#~ msgid "Reverse"
-#~ msgstr "Invertit"
-
-#~ msgid ""
-#~ "Invalid resolution: destination resolution cannot be 0 on either "
-#~ "dimension."
-#~ msgstr ""
-#~ "Resolució invàlida: la resolució de destinació no pot ser 0 en cap "
-#~ "dimensió."
-
-#~ msgid "Change aspect ratio"
-#~ msgstr "Canvia la relació d'aspecte"
-
-#~ msgid "From video"
-#~ msgstr "Del vídeo"
-
-#~ msgid "Symmetrical"
-#~ msgstr "Simètric"
-
-#~ msgid "Resample resolution"
-#~ msgstr "Reajusta la resolució"
-
-#~ msgid ""
-#~ "An Automation script failed to load. File name: '%s', error reported:"
-#~ msgstr ""
-#~ "No s'ha pogut carregar un 'script' d'Automatització. Nom del fitxer: "
-#~ "'%s', error notificat:"
-
-#~ msgid "Script completed"
-#~ msgstr "'Script' completat"
-
-#~ msgid "Saving changes"
-#~ msgstr "S'estan desant els canvis"
-
-#~ msgid "Reloading %s because the file on disk (%s) changed."
-#~ msgstr "S'està recarregant %s perquè el fitxer al disc (%s) ha canviat."
-
-#~ msgid ""
-#~ "Unable to add the automation include path(s) to @INC: the script's code "
-#~ "may not compile or execute properly."
-#~ msgstr ""
-#~ "No s'ha(n) pogut afegir el(s) camí(ns) d'inclusió de l'automatització a "
-#~ "@INC, pot ser que el codi de l''script' no es compili o s'executi "
-#~ "correctament."
-
-#~ msgid "Perl script"
-#~ msgstr "'Script' Perl"
-
-#~ msgid ""
-#~ "Removes all but the absolutely required fields from the Script Info "
-#~ "section. You might want to run this on files that you plan to distribute "
-#~ "in original form."
-#~ msgstr ""
-#~ "Suprimeix absolutament tots els camps excepte els necessaris de la secció "
-#~ "d'Informació de l''script'. Potser voldreu executar això en fitxers que "
-#~ "vulgueu distribuir de manera original."
-
-#~ msgid "Clean Script Info"
-#~ msgstr "Neteja la informació de l''script'"
-
-#~ msgid "%i matches were replaced."
-#~ msgstr "S'han substituït %i coincidències."
-
-#~ msgid "Replace all"
-#~ msgstr "Substitueix-ho tot"
-
-#~ msgid "Replace next"
-#~ msgstr "Substitueix el següent"
-
-#~ msgid "Find next"
-#~ msgstr "Cerca el següent"
-
-#~ msgid "Selected rows"
-#~ msgstr "Les línies seleccionades"
-
-#~ msgid "All rows"
-#~ msgstr "Totes les línies"
-
-#~ msgid "Update Video (slow)"
-#~ msgstr "Actualitza el vídeo (lent)"
-
-#~ msgid "Use regular expressions"
-#~ msgstr "Utilitza expressions regulars"
-
-#~ msgid "Replace timecodes?"
-#~ msgstr "Substitució de codis de temps"
-
-#~ msgid ""
-#~ "You already have timecodes loaded. Replace them with the timecodes from "
-#~ "the Matroska file?"
-#~ msgstr ""
-#~ "Ja teniu codis de temps carregats. Voleu substituir-los amb els codis de "
-#~ "temps del fitxer Matroska?"
-
-#~ msgid "Unknown"
-#~ msgstr "Desconegut"
-
-#~ msgid "editing"
-#~ msgstr "edició"
-
-#~ msgid "MarginV change"
-#~ msgstr "canvi de MarginV"
-
-#~ msgid "MarginR change"
-#~ msgstr "canvi de MarginR"
-
-#~ msgid "MarginL change"
-#~ msgstr "Canvi de MarginL"
-
-#~ msgid "Frame"
-#~ msgstr "Marc"
-
-#~ msgid "Time"
-#~ msgstr "Temps"
-
-#~ msgid "Commits the text (Enter). Hold Ctrl to stay in line (%KEY%)."
-#~ msgstr ""
-#~ "Aplica el text (Intro). Premeu alhora Control per mantenir-vos a la línia "
-#~ "(%KEY%)."
-
-#~ msgid "Shadow color"
-#~ msgstr "Color de l'ombra"
-
-#~ msgid "Outline color"
-#~ msgstr "Color de la vora"
-
-#~ msgid "Secondary color"
-#~ msgstr "Color secundari"
-
-#~ msgid "Primary color"
-#~ msgstr "Color primari"
-
-#~ msgid "Font Face Name"
-#~ msgstr "Nom del tipus de lletra"
-
-#~ msgid "Strikeout"
-#~ msgstr "Tatxat"
-
-#~ msgid "Underline"
-#~ msgstr "Subratllat"
-
-#~ msgid "Italics"
-#~ msgstr "Cursiva"
-
-#~ msgid "Bold"
-#~ msgstr "Negreta"
-
-#~ msgid "Vertical Margin (0 = default)"
-#~ msgstr "Marge vertical (0 = predefinit)"
-
-#~ msgid "Right Margin (0 = default)"
-#~ msgstr "Marge dret (0 = predefinit)"
-
-#~ msgid "Left Margin (0 = default)"
-#~ msgstr "Marge esquerre (0 = predefinit)"
-
-#~ msgid "delete"
-#~ msgstr "suprimeix"
-
-#~ msgid "load"
-#~ msgstr "carrega"
-
-#~ msgid "Couldn't allocate memory."
-#~ msgstr "No s'ha pogut obtenir la memòria."
-
-#~ msgid "There is no audio to save."
-#~ msgstr "No hi ha cap àudio per desar."
-
-#~ msgid "The starting point is beyond the length of the audio loaded."
-#~ msgstr "El punt d'inici és més enllà de la llargada de l'àudio carregat."
-
-#~ msgid "Paste lines from clipboard"
-#~ msgstr "Enganxa les línies del porta-retalls"
-
-#~ msgid "Cuts selected lines to clipboard"
-#~ msgstr "Retalla les línies seleccionades al porta-retalls"
-
-#~ msgid "C&ut"
-#~ msgstr "Ret&alla"
-
-#~ msgid "Copies selected lines to clipboard"
-#~ msgstr "Copia les línies seleccionades al porta-retalls"
-
-#~ msgid "Create an audio clip of the selected line"
-#~ msgstr "Crea una peça d'àudio de la línia seleccionada"
-
-#~ msgid "Recombine subtitles when they have been split and merged"
-#~ msgstr "Recombina els subtítols quan s'han dividit i unit"
-
-#~ msgid "Changes times of subs so end times begin on next's start time"
-#~ msgstr ""
-#~ "Canvia els temps dels subtítols perquè els temps de final comencin al "
-#~ "temps d'inici dels següents"
-
-#~ msgid "Changes times of subs so start times begin on previous's end time"
-#~ msgstr ""
-#~ "Canvia els temps dels subtítols perquè els temps d'inici comencin al "
-#~ "temps de final dels anteriors"
-
-#~ msgid ""
-#~ "Joins selected lines in a single one, making each line into a karaoke "
-#~ "syllable"
-#~ msgstr ""
-#~ "Uneix les línies seleccionades en una de sola, fent que cada línia sigui "
-#~ "una síl·laba de karaoke"
-
-#~ msgid ""
-#~ "Joins selected lines in a single one, keeping text of first and "
-#~ "discarding remaining"
-#~ msgstr ""
-#~ "Uneix les línies seleccionades en una de sola, mantenint el text de la "
-#~ "primera i descartant el de la resta"
-
-#~ msgid "Joins selected lines in a single one, concatenating text together"
-#~ msgstr ""
-#~ "Uneix les línies seleccionades en una de sola, concatenant-ne el text"
-
-#~ msgid "Swaps the two selected lines"
-#~ msgstr "Intercanvia les dues línies seleccionades"
-
-#~ msgid "&Swap"
-#~ msgstr "Intercan&via"
-
-#~ msgid "Uses karaoke timing to split line into multiple smaller lines"
-#~ msgstr ""
-#~ "Utilitza els temps del karaoke per dividir la línia en múltiples línies "
-#~ "més petites"
-
-#~ msgid "Split (by karaoke)"
-#~ msgstr "Divideix (per karaoke)"
-
-#~ msgid "Duplicate lines and shift by one frame"
-#~ msgstr "Duplica les línies i desplaça-les un marc"
-
-#~ msgid "&Duplicate and shift by 1 frame"
-#~ msgstr "&Duplica i desplaça un marc"
-
-#~ msgid "&Duplicate"
-#~ msgstr "&Duplica"
-
-#~ msgid "Accept Line"
-#~ msgstr "Accepta la línia"
-
-#~ msgid "Go Back a Line"
-#~ msgstr "Torna enrere una línia"
-
-#~ msgid "Skip Dest Line"
-#~ msgstr "Omet la línia de destinació"
-
-#~ msgid "Skip Source Line"
-#~ msgstr "Omet la línia d'origen"
-
-#~ msgid "Unlink"
-#~ msgstr "Desenllaça"
-
-#~ msgid "Link"
-#~ msgstr "Enllaça"
-
-#~ msgid "Start!"
-#~ msgstr "Comença!"
-
-#~ msgid "Dest Style"
-#~ msgstr "Estil destinació"
-
-#~ msgid "Source Style"
-#~ msgstr "Estil origen"
-
-#~ msgid "Attempt to interpolate kanji."
-#~ msgstr "Intenta interpolar els kanjis."
-
-#~ msgid "    Subtitle format handler: "
-#~ msgstr "    Gestor del format dels subtítols: "
-
-#~ msgid "    Export filter: "
-#~ msgstr "    Filtre d'exportació: "
-
-#~ msgid "    Macro: "
-#~ msgstr "    Macro: "
 
 #~ msgid ""
 #~ "\n"
@@ -8268,8 +6734,1730 @@ msgstr "Comprovador d'actualitzacions:"
 #~ "\n"
 #~ "Característiques proporcionades per l''script':\n"
 
+#~ msgid "    Export filter: "
+#~ msgstr "    Filtre d'exportació: "
+
+#~ msgid "    Macro: "
+#~ msgstr "    Macro: "
+
+#~ msgid "    Subtitle format handler: "
+#~ msgstr "    Gestor del format dels subtítols: "
+
+#~ msgid " by ArchMage ZeratuL.\n"
+#~ msgstr " per ArchMage ZeratuL.\n"
+
+#~ msgid " frames "
+#~ msgstr " marcs "
+
+#~ msgid " styles?"
+#~ msgstr " estils?"
+
+#~ msgid "\"%s\" found on dialogue line \"%d\".\n"
+#~ msgstr "S'ha trobat \"%s\" a la línia de diàleg \"%d\".\n"
+
+#~ msgid "\"%s\" found on style \"%s\".\n"
+#~ msgstr "S'ha trobat \"%s\" a l'estil \"%s\".\n"
+
+#~ msgid "\"%s\" found.\n"
+#~ msgstr "S'ha trobat \"%s\".\n"
+
+#~ msgid "%i matches were replaced."
+#~ msgstr "S'han substituït %i coincidències."
+
+#~ msgid "%u lines were added to selection"
+#~ msgstr "S'han afegit %u línies a la selecció."
+
+#~ msgid "%u lines were removed from selection"
+#~ msgstr "S'han tret %u línies de la selecció"
+
+#~ msgid "&Associations..."
+#~ msgstr "&Associacions..."
+
+#~ msgid "&Attachments..."
+#~ msgstr "&Adjuncions..."
+
+#~ msgid "&Automation"
+#~ msgstr "&Automatització"
+
+#~ msgid "&Duplicate"
+#~ msgstr "&Duplica"
+
+#~ msgid "&Duplicate and Shift by 1 Frame"
+#~ msgstr "&Duplica i desplaça un marc"
+
+#~ msgid "&Duplicate and shift by 1 frame"
+#~ msgstr "&Duplica i desplaça un marc"
+
+#~ msgid "&Forums"
+#~ msgstr "&Fòrums"
+
+#~ msgid "&No"
+#~ msgstr "&No"
+
+#~ msgid "&Open Subtitles with Charset..."
+#~ msgstr "&Obre els subtítols amb codificació..."
+
+#~ msgid "&Redo"
+#~ msgstr "&Refés"
+
+#~ msgid "&Resource Files..."
+#~ msgstr "Fitxers de &recursos..."
+
+#~ msgid "&Subtitles"
+#~ msgstr "&Subtítols"
+
+#~ msgid "&Swap"
+#~ msgstr "Intercan&via"
+
+#~ msgid "&Undo"
+#~ msgstr "&Desfés"
+
+#~ msgid "&Yes"
+#~ msgstr "&Sí"
+
+#~ msgid "<- Copy to storage"
+#~ msgstr "<- Copia al magatzem"
+
+#~ msgid "ASS Override Tag mode set to "
+#~ msgstr "El mode de visualització de les etiquetes ASS s'ha canviat a "
+
+#~ msgid "Accept Line"
+#~ msgstr "Accepta la línia"
+
+#~ msgid "Accept Split"
+#~ msgstr "Accepta la divisió"
+
+#~ msgid "Add lead in (%KEY%)"
+#~ msgstr "Afegeix temps d'entrada (%KEY%)"
+
+#~ msgid "Add lead in:"
+#~ msgstr "Afegeix temps d'entrada:"
+
+#~ msgid "Add lead out (%KEY%)"
+#~ msgstr "Afegeix temps de sortida (%KEY%)"
+
+#~ msgid "Add lead out:"
+#~ msgstr "Afegeix temps de sortida:"
+
+#~ msgid "Add to dictionary"
+#~ msgstr "Afegeix al diccionari"
+
+#~ msgid "Add to selection"
+#~ msgstr "Afegeix a la selecció"
+
+#~ msgid "Advanced - EXPERT USERS ONLY"
+#~ msgstr "Avançades - NOMÉS USUARIS EXPERTS"
+
+#~ msgid ""
+#~ "Aegisub can export subtitles to many different formats, character "
+#~ "encodings, and even compensate Variable Frame Rate so you can hardsub "
+#~ "them - it's all in the Export option in File menu."
+#~ msgstr ""
+#~ "L'Aegisub pot exportar subtítols a altres formats, codificacions de "
+#~ "caràcters i fins i tot compensar els marcs variables (Variable Frame "
+#~ "Rate) perquè pugueu crear subtítols durs. Tot és a l'opció Exporta del "
+#~ "menú Fitxer."
+
+#~ msgid ""
+#~ "Aegisub can take over the following file types.\n"
+#~ "\n"
+#~ "If you want Aegisub to no longer be associated with a file type, you must "
+#~ "tell another program to take over the file type."
+#~ msgstr ""
+#~ "L'Aegisub es pot convertir en l'editor per defecte dels següents tipus de "
+#~ "fitxer.\n"
+#~ "\n"
+#~ "Si voleu que l'Aegisub deixi d'estar associat amb un tipus de fitxer, heu "
+#~ "de fer que un altre programa sigui l'editor per defecte d'aquell tipus de "
+#~ "fitxer."
+
+#~ msgid ""
+#~ "Aegisub has several features to make sure you will never lose your work. "
+#~ "It will periodically save your subtitles to autosave folder, and will "
+#~ "create a copy of subs whenever you open them, to autoback folder. Also, "
+#~ "if it crashes, it will attempt to save a restore file."
+#~ msgstr ""
+#~ "L'Aegisub té diverses característiques per assegurar que mai perdeu la "
+#~ "vostra feina. Periòdicament, desarà els vostres subtítols a la carpeta de "
+#~ "desament automàtic (autosave), i crearà una còpia dels subtítols sempre "
+#~ "que els obriu, a la carpeta de còpia de seguretat automàtica (autoback). "
+#~ "I si peta, intentarà desar un fitxer de restauració."
+
+#~ msgid ""
+#~ "Aegisub is already associated with all supported file types.\n"
+#~ "\n"
+#~ "If you want Aegisub to no longer be associated with a file type, you must "
+#~ "tell another program to take over the file type."
+#~ msgstr ""
+#~ "L'Aegisub ja està associat amb tots els tipus de fitxer suportats.\n"
+#~ "\n"
+#~ "Si voleu que l'Aegisub deixi d'estar associat amb un tipus de fitxer, heu "
+#~ "de fer que un altre programa sigui l'editor per defecte d'aquell tipus de "
+#~ "fitxer."
+
+#~ msgid ""
+#~ "Aegisub is not your default editor for subtitle files. Do you want to "
+#~ "make Aegisub your default editor for subtitle files?"
+#~ msgstr ""
+#~ "L'Aegisub no és el vostre editor de subtítols per defecte. Voleu fer que "
+#~ "l'Aegisub sigui el vostre editor de subtítols per defecte?"
+
+#~ msgid "Aegisub must restart for the changes to take effect. Restart now?"
+#~ msgstr ""
+#~ "L'Aegisub s'ha de reiniciar perquè els canvis tinguin efecte. Voleu "
+#~ "reiniciar-lo ara?"
+
+#~ msgid "Affect selection only"
+#~ msgstr "Afecta només la selecció"
+
+#~ msgid "All"
+#~ msgstr "Tot"
+
+#~ msgid "All Supported Types"
+#~ msgstr "Tots els tipus suportats"
+
+#~ msgid "All files"
+#~ msgstr "Tots els fitxers"
+
+#~ msgid "All rows"
+#~ msgstr "Totes les línies"
+
+#~ msgid "Allow grid to take focus"
+#~ msgstr "Permet que la graella prengui el focus"
+
+#~ msgid "Always perform this check when Aegisub starts"
+#~ msgstr "Comprova-ho sempre en iniciar l'Aegisub"
+
+#~ msgid ""
+#~ "An Automation script failed to load. File name: '%s', error reported:"
+#~ msgstr ""
+#~ "No s'ha pogut carregar un 'script' d'Automatització. Nom del fitxer: "
+#~ "'%s', error notificat:"
+
+#~ msgid "Are you sure you want to delete these "
+#~ msgstr "Esteu segur que voleu suprimir aquests "
+
+#~ msgid "Associate extensions"
+#~ msgstr "Associa les extensions"
+
+#~ msgid "Associate file types"
+#~ msgstr "Associa els tipus de fitxer"
+
+#~ msgid "Associate file types with Aegisub"
+#~ msgstr "Associa tipus de fitxers amb l'Aegisub"
+
+#~ msgid "Associations"
+#~ msgstr "Associacions"
+
+#~ msgid "Attach fonts to current subtitles"
+#~ msgstr "Adjunta els tipus de lletra als subtítols actuals"
+
+#~ msgid "Attaching fonts to file...\n"
+#~ msgstr "S'estan adjuntant els tipus de lletra al fitxer...\n"
+
+#~ msgid "Attempt to interpolate kanji."
+#~ msgstr "Intenta interpolar els kanjis."
+
+#~ msgid "Attempting to open \"%s\"..."
+#~ msgstr "S'està intentant obrir \"%s\"..."
+
+#~ msgid "Audio Add Lead In"
+#~ msgstr "Àudio: Afegeix temps d'entrada"
+
+#~ msgid "Audio Add Lead Out"
+#~ msgstr "Àudio: Afegeix temps de sortida"
+
+#~ msgid "Audio Commit"
+#~ msgstr "Àudio: Aplica"
+
+#~ msgid "Audio Commit (Stay)"
+#~ msgstr "Àudio: Aplica (mantingues)"
+
+#~ msgid "Audio Commit Alt"
+#~ msgstr "Àudio: Aplica (alternatiu)"
+
+#~ msgid "Audio Karaoke Decrease Len"
+#~ msgstr "Àudio: Karaoke: decrementa la llargada"
+
+#~ msgid "Audio Karaoke Decrease Len Shift"
+#~ msgstr "Àudio: Karaoke: Decrementa la llargada (shift)"
+
+#~ msgid "Audio Karaoke Increase Len"
+#~ msgstr "Àudio: Karaoke: incrementa la llargada"
+
+#~ msgid "Audio Karaoke Increase Len Shift"
+#~ msgstr "Àudio: Karaoke: Incrementa la llargada (shift)"
+
+#~ msgid "Audio Medusa Enter"
+#~ msgstr "Àudio Medusa: Introdueix"
+
+#~ msgid "Audio Medusa Next"
+#~ msgstr "Àudio Medusa: Següent"
+
+#~ msgid "Audio Medusa Play"
+#~ msgstr "Àudio Medusa: Reprodueix"
+
+#~ msgid "Audio Medusa Play After"
+#~ msgstr "Àudio Medusa: Reprodueix després"
+
+#~ msgid "Audio Medusa Play Before"
+#~ msgstr "Àudio Medusa: Reprodueix abans"
+
+#~ msgid "Audio Medusa Previous"
+#~ msgstr "Àudio Medusa: Anterior"
+
+#~ msgid "Audio Medusa Shift End Back"
+#~ msgstr "Àudio Medusa: Mou el final cap endarrere"
+
+#~ msgid "Audio Medusa Shift End Forward"
+#~ msgstr "Àudio Medusa: Mou el final cap endavant"
+
+#~ msgid "Audio Medusa Shift Start Back"
+#~ msgstr "Àudio Medusa: Mou l'inici cap enrere"
+
+#~ msgid "Audio Medusa Shift Start Forward"
+#~ msgstr "Àudio Medusa: Mou l'inici cap endavant"
+
+#~ msgid "Audio Medusa Stop"
+#~ msgstr "Àudio Medusa: Atura"
+
+#~ msgid "Audio Medusa Toggle"
+#~ msgstr "Àudio Medusa: Modifica"
+
+#~ msgid "Audio Next Line"
+#~ msgstr "Àudio: Línia següent"
+
+#~ msgid "Audio Next Line Alt"
+#~ msgstr "Àudio: Línia següent (alternatiu)"
+
+#~ msgid "Audio Play"
+#~ msgstr "Àudio: Reprodueix"
+
+#~ msgid "Audio Play 500ms After"
+#~ msgstr "Àudio: Reprodueix els 500 ms posteriors"
+
+#~ msgid "Audio Play 500ms Before"
+#~ msgstr "Àudio: Reprodueix els 500 ms anteriors"
+
+#~ msgid "Audio Play Alt"
+#~ msgstr "Àudio: Reprodueix (alternatiu)"
+
+#~ msgid "Audio Play First 500ms"
+#~ msgstr "Àudio: Reprodueix els primers 500 ms"
+
+#~ msgid "Audio Play Last 500ms"
+#~ msgstr "Àudio: Reprodueix els últims 500 ms"
+
+#~ msgid "Audio Play Original Line"
+#~ msgstr "Àudio: Reprodueix la línia original"
+
+#~ msgid "Audio Play To End"
+#~ msgstr "Àudio: Reprodueix fins al final"
+
+#~ msgid "Audio Play or Stop"
+#~ msgstr "Àudio: Reprodueix o atura"
+
+#~ msgid "Audio Prev Line"
+#~ msgstr "Àudio: Línia anterior"
+
+#~ msgid "Audio Prev Line Alt"
+#~ msgstr "Àudio: Línia anterior (alternatiu)"
+
+#~ msgid "Audio Scroll Left"
+#~ msgstr "Àudio: Desplaça a l'esquerra"
+
+#~ msgid "Audio Scroll Right"
+#~ msgstr "Àudio: Desplaça a la dreta"
+
+#~ msgid "Audio Stop"
+#~ msgstr "Àudio: Atura"
+
+#~ msgid "Auto Check for Updates"
+#~ msgstr "Comprova automàticament si hi ha actualitzacions"
+
+#~ msgid "Auto goes to next line on commit"
+#~ msgstr "Va automàticament a la línia següent en aplicar els canvis"
+
+#~ msgid "Auto scrolls audio display to selected line"
+#~ msgstr ""
+#~ "Mou la visualització de l'àudio a la línia seleccionada automàticament"
+
+#~ msgid "Auto-backup"
+#~ msgstr "Crea una còpia de seguretat automàticament"
+
+#~ msgid "Auto-backup path:"
+#~ msgstr "Camí per crear una còpia de seguretat automàticament:"
+
+#~ msgid "Auto-save"
+#~ msgstr "Desa automàticament"
+
+#~ msgid "Auto-save every"
+#~ msgstr "Desa automàticament cada"
+
+#~ msgid "Auto-save path:"
+#~ msgstr "Camí per desar automàticament:"
+
+#~ msgid "Automatically load linked files:"
+#~ msgstr "Carrega automàticament els fitxers enllaçats:"
+
+#~ msgid "Avisynth renders its own subs"
+#~ msgstr "L'Avisynth renderitza els seus propis subtítols"
+
+#~ msgid "Backward"
+#~ msgstr "Endarrere"
+
+#~ msgid "Below Normal (recommended)"
+#~ msgstr "Per sota del normal (recomanat)"
+
+#~ msgid "Bold"
+#~ msgstr "Negreta"
+
+#~ msgid "Boundary - end"
+#~ msgstr "Límit - final"
+
+#~ msgid "Boundary - inactive"
+#~ msgstr "Límit - inactiu"
+
+#~ msgid "Boundary - start"
+#~ msgstr "Límit - inici"
+
+#~ msgid "Bug tracker hosting by:"
+#~ msgstr "Allotjament del sistema de seguiment d'errors per:"
+
+#~ msgid "C&ut"
+#~ msgstr "Ret&alla"
+
+#~ msgid "Cancel Split"
+#~ msgstr "Cancel·la la divisió"
+
+#~ msgid "Change aspect ratio"
+#~ msgstr "Canvia la relació d'aspecte"
+
+#~ msgid "Change script resolution"
+#~ msgstr "Canvia la resolució de l''script'"
+
+#~ msgid "Changes resolution and modifies subtitles to conform to change"
+#~ msgstr ""
+#~ "Canvia la resolució i modifica els subtítols perquè s'adaptin al canvi"
+
+#~ msgid "Changes times of subs so end times begin on next's start time"
+#~ msgstr ""
+#~ "Canvia els temps dels subtítols perquè els temps de final comencin al "
+#~ "temps d'inici dels següents"
+
+#~ msgid "Changes times of subs so start times begin on previous's end time"
+#~ msgstr ""
+#~ "Canvia els temps dels subtítols perquè els temps d'inici comencin al "
+#~ "temps de final dels anteriors"
+
+#~ msgid "Check File Associations on Start"
+#~ msgstr "Comprova les associacions de fitxers en iniciar"
+
+#~ msgid "Checkerboard pattern"
+#~ msgstr "Patró de tauler d'escacs"
+
+#~ msgid "Checking fonts...\n"
+#~ msgstr "S'estan comprovant els tipus de lletra...\n"
+
+#~ msgid "Choose %s track"
+#~ msgstr "Escull la pista de %s"
+
+#~ msgid ""
+#~ "Choose the folder where the fonts will be collected to.\n"
+#~ "It will be created if it doesn't exist."
+#~ msgstr ""
+#~ "Escolliu la carpeta on es col·lectaran els tipus de lletra.\n"
+#~ "Es crearà si no existeix."
+
+#~ msgid "Clean Script Info"
+#~ msgstr "Neteja la informació de l''script'"
+
+#~ msgid "Clear Hotkey"
+#~ msgstr "Elimina la drecera del teclat"
+
+#~ msgid "Click on list:"
+#~ msgstr "Clic a la llista:"
+
+#~ msgid "Closes the currently open audio file"
+#~ msgstr "Tanca el fitxer d'àudio obert actualment"
+
+#~ msgid "Closes the currently open keyframes list"
+#~ msgstr "Tanca la llista de marcs clau oberta"
+
+#~ msgid "Closes the currently open timecodes file"
+#~ msgstr "Tanca el fitxer de codis de temps obert actualment"
+
+#~ msgid "Closes the currently open video file"
+#~ msgstr "Tanca el fitxer de vídeo obert actualment"
+
+#~ msgid ""
+#~ "Collecting font data from system. This might take a while, depending on "
+#~ "the number of fonts installed. Results are cached and subsequent "
+#~ "executions will be faster...\n"
+#~ msgstr ""
+#~ "S'estan col·lectant les dades dels tipus de lletra del sistema. És "
+#~ "possible que això trigui una estona, depenent del nombre de tipus de "
+#~ "lletra instal·lats. Els resultats es desaran i els següents execucions "
+#~ "seran més ràpides...\n"
+
+#~ msgid "Collision: "
+#~ msgstr "Col·lisió:"
+
+#~ msgid "Color Picker"
+#~ msgstr "Selector de color"
+
+#~ msgid "Commit changes (%KEY%/%KEY%)"
+#~ msgstr "Aplica els canvis (%KEY%/%KEY%)"
+
+#~ msgid "Commit splits and leave split-mode"
+#~ msgstr "Aplica les divisions i surt del mode de divisió"
+
+#~ msgid "Commit?"
+#~ msgstr "Aplicar?"
+
+#~ msgid "Commits the text (Enter). Hold Ctrl to stay in line (%KEY%)."
+#~ msgstr ""
+#~ "Aplica el text (Intro). Premeu alhora Control per mantenir-vos a la línia "
+#~ "(%KEY%)."
+
+#~ msgid ""
+#~ "Configuration file is either invalid or corrupt. The current file will be "
+#~ "backed up and replaced with a default file."
+#~ msgstr ""
+#~ "El fitxer de configuració és invàlid o corrupte. Es farà una còpia de "
+#~ "seguretat del fitxer actual i se substituirà per un fitxer amb valors "
+#~ "predefinits."
+
+#~ msgid "Constant: "
+#~ msgstr "Constant:"
+
+#~ msgid "Contains"
+#~ msgstr "Conté"
+
+#~ msgid "Copies selected lines to clipboard"
+#~ msgstr "Copia les línies seleccionades al porta-retalls"
+
+#~ msgid "Copy"
+#~ msgstr "Copia"
+
+#~ msgid "Copy of "
+#~ msgstr "Còpia de "
+
+#~ msgid "Copy subtitles"
+#~ msgstr "Copia els subtítols"
+
+#~ msgid "Copy to current script ->"
+#~ msgstr "Copia a l''script' actual ->"
+
+#~ msgid "Could not open Internet File system. Aborting.\n"
+#~ msgstr ""
+#~ "No s'ha pogut obrir el sistema de fitxers d'Internet. S'ha avortat.\n"
+
+#~ msgid "Couldn't allocate memory."
+#~ msgstr "No s'ha pogut obtenir la memòria."
+
+#~ msgid "Crash recovery path:"
+#~ msgstr "Camí de recuperació de petades:"
+
+#~ msgid "Create an audio clip of the selected line"
+#~ msgstr "Crea una peça d'àudio de la línia seleccionada"
+
+#~ msgid "Current line: ?"
+#~ msgstr "Línia actual: ?"
+
+#~ msgid "Cut"
+#~ msgstr "Retalla"
+
+#~ msgid "Cuts selected lines to clipboard"
+#~ msgstr "Retalla les línies seleccionades al porta-retalls"
+
+#~ msgid "DEBUG: Verify all fonts in system"
+#~ msgstr "DEPURACIÓ: Verifica tots els tipus de lletra del sistema"
+
+#~ msgid "DON'T PANIC!"
+#~ msgstr "NO US ESPANTEU!"
+
+#~ msgid "Debug: "
+#~ msgstr "Depuració:"
+
+#~ msgid "Default All"
+#~ msgstr "Tot per defecte"
+
+#~ msgid "Default lead-in length"
+#~ msgstr "Llargada per defecte del temps d'entrada"
+
+#~ msgid "Default lead-out length"
+#~ msgstr "Llargada per defecte del temps de sortida"
+
+#~ msgid "Default timing length"
+#~ msgstr "Llargada per defecte del temps"
+
+#~ msgid "Dest Style"
+#~ msgstr "Estil destinació"
+
+#~ msgid "Detach video, displaying it in a separate Window"
+#~ msgstr "Desancora el vídeo, mostrant-lo en una finestra separada"
+
+#~ msgid "Dialogues"
+#~ msgstr "Diàlegs"
+
+#~ msgid "DirectShow"
+#~ msgstr "DirectShow"
+
+#~ msgid "Discard all splits and leave split-mode"
+#~ msgstr "Descarta totes les divisions i surt del mode de divisió"
+
+#~ msgid "Display"
+#~ msgstr "Visualització"
+
+#~ msgid "Display audio and subtitles only"
+#~ msgstr "Mostra només els subtítols i l'àudio"
+
+#~ msgid "Display audio, video and subtitles"
+#~ msgstr "Mostra els subtítols, l'àudio i el vídeo"
+
+#~ msgid "Display subtitles only"
+#~ msgstr "Mostra només els subtítols"
+
+#~ msgid "Display video and subtitles only"
+#~ msgstr "Mostra només els subtítols i el vídeo"
+
+#~ msgid ""
+#~ "Do you want to commit your changes? If you choose No, they will be "
+#~ "discarded."
+#~ msgstr "Voleu aplicar els canvis? Si escolliu No, es descartaran."
+
+#~ msgid "Doesn't Match"
+#~ msgstr "No coincideix"
+
+#~ msgid "Done collecting font data."
+#~ msgstr "S'han acabat de col·lectar les dades dels tipus de lletra."
+
+#~ msgid "Done."
+#~ msgstr "Fet."
+
+#~ msgid "Done. All fonts found."
+#~ msgstr "Fet. S'han trobat tots els tipus de lletra."
+
+#~ msgid "Done. Some fonts could not be found."
+#~ msgstr "Fet. No s'han pogut trobar alguns tipus de lletra."
+
+#~ msgid "Draw cursor time"
+#~ msgstr "Dibuixa el temps del cursor"
+
+#~ msgid "Draw keyframes"
+#~ msgstr "Mostra els marcs clau"
+
+#~ msgid "Draw secondary lines"
+#~ msgstr "Dibuixa les línies secundàries"
+
+#~ msgid "Draw selection background"
+#~ msgstr "Dibuixa el fons de la selecció"
+
+#~ msgid "Draw timeline"
+#~ msgstr "Dibuixa la línia de temps"
+
+#~ msgid "Draw video position"
+#~ msgstr "Mostra la posició del vídeo"
+
+#~ msgid "Dummy Video Provider"
+#~ msgstr "Proveïdor de vídeo fictici"
+
+#~ msgid "Duplicate lines and shift by one frame"
+#~ msgstr "Duplica les línies i desplaça-les un marc"
+
+#~ msgid "Edit Box Commit"
+#~ msgstr "Aplicació de la capsa d'edició"
+
+#~ msgid "Enable Medusa-Style Timing Shortcuts"
+#~ msgstr "Activa les dreceres per ajustar el temps estil Medusa"
+
+#~ msgid "Enable preview"
+#~ msgstr "Activa la previsualització"
+
+#~ msgid "Enable preview (slow)"
+#~ msgstr "Activa la previsualització (lent)"
+
+#~ msgid "End times only"
+#~ msgstr "Només els temps de final"
+
+#~ msgid ""
+#~ "Enter aspect ratio in either decimal (e.g. 2.35) or fractional (e.g. "
+#~ "16:9) form. Enter a value like 853x480 to set a specific resolution."
+#~ msgstr ""
+#~ "Introduïu la relació d'aspecte de manera decimal (p. ex. 2.35) o "
+#~ "fraccional (p. ex. 16:9). Introduïu un valor com ara 853x480 per definir "
+#~ "una resolució específica."
+
+#~ msgid "Enter split-mode"
+#~ msgstr "Entra al mode de divisió"
+
+#~ msgid ""
+#~ "Enter the name of the destination zip file to collect the fonts to.\n"
+#~ "If a folder is entered, a default name will be used."
+#~ msgstr ""
+#~ "Introduïu el nom del fitxer zip de destinació on s'han de col·lectar els "
+#~ "tipus de lletra.\n"
+#~ "Si introduïu una carpeta, s'utilitzarà un nom predefinit."
+
+#~ msgid "Error: "
+#~ msgstr "Error:"
+
+#~ msgid "Exact match"
+#~ msgstr "Coincidència exacta"
+
+#~ msgid "Executing "
+#~ msgstr "S'està executant"
+
+#~ msgid "Exporting PRS"
+#~ msgstr "S'està exportant PRS"
+
+#~ msgid "Failed.\n"
+#~ msgstr "S'ha produït un error.\n"
+
+#~ msgid "Fatal error: "
+#~ msgstr "Error fatal:"
+
+#~ msgid "File backup saved as \""
+#~ msgstr "S'ha desat una còpia de seguretat del fitxer com a \""
+
+#~ msgid "File paths"
+#~ msgstr "Camins dels fitxers"
+
+#~ msgid "File save/load"
+#~ msgstr "Càrrega i desament de fitxers"
+
+#~ msgid "Find next"
+#~ msgstr "Cerca el següent"
+
+#~ msgid "Find next match of last word"
+#~ msgstr "Cerca la següent coincidència de l'última paraula"
+
+#~ msgid "Find words in subtitles"
+#~ msgstr "Cerca paraules als subtítols"
+
+#~ msgid "Font Face Name"
+#~ msgstr "Nom del tipus de lletra"
+
+#~ msgid "Font: "
+#~ msgstr "Tipus de lletra:"
+
+#~ msgid "Force BT.601"
+#~ msgstr "Força BT.601"
+
+#~ msgid "Forces video to 16:9 aspect ratio"
+#~ msgstr "Força la relació d'aspecte del vídeo a 16:9"
+
+#~ msgid "Forces video to 2.35 aspect ratio"
+#~ msgstr "Força la relació d'aspecte del vídeo a 2.35"
+
+#~ msgid "Forces video to 4:3 aspect ratio"
+#~ msgstr "Força la relació d'aspecte del vídeo a 4:3"
+
+#~ msgid "Forces video to a custom aspect ratio"
+#~ msgstr "Força la relació d'aspecte del vídeo a un valor personalitzat"
+
+#~ msgid "Forum and wiki hosting by:"
+#~ msgstr "Allotjament del fòrum i del wiki per:"
+
+#~ msgid "Forums"
+#~ msgstr "Fòrums"
+
+#~ msgid "Forward"
+#~ msgstr "Endavant"
+
+#~ msgid "Found.\n"
+#~ msgstr "Trobat.\n"
+
+#~ msgid "Frame"
+#~ msgstr "Marc"
+
+#~ msgid "Frames: "
+#~ msgstr "Marcs:"
+
+#~ msgid "From Video"
+#~ msgstr "Del vídeo"
+
+#~ msgid "From video"
+#~ msgstr "Del vídeo"
+
+#~ msgid "Function"
+#~ msgstr "Funció"
+
+#~ msgid "Go Back a Line"
+#~ msgstr "Torna enrere una línia"
+
+#~ msgid "Grab times from line upon selection"
+#~ msgstr "Agafa els temps des de la línia fins a la selecció"
+
+#~ msgid "Grid delete rows"
+#~ msgstr "Graella: Suprimeix línies"
+
+#~ msgid "Grid duplicate and shift one frame"
+#~ msgstr "Graella: Duplica i desplaça un marc"
+
+#~ msgid "Grid duplicate rows"
+#~ msgstr "Graella: Duplica línies"
+
+#~ msgid "Grid global next line"
+#~ msgstr "Graella global: Línia següent"
+
+#~ msgid "Grid global prev line"
+#~ msgstr "Graella global: Línia anterior"
+
+#~ msgid "Grid move row down"
+#~ msgstr "Graella: Mou una línia avall"
+
+#~ msgid "Grid move row up"
+#~ msgstr "Graella: Mou una línia amunt"
+
+#~ msgid "Group some text first."
+#~ msgstr "Primer agrupeu text."
+
+#~ msgid "Groups"
+#~ msgstr "Grups"
+
+#~ msgid "HD cache name"
+#~ msgstr "Nom de la memòria cau del disc"
+
+#~ msgid "HD cache path"
+#~ msgstr "Camí de la memòria cau del disc dur"
+
+#~ msgid ""
+#~ "Having video open is often more a nuisance than a help when timing "
+#~ "subtitles. Timing with only audio open is often much easier. You can "
+#~ "always adjust the subtitles to match the video later on."
+#~ msgstr ""
+#~ "Tenir el vídeo obert és sovint més una molèstia que una ajuda a l'hora de "
+#~ "crear temps per als subtítols. Crear els temps amb només l'àudio obert "
+#~ "sovint és molt més fàcil. Sempre podeu ajustar els subtítols al vídeo més "
+#~ "endavant."
+
+#~ msgid "Header"
+#~ msgstr "Capçalera"
+
+#~ msgid "Help"
+#~ msgstr "Ajuda"
+
+#~ msgid "Highlight subtitles that are currently visible in video"
+#~ msgstr "Ressalta els subtítols actualment visibles al vídeo"
+
+#~ msgid "Hint: "
+#~ msgstr "Pista:"
+
+#~ msgid "History"
+#~ msgstr "Historial"
+
+#~ msgid "Hotkey conflict"
+#~ msgstr "Conflicte de drecera del teclat"
+
+#~ msgid "If anything goes wrong, blame movax."
+#~ msgstr "Si alguna cosa va malament, culpeu-ne en movax."
+
+#~ msgid ""
+#~ "If the audio doesn't seem to work properly during video playback, try "
+#~ "loading audio separately. Just select Audio->Load from video, that "
+#~ "usually makes the audio much more reliable."
+#~ msgstr ""
+#~ "Si l'àudio sembla que no funciona bé mentre es reprodueix el vídeo, "
+#~ "proveu de carregar l'àudio per separat. Només cal que seleccioneu Àudio-"
+#~ ">Carrega del vídeo, això fa que normalment l'àudio sigui molt més "
+#~ "confiable."
+
+#~ msgid ""
+#~ "If you decode your audio to a PCM WAV file before loading it in Aegisub, "
+#~ "you don't have to wait for it to be decoded before you can use it."
+#~ msgstr ""
+#~ "Si descodifiqueu el vostre àudio a un fitxer WAV PCM abans de carregar-lo "
+#~ "a l'Aegisub, no haureu d'esperar que es descodifiqui abans de poder-lo "
+#~ "utilitzar."
+
+#~ msgid "Ignore all"
+#~ msgstr "Ignora-ho tot"
+
+#~ msgid "Import from script..."
+#~ msgstr "Importa de l''script'..."
+
+#~ msgid "Inserts a line after current"
+#~ msgstr "Insereix una línia després de l'actual"
+
+#~ msgid "Inserts a line after current, starting at video time"
+#~ msgstr ""
+#~ "Insereix una línia després de l'actual, començant al temps del vídeo"
+
+#~ msgid "Inserts a line before current"
+#~ msgstr "Insereix una línia abans de l'actual"
+
+#~ msgid "Inserts a line before current, starting at video time"
+#~ msgstr "Insereix una línia abans de l'actual, començant al temps del vídeo"
+
+#~ msgid "Intersect with selection"
+#~ msgstr "Interseca amb la selecció"
+
+#~ msgid "Invalid destination directory."
+#~ msgstr "Directori de destinació invàlid."
+
+#~ msgid "Invalid fps or length value"
+#~ msgstr "Valor d'fps o llargada invàlid"
+
+#~ msgid ""
+#~ "Invalid resolution: destination resolution cannot be 0 on either "
+#~ "dimension."
+#~ msgstr ""
+#~ "Resolució invàlida: la resolució de destinació no pot ser 0 en cap "
+#~ "dimensió."
+
+#~ msgid "Italic"
+#~ msgstr "Cursiva"
+
+#~ msgid "Italics"
+#~ msgstr "Cursiva"
+
+#~ msgid "Join"
+#~ msgstr "Uneix"
+
+#~ msgid "Join selected syllables"
+#~ msgstr "Uneix les síl·labes seleccionades"
+
+#~ msgid "Joins selected lines in a single one, as karaoke"
+#~ msgstr "Uneix les línies seleccionades en una de sola, com a karaoke"
+
+#~ msgid "Joins selected lines in a single one, concatenating text together"
+#~ msgstr ""
+#~ "Uneix les línies seleccionades en una de sola, concatenant-ne el text"
+
+#~ msgid ""
+#~ "Joins selected lines in a single one, keeping text of first and "
+#~ "discarding remaining"
+#~ msgstr ""
+#~ "Uneix les línies seleccionades en una de sola, mantenint el text de la "
+#~ "primera i descartant el de la resta"
+
+#~ msgid ""
+#~ "Joins selected lines in a single one, making each line into a karaoke "
+#~ "syllable"
+#~ msgstr ""
+#~ "Uneix les línies seleccionades en una de sola, fent que cada línia sigui "
+#~ "una síl·laba de karaoke"
+
+#~ msgid "Jump To..."
+#~ msgstr "Salta a..."
+
+#~ msgid "Jump video to end"
+#~ msgstr "Posa el vídeo al final"
+
+#~ msgid "Jump video to start"
+#~ msgstr "Posa el vídeo a l'inici"
+
+#~ msgid "Jump video to time/frame"
+#~ msgstr "Salta al temps/marc del vídeo"
+
+#~ msgid "Jumps the video to the end frame of current subtitle"
+#~ msgstr "Posa el vídeo al marc final del subtítol actual"
+
+#~ msgid "Jumps the video to the start frame of current subtitle"
+#~ msgstr "Posa el vídeo al marc d'inici del subtítol actual"
+
+#~ msgid "Kanji Timer..."
+#~ msgstr "Creador de temps per a kanjis..."
+
+#~ msgid "Kanji timer"
+#~ msgstr "Creador de temps per a kanjis"
+
+#~ msgid "Karaoke"
+#~ msgstr "Karaoke"
+
+#~ msgid "Key"
+#~ msgstr "Tecla"
+
+#~ msgid "Launches ai-chan's \"ASSDraw3\" tool for vector drawing."
+#~ msgstr "Engega l'eina \"ASSDraw3\" de l'ai-chan per dibuixar vectorialment."
+
+#~ msgid "Leave video on original aspect ratio"
+#~ msgstr "Deixa el vídeo amb la relació d'aspecte original"
+
+#~ msgid "Left Margin (0 = default)"
+#~ msgstr "Marge esquerre (0 = predefinit)"
+
+#~ msgid "Limits for levels and recent files"
+#~ msgstr "Límits per a nivells i fitxers recents"
+
+#~ msgid "Line in frame background"
+#~ msgstr "Fons de línia al marc"
+
+#~ msgid "Link"
+#~ msgstr "Enllaça"
+
+#~ msgid "Link commiting of times"
+#~ msgstr "Enllaça l'aplicació dels temps"
+
+#~ msgid "Lo&g Window..."
+#~ msgstr "Finestra del re&gistre..."
+
+#~ msgid "Load audio"
+#~ msgstr "Carrega l'àudio"
+
+#~ msgid "Load keyframes"
+#~ msgstr "Carrega els marcs clau"
+
+#~ msgid "Lock scroll on Cursor"
+#~ msgstr "Bloca el desplaçament si hi ha el cursor"
+
+#~ msgid "Lowest"
+#~ msgstr "El més baix"
+
+#~ msgid "Make Aegisub default editor for subtitles?"
+#~ msgstr "Converteix l'Aegisub en l'editor de subtítols per defecte"
+
+#~ msgid "Manual by:"
+#~ msgstr "Manual per:"
+
+#~ msgid "Margin Bottom"
+#~ msgstr "Marge inferior"
+
+#~ msgid "Margin Top"
+#~ msgstr "Marge superior"
+
+#~ msgid "MarginL change"
+#~ msgstr "Canvi de MarginL"
+
+#~ msgid "MarginR change"
+#~ msgstr "canvi de MarginR"
+
+#~ msgid "MarginV change"
+#~ msgstr "canvi de MarginV"
+
+#~ msgid "Match case"
+#~ msgstr "Coincident amb majúscules/minúscules"
+
+#~ msgid "Matches"
+#~ msgstr "Coincideix"
+
+#~ msgid "Maximum recent audio files"
+#~ msgstr "Nombre màxim de fitxers d'àudio recents"
+
+#~ msgid "Maximum recent find strings"
+#~ msgstr "Nombre màxim de cadenes cercades recents"
+
+#~ msgid "Maximum recent keyframe files"
+#~ msgstr "Nombre màxim de fitxers de marcs clau recents"
+
+#~ msgid "Maximum recent replace strings"
+#~ msgstr "Nombre màxim de cadenes substituïdes recents"
+
+#~ msgid "Maximum recent subtitle files"
+#~ msgstr "Nombre màxim de fitxers de subtítols recents"
+
+#~ msgid "Maximum recent timecode files"
+#~ msgstr "Nombre màxim de fitxers de codis de temps recents"
+
+#~ msgid "Maximum recent video files"
+#~ msgstr "Nombre màxim de fitxers de vídeo recents"
+
+#~ msgid "Maximum undo levels"
+#~ msgstr "Nombre màxim de nivells per desfer"
+
+#~ msgid "Miscellanea"
+#~ msgstr "Miscel·lània"
+
+#~ msgid "Modified Background"
+#~ msgstr "Fons modificat"
+
+#~ msgid "Move down"
+#~ msgstr "Mou avall"
+
+#~ msgid "Move up"
+#~ msgstr "Mou amunt"
+
+#~ msgid ""
+#~ "Much like anything loaded via DirectShow, certain files may have a "
+#~ "strange structure (such as h.264 into AVI or XviD will null frames) which "
+#~ "may cause unreliable seeking (that is, video frames might be off by one "
+#~ "frame). This is not an Aegisub bug - you may consider reencoding those "
+#~ "videos before working with them."
+#~ msgstr ""
+#~ "Gairebé com tot el que es carrega a través de DirectShow, alguns fitxers "
+#~ "poden tenir una estructura estranya (com per exemple H.264 en un AVI o "
+#~ "XviD amb marcs nuls), que poden causar un moviment inadequat (és a dir, "
+#~ "els marcs del vídeo podrien estar desplaçats un marc). Això no és un "
+#~ "error de l'Aegisub. Podeu considerar recomprimir aquests vídeos abans de "
+#~ "traballar-hi."
+
+#~ msgid "Multiple %s tracks detected, please choose the one you wish to load:"
+#~ msgstr ""
+#~ "S'han detectat múltiples pistes de %s, escolliu la que vulgueu carregar:"
+
+#~ msgid "New version found!\n"
+#~ msgstr "S'ha trobat una nova versió!\n"
+
+#~ msgid "Next line/syllable (%KEY%/%KEY%)"
+#~ msgstr "Línia/síl·laba següent (%KEY%/%KEY%)"
+
+#~ msgid "No new version has been found.\n"
+#~ msgstr "No s'ha trobat cap nova versió.\n"
+
+#~ msgid "No subtitle providers available. Cannot preview subs."
+#~ msgstr ""
+#~ "No hi ha cap proveïdor de subtítols disponible. No es podran "
+#~ "previsualitzar els subtítols."
+
+#~ msgid "No timecodes to average"
+#~ msgstr "No hi ha codis de temps per fer la mitjana"
+
+#~ msgid "None"
+#~ msgstr "Res"
+
+#~ msgid "None (NOT RECOMMENDED)"
+#~ msgstr "Cap (NO RECOMANAT)"
+
+#~ msgid "Not enough parameters for Aegisub::text_extents()"
+#~ msgstr "No hi ha prou paràmetres per a Aegisub::text_extents()"
+
+#~ msgid "Not found.\n"
+#~ msgstr "No s'ha trobat.\n"
+
+#~ msgid "OK.\n"
+#~ msgstr "Correcte.\n"
+
+#~ msgid "Opaque box"
+#~ msgstr "Capsa opaca"
+
+#~ msgid "Open Attachment List"
+#~ msgstr " Obre la llista d'adjuncions"
+
+#~ msgid "Open Automation manager"
+#~ msgstr "Obre el gestor de l'automatització"
+
+#~ msgid "Open Fonts Collector"
+#~ msgstr "Obre el col·lector de tipus de lletra"
+
+#~ msgid "Open Kanji Timer dialog"
+#~ msgstr "Obre el diàleg del creador de temps per a kanjis"
+
+#~ msgid "Open Kanji timer"
+#~ msgstr "Obre el creador de temps per a kanjis"
+
+#~ msgid "Open Properties"
+#~ msgstr "Obre les propietats"
+
+#~ msgid "Open Shift Times Dialogue"
+#~ msgstr "Obre el diàleg de desplaçament de temps"
+
+#~ msgid "Open Spell checker"
+#~ msgstr "Obre la correcció ortogràfica"
+
+#~ msgid "Open Styles Manager"
+#~ msgstr "Obre el gestor d'estils"
+
+#~ msgid "Open Styling Assistant"
+#~ msgstr "Obre l'auxiliar d'estils"
+
+#~ msgid "Open Timing Post-processor dialog"
+#~ msgstr "Obre el diàleg del post-processador de temps"
+
+#~ msgid "Open Translation Assistant"
+#~ msgstr "Obre l'auxiliar de traducció"
+
+#~ msgid "Open audio file"
+#~ msgstr "Obre un fitxer d'àudio"
+
+#~ msgid "Open log window"
+#~ msgstr "Obre la finestra del registre"
+
+#~ msgid "Open styles manager"
+#~ msgstr "Obre el gestor d'estils"
+
+#~ msgid "Open the attachment list"
+#~ msgstr "Obre la llista d'adjuncions"
+
+#~ msgid "Open timecodes file"
+#~ msgstr "Obre un fitxer de codis de temps"
+
+#~ msgid "Opens a VFR timecodes v1 or v2 file"
+#~ msgstr "Obre un fitxer de codis de temps VFR (marcs variables) v1 o v2"
+
+#~ msgid "Opens a keyframe list file"
+#~ msgstr "Obre un fitxer d'una llista de marcs clau"
+
+#~ msgid "Opens a subtitles file"
+#~ msgstr "Obre un fitxer de subtítols"
+
+#~ msgid "Opens a subtitles file with a specific charset"
+#~ msgstr "Obre un fitxer de subtítols amb una codificació específica"
+
+#~ msgid "Opens a video clip with solid color"
+#~ msgstr "Obre una peça de vídeo amb color sòlid"
+
+#~ msgid "Opens a video file"
+#~ msgstr "Obre un fitxer de vídeo"
+
+#~ msgid "Opens an audio file"
+#~ msgstr "Obre un fitxer d'àudio"
+
+#~ msgid "Opens the audio from the current video file"
+#~ msgstr "Obre l'àudio del fitxer de vídeo actual"
+
+#~ msgid "Other supported formats"
+#~ msgstr "Altres formats suportats"
+
+#~ msgid "Outline color"
+#~ msgstr "Color de la vora"
+
+#~ msgid "Override Aspect Ratio"
+#~ msgstr "Ignora la relació d'aspecte"
+
+#~ msgid "Overwrite-Insertion in time boxes"
+#~ msgstr "Sobreescriptura-Inserció a les capses de temps"
+
+#~ msgid "Paste"
+#~ msgstr "Enganxa"
+
+#~ msgid "Paste Over"
+#~ msgstr "Enganxa a sobre"
+
+#~ msgid "Paste lines from clipboard"
+#~ msgstr "Enganxa les línies del porta-retalls"
+
+#~ msgid "Path to dictionary files:"
+#~ msgstr "Camí als fitxers de diccionari:"
+
+#~ msgid "Perl script"
+#~ msgstr "'Script' Perl"
+
+#~ msgid "Play 500 ms after selection (%KEY%)"
+#~ msgstr "Reprodueix 500 ms després de la selecció (%KEY%)"
+
+#~ msgid "Play 500 ms before selection (%KEY%)"
+#~ msgstr "Reprodueix 500 ms abans de la selecció (%KEY%)"
+
+#~ msgid "Play Audio"
+#~ msgstr "Reprodueix l'àudio"
+
+#~ msgid "Play Video"
+#~ msgstr "Reprodueix el vídeo"
+
+#~ msgid "Play current line (%KEY%)"
+#~ msgstr "Reprodueix la línia actual (%KEY%)"
+
+#~ msgid "Play first 500ms of selection (%KEY%)"
+#~ msgstr "Reprodueix els primers 500 ms de la selecció (%KEY%)"
+
+#~ msgid "Play from selection start to end of file (%KEY%)"
+#~ msgstr "Reprodueix de l'inici de la selecció al final del fitxer (%KEY%)"
+
+#~ msgid "Play last 500ms of selection (%KEY%)"
+#~ msgstr "Reprodueix els últims 500 ms de la selecció (%KEY%)"
+
+#~ msgid "Play selection (%KEY%/%KEY%)"
+#~ msgstr "Reprodueix la selecció (%KEY%/%KEY%)"
+
+#~ msgid "Please go to the following URL to download it: %s\n"
+#~ msgstr "Aneu a la següent URL per descarregar-la: %s\n"
+
+#~ msgid ""
+#~ "Please select the formats you want to\n"
+#~ "associate with Aegisub:"
+#~ msgstr ""
+#~ "Escolliu els formats que voleu\n"
+#~ "associar amb l'Aegisub:"
+
+#~ msgid "Please wait, caching fonts..."
+#~ msgstr "Espereu, s'estan col·locant els tipus de lletra a la memòria cau..."
+
+#~ msgid "Possible error parsing source line"
+#~ msgstr "S'ha produït un possible error en analitzar la línia d'origen"
+
+#~ msgid "Press Key"
+#~ msgstr "Premeu la tecla"
+
+#~ msgid "Press key to bind to \"%s\" or Esc to cancel."
+#~ msgstr "Premeu la tecla que voleu assignar a \"%s\" o Esc per cancel·lar."
+
+#~ msgid "Previous line or syllable (%KEY%/%KEY%)"
+#~ msgstr "Línia o síl·laba anterior (%KEY%/%KEY%)"
+
+#~ msgid "Primary color"
+#~ msgstr "Color primari"
+
+#~ msgid "Programmers:"
+#~ msgstr "Programadors:"
+
+#~ msgid "Reading into RAM"
+#~ msgstr "S'està copiant a la RAM"
+
+#~ msgid "Reading keyframe and timecode data from Matroska file."
+#~ msgstr ""
+#~ "S'estan llegint els marcs clau i les dades dels codis de temps del fitxer "
+#~ "Matroska."
+
+#~ msgid "Reading keyframes from video"
+#~ msgstr "S'estan llegint els marcs clau del vídeo"
+
+#~ msgid "Realtime"
+#~ msgstr "Temps real"
+
+#~ msgid "Recombine subtitles when they have been split and merged"
+#~ msgstr "Recombina els subtítols quan s'han dividit i unit"
+
+#~ msgid "Recommended Formats"
+#~ msgstr "Formats recomanats"
+
+#~ msgid "Redo"
+#~ msgstr "Refés"
+
+#~ msgid "Redoes last action"
+#~ msgstr "Refà l'última acció"
+
+#~ msgid "Regular Expression match"
+#~ msgstr "Coincidència amb l'expressió regular"
+
+#~ msgid "Reloading %s because the file on disk (%s) changed."
+#~ msgstr "S'està recarregant %s perquè el fitxer al disc (%s) ha canviat."
+
+#~ msgid ""
+#~ "Removes all but the absolutely required fields from the Script Info "
+#~ "section. You might want to run this on files that you plan to distribute "
+#~ "in original form."
+#~ msgstr ""
+#~ "Suprimeix absolutament tots els camps excepte els necessaris de la secció "
+#~ "d'Informació de l''script'. Potser voldreu executar això en fitxers que "
+#~ "vulgueu distribuir de manera original."
+
+#~ msgid "Replace All"
+#~ msgstr "Substitueix-ho tot"
+
+#~ msgid "Replace all"
+#~ msgstr "Substitueix-ho tot"
+
+#~ msgid "Replace next"
+#~ msgstr "Substitueix el següent"
+
+#~ msgid "Replace override tags with: "
+#~ msgstr "Substitueix les etiquetes per:"
+
+#~ msgid "Replace timecodes?"
+#~ msgstr "Substitució de codis de temps"
+
+#~ msgid "Resample"
+#~ msgstr "Reajusta"
+
+#~ msgid "Resample Script Resolution"
+#~ msgstr "Reajusta la resolució de l''script'"
+
+#~ msgid "Resample resolution"
+#~ msgstr "Reajusta la resolució"
+
+#~ msgid "Resource files distributed with Aegisub"
+#~ msgstr "Fitxers de recursos distribuïts amb l'Aegisub"
+
+#~ msgid "Restart Aegisub"
+#~ msgstr "Reinicia l'Aegisub"
+
+#~ msgid "Restore Defaults"
+#~ msgstr "Restableix els valors predefinits"
+
+#~ msgid "Resulting duration: %d:%02d:%02d.%03d"
+#~ msgstr "Duració resultant: %d:%02d:%02d.%03d"
+
+#~ msgid "Reverse"
+#~ msgstr "Invertit"
+
+#~ msgid "Reverse transformation"
+#~ msgstr "Inverteix la transformació"
+
+#~ msgid ""
+#~ "Revert the active line to its initial state (shown in the upper editor)"
+#~ msgstr ""
+#~ "Reverteix la línia activa al seu estat inicial (mostrat a l'editor de "
+#~ "dalt)"
+
+#~ msgid "Right Margin (0 = default)"
+#~ msgstr "Marge dret (0 = predefinit)"
+
+#~ msgid ""
+#~ "Runs a post-processor for timing to deal with lead-ins, lead-outs, scene "
+#~ "timing and etc"
+#~ msgstr ""
+#~ "Executa un post-processador per al temps per tractar els temps d'entrada "
+#~ "i de sortida, el temps de les escenes, etcètera"
+
+#~ msgid "SVN hosting by:"
+#~ msgstr "Allotjament de l'SVN per:"
+
+#~ msgid "Save Subtitles Alt"
+#~ msgstr "Desa els subtítols (alternatiu)"
+
+#~ msgid "Save before continuing?"
+#~ msgstr "Voleu desar abans de continuar?"
+
+#~ msgid "Save config.dat locally"
+#~ msgstr "Desa el config.dat localment"
+
+#~ msgid "Save subtitles"
+#~ msgstr "Desa els subtítols"
+
+#~ msgid "Save timecodes file"
+#~ msgstr "Desa el fitxer de codis de temps"
+
+#~ msgid "Saves a VFR timecodes v2 file"
+#~ msgstr "Desa un fitxer de codis de temps VFR v2"
+
+#~ msgid "Saves a copy of subtitles with processing applied to it"
+#~ msgstr "Desa una còpia dels subtítols aplicant-hi uns processos"
+
+#~ msgid "Saves subtitles"
+#~ msgstr "Desa els subtítols"
+
+#~ msgid "Saves subtitles with another name"
+#~ msgstr "Desa els subtítols amb un altre nom"
+
+#~ msgid "Saves the current keyframe list"
+#~ msgstr "Desa la llista de marcs clau actual"
+
+#~ msgid "Saving changes"
+#~ msgstr "S'estan desant els canvis"
+
+#~ msgid "Scanning file for fonts..."
+#~ msgstr "S'està escanejant el fitxer a la recerca de fonts..."
+
+#~ msgid "Script completed"
+#~ msgstr "'Script' completat"
+
 #~ msgid "Scripting engines installed:\n"
 #~ msgstr "Motors d''script' instal·lats:\n"
+
+#~ msgid "Search and &Replace..."
+#~ msgstr "Cerca i substituei&x..."
+
+#~ msgid "Secondary color"
+#~ msgstr "Color secundari"
+
+#~ msgid "Seconds boundary"
+#~ msgstr "Límit de segons"
+
+#~ msgid "Seek bar"
+#~ msgstr "Barra de desplaçament"
+
+#~ msgid "Select Lines..."
+#~ msgstr "Selecciona línies..."
+
+#~ msgid "Select all"
+#~ msgstr "Selecciona-ho tot"
+
+#~ msgid "Select none"
+#~ msgstr "No seleccionis res"
+
+#~ msgid "Select source text first."
+#~ msgstr "Primer seleccioneu el text d'origen."
+
+#~ msgid "Select visible"
+#~ msgstr "Selecciona els visibles"
+
+#~ msgid "Selected rows"
+#~ msgstr "Les línies seleccionades"
+
+#~ msgid "Selection background - modified"
+#~ msgstr "Fons de la selecció - modificat"
+
+#~ msgid "Selection onward"
+#~ msgstr "De la selecció en endavant"
+
+#~ msgid "Selection was set to %u lines"
+#~ msgstr "S'han seleccionat %u línies"
+
+#~ msgid "Selects all lines that are currently visible on video frame"
+#~ msgstr "Selecciona totes les línies actualment visibles al marc del vídeo"
+
+#~ msgid "Selects lines based on defined criteria"
+#~ msgstr "Selecciona les línies basant-se en un criteri definit"
+
+#~ msgid "Set End to Video"
+#~ msgstr "Defineix el final al vídeo"
+
+#~ msgid "Set Hotkey..."
+#~ msgstr "Defineix una drecera del teclat..."
+
+#~ msgid "Set Start to Video"
+#~ msgstr "Defineix l'inici al vídeo"
+
+#~ msgid "Set Zoom"
+#~ msgstr "Defineix l'ampliació"
+
+#~ msgid "Set opacity, from 0 (opaque) to 255 (transparent)"
+#~ msgstr "Definiu l'opacitat, de 0 (opac) a 255 (transparent)"
+
+#~ msgid "Set selection"
+#~ msgstr "Defineix la selecció"
+
+#~ msgid ""
+#~ "Sets how to set the adjoining of lines. If set totally to left, it will "
+#~ "extend start time of the second line; if totally to right, it will extend "
+#~ "the end time of the first line."
+#~ msgstr ""
+#~ "Defineix com definir l'ajuntament de línies. Si es defineix totalment a "
+#~ "l'esquerra, extendrà el temps d'inici de la segona línia; si es defineix "
+#~ "totalment a la dreta, extendrà el temps de final de la primera línia."
+
+#~ msgid "Shadow color"
+#~ msgstr "Color de l'ombra"
+
+#~ msgid "Shift by Current Time"
+#~ msgstr "Desplaça pel temps actual"
+
+#~ msgid "Shift selected subtitles so first selected starts at this frame"
+#~ msgstr ""
+#~ "Desplaça els subtítols seleccionats de manera que el primer seleccionat "
+#~ "comenci en aquest marc"
+
+#~ msgid "Shift selection so first selected line starts at current frame"
+#~ msgstr ""
+#~ "Desplaça la selecció de manera que la primera línia seleccionada comenci "
+#~ "al marc actual"
+
+#~ msgid "Shift subtitles to frame"
+#~ msgstr "Desplaça els subtítols al marc"
+
+#~ msgid "Show Original"
+#~ msgstr "Mostra l'original"
+
+#~ msgid "Show Splash Screen"
+#~ msgstr "Mostra la pantalla d'inici"
+
+#~ msgid "Show Tip of the Day"
+#~ msgstr "Mostra el consell del dia"
+
+#~ msgid ""
+#~ "Show the contents of the subtitle line when it was first selected above "
+#~ "the edit box. This is sometimes useful when editing subtitles or "
+#~ "translating subtitles into another language."
+#~ msgstr ""
+#~ "Mostra el contingut de la línia de subtítol quan la vau seleccionar per "
+#~ "primer cop a la capsa d'edició. De vegades és útil quan s'editen els "
+#~ "subtítols o es tradueixen a un altre idioma."
+
+#~ msgid "Shows video details"
+#~ msgstr "Mostra detalls del vídeo"
+
+#~ msgid "Skip Dest Line"
+#~ msgstr "Omet la línia de destinació"
+
+#~ msgid "Skip Source Line"
+#~ msgstr "Omet la línia d'origen"
+
+#~ msgid "Snap end to video"
+#~ msgstr "Enganxa el final al vídeo"
+
+#~ msgid "Snap selected subtitles so they match current scene start/end"
+#~ msgstr ""
+#~ "Canvia el temps dels subtítols seleccionats perquè coincideixin amb "
+#~ "l'inici i final de l'escena actual"
+
+#~ msgid "Snap subtitles to scene"
+#~ msgstr "Enganxa els subtítols a l'escena"
+
+#~ msgid "Snap to adjacent lines"
+#~ msgstr "Enganxa a les línies adjacents"
+
+#~ msgid "Snap to keyframes"
+#~ msgstr "Enganxa als marcs clau"
+
+#~ msgid "Sort by Time"
+#~ msgstr "Ordena per temps"
+
+#~ msgid "Source Style"
+#~ msgstr "Estil origen"
+
+#~ msgid "Spe&ll Checker..."
+#~ msgstr "Correcció &ortogràfica..."
+
+#~ msgid "Spectrum cache memory max (MB)"
+#~ msgstr "Màxim de memòria cau per a l'espectre (MB)"
+
+#~ msgid "Spectrum cutoff"
+#~ msgstr "Tall de l'espectre"
+
+#~ msgid "Spectrum quality"
+#~ msgstr "Qualitat de l'espectre"
+
+#~ msgid "Spell check replace"
+#~ msgstr "Substitució de la comprovació ortogràfica"
+
+#~ msgid "Split"
+#~ msgstr "Divideix"
+
+#~ msgid "Split (by karaoke)"
+#~ msgstr "Divideix (per karaoke)"
+
+#~ msgid "Start and End times"
+#~ msgstr "Temps d'inici i de final"
+
+#~ msgid "Start times only"
+#~ msgstr "Només els temps d'inici"
+
+#~ msgid "Start!"
+#~ msgstr "Comença!"
+
+#~ msgid "Startup"
+#~ msgstr "Inici"
+
+#~ msgid "Stop (%KEY%)"
+#~ msgstr "Atura (%KEY%)"
+
+#~ msgid "Strikeout"
+#~ msgstr "Tatxat"
+
+#~ msgid "Style name."
+#~ msgstr "Nom de l'estil."
+
+#~ msgid ""
+#~ "Styles can be stored in different storages, so that you can keep your "
+#~ "projects organized."
+#~ msgstr ""
+#~ "Els estils es poden emmagatzemar en diferents magatzems, de manera que "
+#~ "podeu mantenir els vostres projectes organitzats."
+
+#~ msgid "Styling Assistant Accept"
+#~ msgstr "Auxiliar d'estils: Accepta"
+
+#~ msgid "Styling Assistant Next"
+#~ msgstr "Auxiliar d'estils: Següent"
+
+#~ msgid "Styling Assistant Play Audio"
+#~ msgstr "Auxiliar d'estils: Reprodueix l'àudio"
+
+#~ msgid "Styling Assistant Play Video"
+#~ msgstr "Auxiliar d'estils: Reprodueix el vídeo"
+
+#~ msgid "Styling Assistant Prev"
+#~ msgstr "Auxiliar d'estils: Anterior"
+
+#~ msgid "Styling Assistant Preview"
+#~ msgstr "Auxiliar d'estils: Previsualitza"
+
+#~ msgid "Styling assistant"
+#~ msgstr "Auxiliar d'estils"
+
+#~ msgid "Subtitles edit box"
+#~ msgstr "Caixa d'edició dels subtítols"
+
+#~ msgid "Subtitles grid"
+#~ msgstr "Graella dels subtítols"
+
+#~ msgid "Subtract from selection"
+#~ msgstr "Treu de la selecció"
+
+#~ msgid "Swaps the two selected lines"
+#~ msgstr "Intercanvia les dues línies seleccionades"
+
+#~ msgid "Syllable boundary"
+#~ msgstr "Límit de la síl·laba"
+
+#~ msgid "Syllable text"
+#~ msgstr "Text d'una síl·laba"
+
+#~ msgid "Symmetrical"
+#~ msgstr "Simètric"
+
+#~ msgid "Syntax highlighter - "
+#~ msgstr "Ressaltador de sintaxi - "
+
+#~ msgid ""
+#~ "The fonts collector is one of the most useful features, which resumes the "
+#~ "boring task of hunting down fonts into a matter of a few clicks."
+#~ msgstr ""
+#~ "El col·lector de tipus de lletra és una de les característiques més "
+#~ "útils, que redueix l'avorrida tasca de cercar tipus de lletra a fer uns "
+#~ "quants clics."
+
+#~ msgid ""
+#~ "The hotkey %s is already mapped to %s. If you proceed, that hotkey will "
+#~ "be cleared. Proceed?"
+#~ msgstr ""
+#~ "La drecera del teclar %s ja està assignada a %s. Si continue, aquesta "
+#~ "última drecera s'eliminarà. Voleu continuar?"
+
+#~ msgid ""
+#~ "The source line contains text before the first karaoke block.\n"
+#~ "Do you want to carry it over to the destination?\n"
+#~ "It will be ignored otherwise."
+#~ msgstr ""
+#~ "La línia d'origen conté text abans del primer bloc de karaoke.\n"
+#~ "El voleu copiar a la destinació?\n"
+#~ "En cas contrari, s'ignorarà.."
+
+#~ msgid "The starting point is beyond the length of the audio loaded."
+#~ msgstr "El punt d'inici és més enllà de la llargada de l'àudio carregat."
+
+#~ msgid ""
+#~ "The styling assistant is a practical way to set styles to each line, when "
+#~ "each actor has a different style assigned to it."
+#~ msgstr ""
+#~ "L'auxiliar d'estils és una manera pràctica de definir estils a cada línia "
+#~ "quan cada actor té un estil diferent assignat."
+
+#~ msgid "There is no audio to save."
+#~ msgstr "No hi ha cap àudio per desar."
+
+#~ msgid ""
+#~ "There is no reason to use the SSA format (as opposed to ASS). ASS is very "
+#~ "similar, but adds some important functionality. Most importantly, "
+#~ "however, is that only ASS supports certain override tags (such as \\pos "
+#~ "and \\t). Those only work on SSA files because VSFilter/Textsub is "
+#~ "merciful."
+#~ msgstr ""
+#~ "No hi ha cap raó per utilitzar el format SSA (al contrari que l'ASS). "
+#~ "L'ASS és molt similar, però afegeix funcionalitats importants. El més "
+#~ "important, no obstant, és que només l'ASS suporta certes etiquetes (com "
+#~ "ara \\pos i \\t). Aquestes etiquetes només funcionen als fitxers SSA "
+#~ "perquè el VSFilter/Textsub és misericordiós."
+
+#~ msgid "This build of Aegisub uses the following C/C++ libraries:\n"
+#~ msgstr ""
+#~ "Aquesta compilació de l'Aegisub utilitza les següents biblioteques de C/C+"
+#~ "+:\n"
+
+#~ msgid "Thread priority"
+#~ msgstr "Prioritat dels fils"
+
+#~ msgid ""
+#~ "Threshold for 'after end' distance, that is, how many frames a subtitle "
+#~ "must end after a keyframe to snap to it."
+#~ msgstr ""
+#~ "Valor per a la distància 'acaba després', això és, quants marcs ha "
+#~ "d'acabar un subtítol després d'un marc clau per enganxar-s'hi."
+
+#~ msgid ""
+#~ "Threshold for 'after start' distance, that is, how many frames a subtitle "
+#~ "must start after a keyframe to snap to it."
+#~ msgstr ""
+#~ "Valor per a la distància 'comença després', això és, quants marcs ha de "
+#~ "començar un subtítol després d'un marc clau per enganxar-s'hi."
+
+#~ msgid ""
+#~ "Threshold for 'before end' distance, that is, how many frames a subtitle "
+#~ "must end before a keyframe to snap to it."
+#~ msgstr ""
+#~ "Valor per a la distància 'acaba abans', això és, quants marcs ha d'acabar "
+#~ "un subtítol abans d'un marc clau per enganxar-s'hi."
+
+#~ msgid ""
+#~ "Threshold for 'before start' distance, that is, how many frames a "
+#~ "subtitle must start before a keyframe to snap to it."
+#~ msgstr ""
+#~ "Valor per a la distància 'comença abans', això és, quants marcs ha de "
+#~ "començar un subtítol abans d'un marc clau per enganxar-s'hi."
+
+#~ msgid "Threshold:"
+#~ msgstr "Valor:"
+
+#~ msgid "Time"
+#~ msgstr "Temps"
+
+#~ msgid "Timing Post-Processor..."
+#~ msgstr "Post-processador de temps..."
+
+#~ msgid "Toggle realtime display of changes."
+#~ msgstr "Modifica la visualització en temps real dels canvis."
 
 #~ msgid ""
 #~ "Total scripts loaded: %d\n"
@@ -8282,187 +8470,132 @@ msgstr "Comprovador d'actualitzacions:"
 #~ "'Scripts' locals carregats: %d\n"
 #~ "\n"
 
-#~ msgid ""
-#~ "Configuration file is either invalid or corrupt. The current file will be "
-#~ "backed up and replaced with a default file."
-#~ msgstr ""
-#~ "El fitxer de configuració és invàlid o corrupte. Es farà una còpia de "
-#~ "seguretat del fitxer actual i se substituirà per un fitxer amb valors "
-#~ "predefinits."
-
-#~ msgid "Reading keyframe and timecode data from Matroska file."
-#~ msgstr ""
-#~ "S'estan llegint els marcs clau i les dades dels codis de temps del fitxer "
-#~ "Matroska."
-
-#~ msgid "Spell check replace"
-#~ msgstr "Substitució de la comprovació ortogràfica"
-
-#~ msgid "Add to dictionary"
-#~ msgstr "Afegeix al diccionari"
-
-#~ msgid "Ignore all"
-#~ msgstr "Ignora-ho tot"
-
-#~ msgid "Replace All"
-#~ msgstr "Substitueix-ho tot"
-
-#~ msgid "replace with"
-#~ msgstr "substitueix per"
-
-#~ msgid "original"
-#~ msgstr "original"
-
-#~ msgid "Choose %s track"
-#~ msgstr "Escull la pista de %s"
-
-#~ msgid "Multiple %s tracks detected, please choose the one you wish to load:"
-#~ msgstr ""
-#~ "S'han detectat múltiples pistes de %s, escolliu la que vulgueu carregar:"
-
-#~ msgid "audio"
-#~ msgstr "àudio"
-
-#~ msgid "video"
-#~ msgstr "vídeo"
-
-#~ msgid "Hotkey conflict"
-#~ msgstr "Conflicte de drecera del teclat"
+#~ msgid "Trace: "
+#~ msgstr "Traça:"
 
 #~ msgid ""
-#~ "The hotkey %s is already mapped to %s. If you proceed, that hotkey will "
-#~ "be cleared. Proceed?"
+#~ "Transform subtitles times, including those in override tags, from input "
+#~ "to output. This is most useful to convert CFR to VFR for hardsubbing. You "
+#~ "usually DO NOT want to check this filter for softsubbing."
 #~ msgstr ""
-#~ "La drecera del teclar %s ja està assignada a %s. Si continue, aquesta "
-#~ "última drecera s'eliminarà. Voleu continuar?"
+#~ "Transforma els temps dels subtítols, incloent-hi les etiquetes, de "
+#~ "l'entrada a la sortida. Això és útil per convertir de CFR (marcs "
+#~ "constants) a VFR (marcs variables) per al subtitulat dur. Normalment NO "
+#~ "voldreu activar aquest filtre per al subtitulat tou."
 
-#~ msgid "Press key to bind to \"%s\" or Esc to cancel."
-#~ msgstr "Premeu la tecla que voleu assignar a \"%s\" o Esc per cancel·lar."
+#~ msgid "Translation Assistant Accept"
+#~ msgstr "Auxiliar de traducció: Accepta"
 
-#~ msgid "Press Key"
-#~ msgstr "Premeu la tecla"
+#~ msgid "Translation Assistant Insert Original"
+#~ msgstr "Auxiliar de traducció: Insereix l'original"
 
-#~ msgid "Restart Aegisub"
-#~ msgstr "Reinicia l'Aegisub"
+#~ msgid "Translation Assistant Next"
+#~ msgstr "Auxiliar de traducció: Següent"
 
-#~ msgid "Aegisub must restart for the changes to take effect. Restart now?"
+#~ msgid "Translation Assistant Play Audio"
+#~ msgstr "Auxiliar de traducció: Reprodueix l'àudio"
+
+#~ msgid "Translation Assistant Play Video"
+#~ msgstr "Auxiliar de traducció: Reprodueix el vídeo"
+
+#~ msgid "Translation Assistant Prev"
+#~ msgstr "Auxiliar de traducció: Anterior"
+
+#~ msgid "Translation Assistant Preview"
+#~ msgstr "Auxiliar de traducció: Previsualitza"
+
+#~ msgid ""
+#~ "Tried to register PerlConsole, but support for it was disabled in this "
+#~ "version."
 #~ msgstr ""
-#~ "L'Aegisub s'ha de reiniciar perquè els canvis tinguin efecte. Voleu "
-#~ "reiniciar-lo ara?"
+#~ "S'ha intentat registrar PerlConsole, però el suport per a ell està "
+#~ "desactivat en aquesta versió."
 
-#~ msgid "Restore Defaults"
-#~ msgstr "Restableix els valors predefinits"
+#~ msgid ""
+#~ "Try the spectrum mode for the audio display, it can make it much easier "
+#~ "to spot where the important points in the audio are."
+#~ msgstr ""
+#~ "Proveu el mode d'espectre per a la visualització d'àudio, pot fer que "
+#~ "sigui molt més fàcil veure on són els punts importants de l'àudio."
 
-#~ msgid "Display"
-#~ msgstr "Visualització"
+#~ msgid ""
+#~ "Unable to add the automation include path(s) to @INC: the script's code "
+#~ "may not compile or execute properly."
+#~ msgstr ""
+#~ "No s'ha(n) pogut afegir el(s) camí(ns) d'inclusió de l'automatització a "
+#~ "@INC, pot ser que el codi de l''script' no es compili o s'executi "
+#~ "correctament."
 
-#~ msgid "Subtitles grid"
-#~ msgstr "Graella dels subtítols"
+#~ msgid "Underline"
+#~ msgstr "Subratllat"
 
-#~ msgid "Subtitles edit box"
-#~ msgstr "Caixa d'edició dels subtítols"
+#~ msgid "Undo"
+#~ msgstr "Desfés"
 
-#~ msgid "File save/load"
-#~ msgstr "Càrrega i desament de fitxers"
+#~ msgid "Undoes last action"
+#~ msgstr "Desfà l'última acció"
 
-#~ msgid "Default All"
-#~ msgstr "Tot per defecte"
+#~ msgid "Unknown"
+#~ msgstr "Desconegut"
 
-#~ msgid "Clear Hotkey"
-#~ msgstr "Elimina la drecera del teclat"
+#~ msgid "Unlink"
+#~ msgstr "Desenllaça"
 
-#~ msgid "Set Hotkey..."
-#~ msgstr "Defineix una drecera del teclat..."
+#~ msgid "Unload timecodes?"
+#~ msgstr "Descàrrega de codis de temps"
 
-#~ msgid "Key"
-#~ msgstr "Tecla"
+#~ msgid "Update Video (slow)"
+#~ msgstr "Actualitza el vídeo (lent)"
 
-#~ msgid "Function"
-#~ msgstr "Funció"
+#~ msgid ""
+#~ "Use keyboard shortcuts! They make your life easier, for example, Ctrl"
+#~ "+Enter updates changes on current line without going to next. Check the "
+#~ "manual for a complete list."
+#~ msgstr ""
+#~ "Utilitzeu les dreceres del teclat! Us faran la vida més fàcil. Per "
+#~ "exemple, Ctrl+Enter actualitza els canvis de la línia actual sense anar a "
+#~ "la següent. Vegeu el manual per a una llista completa."
 
-#~ msgid "Spectrum cache memory max (MB)"
-#~ msgstr "Màxim de memòria cau per a l'espectre (MB)"
+#~ msgid "Use regular expressions"
+#~ msgstr "Utilitza expressions regulars"
 
-#~ msgid "Spectrum quality"
-#~ msgstr "Qualitat de l'espectre"
+#~ msgid "Uses karaoke timing to split line into multiple smaller lines"
+#~ msgstr ""
+#~ "Utilitza els temps del karaoke per dividir la línia en múltiples línies "
+#~ "més petites"
 
-#~ msgid "Spectrum cutoff"
-#~ msgstr "Tall de l'espectre"
+#~ msgid "Variable"
+#~ msgstr "Variable"
 
-#~ msgid "HD cache name"
-#~ msgstr "Nom de la memòria cau del disc"
+#~ msgid "Vertical Margin (0 = default)"
+#~ msgstr "Marge vertical (0 = predefinit)"
 
-#~ msgid "HD cache path"
-#~ msgstr "Camí de la memòria cau del disc dur"
+#~ msgid "Video Jump"
+#~ msgstr "Salta el vídeo"
 
-#~ msgid "Syllable boundary"
-#~ msgstr "Límit de la síl·laba"
+#~ msgid "Video Screenshot Path"
+#~ msgstr "Camí de les captures de pantalla del vídeo"
 
-#~ msgid "Syllable text"
-#~ msgstr "Text d'una síl·laba"
+#~ msgid "Video global focus seek"
+#~ msgstr "Vídeo global: Cerca el focus"
 
-#~ msgid "Boundary - inactive"
-#~ msgstr "Límit - inactiu"
+#~ msgid "Video global next frame"
+#~ msgstr "Vídeo global: Marc següent"
 
-#~ msgid "Boundary - end"
-#~ msgstr "Límit - final"
+#~ msgid "Video global play"
+#~ msgstr "Vídeo: Reprodueix globalment"
 
-#~ msgid "Boundary - start"
-#~ msgstr "Límit - inici"
+#~ msgid "Video global prev frame"
+#~ msgstr "Vídeo global: Marc anterior"
 
-#~ msgid "Waveform - inactive"
-#~ msgstr "Forma d'ona - inactiu"
+#~ msgid "Video global zoom in"
+#~ msgstr "Vídeo global: Amplia"
 
-#~ msgid "Waveform - modified"
-#~ msgstr "Forma d'ona - modificat"
+#~ msgid "Video global zoom out"
+#~ msgstr "Vídeo global: Redueix"
 
-#~ msgid "Waveform - selection"
-#~ msgstr "Forma d'ona - selecció"
-
-#~ msgid "Seconds boundary"
-#~ msgstr "Límit de segons"
-
-#~ msgid "Selection background - modified"
-#~ msgstr "Fons de la selecció - modificat"
-
-#~ msgid "Draw video position"
-#~ msgstr "Mostra la posició del vídeo"
-
-#~ msgid "Draw keyframes"
-#~ msgstr "Mostra els marcs clau"
-
-#~ msgid "Draw cursor time"
-#~ msgstr "Dibuixa el temps del cursor"
-
-#~ msgid "Draw timeline"
-#~ msgstr "Dibuixa la línia de temps"
-
-#~ msgid "Draw selection background"
-#~ msgstr "Dibuixa el fons de la selecció"
-
-#~ msgid "Draw secondary lines"
-#~ msgstr "Dibuixa les línies secundàries"
-
-#~ msgid "Default lead-out length"
-#~ msgstr "Llargada per defecte del temps de sortida"
-
-#~ msgid "Default lead-in length"
-#~ msgstr "Llargada per defecte del temps d'entrada"
-
-#~ msgid "Default timing length"
-#~ msgstr "Llargada per defecte del temps"
-
-#~ msgid "Snap to adjacent lines"
-#~ msgstr "Enganxa a les línies adjacents"
-
-#~ msgid "Snap to keyframes"
-#~ msgstr "Enganxa als marcs clau"
-
-#~ msgid "Lock scroll on Cursor"
-#~ msgstr "Bloca el desplaçament si hi ha el cursor"
-
-#~ msgid "Grab times from line upon selection"
-#~ msgstr "Agafa els temps des de la línia fins a la selecció"
+#~ msgid "Visit Aegisub's forums"
+#~ msgstr "Visita els fòrums de l'Aegisub"
 
 #~ msgid ""
 #~ "WARNING: Changing these settings might result in bugs,\n"
@@ -8473,291 +8606,132 @@ msgstr "Comprovador d'actualitzacions:"
 #~ "petades, errors gràfics i/o movax.\n"
 #~ "No ho toqueu si no sabeu què esteu fent."
 
-#~ msgid "Advanced - EXPERT USERS ONLY"
-#~ msgstr "Avançades - NOMÉS USUARIS EXPERTS"
+#~ msgid "Warning"
+#~ msgstr "Advertència"
 
-#~ msgid "Replace override tags with: "
-#~ msgstr "Substitueix les etiquetes per:"
+#~ msgid ""
+#~ "Warning! The file is being opened using Avisynth's DirectShowSource, "
+#~ "which has unreliable seeking. Frame numbers might not match the real "
+#~ "number. PROCEED AT YOUR OWN RISK!"
+#~ msgstr ""
+#~ "Compte! El fitxer s'obrirà utilitzant el DirectShowSource de l'Avisynth, "
+#~ "que té un desplaçament no confiable. Els números dels marcs poden no "
+#~ "coincidir amb els reals. CONTINUEU SOTA EL VOSTRE PROPI RISC!"
 
-#~ msgid "Header"
-#~ msgstr "Capçalera"
+#~ msgid "Warning: "
+#~ msgstr "Advertència:"
 
-#~ msgid "Line in frame background"
-#~ msgstr "Fons de línia al marc"
+#~ msgid "Waveform - inactive"
+#~ msgstr "Forma d'ona - inactiu"
 
-#~ msgid "Highlight subtitles that are currently visible in video"
-#~ msgstr "Ressalta els subtítols actualment visibles al vídeo"
+#~ msgid "Waveform - modified"
+#~ msgstr "Forma d'ona - modificat"
 
-#~ msgid "Allow grid to take focus"
-#~ msgstr "Permet que la graella prengui el focus"
+#~ msgid "Waveform - selection"
+#~ msgstr "Forma d'ona - selecció"
 
-#~ msgid "Font: "
-#~ msgstr "Tipus de lletra:"
+#~ msgid ""
+#~ "When you are done with your subtitles and ready to distribute them, "
+#~ "remember: say no to MP4, OGM or AVI. Matroska is your friend."
+#~ msgstr ""
+#~ "Quan hagueu acabat amb els vostres subtítols i estigueu preparat per "
+#~ "distribuir-los, recordeu: digueu no a l'MP4, l'OGM o l'AVI. El Matroska "
+#~ "és el vostre amic."
 
-#~ msgid "Syntax highlighter - "
-#~ msgstr "Ressaltador de sintaxi - "
+#~ msgid "Writing file"
+#~ msgstr "S'està escrivint el fitxer"
 
-#~ msgid "Modified Background"
-#~ msgstr "Fons modificat"
+#~ msgid ""
+#~ "You already have timecodes loaded. Replace them with the timecodes from "
+#~ "the Matroska file?"
+#~ msgstr ""
+#~ "Ja teniu codis de temps carregats. Voleu substituir-los amb els codis de "
+#~ "temps del fitxer Matroska?"
 
-#~ msgid "Path to dictionary files:"
-#~ msgstr "Camí als fitxers de diccionari:"
+#~ msgid ""
+#~ "You already have timecodes loaded. Would you like to replace them with "
+#~ "timecodes from the video file?"
+#~ msgstr ""
+#~ "Ja teniu codis de temps carregats. Voleu substituir-los amb els codis de "
+#~ "temps del fitxer de vídeo?"
 
-#~ msgid "Overwrite-Insertion in time boxes"
-#~ msgstr "Sobreescriptura-Inserció a les capses de temps"
+#~ msgid ""
+#~ "You can easily translate subtitle files using the translation assistant."
+#~ msgstr ""
+#~ "Podeu traduir fitxer de subtítols fàcilment utilitzant l'auxiliar de "
+#~ "traducció."
 
-#~ msgid "Link commiting of times"
-#~ msgstr "Enllaça l'aplicació dels temps"
+#~ msgid ""
+#~ "You have chosen to use the \"Comic Sans\" font. As the programmer and a "
+#~ "typesetter,\n"
+#~ "I must urge you to reconsider. Comic Sans is the most abused font in the "
+#~ "history\n"
+#~ "of computing, so please avoid using it unless it's REALLY suitable. "
+#~ "Thanks."
+#~ msgstr ""
+#~ "Heu escollit usar el tipus de lletra \"Comic Sans\". Com a programador i "
+#~ "editor d'estils,\n"
+#~ "us haig de demanar que ho reconsidereu. La Comic Sans és la lletra més "
+#~ "abusada en la història\n"
+#~ "dels ordinadors, o sigui que eviteu usar-la a no ser que REALMENT sigui "
+#~ "necessària. Gràcies."
 
-#~ msgid "Automatically load linked files:"
-#~ msgstr "Carrega automàticament els fitxers enllaçats:"
+#~ msgid "You have timecodes loaded currently. Would you like to unload them?"
+#~ msgstr "Ja teniu codis de temps carregats. Els voleu descarregar?"
 
-#~ msgid "Crash recovery path:"
-#~ msgstr "Camí de recuperació de petades:"
+#~ msgid "Zip Archives (*.zip)|*.zip"
+#~ msgstr "Arxius Zip (*.zip)|*.zip"
 
-#~ msgid "Auto-backup path:"
-#~ msgstr "Camí per crear una còpia de seguretat automàticament:"
+#~ msgid "Zoom 100%"
+#~ msgstr "Amplia al 100%"
 
-#~ msgid "Auto-save path:"
-#~ msgstr "Camí per desar automàticament:"
+#~ msgid "Zoom 200%"
+#~ msgstr "Amplia al 200%"
+
+#~ msgid "Zoom 50%"
+#~ msgstr "Amplia al 50%"
+
+#~ msgid "Zoom in"
+#~ msgstr "Amplia"
+
+#~ msgid "Zoom out"
+#~ msgstr "Redueix"
+
+#~ msgid "audio"
+#~ msgstr "àudio"
+
+#~ msgid "delete"
+#~ msgstr "suprimeix"
+
+#~ msgid "editing"
+#~ msgstr "edició"
+
+#~ msgid "font attachment"
+#~ msgstr "adjunció de tipus de lletra"
+
+#~ msgid "hide tags."
+#~ msgstr "amagar les etiquetes."
+
+#~ msgid "load"
+#~ msgstr "carrega"
+
+#~ msgid "original"
+#~ msgstr "original"
+
+#~ msgid "replace with"
+#~ msgstr "substitueix per"
 
 #~ msgid "seconds."
 #~ msgstr "segons."
 
-#~ msgid "Auto-save every"
-#~ msgstr "Desa automàticament cada"
+#~ msgid "show full tags."
+#~ msgstr "mostrar les etiquetes completes."
 
-#~ msgid "Auto-backup"
-#~ msgstr "Crea una còpia de seguretat automàticament"
-
-#~ msgid "Miscellanea"
-#~ msgstr "Miscel·lània"
-
-#~ msgid "File paths"
-#~ msgstr "Camins dels fitxers"
-
-#~ msgid "Auto-save"
-#~ msgstr "Desa automàticament"
-
-#~ msgid "Maximum recent replace strings"
-#~ msgstr "Nombre màxim de cadenes substituïdes recents"
-
-#~ msgid "Maximum recent find strings"
-#~ msgstr "Nombre màxim de cadenes cercades recents"
-
-#~ msgid "Maximum recent audio files"
-#~ msgstr "Nombre màxim de fitxers d'àudio recents"
-
-#~ msgid "Maximum recent video files"
-#~ msgstr "Nombre màxim de fitxers de vídeo recents"
-
-#~ msgid "Maximum recent subtitle files"
-#~ msgstr "Nombre màxim de fitxers de subtítols recents"
-
-#~ msgid "Maximum recent keyframe files"
-#~ msgstr "Nombre màxim de fitxers de marcs clau recents"
-
-#~ msgid "Maximum recent timecode files"
-#~ msgstr "Nombre màxim de fitxers de codis de temps recents"
-
-#~ msgid "Maximum undo levels"
-#~ msgstr "Nombre màxim de nivells per desfer"
-
-#~ msgid "Limits for levels and recent files"
-#~ msgstr "Límits per a nivells i fitxers recents"
-
-#~ msgid "Check File Associations on Start"
-#~ msgstr "Comprova les associacions de fitxers en iniciar"
-
-#~ msgid "Auto Check for Updates"
-#~ msgstr "Comprova automàticament si hi ha actualitzacions"
-
-#~ msgid "Show Splash Screen"
-#~ msgstr "Mostra la pantalla d'inici"
-
-#~ msgid "Startup"
-#~ msgstr "Inici"
-
-#~ msgid " styles?"
-#~ msgstr " estils?"
-
-#~ msgid "Are you sure you want to delete these "
-#~ msgstr "Esteu segur que voleu suprimir aquests "
-
-#~ msgid "Copy of "
-#~ msgstr "Còpia de "
-
-#~ msgid "Import from script..."
-#~ msgstr "Importa de l''script'..."
-
-#~ msgid "<- Copy to storage"
-#~ msgstr "<- Copia al magatzem"
-
-#~ msgid "Copy"
-#~ msgstr "Copia"
-
-#~ msgid "Copy to current script ->"
-#~ msgstr "Copia a l''script' actual ->"
-
-#~ msgid "%u lines were removed from selection"
-#~ msgstr "S'han tret %u línies de la selecció"
-
-#~ msgid "%u lines were added to selection"
-#~ msgstr "S'han afegit %u línies a la selecció."
-
-#~ msgid "Selection was set to %u lines"
-#~ msgstr "S'han seleccionat %u línies"
-
-#~ msgid "Intersect with selection"
-#~ msgstr "Interseca amb la selecció"
-
-#~ msgid "Subtract from selection"
-#~ msgstr "Treu de la selecció"
-
-#~ msgid "Add to selection"
-#~ msgstr "Afegeix a la selecció"
-
-#~ msgid "Set selection"
-#~ msgstr "Defineix la selecció"
-
-#~ msgid "Dialogues"
-#~ msgstr "Diàlegs"
-
-#~ msgid "Regular Expression match"
-#~ msgstr "Coincidència amb l'expressió regular"
-
-#~ msgid "Contains"
-#~ msgstr "Conté"
-
-#~ msgid "Exact match"
-#~ msgstr "Coincidència exacta"
-
-#~ msgid "Match case"
-#~ msgstr "Coincident amb majúscules/minúscules"
-
-#~ msgid "Doesn't Match"
-#~ msgstr "No coincideix"
-
-#~ msgid "Matches"
-#~ msgstr "Coincideix"
+#~ msgid "simplify tags."
+#~ msgstr "simplificar les etiquetes."
 
 #~ msgid "style changes"
 #~ msgstr "canvis a l'estil"
 
-#~ msgid "Enable preview (slow)"
-#~ msgstr "Activa la previsualització (lent)"
-
-#~ msgid "Click on list:"
-#~ msgstr "Clic a la llista:"
-
-#~ msgid "Play Audio"
-#~ msgstr "Reprodueix l'àudio"
-
-#~ msgid "Play Video"
-#~ msgstr "Reprodueix el vídeo"
-
-#~ msgid "Styling assistant"
-#~ msgstr "Auxiliar d'estils"
-
-#~ msgid "Reading keyframes from video"
-#~ msgstr "S'estan llegint els marcs clau del vídeo"
-
-#~ msgid "Load keyframes"
-#~ msgstr "Carrega els marcs clau"
-
-#~ msgid "Help"
-#~ msgstr "Ajuda"
-
-#~ msgid "Toggle realtime display of changes."
-#~ msgstr "Modifica la visualització en temps real dels canvis."
-
-#~ msgid "Realtime"
-#~ msgstr "Temps real"
-
-#~ msgid ""
-#~ "Threshold for 'after end' distance, that is, how many frames a subtitle "
-#~ "must end after a keyframe to snap to it."
-#~ msgstr ""
-#~ "Valor per a la distància 'acaba després', això és, quants marcs ha "
-#~ "d'acabar un subtítol després d'un marc clau per enganxar-s'hi."
-
-#~ msgid ""
-#~ "Threshold for 'before end' distance, that is, how many frames a subtitle "
-#~ "must end before a keyframe to snap to it."
-#~ msgstr ""
-#~ "Valor per a la distància 'acaba abans', això és, quants marcs ha d'acabar "
-#~ "un subtítol abans d'un marc clau per enganxar-s'hi."
-
-#~ msgid ""
-#~ "Threshold for 'after start' distance, that is, how many frames a subtitle "
-#~ "must start after a keyframe to snap to it."
-#~ msgstr ""
-#~ "Valor per a la distància 'comença després', això és, quants marcs ha de "
-#~ "començar un subtítol després d'un marc clau per enganxar-s'hi."
-
-#~ msgid ""
-#~ "Threshold for 'before start' distance, that is, how many frames a "
-#~ "subtitle must start before a keyframe to snap to it."
-#~ msgstr ""
-#~ "Valor per a la distància 'comença abans', això és, quants marcs ha de "
-#~ "començar un subtítol abans d'un marc clau per enganxar-s'hi."
-
-#~ msgid ""
-#~ "Sets how to set the adjoining of lines. If set totally to left, it will "
-#~ "extend start time of the second line; if totally to right, it will extend "
-#~ "the end time of the first line."
-#~ msgstr ""
-#~ "Defineix com definir l'ajuntament de línies. Si es defineix totalment a "
-#~ "l'esquerra, extendrà el temps d'inici de la segona línia; si es defineix "
-#~ "totalment a la dreta, extendrà el temps de final de la primera línia."
-
-#~ msgid "Threshold:"
-#~ msgstr "Valor:"
-
-#~ msgid "Add lead out:"
-#~ msgstr "Afegeix temps de sortida:"
-
-#~ msgid "Add lead in:"
-#~ msgstr "Afegeix temps d'entrada:"
-
-#~ msgid "Affect selection only"
-#~ msgstr "Afecta només la selecció"
-
-#~ msgid "None"
-#~ msgstr "Res"
-
-#~ msgid "All"
-#~ msgstr "Tot"
-
-#~ msgid "Select none"
-#~ msgstr "No seleccionis res"
-
-#~ msgid "Select all"
-#~ msgstr "Selecciona-ho tot"
-
-#~ msgid "Move down"
-#~ msgstr "Mou avall"
-
-#~ msgid "Move up"
-#~ msgstr "Mou amunt"
-
-#~ msgid "Force BT.601"
-#~ msgstr "Força BT.601"
-
-#~ msgid "Thread priority"
-#~ msgstr "Prioritat dels fils"
-
-#~ msgid "Lowest"
-#~ msgstr "El més baix"
-
-#~ msgid "Below Normal (recommended)"
-#~ msgstr "Per sota del normal (recomanat)"
-
-#~ msgid "Visit Aegisub's forums"
-#~ msgstr "Visita els fòrums de l'Aegisub"
-
-#~ msgid "Forums"
-#~ msgstr "Fòrums"
-
-#~ msgid "&Forums"
-#~ msgstr "&Fòrums"
+#~ msgid "video"
+#~ msgstr "vídeo"

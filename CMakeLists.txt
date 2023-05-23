@@ -19,6 +19,17 @@ if(NOT WIN32)
     target_link_libraries(luajit-minilua m)
 endif()
 if(WIN32)
+    if(MSVC)
+        OPTION(USE_MP "use multiple" ON)
+        OPTION(ProjectConfig_Global_COMPILE_FLAGS_WITH_MP
+                "Set The Global Option COMPILE_FLAGS /MP to target." ON)
+        if(ProjectConfig_Global_COMPILE_FLAGS_WITH_MP OR USE_MP)
+            set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} /MP")
+            set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /MP")
+        endif()
+        set(VS_STARTUP_PROJECT ${PROJECT_NAME})
+    ENDIF(MSVC)
+
     if(CMAKE_SIZEOF_VOID_P EQUAL 8)
         add_custom_command(
             OUTPUT "${CMAKE_CURRENT_BINARY_DIR}/vendor/luajit/src/gen/buildvm_arch.h"

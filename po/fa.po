@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-17 13:16-0400\n"
+"POT-Creation-Date: 2023-05-14 00:32+0800\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Meysam <meysam.ar@gmail.com>\n"
 "Language-Team: \n"
@@ -236,6 +236,22 @@ msgstr "\\ko تغییرتگ های کاروکه به "
 #, fuzzy
 msgid "karaoke split"
 msgstr "تگ کاروکه"
+
+#: ../src/audio_provider_factory.cpp:119
+msgid ""
+"Unable to create RAM audio cache: 32-bit memory limit exceeded. Fallback to "
+"hard disk cache.\n"
+"\n"
+"Possible solutions:\n"
+"- Use 64-bit version\n"
+"- Turn off cache or switch to hard disk cache in Preferences -> Advanced -> "
+"Audio -> Cache -> Cache type\n"
+"- Enable channel downmix in Preferences -> Advanced -> Audio"
+msgstr ""
+
+#: ../src/audio_provider_factory.cpp:124
+msgid "Out of Memory"
+msgstr ""
 
 #: ../src/audio_renderer_waveform.cpp:152
 msgid "Maximum"
@@ -814,7 +830,7 @@ msgid "&Automation..."
 msgstr "عملیات خودکار"
 
 #: ../src/command/automation.cpp:75 ../src/command/automation.cpp:87
-#: ../src/preferences.cpp:330
+#: ../src/preferences.cpp:339
 msgid "Automation"
 msgstr "عملیات خودکار"
 
@@ -833,307 +849,307 @@ msgstr ""
 msgid "'%s' is not a valid command name"
 msgstr ""
 
-#: ../src/command/edit.cpp:134 ../src/command/edit.cpp:841
+#: ../src/command/edit.cpp:137 ../src/command/edit.cpp:925
 msgid "paste"
 msgstr "چسباندن"
 
-#: ../src/command/edit.cpp:374
+#: ../src/command/edit.cpp:380
 #, fuzzy
 msgid "set color"
 msgstr "RGB color"
 
-#: ../src/command/edit.cpp:388
+#: ../src/command/edit.cpp:397
 #, fuzzy
 msgid "Primary Color..."
 msgstr "رنگ اولیه"
 
-#: ../src/command/edit.cpp:389
+#: ../src/command/edit.cpp:399
 #, fuzzy
 msgid "Primary Color"
 msgstr "رنگ اولیه"
 
-#: ../src/command/edit.cpp:390
+#: ../src/command/edit.cpp:401
 msgid "Set the primary fill color (\\c) at the cursor position"
 msgstr ""
 
-#: ../src/command/edit.cpp:400
+#: ../src/command/edit.cpp:413
 #, fuzzy
 msgid "Secondary Color..."
 msgstr "رنگ ثانویه"
 
-#: ../src/command/edit.cpp:401
+#: ../src/command/edit.cpp:415
 #, fuzzy
 msgid "Secondary Color"
 msgstr "رنگ ثانویه"
 
-#: ../src/command/edit.cpp:402
+#: ../src/command/edit.cpp:417
 msgid "Set the secondary (karaoke) fill color (\\2c) at the cursor position"
 msgstr ""
 
-#: ../src/command/edit.cpp:412
+#: ../src/command/edit.cpp:429
 #, fuzzy
 msgid "Outline Color..."
 msgstr "رنگ حاشیه"
 
-#: ../src/command/edit.cpp:413
+#: ../src/command/edit.cpp:431
 #, fuzzy
 msgid "Outline Color"
 msgstr "رنگ حاشیه"
 
-#: ../src/command/edit.cpp:414
+#: ../src/command/edit.cpp:433
 msgid "Set the outline color (\\3c) at the cursor position"
 msgstr ""
 
-#: ../src/command/edit.cpp:424
+#: ../src/command/edit.cpp:445
 #, fuzzy
 msgid "Shadow Color..."
 msgstr "رنگ سایه"
 
-#: ../src/command/edit.cpp:425
+#: ../src/command/edit.cpp:447
 #, fuzzy
 msgid "Shadow Color"
 msgstr "رنگ سایه"
 
-#: ../src/command/edit.cpp:426
+#: ../src/command/edit.cpp:449
 msgid "Set the shadow color (\\4c) at the cursor position"
 msgstr ""
 
-#: ../src/command/edit.cpp:436 ../src/command/edit.cpp:437
+#: ../src/command/edit.cpp:461 ../src/command/edit.cpp:463
 #, fuzzy
 msgid "Toggle Bold"
 msgstr "برگشت به حالت کاروکه"
 
-#: ../src/command/edit.cpp:438
+#: ../src/command/edit.cpp:465
 msgid ""
 "Toggle bold (\\b) for the current selection or at the current cursor position"
 msgstr ""
 
-#: ../src/command/edit.cpp:441
+#: ../src/command/edit.cpp:468
 msgid "toggle bold"
 msgstr ""
 
-#: ../src/command/edit.cpp:448 ../src/command/edit.cpp:449
+#: ../src/command/edit.cpp:477 ../src/command/edit.cpp:479
 #, fuzzy
 msgid "Toggle Italics"
 msgstr "کج"
 
-#: ../src/command/edit.cpp:450
+#: ../src/command/edit.cpp:481
 msgid ""
 "Toggle italics (\\i) for the current selection or at the current cursor "
 "position"
 msgstr ""
 
-#: ../src/command/edit.cpp:453
+#: ../src/command/edit.cpp:484
 msgid "toggle italic"
 msgstr ""
 
-#: ../src/command/edit.cpp:460 ../src/command/edit.cpp:461
+#: ../src/command/edit.cpp:493 ../src/command/edit.cpp:495
 #, fuzzy
 msgid "Toggle Underline"
 msgstr "خط زیر"
 
-#: ../src/command/edit.cpp:462
+#: ../src/command/edit.cpp:497
 msgid ""
 "Toggle underline (\\u) for the current selection or at the current cursor "
 "position"
 msgstr ""
 
-#: ../src/command/edit.cpp:465
+#: ../src/command/edit.cpp:500
 #, fuzzy
 msgid "toggle underline"
 msgstr "خط زیر"
 
-#: ../src/command/edit.cpp:472 ../src/command/edit.cpp:473
+#: ../src/command/edit.cpp:509 ../src/command/edit.cpp:511
 #, fuzzy
 msgid "Toggle Strikeout"
 msgstr "خط خوردن"
 
-#: ../src/command/edit.cpp:474
+#: ../src/command/edit.cpp:513
 msgid ""
 "Toggle strikeout (\\s) for the current selection or at the current cursor "
 "position"
 msgstr ""
 
-#: ../src/command/edit.cpp:477
+#: ../src/command/edit.cpp:516
 #, fuzzy
 msgid "toggle strikeout"
 msgstr "خط خوردن"
 
-#: ../src/command/edit.cpp:484
+#: ../src/command/edit.cpp:525
 #, fuzzy
 msgid "Font Face..."
 msgstr "نام فونت"
 
-#: ../src/command/edit.cpp:485 ../src/preferences_base.cpp:251
+#: ../src/command/edit.cpp:527 ../src/preferences_base.cpp:251
 #, fuzzy
 msgid "Font Face"
 msgstr "نام فونت"
 
-#: ../src/command/edit.cpp:486
+#: ../src/command/edit.cpp:529
 #, fuzzy
 msgid "Select a font face and size"
 msgstr "تعیین زبان نرم افزار"
 
-#: ../src/command/edit.cpp:513
+#: ../src/command/edit.cpp:557
 msgid "set font"
 msgstr ""
 
-#: ../src/command/edit.cpp:540
+#: ../src/command/edit.cpp:587
 #, fuzzy
 msgid "Find and R&eplace..."
 msgstr "جستجو و جایگذاری..."
 
-#: ../src/command/edit.cpp:541
+#: ../src/command/edit.cpp:589
 #, fuzzy
 msgid "Find and Replace"
 msgstr "جستجو و جایگذاری..."
 
-#: ../src/command/edit.cpp:542
+#: ../src/command/edit.cpp:591
 msgid "Find and replace words in subtitles"
 msgstr "کلمات را در زیر نویس یافته و جایگذاری میکند"
 
-#: ../src/command/edit.cpp:603
+#: ../src/command/edit.cpp:654
 #, fuzzy
 msgid "&Copy Lines"
 msgstr "کپی خطوط"
 
-#: ../src/command/edit.cpp:604
+#: ../src/command/edit.cpp:656
 msgid "Copy Lines"
 msgstr "کپی خطوط"
 
-#: ../src/command/edit.cpp:605
+#: ../src/command/edit.cpp:658
 #, fuzzy
 msgid "Copy subtitles to the clipboard"
 msgstr "کپی کردن عکس در حافظه"
 
-#: ../src/command/edit.cpp:626
+#: ../src/command/edit.cpp:681
 #, fuzzy
 msgid "Cu&t Lines"
 msgstr "برش خطوط"
 
-#: ../src/command/edit.cpp:627
+#: ../src/command/edit.cpp:683
 msgid "Cut Lines"
 msgstr "برش خطوط"
 
-#: ../src/command/edit.cpp:628
+#: ../src/command/edit.cpp:685
 msgid "Cut subtitles"
 msgstr "برش زیرنویس ها"
 
-#: ../src/command/edit.cpp:635
+#: ../src/command/edit.cpp:692
 #, fuzzy
 msgid "cut lines"
 msgstr "برش خطوط"
 
-#: ../src/command/edit.cpp:643
+#: ../src/command/edit.cpp:702
 #, fuzzy
 msgid "De&lete Lines"
 msgstr "حذف خطوط"
 
-#: ../src/command/edit.cpp:644
+#: ../src/command/edit.cpp:704
 msgid "Delete Lines"
 msgstr "حذف خطوط"
 
-#: ../src/command/edit.cpp:645
+#: ../src/command/edit.cpp:706
 msgid "Delete currently selected lines"
 msgstr "حدف زیرنویس های انتخابی"
 
-#: ../src/command/edit.cpp:648
+#: ../src/command/edit.cpp:709
 #, fuzzy
 msgid "delete lines"
 msgstr "حذف خطوط"
 
-#: ../src/command/edit.cpp:713
+#: ../src/command/edit.cpp:773
 #, fuzzy
 msgid "duplicate lines"
 msgstr "تکثیر کردن خطوط"
 
-#: ../src/command/edit.cpp:713 ../src/command/edit.cpp:1107
+#: ../src/command/edit.cpp:773 ../src/command/edit.cpp:1204
 msgid "split"
 msgstr "جدا سازی"
 
-#: ../src/command/edit.cpp:720
+#: ../src/command/edit.cpp:781
 msgid "&Duplicate Lines"
 msgstr "تکثیر کردن خطوط"
 
-#: ../src/command/edit.cpp:721
+#: ../src/command/edit.cpp:783
 #, fuzzy
 msgid "Duplicate Lines"
 msgstr "تکثیر کردن خطوط"
 
-#: ../src/command/edit.cpp:722
+#: ../src/command/edit.cpp:785
 msgid "Duplicate the selected lines"
 msgstr "تکثیر خط های انتخابی"
 
-#: ../src/command/edit.cpp:731 ../src/command/edit.cpp:732
+#: ../src/command/edit.cpp:795 ../src/command/edit.cpp:797
 #, fuzzy
 msgid "Split lines after current frame"
 msgstr "یک خط بعد از خط کنونی ایجاد میکند"
 
-#: ../src/command/edit.cpp:733
+#: ../src/command/edit.cpp:800
 msgid ""
 "Split the current line into a line which ends on the current frame and a "
 "line which starts on the next frame"
 msgstr ""
 
-#: ../src/command/edit.cpp:743 ../src/command/edit.cpp:744
+#: ../src/command/edit.cpp:812 ../src/command/edit.cpp:814
 #, fuzzy
 msgid "Split lines before current frame"
 msgstr "یک خط قبل از خط کنونی ایجاد میکند"
 
-#: ../src/command/edit.cpp:745
+#: ../src/command/edit.cpp:817
 msgid ""
 "Split the current line into a line which ends on the previous frame and a "
 "line which starts on the current frame"
 msgstr ""
 
-#: ../src/command/edit.cpp:785
+#: ../src/command/edit.cpp:861
 msgid "As &Karaoke"
 msgstr " به عنوان کاراوکه"
 
-#: ../src/command/edit.cpp:786
+#: ../src/command/edit.cpp:863
 #, fuzzy
 msgid "As Karaoke"
 msgstr " به عنوان کاراوکه"
 
-#: ../src/command/edit.cpp:787
+#: ../src/command/edit.cpp:865
 #, fuzzy
 msgid "Join selected lines in a single one, as karaoke"
 msgstr "ترکیب خطوط به یکدیگر به صورت کاروکه"
 
-#: ../src/command/edit.cpp:790
+#: ../src/command/edit.cpp:868
 #, fuzzy
 msgid "join as karaoke"
 msgstr "ترکیب به عنوان کاروکه"
 
-#: ../src/command/edit.cpp:796
+#: ../src/command/edit.cpp:875
 msgid "&Concatenate"
 msgstr "متمرکز"
 
-#: ../src/command/edit.cpp:797
+#: ../src/command/edit.cpp:877
 #, fuzzy
 msgid "Concatenate"
 msgstr "متمرکز"
 
-#: ../src/command/edit.cpp:798
+#: ../src/command/edit.cpp:879
 #, fuzzy
 msgid "Join selected lines in a single one, concatenating text together"
 msgstr "تمام خط ها را در یک خط ترکیب میکند"
 
-#: ../src/command/edit.cpp:801 ../src/command/edit.cpp:812
+#: ../src/command/edit.cpp:882 ../src/command/edit.cpp:896
 #, fuzzy
 msgid "join lines"
 msgstr "پیوستن خطوط به هم"
 
-#: ../src/command/edit.cpp:807
+#: ../src/command/edit.cpp:889
 msgid "Keep &First"
 msgstr "نگهداشتن اولی"
 
-#: ../src/command/edit.cpp:808
+#: ../src/command/edit.cpp:891
 #, fuzzy
 msgid "Keep First"
 msgstr "نگهداشتن اولی"
 
-#: ../src/command/edit.cpp:809
+#: ../src/command/edit.cpp:893
 #, fuzzy
 msgid ""
 "Join selected lines in a single one, keeping text of first and discarding "
@@ -1142,192 +1158,192 @@ msgstr ""
 "خطوط انتخابی را ترکیب کرده و تنها متن خط ابتدا را نگه میدارد و بقیه خطوط را "
 "حذف میکند"
 
-#: ../src/command/edit.cpp:850
+#: ../src/command/edit.cpp:936
 #, fuzzy
 msgid "&Paste Lines"
 msgstr "چسباندن خطوط"
 
-#: ../src/command/edit.cpp:851
+#: ../src/command/edit.cpp:938
 msgid "Paste Lines"
 msgstr "چسباندن خطوط"
 
-#: ../src/command/edit.cpp:852
+#: ../src/command/edit.cpp:940
 msgid "Paste subtitles"
 msgstr "چسباندن زیرنویس ها"
 
-#: ../src/command/edit.cpp:881
+#: ../src/command/edit.cpp:970
 #, fuzzy
 msgid "Paste Lines &Over..."
 msgstr "چسباندن بر روی خطوط "
 
-#: ../src/command/edit.cpp:882
+#: ../src/command/edit.cpp:972
 msgid "Paste Lines Over"
 msgstr "چسباندن بر روی خطوط "
 
-#: ../src/command/edit.cpp:883
+#: ../src/command/edit.cpp:974
 msgid "Paste subtitles over others"
 msgstr "چسباندن خطوط بر روی خطوط دیگر ..."
 
-#: ../src/command/edit.cpp:966
+#: ../src/command/edit.cpp:1058
 #, fuzzy
 msgid "Recom&bine Lines"
 msgstr "ترکیب خطوط"
 
-#: ../src/command/edit.cpp:967
+#: ../src/command/edit.cpp:1060
 msgid "Recombine Lines"
 msgstr "ترکیب خطوط"
 
-#: ../src/command/edit.cpp:968
+#: ../src/command/edit.cpp:1062
 #, fuzzy
 msgid "Recombine subtitles which have been split and merged"
 msgstr "ترکیب مجدد زیرنویس زمانی که آنها از یکدیگر جدا شده باشند"
 
-#: ../src/command/edit.cpp:1038
+#: ../src/command/edit.cpp:1132
 msgid "combining"
 msgstr "ترکیب"
 
-#: ../src/command/edit.cpp:1044 ../src/command/edit.cpp:1045
+#: ../src/command/edit.cpp:1139 ../src/command/edit.cpp:1141
 msgid "Split Lines (by karaoke)"
 msgstr "(جداسازی خطوط(به وسیله کاروکه"
 
-#: ../src/command/edit.cpp:1046
+#: ../src/command/edit.cpp:1143
 #, fuzzy
 msgid "Use karaoke timing to split line into multiple smaller lines"
 msgstr "بر اساس زمانبندی کاروکه خط را به چندین خط کوچکتر تبدیل میکند"
 
-#: ../src/command/edit.cpp:1080
+#: ../src/command/edit.cpp:1177
 msgid "splitting"
 msgstr "جداسازی"
 
-#: ../src/command/edit.cpp:1112 ../src/command/edit.cpp:1113
-#: ../src/subs_edit_ctrl.cpp:416
+#: ../src/command/edit.cpp:1210 ../src/command/edit.cpp:1212
+#: ../src/subs_edit_ctrl.cpp:161 ../src/subs_edit_ctrl_stc.cpp:416
 msgid "Split at cursor (estimate times)"
 msgstr "جداساری در نقطه مکان نما-زمان تخمینی"
 
-#: ../src/command/edit.cpp:1114
+#: ../src/command/edit.cpp:1214
 msgid ""
 "Split the current line at the cursor, dividing the original line's duration "
 "between the new ones"
 msgstr ""
 
-#: ../src/command/edit.cpp:1128 ../src/command/edit.cpp:1129
-#: ../src/subs_edit_ctrl.cpp:415
+#: ../src/command/edit.cpp:1229 ../src/command/edit.cpp:1231
+#: ../src/subs_edit_ctrl.cpp:160 ../src/subs_edit_ctrl_stc.cpp:415
 msgid "Split at cursor (preserve times)"
 msgstr "جداساری در نقطه مکان نما-حفظ زمان"
 
-#: ../src/command/edit.cpp:1130
+#: ../src/command/edit.cpp:1233
 msgid ""
 "Split the current line at the cursor, setting both lines to the original "
 "line's times"
 msgstr ""
 
-#: ../src/command/edit.cpp:1139 ../src/command/edit.cpp:1140
+#: ../src/command/edit.cpp:1243 ../src/command/edit.cpp:1245
 #, fuzzy
 msgid "Split at cursor (at video frame)"
 msgstr "جداساری در نقطه مکان نما-زمان تخمینی"
 
-#: ../src/command/edit.cpp:1141
+#: ../src/command/edit.cpp:1247
 msgid ""
 "Split the current line at the cursor, dividing the line's duration at the "
 "current video frame"
 msgstr ""
 
-#: ../src/command/edit.cpp:1157
+#: ../src/command/edit.cpp:1265
 #, fuzzy
 msgid "Redo last undone action"
 msgstr "انجام دوباره آخرین تغییر"
 
-#: ../src/command/edit.cpp:1162
+#: ../src/command/edit.cpp:1271
 msgid "Nothing to &redo"
 msgstr ""
 
-#: ../src/command/edit.cpp:1163
+#: ../src/command/edit.cpp:1272
 #, fuzzy, c-format
 msgid "&Redo %s"
 msgstr "ازنو"
 
-#: ../src/command/edit.cpp:1167
+#: ../src/command/edit.cpp:1277
 msgid "Nothing to redo"
 msgstr ""
 
-#: ../src/command/edit.cpp:1168
+#: ../src/command/edit.cpp:1278
 #, fuzzy, c-format
 msgid "Redo %s"
 msgstr "بازچین"
 
-#: ../src/command/edit.cpp:1183
+#: ../src/command/edit.cpp:1295
 #, fuzzy
 msgid "Undo last action"
 msgstr "برگشت به آخرین تغییر"
 
-#: ../src/command/edit.cpp:1188
+#: ../src/command/edit.cpp:1301
 msgid "Nothing to &undo"
 msgstr ""
 
-#: ../src/command/edit.cpp:1189
+#: ../src/command/edit.cpp:1302
 #, fuzzy, c-format
 msgid "&Undo %s"
 msgstr "برگشت"
 
-#: ../src/command/edit.cpp:1193
+#: ../src/command/edit.cpp:1307
 msgid "Nothing to undo"
 msgstr ""
 
-#: ../src/command/edit.cpp:1194
+#: ../src/command/edit.cpp:1308
 #, fuzzy, c-format
 msgid "Undo %s"
 msgstr "بازگرداندن"
 
-#: ../src/command/edit.cpp:1208 ../src/command/edit.cpp:1209
+#: ../src/command/edit.cpp:1323 ../src/command/edit.cpp:1325
 #, fuzzy
 msgid "Revert"
 msgstr "معکوس"
 
-#: ../src/command/edit.cpp:1210
-msgid "Revert the active line to its initial state (shown in the upper editor)"
+#: ../src/command/edit.cpp:1327
+msgid "Revert the active line to its initial state"
 msgstr ""
 
-#: ../src/command/edit.cpp:1215
+#: ../src/command/edit.cpp:1332
 #, fuzzy
 msgid "revert line"
 msgstr "خط بعد"
 
-#: ../src/command/edit.cpp:1221 ../src/command/edit.cpp:1222
-#: ../src/preferences.cpp:401
+#: ../src/command/edit.cpp:1339 ../src/command/edit.cpp:1341
+#: ../src/preferences.cpp:410
 msgid "Clear"
 msgstr "پاک کردن"
 
-#: ../src/command/edit.cpp:1223
+#: ../src/command/edit.cpp:1343
 #, fuzzy
 msgid "Clear the current line's text"
 msgstr "پخش این خط"
 
-#: ../src/command/edit.cpp:1228 ../src/command/edit.cpp:1247
+#: ../src/command/edit.cpp:1348 ../src/command/edit.cpp:1371
 #, fuzzy
 msgid "clear line"
 msgstr "خط بعد"
 
-#: ../src/command/edit.cpp:1235 ../src/command/edit.cpp:1236
+#: ../src/command/edit.cpp:1357 ../src/command/edit.cpp:1359
 #, fuzzy
 msgid "Clear Text"
 msgstr "پاک کردن"
 
-#: ../src/command/edit.cpp:1237
+#: ../src/command/edit.cpp:1361
 msgid "Clear the current line's text, leaving override tags"
 msgstr ""
 
-#: ../src/command/edit.cpp:1253 ../src/command/edit.cpp:1254
+#: ../src/command/edit.cpp:1378 ../src/command/edit.cpp:1380
 #: ../src/command/tool.cpp:270
 #, fuzzy
 msgid "Insert Original"
 msgstr "وارد کردن اصلی"
 
-#: ../src/command/edit.cpp:1255
+#: ../src/command/edit.cpp:1382
 #, fuzzy
 msgid "Insert the original line text at the cursor"
 msgstr "یک خط بعد از خط کنونی ایجاد میکند"
 
-#: ../src/command/edit.cpp:1263
+#: ../src/command/edit.cpp:1391
 #, fuzzy
 msgid "insert original"
 msgstr "وارد کردن اصلی"
@@ -1402,7 +1418,7 @@ msgstr "افکت"
 
 #: ../src/command/grid.cpp:134 ../src/command/grid.cpp:146
 #: ../src/dialog_paste_over.cpp:72 ../src/grid_column.cpp:214
-#: ../src/grid_column.cpp:215 ../src/subs_edit_box.cpp:139
+#: ../src/grid_column.cpp:215 ../src/subs_edit_box.cpp:148
 msgid "Effect"
 msgstr "افکت"
 
@@ -1977,7 +1993,8 @@ msgid "Save subtitles with another name"
 msgstr "ذخیره زیرنویس با نامی دیگر"
 
 #: ../src/command/subtitle.cpp:396 ../src/dialog_export.cpp:124
-#: ../src/dialog_selected_choices.cpp:26 ../src/subs_edit_ctrl.cpp:410
+#: ../src/dialog_selected_choices.cpp:26 ../src/subs_edit_ctrl.cpp:155
+#: ../src/subs_edit_ctrl_stc.cpp:410
 msgid "Select &All"
 msgstr "انتخاب همه"
 
@@ -2352,7 +2369,7 @@ msgid "&Accept changes"
 msgstr "پذیرفتن تغییرات"
 
 #: ../src/command/tool.cpp:142 ../src/command/tool.cpp:226
-#: ../src/dialog_styling_assistant.cpp:90 ../src/dialog_translation.cpp:117
+#: ../src/dialog_styling_assistant.cpp:90 ../src/dialog_translation.cpp:138
 msgid "Accept changes"
 msgstr "پذیرفتن تغییرات"
 
@@ -2366,7 +2383,7 @@ msgid "&Preview changes"
 msgstr "پیش نمایش تغییرات"
 
 #: ../src/command/tool.cpp:153 ../src/command/tool.cpp:237
-#: ../src/dialog_styling_assistant.cpp:91 ../src/dialog_translation.cpp:118
+#: ../src/dialog_styling_assistant.cpp:91 ../src/dialog_translation.cpp:139
 msgid "Preview changes"
 msgstr "پیش نمایش تغییرات"
 
@@ -2421,8 +2438,8 @@ msgstr "نرم افزار مقدیر انتخاب شده در بخشهای مخ�
 msgid "&Translation Assistant..."
 msgstr "دستیار ترجمه ..."
 
-#: ../src/command/tool.cpp:201 ../src/dialog_translation.cpp:66
-#: ../src/preferences.cpp:230
+#: ../src/command/tool.cpp:201 ../src/dialog_translation.cpp:69
+#: ../src/preferences.cpp:237
 msgid "Translation Assistant"
 msgstr ".دستیار ترجمه"
 
@@ -3065,7 +3082,7 @@ msgid "E&xtract"
 msgstr "استخراج"
 
 #: ../src/dialog_attachments.cpp:79 ../src/dialog_style_manager.cpp:214
-#: ../src/preferences.cpp:596
+#: ../src/preferences.cpp:605
 msgid "&Delete"
 msgstr "حذف"
 
@@ -3628,7 +3645,7 @@ msgstr "!شروع"
 #: ../src/dialog_fonts_collector.cpp:307 ../src/dialog_fonts_collector.cpp:312
 #: ../src/dialog_fonts_collector.cpp:317 ../src/dialog_kara_timing_copy.cpp:574
 #: ../src/dialog_kara_timing_copy.cpp:576
-#: ../src/dialog_kara_timing_copy.cpp:626 ../src/preferences.cpp:263
+#: ../src/dialog_kara_timing_copy.cpp:626 ../src/preferences.cpp:271
 msgid "Error"
 msgstr "خطا"
 
@@ -3805,7 +3822,7 @@ msgid "Style"
 msgstr "استایل"
 
 #: ../src/dialog_paste_over.cpp:68 ../src/grid_column.cpp:228
-#: ../src/grid_column.cpp:229 ../src/subs_edit_box.cpp:134
+#: ../src/grid_column.cpp:229 ../src/subs_edit_box.cpp:142
 msgid "Actor"
 msgstr "بازیگر"
 
@@ -4328,15 +4345,15 @@ msgstr "زمان ها"
 msgid "&Clear"
 msgstr "پاک کردن"
 
-#: ../src/dialog_shift_times.cpp:203
+#: ../src/dialog_shift_times.cpp:204
 msgid "Shift by"
 msgstr "انتقال بوسیله"
 
-#: ../src/dialog_shift_times.cpp:212
+#: ../src/dialog_shift_times.cpp:213
 msgid "Load from history"
 msgstr ""
 
-#: ../src/dialog_shift_times.cpp:410
+#: ../src/dialog_shift_times.cpp:411
 msgid "shifting"
 msgstr "انتقال"
 
@@ -4398,7 +4415,7 @@ msgstr "ویرایشگر استایل"
 msgid "Font"
 msgstr "فونت"
 
-#: ../src/dialog_style_editor.cpp:180 ../src/preferences.cpp:238
+#: ../src/dialog_style_editor.cpp:180 ../src/preferences.cpp:245
 msgid "Colors"
 msgstr "رنگ ها"
 
@@ -4592,27 +4609,27 @@ msgstr "متنی که برای پیش نمایش استفاده می شود"
 msgid "Color of preview background"
 msgstr "رنگ پس زمینه پیش نمایش"
 
-#: ../src/dialog_style_editor.cpp:420
+#: ../src/dialog_style_editor.cpp:421
 #, fuzzy
 msgid "Style name conflict"
 msgstr "تداخل نام فهرست"
 
-#: ../src/dialog_style_editor.cpp:420
+#: ../src/dialog_style_editor.cpp:421
 msgid "There is already a style with this name. Please choose another name."
 msgstr ""
 
-#: ../src/dialog_style_editor.cpp:432
+#: ../src/dialog_style_editor.cpp:433
 msgid ""
 "Do you want to change all instances of this style in the script to this new "
 "name?"
 msgstr ""
 "آیا میخواهید که تمام خط ها با این استایل به استایل جدید تغییر پیدا کنند؟"
 
-#: ../src/dialog_style_editor.cpp:433
+#: ../src/dialog_style_editor.cpp:434
 msgid "Update script?"
 msgstr "بروزرسانی اسکریپت؟"
 
-#: ../src/dialog_style_editor.cpp:460 ../src/subs_edit_box.cpp:633
+#: ../src/dialog_style_editor.cpp:461 ../src/subs_edit_box.cpp:816
 msgid "style change"
 msgstr "تعویض استایل"
 
@@ -4636,16 +4653,16 @@ msgstr "حرکت استایل به انتها"
 msgid "Sort styles alphabetically"
 msgstr "استایل ها را براساس الفبا مرتب کن"
 
-#: ../src/dialog_style_manager.cpp:211 ../src/preferences.cpp:594
+#: ../src/dialog_style_manager.cpp:211 ../src/preferences.cpp:603
 msgid "&New"
 msgstr ""
 
-#: ../src/dialog_style_manager.cpp:212 ../src/preferences.cpp:595
+#: ../src/dialog_style_manager.cpp:212 ../src/preferences.cpp:604
 msgid "&Edit"
 msgstr "ویرایش"
 
-#: ../src/dialog_style_manager.cpp:213 ../src/subs_edit_ctrl.cpp:407
-#: ../src/timeedit_ctrl.cpp:209
+#: ../src/dialog_style_manager.cpp:213 ../src/subs_edit_ctrl.cpp:152
+#: ../src/subs_edit_ctrl_stc.cpp:407 ../src/timeedit_ctrl.cpp:209
 msgid "&Copy"
 msgstr "کپی"
 
@@ -4830,24 +4847,24 @@ msgstr "استایل های موجود"
 msgid "Set style"
 msgstr "قرار دادن استایل"
 
-#: ../src/dialog_styling_assistant.cpp:87 ../src/dialog_translation.cpp:114
+#: ../src/dialog_styling_assistant.cpp:87 ../src/dialog_translation.cpp:135
 msgid "Keys"
 msgstr "کلید ها"
 
-#: ../src/dialog_styling_assistant.cpp:92 ../src/dialog_translation.cpp:119
+#: ../src/dialog_styling_assistant.cpp:92 ../src/dialog_translation.cpp:140
 msgid "Previous line"
 msgstr "خط قبل"
 
-#: ../src/dialog_styling_assistant.cpp:93 ../src/dialog_translation.cpp:120
+#: ../src/dialog_styling_assistant.cpp:93 ../src/dialog_translation.cpp:141
 msgid "Next line"
 msgstr "خط بعد"
 
-#: ../src/dialog_styling_assistant.cpp:94 ../src/dialog_translation.cpp:122
+#: ../src/dialog_styling_assistant.cpp:94 ../src/dialog_translation.cpp:143
 #, fuzzy
 msgid "Play video"
 msgstr "پخش ویدیو"
 
-#: ../src/dialog_styling_assistant.cpp:95 ../src/dialog_translation.cpp:123
+#: ../src/dialog_styling_assistant.cpp:95 ../src/dialog_translation.cpp:144
 #, fuzzy
 msgid "Play audio"
 msgstr "پخش صدا"
@@ -4866,16 +4883,16 @@ msgstr "انتخاب استایل"
 msgid "&Seek video to line start time"
 msgstr "پرش به ابتدای ویدیو"
 
-#: ../src/dialog_styling_assistant.cpp:110 ../src/dialog_translation.cpp:135
+#: ../src/dialog_styling_assistant.cpp:110 ../src/dialog_translation.cpp:156
 msgid "Actions"
 msgstr "اقدامات"
 
-#: ../src/dialog_styling_assistant.cpp:113 ../src/dialog_translation.cpp:137
+#: ../src/dialog_styling_assistant.cpp:113 ../src/dialog_translation.cpp:158
 #, fuzzy
 msgid "Play &Audio"
 msgstr "پخش صدا"
 
-#: ../src/dialog_styling_assistant.cpp:117 ../src/dialog_translation.cpp:142
+#: ../src/dialog_styling_assistant.cpp:117 ../src/dialog_translation.cpp:163
 #, fuzzy
 msgid "Play &Video"
 msgstr "پخش ویدیو"
@@ -5094,38 +5111,38 @@ msgstr "اسکریپت نامعتبر"
 msgid "timing processor"
 msgstr "پردازشگر زمانبندی"
 
-#: ../src/dialog_translation.cpp:79
+#: ../src/dialog_translation.cpp:85
 msgid "Original"
 msgstr "اصلی"
 
-#: ../src/dialog_translation.cpp:106
+#: ../src/dialog_translation.cpp:118
 msgid "Translation"
 msgstr "ترجمه"
 
-#: ../src/dialog_translation.cpp:121
+#: ../src/dialog_translation.cpp:142
 msgid "Insert original"
 msgstr "وارد کردن اصلی"
 
-#: ../src/dialog_translation.cpp:124
+#: ../src/dialog_translation.cpp:145
 #, fuzzy
 msgid "Delete line"
 msgstr "حذف خطوط"
 
-#: ../src/dialog_translation.cpp:127
+#: ../src/dialog_translation.cpp:148
 #, fuzzy
 msgid "Enable &preview"
 msgstr "فعال سازی پیشنمایش"
 
-#: ../src/dialog_translation.cpp:184 ../src/dialog_translation.cpp:288
+#: ../src/dialog_translation.cpp:205 ../src/dialog_translation.cpp:329
 msgid "No more lines to translate."
 msgstr "خط دیگری برای ترجمه وجود ندارد"
 
-#: ../src/dialog_translation.cpp:192 ../src/dialog_translation.cpp:242
+#: ../src/dialog_translation.cpp:213 ../src/dialog_translation.cpp:263
 #, fuzzy, c-format
 msgid "Current line: %d/%d"
 msgstr "%i/% i :خط کنونی"
 
-#: ../src/dialog_translation.cpp:283
+#: ../src/dialog_translation.cpp:324
 msgid "translation assistant"
 msgstr "دستیار ترجمه"
 
@@ -5218,7 +5235,7 @@ msgid "Decoder:"
 msgstr "دیکودر:"
 
 #: ../src/dialog_video_details.cpp:66 ../src/preferences.cpp:168
-#: ../src/preferences.cpp:436
+#: ../src/preferences.cpp:445
 msgid "Video"
 msgstr "ویدیو"
 
@@ -5570,7 +5587,7 @@ msgid "Reading subtitles from Matroska file."
 msgstr "Matroska خواندن زیرنویس از فایل"
 
 #: ../src/preferences.cpp:62 ../src/preferences.cpp:64
-#: ../src/preferences.cpp:332 ../src/preferences.cpp:353
+#: ../src/preferences.cpp:341 ../src/preferences.cpp:362
 msgid "General"
 msgstr "عمومی"
 
@@ -5665,7 +5682,7 @@ msgstr "استایل را وارد میکند"
 msgid "Plain text import"
 msgstr "استایل را وارد میکند"
 
-#: ../src/preferences.cpp:128 ../src/preferences.cpp:366
+#: ../src/preferences.cpp:128 ../src/preferences.cpp:375
 msgid "Audio"
 msgstr "صدا"
 
@@ -5773,7 +5790,7 @@ msgstr "کشیدن زمان مکان نما"
 msgid "Video position"
 msgstr "کشیدن مکان ویدیو"
 
-#: ../src/preferences.cpp:156 ../src/preferences.cpp:252
+#: ../src/preferences.cpp:156 ../src/preferences.cpp:259
 #, fuzzy
 msgid "Seconds boundaries"
 msgstr "مرز زمانی"
@@ -5862,359 +5879,363 @@ msgstr "نام فونت"
 msgid "Edit Box"
 msgstr "ویرایش بخش اعمال تغییرات "
 
-#: ../src/preferences.cpp:210
+#: ../src/preferences.cpp:211
+msgid "Use styled edit box"
+msgstr ""
+
+#: ../src/preferences.cpp:212
 msgid "Enable call tips"
 msgstr "فعال سازی فراخوانی راهنمایی ها"
 
-#: ../src/preferences.cpp:211
+#: ../src/preferences.cpp:214
 #, fuzzy
 msgid "Overwrite in time boxes"
 msgstr "بازنویسی -وارد کردن در بخش های زمان"
 
-#: ../src/preferences.cpp:213
+#: ../src/preferences.cpp:216
 msgid "Enable syntax highlighting"
 msgstr "  مشخص کننده روش فعالسازی "
 
-#: ../src/preferences.cpp:214
+#: ../src/preferences.cpp:221
 #, fuzzy
 msgid "Dictionaries path"
 msgstr " در هارد مسیرکش   "
 
-#: ../src/preferences.cpp:217
+#: ../src/preferences.cpp:224
 msgid "Character Counter"
 msgstr ""
 
-#: ../src/preferences.cpp:218
+#: ../src/preferences.cpp:225
 #, fuzzy
 msgid "Maximum characters per line"
 msgstr "ماکزیمم مقدار فایل های فریم های کلیدی اخیر"
 
-#: ../src/preferences.cpp:219
+#: ../src/preferences.cpp:226
 msgid "Characters Per Second Warning Threshold"
 msgstr ""
 
-#: ../src/preferences.cpp:220
+#: ../src/preferences.cpp:227
 msgid "Characters Per Second Error Threshold"
 msgstr ""
 
-#: ../src/preferences.cpp:221
+#: ../src/preferences.cpp:228
 msgid "Ignore whitespace"
 msgstr ""
 
-#: ../src/preferences.cpp:222
+#: ../src/preferences.cpp:229
 msgid "Ignore punctuation"
 msgstr ""
 
-#: ../src/preferences.cpp:224
+#: ../src/preferences.cpp:231
 msgid "Grid"
 msgstr ""
 
-#: ../src/preferences.cpp:225
+#: ../src/preferences.cpp:232
 msgid "Focus grid on click"
 msgstr ""
 
-#: ../src/preferences.cpp:226
+#: ../src/preferences.cpp:233
 msgid "Highlight visible subtitles"
 msgstr ""
 
-#: ../src/preferences.cpp:227
+#: ../src/preferences.cpp:234
 msgid "Hide overrides symbol"
 msgstr ""
 
-#: ../src/preferences.cpp:231
+#: ../src/preferences.cpp:238
 msgid "Skip over whitespace"
 msgstr ""
 
-#: ../src/preferences.cpp:246
+#: ../src/preferences.cpp:253
 #, fuzzy
 msgid "Audio Display"
 msgstr "پخش کننده صدا"
 
-#: ../src/preferences.cpp:247
+#: ../src/preferences.cpp:254
 msgid "Play cursor"
 msgstr "نشانگر پخش"
 
-#: ../src/preferences.cpp:248
+#: ../src/preferences.cpp:255
 #, fuzzy
 msgid "Line boundary start"
 msgstr "مرز- شروع"
 
-#: ../src/preferences.cpp:249
+#: ../src/preferences.cpp:256
 #, fuzzy
 msgid "Line boundary end"
 msgstr "مرز- پایان"
 
-#: ../src/preferences.cpp:250
+#: ../src/preferences.cpp:257
 #, fuzzy
 msgid "Line boundary inactive line"
 msgstr "مرز- غیر فعال"
 
-#: ../src/preferences.cpp:251
+#: ../src/preferences.cpp:258
 #, fuzzy
 msgid "Syllable boundaries"
 msgstr "مرز سیلاب"
 
-#: ../src/preferences.cpp:254
+#: ../src/preferences.cpp:261
 #, fuzzy
 msgid "Syntax Highlighting"
 msgstr "  مشخص کننده روش فعالسازی "
 
-#: ../src/preferences.cpp:255
+#: ../src/preferences.cpp:262
 msgid "Background"
 msgstr "پس زمینه"
 
-#: ../src/preferences.cpp:256
+#: ../src/preferences.cpp:263
 msgid "Normal"
 msgstr "معمولی"
 
-#: ../src/preferences.cpp:257
+#: ../src/preferences.cpp:265
 msgid "Comments"
 msgstr "نظرات"
 
-#: ../src/preferences.cpp:258
+#: ../src/preferences.cpp:266
 msgid "Drawings"
 msgstr ""
 
-#: ../src/preferences.cpp:259
+#: ../src/preferences.cpp:267
 msgid "Brackets"
 msgstr "براکت ها"
 
-#: ../src/preferences.cpp:260
+#: ../src/preferences.cpp:268
 msgid "Slashes and Parentheses"
 msgstr "اسلش ها و پرانتزها"
 
-#: ../src/preferences.cpp:261
+#: ../src/preferences.cpp:269
 msgid "Tags"
 msgstr "تگ ها"
 
-#: ../src/preferences.cpp:262
+#: ../src/preferences.cpp:270
 msgid "Parameters"
 msgstr "پارامتر ها"
 
-#: ../src/preferences.cpp:264
+#: ../src/preferences.cpp:272
 msgid "Error Background"
 msgstr "خطا  در پس زمینه"
 
-#: ../src/preferences.cpp:265
+#: ../src/preferences.cpp:273
 msgid "Line Break"
 msgstr "شکستن خط"
 
-#: ../src/preferences.cpp:266
+#: ../src/preferences.cpp:274
 msgid "Karaoke templates"
 msgstr "قالب های کاراوکه"
 
-#: ../src/preferences.cpp:267
+#: ../src/preferences.cpp:275
 #, fuzzy
 msgid "Karaoke variables"
 msgstr "قالب های کاراوکه"
 
-#: ../src/preferences.cpp:273
+#: ../src/preferences.cpp:282
 #, fuzzy
 msgid "Audio Color Schemes"
 msgstr "مقدار صدا"
 
-#: ../src/preferences.cpp:275 ../src/preferences.cpp:382
+#: ../src/preferences.cpp:284 ../src/preferences.cpp:391
 #, fuzzy
 msgid "Spectrum"
 msgstr "حالت طیف:"
 
-#: ../src/preferences.cpp:276
+#: ../src/preferences.cpp:285
 msgid "Waveform"
 msgstr "شکل موج"
 
-#: ../src/preferences.cpp:278
+#: ../src/preferences.cpp:287
 #, fuzzy
 msgid "Subtitle Grid"
 msgstr "بخش نمایش خطوط زیرنویس"
 
-#: ../src/preferences.cpp:279
+#: ../src/preferences.cpp:288
 msgid "Standard foreground"
 msgstr "پیش زمینه استاندارد"
 
-#: ../src/preferences.cpp:280
+#: ../src/preferences.cpp:289
 msgid "Standard background"
 msgstr "پس زمینه استاندارد"
 
-#: ../src/preferences.cpp:281
+#: ../src/preferences.cpp:290
 msgid "Selection foreground"
 msgstr "پیش زمینه انتخاب ها"
 
-#: ../src/preferences.cpp:282
+#: ../src/preferences.cpp:291
 msgid "Selection background"
 msgstr "پس زمینه انتخاب ها"
 
-#: ../src/preferences.cpp:283
+#: ../src/preferences.cpp:292
 msgid "Collision foreground"
 msgstr "پیش زمینه برخورد"
 
-#: ../src/preferences.cpp:284
+#: ../src/preferences.cpp:293
 #, fuzzy
 msgid "In frame background"
 msgstr "خطوط در پس زمینه فریم"
 
-#: ../src/preferences.cpp:285
+#: ../src/preferences.cpp:294
 msgid "Comment background"
 msgstr "پس زمینه نظرات"
 
-#: ../src/preferences.cpp:286
+#: ../src/preferences.cpp:295
 msgid "Selected comment background"
 msgstr "پس زمینه نظرات انتخاب شده"
 
-#: ../src/preferences.cpp:287
+#: ../src/preferences.cpp:296
 #, fuzzy
 msgid "Header background"
 msgstr "پس زمینه استاندارد"
 
-#: ../src/preferences.cpp:288
+#: ../src/preferences.cpp:297
 msgid "Left Column"
 msgstr "ستون چپ"
 
-#: ../src/preferences.cpp:289
+#: ../src/preferences.cpp:298
 msgid "Active Line Border"
 msgstr "حاشیه فعال خط"
 
-#: ../src/preferences.cpp:290
+#: ../src/preferences.cpp:299
 msgid "Lines"
 msgstr "خط ها"
 
-#: ../src/preferences.cpp:291
+#: ../src/preferences.cpp:300
 #, fuzzy
 msgid "CPS Error"
 msgstr "خطا"
 
-#: ../src/preferences.cpp:293
+#: ../src/preferences.cpp:302
 #, fuzzy
 msgid "Visual Typesetting Tools"
 msgstr "حروف چینی دیداری"
 
-#: ../src/preferences.cpp:294
+#: ../src/preferences.cpp:303
 #, fuzzy
 msgid "Primary Lines"
 msgstr "اولیه"
 
-#: ../src/preferences.cpp:295
+#: ../src/preferences.cpp:304
 #, fuzzy
 msgid "Secondary Lines"
 msgstr "ثانویه"
 
-#: ../src/preferences.cpp:296
+#: ../src/preferences.cpp:305
 #, fuzzy
 msgid "Primary Highlight"
 msgstr "رنگ اولیه"
 
-#: ../src/preferences.cpp:297
+#: ../src/preferences.cpp:306
 #, fuzzy
 msgid "Secondary Highlight"
 msgstr "رنگ ثانویه"
 
-#: ../src/preferences.cpp:300
+#: ../src/preferences.cpp:309
 #, fuzzy
 msgid "Visual Typesetting Tools Alpha"
 msgstr "حروف چینی دیداری"
 
-#: ../src/preferences.cpp:301
+#: ../src/preferences.cpp:310
 msgid "Shaded Area"
 msgstr ""
 
-#: ../src/preferences.cpp:310
+#: ../src/preferences.cpp:319
 #, fuzzy
 msgid "Backup"
 msgstr "پس زمینه"
 
-#: ../src/preferences.cpp:312
+#: ../src/preferences.cpp:321
 #, fuzzy
 msgid "Automatic Save"
 msgstr "مدیریت عملیات خودکار"
 
-#: ../src/preferences.cpp:313 ../src/preferences.cpp:321
+#: ../src/preferences.cpp:322 ../src/preferences.cpp:330
 msgid "Enable"
 msgstr "فعال"
 
-#: ../src/preferences.cpp:316
+#: ../src/preferences.cpp:325
 #, fuzzy
 msgid "Interval in seconds"
 msgstr "اضافه به انتخاب"
 
-#: ../src/preferences.cpp:317 ../src/preferences.cpp:323
-#: ../src/preferences.cpp:380
+#: ../src/preferences.cpp:326 ../src/preferences.cpp:332
+#: ../src/preferences.cpp:389
 msgid "Path"
 msgstr ""
 
-#: ../src/preferences.cpp:318
+#: ../src/preferences.cpp:327
 #, fuzzy
 msgid "Autosave after every change"
 msgstr "ذخیره اتوماتیک هر"
 
-#: ../src/preferences.cpp:320
+#: ../src/preferences.cpp:329
 #, fuzzy
 msgid "Automatic Backup"
 msgstr "پشتیبان گیری اتوماتیک"
 
-#: ../src/preferences.cpp:334
+#: ../src/preferences.cpp:343
 msgid "Base path"
 msgstr "مسیر اصلی"
 
-#: ../src/preferences.cpp:335
+#: ../src/preferences.cpp:344
 msgid "Include path"
 msgstr "مسیر قرار دادن"
 
-#: ../src/preferences.cpp:336
+#: ../src/preferences.cpp:345
 msgid "Auto-load path"
 msgstr "مسیر بارگذاری خودکار"
 
-#: ../src/preferences.cpp:338
+#: ../src/preferences.cpp:347
 msgid "0: Fatal"
 msgstr "0:کشنده"
 
-#: ../src/preferences.cpp:338
+#: ../src/preferences.cpp:347
 msgid "1: Error"
 msgstr "1:خطا"
 
-#: ../src/preferences.cpp:338
+#: ../src/preferences.cpp:347
 msgid "2: Warning"
 msgstr "2:اخطار"
 
-#: ../src/preferences.cpp:338
+#: ../src/preferences.cpp:347
 msgid "3: Hint"
 msgstr "3:راهنمایی"
 
-#: ../src/preferences.cpp:338
+#: ../src/preferences.cpp:347
 msgid "4: Debug"
 msgstr "4:اشکال زدایی"
 
-#: ../src/preferences.cpp:338
+#: ../src/preferences.cpp:347
 msgid "5: Trace"
 msgstr "5:ردیابی"
 
-#: ../src/preferences.cpp:340
+#: ../src/preferences.cpp:349
 msgid "Trace level"
 msgstr "سطح ردیابی"
 
-#: ../src/preferences.cpp:342
+#: ../src/preferences.cpp:351
 msgid "All scripts"
 msgstr "تمام اسکریپت ها"
 
-#: ../src/preferences.cpp:342
+#: ../src/preferences.cpp:351
 msgid "Global autoload scripts"
 msgstr "محل بارگذاری خودکار اسکریپت ها"
 
-#: ../src/preferences.cpp:342
+#: ../src/preferences.cpp:351
 msgid "No scripts"
 msgstr "اسکریپتی موجود نیست"
 
-#: ../src/preferences.cpp:342
+#: ../src/preferences.cpp:351
 msgid "Subtitle-local scripts"
 msgstr "اسکریپت های زیرنویس محلی"
 
-#: ../src/preferences.cpp:344
+#: ../src/preferences.cpp:353
 msgid "Autoreload on Export"
 msgstr "بارگذاری مجدد خودکار هنگام خروجی گرفتن"
 
-#: ../src/preferences.cpp:351
+#: ../src/preferences.cpp:360
 msgid "Advanced"
 msgstr "پیشرفته"
 
-#: ../src/preferences.cpp:355
+#: ../src/preferences.cpp:364
 #, fuzzy
 msgid ""
 "Changing these settings might result in bugs and/or crashes.  Do not touch "
@@ -6224,149 +6245,149 @@ msgstr ""
 "مشکلاتی شود \n"
 "درصورتی که مطمئنید این تنظیمات را تغییر دهید "
 
-#: ../src/preferences.cpp:368 ../src/preferences.cpp:438
+#: ../src/preferences.cpp:377 ../src/preferences.cpp:447
 msgid "Expert"
 msgstr ""
 
-#: ../src/preferences.cpp:371
+#: ../src/preferences.cpp:380
 msgid "Audio provider"
 msgstr "منبع صدا"
 
-#: ../src/preferences.cpp:374
+#: ../src/preferences.cpp:383
 msgid "Audio player"
 msgstr "پخش کننده صدا"
 
-#: ../src/preferences.cpp:376
+#: ../src/preferences.cpp:385
 #, fuzzy
 msgid "Cache"
 msgstr " نوع کش  "
 
-#: ../src/preferences.cpp:377
+#: ../src/preferences.cpp:386
 msgid "Hard Disk"
 msgstr "هارد دیسک"
 
-#: ../src/preferences.cpp:377
-msgid "None (NOT RECOMMENDED)"
-msgstr "(هیچ کدام(توصیه نمیشود"
+#: ../src/preferences.cpp:386
+msgid "None (Not recommended with Avisynth)"
+msgstr ""
 
-#: ../src/preferences.cpp:377
+#: ../src/preferences.cpp:386
 msgid "RAM"
 msgstr "رَم"
 
-#: ../src/preferences.cpp:379
+#: ../src/preferences.cpp:388
 msgid "Cache type"
 msgstr " نوع کش  "
 
-#: ../src/preferences.cpp:384
+#: ../src/preferences.cpp:393
 msgid "Better quality"
 msgstr "کیفیت بهتر"
 
-#: ../src/preferences.cpp:384
+#: ../src/preferences.cpp:393
 msgid "High quality"
 msgstr "کیفیت بالا"
 
-#: ../src/preferences.cpp:384
+#: ../src/preferences.cpp:393
 #, fuzzy
 msgid "Insane quality"
 msgstr "3-کیفیت عالی"
 
-#: ../src/preferences.cpp:384
+#: ../src/preferences.cpp:393
 msgid "Regular quality"
 msgstr "کیفیت معمولی "
 
-#: ../src/preferences.cpp:386
+#: ../src/preferences.cpp:395
 #, fuzzy
 msgid "Quality"
 msgstr "کیفیت بالا"
 
-#: ../src/preferences.cpp:388
+#: ../src/preferences.cpp:397
 #, fuzzy
 msgid "Cache memory max (MB)"
 msgstr "مقدار کش حافظه طیف نما به مگابایت"
 
-#: ../src/preferences.cpp:394
+#: ../src/preferences.cpp:403
 msgid "Avisynth down-mixer"
 msgstr "Avisynth down-mixer"
 
-#: ../src/preferences.cpp:395
+#: ../src/preferences.cpp:404
 msgid "Force sample rate"
 msgstr ""
 
-#: ../src/preferences.cpp:401
+#: ../src/preferences.cpp:410
 msgid "Abort"
 msgstr ""
 
-#: ../src/preferences.cpp:401
+#: ../src/preferences.cpp:410
 msgid "Ignore"
 msgstr "نادیده گرفتن"
 
-#: ../src/preferences.cpp:401
+#: ../src/preferences.cpp:410
 msgid "Stop"
 msgstr ""
 
-#: ../src/preferences.cpp:403
+#: ../src/preferences.cpp:412
 msgid "Audio indexing error handling mode"
 msgstr ""
 
-#: ../src/preferences.cpp:405
+#: ../src/preferences.cpp:414
 msgid "Always index all audio tracks"
 msgstr ""
 
-#: ../src/preferences.cpp:406
+#: ../src/preferences.cpp:415
 msgid "Downmix to 16bit mono audio"
 msgstr ""
 
-#: ../src/preferences.cpp:411
+#: ../src/preferences.cpp:420
 msgid "Portaudio device"
 msgstr ""
 
-#: ../src/preferences.cpp:416
+#: ../src/preferences.cpp:425
 msgid "OSS Device"
 msgstr ""
 
-#: ../src/preferences.cpp:427
+#: ../src/preferences.cpp:436
 msgid "Buffer latency"
 msgstr ""
 
-#: ../src/preferences.cpp:428
+#: ../src/preferences.cpp:437
 msgid "Buffer length"
 msgstr ""
 
-#: ../src/preferences.cpp:441
+#: ../src/preferences.cpp:450
 #, fuzzy
 msgid "Video provider"
 msgstr "تهیه کننده ویدیو"
 
-#: ../src/preferences.cpp:444
+#: ../src/preferences.cpp:453
 #, fuzzy
 msgid "Subtitles provider"
 msgstr "تهیه کننده زیرنویس ها"
 
-#: ../src/preferences.cpp:448
+#: ../src/preferences.cpp:457
 msgid "Allow pre-2.56a Avisynth"
 msgstr "نسخه های قبل از2.56 Avisynthقبول "
 
-#: ../src/preferences.cpp:450
+#: ../src/preferences.cpp:459
 msgid "Avisynth memory limit"
 msgstr " Avisynth محدودیت حافظه  "
 
-#: ../src/preferences.cpp:458
+#: ../src/preferences.cpp:467
 msgid "Debug log verbosity"
 msgstr ""
 
-#: ../src/preferences.cpp:460
+#: ../src/preferences.cpp:469
 msgid "Decoding threads"
 msgstr ""
 
-#: ../src/preferences.cpp:461
+#: ../src/preferences.cpp:470
 msgid "Enable unsafe seeking"
 msgstr ""
 
-#: ../src/preferences.cpp:590
+#: ../src/preferences.cpp:599
 msgid "Hotkeys"
 msgstr "کلید های میانبر"
 
-#: ../src/preferences.cpp:689
+#: ../src/preferences.cpp:698
 msgid ""
 "Are you sure that you want to restore the defaults? All your settings will "
 "be overridden."
@@ -6374,15 +6395,15 @@ msgstr ""
 "آیا مطمئنید که میخواهید همه را به پیش فرض برگردانید؟تمام تنظیمات شما از بین "
 "میرود"
 
-#: ../src/preferences.cpp:689
+#: ../src/preferences.cpp:698
 msgid "Restore defaults?"
 msgstr "برگشت به پیشفرض؟"
 
-#: ../src/preferences.cpp:707
+#: ../src/preferences.cpp:716
 msgid "Preferences"
 msgstr ""
 
-#: ../src/preferences.cpp:735
+#: ../src/preferences.cpp:744
 #, fuzzy
 msgid "&Restore Defaults"
 msgstr "برگشت به پیشفرض"
@@ -6514,30 +6535,30 @@ msgstr "بدون نام"
 msgid "untitled"
 msgstr "بدون نام"
 
-#: ../src/subs_edit_box.cpp:114
+#: ../src/subs_edit_box.cpp:122
 #, fuzzy
 msgid "&Comment"
 msgstr "نظر"
 
-#: ../src/subs_edit_box.cpp:115
+#: ../src/subs_edit_box.cpp:123
 msgid "Comment this line out. Commented lines don't show up on screen."
 msgstr "نظر شما در مورد این خط.این خطوط در صفحه نمایش داده نمیشود"
 
-#: ../src/subs_edit_box.cpp:122
+#: ../src/subs_edit_box.cpp:130
 msgid "Style for this line"
 msgstr "استایل این خط"
 
-#: ../src/subs_edit_box.cpp:124
+#: ../src/subs_edit_box.cpp:132
 msgid "Edit"
 msgstr "ویرایش"
 
-#: ../src/subs_edit_box.cpp:134
+#: ../src/subs_edit_box.cpp:143
 msgid ""
 "Actor name for this speech. This is only for reference, and is mainly "
 "useless."
 msgstr "نام بازیگر گوینده صحبت.این تنها مرجع است،ودر واقع بی استفاده است"
 
-#: ../src/subs_edit_box.cpp:139
+#: ../src/subs_edit_box.cpp:149
 msgid ""
 "Effect for this line. This can be used to store extra information for "
 "karaoke scripts, or for the effects supported by the renderer."
@@ -6545,159 +6566,168 @@ msgstr ""
 "افکت برای این خط.این بخش برای ذخیره اطلاعات تکمیلی در اسکریپت های کاروکه "
 "استفاده میشود یا برای افکت هایی که رندر کننده از آن ها پشتیبانی میکند"
 
-#: ../src/subs_edit_box.cpp:150
+#: ../src/subs_edit_box.cpp:160
 msgid "Number of characters in the longest line of this subtitle."
 msgstr ""
 
-#: ../src/subs_edit_box.cpp:166
+#: ../src/subs_edit_box.cpp:177
 msgid "Layer number"
 msgstr "شماره لایه"
 
-#: ../src/subs_edit_box.cpp:170
+#: ../src/subs_edit_box.cpp:181
 msgid "Start time"
 msgstr "زمان شروع"
 
-#: ../src/subs_edit_box.cpp:171
+#: ../src/subs_edit_box.cpp:182
 msgid "End time"
 msgstr "زمان اتمام"
 
-#: ../src/subs_edit_box.cpp:173
+#: ../src/subs_edit_box.cpp:184
 msgid "Line duration"
 msgstr "مدت زمان خط"
 
-#: ../src/subs_edit_box.cpp:176
+#: ../src/subs_edit_box.cpp:187
 #, fuzzy
 msgid "Left Margin (0 = default from style)"
 msgstr "(حاشیه چپ (0=پیشفرض"
 
-#: ../src/subs_edit_box.cpp:176
+#: ../src/subs_edit_box.cpp:187
 #, fuzzy
 msgid "left margin change"
 msgstr "تغییر حاشیه چپ"
 
-#: ../src/subs_edit_box.cpp:177
+#: ../src/subs_edit_box.cpp:188
 #, fuzzy
 msgid "Right Margin (0 = default from style)"
 msgstr "(حاشیه راست (0=پیشفرض"
 
-#: ../src/subs_edit_box.cpp:177
+#: ../src/subs_edit_box.cpp:188
 #, fuzzy
 msgid "right margin change"
 msgstr "تغییر حاشیه چپ"
 
-#: ../src/subs_edit_box.cpp:178
+#: ../src/subs_edit_box.cpp:189
 #, fuzzy
 msgid "Vertical Margin (0 = default from style)"
 msgstr "(حاشیه عمودی (0=پیشفرض"
 
-#: ../src/subs_edit_box.cpp:178
+#: ../src/subs_edit_box.cpp:189
 #, fuzzy
 msgid "vertical margin change"
 msgstr "تغییر حاشیه چپ"
 
-#: ../src/subs_edit_box.cpp:197
+#: ../src/subs_edit_box.cpp:208
 msgid "T&ime"
 msgstr ""
 
-#: ../src/subs_edit_box.cpp:197
+#: ../src/subs_edit_box.cpp:208
 msgid "Time by h:mm:ss.cs"
 msgstr "Time by h:mm:ss.cs"
 
-#: ../src/subs_edit_box.cpp:198
+#: ../src/subs_edit_box.cpp:209
 #, fuzzy
 msgid "F&rame"
 msgstr "فریم"
 
-#: ../src/subs_edit_box.cpp:198
+#: ../src/subs_edit_box.cpp:209
 msgid "Time by frame number"
 msgstr "زمان بر اساس شماره فریم"
 
-#: ../src/subs_edit_box.cpp:201
-#, fuzzy
-msgid "Show Original"
-msgstr "اصلی"
-
-#: ../src/subs_edit_box.cpp:202
-msgid ""
-"Show the contents of the subtitle line when it was first selected above the "
-"edit box. This is sometimes useful when editing subtitles or translating "
-"subtitles into another language."
+#: ../src/subs_edit_box.cpp:212
+msgid "Analyzing subtitles in the Zhi Meng Subtitle Group format"
 msgstr ""
 
-#: ../src/subs_edit_box.cpp:474
+#: ../src/subs_edit_box.cpp:214
+msgid ""
+"Parse the subtitles in the \"Chinese\\NJapanese\" format, with Japanese on "
+"top and Chinese on the bottom. Both parts are editable, and any changes will "
+"be synchronized in real time."
+msgstr ""
+
+#: ../src/subs_edit_box.cpp:560 ../src/subs_edit_box.cpp:575
+#: ../src/subs_edit_box.cpp:586 ../src/subs_edit_box.cpp:601
 #, fuzzy
 msgid "modify text"
 msgstr "تغییر زمان ها"
 
-#: ../src/subs_edit_box.cpp:552
+#: ../src/subs_edit_box.cpp:691
 msgid "modify times"
 msgstr "تغییر زمان ها"
 
-#: ../src/subs_edit_box.cpp:639
+#: ../src/subs_edit_box.cpp:822
 msgid "actor change"
 msgstr "تغییر بازیگر"
 
-#: ../src/subs_edit_box.cpp:644
+#: ../src/subs_edit_box.cpp:828
 msgid "layer change"
 msgstr "تعویض لایه"
 
-#: ../src/subs_edit_box.cpp:649
+#: ../src/subs_edit_box.cpp:833
 msgid "effect change"
 msgstr "تغییر افکت"
 
-#: ../src/subs_edit_box.cpp:654
+#: ../src/subs_edit_box.cpp:839
 msgid "comment change"
 msgstr "تغییر نظر"
 
-#: ../src/subs_edit_ctrl.cpp:396
-msgid "Spell checker language"
-msgstr "بررسی خطاهای املایی"
+#: ../src/subs_edit_box.cpp:880 ../src/subs_edit_box.cpp:892
+msgid "Japanese"
+msgstr ""
 
-#: ../src/subs_edit_ctrl.cpp:406
+#: ../src/subs_edit_box.cpp:882 ../src/subs_edit_box.cpp:894
+msgid "Chinese"
+msgstr ""
+
+#: ../src/subs_edit_ctrl.cpp:151 ../src/subs_edit_ctrl_stc.cpp:406
 msgid "Cu&t"
 msgstr "برش"
 
-#: ../src/subs_edit_ctrl.cpp:408 ../src/timeedit_ctrl.cpp:210
+#: ../src/subs_edit_ctrl.cpp:153 ../src/subs_edit_ctrl_stc.cpp:408
+#: ../src/timeedit_ctrl.cpp:210
 msgid "&Paste"
 msgstr "چسباندن"
 
-#: ../src/subs_edit_ctrl.cpp:443
+#: ../src/subs_edit_ctrl_stc.cpp:396
+msgid "Spell checker language"
+msgstr "بررسی خطاهای املایی"
+
+#: ../src/subs_edit_ctrl_stc.cpp:443
 #, fuzzy, c-format
 msgid "Remove \"%s\" from dictionary"
 msgstr "به لغت نامه \"%s\" افزودن"
 
-#: ../src/subs_edit_ctrl.cpp:448
+#: ../src/subs_edit_ctrl_stc.cpp:448
 msgid "No spell checker suggestions"
 msgstr "هیچ پیشنهادی برای تصحیح وجود ندارد"
 
-#: ../src/subs_edit_ctrl.cpp:454
+#: ../src/subs_edit_ctrl_stc.cpp:454
 #, c-format
 msgid "Spell checker suggestions for \"%s\""
 msgstr "\"%s\" پیشنهاد تصحیح کننده امایی برای "
 
-#: ../src/subs_edit_ctrl.cpp:459
+#: ../src/subs_edit_ctrl_stc.cpp:459
 msgid "No correction suggestions"
 msgstr "هیچ پیشنهادی برای تصحیح وجود ندارد"
 
-#: ../src/subs_edit_ctrl.cpp:465
+#: ../src/subs_edit_ctrl_stc.cpp:465
 #, c-format
 msgid "Add \"%s\" to dictionary"
 msgstr "به لغت نامه \"%s\" افزودن"
 
-#: ../src/subs_edit_ctrl.cpp:500
+#: ../src/subs_edit_ctrl_stc.cpp:500
 #, c-format
 msgid "Thesaurus suggestions for \"%s\""
 msgstr "\"%s\"  پیشنهاد برای "
 
-#: ../src/subs_edit_ctrl.cpp:503
+#: ../src/subs_edit_ctrl_stc.cpp:503
 msgid "No thesaurus suggestions"
 msgstr "هیچ پیشنهادی وجود ندارد"
 
-#: ../src/subs_edit_ctrl.cpp:506
+#: ../src/subs_edit_ctrl_stc.cpp:506
 msgid "Thesaurus language"
 msgstr "بخش زبان"
 
-#: ../src/subs_edit_ctrl.cpp:515
+#: ../src/subs_edit_ctrl_stc.cpp:515
 msgid "Disable"
 msgstr "غیر فعال"
 
@@ -6869,80 +6899,6 @@ msgstr "صاف کردن دست آزاد"
 msgid "delete control point"
 msgstr "وارد کردن یک نقطه کنترل"
 
-#: aegisub.appdata.xml:1
-msgid ""
-"A free, cross-platform open source tool for creating and modifying subtitles"
-msgstr ""
-
-#: aegisub.appdata.xml:2
-msgid ""
-"Aegisub is a free, cross-platform open source tool for creating and "
-"modifying subtitles. Aegisub makes it quick and easy to time subtitles to "
-"audio, and features many powerful tools for styling them, including a built-"
-"in real-time video preview."
-msgstr ""
-
-#: aegisub.appdata.xml:3
-msgid ""
-"Aegisub was originally created as a tool to make typesetting, particularly "
-"in anime fansubs, a less painful experience. At the time of the start of the "
-"project, many other programs that supported the Advanced Substation Alpha "
-"format lacked (and in many cases, still lack; development on several "
-"competing programs have since been dropped for various reasons completely "
-"unrelated to Aegisub) many vital functions, or were too buggy and/or "
-"unreliable to be really useful."
-msgstr ""
-
-#: aegisub.appdata.xml:4
-msgid ""
-"Since then, Aegisub has grown into a fully fledged, highly customizable "
-"subtitle editor. It features a lot of convenient tools to help you with "
-"timing, typesetting, editing and translating subtitles, as well as a "
-"powerful scripting environment called Automation (originally mostly intended "
-"for creating karaoke effects, Automation can now be used much else, "
-"including creating macros and various other convenient tools)."
-msgstr ""
-
-#: aegisub.appdata.xml:5
-msgid "Some highlights of Aegisub:"
-msgstr ""
-
-#: aegisub.appdata.xml:6
-msgid "Simple and intuitive yet powerful interface for editing subtitles"
-msgstr ""
-
-#: aegisub.appdata.xml:7
-msgid "Support for many formats and character sets"
-msgstr ""
-
-#: aegisub.appdata.xml:8
-msgid "Powerful video mode"
-msgstr ""
-
-#: aegisub.appdata.xml:9
-msgid "Visual typesetting tools"
-msgstr ""
-
-#: aegisub.appdata.xml:10
-msgid "Intuitive and customizable audio timing mode"
-msgstr ""
-
-#: aegisub.appdata.xml:11
-msgid "Fully scriptable through the Automation module"
-msgstr ""
-
-#: aegisub.appdata.xml:12
-msgid "Typesetting"
-msgstr ""
-
-#: aegisub.appdata.xml:13
-msgid "Audio video"
-msgstr ""
-
-#: aegisub.appdata.xml:14
-msgid "Audio timing"
-msgstr ""
-
 #: default_hotkey.json:244:
 #, fuzzy
 msgid "Subtitle Edit Box"
@@ -7105,133 +7061,326 @@ msgstr ""
 msgid "Update Checker:"
 msgstr "بررسی املایی"
 
-#~ msgid "Visual Tool Vector Clip"
-#~ msgstr "ابزار دیداری:برش برداری"
+#, c-format
+#~ msgid ""
+#~ "\n"
+#~ "Finished writing to %s.\n"
+#~ msgstr ""
+#~ "\n"
+#~ " %s نوشتن پایان یافت در  \n"
 
-#~ msgid "Visual Tool Rectangular Clip"
-#~ msgstr "ابزار دیداری:برش مستطیلی"
+#~ msgid "    Subtitle format handler: "
+#~ msgstr "  مسئول فرمت های زیرنویس:"
 
-#~ msgid "Visual Tool Scale"
-#~ msgstr "ابزار دیداری:اندازه"
+#~ msgid " styles?"
+#~ msgstr "?استایل ها"
 
-#~ msgid "Visual Tool Rotate X/Y"
-#~ msgstr "X/Yابزار دیداری:چرخش"
+#, c-format
+#~ msgid "\"%s\" found on dialogue line \"%d\".\n"
+#~ msgstr " \"%s\"  یافته شد در خط\"%d\"\n"
 
-#~ msgid "Visual Tool Rotate Z"
-#~ msgstr "Zابزار دیداری:چرخش"
+#, c-format
+#~ msgid "\"%s\" found on style \"%s\".\n"
+#~ msgstr "\"%s\" در استایل پیدا شد \"%s\".\n"
 
-#~ msgid "Visual Tool Drag"
-#~ msgstr "ابزار دیداری:کشیدن"
-
-#~ msgid "Visual Tool Default"
-#~ msgstr "ابزار دیداری:پیش فرض"
-
-#~ msgid "Limit to Visible Lines"
-#~ msgstr "محدود کردن به خطوط مرئی"
+#, c-format
+#~ msgid "\"%s\" found.\n"
+#~ msgstr "\"%s\" یافته شد\n"
 
 #~ msgid "&All Files"
 #~ msgstr "تمام فایل ها"
 
-#~ msgid "Show Splash Screen"
-#~ msgstr "صفحه ابتدایی را نمایش بده"
+#~ msgid "&Associations..."
+#~ msgstr "مسئول..."
 
-#~ msgid "FRAME"
-#~ msgstr "فریم"
-
-#~ msgid ""
-#~ "You already have timecodes loaded. Would you like to replace them with "
-#~ "timecodes from the video file?"
-#~ msgstr ""
-#~ " در حال حاضر بارگذاری شده اند.آیا میخواهید آنها را با کدهای زمانی ویدیو "
-#~ "جایگزین کنید؟ (timecodes)کد های زمانی"
-
-#~ msgid "Replace timecodes?"
-#~ msgstr "با جایگزین کردن کد های زمانی موافقید؟"
-
-#~ msgid ""
-#~ "You already have timecodes loaded. Replace them with the timecodes from "
-#~ "the Matroska file?"
-#~ msgstr ""
-#~ "  جایگزین کنید؟ Matroska کدهی زمانی در ال حاضر بارگذاری شده اند.میخواهید "
-#~ "آنها را با کدهای زمانی از فایل "
-
-#~ msgid "Unknown"
-#~ msgstr "نامشخص"
-
-#~ msgid "Toggle realtime display of changes."
-#~ msgstr "تغییرات را در همان لحظه نمایش میدهد"
-
-#~ msgid "Realtime"
-#~ msgstr "بیدرنگ"
-
-#~ msgid "No timecodes to average"
-#~ msgstr "هیچ کدهای زمانی برای میانگین وجود ندارد"
-
-#~ msgid "Exporting PRS"
-#~ msgstr "خروجی گرفتن"
-
-#~ msgid "Please wait, caching fonts..."
-#~ msgstr "لطفا صبر کنید..."
-
-#~ msgid "delete"
-#~ msgstr "حذف"
-
-#~ msgid "load"
-#~ msgstr "بارگذاری"
-
-#~ msgid "Couldn't allocate memory."
-#~ msgstr "نرم افزار قادر به تخصیص حافظه نیست"
-
-#~ msgid "There is no audio to save."
-#~ msgstr ".هیچ صدایی برای ذخیره وجود ندارد"
-
-#~ msgid "The starting point is beyond the length of the audio loaded."
-#~ msgstr "نقطه شروع بعد از اتمام زمان صدا بارگذاری شده قرار گرفته است"
-
-#~ msgid "Paste lines from clipboard"
-#~ msgstr "چساندن خطوط از حافظه"
-
-#~ msgid "Cuts selected lines to clipboard"
-#~ msgstr "برش متن خط انتخابی به "
-
-#~ msgid "C&ut"
-#~ msgstr "برش"
-
-#~ msgid ""
-#~ "Joins selected lines in a single one, making each line into a karaoke "
-#~ "syllable"
-#~ msgstr ""
-#~ "خطوط انتخابی را ترکیب کرده و هر خط را به یک سیلاب کاروکه تبدیل میکند "
-
-#~ msgid "&Swap"
-#~ msgstr "تعویض"
-
-#~ msgid "Split (by karaoke)"
-#~ msgstr "جداسازی بر اساس کاروکه"
-
-#~ msgid "&Duplicate and shift by 1 frame"
-#~ msgstr "تکثیر و انتقال با فاصله یک فریم"
+#~ msgid "&Automation"
+#~ msgstr "عملیات خودکار"
 
 #~ msgid "&Duplicate"
 #~ msgstr "تکثیر"
 
-#~ msgid "editing"
-#~ msgstr "ویرایش"
+#~ msgid "&Duplicate and Shift by 1 Frame"
+#~ msgstr "تکثیر و انتقال با فاصله یک فریم"
 
-#~ msgid "MarginV change"
-#~ msgstr "تغییر حاشیه عمودی"
+#~ msgid "&Duplicate and shift by 1 frame"
+#~ msgstr "تکثیر و انتقال با فاصله یک فریم"
 
-#~ msgid "MarginR change"
-#~ msgstr "تغییر حاشیه راست"
+#~ msgid "&Forums"
+#~ msgstr " انجمن"
 
-#~ msgid "Time"
-#~ msgstr "زمان"
+#~ msgid "&No"
+#~ msgstr "خیر"
+
+#~ msgid "&Resource Files..."
+#~ msgstr "فایل های منبع..."
+
+#~ msgid "&Swap"
+#~ msgstr "تعویض"
+
+#~ msgid "&Yes"
+#~ msgstr "بله"
+
+#~ msgid "Accept Split"
+#~ msgstr "تایید جداسازی"
+
+#~ msgid "Add lead in (%KEY%)"
+#~ msgstr "(%KEY%) افزودن فاصله شروع"
+
+#~ msgid "Add lead out (%KEY%)"
+#~ msgstr "(%KEY%) افزودن فاصله پایان"
+
+#~ msgid "Advanced - EXPERT USERS ONLY"
+#~ msgstr "پیشرفته-مخصوص افراد متخصص  "
+
+#~ msgid ""
+#~ "Aegisub can export subtitles to many different formats, character "
+#~ "encodings, and even compensate Variable Frame Rate so you can hardsub "
+#~ "them - it's all in the Export option in File menu."
+#~ msgstr ""
+#~ "این نرم افزار قادر به خروجی گرفتن از زیرنویس با فرمت های مختلف و فریم ریت "
+#~ "های متغیر است.تمام تنظیمات را میتوانید در منوی فایل بخش خروجی گرفتن "
+#~ "مشاهده کنید "
+
+#~ msgid ""
+#~ "Aegisub can take over the following file types.\n"
+#~ "\n"
+#~ "If you want Aegisub to no longer be associated with a file type, you must "
+#~ "tell another program to take over the file type."
+#~ msgstr ""
+#~ "این نرم افزار می تواند مسئول بازکردن پسوند های زیر باشد\n"
+#~ "\n"
+#~ "اگر نمی خواهید این نرم افزار مسئول باشد باید نرم افزار دیگری را برای باز "
+#~ "کردن فایل ها مسئول کنید"
+
+#~ msgid ""
+#~ "Aegisub has several features to make sure you will never lose your work. "
+#~ "It will periodically save your subtitles to autosave folder, and will "
+#~ "create a copy of subs whenever you open them, to autoback folder. Also, "
+#~ "if it crashes, it will attempt to save a restore file."
+#~ msgstr ""
+#~ " ذخیره میکند.autosave  این نرم افزار برای اطمینان از اینکه فایل زیرنویس "
+#~ "شما ازبین نرود چندین امکانات دارد.نرم افزار به طور خودکار زیرنویس شما را "
+#~ "در فولدر  "
+
+#~ msgid ""
+#~ "Aegisub is already associated with all supported file types.\n"
+#~ "\n"
+#~ "If you want Aegisub to no longer be associated with a file type, you must "
+#~ "tell another program to take over the file type."
+#~ msgstr ""
+#~ "این نرم افزار  مسئول بازکردن تمام پسوند هایی که پشتیبانی می کند است \n"
+#~ "\n"
+#~ "اگر نمی خواهید این نرم افزار مسئول باشد باید نرم افزار دیگری را برای باز "
+#~ "کردن فایل ها مسئول کنید "
+
+#~ msgid ""
+#~ "Aegisub is not your default editor for subtitle files. Do you want to "
+#~ "make Aegisub your default editor for subtitle files?"
+#~ msgstr ""
+#~ "این نرم افزار ، نرم افزار پیش فرض ویرایش زیرنویس ها نیست.آیا می خواهید که "
+#~ "نرم افزار پیش فرض ویرایش زیرنویس ها شود؟  "
+
+#~ msgid "Aegisub must restart for the changes to take effect. Restart now?"
+#~ msgstr ""
+#~ "نرم افزار جهت اعمال تغییرات باید دوباره راه اندازی شود.آیا راه اندازی "
+#~ "مجدد را میخواهید؟"
+
+#~ msgid "All"
+#~ msgstr "همه"
+
+#~ msgid "All Supported Types"
+#~ msgstr "تمام فرمت های پشتیبانی شده"
+
+#~ msgid "All files"
+#~ msgstr "تمام فایل ها"
+
+#~ msgid "Allow grid to take focus"
+#~ msgstr "به خطوط اجازه متمرکز شدن را بده"
+
+#~ msgid "Always perform this check when Aegisub starts"
+#~ msgstr "در هر بار این بررسی را انجام بده"
+
+#, c-format
+#~ msgid ""
+#~ "An Automation script failed to load. File name: '%s', error reported:"
+#~ msgstr ""
+#~ " :خطای گزارش شده,'%s'در بارگذاری یک اوتوماسیون خطایی به وجود آمده.اسم "
+#~ "فایل:"
+
+#~ msgid "Are you sure you want to delete these "
+#~ msgstr "آیا شما واقعا قصد حذف اینها را دارید"
+
+#~ msgid "Associate file types"
+#~ msgstr "فایل هایی که با این نرم باز می شوند"
+
+#~ msgid "Associate file types with Aegisub"
+#~ msgstr "انواع فایل هایی که با این نرم افزار باز می شوند "
+
+#~ msgid "Audio Add Lead In"
+#~ msgstr "صدا:افزودن فاصله شروع"
+
+#~ msgid "Audio Add Lead Out"
+#~ msgstr "افزودن فاصله پایان :صدا"
+
+#~ msgid "Audio Commit"
+#~ msgstr "اعمال تغییرات:صدا"
+
+#~ msgid "Audio Commit (Stay)"
+#~ msgstr "اعمال تغییرات"
+
+#~ msgid "Audio Commit Alt"
+#~ msgstr "اعمال تغییرات:صدا"
+
+#~ msgid "Audio Karaoke Decrease Len"
+#~ msgstr "کاهش زمان کاراوکه :صدا "
+
+#~ msgid "Audio Karaoke Decrease Len Shift"
+#~ msgstr "کاهش زمان کاراوکه :صدا "
+
+#~ msgid "Audio Karaoke Increase Len"
+#~ msgstr "افزایش زمان کاراوکه :صدا "
+
+#~ msgid "Audio Karaoke Increase Len Shift"
+#~ msgstr "افزایش زمان کاراوکه :صدا "
+
+#~ msgid "Audio Medusa Enter"
+#~ msgstr "پذیرش :صدا مدوسا"
+
+#~ msgid "Audio Medusa Next"
+#~ msgstr "بعدی :صدا مدوسا"
+
+#~ msgid "Audio Medusa Play"
+#~ msgstr "پخش :صدا مدوسا"
+
+#~ msgid "Audio Medusa Play After"
+#~ msgstr "پخش بعد از محل انتخابی :صدا مدوسا"
+
+#~ msgid "Audio Medusa Play Before"
+#~ msgstr "پخش قبل از محل انتخابی :صدا مدوسا"
+
+#~ msgid "Audio Medusa Previous"
+#~ msgstr "قبلی :صدا مدوسا"
+
+#~ msgid "Audio Medusa Shift End Back"
+#~ msgstr "حرکت انتها به عقب :صدا مدوسا"
+
+#~ msgid "Audio Medusa Shift End Forward"
+#~ msgstr "حرکت انتها به جلو :صدا مدوسا"
+
+#~ msgid "Audio Medusa Shift Start Back"
+#~ msgstr "حرکت ابتدا به عقب :صدا مدوسا"
+
+#~ msgid "Audio Medusa Shift Start Forward"
+#~ msgstr "حرکت ابتدا به جلو :صدا مدوسا"
+
+#~ msgid "Audio Medusa Stop"
+#~ msgstr "توقف :صدا مدوسا"
+
+#~ msgid "Audio Medusa Toggle"
+#~ msgstr "تعویض :صدا مدوسا"
+
+#~ msgid "Audio Next Line"
+#~ msgstr "پخش خط بعد"
+
+#~ msgid "Audio Next Line Alt"
+#~ msgstr "پخش خط بعد:صدا"
+
+#~ msgid "Audio Play"
+#~ msgstr "پخش:صدا "
+
+#~ msgid "Audio Play 500ms After"
+#~ msgstr "صدا:پخش 500 میلی ثانیه بعد"
+
+#~ msgid "Audio Play 500ms Before"
+#~ msgstr "صدا:پخش 500 میلی ثانیه قبل"
+
+#~ msgid "Audio Play Alt"
+#~ msgstr "پخش:صدا "
+
+#~ msgid "Audio Play First 500ms"
+#~ msgstr "صدا:پخش 500 میلی ثانیه اول"
+
+#~ msgid "Audio Play Last 500ms"
+#~ msgstr "صدا:پخش 500 میلی ثانیه آخر"
+
+#~ msgid "Audio Play Original Line"
+#~ msgstr "صدا:پخش خط اصلی"
+
+#~ msgid "Audio Play To End"
+#~ msgstr "صدا:پخش صدا تا پایان"
+
+#~ msgid "Audio Play or Stop"
+#~ msgstr "پخش یا توقف:صدا "
+
+#~ msgid "Audio Prev Line"
+#~ msgstr "خط قبلی:صدا"
+
+#~ msgid "Audio Prev Line Alt"
+#~ msgstr "خط قبلی:صدا"
+
+#~ msgid "Audio Stop"
+#~ msgstr "توقف :صدا"
+
+#~ msgid "Auto-backup path:"
+#~ msgstr "مسیر پشتیبان گیری خودکار"
+
+#~ msgid "Auto-save"
+#~ msgstr "ذخیره اتوماتیک"
+
+#~ msgid "Auto-save path:"
+#~ msgstr "مسیر ذخیره خودکار"
+
+#~ msgid "Below Normal (recommended)"
+#~ msgstr "(کمتر از معمول(توصیه شده"
+
+#~ msgid "C&ut"
+#~ msgstr "برش"
+
+#~ msgid "Change aspect ratio"
+#~ msgstr "تغییر نسیت طول به عرض تصویر"
+
+#~ msgid "Changes resolution and modifies subtitles to conform to change"
+#~ msgstr ""
+#~ "ابعاد تصویر را تغییر میدهد و زیرنویس را برای نمایش در این ابعاد تنظیم "
+#~ "میکند"
+
+#~ msgid "Check File Associations on Start"
+#~ msgstr "بررسی فایل هایی که با این نرم افزار باز میشوند در هنگام شروع برنامه"
+
+#~ msgid "Checking fonts...\n"
+#~ msgstr "...بررسی فونت ها\n"
+
+#~ msgid "Clean Script Info"
+#~ msgstr "پاک کردن اطلاعات اسکریپت"
+
+#~ msgid "Clear Hotkey"
+#~ msgstr "حذف کلید میانبر"
+
+#~ msgid ""
+#~ "Collecting font data from system. This might take a while, depending on "
+#~ "the number of fonts installed. Results are cached and subsequent "
+#~ "executions will be faster...\n"
+#~ msgstr ""
+#~ "در حال جمع آوری اطلاعات فونت ها از سیستم میباشد.این عمل ممکن است مدتی به "
+#~ "طول بیانجامد که بستگی به تعداد فونت های نصب شده در سیستم شما دارد\n"
+
+#~ msgid "Collision: "
+#~ msgstr "برخورد:"
+
+#~ msgid "Color Picker"
+#~ msgstr "انتخاب کننده رنگ"
+
+#~ msgid "Commit changes (%KEY%/%KEY%)"
+#~ msgstr " (%KEY%/%KEY%) اعمال تغییرات"
+
+#~ msgid "Commit splits and leave split-mode"
+#~ msgstr "اعمال جداسازی ها و خروج از حالت جداسازی"
+
+#~ msgid "Commit?"
+#~ msgstr "اجرا؟"
 
 #~ msgid "Commits the text (Enter). Hold Ctrl to stay in line (%KEY%)."
 #~ msgstr " (%KEY%) برای ماندن در همین خط (Enter)اعمال بر روی متن"
-
-#~ msgid "Font Face Name"
-#~ msgstr "نام فونت"
 
 #~ msgid ""
 #~ "Configuration file is either invalid or corrupt. The current file will be "
@@ -7240,155 +7389,114 @@ msgstr "بررسی املایی"
 #~ "فایل تنظیمات خراب ویا نا معتبر است.از فایل کنونی پشتیبان گیری می شود و آن "
 #~ "با فایل پیشفرض جایگزین خواهد شد"
 
-#~ msgid "Reading keyframe and timecode data from Matroska file."
-#~ msgstr " Matroska خواندن فریم های کلیدی و کدهای زمانی از فایل"
+#~ msgid "Copy of "
+#~ msgstr "کپی از"
 
-#~ msgid "Reading keyframes from video"
-#~ msgstr "خواندن فریم های کلیدی از ویدیو"
+#~ msgid "Copy subtitles"
+#~ msgstr "کپی زیرنویس ها"
 
-#~ msgid "Styling Assistant Preview"
-#~ msgstr "دستیار استایل:پیش نمایش"
+#~ msgid "Couldn't allocate memory."
+#~ msgstr "نرم افزار قادر به تخصیص حافظه نیست"
 
-#~ msgid "Styling Assistant Accept"
-#~ msgstr "دستیار استایل:تایید"
+#~ msgid "Crash recovery path:"
+#~ msgstr "مسیر ذخیره فایل بازیافت شده:"
 
-#~ msgid "Styling Assistant Prev"
-#~ msgstr "دستیار استایل:قبل"
+#~ msgid "Current line: ?"
+#~ msgstr "خط کنونی:؟"
 
-#~ msgid "Styling Assistant Next"
-#~ msgstr "دستیار استایل:بعد"
+#~ msgid "Cut"
+#~ msgstr "برش"
 
-#~ msgid "Styling Assistant Play Video"
-#~ msgstr "دستیار استایل:پخش ویدیو"
+#~ msgid "Cuts selected lines to clipboard"
+#~ msgstr "برش متن خط انتخابی به "
 
-#~ msgid "Styling Assistant Play Audio"
-#~ msgstr "دستیار استایل:پخش صدا"
+#~ msgid "DEBUG: Verify all fonts in system"
+#~ msgstr "اشکال زدایی:تمام فونت ها موجود در سیستم را بررسی کنید"
 
-#~ msgid "Translation Assistant Insert Original"
-#~ msgstr "دستیار ترجمه: قرار دادن خط اصلی"
+#~ msgid "DON'T PANIC!"
+#~ msgstr "!نگران نباشید"
 
-#~ msgid "Translation Assistant Preview"
-#~ msgstr "دستیار ترجمه: پیش نمایش"
+#~ msgid "Debug: "
+#~ msgstr ":اشکال زدایی"
 
-#~ msgid "Translation Assistant Accept"
-#~ msgstr "دستیار ترجمه: پذیرش"
+#~ msgid "Dest Style"
+#~ msgstr "استایل مقصد"
 
-#~ msgid "Translation Assistant Prev"
-#~ msgstr "دستیار ترجمه: قبلی"
+#~ msgid ""
+#~ "Do you want to commit your changes? If you choose No, they will be "
+#~ "discarded."
+#~ msgstr ""
+#~ "آیا میخواهید تغییرات شما اعمال شود؟اگر نه را انتخاب کنید تغییرات اعمال "
+#~ "نخواهد شد"
 
-#~ msgid "Translation Assistant Next"
-#~ msgstr "دستیار ترجمه:بعدی"
+#~ msgid "Done collecting font data."
+#~ msgstr "جمع آوری اطلاعات فونت ها به اتمام رسید"
 
-#~ msgid "Translation Assistant Play Video"
-#~ msgstr "دستیار ترجمه :پخش ویدیو "
+#~ msgid "Draw keyframes"
+#~ msgstr "کشیدن فریم های کلیدی"
 
-#~ msgid "Translation Assistant Play Audio"
-#~ msgstr "دستیار ترجمه:پخش صدا  "
+#~ msgid "Draw secondary lines"
+#~ msgstr "کشیدن خط  ثانویه"
 
-#~ msgid "Audio Medusa Enter"
-#~ msgstr "پذیرش :صدا مدوسا"
+#~ msgid "Draw selection background"
+#~ msgstr "کشیدن پس زمینه انتخاب شده ها"
 
-#~ msgid "Audio Medusa Previous"
-#~ msgstr "قبلی :صدا مدوسا"
+#~ msgid "Draw timeline"
+#~ msgstr "کشیدن خط زمانی"
 
-#~ msgid "Audio Medusa Next"
-#~ msgstr "بعدی :صدا مدوسا"
+#~ msgid "Duplicate lines and shift by one frame"
+#~ msgstr "خط ها را تکثیر میکند و یک فرم انتقال میدهد "
 
-#~ msgid "Audio Medusa Play After"
-#~ msgstr "پخش بعد از محل انتخابی :صدا مدوسا"
+#~ msgid "Enable Medusa-Style Timing Shortcuts"
+#~ msgstr "فعالسازی مدل کلیدهای میانبر نرم افزار مدوسا"
 
-#~ msgid "Audio Medusa Play Before"
-#~ msgstr "پخش قبل از محل انتخابی :صدا مدوسا"
+#~ msgid "Enable preview (slow)"
+#~ msgstr "(فعالسازی پیش نمایش(کند"
 
-#~ msgid "Audio Medusa Shift End Forward"
-#~ msgstr "حرکت انتها به جلو :صدا مدوسا"
+#~ msgid "Enter split-mode"
+#~ msgstr "ورود به حالت جداسازی"
 
-#~ msgid "Audio Medusa Shift End Back"
-#~ msgstr "حرکت انتها به عقب :صدا مدوسا"
+#~ msgid "Error: "
+#~ msgstr "خطا:"
 
-#~ msgid "Audio Medusa Shift Start Forward"
-#~ msgstr "حرکت ابتدا به جلو :صدا مدوسا"
+#~ msgid "Executing "
+#~ msgstr "در حال اجرا"
 
-#~ msgid "Audio Medusa Shift Start Back"
-#~ msgstr "حرکت ابتدا به عقب :صدا مدوسا"
+#~ msgid "Exporting PRS"
+#~ msgstr "خروجی گرفتن"
 
-#~ msgid "Audio Medusa Stop"
-#~ msgstr "توقف :صدا مدوسا"
+#~ msgid "FRAME"
+#~ msgstr "فریم"
 
-#~ msgid "Audio Medusa Play"
-#~ msgstr "پخش :صدا مدوسا"
+#~ msgid "Fatal error: "
+#~ msgstr "خطای اساسی!"
 
-#~ msgid "Audio Medusa Toggle"
-#~ msgstr "تعویض :صدا مدوسا"
+#~ msgid "File paths"
+#~ msgstr "مسیر فایل"
 
-#~ msgid "Audio Add Lead Out"
-#~ msgstr "افزودن فاصله پایان :صدا"
+#~ msgid "File save/load"
+#~ msgstr "ذخیره/بارگذاری فایل"
 
-#~ msgid "Audio Add Lead In"
-#~ msgstr "صدا:افزودن فاصله شروع"
+#~ msgid "Font Face Name"
+#~ msgstr "نام فونت"
 
-#~ msgid "Audio Play Original Line"
-#~ msgstr "صدا:پخش خط اصلی"
+#~ msgid "Font: "
+#~ msgstr "فونت:"
 
-#~ msgid "Audio Play To End"
-#~ msgstr "صدا:پخش صدا تا پایان"
+#~ msgid "Found.\n"
+#~ msgstr ".پیدا شد\n"
 
-#~ msgid "Audio Play 500ms After"
-#~ msgstr "صدا:پخش 500 میلی ثانیه بعد"
+#~ msgid "From Video"
+#~ msgstr "از ویدیو"
 
-#~ msgid "Audio Play 500ms Before"
-#~ msgstr "صدا:پخش 500 میلی ثانیه قبل"
+#~ msgid "Function"
+#~ msgstr "عملکرد"
 
-#~ msgid "Audio Play Last 500ms"
-#~ msgstr "صدا:پخش 500 میلی ثانیه آخر"
+#~ msgid "Grab times from line upon selection"
+#~ msgstr "تعیین زمان از زمان بالای خطوط انتخابی"
 
-#~ msgid "Audio Play First 500ms"
-#~ msgstr "صدا:پخش 500 میلی ثانیه اول"
-
-#~ msgid "Audio Karaoke Decrease Len Shift"
-#~ msgstr "کاهش زمان کاراوکه :صدا "
-
-#~ msgid "Audio Karaoke Increase Len Shift"
-#~ msgstr "افزایش زمان کاراوکه :صدا "
-
-#~ msgid "Audio Karaoke Decrease Len"
-#~ msgstr "کاهش زمان کاراوکه :صدا "
-
-#~ msgid "Audio Karaoke Increase Len"
-#~ msgstr "افزایش زمان کاراوکه :صدا "
-
-#~ msgid "Audio Stop"
-#~ msgstr "توقف :صدا"
-
-#~ msgid "Audio Play or Stop"
-#~ msgstr "پخش یا توقف:صدا "
-
-#~ msgid "Audio Play Alt"
-#~ msgstr "پخش:صدا "
-
-#~ msgid "Audio Play"
-#~ msgstr "پخش:صدا "
-
-#~ msgid "Audio Next Line Alt"
-#~ msgstr "پخش خط بعد:صدا"
-
-#~ msgid "Audio Next Line"
-#~ msgstr "پخش خط بعد"
-
-#~ msgid "Audio Prev Line Alt"
-#~ msgstr "خط قبلی:صدا"
-
-#~ msgid "Audio Prev Line"
-#~ msgstr "خط قبلی:صدا"
-
-#~ msgid "Audio Commit (Stay)"
-#~ msgstr "اعمال تغییرات"
-
-#~ msgid "Audio Commit"
-#~ msgstr "اعمال تغییرات:صدا"
-
-#~ msgid "Audio Commit Alt"
-#~ msgstr "اعمال تغییرات:صدا"
+#~ msgid "Grid delete rows"
+#~ msgstr "حذف ردیف:  ستون ها"
 
 #~ msgid "Grid duplicate and shift one frame"
 #~ msgstr "تکثیر و انتقال با یک فریم:  ستون ها"
@@ -7396,202 +7504,46 @@ msgstr "بررسی املایی"
 #~ msgid "Grid duplicate rows"
 #~ msgstr "تکثیر ردیف:  ستون ها"
 
-#~ msgid "Grid delete rows"
-#~ msgstr "حذف ردیف:  ستون ها"
-
-#~ msgid "Grid move row up"
-#~ msgstr "حرکت ردیف به بالا:  ستون ها"
-
-#~ msgid "Grid move row down"
-#~ msgstr "حرکت ردیف به پایین:  ستون ها"
-
-#~ msgid "Video global zoom out"
-#~ msgstr "خروج از زوم :ویدیو"
-
-#~ msgid "Video global zoom in"
-#~ msgstr "زوم کردن :ویدیو"
-
-#~ msgid "Save Subtitles Alt"
-#~ msgstr "ذخیره زیرنویس"
-
 #~ msgid "Grid global next line"
 #~ msgstr "خط بعدی :  ستون ها"
 
 #~ msgid "Grid global prev line"
 #~ msgstr "خط قبلی :  ستون ها"
 
-#~ msgid "Video global play"
-#~ msgstr "پخش:ویدیو"
+#~ msgid "Grid move row down"
+#~ msgstr "حرکت ردیف به پایین:  ستون ها"
 
-#~ msgid "Video global focus seek"
-#~ msgstr "تمرکز در جستجو:ویدیو"
+#~ msgid "Grid move row up"
+#~ msgstr "حرکت ردیف به بالا:  ستون ها"
 
-#~ msgid "Video global prev frame"
-#~ msgstr " رفتن به فریم قبلی :ویدیو"
+#~ msgid "HD cache name"
+#~ msgstr "نام کش هارد"
 
-#~ msgid "Zoom 50%"
-#~ msgstr "زوم %50"
+#~ msgid ""
+#~ "Having video open is often more a nuisance than a help when timing "
+#~ "subtitles. Timing with only audio open is often much easier. You can "
+#~ "always adjust the subtitles to match the video later on."
+#~ msgstr ""
+#~ "باز بودن تصویر در هنگام زیرنویسی بعضی هنگام بجای کمک کردن در زمانبندی "
+#~ "باعث سخت تر شدن آن می شود"
 
-#~ msgid "Shift by Current Time"
-#~ msgstr "انتقال براساس زمان کنونی"
-
-#~ msgid "Set End to Video"
-#~ msgstr "مشخص کردن پایان ویدیو"
-
-#~ msgid "Set Start to Video"
-#~ msgstr "مشخص کردن شروع ویدیو"
-
-#~ msgid "Video Jump"
-#~ msgstr "پرش ویدیو"
-
-#~ msgid "Paste Over"
-#~ msgstr "چسپاندن بروی "
-
-#~ msgid "Paste"
-#~ msgstr "چسباندن"
-
-#~ msgid "Cut"
-#~ msgstr "برش"
+#~ msgid "Header"
+#~ msgstr "سربرگ"
 
 #~ msgid "Help"
 #~ msgstr "راهنما"
 
-#~ msgid "show full tags."
-#~ msgstr "نمایش کامل تگ ها"
+#~ msgid "Highlight subtitles that are currently visible in video"
+#~ msgstr "متمایز کردن خطوطی که در حال حاضر در تصویر دیده می شوند"
 
-#~ msgid "All Supported Types"
-#~ msgstr "تمام فرمت های پشتیبانی شده"
+#~ msgid "Hint: "
+#~ msgstr "کمک:"
 
-#~ msgid "All files"
-#~ msgstr "تمام فایل ها"
+#~ msgid "History"
+#~ msgstr "تاریخ"
 
-#~ msgid "You have timecodes loaded currently. Would you like to unload them?"
-#~ msgstr ""
-#~ "شما کدهای زمانی را در حال حاضر بارگذاری کرده اید.آیا مایلید که آنها را "
-#~ "ببندید؟"
-
-#~ msgid "Save before continuing?"
-#~ msgstr "ذخیره قبل از ادامه؟"
-
-#~ msgid "Visit Aegisub's forums"
-#~ msgstr "بازدید از انجمن نرم افزار"
-
-#~ msgid "&Forums"
-#~ msgstr " انجمن"
-
-#~ msgid "Resource files distributed with Aegisub"
-#~ msgstr "فایل های منبعی که با نرم افزار پخش می شوند"
-
-#~ msgid "&Resource Files..."
-#~ msgstr "فایل های منبع..."
-
-#~ msgid "Open log window"
-#~ msgstr "گشودن پنجره ثبت وقایع"
-
-#~ msgid "Associate file types with Aegisub"
-#~ msgstr "انواع فایل هایی که با این نرم افزار باز می شوند "
-
-#~ msgid "&Associations..."
-#~ msgstr "مسئول..."
-
-#~ msgid "&Automation"
-#~ msgstr "عملیات خودکار"
-
-#~ msgid "Sort by Time"
-#~ msgstr "مرتب کردن براساس زمان"
-
-#~ msgid "Duplicate lines and shift by one frame"
-#~ msgstr "خط ها را تکثیر میکند و یک فرم انتقال میدهد "
-
-#~ msgid "&Duplicate and Shift by 1 Frame"
-#~ msgstr "تکثیر و انتقال با فاصله یک فریم"
-
-#~ msgid "Changes resolution and modifies subtitles to conform to change"
-#~ msgstr ""
-#~ "ابعاد تصویر را تغییر میدهد و زیرنویس را برای نمایش در این ابعاد تنظیم "
-#~ "میکند"
-
-#~ msgid "Copy subtitles"
-#~ msgstr "کپی زیرنویس ها"
-
-#~ msgid "Saves subtitles"
-#~ msgstr "ذخیره زیرنویس"
-
-#~ msgid "Open Spell checker"
-#~ msgstr "باز کردن بررسی کننده املایی"
-
-#~ msgid "Open Kanji Timer dialog"
-#~ msgstr "گشودن زمانبند گفتگو های کانجی"
-
-#~ msgid "Open Timing Post-processor dialog"
-#~ msgstr "صفحه زمانبندی پس از پردازش را می گشاید"
-
-#~ msgid "Open Translation Assistant"
-#~ msgstr "گشودن دستیار ترجمه"
-
-#~ msgid "Open Styling Assistant"
-#~ msgstr "گشودن دستیار استایل"
-
-#~ msgid "Open Shift Times Dialogue"
-#~ msgstr "گشودن بخش انتقال زمان ها"
-
-#~ msgid "Open Fonts Collector"
-#~ msgstr "گشودن جمع کننده فونت"
-
-#~ msgid "Open Attachment List"
-#~ msgstr "بازکردن لیست ضمائم"
-
-#~ msgid "Open Styles Manager"
-#~ msgstr "گشودن مدیریت استایل"
-
-#~ msgid "Shift selected subtitles so first selected starts at this frame"
-#~ msgstr ""
-#~ "انتقال زیرنویس انتخاب شده به صورتی که اولین خط انتخاب شده از این فریم "
-#~ "آغاز میشود "
-
-#~ msgid "Shift subtitles to frame"
-#~ msgstr "انتقال زیرنویس به فریم "
-
-#~ msgid "Snap selected subtitles so they match current scene start/end"
-#~ msgstr ""
-#~ "زیرنویس انتخابی را به صحنه می چسباند به صورتی که ابتدا و انتهای آن در "
-#~ "ابتدا و انتهاب صحنه قرار بگیرد"
-
-#~ msgid "Snap subtitles to scene"
-#~ msgstr "چسباندن ویدیو به صحنه"
-
-#~ msgid "Jump video to end"
-#~ msgstr "پرش به انتهای ویدیو"
-
-#~ msgid "Jump video to time/frame"
-#~ msgstr "پرش ویدیو به زمان/فریم"
-
-#~ msgid "Jump To..."
-#~ msgstr "پرش به..."
-
-#~ msgid "Save subtitles"
-#~ msgstr "ذخیره کردن زیرنویس"
-
-#~ msgid "audio"
-#~ msgstr "صدا"
-
-#~ msgid "video"
-#~ msgstr "ویدیو"
-
-#~ msgid "From Video"
-#~ msgstr "از ویدیو"
-
-#~ msgid ""
-#~ "Removes all but the absolutely required fields from the Script Info "
-#~ "section. You might want to run this on files that you plan to distribute "
-#~ "in original form."
-#~ msgstr "بخشهای اضافی را حذف میکند"
-
-#~ msgid "Clean Script Info"
-#~ msgstr "پاک کردن اطلاعات اسکریپت"
-
-#~ msgid "Current line: ?"
-#~ msgstr "خط کنونی:؟"
+#~ msgid "Hotkey conflict"
+#~ msgstr " تداخل در کلید های میانبر"
 
 #~ msgid "If anything goes wrong, blame movax."
 #~ msgstr "اگر جایی اشتباه است میثم را سرزنش کنید"
@@ -7606,26 +7558,102 @@ msgstr "بررسی املایی"
 #~ "اعتمادتر بارگذاری میکند."
 
 #~ msgid ""
-#~ "Having video open is often more a nuisance than a help when timing "
-#~ "subtitles. Timing with only audio open is often much easier. You can "
-#~ "always adjust the subtitles to match the video later on."
-#~ msgstr ""
-#~ "باز بودن تصویر در هنگام زیرنویسی بعضی هنگام بجای کمک کردن در زمانبندی "
-#~ "باعث سخت تر شدن آن می شود"
-
-#~ msgid ""
 #~ "If you decode your audio to a PCM WAV file before loading it in Aegisub, "
 #~ "you don't have to wait for it to be decoded before you can use it."
 #~ msgstr ""
 #~ "تبدیل کنید دیگر  برای باز شدن آن توسط نرم افزار معطل نمی شوید PCM WAV اگر "
 #~ "صدای فایل مورد نظر خود را به "
 
+#~ msgid "Invalid destination directory."
+#~ msgstr "دایرکتوری مقصد نامعتبر است"
+
+#~ msgid "Invalid fps or length value"
+#~ msgstr "مقدار فریم بر ثانیه یا طول نامعتیر"
+
 #~ msgid ""
-#~ "Try the spectrum mode for the audio display, it can make it much easier "
-#~ "to spot where the important points in the audio are."
+#~ "Invalid resolution: destination resolution cannot be 0 on either "
+#~ "dimension."
+#~ msgstr "ابعاد نامعتبر:ابعاد تصویر مقصد در هیچ محوری نمیتواند صفر باشد "
+
+#~ msgid "Join"
+#~ msgstr "اتصال"
+
+#~ msgid "Join selected syllables"
+#~ msgstr "ترکیب سیلاب های انتخابی "
+
+#~ msgid ""
+#~ "Joins selected lines in a single one, making each line into a karaoke "
+#~ "syllable"
 #~ msgstr ""
-#~ "حالت نمایش طیف را برای نمایش صدا امتحان کنید.با این کار یافتن نقاط مهم "
-#~ "صدا راحتتر پیدا میشود"
+#~ "خطوط انتخابی را ترکیب کرده و هر خط را به یک سیلاب کاروکه تبدیل میکند "
+
+#~ msgid "Jump To..."
+#~ msgstr "پرش به..."
+
+#~ msgid "Jump video to end"
+#~ msgstr "پرش به انتهای ویدیو"
+
+#~ msgid "Jump video to time/frame"
+#~ msgstr "پرش ویدیو به زمان/فریم"
+
+#~ msgid "Karaoke"
+#~ msgstr "  کاراوکه"
+
+#~ msgid "Key"
+#~ msgstr "کلید"
+
+#~ msgid "Limit to Visible Lines"
+#~ msgstr "محدود کردن به خطوط مرئی"
+
+#~ msgid "Limits for levels and recent files"
+#~ msgstr "محدود کردن مراحل و فایل های اخیر"
+
+#~ msgid "Link commiting of times"
+#~ msgstr "اجرای تغییرات در زمان ها"
+
+#~ msgid "Lowest"
+#~ msgstr "پایین ترین"
+
+#~ msgid "Make Aegisub default editor for subtitles?"
+#~ msgstr ""
+#~ "آیا میخواهید که این نرم افزار به عنوان ویرایشگر پیش فرض برای زیرنویس ها "
+#~ "باشد؟"
+
+#~ msgid "Margin Bottom"
+#~ msgstr " حاشیه پایین"
+
+#~ msgid "Margin Top"
+#~ msgstr " حاشیه بالا"
+
+#~ msgid "MarginR change"
+#~ msgstr "تغییر حاشیه راست"
+
+#~ msgid "MarginV change"
+#~ msgstr "تغییر حاشیه عمودی"
+
+#~ msgid "Maximum recent audio files"
+#~ msgstr "ماکزیمم مقدار فایل های صدای اخیر"
+
+#~ msgid "Maximum recent find strings"
+#~ msgstr "ماکزیمم مقدار کلمات یافته شده اخیر"
+
+#~ msgid "Maximum recent replace strings"
+#~ msgstr "ماکزیمم مقدار کلمات جایگزین شده اخیر"
+
+#~ msgid "Maximum recent subtitle files"
+#~ msgstr "ماکزیمم مقدار فایل های زیرنویس اخیر"
+
+#~ msgid "Maximum recent timecode files"
+#~ msgstr "بیشترین فایل های کدهای زمانی اخیر"
+
+#~ msgid "Maximum recent video files"
+#~ msgstr "ماکزیمم مقدار فایل های ویدیوی اخیر"
+
+#~ msgid "Miscellanea"
+#~ msgstr "متفرقه"
+
+#~ msgid "Modified Background"
+#~ msgstr "پس زمینه زیرنویس های تغییر یافته"
 
 #~ msgid ""
 #~ "Much like anything loaded via DirectShow, certain files may have a "
@@ -7638,12 +7666,249 @@ msgstr "بررسی املایی"
 #~ "را مشکل میکند این مشکل از نرم افزار نیست.شما با تبدیل آنها میتوانید مشکل "
 #~ "را برطرف کنید  "
 
-#~ msgid ""
-#~ "When you are done with your subtitles and ready to distribute them, "
-#~ "remember: say no to MP4, OGM or AVI. Matroska is your friend."
+#~ msgid "No subtitle providers available. Cannot preview subs."
 #~ msgstr ""
-#~ " است Matroska هنگامی که قصد پخش زیرنویس آماده شده خود را دارید بهترین روش "
-#~ "استفاده از  "
+#~ "هیچ نمایشگر زیرنویس موجود نیست. نرم افزار نمیتواند زیرنویس را پیش نمایش "
+#~ "دهد  "
+
+#~ msgid "No timecodes to average"
+#~ msgstr "هیچ کدهای زمانی برای میانگین وجود ندارد"
+
+#~ msgid "None (NOT RECOMMENDED)"
+#~ msgstr "(هیچ کدام(توصیه نمیشود"
+
+#~ msgid "Not enough parameters for Aegisub::text_extents()"
+#~ msgstr "پارامتر های کافی برای نرم افزار وجود ندارد"
+
+#~ msgid "Not found.\n"
+#~ msgstr ".یافت نشد\n"
+
+#~ msgid "Open Attachment List"
+#~ msgstr "بازکردن لیست ضمائم"
+
+#~ msgid "Open Fonts Collector"
+#~ msgstr "گشودن جمع کننده فونت"
+
+#~ msgid "Open Kanji Timer dialog"
+#~ msgstr "گشودن زمانبند گفتگو های کانجی"
+
+#~ msgid "Open Shift Times Dialogue"
+#~ msgstr "گشودن بخش انتقال زمان ها"
+
+#~ msgid "Open Spell checker"
+#~ msgstr "باز کردن بررسی کننده املایی"
+
+#~ msgid "Open Styles Manager"
+#~ msgstr "گشودن مدیریت استایل"
+
+#~ msgid "Open Styling Assistant"
+#~ msgstr "گشودن دستیار استایل"
+
+#~ msgid "Open Timing Post-processor dialog"
+#~ msgstr "صفحه زمانبندی پس از پردازش را می گشاید"
+
+#~ msgid "Open Translation Assistant"
+#~ msgstr "گشودن دستیار ترجمه"
+
+#~ msgid "Open log window"
+#~ msgstr "گشودن پنجره ثبت وقایع"
+
+#~ msgid "Paste"
+#~ msgstr "چسباندن"
+
+#~ msgid "Paste Over"
+#~ msgstr "چسپاندن بروی "
+
+#~ msgid "Paste lines from clipboard"
+#~ msgstr "چساندن خطوط از حافظه"
+
+#~ msgid "Path to dictionary files:"
+#~ msgstr "مسیر فایلهای دیکشنری:"
+
+#~ msgid "Perl script"
+#~ msgstr "اسکریپت پرل"
+
+#~ msgid "Play current line (%KEY%)"
+#~ msgstr "(%KEY%) پخش خط جاری"
+
+#~ msgid "Play selection (%KEY%/%KEY%)"
+#~ msgstr "(%KEY%/%KEY%) پخش محل انتخاب شده"
+
+#~ msgid "Please wait, caching fonts..."
+#~ msgstr "لطفا صبر کنید..."
+
+#~ msgid "Press Key"
+#~ msgstr "فشار کلید"
+
+#, c-format
+#~ msgid "Press key to bind to \"%s\" or Esc to cancel."
+#~ msgstr " برای خروجEscرا فشار دهید یا\"%s\" برای ترکیب دکمه"
+
+#~ msgid "Reading into RAM"
+#~ msgstr "خواندن در رَم"
+
+#~ msgid "Reading keyframe and timecode data from Matroska file."
+#~ msgstr " Matroska خواندن فریم های کلیدی و کدهای زمانی از فایل"
+
+#~ msgid "Reading keyframes from video"
+#~ msgstr "خواندن فریم های کلیدی از ویدیو"
+
+#~ msgid "Realtime"
+#~ msgstr "بیدرنگ"
+
+#, c-format
+#~ msgid "Reloading %s because the file on disk (%s) changed."
+#~ msgstr "تغییر کرده است(%s)زیرا فایل موجود در درایو%s بارگذاری مجدد "
+
+#~ msgid ""
+#~ "Removes all but the absolutely required fields from the Script Info "
+#~ "section. You might want to run this on files that you plan to distribute "
+#~ "in original form."
+#~ msgstr "بخشهای اضافی را حذف میکند"
+
+#~ msgid "Replace All"
+#~ msgstr "جایگذاری همه"
+
+#~ msgid "Replace override tags with: "
+#~ msgstr "جایگزین کردن تگ ها با:"
+
+#~ msgid "Replace timecodes?"
+#~ msgstr "با جایگزین کردن کد های زمانی موافقید؟"
+
+#~ msgid "Resource files distributed with Aegisub"
+#~ msgstr "فایل های منبعی که با نرم افزار پخش می شوند"
+
+#~ msgid "Restart Aegisub"
+#~ msgstr " Aegisub راه اندازی مجدد"
+
+#~ msgid "Save Subtitles Alt"
+#~ msgstr "ذخیره زیرنویس"
+
+#~ msgid "Save before continuing?"
+#~ msgstr "ذخیره قبل از ادامه؟"
+
+#~ msgid "Save subtitles"
+#~ msgstr "ذخیره کردن زیرنویس"
+
+#~ msgid "Saves subtitles"
+#~ msgstr "ذخیره زیرنویس"
+
+#~ msgid "Saving changes"
+#~ msgstr "ذخیره تغییرات"
+
+#~ msgid "Scanning file for fonts..."
+#~ msgstr "بررسی فایل برای فونت ها..."
+
+#~ msgid "Script completed"
+#~ msgstr "اسکریپت کامل شده است"
+
+#~ msgid "Seek bar"
+#~ msgstr "نوار جستجو"
+
+#~ msgid "Select all"
+#~ msgstr "انتخاب همه"
+
+#~ msgid "Selection background - modified"
+#~ msgstr "پس زمینه انتخاب -تغییر یافته"
+
+#~ msgid "Set End to Video"
+#~ msgstr "مشخص کردن پایان ویدیو"
+
+#~ msgid "Set Hotkey..."
+#~ msgstr "تعیین کلید میانبر"
+
+#~ msgid "Set Start to Video"
+#~ msgstr "مشخص کردن شروع ویدیو"
+
+#~ msgid "Set opacity, from 0 (opaque) to 255 (transparent)"
+#~ msgstr "(تنظیم شفافیت از0(بدون شفافیت) تا 255(شفافیت کامل "
+
+#~ msgid "Shift by Current Time"
+#~ msgstr "انتقال براساس زمان کنونی"
+
+#~ msgid "Shift selected subtitles so first selected starts at this frame"
+#~ msgstr ""
+#~ "انتقال زیرنویس انتخاب شده به صورتی که اولین خط انتخاب شده از این فریم "
+#~ "آغاز میشود "
+
+#~ msgid "Shift subtitles to frame"
+#~ msgstr "انتقال زیرنویس به فریم "
+
+#, fuzzy
+#~ msgid "Show Original"
+#~ msgstr "اصلی"
+
+#~ msgid "Show Splash Screen"
+#~ msgstr "صفحه ابتدایی را نمایش بده"
+
+#~ msgid "Snap selected subtitles so they match current scene start/end"
+#~ msgstr ""
+#~ "زیرنویس انتخابی را به صحنه می چسباند به صورتی که ابتدا و انتهای آن در "
+#~ "ابتدا و انتهاب صحنه قرار بگیرد"
+
+#~ msgid "Snap subtitles to scene"
+#~ msgstr "چسباندن ویدیو به صحنه"
+
+#~ msgid "Snap to adjacent lines"
+#~ msgstr "چسبیدن به خطوط مجاور"
+
+#~ msgid "Sort by Time"
+#~ msgstr "مرتب کردن براساس زمان"
+
+#~ msgid "Source Style"
+#~ msgstr "استایل منبع"
+
+#~ msgid "Spectrum cutoff"
+#~ msgstr "قطع طیف"
+
+#~ msgid "Split"
+#~ msgstr "جدا سازی"
+
+#~ msgid "Split (by karaoke)"
+#~ msgstr "جداسازی بر اساس کاروکه"
+
+#~ msgid "Startup"
+#~ msgstr "شروع"
+
+#~ msgid "Stop (%KEY%)"
+#~ msgstr "(%KEY%) توقف"
+
+#~ msgid "Style name."
+#~ msgstr ".نام استایل"
+
+#~ msgid ""
+#~ "Styles can be stored in different storages, so that you can keep your "
+#~ "projects organized."
+#~ msgstr ""
+#~ "استایل ها در مخازن مختلف ذخیره میشوند تا شما به راحتی بتوانید پروژه های "
+#~ "مختلف خود را مدیریت کنید"
+
+#~ msgid "Styling Assistant Accept"
+#~ msgstr "دستیار استایل:تایید"
+
+#~ msgid "Styling Assistant Next"
+#~ msgstr "دستیار استایل:بعد"
+
+#~ msgid "Styling Assistant Play Audio"
+#~ msgstr "دستیار استایل:پخش صدا"
+
+#~ msgid "Styling Assistant Play Video"
+#~ msgstr "دستیار استایل:پخش ویدیو"
+
+#~ msgid "Styling Assistant Prev"
+#~ msgstr "دستیار استایل:قبل"
+
+#~ msgid "Styling Assistant Preview"
+#~ msgstr "دستیار استایل:پیش نمایش"
+
+#~ msgid "Styling assistant"
+#~ msgstr "دستیار استایل"
+
+#~ msgid "Syllable text"
+#~ msgstr "متن سیلاب"
+
+#~ msgid "Syntax highlighter - "
+#~ msgstr "  مشخص کننده روش "
 
 #~ msgid ""
 #~ "The fonts collector is one of the most useful features, which resumes the "
@@ -7652,23 +7917,24 @@ msgstr "بررسی املایی"
 #~ "جمع کننده فونت یکی از بهترین امکنات موجود است که زحمت شما را بسیار کم "
 #~ "خواهد کرد"
 
+#, c-format
+#~ msgid ""
+#~ "The hotkey %s is already mapped to %s. If you proceed, that hotkey will "
+#~ "be cleared. Proceed?"
+#~ msgstr ""
+#~ "  اختصاص یافته.اگر ادامه بدهید آن را پاک خوهید کرد.برای ادامه مطمئنید%sدر "
+#~ "حال حاضر به %sکلید میانبر "
+
+#~ msgid "The starting point is beyond the length of the audio loaded."
+#~ msgstr "نقطه شروع بعد از اتمام زمان صدا بارگذاری شده قرار گرفته است"
+
 #~ msgid ""
 #~ "The styling assistant is a practical way to set styles to each line, when "
 #~ "each actor has a different style assigned to it."
 #~ msgstr "دستار استایل روش خوبی برای قرار دادن استایل مخصوص به یک بازیگر است"
 
-#~ msgid ""
-#~ "Aegisub has several features to make sure you will never lose your work. "
-#~ "It will periodically save your subtitles to autosave folder, and will "
-#~ "create a copy of subs whenever you open them, to autoback folder. Also, "
-#~ "if it crashes, it will attempt to save a restore file."
-#~ msgstr ""
-#~ " ذخیره میکند.autosave  این نرم افزار برای اطمینان از اینکه فایل زیرنویس "
-#~ "شما ازبین نرود چندین امکانات دارد.نرم افزار به طور خودکار زیرنویس شما را "
-#~ "در فولدر  "
-
-#~ msgid "DON'T PANIC!"
-#~ msgstr "!نگران نباشید"
+#~ msgid "There is no audio to save."
+#~ msgstr ".هیچ صدایی برای ذخیره وجود ندارد"
 
 #~ msgid ""
 #~ "There is no reason to use the SSA format (as opposed to ASS). ASS is very "
@@ -7680,55 +7946,154 @@ msgstr "بررسی املایی"
 #~ " وجود ندارد.فرمت جدید بسیار بهتر از فرمت قدیمی میباشدSSA هچ دلیلی برای "
 #~ "استفاده از فرمت "
 
+#~ msgid "Thread priority"
+#~ msgstr "اولویت رشته"
+
+#~ msgid "Threshold:"
+#~ msgstr "آستانه :"
+
+#~ msgid "Time"
+#~ msgstr "زمان"
+
+#~ msgid "Toggle realtime display of changes."
+#~ msgstr "تغییرات را در همان لحظه نمایش میدهد"
+
+#~ msgid "Trace: "
+#~ msgstr "دنبال کردن:"
+
+#~ msgid "Translation Assistant Accept"
+#~ msgstr "دستیار ترجمه: پذیرش"
+
+#~ msgid "Translation Assistant Insert Original"
+#~ msgstr "دستیار ترجمه: قرار دادن خط اصلی"
+
+#~ msgid "Translation Assistant Next"
+#~ msgstr "دستیار ترجمه:بعدی"
+
+#~ msgid "Translation Assistant Play Audio"
+#~ msgstr "دستیار ترجمه:پخش صدا  "
+
+#~ msgid "Translation Assistant Play Video"
+#~ msgstr "دستیار ترجمه :پخش ویدیو "
+
+#~ msgid "Translation Assistant Prev"
+#~ msgstr "دستیار ترجمه: قبلی"
+
+#~ msgid "Translation Assistant Preview"
+#~ msgstr "دستیار ترجمه: پیش نمایش"
+
+#~ msgid ""
+#~ "Tried to register PerlConsole, but support for it was disabled in this "
+#~ "version."
+#~ msgstr ""
+#~ "تلاش برای ثبت کنسول پرل انجام شد ولی استفاده از آن در این نسخه عیرفعال "
+#~ "شده است"
+
+#~ msgid ""
+#~ "Try the spectrum mode for the audio display, it can make it much easier "
+#~ "to spot where the important points in the audio are."
+#~ msgstr ""
+#~ "حالت نمایش طیف را برای نمایش صدا امتحان کنید.با این کار یافتن نقاط مهم "
+#~ "صدا راحتتر پیدا میشود"
+
+#~ msgid ""
+#~ "Unable to add the automation include path(s) to @INC: the script's code "
+#~ "may not compile or execute properly."
+#~ msgstr "@INCناتوان در اضافه کردن مسیر همراه اتوماسیون به"
+
+#~ msgid "Unknown"
+#~ msgstr "نامشخص"
+
+#~ msgid "Update Video (slow)"
+#~ msgstr "(بروزرسانی ویدیو (کند"
+
 #~ msgid ""
 #~ "Use keyboard shortcuts! They make your life easier, for example, Ctrl"
 #~ "+Enter updates changes on current line without going to next. Check the "
 #~ "manual for a complete list."
 #~ msgstr "از کلید های میانبر صفحه کلید استفاده کنید"
 
+#~ msgid "Video Jump"
+#~ msgstr "پرش ویدیو"
+
+#~ msgid "Video global focus seek"
+#~ msgstr "تمرکز در جستجو:ویدیو"
+
+#~ msgid "Video global play"
+#~ msgstr "پخش:ویدیو"
+
+#~ msgid "Video global prev frame"
+#~ msgstr " رفتن به فریم قبلی :ویدیو"
+
+#~ msgid "Video global zoom in"
+#~ msgstr "زوم کردن :ویدیو"
+
+#~ msgid "Video global zoom out"
+#~ msgstr "خروج از زوم :ویدیو"
+
+#~ msgid "Visit Aegisub's forums"
+#~ msgstr "بازدید از انجمن نرم افزار"
+
+#~ msgid "Visual Tool Default"
+#~ msgstr "ابزار دیداری:پیش فرض"
+
+#~ msgid "Visual Tool Drag"
+#~ msgstr "ابزار دیداری:کشیدن"
+
+#~ msgid "Visual Tool Rectangular Clip"
+#~ msgstr "ابزار دیداری:برش مستطیلی"
+
+#~ msgid "Visual Tool Rotate X/Y"
+#~ msgstr "X/Yابزار دیداری:چرخش"
+
+#~ msgid "Visual Tool Rotate Z"
+#~ msgstr "Zابزار دیداری:چرخش"
+
+#~ msgid "Visual Tool Scale"
+#~ msgstr "ابزار دیداری:اندازه"
+
+#~ msgid "Visual Tool Vector Clip"
+#~ msgstr "ابزار دیداری:برش برداری"
+
+#~ msgid "Warning"
+#~ msgstr "اخطار"
+
+#~ msgid "Warning: "
+#~ msgstr "اخطار:"
+
+#~ msgid "Waveform - inactive"
+#~ msgstr "شکل موج:غیر فعال ها"
+
+#~ msgid "Waveform - modified"
+#~ msgstr "شکل موج-تغییر یافته ها"
+
+#~ msgid "Waveform - selection"
+#~ msgstr "شکل موج-انتخاب شده ها"
+
 #~ msgid ""
-#~ "Styles can be stored in different storages, so that you can keep your "
-#~ "projects organized."
+#~ "When you are done with your subtitles and ready to distribute them, "
+#~ "remember: say no to MP4, OGM or AVI. Matroska is your friend."
 #~ msgstr ""
-#~ "استایل ها در مخازن مختلف ذخیره میشوند تا شما به راحتی بتوانید پروژه های "
-#~ "مختلف خود را مدیریت کنید"
+#~ " است Matroska هنگامی که قصد پخش زیرنویس آماده شده خود را دارید بهترین روش "
+#~ "استفاده از  "
+
+#~ msgid ""
+#~ "You already have timecodes loaded. Replace them with the timecodes from "
+#~ "the Matroska file?"
+#~ msgstr ""
+#~ "  جایگزین کنید؟ Matroska کدهی زمانی در ال حاضر بارگذاری شده اند.میخواهید "
+#~ "آنها را با کدهای زمانی از فایل "
+
+#~ msgid ""
+#~ "You already have timecodes loaded. Would you like to replace them with "
+#~ "timecodes from the video file?"
+#~ msgstr ""
+#~ " در حال حاضر بارگذاری شده اند.آیا میخواهید آنها را با کدهای زمانی ویدیو "
+#~ "جایگزین کنید؟ (timecodes)کد های زمانی"
 
 #~ msgid ""
 #~ "You can easily translate subtitle files using the translation assistant."
 #~ msgstr "شما میتوانید راحتی توسط دسیار ترجمه زیرنویس خود را ترجمه کنید"
-
-#~ msgid ""
-#~ "Aegisub can export subtitles to many different formats, character "
-#~ "encodings, and even compensate Variable Frame Rate so you can hardsub "
-#~ "them - it's all in the Export option in File menu."
-#~ msgstr ""
-#~ "این نرم افزار قادر به خروجی گرفتن از زیرنویس با فرمت های مختلف و فریم ریت "
-#~ "های متغیر است.تمام تنظیمات را میتوانید در منوی فایل بخش خروجی گرفتن "
-#~ "مشاهده کنید "
-
-#~ msgid "Threshold:"
-#~ msgstr "آستانه :"
-
-#~ msgid "style changes"
-#~ msgstr "تغییرات استایل"
-
-#~ msgid "Enable preview (slow)"
-#~ msgstr "(فعالسازی پیش نمایش(کند"
-
-#~ msgid "Styling assistant"
-#~ msgstr "دستیار استایل"
-
-#~ msgid " styles?"
-#~ msgstr "?استایل ها"
-
-#~ msgid "Are you sure you want to delete these "
-#~ msgstr "آیا شما واقعا قصد حذف اینها را دارید"
-
-#~ msgid "Copy of "
-#~ msgstr "کپی از"
-
-#~ msgid "Warning"
-#~ msgstr "اخطار"
 
 #~ msgid ""
 #~ "You have chosen to use the \"Comic Sans\" font. As the programmer and a "
@@ -7741,448 +8106,46 @@ msgstr "بررسی املایی"
 #~ "شما از فونتی استفاده میکنید که بسیار قدیمی است .پس تنها در صورتی از آن "
 #~ "استفاده کنید که از کار خود مطمئن باشید"
 
-#~ msgid "No subtitle providers available. Cannot preview subs."
+#~ msgid "You have timecodes loaded currently. Would you like to unload them?"
 #~ msgstr ""
-#~ "هیچ نمایشگر زیرنویس موجود نیست. نرم افزار نمیتواند زیرنویس را پیش نمایش "
-#~ "دهد  "
-
-#~ msgid "Set opacity, from 0 (opaque) to 255 (transparent)"
-#~ msgstr "(تنظیم شفافیت از0(بدون شفافیت) تا 255(شفافیت کامل "
-
-#~ msgid "Style name."
-#~ msgstr ".نام استایل"
-
-#~ msgid "Replace All"
-#~ msgstr "جایگذاری همه"
-
-#~ msgid "replace with"
-#~ msgstr "جایگذاری با"
-
-#~ msgid "original"
-#~ msgstr "اصلی"
-
-#~ msgid "History"
-#~ msgstr "تاریخ"
-
-#~ msgid "Update Video (slow)"
-#~ msgstr "(بروزرسانی ویدیو (کند"
-
-#~ msgid ""
-#~ "Invalid resolution: destination resolution cannot be 0 on either "
-#~ "dimension."
-#~ msgstr "ابعاد نامعتبر:ابعاد تصویر مقصد در هیچ محوری نمیتواند صفر باشد "
-
-#~ msgid "Change aspect ratio"
-#~ msgstr "تغییر نسیت طول به عرض تصویر"
-
-#~ msgid "Collision: "
-#~ msgstr "برخورد:"
-
-#~ msgid "All"
-#~ msgstr "همه"
-
-#~ msgid "Margin Bottom"
-#~ msgstr " حاشیه پایین"
-
-#~ msgid "Margin Top"
-#~ msgstr " حاشیه بالا"
-
-#~ msgid "Hotkey conflict"
-#~ msgstr " تداخل در کلید های میانبر"
-
-#, c-format
-#~ msgid ""
-#~ "The hotkey %s is already mapped to %s. If you proceed, that hotkey will "
-#~ "be cleared. Proceed?"
-#~ msgstr ""
-#~ "  اختصاص یافته.اگر ادامه بدهید آن را پاک خوهید کرد.برای ادامه مطمئنید%sدر "
-#~ "حال حاضر به %sکلید میانبر "
-
-#, c-format
-#~ msgid "Press key to bind to \"%s\" or Esc to cancel."
-#~ msgstr " برای خروجEscرا فشار دهید یا\"%s\" برای ترکیب دکمه"
-
-#~ msgid "Press Key"
-#~ msgstr "فشار کلید"
-
-#~ msgid "Restart Aegisub"
-#~ msgstr " Aegisub راه اندازی مجدد"
-
-#~ msgid "Aegisub must restart for the changes to take effect. Restart now?"
-#~ msgstr ""
-#~ "نرم افزار جهت اعمال تغییرات باید دوباره راه اندازی شود.آیا راه اندازی "
-#~ "مجدد را میخواهید؟"
-
-#~ msgid "File save/load"
-#~ msgstr "ذخیره/بارگذاری فایل"
-
-#~ msgid "Clear Hotkey"
-#~ msgstr "حذف کلید میانبر"
-
-#~ msgid "Set Hotkey..."
-#~ msgstr "تعیین کلید میانبر"
-
-#~ msgid "Key"
-#~ msgstr "کلید"
-
-#~ msgid "Function"
-#~ msgstr "عملکرد"
-
-#~ msgid "Thread priority"
-#~ msgstr "اولویت رشته"
-
-#~ msgid "Lowest"
-#~ msgstr "پایین ترین"
-
-#~ msgid "Below Normal (recommended)"
-#~ msgstr "(کمتر از معمول(توصیه شده"
-
-#~ msgid "Spectrum cutoff"
-#~ msgstr "قطع طیف"
-
-#~ msgid "HD cache name"
-#~ msgstr "نام کش هارد"
-
-#~ msgid "Syllable text"
-#~ msgstr "متن سیلاب"
-
-#~ msgid "Waveform - inactive"
-#~ msgstr "شکل موج:غیر فعال ها"
-
-#~ msgid "Waveform - modified"
-#~ msgstr "شکل موج-تغییر یافته ها"
-
-#~ msgid "Waveform - selection"
-#~ msgstr "شکل موج-انتخاب شده ها"
-
-#~ msgid "Selection background - modified"
-#~ msgstr "پس زمینه انتخاب -تغییر یافته"
-
-#~ msgid "Draw keyframes"
-#~ msgstr "کشیدن فریم های کلیدی"
-
-#~ msgid "Draw timeline"
-#~ msgstr "کشیدن خط زمانی"
-
-#~ msgid "Draw selection background"
-#~ msgstr "کشیدن پس زمینه انتخاب شده ها"
-
-#~ msgid "Draw secondary lines"
-#~ msgstr "کشیدن خط  ثانویه"
-
-#~ msgid "Snap to adjacent lines"
-#~ msgstr "چسبیدن به خطوط مجاور"
-
-#~ msgid "Grab times from line upon selection"
-#~ msgstr "تعیین زمان از زمان بالای خطوط انتخابی"
-
-#~ msgid "Advanced - EXPERT USERS ONLY"
-#~ msgstr "پیشرفته-مخصوص افراد متخصص  "
-
-#~ msgid "Replace override tags with: "
-#~ msgstr "جایگزین کردن تگ ها با:"
-
-#~ msgid "Header"
-#~ msgstr "سربرگ"
-
-#~ msgid "Highlight subtitles that are currently visible in video"
-#~ msgstr "متمایز کردن خطوطی که در حال حاضر در تصویر دیده می شوند"
-
-#~ msgid "Allow grid to take focus"
-#~ msgstr "به خطوط اجازه متمرکز شدن را بده"
-
-#~ msgid "Font: "
-#~ msgstr "فونت:"
-
-#~ msgid "Syntax highlighter - "
-#~ msgstr "  مشخص کننده روش "
-
-#~ msgid "Modified Background"
-#~ msgstr "پس زمینه زیرنویس های تغییر یافته"
-
-#~ msgid "Path to dictionary files:"
-#~ msgstr "مسیر فایلهای دیکشنری:"
-
-#~ msgid "Link commiting of times"
-#~ msgstr "اجرای تغییرات در زمان ها"
-
-#~ msgid "Crash recovery path:"
-#~ msgstr "مسیر ذخیره فایل بازیافت شده:"
-
-#~ msgid "Auto-backup path:"
-#~ msgstr "مسیر پشتیبان گیری خودکار"
-
-#~ msgid "Auto-save path:"
-#~ msgstr "مسیر ذخیره خودکار"
-
-#~ msgid "seconds."
-#~ msgstr ".ثانیه"
-
-#~ msgid "Miscellanea"
-#~ msgstr "متفرقه"
-
-#~ msgid "File paths"
-#~ msgstr "مسیر فایل"
-
-#~ msgid "Auto-save"
-#~ msgstr "ذخیره اتوماتیک"
-
-#~ msgid "Maximum recent replace strings"
-#~ msgstr "ماکزیمم مقدار کلمات جایگزین شده اخیر"
-
-#~ msgid "Maximum recent find strings"
-#~ msgstr "ماکزیمم مقدار کلمات یافته شده اخیر"
-
-#~ msgid "Maximum recent audio files"
-#~ msgstr "ماکزیمم مقدار فایل های صدای اخیر"
-
-#~ msgid "Maximum recent video files"
-#~ msgstr "ماکزیمم مقدار فایل های ویدیوی اخیر"
-
-#~ msgid "Maximum recent subtitle files"
-#~ msgstr "ماکزیمم مقدار فایل های زیرنویس اخیر"
-
-#~ msgid "Maximum recent timecode files"
-#~ msgstr "بیشترین فایل های کدهای زمانی اخیر"
-
-#~ msgid "Limits for levels and recent files"
-#~ msgstr "محدود کردن مراحل و فایل های اخیر"
-
-#~ msgid "Check File Associations on Start"
-#~ msgstr "بررسی فایل هایی که با این نرم افزار باز میشوند در هنگام شروع برنامه"
-
-#~ msgid "Startup"
-#~ msgstr "شروع"
-
-#~ msgid "Dest Style"
-#~ msgstr "استایل مقصد"
-
-#~ msgid "Source Style"
-#~ msgstr "استایل منبع"
-
-#, c-format
-#~ msgid "\"%s\" found.\n"
-#~ msgstr "\"%s\" یافته شد\n"
-
-#, c-format
-#~ msgid "\"%s\" found on dialogue line \"%d\".\n"
-#~ msgstr " \"%s\"  یافته شد در خط\"%d\"\n"
-
-#, c-format
-#~ msgid "\"%s\" found on style \"%s\".\n"
-#~ msgstr "\"%s\" در استایل پیدا شد \"%s\".\n"
-
-#~ msgid "Found.\n"
-#~ msgstr ".پیدا شد\n"
-
-#~ msgid "Not found.\n"
-#~ msgstr ".یافت نشد\n"
-
-#~ msgid "font attachment"
-#~ msgstr "ضمیمه کردن فونت"
-
-#, c-format
-#~ msgid ""
-#~ "\n"
-#~ "Finished writing to %s.\n"
-#~ msgstr ""
-#~ "\n"
-#~ " %s نوشتن پایان یافت در  \n"
-
-#~ msgid "Checking fonts...\n"
-#~ msgstr "...بررسی فونت ها\n"
-
-#~ msgid "Scanning file for fonts..."
-#~ msgstr "بررسی فایل برای فونت ها..."
-
-#~ msgid "Done collecting font data."
-#~ msgstr "جمع آوری اطلاعات فونت ها به اتمام رسید"
-
-#~ msgid ""
-#~ "Collecting font data from system. This might take a while, depending on "
-#~ "the number of fonts installed. Results are cached and subsequent "
-#~ "executions will be faster...\n"
-#~ msgstr ""
-#~ "در حال جمع آوری اطلاعات فونت ها از سیستم میباشد.این عمل ممکن است مدتی به "
-#~ "طول بیانجامد که بستگی به تعداد فونت های نصب شده در سیستم شما دارد\n"
-
-#~ msgid "Invalid destination directory."
-#~ msgstr "دایرکتوری مقصد نامعتبر است"
+#~ "شما کدهای زمانی را در حال حاضر بارگذاری کرده اید.آیا مایلید که آنها را "
+#~ "ببندید؟"
 
 #~ msgid "Zip Archives (*.zip)|*.zip"
 #~ msgstr "(*.zip)|*.zip فایل زیپ"
 
-#~ msgid "DEBUG: Verify all fonts in system"
-#~ msgstr "اشکال زدایی:تمام فونت ها موجود در سیستم را بررسی کنید"
+#~ msgid "Zoom 50%"
+#~ msgstr "زوم %50"
 
-#~ msgid "Select all"
-#~ msgstr "انتخاب همه"
+#~ msgid "audio"
+#~ msgstr "صدا"
 
-#~ msgid "Invalid fps or length value"
-#~ msgstr "مقدار فریم بر ثانیه یا طول نامعتیر"
+#~ msgid "delete"
+#~ msgstr "حذف"
 
-#~ msgid "Color Picker"
-#~ msgstr "انتخاب کننده رنگ"
+#~ msgid "editing"
+#~ msgstr "ویرایش"
 
-#~ msgid "    Subtitle format handler: "
-#~ msgstr "  مسئول فرمت های زیرنویس:"
+#~ msgid "font attachment"
+#~ msgstr "ضمیمه کردن فونت"
 
-#~ msgid "&No"
-#~ msgstr "خیر"
+#~ msgid "load"
+#~ msgstr "بارگذاری"
 
-#~ msgid "&Yes"
-#~ msgstr "بله"
+#~ msgid "original"
+#~ msgstr "اصلی"
 
-#~ msgid "Always perform this check when Aegisub starts"
-#~ msgstr "در هر بار این بررسی را انجام بده"
+#~ msgid "replace with"
+#~ msgstr "جایگذاری با"
 
-#~ msgid ""
-#~ "Aegisub is not your default editor for subtitle files. Do you want to "
-#~ "make Aegisub your default editor for subtitle files?"
-#~ msgstr ""
-#~ "این نرم افزار ، نرم افزار پیش فرض ویرایش زیرنویس ها نیست.آیا می خواهید که "
-#~ "نرم افزار پیش فرض ویرایش زیرنویس ها شود؟  "
+#~ msgid "seconds."
+#~ msgstr ".ثانیه"
 
-#~ msgid "Make Aegisub default editor for subtitles?"
-#~ msgstr ""
-#~ "آیا میخواهید که این نرم افزار به عنوان ویرایشگر پیش فرض برای زیرنویس ها "
-#~ "باشد؟"
+#~ msgid "show full tags."
+#~ msgstr "نمایش کامل تگ ها"
 
-#~ msgid ""
-#~ "Aegisub is already associated with all supported file types.\n"
-#~ "\n"
-#~ "If you want Aegisub to no longer be associated with a file type, you must "
-#~ "tell another program to take over the file type."
-#~ msgstr ""
-#~ "این نرم افزار  مسئول بازکردن تمام پسوند هایی که پشتیبانی می کند است \n"
-#~ "\n"
-#~ "اگر نمی خواهید این نرم افزار مسئول باشد باید نرم افزار دیگری را برای باز "
-#~ "کردن فایل ها مسئول کنید "
+#~ msgid "style changes"
+#~ msgstr "تغییرات استایل"
 
-#~ msgid ""
-#~ "Aegisub can take over the following file types.\n"
-#~ "\n"
-#~ "If you want Aegisub to no longer be associated with a file type, you must "
-#~ "tell another program to take over the file type."
-#~ msgstr ""
-#~ "این نرم افزار می تواند مسئول بازکردن پسوند های زیر باشد\n"
-#~ "\n"
-#~ "اگر نمی خواهید این نرم افزار مسئول باشد باید نرم افزار دیگری را برای باز "
-#~ "کردن فایل ها مسئول کنید"
-
-#~ msgid "Associate file types"
-#~ msgstr "فایل هایی که با این نرم باز می شوند"
-
-#~ msgid "Saving changes"
-#~ msgstr "ذخیره تغییرات"
-
-#, c-format
-#~ msgid "Reloading %s because the file on disk (%s) changed."
-#~ msgstr "تغییر کرده است(%s)زیرا فایل موجود در درایو%s بارگذاری مجدد "
-
-#~ msgid ""
-#~ "Unable to add the automation include path(s) to @INC: the script's code "
-#~ "may not compile or execute properly."
-#~ msgstr "@INCناتوان در اضافه کردن مسیر همراه اتوماسیون به"
-
-#~ msgid "Perl script"
-#~ msgstr "اسکریپت پرل"
-
-#~ msgid "Executing "
-#~ msgstr "در حال اجرا"
-
-#~ msgid "Trace: "
-#~ msgstr "دنبال کردن:"
-
-#~ msgid "Debug: "
-#~ msgstr ":اشکال زدایی"
-
-#~ msgid "Hint: "
-#~ msgstr "کمک:"
-
-#~ msgid "Warning: "
-#~ msgstr "اخطار:"
-
-#~ msgid "Error: "
-#~ msgstr "خطا:"
-
-#~ msgid "Fatal error: "
-#~ msgstr "خطای اساسی!"
-
-#~ msgid ""
-#~ "Tried to register PerlConsole, but support for it was disabled in this "
-#~ "version."
-#~ msgstr ""
-#~ "تلاش برای ثبت کنسول پرل انجام شد ولی استفاده از آن در این نسخه عیرفعال "
-#~ "شده است"
-
-#~ msgid "Not enough parameters for Aegisub::text_extents()"
-#~ msgstr "پارامتر های کافی برای نرم افزار وجود ندارد"
-
-#, c-format
-#~ msgid ""
-#~ "An Automation script failed to load. File name: '%s', error reported:"
-#~ msgstr ""
-#~ " :خطای گزارش شده,'%s'در بارگذاری یک اوتوماسیون خطایی به وجود آمده.اسم "
-#~ "فایل:"
-
-#~ msgid "Script completed"
-#~ msgstr "اسکریپت کامل شده است"
-
-#~ msgid "Reading into RAM"
-#~ msgstr "خواندن در رَم"
-
-#~ msgid "Commit?"
-#~ msgstr "اجرا؟"
-
-#~ msgid ""
-#~ "Do you want to commit your changes? If you choose No, they will be "
-#~ "discarded."
-#~ msgstr ""
-#~ "آیا میخواهید تغییرات شما اعمال شود؟اگر نه را انتخاب کنید تغییرات اعمال "
-#~ "نخواهد شد"
-
-#~ msgid "Enter split-mode"
-#~ msgstr "ورود به حالت جداسازی"
-
-#~ msgid "Split"
-#~ msgstr "جدا سازی"
-
-#~ msgid "Join selected syllables"
-#~ msgstr "ترکیب سیلاب های انتخابی "
-
-#~ msgid "Join"
-#~ msgstr "اتصال"
-
-#~ msgid "Commit splits and leave split-mode"
-#~ msgstr "اعمال جداسازی ها و خروج از حالت جداسازی"
-
-#~ msgid "Accept Split"
-#~ msgstr "تایید جداسازی"
-
-#~ msgid "Karaoke"
-#~ msgstr "  کاراوکه"
-
-#~ msgid "Enable Medusa-Style Timing Shortcuts"
-#~ msgstr "فعالسازی مدل کلیدهای میانبر نرم افزار مدوسا"
-
-#~ msgid "Commit changes (%KEY%/%KEY%)"
-#~ msgstr " (%KEY%/%KEY%) اعمال تغییرات"
-
-#~ msgid "Add lead out (%KEY%)"
-#~ msgstr "(%KEY%) افزودن فاصله پایان"
-
-#~ msgid "Add lead in (%KEY%)"
-#~ msgstr "(%KEY%) افزودن فاصله شروع"
-
-#~ msgid "Stop (%KEY%)"
-#~ msgstr "(%KEY%) توقف"
-
-#~ msgid "Play current line (%KEY%)"
-#~ msgstr "(%KEY%) پخش خط جاری"
-
-#~ msgid "Play selection (%KEY%/%KEY%)"
-#~ msgstr "(%KEY%/%KEY%) پخش محل انتخاب شده"
-
-#~ msgid "Seek bar"
-#~ msgstr "نوار جستجو"
+#~ msgid "video"
+#~ msgstr "ویدیو"

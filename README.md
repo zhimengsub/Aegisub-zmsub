@@ -4,7 +4,7 @@
 
 ## 安装
 
-在[Release](/zhimengsub/Aegisub-zmsub/releases/latest)中下载`Aegisub-zmsub-xxx.zip`，解压后运行`Aegisub.exe`。
+在[Release](https://github.com/zhimengsub/Aegisub-zmsub/releases/latest)中下载`Aegisub-zmsub-xxx.zip`，解压后运行`Aegisub.exe`。
 
 ⚠️：仅支持Windows系统。
 

@@ -51,7 +51,7 @@ Aegisub是一款打轴工具，魔改版的界面如下：
 
 1. 一键安装[我组推荐的快捷键设置](#我组推荐的快捷键)
 
-   从[Release](./releases/latest)中下载并解压`Aegisub 织梦字幕组魔改版.zip`后，找到并直接运行`替换快捷键.exe`。其中`hotkey.json`即[我组推荐的快捷键设置](#我组推荐的快捷键)。也可以将`hotkey.json`拖入`替换快捷键.exe`执行。
+   从[Release](https://github.com/zhimengsub/Aegisub-zmsub/releases/latest)中下载并解压`Aegisub 织梦字幕组魔改版.zip`后，找到并直接运行`替换快捷键.exe`。其中`hotkey.json`即[我组推荐的快捷键设置](#我组推荐的快捷键)。也可以将`hotkey.json`拖入`替换快捷键.exe`执行。
 
    ⚠注意首次使用Aegisub时需要先运行一下`Aegisub.exe`本体，让Aegisub生成默认的快捷键配置文件。
 

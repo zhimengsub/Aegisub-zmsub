@@ -4,7 +4,7 @@
 
 ## 安装
 
-在[Release](https://github.com/zhimengsub/Aegisub-zmsub/releases/latest)中下载`Aegisub-zmsub-xxx.zip`，解压后运行`Aegisub.exe`。
+在[Release](https://github.com/zhimengsub/Aegisub-zmsub/releases/latest)中下载`Aegisub 织梦字幕组魔改版.zip`，解压后运行`Aegisub-zmsub-1.0-alpha`中的`Aegisub.exe`。
 
 ⚠️：仅支持Windows系统。
 
@@ -47,25 +47,29 @@ Aegisub是一款打轴工具，魔改版的界面如下：
 
 ## 快捷键
 
-`查看` - `选项` - `界面` - `热键`
-
-快捷键设置页面包含多个分组，`默认`表示这个快捷键全局都可以使用，其他分组则表示焦点在这个区域时（鼠标点击了这个区域后）才能使用。
-
-![](./README.src/Hotkey.png)
-
 ### 快捷键设置方法
 
-1. 直接覆盖配置文件 (推荐)
-   下载[Release](./releases/latest)中提供的`hotkey.json`，这是[我推荐的快捷键设置](#快捷键设置推荐)，将其放入`C:\Users\<你的用户名>\AppData\Roaming\Aegisub`覆盖即可。
+1. 一键安装[我组推荐的快捷键设置](#我组推荐的快捷键)
 
-2. 手动设置
-    手动打开`查看` - `选项` - `界面` - `热键`，在对应分组内点击`新建`，然后在第一个框按下需要设置的快捷键，第二个框输入指令名，设置完后点击其他空白处即可确认。
+   从[Release](./releases/latest)中下载并解压`Aegisub 织梦字幕组魔改版.zip`后，找到并直接运行`替换快捷键.exe`。其中`hotkey.json`即[我组推荐的快捷键设置](#我组推荐的快捷键)。也可以将`hotkey.json`拖入`替换快捷键.exe`执行。
+
+   ⚠注意首次使用Aegisub时需要先运行一下`Aegisub.exe`本体，让Aegisub生成默认的快捷键配置文件。
+
+   该脚本运行的效果为，将`hotkey.json`拷贝到`C:\Users\<你的用户名>\AppData\Roaming\Aegisub`并覆盖同名文件，你也可以手动执行拷贝粘贴的操作。
+
+2. 按自己喜好手动设置
+    手动打开`查看` - `选项` - `界面` - `热键`，其中包含多个分组，`默认`表示这个快捷键全局都可以触发，其他分组则表示焦点在这个区域时（鼠标点击了这个区域后）才能触发。
+
+    在对应分组内点击`新建`，然后在第一个框按下需要设置的快捷键，第二个框输入指令名，设置完后点击其他空白处即可确认。
+
+    所有快捷键的指令可以[在这里](https://aegi.vmoe.info/docs/3.2/Commands/zh_CN/)查到。
+
+    ![](./README.src/Hotkey.png)
 
 
-### 快捷键设置推荐
+### 我组推荐的快捷键
 
 为了提高翻译的效率，我推荐使用以下快捷键，可以根据自己习惯调整。
-所有快捷键的指令可以[在这里](https://aegi.vmoe.info/docs/3.2/Commands/zh_CN/)查到。
 
 #### 默认
 
@@ -95,8 +99,8 @@ Aegisub是一款打轴工具，魔改版的界面如下：
 |---|---|---|---|---|
 |Space|无|`video/play`|播放/暂停视频|要在各个分组中分别设置，避免在字幕编辑时按空格触发|
 |Ctrl-J|无|`edit/line/join/concatenate`|将所选行头尾相接，且中间用空格隔开||
-|Alt-J|无|`automation/lua/zmsub.smart_join_lines_nospace/织梦.智能合并对话 (无分隔)`|所选行中文部分和日文部分各自头尾相接|脚本可以在`自动化`选项中手动执行|
-|Alt-Shift-J|无|`automation/lua/zmsub.smart_join_lines_wspace/织梦.智能合并对话 (空格分隔)`|所选行中文部分和日文部分各自头尾相接，且中间用空格隔开|可根据自己实际使用频率跟上面的快捷键互换|
+|Alt-Shift-J|无|`automation/lua/zmsub.smart_join_lines_nospace/织梦.智能合并对话 (无分隔)`|所选行中文部分和日文部分各自头尾相接|脚本可以在`自动化`选项中手动执行|
+|Alt-J|无|`automation/lua/zmsub.smart_join_lines_wspace/织梦.智能合并对话 (空格分隔)`|所选行中文部分和日文部分各自头尾相接，且中间用空格隔开|可根据自己实际使用频率跟上面的快捷键互换|
 
 #### 视频
 
@@ -112,7 +116,7 @@ Aegisub是一款打轴工具，魔改版的界面如下：
 |---|---|---|---|---|
 |Space|无|`video/play`|播放/暂停视频|要在各个分组中分别设置，避免在字幕编辑时按空格触发|
 
---- 
+---
 
 ## 普通使用流程
 
@@ -127,7 +131,7 @@ Aegisub是一款打轴工具，魔改版的界面如下：
    - `Alt-J`把两行的中文和日文部分分别合并在一起；
    - `Alt-Shift-J`把两行的中文和日文部分分别合并在一起，并用空格隔开；
    - `Ctrl-J`把两行头尾合并在一起（一般用不到），并用空格隔开；
- 
+
 ⚠️：如果对日文部分有删改，请选中改行后在上方`说话人`处注明“日文有删改”，方便时轴调整时间。
 4. 翻译完一行后，按`Enter`切换至下一行；或按`PageUp`/`PageDown`切换至上一行/下一行。
 
@@ -136,7 +140,7 @@ Aegisub是一款打轴工具，魔改版的界面如下：
 
 如果有一些使用上的意见和建议请提[Issue](./issues)
 
---- 
+---
 
 # 原版Readme
 

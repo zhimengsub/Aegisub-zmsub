@@ -18,6 +18,7 @@ function sort_by_lang(subs, sels, active)
         aegisub.debug.out("选中行数应为偶数！")
         return
     end
+    -- 注意下标从1开始，第一行为奇数行
     -- odd_inds = table.slice(sels, 1, #sels, 2)
     even_inds = table.slice(sels, 2, #sels, 2)
     even_lines = {}

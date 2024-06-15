@@ -1,6 +1,6 @@
 re = require 'aegisub.re'
 require 'zmsub_utils.general'
-versions.insert_jptag = '0.4.6'
+versions.insert_jptag = '0.4.7'
 
 local exp_jptag = re.compile('\\\\N{\\\\fnSource Han Sans JP Bold.*?\\}')
 local exp_starttag = re.compile('^\\{[^}]*\\}')
@@ -43,14 +43,25 @@ function insert_jptag(line)
             endtag = mEndtag[1]['str']
             line.text, _ = exp_endtag:sub(line.text, '')
         end
+        
+        local matches_leftnl = exp_lstrip_nl:find(line.text)
+        local matches_nl = exp_newline:find(line.text)
+        if matches_leftnl ~= nil and #matches_leftnl == 1 and matches_nl ~= nil and #matches_nl == 1 then
+            -- 只有一个\N且在开头，替换为新特效标签
+            line.text = exp_newline:sub(line.text, new_jptag)
+
+            -- 添加回开头和结尾的特效标签
+            line.text = starttag .. line.text .. endtag
+            return true
+        end
 
         -- 去除开头和结尾多余的\N
         line.text = replace_until_same(line.text, exp_lstrip_nl, '')
         line.text = replace_until_same(line.text, exp_rstrip_nl, '')
 
         -- 寻找句中的\N
-        local matches = exp_newline:find(line.text)
-        if not matches or #matches > 1 then
+        matches_nl = exp_newline:find(line.text)
+        if not matches_nl or #matches_nl > 1 then
             -- 错误, 不存在'\N'或存在多个\N
             return false
         else

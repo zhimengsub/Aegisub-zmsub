@@ -1,9 +1,9 @@
 local tr = aegisub.gettext
 
-script_name = tr"织梦.对白处理(2304) (选中行)"
-script_description = tr"配合'织梦-对白-2304'使用，为选中的'中字\\N日字'格式的对白添加特效，并规范空格、数字宽度。"
+script_name = tr"织梦.添加对白特效(2304) (选中行)"
+script_description = tr"配合'织梦-对白-2304'样式使用，为选中的'中字\\N日字'格式的对白添加特效，并规范空格、数字宽度。"
 script_author = "谢耳朵w"
-script_version = "1.0"
+script_version = "1.0.1"
 
 re = require 'aegisub.re'
 require 'zmsub_utils.general'
@@ -30,11 +30,13 @@ function proc_lines(subs, sels, curr)
             -- 添加2304版对白特效
             insert_zmsub2304_tags(line) and
             -- 规范空格、数字宽度
-               proc_space_digits(line)
+               proc_space_digits(line) 
             then
                 -- 全部成功
-                subs[i] = line
-                table.insert(normalsels, i)
+                if line.text ~= subs[i].text then
+                    subs[i] = line
+                    table.insert(normalsels, i)
+                end
             else
                 -- 有某一个失败
                 oline.comment = true
@@ -48,7 +50,7 @@ function proc_lines(subs, sels, curr)
     
     -- 提示哪些行处理错误，注释并选中这些行
     if #errsels > 0 then
-        aegisub.debug.out('\n处理以上对白时发生错误，将被选中并注释！\n请修复后，选中这些对白然后重新执行本脚本。')
+        aegisub.debug.out('\n处理以上对白时发生错误，将被选中并注释！\n请确保对白中存在\\N。\n修复后，选中这些对白然后重新执行本脚本。')
         return errsels
     else
         -- 不存在异常行，则选中所有被处理过的行
